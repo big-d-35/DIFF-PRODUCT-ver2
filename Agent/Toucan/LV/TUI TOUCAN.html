@@ -1,0 +1,882 @@
+<title>MINI TOUCAN</title>
+<!--
+Привет.
+Ниже файл с информацией для ВСЕХ страниц TOUCAN для клиентского и агентского сайте (RU BY UA  EE LT LV)
+
+Для того чтобы изменить информацию достаточно заменить ее в этом файле и обновить файл который лежит на сайте:
+
+tui.ru \ media \ новый сайт \ концепции \ TUI Toucan \ JS \ VUE-Toucan-page.js
+
+ИЛИ
+  
+tui.ru \ media \ новый сайт \ концепции \ TUI Toucan \ JS \ VUE-Toucan-hot-hotels-ru-by-ua.js
+  
+ВНИМАНИЕ! именно нажать на кнопку заменить, иначе придется менять ссылку на всех страницах.
+
+Обрати внимение на название переменных в файле html, если в конце есть указание к стране (например имя оканчивается myNameRU - значит это перевод на русский, myNameEE - значит это перевод на эстонский и тп)
+
+Также обрати внимание на название ссылок - если оканчивается на Client - значит ссылка на клиент, если Agent - значит ссылка на агенте.
+
+Некоторые страницы в консоли могут ругаться на отсутствие некоторых элементов, это нормально, просто у нас один файл на все страницы и соответственно на некоторых страницах нет элементов с других страниц, поэтому не обращай внимание.
+
+Эта инструкция подходит для всех страниц ДИФФ ПРОДУКТА
+
+Пожалуйста если вносите изменения ставьте в известность меня: 
+aleksandr.rodionov@tui.ru
+
+-->
+   
+<!-- ШРИФТ =============================================== -->
+<style>
+    @font-face {
+        font-family: 'TUI-reg';
+        src: url('https://www.tui.ru/getmedia/0c02516a-a2de-4325-ba89-f7ac294122a8/TUITypeLight-Regular');
+        src: url('https://www.tui.ru/getmedia/0c02516a-a2de-4325-ba89-f7ac294122a8/TUITypeLight-Regular?#iefix') format('embedded-opentype'),
+            url('https://www.tui.ru/getmedia/953947e9-cb5a-43a7-a16a-1ca276d08920/TUITypeLight-Regular') format('woff2'),
+            url('https://www.tui.ru/getmedia/73494612-776c-4364-b603-208f014e9bff/TUITypeLight-Regular') format('woff'),
+            url('https://www.tui.ru/getmedia/6294bb39-80a5-4825-9b12-a1bd5925de01/TUITypeLight-Regular') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+</style>
+<!-- ШРИФТ =============================================== -->
+<style type="text/css">
+    body {
+        font-family: "TUI-reg", sans-serif !important;
+    }
+
+    /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
+    .pageWrapper {
+        width: 100% !important;
+    }
+
+    .mainHeader {
+        display: none !important;
+    }
+
+    .contentFooter {
+        display: none !important;
+    }
+
+    .mainFooter {
+        display: none !important;
+    }
+
+    /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
+</style>
+
+
+<style type="text/css">
+    .button-slider-active {
+        -webkit-box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
+        -moz-box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
+        box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
+        background-color: #C3E8FB !important;
+    }
+    .hotel__link {
+           color: rgb(8, 42, 94)!important;
+      }
+    .slider-content ul li {
+        color: #0c2c5c !important;
+    }
+
+    .text-blue-color {
+        color: #0c2c5c !important;
+    }
+    .slider-hotels {
+        min-height: 600px!important;
+    }
+    .oae {
+        background-image: url(https://www.tui.ru/getmedia/3b08c919-3f75-46fc-9f2e-489254b13db4/bckg-oae)!important;
+    }
+</style>
+<script src="https://www.tui.ru/getmedia/d87eaac3-bfe8-4d28-b122-f5631b032cc1/template_base_diff" type="text/javascript"></script>
+<!-- SCRIPT загрузки VUE  =================================================== -->
+        <script type="text/javascript">
+            const vueLinks = [
+                'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+                'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer',
+                'https://www.tui.ru/getmedia/214e3b2b-ade5-4abe-8fb7-713adc0de65d/VUE-Toucan-hot-hotels-ee-lt-lv',
+        'https://www.tui.ru/getmedia/7ee746b3-e5b2-4489-824c-c9868870ebc0/VUE-Toucan-page',
+                
+                'https://www.tui.ru/getmedia/6e64783b-d6d6-4b51-ab25-d8d1ec72e234/all',
+
+            ];
+
+            function add_files(arr, type) {
+
+                count = 0;
+
+                function new_file(link) {
+                    var script = document.createElement(type);
+                    script.src = link;
+                    script.async = false;
+                    document.head.appendChild(script);
+                    if (count < arr.length - 1) {
+                        script.onload = function() {
+                            new_file(arr[count]);
+                        }
+                        script.onerror = function() {
+                            throw new Error(arr[count - 1] + ' loading error');
+                        }
+                        count++;
+                    }
+                }
+
+                function error(text) {
+                    throw new Error('the function takes two required arguments');
+                }
+
+                (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+                    (arr === undefined) ? error('no link array') :
+                    (type === undefined) ? error('no file type') : '';
+                new_file(arr[count]);
+            }
+
+            add_files(vueLinks, 'script');
+        </script>
+<div class="row-all">
+    <!-- ВЕРХНЕЕ МЕНЮ TOP START ================================================ -->
+
+    <div class="menu-top" id="home-page-diff-menu-top">
+        <div class="container">
+            <div class="row">
+                <a class="col-md-2 col-6 logo-img" href="/"><img v-bind:src=" logoLink "></a>
+                <div class="col-5 but-menu-mobile">
+                    &nbsp;
+                </div>
+
+                <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
+
+                <div class="col-md-10 col-10 mobile_agent">
+                    <div id="exit_menu">
+                        X
+                    </div>
+                    <div class="row menu-label">
+                        <a class="label-menu" v-bind:href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameLV}}</a>
+                        <a class="label-menu" v-bind:href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameLV}}</a>
+                        <a class="label-menu" v-bind:href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameLV}}</a>
+                        <a class="label-menu" v-bind:href=" menuItemShopLink " target="_blank">{{menuItemShopNameLV}}</a>
+                        <div class="label-menu" style="position: relative;cursor: pointer">
+                            <a v-bind:href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameLV}}</a>
+                            <div class="label-menu-2">
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemFunSunLink "><img alt="FN_logo" v-bind:src=" menuItemFunSunLogo "></a>
+                                    <div>
+                                        <a v-bind:href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                            {{menuItemFunSunNameLV}}</a>
+                                    </div>
+                                </div>
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemDayNightLink "><img alt="FN_logo" v-bind:src=" menuItemDayNightLogo "></a>
+                                    <div>
+                                        <a v-bind:href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                            {{menuItemDayNightNameLV}}</a>
+                                    </div>
+                                </div>
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemToucanLink "><img alt="FN_logo" v-bind:src=" menuItemToucanLogo "></a>
+                                    <div>
+                                        <a v-bind:href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                            {{menuItemToucanNameLV}}</a>
+                                    </div>
+                                </div>
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
+
+                                    <div><a v-bind:href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameLV1}}<br />
+                                                {{menuItemConceptsAboutNameLV2}}</b></a></div>
+                                </div>
+                            </div>
+                        </div><a class="label-menu" v-bind:href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
+                        <a class="label-menu log enter" data-bind="click: LoginClick" v-bind:href=" menuItemLoginNamelinkLV " target="_blank">{{menuItemLoginNameLV}}</a>
+                    </div>
+                </div>
+
+                <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+
+                <div class="col-md-10">
+                    <div class="row menu-telephone">
+                        <div class="col-md-8 col-7">
+                            <p class="telephone-title">{{menuPhoneTitleLV}}</p>
+                            <p class="telephone-number">{{menuPhonePhoneLV}}</p>
+                        </div>
+                        <a v-bind:href=" menuTouristSiteLinkLV " style="color: black">{{menuTouristSiteNameLV}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
+
+    <!-- TOUCAN HEADER PART START  ============================= -->
+
+    <div class="container-fluid top-slider top-toucan" id="toucan-header-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left-row">
+                    <div class="topLeft row">
+                        <div class="icon-top col-md-2 col-3"><img alt="FN_logo" v-bind:src=" logoLink " /></div>
+                    </div>
+
+                    <h2 style="margin-top:0!important">{{titleLV}}</h2>
+
+                    <div class="col-12 die-all">
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #7ad8f9"><img src="https://www.tui.ru/getmedia/6fba75b5-9bbb-4e6b-b399-48793450c9c8/balloons" /></div>
+
+                            <div class="circle-text col-md-11 d1">{{text1LV}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #23d1c7"><img src="https://www.tui.ru/getmedia/41050458-ae4f-4b13-9ac0-07aef66c0c51/chat" /></div>
+
+                            <div class="circle-text col-md-11 d2">{{text2LV}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #fde900"><img src="https://www.tui.ru/getmedia/16965f15-97a8-4096-9f64-4b2757b885b1/eat" /></div>
+
+                            <div class="circle-text col-md-11 d3">{{text3LV}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #febd00"><img src="https://www.tui.ru/getmedia/c4094300-05e0-46f5-9b31-cd54cee92900/disco" /></div>
+
+                            <div class="circle-text col-md-11 d4">{{text4LV}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #b954af"><img src="https://www.tui.ru/getmedia/e7c4e9b2-14f3-4c4d-ae60-26105ca16ace/tv" /></div>
+
+                            <div class="circle-text col-md-11 d6">{{text5LV}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #b19fd3"><img src="https://www.tui.ru/getmedia/3cbdcadb-5f69-413d-99c7-a8ae9048c07d/cinema" /></div>
+
+                            <div class="circle-text col-md-11 d7">{{text6LV}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #afdf00"><img src="https://www.tui.ru/getmedia/9d5c77fc-36f2-48e7-b759-01d68acd0dfe/playground" /></div>
+
+                            <div class="circle-text col-md-11 d8">{{text7LV}}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 top-right row">
+                    <div class="col-md-6 col-6 video">
+                        <div id="player">&nbsp;</div>
+
+                        <div class="play video-toucan"><img v-bind:src=" videoLink " /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- TOUCAN HEADER PART START  ============================= -->
+    
+    
+    <!-- MENU START ===================================================== -->
+
+    <div class="container" id="toucan-menu">
+        <div class="row">
+            <div class="buttons-slider button-slider-mobile col-md-12">
+                <a class="col-md-2 col-12 button-slider button-slider-active" id="tb" href="#advantagesHotels">
+                    <p>{{menu1LV}}</p>
+                </a>
+
+                <a class="button-slider col-md-1 col-12" href="#fishka">
+                    <p>{{menu2LV}}</p>
+                </a>
+
+                <a class="button-slider col-md-2 col-12" href="#hotels">
+                    <p>{{menu3LV}}</p>
+                </a>
+
+                <a class="button-slider col-md-3 col-12" v-bind:href=" menu4LinkAgent " target="_blank">
+                    <p>{{menu4LV}}</p>
+                </a>
+
+                <a class="col-md-3 col-12 button-slider" v-bind:href=" menu5LinkLV " target="_blank">
+                    <p>{{menu5LV}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- MENU END ===================================================== -->
+    
+<!-- ТАБЛИЦА ОТЕЛЕЙ START ======================= -->
+
+    <div class="container text-content" id="advantagesHotels">
+        <script id="table-template" type="text/x-handlebars-template">
+            <h2>{{{title_page_origin}}}</h2>
+           <p>{{{description_page_origin}}}</p>
+                    <table class="contentTable">
+                         <tbody>
+                                 <tr>
+                                     <td style="width:50%"><b>{{title}}</b></td>
+                                     <td><b>{{description}}</b></td>
+                                 </tr>
+                         {{#each hotel}}
+                             {{#if country_hotel}}
+                                 <tr>
+                                     <td style="text-align: center" colspan="2">{{country_hotel}}</td>
+                                 </tr>
+                                 {{/if}}
+                           <tr>
+                               <td><a href="{{href_agent_lv}}">{{name_hotel}}</a></td>
+                               <td>{{data_hotel}}</td>
+                           </tr>
+                         {{/each}}
+                       </tbody>
+                     </table>
+                     {{#each table_description}}
+                       {{#if desc_link}}
+                           <a href="{{desc_link}}">{{desc_info}}</a>
+                       {{else}}
+                           <div class="description_table_{{count}}">{{desc_info}}</div>
+                       {{/if}}
+                     {{/each}}
+      </script>
+        <div class="block-table">&nbsp;</div>
+    </div>
+
+    <!-- ТАБЛИЦА ОТЕЛЕЙ END ======================= -->
+  <!-- TOUCAN MAIN PAGE START ================================== -->
+
+    <div id="toucan-main-page">
+        <div class="container" id="fishka">
+            <h2>{{titleLV}}</h2>
+        </div>
+
+        <div class="container hotels-club-country sl">
+            <div class="buttons-navigations">
+                <a class="button-navigatin active-link" data-block=".slider_1" href="#s1b1">{{menu1LV}}</a> <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Веселимся с Туканом -->
+                <a class="button-navigatin" data-block=".slider_1" href="#s1b2">{{menu2LV}}</a> <!-- КЛЮЧЕВЫЕ МОМЕНТЫ В ресторане -->
+                <a class="button-navigatin" data-block=".slider_1" href="#s1b3">{{menu3LV}}</a> <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Территория детства -->
+            </div>
+            <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Веселимся с Туканом -->
+
+        <div class="slider slider_1" id="s1b1">
+                <div class="row-slider" data-col="3">
+                    <div class="col-md-4 myslide col-slider-3" v-for="keySlider1item in keySlider1items">
+                        <div class="sliders-hotels" >
+                            <div class="imgSlider" v-bind:style=" keySlider1item.background ">&nbsp;</div>
+
+                            <div class="slider-content">
+                                <h4>{{keySlider1item.nameLV}}</h4>
+
+                                <p class="gey_p text-blue-color">{{keySlider1item.textLV}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- КЛЮЧЕВЫЕ МОМЕНТЫ В РЕСТОРАНЕ -->
+
+            <div class="slider slider_1 n" id="s1b2">
+                <div class="row-slider" data-col="3">
+                    <div class="col-md-4 myslide col-slider-3" v-for="keySlider2item in keySlider2items">
+                        <div class="sliders-hotels" >
+                            <div class="imgSlider" v-bind:style=" keySlider2item.background ">&nbsp;</div>
+
+                            <div class="slider-content">
+                                <h4>{{keySlider2item.nameLV}}</h4>
+
+                                <p class="gey_p text-blue-color">{{keySlider2item.textLV}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Территория детства -->
+
+            <div class="slider slider_1 n" id="s1b3">
+                <div class="row-slider" data-col="3">
+                    <div class="col-md-4 myslide col-slider-3" v-for="keySlider3item in keySlider3items">
+                        <div class="sliders-hotels" >
+                            <div class="imgSlider" v-bind:style=" keySlider3item.background ">&nbsp;</div>
+
+                            <div class="slider-content">
+                                <h4>{{keySlider3item.nameLV}}</h4>
+
+                                <p class="gey_p text-blue-color">{{keySlider3item.textLV}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+     <div class="row-ski">
+
+            <div class="container oae" id="ski-oae">
+                <h2 style="font-size: 1.9em!important;">{{title2LV}}</h2>
+
+                <div class="icons-oae">
+                    <div class="col-md-2" style="height: 250px">&nbsp;</div>
+                </div>
+            </div>
+
+            <div class="container">
+            <p style="color: #082a5e"><br />
+                {{text2LV}} 
+                <a class="hotel__link" v-bind:href=" hotel4LinkAgent ">{{hotel4Name}}</a> , 
+                <a class="hotel__link" v-bind:href=" hotel5LinkAgent ">{{hotel5Name}}</a> и
+                <a class="hotel__link" v-bind:href=" hotel1LinkAgent ">{{hotel1Name}}</a> {{text2_1LV}}
+            </p> 
+            &nbsp;
+
+            
+
+            <p style="margin: 0.5em 0 0"><strong>{{text12LV}}</strong></p>
+            <br>
+            <ul v-for=" text12SpisokItem in text12SpisokItems ">
+                <li>{{ text12SpisokItem.itemLV }}</li>
+
+            </ul>
+            <br>
+        </div>
+
+            <!--<div>
+                <div class="container">
+                    <h2>{{title5LV}}</h2>
+                </div>
+            </div>-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"><img alt="" v-bind:src=" blockImage1 " /></div>
+
+                    <div class="col-md-6">
+                        
+                        
+
+
+
+
+                        <p style="margin: 0.5em 0 0"><strong>{{text7LV}}</strong></p>
+
+                        <ul>
+                            <li><a v-bind:href=" hotel4LinkAgent ">{{hotel4Name}}</a>{{text8LV}}</li>
+                            <li><a v-bind:href=" hotel5LinkAgent ">{{hotel5Name}}</a>{{text9LV}}</li>
+                            <li><a v-bind:href=" hotel1LinkAgent ">{{hotel1Name}}</a>{{text13LV}}</li>
+                        </ul>
+                        <br>
+                        <p style="margin: 0.5em 0 0"><strong>{{text5LV}}</strong></p>
+                        
+                        <p style="margin: 0.5em 0 0">{{time1}}</p>
+                        <p style="margin: 0.5em 0 0">{{time2}}</p>
+                        <p style="margin: 0.5em 0 0">{{time3}}</p>
+                        <br>
+
+                        <p>{{text10LV}} <a v-bind:href=" mailLVLink " style="color: inherit!important">{{mailLV}}</a> {{text11LV}} </p>
+                        <br>
+                        
+                        <div class="row price">
+                            <div class="col-md-5">
+                                <p class="tour_a"><a class="scroled-link" href="#miniTucoun">{{button1LV}}</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- TOUCAN ОТЕЛИ СТАРТ ======================================= -->
+       
+<div class="container-fluid block_3" id="hotels-toucan">
+        <div class="container">
+            <h2>{{titleLV}}</h2>
+        </div>
+
+        <div class="row">
+            <div class="container sl" id="miniTucoun">
+                <div class="buttons-navigations">
+                    <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b2">{{country1LV}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b4">{{country2LV}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b5">{{country3LV}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b6">{{country4LV}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b7">{{country5LV}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b8">{{country6LV}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b10">{{country7LV}}</a><!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ -->
+                </div>
+
+                        
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
+                <div class="slider slider_2 " id="s2b2">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country1Hotel in country1Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country1Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country1Hotel.countryNameLV }}</h4>
+
+                                    <p class="gey_p">{{ country1Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLVItem in country1Hotel.aboutHotelLVItems"> {{ aboutHotelLVItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country1Hotel.hotelLinkAgent ">{{ country1Hotel.buttonLV }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Андорра -->
+                <div class="slider slider_2 n" id="s2b3">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country2Hotel in country2Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country2Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country2Hotel.countryNameLV }}</h4>
+
+                                    <p class="gey_p">{{ country2Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLVItem in country2Hotel.aboutHotelLVItems"> {{ aboutHotelLVItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country2Hotel.hotelLinkAgent ">{{ country2Hotel.buttonLV }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Андорра -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр -->
+                <div class="slider slider_2 n" id="s2b4">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country3Hotel in country3Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country3Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country3Hotel.countryNameLV }}</h4>
+
+                                    <p class="gey_p">{{ country3Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLVItem in country3Hotel.aboutHotelLVItems"> {{ aboutHotelLVItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country3Hotel.hotelLinkAgent ">{{ country3Hotel.buttonLV }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория -->
+                <div class="slider slider_2 n" id="s2b5">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country4Hotel in country4Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country4Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country4Hotel.countryNameLV }}</h4>
+
+                                    <p class="gey_p">{{ country4Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLVItem in country4Hotel.aboutHotelLVItems"> {{ aboutHotelLVItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country4Hotel.hotelLinkAgent ">{{ country4Hotel.buttonLV }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия -->
+                <div class="slider slider_2 n" id="s2b6">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country5Hotel in country5Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country5Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country5Hotel.countryNameLV }}</h4>
+
+                                    <p class="gey_p">{{ country5Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLVItem in country5Hotel.aboutHotelLVItems"> {{ aboutHotelLVItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country5Hotel.hotelLinkAgent ">{{ country5Hotel.buttonLV }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Испания -->
+                <div class="slider slider_2 n" id="s2b7">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country6Hotel in country6Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country6Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country6Hotel.countryNameLV }}</h4>
+
+                                    <p class="gey_p">{{ country6Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLVItem in country6Hotel.aboutHotelLVItems"> {{ aboutHotelLVItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country6Hotel.hotelLinkAgent ">{{ country6Hotel.buttonLV }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Испания -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Россия -->
+                <div class="slider slider_2 n" id="s2b8">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country7Hotel in country7Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country7Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country7Hotel.countryNameLV }}</h4>
+
+                                    <p class="gey_p">{{ country7Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLVItem in country7Hotel.aboutHotelLVItems"> {{ aboutHotelLVItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country7Hotel.hotelLinkAgent ">{{ country7Hotel.buttonLV }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Россия -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ ========== -->
+                <div class="slider slider_2 n" id="s2b10">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country8Hotel in country8Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country8Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country8Hotel.countryNameLV }}</h4>
+
+                                    <p class="gey_p">{{ country8Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLVItem in country8Hotel.aboutHotelLVItems"> {{ aboutHotelLVItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country8Hotel.hotelLinkAgent ">{{ country8Hotel.buttonLV }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ ========== -->
+                
+            </div>
+        </div>
+    </div>
+    
+   
+  <!-- TOUCAN ОТЕЛИ END ======================================= --> 
+
+    <!-- TOUCAN РАЗВЛЕКАТЕЛЬНАЯ ПРОГРАММА START ==============================-->
+    <div id="toucan-party-program">
+        <div class="container">
+            <h2 style="text-transform: uppercase;">{{titleLV}}</h2>
+        </div>
+
+        <div class="container hotels-club-country sl promotion">
+            <div class="buttons-navigations">
+                <a class="button-navigatin active-link" data-block=".slider_3" href="#s3b1">{{menu1LV}}</a>
+            </div>
+
+            <div class="slider slider_3" id="s3b1">
+                <div class="row-slider" data-col="4">
+
+                    <div class="col-md-4 myslide col-slider-4" v-for="slider1item in slider1items">
+                        <div class="sliders-hotels hap-programs" v-bind:style=" slider1item.background ">
+                            <div class="info-img">
+                                <h4>{{slider1item.aboutLV}}</h4>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TOUCAN РАЗВЛЕКАТЕЛЬНАЯ ПРОГРАММА END ==============================-->
+
+    <!-- ПРОГРАММА ТУКАН START ============================== -->
+
+    <div class="container download-file-block" style="width: 100%;margin: auto!important" id="toucan-programm">
+        <div style="background:#e1f4fb;padding: 10px 7px;" v-for=" programm in programms">
+            <div style="margin-top:10px;text-align:center;">
+                <span v-bind:style=" programm.icon ">
+                    
+                </span>
+                <a v-bind:href=" programm.linkLV " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">{{ programm.titleLV }}</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- ПРОГРАММА ТУКАН END ============================== -->
+
+
+    <!-- FOOTER START =================================================== -->
+
+    <div class="container-fluid footer-informations" style="margin-top: 7em" id="toucan-footer">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>{{title1LV}}</h3>
+                        <a v-bind:href=" link1 ">{{ linkTitle1LV }}</a><br />
+                        <a v-bind:href=" link2LV ">{{linkTitle2LV}}</a><br />
+                        <a v-bind:href=" link3LV ">{{linkTitle3LV}}</a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h3>{{title2LV}}</h3><br>
+                        <a v-bind:href=" telLinkLV ">{{telLV}}</a><br> <a v-bind:href=" mailLV ">{{mailLV}}</a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h3>{{title3LV}}</h3>
+
+                        <div class="row icons-footer icons-footer_toucan col-10 col-md-12"><a v-bind:href=" instLink "><img v-bind:src="instLogo" /></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER END =================================================== -->
+</div>
+
+        
+        <script src="https://www.youtube.com/iframe_api" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+            var videoId = 'TF6Qc5ILjl4';
+        </script>
+        <script src="https://www.tui.ru/getmedia/6313a4ad-c578-45aa-a371-a4a959ccc340/video/" type="text/javascript">
+        </script>
+   
+<script type="text/javascript">
+    var template_script = document.createElement("script");
+    template_script.src = "https://www.tui.ru/getmedia/91751be2-e1fb-443e-b4f4-66aab0b2a7f2/template_engine";
+    document.head.appendChild(template_script);
+    template_script.onload = function() {
+        on_page(render("#table-template", ".block-table", table_tc_lv))
+    }
+
+    function smoothScrolling(element) {
+        document.querySelector(element).scrollIntoView({
+            block: "start",
+            behavior: "smooth"
+        });
+    }
+</script>

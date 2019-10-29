@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://www.tui.ru/getmedia/2d2c07ca-d644-47a6-a242-1b3b2af5f750/style-dif/" rel="stylesheet" type="text/css">
+    <link href="https://www.tui.ru/getmedia/bf6ea601-998f-4d12-a155-de9eb383a651/style/" rel="stylesheet" type="text/css">
+    <link href="https://www.tui.ru/getmedia/0414d9ba-58ad-4eb8-935f-82cd7ca4fa17/carusel-style/" rel="stylesheet" type="text/css">
+    <link href="https://www.tui.ru/main.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+    <link href="https://www.tui.ru/getmedia/c6ca8049-a79e-4d9f-afb1-6cf475407d34/style" rel="stylesheet" type="text/css">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <style type="text/css">
+        .row-all {
+            background-color: white;
+        }
+
+        .menu-top {
+            background: #029fe9;
+        }
+
+        .logo-img {
+            padding: 1.5em;
+        }
+
+        .label-menu {
+            background-color: #7bc5f0;
+            color: #092a5e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 0 2px 2px;
+            padding: 10px;
+            margin-right: 15px;
+        }
+
+        .log {
+            margin-left: 20px;
+            border-radius: 3px;
+            background-color: #0f83dd;
+            color: white;
+        }
+
+        .label-menu-2 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 130%;
+            overflow: hidden;
+            display: none;
+        }
+
+        /*#c2e6fa*/
+
+        .menu-label div:hover>.label-menu-2 {
+            z-index: 1;
+            margin-top: 47px;
+            background: white;
+            display: block;
+            border-top: 5px solid #029fe9;
+        }
+
+        .concept-link {
+            padding: 10px 2px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            /*justify-content: center;*/
+        }
+
+        .concept-link a {
+            color: #092a5e !important;
+        }
+
+        .concept-link img {
+            width: 50px;
+            margin: 15px;
+        }
+
+        .concept-link:hover {
+            transition: 0.5s;
+            background: #c2e6fa;
+        }
+
+        .telephone-title,
+        .telephone-number {
+            margin: 0;
+        }
+
+        .menu-telephone {
+            margin-top: 15px;
+            color: white;
+            font-weight: bold;
+            align-items: center;
+        }
+
+        .telephone-number {
+            font-size: 25px;
+        }
+
+        .sprite {
+            background: url(http://agent.tui.ru/App_Themes/AgencyCommonStyles/img/sprites/sprite.png) 0 0;
+        }
+
+        .time-start {
+            display: none;
+        }
+
+        @media screen and (max-width: 792px) {
+            .top-informations {
+                width: 100% !important;
+            }
+        }
+
+        /* отключаем футер и хедер и убираем ширину шаблона на  агентском сайте */
+        .pageWrapper {
+            width: 100% !important;
+        }
+
+        .mainHeader {
+            display: none !important;
+        }
+
+        .contentFooter {
+            display: none !important;
+        }
+
+        .mainFooter {
+            display: none !important;
+        }
+
+        /* отключаем футер и хедер и убираем ширину шаблона на  агентском сайте */
+    </style>
+    <title></title>
+</head>
+
+
+<body>
+    <div class="row-all">
+        <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
+       
+        <div class="menu-top" id="home-page-diff-menu-top">
+            <div class="container">
+                <div class="row">
+                    <a class="col-md-2 col-6 logo-img" href="/"><img :src=" logoLink "></a>
+                    <div class="col-5 but-menu-mobile">
+                        &nbsp;
+                    </div>
+
+                    <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
+
+                    <div class="col-md-10 col-10 mobile_agent">
+                        <div id="exit_menu">
+                            X
+                        </div>
+                        <div class="row menu-label">
+                            <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameEE}}</a> 
+                            <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameEE}}</a> 
+                            <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameEE}}</a> 
+                            <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameEE}}</a>
+                            <div class="label-menu" style="position: relative;cursor: pointer">
+                                <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameEE}}</a>
+                                <div class="label-menu-2">
+                                    <div class="concept-link">
+                                        <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
+                                        <div>
+                                            <a :href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                                {{menuItemFunSunNameEE}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a :href=" menuItemDayNightLink "><img alt="FN_logo" :src=" menuItemDayNightLogo "></a>
+                                        <div>
+                                            <a :href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                                {{menuItemDayNightNameEE}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a :href=" menuItemToucanLink "><img alt="FN_logo" :src=" menuItemToucanLogo "></a>
+                                        <div>
+                                            <a :href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                                {{menuItemToucanNameEE}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a :href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
+
+                                        <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameEE1}}<br />
+                                                    {{menuItemConceptsAboutNameEE2}}</b></a></div>
+                                    </div>
+                                </div>
+                            </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a> 
+                            <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkEE " target="_blank">{{menuItemLoginNameEE}}</a>
+                        </div>
+                    </div>
+
+                    <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+
+                    <div class="col-md-10">
+                        <div class="row menu-telephone">
+                            <div class="col-md-8 col-7">
+                                <p class="telephone-title">{{menuPhoneTitleEE}}</p>
+                                <p class="telephone-number">{{menuPhonePhoneEE}}</p>
+                            </div>
+                            <a :href=" menuTouristSiteLinkEE " style="color: black">{{menuTouristSiteNameEE}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
+        
+       
+      
+   
+        <style type="text/css">
+            .content-block div,
+            .head div,
+            .content-block p,
+            .head p {
+                line-height: normal;
+            }
+
+            body {
+                font-family: TUI-reg, TUI;
+            }
+
+            #content {
+                max-width: unset !important;
+            }
+
+            .head {
+                position: relative;
+                background: url('https://www.tui.ru/getmedia/217e8dde-1d10-4d87-934e-025ec62406be/head_new') top center;
+                width: 100%;
+                height: 471px;
+            }
+
+            .head .center-block {
+                width: 1150px;
+                max-width: 1150px;
+                margin: 0 auto;
+                position: relative;
+                height: 471px;
+            }
+
+            .head .white-box {
+                position: absolute;
+                top: 18%;
+                left: 0;
+                padding: 30px 30px 0 30px;
+                background: #ffffff;
+                background-color: rgba(255, 255, 255, 0.8);
+                width: 38%;
+                max-width: 475px;
+            }
+
+            .head .white-box .header {
+                font-size: 30px;
+                font-weight: bold;
+                color: #092a5f;
+            }
+
+            .head .white-box .comment {
+                margin: 20px 0 30px 0;
+                font-size: 19px;
+                color: #092a5f;
+            }
+
+            .head .white-box .button-choice {
+                font-size: 19px;
+                text-transform: uppercase;
+                width: 93%;
+                cursor: pointer;
+                margin: -5px 0 67px 0;
+                background: #092a5f;
+                color: #ffffff;
+                text-align: center;
+            }
+
+            .head .white-box .button-choice a {
+                display: block;
+                color: #ffffff;
+                padding: 13px;
+            }
+
+            .head .details {
+                position: absolute;
+                left: 0;
+                font-size: 15px;
+                color: #092a5f;
+                margin: 0 30px 0 30px;
+                line-height: 0.95;
+                bottom: 15px;
+            }
+
+            .content-block {
+                position: relative;
+                display: block;
+                width: 1150px;
+                max-width: 1150px;
+                margin: 20px auto;
+                /*padding:0 5%;*/
+                /*width:90%; */
+            }
+
+            .content-block .text {
+                margin: 40px 0;
+                font-size: 18px;
+                padding: 0 0;
+            }
+
+            .content-block .block-head {
+                overflow: hidden;
+                width: 762px;
+                margin: 0 0;
+            }
+
+            .content-block .block-head .logo {
+                float: left;
+                margin-left: 12px;
+                width: 121px;
+                min-height: 90px;
+            }
+
+            .content-block .block-head .logo img {
+                width: auto;
+            }
+
+            .content-block .block-head .about {
+                float: right;
+                width: 616px;
+                min-height: 90px;
+            }
+
+            .content-block .block-head .about .name {
+                font-size: 27px;
+                font-weight: bold;
+                color: #092a5f;
+            }
+
+            .content-block .block-head .about .text {
+                margin: 20px 0 0 0;
+            }
+
+            .content-block .block-head .about ul.text {
+                margin: 20px 0 0 30px;
+            }
+
+            .content-block .block {
+                overflow: hidden;
+                width: 100%;
+                margin: 40px 0 60px 0;
+            }
+
+            .content-block .block div.video,
+            .content-block .block div.video2,
+            .content-block .block div.video3 {
+                float: left;
+                display: block;
+                width: 762px;
+                height: 360px;
+            }
+
+            .content-block .block div.video3 {
+                height: 476px;
+            }
+
+            .content-block .block a.more {
+                display: block;
+                position: absolute;
+                bottom: 30px;
+                right: 30px;
+                width: 155px;
+                padding: 20px;
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: none;
+                border-radius: 3px;
+                background: #fee101;
+                color: #082a5e;
+                box-shadow: 2px 4px 12px #545454;
+                z-index: 1;
+            }
+
+            .content-block .block div.video a.more:hover {
+                text-decoration: underline;
+            }
+
+            .content-block .block .list {
+                float: right;
+                width: 368px;
+                padding: 0 20px 20px 20px;
+                min-height: 360px;
+                margin-left: 20px;
+                color: #082a5e;
+                background: #e2f3fd;
+            }
+
+            .content-block .block .list .header {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 20px 0 30px 0;
+            }
+
+            .content-block .block .list .header.country {
+                margin: 20px 0 0 0;
+                text-transform: uppercase;
+            }
+
+            .content-block .block .list .link {
+                margin: 2px 0;
+            }
+
+            .content-block .block .list .link a {
+                color: #082a5e;
+                text-decoration: underline !important;
+                font-size: 17px;
+            }
+
+            div.video,
+            div.video2,
+            div.video3 {
+                width: 300px;
+                position: relative;
+                margin-bottom: 3em;
+                min-height: 158px;
+            }
+
+            .video-fs.picture1 {
+                border: none;
+                background-image: url(https://www.tui.ru/getmedia/7a78fe91-71b1-4e60-b2d3-6e666ad89fab/1?2);
+            }
+
+            .video-fs.picture2 {
+                background-image: url(https://www.tui.ru/getmedia/b68e6a76-70e2-4f68-b4f1-c9fd8ab63c82/2?2);
+            }
+
+            .video-fs.picture3 {
+                background-image: url(https://www.tui.ru/getmedia/df4a85df-6800-4ea6-9fe5-268f00168cc9/3?2);
+            }
+
+            .play,
+            .play2,
+            .play3 {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                right: 0;
+                cursor: pointer;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .play img,
+            .play2 img,
+            .play3 img {
+                width: 156px;
+                opacity: 0.65;
+            }
+
+            .playOn,
+            .playOn2,
+            .playOn3 {
+                display: none;
+            }
+
+            .play img:hover,
+            .play2 img:hover,
+            .play3 img:hover {
+                transition: 0.5s;
+                opacity: 1;
+            }
+
+            .footer-not-main {
+                background: #70cbf4;
+                width: 100%;
+            }
+
+            .footer-not-main .centered {
+                max-width: 1150px;
+                margin: 0 auto;
+                line-height: 1.5;
+                padding: 18px 0px;
+                overflow: hidden;
+            }
+
+            .footer-not-main .centered .left {
+                width: 50%;
+                float: left;
+                line-height: 1.5;
+            }
+
+            .footer-not-main .centered .right {
+                width: 50%;
+                float: right;
+                line-height: 1.5;
+            }
+
+            .footer-not-main .centered h3 {
+                margin: 0 0 10px 0;
+                color: #092a5e;
+                font-size: 21px;
+            }
+
+            .footer-not-main .centered a {
+                color: #092a5e !important;
+                font-size: 18px;
+                text-decoration: none;
+            }
+
+            @media screen and (max-width: 1000px) {
+                .head .details {
+                    font-size: 12px;
+                    margin: 0 30px;
+                }
+            }
+
+            @media screen and (min-width: 1201px) {
+                .head .white-box .comment span {
+                    display: block;
+                }
+            }
+
+            @media screen and (max-width: 520px) {
+                .head {
+                    background: url('https://www.tui.ru/getmedia/36469e66-2c4b-4c0d-a55f-defeaed8bbad/head_mobile') top center;
+                }
+
+                .content-block .block div.video,
+                .content-block .block div.video2,
+                .content-block .block div.video3 {
+                    height: 133px !important;
+                }
+
+                .footer-not-main .centered .left {
+                    float: none;
+                    margin-left: 30px;
+                    width: 80%;
+                }
+
+                .footer-not-main .centered .right {
+                    float: none;
+                    margin-top: 20px;
+                    margin-left: 30px;
+                    width: 80%;
+                }
+            }
+
+            @media screen and (max-width: 792px) {
+                .head .white-box {
+                    min-width: 280px;
+                    width: 280px;
+                    padding: 30px 20px 0 20px;
+                    max-height: 280px;
+                    top: 25%;
+                    left: 50%;
+                    margin-left: -140px;
+                }
+
+                .head .white-box .button-choice {
+                    width: 100%;
+                    margin-top: -21px;
+                    font-size: 19px;
+                    line-height: 1.2;
+                }
+
+                .content-block {
+                    padding: 0 4%;
+                    width: 92%;
+                    margin-top: -20px;
+                }
+
+                .content-block .block a.more {
+                    bottom: 10px;
+                    padding: 2% 5%;
+                    right: 10px;
+                    width: auto;
+                }
+            }
+
+            @media screen and (max-width: 1200px) {
+
+                .play img,
+                .play2 img,
+                .play3 img {
+                    width: 20%;
+                }
+
+                .content-block .block div.video3 {
+                    height: 360px;
+                }
+
+                .head .center-block {
+                    width: 92%;
+                }
+
+                .content-block {
+                    width: 92%;
+                    margin-top: -20px;
+                }
+
+                .head .white-box .header {
+                    font-size: 21px;
+                    margin-top: -10px;
+                }
+
+                .head .white-box .comment {
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+
+                .content-block .block-head .logo {
+                    margin: 0 0 -23px 0;
+                    float: none;
+                    width: auto;
+                }
+
+                .content-block .block-head .logo img {
+                    width: 44px;
+                }
+
+                .content-block .block-head .about {
+                    float: none;
+                    width: auto;
+                    margin-top: 0;
+                }
+
+                .content-block .block-head {
+                    width: auto;
+                }
+
+                .content-block .block-head .about .name {
+                    margin-bottom: 10px;
+                    font-size: 22px;
+                }
+
+                .content-block .block {
+                    max-width: 762px;
+                    margin: 22px auto 40px auto;
+                }
+
+                .content-block .block div.video,
+                .content-block .block div.video2,
+                .content-block .block div.video3 {
+                    float: none;
+                    width: 100%;
+                    margin-bottom: 0;
+                }
+
+                .content-block .block .list {
+                    float: none;
+                    width: 100%;
+                    margin: 0;
+                    padding-top: 1px;
+                    min-height: auto;
+                }
+            }
+
+            @media screen and (min-width: 521px) and (max-width: 1200px) {
+                .footer-not-main .centered {
+                    max-width: 520px;
+                    padding-left: 30px;
+                }
+            }
+
+            @media screen and (min-width: 751px) {
+                .ActionPage-container {
+                    padding-bottom: 0 !important;
+                }
+            }
+        </style>
+        <script type="text/javascript">
+            var pageRow = document.querySelector(".ActionPage-container");
+            (pageRow) ? pageRow.setAttribute("style", "width: 100%!important; max-width: 100%!important"): console.log("ActionPage-container = NULL");
+            //подключение loader_jquery
+            var j = document.createElement('script');
+            j.src = "https://www.tui.ru/getmedia/99a1aa2d-faa8-4397-a97c-4ec52627d0b3/tui_jquery_loader/";
+            document.head.appendChild(j);
+
+            j.onload = function() {
+                var links = ["https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"];
+                loader_jquery(links, function() {
+                    /*
+                    $(".head .white-box .button-choice").click(function() {
+                      $('html,body').animate({scrollTop: $(".block-head").eq(0).offset().top-30},'slow');
+                    });
+                    */
+                    $(".video-fs").click(function() {
+                        $(this).parent().find('.more').css({
+                            "bottom": "42px"
+                        });
+                    });
+                });
+            }
+        </script>
+        <!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
+       <div class="head" id="home-page-first-block">
+            <div class="center-block">
+                <div class="white-box">
+                    <p class="header">{{firstBlockHeadNameEE1}}<br>
+                        {{firstBlockHeadNameEE2}}</p>
+                    <p class="comment"><span>{{firstBlockHeadCommentEE1}}</span> <span>{{firstBlockHeadCommentEE2}}</span></p>
+                    <div class="button-choice">
+                        <a v-bind:href=" firstBlockHeadPresentaionLink " target="_blank">{{firstBlockHeadPresentaionEE}}</a>
+                    </div>
+                    <div class="details">
+                        {{firstBlockHeadDeatilsEE}}
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- ПЕРВЫЙ БЛОК END =========================================================== -->
+        <div class="content-block">
+            <!-- TEXT START =========================================================== -->
+            <div class="text" id="home-page-text-block">
+                <strong>{{homePageTextBlockEE1}}</strong>{{homePageTextBlockEE2}}<br>
+                <br>
+                {{homePageTextBlockEE3}}
+            </div>
+            <!-- TEXT END =========================================================== -->
+            <!-- FUN SUN BLOCK TEXT START =========================================================== -->
+            <div class="block-head" id="home-page-fun-sun-block-text">
+                <div class="logo"><img v-bind:src=" homePageFunSunBlockLogo "></div>
+                <div class="about">
+                    <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                        {{homePageFunSunBlockTitleEE1}}
+                    </div>
+                    <div class="name">
+                        {{homePageFunSunBlockTitleEE2}}
+                    </div>
+                    <p class="text">{{homePageFunSunBlockTextEE1}}</p>
+                    <p class="text">{{homePageFunSunBlockTextEE2}}</p>
+                </div>
+            </div>
+            <!-- FUN SUN BLOCK TEXT START =========================================================== -->
+            <!-- FUN SUN BLOCK VIDEO AND HOTELS START =========================================================== -->
+            <div class="block" id="home-page-fun-sun-block-video-hotels">
+                <div class="video">
+                    <a class="more" v-bind:href=" homeFunSunBlockPageLink " target="_blank">{{homeFunSunBlockPageLinkTextEE}}</a>
+                    <div id="player"></div>
+                    <div class="play video-fs picture1"><img v-bind:src=" homeFunSunBlockPageImage "></div>
+                </div>
+                <div class="list">
+                    <div class="header">
+                        {{homeFunSunBlockPageTitleEE}}
+                    </div>
+                    <div class="header country">
+                        {{homeFunSunBlockPageTurkeyEE}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink1 " target="_blank">{{homeFunSunHotelName1}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink2 " target="_blank">{{homeFunSunHotelName2}}</a>
+                    </div>
+                    <!--<div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink3 " target="_blank">{{homeFunSunHotelName3}}</a>
+                    </div>-->
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink4 " target="_blank">{{homeFunSunHotelName4}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink5 " target="_blank">{{homeFunSunHotelName5}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink6 " target="_blank">{{homeFunSunHotelName6}}</a>
+                    </div>
+                    <!--<div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink7 " target="_blank">{{homeFunSunHotelName7}}</a>
+                    </div>-->
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink8 " target="_blank">{{homeFunSunHotelName8}}</a>
+                    </div>
+                    <div class="header country">
+                        {{homeFunSunBlockPageCyprysEE}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink9 " target="_blank">{{homeFunSunHotelName9}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink10 " target="_blank">{{homeFunSunHotelName10}}</a>
+                    </div>
+                </div>
+            </div>
+            <!-- FUN SUN BLOCK VIDEO AND HOTELS END =========================================================== -->
+            <!-- DAY NIGHT BLOCK TEXT START =========================================================== -->
+            <div class="block-head" id="home-page-day-night-block-text">
+                <div class="logo"><img v-bind:src=" homePageDayNightBlockLogo "></div>
+                <div class="about">
+                    <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                        {{homePageDayNightBlockTitleEE1}}
+                    </div>
+                    <div class="name">
+                        {{homePageDayNightBlockTitleEE2}}
+                    </div>
+                    <p class="text">{{homePageDayNightBlockTextEE1}}</p>
+                    <p class="text">{{homePageDayNightBlockTextEE2}}</p>
+                    <p class="text">{{homePageDayNightBlockTextEE3}}</p>
+                </div>
+            </div>
+            <!-- DAY NIGHT BLOCK TEXT END =========================================================== -->
+            <!-- DAY NIGHT BLOCK VIDEO AND HOTELS START =========================================================== -->
+            <div class="block" id="home-page-day-night-block-video-hotels">
+                <div class="video2">
+                    <a class="more" v-bind:href=" homeDayNightBlockPageLink " target="_blank">{{homeDayNightBlockPageLinkTextEE}}</a>
+                    <div id="player2"></div>
+                    <div class="play2 video-fs picture2"><img v-bind:src=" homeDayNightBlockPageImage "></div>
+                </div>
+                <div class="list">
+                    <!--<div class="header"></div>-->
+                    <div class="header country">
+                        {{homeDayNightBlockPageTurkeyEE}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink1 " target="_blank">{{homeFunSunHotelName1}}</a>
+                    </div>
+                    <!--<div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink2 " target="_blank">{{homeFunSunHotelName2}}</a>
+                    </div>-->
+                </div>
+            </div>
+            <!-- DAY NIGHT BLOCK VIDEO AND HOTELS END =========================================================== -->
+            <!-- TOUCAN BLOCK TEXT START =========================================================== -->
+            <div class="block-head" id="home-page-toucan-block-text">
+                <div class="logo"><img v-bind:src=" homePageToucanBlockLogo "></div>
+                <div class="about">
+                    <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                        {{homePageToucanBlockTitleEE1}}
+                    </div>
+                    <div class="name">
+                        {{homePageToucanBlockTitleEE2}}
+                    </div>
+                    <p class="text">{{homePageToucanBlockTextEE1}}<br>
+                        <br>
+                        {{homePageToucanBlockTextEE2}}</p>
+                    <ul class="text" style="list-style-type:disc">
+                        <li>{{homePageToucanBlockSpisokItemEE1}}</li>
+                        <li>{{homePageToucanBlockSpisokItemEE2}}</li>
+                        <li>{{homePageToucanBlockSpisokItemEE3}}</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- TOUCAN BLOCK TEXT END =========================================================== -->
+            <!-- TOUCAN BLOCK VIDEO AND HOTELS START =========================================================== -->
+            <div class="block" id="home-page-toucan-block-video-hotels">
+                <div class="video3">
+                    <a class="more" v-bind:href=" homeToucanBlockPageLink " target="_blank">{{homeToucanBlockPageLinkTextEE}}</a>
+                    <div id="player3"></div>
+                    <div class="play3 video-fs picture3"><img v-bind:src=" homeToucanBlockPageImage "></div>
+                </div>
+                <div class="list" style="min-height:476px">
+
+                    <div class="header country">
+                        {{homeToucanBlockPageTurkeyEE}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink1 " target="_blank">{{homeToucanHotelName1}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink2 " target="_blank">{{homeToucanHotelName2}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink3 " target="_blank">{{homeToucanHotelName3}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink4 " target="_blank">{{homeToucanHotelName4}}</a>
+                    </div>
+                    <div class="header country">
+                        {{homeToucanBlockPageCyprusEE}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink5 " target="_blank">{{homeToucanHotelName5}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink6 " target="_blank">{{homeToucanHotelName6}}</a>
+                    </div>
+                    <!--<div class="header country">
+                        {{homeToucanBlockPageMontenegroEE}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink7 " target="_blank">{{homeToucanHotelName7}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink8 " target="_blank">{{homeToucanHotelName8}}</a>
+                    </div>
+                    <div class="header country">
+                        {{homeToucanBlockPageItalyEE}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink9 " target="_blank">{{homeToucanHotelName9}}</a>
+                    </div>-->
+                    <div class="header country">
+                        {{homeToucanBlockPageSpainEE}}
+                    </div>
+                    <!--<div class="link">
+                        <a v-bind:href=" homeToucanHotelLink10 " target="_blank">{{homeToucanHotelName10}}</a>
+                    </div>-->
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink11 " target="_blank">{{homeToucanHotelName11}}</a>
+                    </div>
+                    <!--<div class="header country">
+                        {{homeToucanBlockPageRussiaEE}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink12 " target="_blank">{{homeToucanHotelName12}}</a>
+                    </div>-->
+                    <div class="header country">
+                        {{homeToucanBlockPageOaeEE}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink13 " target="_blank">{{homeToucanHotelName13}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink14 " target="_blank">{{homeToucanHotelName14}}</a>
+                    </div>
+                </div>
+            </div>
+            <!-- TOUCAN BLOCK VIDEO AND HOTELS END =========================================================== -->
+            <!--<h3 style="text-align:center;font-size:22px;">ПОДПИШИТЕСЬ НА НАС</h3>-->
+            <!--<div class="soc-icons-big-block" style="margin:30px auto;width:118px"><a style="margin: 5px;" href="#"><img src="/getmedia/0bf951d7-5db7-48b0-b6ab-898f6f97cf39/logo-instagram-white-copy" /></a><a style="margin: 5px;" href="#"><img src="/getmedia/d2ca2e94-b7ee-4572-a925-2b0f72ac847b/logo-fb-white" /></a></div>-->
+        </div>
+
+        <!-- FOOTER START =================================================== -->
+
+        <div class="footer-not-main" id="home-page-diff-footer">
+            <div class="centered">
+                <div class="left">
+                    <h3 style="">{{agentFooterItemTitleEE}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameEE}}</a><br>
+                    <a :href=" agentFooterItemAgentLinkEE ">{{agentFooterItemAgentLinkNameEE}}</a><br>
+                    <a :href=" agentFooterItemB2bLinkEE ">{{agentFooterItemB2bLinkNameEE}}</a>
+                </div>
+                <div class="right">
+                    <h3>{{agentFooterItemTitle2EE}}</h3>
+                    <a :href=" agentFooterItemPhoneEE ">{{agentFooterItemPhoneNameEE}}</a><br>
+                    <a :href=" agentFooterItemMailEE ">{{agentFooterItemMailNameEE}}</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER END =================================================== -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer"></script>
+    <script src="https://www.tui.ru/getmedia/a89a3517-3f15-4580-ad2f-504f09fafad9/VUE-diff-product-home-page"></script>
+
+    <script src="https://www.youtube.com/iframe_api" type="text/javascript">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript">
+    </script>
+    <script src="https://www.tui.ru/getmedia/9214205f-646e-4ff8-8b2d-613f1852e8ec/js/" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        var videoId1 = 'aNfLM37-szY';
+        var videoId2 = 'x8bvMB_7H4Q';
+        var videoId3 = 'ecAcSMIp3Kc';
+        var video = document.querySelector("div.video");
+        var video2 = document.querySelector("div.video2");
+        var video3 = document.querySelector("div.video3");
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '100%',
+                width: '100%',
+                videoId: videoId1,
+                modestbranding: 1,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            player2 = new YT.Player('player2', {
+                height: '100%',
+                width: '100%',
+                videoId: videoId2,
+                modestbranding: 1,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            player3 = new YT.Player('player3', {
+                height: '100%',
+                width: '100%',
+                videoId: videoId3,
+                modestbranding: 1,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        };
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                done = true;
+            }
+        }
+
+
+        setTimeout(function() {
+            video.addEventListener("click", customVideo);
+            video2.addEventListener("click", customVideo2);
+            video3.addEventListener("click", customVideo3);
+
+            function customVideo(e) {
+                var imgPlay = document.querySelector(".play"),
+                    vid = video.querySelector("#player");
+                if (e.target === vid || e.target.parentNode === imgPlay) {
+                    imgPlay.classList.add("playOn");
+                    (vid.requestFullscreen) ? vid.requestFullscreen():
+                        (vid.mozRequestFullScreen) ? vid.mozRequestFullScreen() :
+                        (vid.webkitRequestFullscreen) ? vid.webkitRequestFullscreen() :
+                        (vid.msRequestFullscreen) ? vid.msRequestFullscreen() : "";
+                    player.playVideo();
+                }
+            }
+
+            function customVideo2(e) {
+                var imgPlay2 = document.querySelector(".play2"),
+                    vid2 = video2.querySelector("#player2");
+                if (e.target === vid2 || e.target.parentNode === imgPlay2) {
+                    imgPlay2.classList.add("playOn2");
+                    (vid2.requestFullscreen) ? vid2.requestFullscreen():
+                        (vid2.mozRequestFullScreen) ? vid2.mozRequestFullScreen() :
+                        (vid2.webkitRequestFullscreen) ? vid2.webkitRequestFullscreen() :
+                        (vid2.msRequestFullscreen) ? vid2.msRequestFullscreen() : "";
+                    player2.playVideo();
+                }
+            }
+
+            function customVideo3(e) {
+                var imgPlay3 = document.querySelector(".play3"),
+                    vid3 = video3.querySelector("#player3");
+                if (e.target === vid3 || e.target.parentNode === imgPlay3) {
+                    imgPlay3.classList.add("playOn3");
+                    (vid3.requestFullscreen) ? vid3.requestFullscreen():
+                        (vid3.mozRequestFullScreen) ? vid3.mozRequestFullScreen() :
+                        (vid3.webkitRequestFullscreen) ? vid3.webkitRequestFullscreen() :
+                        (vid3.msRequestFullscreen) ? vid3.msRequestFullscreen() : "";
+                    player3.playVideo();
+                }
+            }
+
+        }, 1000)
+    </script>
+
+    <script src="https://www.tui.ru/getmedia/6b176d88-6bc0-48fa-aa88-4143bafe5ce4/carousel/" type="text/javascript">
+    </script>
+    <script src="https://www.tui.ru/getmedia/204066fd-7fc3-4009-a67f-5e5c14412ce7/scroll/" type="text/javascript">
+    </script>
+</body>
+
+</html>

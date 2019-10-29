@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+
+<!-- ВНИМАНИЕ!!! НЕ ВАЖНО ЕСЛИ КОНСОЛЬ ПОКАЗЫВАЕТ ЧТО НЕ НАХОДИТ КАКИХ ТО ЭЛЕМЕНТОВ ДЛЯ VUE, ПРОСТО ВСЯ ИНФОРМАЦИЯ ПО КОНКРЕТНЫМ СТРАНИЦАМ НАХОДИТСЯ В ОДНОМ ФАЙЛЕ ДЛЯ УДОБСТВА, НЕ НУЖНО ОБРАЩАТЬ НА ЭТО ВНИМАНИЕ! ЭТО СДЕЛАНО ДЛЯ УДОБСТВА РЕДАКТИРОВАНИЯ НА ВСЕХ ЯЗЫКАХ -->
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://agent.tui.ru/getmedia/dbe51580-c450-4f7d-bedb-35e937713de1/all">
+    <link rel="stylesheet" type="text/css" href="https://agent.tui.ru/dist/css/font-tui/font-tui.css">
+    <link rel="stylesheet" type="text/css" href="https://agent.tui.ru/getmedia/47cc0a77-e60f-48be-b667-526e382be29d/lightslider">
+    <link href="https://www.tui.ru/getmedia/eec19a87-cf5a-40c7-8442-09183e60e372/all" rel="stylesheet" type="text/css" />
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- ШРИФТ =============================================== -->
+<style>
+    @font-face {
+        font-family: 'TUI-reg';
+        src: url('https://www.tui.ru/getmedia/0c02516a-a2de-4325-ba89-f7ac294122a8/TUITypeLight-Regular');
+        src: url('https://www.tui.ru/getmedia/0c02516a-a2de-4325-ba89-f7ac294122a8/TUITypeLight-Regular?#iefix') format('embedded-opentype'),
+            url('https://www.tui.ru/getmedia/953947e9-cb5a-43a7-a16a-1ca276d08920/TUITypeLight-Regular') format('woff2'),
+            url('https://www.tui.ru/getmedia/73494612-776c-4364-b603-208f014e9bff/TUITypeLight-Regular') format('woff'),
+            url('https://www.tui.ru/getmedia/6294bb39-80a5-4825-9b12-a1bd5925de01/TUITypeLight-Regular') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+</style>
+<!-- ШРИФТ =============================================== -->
+<style type="text/css">
+        .button-slider {
+            -webkit-box-shadow: inset 0 -4px 0 0 #67C6F6 !important;
+            -moz-box-shadow: inset 0 -4px 0 0 #67C6F6 !important;
+            box-shadow: inset 0 -4px 0 0 #67C6F6 !important;
+            background-color: #67C6F6 !important;
+        }
+
+        .button-slider-active {
+            -webkit-box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
+            -moz-box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
+            box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
+            background-color: #C3E8FB !important;
+        }
+
+        .logo img {
+            width: 120px !important;
+            margin: 25px 0;
+        }
+    </style>
+<style type="text/css">
+    .info-get-round {
+        margin: 0;
+    }
+
+    .contentWrapper {
+        background: #fff;
+    }
+
+    /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
+    .pageWrapper {
+        width: 100% !important;
+    }
+
+    .mainHeader {
+        display: none !important;
+    }
+
+    .contentFooter {
+        display: none !important;
+    }
+
+    .mainFooter {
+        display: none !important;
+    }
+
+    /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
+</style>
+<body>
+
+    <div class="row-all">
+        <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
+
+        <div class="menu-top" id="home-page-diff-menu-top">
+            <div class="container">
+                <div class="row">
+                    <a class="col-md-2 col-6 logo-img" href="/"><img v-bind:src=" logoLink "></a>
+                    <div class="col-5 but-menu-mobile">
+                        &nbsp;
+                    </div>
+
+                    <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
+
+                    <div class="col-md-10 col-10 mobile_agent">
+                        <div id="exit_menu">
+                            X
+                        </div>
+                        <div class="row menu-label">
+                            <a class="label-menu" v-bind:href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameLT}}</a>
+                            <a class="label-menu" v-bind:href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameLT}}</a>
+                            <a class="label-menu" v-bind:href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameLT}}</a>
+                            <a class="label-menu" v-bind:href=" menuItemShopLink " target="_blank">{{menuItemShopNameLT}}</a>
+                            <div class="label-menu" style="position: relative;cursor: pointer">
+                                <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameLT}}</a>
+                                <div class="label-menu-2">
+                                    <div class="concept-link">
+                                        <a v-bind:href=" menuItemFunSunLink "><img alt="FN_logo" v-bind:src=" menuItemFunSunLogo "></a>
+                                        <div>
+                                            <a v-bind:href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                                {{menuItemFunSunNameLT}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a v-bind:href=" menuItemDayNightLink "><img alt="FN_logo" v-bind:src=" menuItemDayNightLogo "></a>
+                                        <div>
+                                            <a v-bind:href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                                {{menuItemDayNightNameLT}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a v-bind:href=" menuItemToucanLink "><img alt="FN_logo" v-bind:src=" menuItemToucanLogo "></a>
+                                        <div>
+                                            <a v-bind:href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                                {{menuItemToucanNameLT}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a v-bind:href=" menuItemConceptsAboutLink "><img alt="Home_logo" v-bind:src=" menuItemConceptsAboutLogo " /></a>
+
+                                        <div><a v-bind:href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameLT1}}<br />
+                                                    {{menuItemConceptsAboutNameLT2}}</b></a></div>
+                                    </div>
+                                </div>
+                            </div><a class="label-menu" v-bind:href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
+                            <a class="label-menu log enter" data-bind="click: LoginClick" v-bind:href=" menuItemLoginNamelinkLT " target="_blank">{{menuItemLoginNameLT}}</a>
+                        </div>
+                    </div>
+
+                    <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+
+                    <div class="col-md-10">
+                        <div class="row menu-telephone">
+                            <div class="col-md-8 col-7">
+                                <p class="telephone-title">{{menuPhoneTitleLT}}</p>
+                                <p class="telephone-number">{{menuPhonePhoneLT}}</p>
+                            </div>
+                            <a v-bind:href=" menuTouristSiteLinkLT " style="color: black">{{menuTouristSiteNameLT}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
+
+        <!-- AFISHA PAGE NAME START ============================= -->
+        <div class="head head-fs">
+            <div class="container" id="funSunPageAfishaName">
+                <div class="logo col-md-7">
+                <img alt="FN_logo" v-bind:src=" funSunPageAfishaNameLogo ">
+                </div>
+                <div class="information-head col-md-4">
+                    <p><b>{{ funSunPageAfishaNameTitleLT }}</b></p><a class="button_blue center" href="#blockGetRound">{{ funSunPageAfishaNameButtonLT }}</a>
+                </div>
+            </div>
+        </div>
+        <!-- AFISHA PAGE NAME END ============================= -->
+        
+        <div class="head_info">
+
+           
+
+            <!-- FUN SUN PAGE MENU START ===================================-->
+            <div class="container" id="fun-sun-page-menu">
+                <div class="row">
+                    <div class="buttons-slider button-slider-mobile col-md-12">
+                        <a class="col-md-2 col-12 button-slider " id="tb" v-bind:href="funSunPageMenuItemLinkAgent1" target="_blank">
+                            <p>{{funSunPageMenuItemLT1}}</p>
+                        </a>
+
+                        <a class="button-slider col-md-1 col-12" onclick="smoothScrolling('#hotels')">
+                            <p>{{funSunPageMenuItemLT2}}</p>
+                        </a>
+
+                        <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkAgent3" target="_blank">
+                            <p>{{funSunPageMenuItemLT3}}</p>
+                        </a>
+
+                        <a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkAgent4" target="_blank">
+                            <p>{{funSunPageMenuItemLT4}}</p>
+                        </a>
+
+                        <a class="button-slider col-md-2 col-12 button-slider-active" v-bind:href="funSunPageMenuItemLinkAgent5" target="_blank">
+                            <p>{{funSunPageMenuItemLT5}}</p>
+                        </a>
+
+                        <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkAgent6LT" target="_blank">
+                            <p>{{funSunPageMenuItemLT6}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- FUN SUN PAGE MENU END ===================================-->
+           
+            <!-- FUN SUN PAGE AFISHA MAIN INFO START ===================================-->
+            <div class="container" id="funSunPageAfishaMainInfo">
+                <div class="row info-text-parent">
+                    <div class="info-text col-12">
+                        <h2>{{funSunPageAfishaMainInfoTitleLT}}</h2>
+                        <p>{{funSunPageAfishaMainInfoText1LT}}</p>
+                        <p>{{funSunPageAfishaMainInfoText2LT}}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FUN SUN PAGE AFISHA MAIN INFO END ===================================-->
+        </div>
+        
+        <!-- НА УКР РУ БЕЛ баннер нужен, на прибалтике нет, поэтому в линке в конце стоит LT и он не выводится ====== -->
+        <div class="banner" id="funSunPageAfishaBanner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img alt="" v-bind:src=" funSunPageAfishaBannerLinkLT ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="blockGetRound">
+            <div class="container" id="hotels">
+                <div class="block-hotel row">
+                    <div class="col-md-6">
+                        <div class="col-md-12 block-hotel-round" v-bind:style="funSunPageAfishaHotelImage1">
+                            <div class="hotel-get-round row">
+                                <div class="info-get-round row col-md-12">
+                                    <div class="name-get-round col-md-8">
+                                        <p>{{funSunPageAfishaHotelName1}}</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="button_green center col-12" v-bind:href="funSunPageAfishaHotelLink1" target="_blank">{{funSunPageAfishaHotelButtonLT}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 infoGetRound">
+                        <div class="row">
+                            <div class="col-md-6 col-6">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Date1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Date2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Date3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Date4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Date5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Date6LT}}
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6 block2Round">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Artist1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Artist2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Artist3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Artist4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Artist5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel1Artist6LT}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-hotel row">
+                    <div class="col-md-6">
+                        <div class="col-md-12 block-hotel-round" v-bind:style="funSunPageAfishaHotelImage2">
+                            <div class="hotel-get-round row">
+                                <div class="info-get-round row col-md-12">
+                                    <div class="name-get-round col-md-8">
+                                        <p>{{funSunPageAfishaHotelName2}}</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="button_green center col-12" v-bind:href="funSunPageAfishaHotelLink2" target="_blank">{{funSunPageAfishaHotelButtonLT}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 infoGetRound">
+                        <div class="row">
+                            <div class="col-md-6 col-6">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Date1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Date2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Date3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Date4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Date5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Date6LT}}
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6 block2Round">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Artist1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Artist2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Artist3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Artist4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Artist5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel2Artist6LT}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-hotel row">
+                    <div class="col-md-6">
+                        <div class="col-md-12 block-hotel-round" v-bind:style="funSunPageAfishaHotelImage3">
+                            <div class="hotel-get-round row">
+                                <div class="info-get-round row col-md-12">
+                                    <div class="name-get-round col-md-8">
+                                        <p>{{funSunPageAfishaHotelName3}}</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="button_green center col-12" v-bind:href="funSunPageAfishaHotelLink3" target="_blank">{{funSunPageAfishaHotelButtonLT}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 infoGetRound">
+                        <div class="row">
+                            <div class="col-md-6 col-6">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Date1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Date2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Date3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Date4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Date5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Date6LT}}
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6 block2Round">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Artist1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Artist2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Artist3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Artist4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Artist5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel3Artist6LT}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-hotel row">
+                    <div class="col-md-6">
+                        <div class="col-md-12 block-hotel-round" v-bind:style="funSunPageAfishaHotelImage4">
+                            <div class="hotel-get-round row">
+                                <div class="info-get-round row col-md-12">
+                                    <div class="name-get-round col-md-8">
+                                        <p>{{funSunPageAfishaHotelName4}}</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="button_green center col-12" v-bind:href="funSunPageAfishaHotelLink4" target="_blank">{{funSunPageAfishaHotelButtonLT}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 infoGetRound">
+                        <div class="row">
+                            <div class="col-md-6 col-6">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Date1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Date2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Date3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Date4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Date5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Date6LT}}
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6 block2Round">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Artist1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Artist2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Artist3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Artist4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Artist5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel4Artist6LT}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-hotel row">
+                    <div class="col-md-6">
+                        <div class="col-md-12 block-hotel-round" v-bind:style="funSunPageAfishaHotelImage5">
+                            <div class="hotel-get-round row">
+                                <div class="info-get-round row col-md-12">
+                                    <div class="name-get-round col-md-8">
+                                        <p>{{funSunPageAfishaHotelName5}}</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="button_green center col-12" v-bind:href="funSunPageAfishaHotelLink5" target="_blank">{{funSunPageAfishaHotelButtonLT}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 infoGetRound">
+                        <div class="row">
+                            <div class="col-md-6 col-6">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Date1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Date2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Date3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Date4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Date5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Date6LT}}
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6 block2Round">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Artist1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Artist2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Artist3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Artist4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Artist5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel5Artist6LT}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-hotel row">
+                    <div class="col-md-6">
+                        <div class="col-md-12 block-hotel-round" v-bind:style="funSunPageAfishaHotelImage6">
+                            <div class="hotel-get-round row">
+                                <div class="info-get-round row col-md-12">
+                                    <div class="name-get-round col-md-8">
+                                        <p>{{funSunPageAfishaHotelName6}}</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="button_green center col-12" v-bind:href="funSunPageAfishaHotelLink6" target="_blank">{{funSunPageAfishaHotelButtonLT}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 infoGetRound">
+                        <div class="row">
+                            <div class="col-md-6 col-6">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Date1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Date2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Date3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Date4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Date5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Date6LT}}
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6 block2Round">
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Artist1LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Artist2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Artist3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Artist4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Artist5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel6Artist6LT}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-hotel row">
+                    <div class="col-md-6">
+                        <div class="col-md-12 block-hotel-round" v-bind:style="funSunPageAfishaHotelImage7">
+                            <div class="hotel-get-round row">
+                                <div class="info-get-round row col-md-12">
+                                    <div class="name-get-round col-md-8">
+                                        <p>{{funSunPageAfishaHotelName7}}</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="button_green center col-12" v-bind:href="funSunPageAfishaHotelLink7" target="_blank">{{funSunPageAfishaHotelButtonLT}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 infoGetRound">
+                        <div class="row">
+                            <div class="col-md-6 col-6">
+                                <!--<div class="line-get-round center">
+                {{funSunPageAfishaHotel7Date1LT}}
+              </div>-->
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel7Date2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel7Date3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel7Date4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel7Date5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel7Date6LT}}
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6 block2Round">
+                                <!-- <div class="line-get-round center">
+                {{funSunPageAfishaHotel7Artist1LT}}
+              </div> -->
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel7Artist2LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel7Artist3LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel7Artist4LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel7Artist5LT}}
+                                </div>
+                                <div class="line-get-round center">
+                                    {{funSunPageAfishaHotel7Artist6LT}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="full-width-slider">
+            <div class="country" id="funSunPageAfishaSport">
+                <div class="container">
+                    <div class="row center">
+                        <h2>{{funSunPageAfishaSportTitleLT}}</h2>
+                    </div>
+                    <p >{{funSunPageAfishaSportTextLT}}</p>
+                    <div class="row center">
+                        <div class="block-country col-md-2 center">
+                            <img v-bind:src="funSunPageAfishaSportCountry1Flag">
+                            <p>{{funSunPageAfishaSportCountry1LT}}</p>
+                        </div>
+                        <div class="block-country col-md-2 center">
+                            <img v-bind:src="funSunPageAfishaSportCountry2Flag">
+                            <p>{{funSunPageAfishaSportCountry2LT}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container row-slid">
+                <ul id="fullWidthSlider">
+                    <li>
+                        <img src="https://agent.tui.ru/getmedia/966d5514-212f-41e4-b21d-396cbd2c0b3f/2">
+                    </li>
+                    <li>
+                        <img src="https://agent.tui.ru/getmedia/b6a0453e-1007-4ca9-a8b1-3c6bc7f890e9/3">
+                    </li>
+                    <li>
+                        <img src="https://agent.tui.ru/getmedia/8e8707ab-bbd5-48a2-a59a-983bb1d82998/4">
+                    </li>
+                    <li>
+                        <img src="https://agent.tui.ru/getmedia/6c51f11a-39c6-46b3-9076-492077ef2c76/5">
+                    </li>
+                    <li>
+                        <img src="https://agent.tui.ru/getmedia/adcd8f76-4232-43fd-af62-2a6c55e30bf0/6">
+                    </li>
+                    <li>
+                        <img src="https://agent.tui.ru/getmedia/7e2ef8f5-9ae3-42a9-b1c3-04018be4fe3f/7">
+                    </li>
+                    <li>
+                        <img src="https://agent.tui.ru/getmedia/6c9a3bd4-d6af-40b7-8f40-cc3cfccbcbd7/8">
+                    </li>
+                    <li>
+                        <img src="https://agent.tui.ru/getmedia/50816fbb-f2eb-4f48-b177-5d07a485e108/9">
+                    </li>
+                    <li>
+                        <img src="https://agent.tui.ru/getmedia/bb395ca5-7e60-4749-b1bf-ec0530a5c5ee/10">
+                    </li>
+                   
+                </ul>
+                <div class="navigation">
+                    <div id="prev"><img src="https://agent.tui.ru/getmedia/4778e078-bdb5-4f45-a110-cf756583a5e4/iconArrowLeft50W"></div>
+                    <div id="next"><img src="https://agent.tui.ru/getmedia/1b6cd132-4d4a-4010-a48a-a1b4ae20c54d/iconArrowRight50W"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FUN SUN AFISHA FOOTER START ================================ -->
+        <div class="footer-agent" id="funSunFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>{{funSunPageFooterTitle1LT}}</h3>
+                        <p><a v-bind:href="funSunPageFooterSiteLink1" target="_blank">{{funSunPageFooterSite1LT}}</a><br>
+                            <a v-bind:href="funSunPageFooterSiteLink2LT" target="_blank">{{funSunPageFooterSite2LT}}</a><br>
+                            <a v-bind:href="funSunPageFooterSiteLink3LT" target="_blank">{{funSunPageFooterSite3LT}}</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>{{funSunPageFooterTitle2LT}}</h3>
+                        <a v-bind:href=" funSunPageFooterPhoneLinkLT ">{{funSunPageFooterPhoneTitleLT}}</a><br />
+                            <a v-bind:href="funSunPageFooterMailLinkLT">{{funSunPageFooterMailTitleLT}}</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>{{funSunPageFooterTitle3LT}}</h3>
+                        <div class="row icons-footer col-10 col-md-12" style="justify-content: flex-start;">
+                            <a v-bind:href="funSunPageFooterInstagramLink" style="margin: 5px;">
+                            <img v-bind:src="funSunPageFooterInstagramImgWhiteLink"></a> 
+                            <a v-bind:href="funSunPageFooterFacebookLink" style="margin: 5px;">
+                            <img v-bind:src="funSunPageFooterFacebookImgWhiteLink"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FUN SUN AFISHA FOOTER END ================================ -->
+    </div>
+
+    <!-- SCRIPT загрузки VUE  =================================================== -->
+    <script>
+        const vueLinks = ['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js', 
+            'https://www.tui.ru/getmedia/8d1465da-5919-44bb-8550-8bc3ac3e0b7d/VUE-diff-product-fun-sun-page', 
+            'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer', 
+            'https://www.tui.ru/getmedia/b4abbfc6-300f-4cca-9f4d-b0f51b88a0d8/VUE-FS-fun-sun-hotels-ru-by-ua', 
+            'https://www.tui.ru/getmedia/6e64783b-d6d6-4b51-ab25-d8d1ec72e234/all',  
+            'https://agent.tui.ru/getmedia/2f02f195-3661-4a25-9405-d65ed4ab66f6/jquery-min',
+            'https://agent.tui.ru/getmedia/74b3b4e1-6f30-4036-9b96-a71c32ea0fb1/lightslider',
+            'https://agent.tui.ru/getmedia/fea1c06b-59c8-4874-8611-dac12c1a73f1/all'           
+        ];
+
+        function add_files(arr, type) {
+
+            count = 0;
+
+            function new_file(link) {
+                var script = document.createElement(type);
+                script.src = link;
+                script.async = false;
+                document.head.appendChild(script);
+                if (count < arr.length - 1) {
+                    script.onload = function() {
+                        new_file(arr[count]);
+                    }
+                    script.onerror = function() {
+                        throw new Error(arr[count - 1] + ' loading error');
+                    }
+                    count++;
+                }
+            }
+
+            function error(text) {
+                throw new Error('the function takes two required arguments');
+            }
+
+            (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+                (arr === undefined) ? error('no link array') :
+                (type === undefined) ? error('no file type') : '';
+            new_file(arr[count]);
+        }
+
+        add_files(vueLinks, 'script');
+    </script>
+    
+    <script type="text/javascript">
+        function smoothScrolling(element) {
+            document.querySelector(element).scrollIntoView({
+                block: "start",
+                behavior: "smooth"
+            });
+        }
+    </script>
+    
+</body>
+

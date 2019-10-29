@@ -1,0 +1,875 @@
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<!-- ШРИФТ =============================================== -->
+<style>
+    @font-face {
+        font-family: 'TUI-reg';
+        src: url('https://www.tui.ru/getmedia/0c02516a-a2de-4325-ba89-f7ac294122a8/TUITypeLight-Regular');
+        src: url('https://www.tui.ru/getmedia/0c02516a-a2de-4325-ba89-f7ac294122a8/TUITypeLight-Regular?#iefix') format('embedded-opentype'),
+            url('https://www.tui.ru/getmedia/953947e9-cb5a-43a7-a16a-1ca276d08920/TUITypeLight-Regular') format('woff2'),
+            url('https://www.tui.ru/getmedia/73494612-776c-4364-b603-208f014e9bff/TUITypeLight-Regular') format('woff'),
+            url('https://www.tui.ru/getmedia/6294bb39-80a5-4825-9b12-a1bd5925de01/TUITypeLight-Regular') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+</style>
+<!-- ШРИФТ =============================================== -->
+<style type="text/css">
+    body {
+        font-family: TUI-reg, TUI;
+    }
+
+    #content {
+        max-width: unset !important;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    .head {
+        position: relative;
+        background: url('https://www.tui.ru/getmedia/217e8dde-1d10-4d87-934e-025ec62406be/head_new') top center;
+        width: 100%;
+        height: 471px;
+    }
+
+    .head .center-block {
+        width: 1150px;
+        max-width: 1150px;
+        margin: 0 auto;
+        position: relative;
+        height: 471px;
+    }
+
+    .head .white-box {
+        position: absolute;
+        top: 18%;
+        left: 0;
+        padding: 30px 30px 0 30px;
+        background: #ffffff;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 38%;
+        max-width: 475px;
+    }
+
+    .head .white-box .header {
+        font-size: 30px;
+        font-weight: bold;
+        color: #092a5f;
+    }
+
+    .head .white-box .comment {
+        margin: 20px 0 30px 0;
+        font-size: 19px;
+        color: #092a5f;
+    }
+
+    .head .white-box .button {
+        font-size: 19px;
+        text-transform: uppercase;
+        padding: 13px;
+        width: 93%;
+        cursor: pointer;
+        margin: -5px 0 67px 0;
+        background: #092a5f;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .head .details {
+        position: absolute;
+        left: 0;
+        font-size: 15px;
+        color: #092a5f;
+        margin: 0 30px 0 30px;
+        line-height: 0.95;
+        bottom: 15px;
+    }
+
+    .content-block {
+        position: relative;
+        width: 1150px;
+        max-width: 1150px;
+        margin: 20px auto;
+        /*padding:0 5%;*/
+        /*width:90%; */
+    }
+
+    .content-block .text {
+        margin: 40px 0;
+        font-size: 18px;
+        padding: 0 0;
+    }
+
+    .content-block .block-head {
+        overflow: hidden;
+        width: 762px;
+        margin: 0 0;
+    }
+
+    .content-block .block-head .logo {
+        float: left;
+        margin-left: 12px;
+        width: 121px;
+        min-height: 90px;
+    }
+
+    .content-block .block-head .about {
+        float: right;
+        width: 616px;
+        min-height: 90px;
+    }
+
+    .content-block .block-head .about .name {
+        font-size: 27px;
+        font-weight: bold;
+        color: #092a5f;
+    }
+
+    .content-block .block-head .about .text {
+        margin: 20px 0 0 0;
+    }
+
+    .content-block .block-head .about ul.text {
+        margin: 20px 0 0 30px;
+    }
+
+    .content-block .block {
+        overflow: hidden;
+        width: 100%;
+        margin: 40px 0 60px 0;
+    }
+
+    .content-block .block div.video,
+    .content-block .block div.video2,
+    .content-block .block div.video3 {
+        float: left;
+        width: 762px;
+        height: 360px;
+    }
+
+    .content-block .block div.video3 {
+        height: 476px;
+    }
+
+    .content-block .block a.more {
+        display: block;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        width: 155px;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 3px;
+        background: #fee101;
+        color: #082a5e;
+        box-shadow: 2px 4px 12px #545454;
+        z-index: 1;
+    }
+
+    .content-block .block div.video a.more:hover {
+        text-decoration: underline;
+    }
+
+    .content-block .block .list {
+        float: right;
+        width: 368px;
+        padding: 0 20px 20px 20px;
+        min-height: 360px;
+        margin-left: 20px;
+        color: #082a5e;
+        background: #e2f3fd;
+    }
+
+    .content-block .block .list .header {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 0 30px 0;
+    }
+
+    .content-block .block .list .header.country {
+        margin: 20px 0 0 0;
+        text-transform: uppercase;
+    }
+
+    .content-block .block .list .link {
+        margin: 4px 0;
+    }
+
+    .content-block .block .list .link a {
+        color: #082a5e;
+        text-decoration: underline;
+        font-size: 17px;
+    }
+
+    div.video,
+    div.video2,
+    div.video3 {
+        width: 300px;
+        position: relative;
+        margin-bottom: 3em;
+        min-height: 158px;
+    }
+
+    .video-fs.picture1 {
+        background-image: url(https://www.tui.ru/getmedia/7a78fe91-71b1-4e60-b2d3-6e666ad89fab/1?2);
+    }
+
+    .video-fs.picture2 {
+        background-image: url(https://www.tui.ru/getmedia/b68e6a76-70e2-4f68-b4f1-c9fd8ab63c82/2?2);
+    }
+
+    .video-fs.picture3 {
+        background-image: url(https://www.tui.ru/getmedia/df4a85df-6800-4ea6-9fe5-268f00168cc9/3?2);
+    }
+
+    .play,
+    .play2,
+    .play3 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play img,
+    .play2 img,
+    .play3 img {
+        width: 156px;
+        opacity: 0.65;
+    }
+
+    .playOn,
+    .playOn2,
+    .playOn3 {
+        display: none;
+    }
+
+    .play img:hover,
+    .play2 img:hover,
+    .play3 img:hover {
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    .footer-not-main {
+        background: #70cbf4;
+        width: 100%;
+    }
+
+    .footer-not-main .centered {
+        max-width: 1150px;
+        margin: 0 auto;
+        line-height: 1.5;
+        padding: 18px 0px;
+        overflow: hidden;
+    }
+
+    .footer-not-main .centered .left {
+        width: 50%;
+        float: left;
+    }
+
+    .footer-not-main .centered .right {
+        width: 50%;
+        float: right;
+    }
+
+    .footer-not-main .centered h3 {
+        margin: 0 0 10px 0;
+        color: #092a5e;
+        font-size: 21px;
+    }
+
+    .footer-not-main .centered a {
+        color: #092a5e !important;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .head .details {
+            font-size: 12px;
+            margin: 0 30px;
+        }
+    }
+
+    @media screen and (min-width: 1201px) {
+        .head .white-box .comment span {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 520px) {
+        .head {
+            background: url('https://www.tui.ru/getmedia/36469e66-2c4b-4c0d-a55f-defeaed8bbad/head_mobile') top center;
+        }
+
+        .content-block .block div.video,
+        .content-block .block div.video2,
+        .content-block .block div.video3 {
+            height: 133px !important;
+        }
+
+        .footer-not-main .centered .left {
+            float: none;
+            margin-left: 30px;
+            width: 80%;
+        }
+
+        .footer-not-main .centered .right {
+            float: none;
+            margin-top: 20px;
+            margin-left: 30px;
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 792px) {
+        .head .white-box {
+            min-width: 280px;
+            width: 280px;
+            padding: 30px 20px 0 20px;
+            max-height: 280px;
+            top: 25%;
+            left: 50%;
+            margin-left: -140px;
+        }
+
+        .head .white-box .button {
+            width: 100%;
+            padding: 17px 13px;
+            margin-top: -12px;
+            font-size: 19px;
+            line-height: 1.2;
+        }
+
+        .content-block {
+            padding: 0 4%;
+            width: 92%;
+            margin-top: -20px;
+        }
+
+        .content-block .block a.more {
+            bottom: 10px;
+            padding: 2% 5%;
+            right: 10px;
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        .play img,
+        .play2 img,
+        .play3 img {
+            width: 20%;
+        }
+
+        .content-block .block div.video3 {
+            height: 360px;
+        }
+
+        .head .center-block {
+            width: 92%;
+        }
+
+        .content-block {
+            width: 92%;
+            margin-top: -20px;
+        }
+
+        .head .white-box .header {
+            font-size: 21px;
+            margin-top: -10px;
+        }
+
+        .head .white-box .comment {
+            font-size: 18px;
+        }
+
+        .content-block .block-head .logo {
+            margin: 0 0 -23px 0;
+            float: none;
+            width: auto;
+        }
+
+        .content-block .block-head .logo img {
+            width: 44px;
+        }
+
+        .content-block .block-head .about {
+            float: none;
+            width: auto;
+            margin-top: 0;
+        }
+
+        .content-block .block-head {
+            width: auto;
+        }
+
+        .content-block .block-head .about .name {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .content-block .block {
+            max-width: 762px;
+            margin: 22px auto 40px auto;
+        }
+
+        .content-block .block div.video,
+        .content-block .block div.video2,
+        .content-block .block div.video3 {
+            float: none;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .content-block .block .list {
+            float: none;
+            width: 100%;
+            margin: 0;
+            padding-top: 1px;
+            min-height: auto;
+        }
+    }
+
+    @media screen and (min-width: 521px) and (max-width: 1200px) {
+        .footer-not-main .centered {
+            max-width: 520px;
+            padding-left: 30px;
+        }
+    }
+
+    @media screen and (min-width: 751px) {
+        .ActionPage-container {
+            padding-bottom: 0 !important;
+        }
+    }
+</style>
+<!-- PELOADER TUI ======================= -->
+<link href="https://www.tui.ru/getmedia/539394c4-9001-4639-a8d5-1b935ae77906/style-loader-dev" rel="stylesheet" type="text/css" />
+<title></title>
+<!--<div class="loader-row c">
+    <div class="back-plain c">
+        <div class="touch_1"><img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='42'%20height='39'%3E%3Cg%20fill='none'%20fill-rule='evenodd'%3E%3Cpath%20fill='%23E6F4FA'%20d='M13.03%2026.9c-.5.066-1.01.1-1.529.1C5.15%2027%200%2021.854%200%2015.502%200%209.149%205.15%204%2011.501%204c1.728%200%203.366.381%204.837%201.064C18.998%201.97%2023.01%200%2027.5%200%2035.508%200%2042%206.268%2042%2014c0%203.408-1.261%206.531-3.357%208.959.233.975.357%201.993.357%203.04C39%2033.18%2033.181%2039%2026%2039c-6.879%200-12.507-5.34-12.97-12.1z'/%3E%3Cpath%20fill='%23FFF'%20d='M16.287%2024.057a8.066%208.066%200%200%201-3.786.943C7.814%2025%204%2020.963%204%2016s3.814-9%208.501-9c2.2%200%204.208.89%205.719%202.348C20.113%205.586%2024.01%203%2028.5%203%2034.841%203%2040%208.158%2040%2014.5a11.47%2011.47%200%200%201-3.64%208.388A10.45%2010.45%200%200%201%2037%2026.5C37%2032.29%2032.29%2037%2026.5%2037S16%2032.29%2016%2026.5c0-.84.1-1.659.287-2.443z'/%3E%3C/g%3E%3C/svg%3E" /></div>
+
+        <div class="touch_2"><img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='85'%20height='96'%3E%3Cg%20fill='none'%20fill-rule='evenodd'%3E%3Cpath%20fill='%23E6F4FA'%20d='M53.626%2086.098c-8.654-.008-15.665-7.05-15.665-15.73%200-.086%200-.17.002-.255a12.286%2012.286%200%200%201-6.6%201.912c-6.839%200-12.382-5.56-12.382-12.42%200-.895.094-1.77.274-2.612a26.029%2026.029%200%200%201-6.857-18.696A16.973%2016.973%200%200%201%200%2021.937c0-9.372%207.575-16.97%2016.918-16.97%204.185%200%208.016%201.525%2010.97%204.052C30.938%203.633%2036.708%200%2043.327%200c9.797%200%2017.741%207.968%2017.741%2017.798a17.8%2017.8%200%200%201-1.302%206.706%2026.017%2026.017%200%200%201%204.603%2014.82c0%206.11-2.095%2011.73-5.603%2016.175a15.623%2015.623%200%200%201%204.176%202.206%2014.046%2014.046%200%200%201%207.615-2.238C78.535%2055.467%2085%2062.14%2085%2070.37c0%206.62-4.184%2012.233-9.973%2014.174.014.23.022.46.022.694C75.049%2091.18%2070.245%2096%2064.32%2096c-5.634%200-10.256-4.362-10.694-9.902z'/%3E%3Cpath%20fill='%23FFF'%20d='M56.351%2080.99c-1.414.56-2.954.868-4.564.868-6.863%200-12.447-5.598-12.447-12.48%200-3.602%201.532-6.853%203.976-9.132a22.64%2022.64%200%200%201-4.302.75c-1.064%203.87-4.607%206.72-8.8%206.72-5.034%200-9.129-4.105-9.129-9.15%200-1.265.258-2.47.723-3.567-4.523-4.183-7.361-10.172-7.361-16.811%200-1.287.106-2.548.31-3.777C7.644%2033.929%202%2027.974%202%2020.717%202%2013.147%208.142%206.99%2015.69%206.99c5.303%200%209.91%203.036%2012.184%207.465C28.894%207.422%2034.95%202%2042.246%202c8.004%200%2014.52%206.531%2014.52%2014.558%200%202.588-.677%205.02-1.863%207.128a22.808%2022.808%200%200%201%205.182%2014.502c0%207.786-3.902%2014.678-9.85%2018.811a12.406%2012.406%200%200%201%2010.779%204.014c2.017-2.029%204.764-3.278%207.787-3.278C74.976%2057.735%2080%2062.956%2080%2069.379c0%205.865-4.187%2010.729-9.614%2011.531.3.812.465%201.689.465%202.604C70.851%2087.64%2067.5%2091%2063.384%2091c-4.12%200-7.47-3.36-7.47-7.486%200-.886.155-1.736.437-2.525z'/%3E%3C/g%3E%3C/svg%3E" /></div>
+
+        <div class="plain"><img id="pl" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTM4IiBoZWlnaHQ9IjEzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik0xOC4zNiA1My42MDdhNC4wMDggNC4wMDggMCAwIDEgNC4wMDYgNC4wMXY1LjM0M2E0LjAwNyA0LjAwNyAwIDEgMS04LjAxNCAwdi01LjM0NGE0LjAxIDQuMDEgMCAwIDEgNC4wMDctNC4wMDltMjEuNTA2LTkuNDFhNC4wMSA0LjAxIDAgMCAxIDQuMDEgNC4wMDh2NS4zNDRhNC4wMSA0LjAxIDAgMCAxLTguMDE5IDB2LTUuMzQ0YTQuMDA5IDQuMDA5IDAgMCAxIDQuMDA5LTQuMDA4IiBmaWxsPSIjRkZGIi8+PHBhdGggZD0iTTY0LjYyMyAxMDguMTU1bC0xNS4zMDkgOS45NzdhNSA1IDAgMCAwLTIuMTc2IDUuMTU0bC40NjQgMi4zNTdhMiAyIDAgMCAwIDIuNTI2IDEuNTMzbDE4LjA1Ni01LjMwMi0zLjU2MS0xMy43MTl6TTczLjQ1MiAxMDguMTU1bDE1LjMxIDkuOTc3YTUgNSAwIDAgMSAyLjE3NyA1LjE1NWwtLjQ2NSAyLjM1NmEyIDIgMCAwIDEtMi41MjUgMS41MzNsLTE4LjA1NS01LjMwMiAzLjU1OC0xMy43MTl6TTIuNDE3IDc3LjIybDYxLjg3MS01LjE4NlYzOS4xMTJMMi41MDQgNjkuMDk0QTQgNCAwIDAgMCAuMjUgNzIuNjkzdjIuNTM0YTIgMiAwIDAgMCAyLjE2NyAxLjk5M3oiIGZpbGw9IiNGNEY0RjQiLz48cGF0aCBkPSJNMTE5LjY0IDUzLjYwN2E0LjAwOSA0LjAwOSAwIDAgMC00LjAwOCA0LjAxdjUuMzQzYTQuMDEgNC4wMSAwIDAgMCA4LjAxOCAwdi01LjM0NGE0LjAxMSA0LjAxMSAwIDAgMC00LjAxLTQuMDA5bS0yMS41MDUtOS40MWE0LjAxIDQuMDEgMCAwIDAtNC4wMSA0LjAwOHY1LjM0NGE0LjAxIDQuMDEgMCAxIDAgOC4wMTcgMHYtNS4zNDRhNC4wMDggNC4wMDggMCAwIDAtNC4wMDctNC4wMDgiIGZpbGw9IiNGRkYiLz48cGF0aCBkPSJNMTM1LjU4MiA3Ny4yMmwtNjEuODctNS4xODZWMzkuMTEybDYxLjc4MyAyOS45ODJhNCA0IDAgMCAxIDIuMjU0IDMuNTk5djIuNTM0YTIgMiAwIDAgMS0yLjE2NyAxLjk5M3oiIGZpbGw9IiNGNEY0RjQiLz48cGF0aCBkPSJNNzIuMTQxIDIuMDlDNzEuMzQ0IDEuMDMgNzAuMi40MjggNjkuMDAzLjQ0Yy0xLjE5Ni4wMTQtMi4zMy42NC0zLjExMiAxLjcxOWwtLjAwMy4wMDVjLTUuNDgyIDcuNTg2LTguNDc1IDE3LjIxNS04LjQ3NSAyNy4yMTlWNjEuMDhjMCA2Ljg3MS42MjYgMjEuNzU4IDEuODQ5IDI5LjE3OCAyLjA5MyAxMi42OCA0LjI1NCAyNC43NTkgNy43NzkgMzcuNDUzLjMwNSAxLjEwNCAxLjEgMS44MzkgMS45OSAxLjg0OS44OTQuMDA4IDEuNjk2LS43MTIgMi4wMTYtMS44MSAzLjYzMS0xMi41MiA1Ljg4OS0yNC44NzQgNy44OTgtMzcuODQzIDEuMDk2LTcuMDYzIDEuNjQtMjEuNDM3IDEuNjQtMjcuOTU5VjI4LjM5M2MwLTkuNzA0LTMuMDAyLTE5LjA3My04LjQ0NC0yNi4zMDIiIGZpbGw9IiNGRkYiLz48cGF0aCBkPSJNNjkgLjQ0djEyOS4xMTloLjA1Yy44ODUgMCAxLjY4MS0uNzE4IDEuOTk3LTEuODA3IDMuNjMxLTEyLjUyMiA1Ljg4OS0yNC44NzUgNy44OTgtMzcuODQ0IDEuMDk2LTcuMDYzIDEuNjQtMjEuNDM3IDEuNjQtMjcuOTU5VjI4LjM5M2MwLTkuNzA0LTMuMDAyLTE5LjA3My04LjQ0NC0yNi4zMDJDNzEuMzUyIDEuMDQgNzAuMjI3LjQ0IDY5LjA0My40NEg2OXoiIGZpbGw9IiNEQ0YyRkIiLz48ZyBmaWxsPSIjNzNDQ0YyIj48cGF0aCBkPSJNNjkuMTczIDkuODRhNy4xNzUgNy4xNzUgMCAwIDAtNy4xNzYgNy4xNzUuNTAyLjUwMiAwIDAgMCAuOTM3LjI0NyA3LjE2MSA3LjE2MSAwIDAgMSA2LjIzOS0zLjY0MiA3LjE1OCA3LjE1OCAwIDAgMSA2LjIzOCAzLjY0Mi41LjUgMCAwIDAgLjkzNy0uMjQ0di0uMDAyYTcuMTc2IDcuMTc2IDAgMCAwLTcuMTc1LTcuMTc1Ii8+PHBhdGggZD0iTTY5LjE3MyA5Ljg0djMuNzc4YTcuMTU4IDcuMTU4IDAgMCAxIDYuMjM4IDMuNjQ0Yy4wOTIuMTYuMjYuMjU0LjQzNy4yNTRsLjEyOC0uMDE3YS41LjUgMCAwIDAgLjM3NC0uNDg0IDcuMTc2IDcuMTc2IDAgMCAwLTcuMTc3LTcuMTc0IiBvcGFjaXR5PSIuNSIvPjwvZz48cGF0aCBkPSJNNjguNzU1IDEyMS40NjFoLjQ4N2ExIDEgMCAwIDAgMS0xdi0xMy45MTNhMSAxIDAgMCAwLTEtMWgtLjQ4N2ExIDEgMCAwIDAtMSAxdjEzLjkxM2ExIDEgMCAwIDAgMSAxeiIgZmlsbD0iI0RDRjJGQiIvPjxnIGZpbGw9IiNGRjAyMDIiPjxwYXRoIGQ9Ik03OC4zNzcgMzAuNzcyYS44ODYuODg2IDAgMCAxLS4xMDYuNTM3LjM4Ni4zODYgMCAwIDEtLjMwMi4xMTVoLTUuMDE2YS41MDQuNTA0IDAgMCAxLS4xODcgMCAuMjkuMjkgMCAwIDEtLjEyNC0uMDkuODk0Ljg5NCAwIDAgMS0uMTA2LS41MzcuODc5Ljg3OSAwIDAgMSAuMTA2LS41MzcuMjgxLjI4MSAwIDAgMSAuMTI0LS4wOTEuNTEzLjUxMyAwIDAgMSAuMTg3IDBoNC45OGEuNTA0LjUwNCAwIDAgMSAuMTg3IDBjLjA0NC4wMi4wODQuMDQ3LjExNS4wODMuMTAxLjE1Ni4xNS4zMzcuMTQyLjUyek03OC4zODMgMzUuMDE2Yy4wMDYuMzI1LS4wNDQuNjUtLjE1Ljk2YTEuNzkgMS43OSAwIDAgMS0uNDIzLjY2N2MtLjE3OC4xNzYtLjM5OC4zMS0uNjQzLjM5MWEyLjUyNyAyLjUyNyAwIDAgMS0uNzkyLjEyMkg3Mi45NGEuNTQyLjU0MiAwIDAgMS0uMTg1IDAgLjI2Mi4yNjIgMCAwIDEtLjEyMy0uMDkgMS40IDEuNCAwIDAgMSAwLTEuMDUuMzc2LjM3NiAwIDAgMSAuMy0uMTEzaDMuNDE2Yy4xMTcgMCAuMjMzLS4wMTYuMzQ0LS4wNWEuNjUzLjY1MyAwIDAgMCAuMjU1LS4xNDYuNjc1LjY3NSAwIDAgMCAuMTY3LS4yNmMuMDQ0LS4xMzIuMDY1LS4yNy4wNjItLjQwN2ExLjAyMyAxLjAyMyAwIDAgMC0uMTMyLS41NDUuNTYuNTYgMCAwIDAtLjMwOC0uMjUzIDEuMzE0IDEuMzE0IDAgMCAwLS4zODgtLjA2NUg3Mi45NGEuNTcxLjU3MSAwIDAgMS0uMTc2IDAgLjI2LjI2IDAgMCAxLS4xMjQtLjA5NyAxLjQgMS40IDAgMCAxIDAtMS4wNS4zNzguMzc4IDAgMCAxIC4zLS4xMDZoMy40MzVjLjI3LS4wMDIuNTM4LjA0Ljc5Mi4xMjIuMjQ1LjA4MS40NjUuMjE1LjY0My4zOS4xOTEuMTkyLjMzNS40Mi40MjMuNjY4LjEuMjk1LjE1LjYwMi4xNS45MTJ6TTc4LjE1MiA0MC42NTVhLjkxMi45MTIgMCAwIDEtLjEwMy41MzYuMzUyLjM1MiAwIDAgMS0uMjkzLjExNWgtNC4wOXYxLjIyYS41MDguNTA4IDAgMCAxLS4wNTEuMjcxLjIyMy4yMjMgMCAwIDEtLjEyLjA5LjYxMi42MTIgMCAwIDEtLjE3MyAwYy0uMTE3LjAxMS0uMjM2LjAxMS0uMzUzIDBhLjk0MS45NDEgMCAwIDEtLjI4NC0uMDkuMjg0LjI4NCAwIDAgMS0uMTQ3LS4xNjUuNzQxLjc0MSAwIDAgMSAwLS4yM1YzOC41MzhhLjIyMy4yMjMgMCAwIDEgLjEyMS0uMDkuNTk0LjU5NCAwIDAgMSAuMTY0IDAgMi4yNCAyLjI0IDAgMCAxIC4zMTggMGMuMTEuMDEzLjIxOC4wNDMuMzE5LjA5LjA3LjAzNC4xMjIuMDkzLjE0Ni4xNjVhLjc4OS43ODkgMCAwIDEgMCAuMjN2MS4wODhoNC4xMTZhLjUxMy41MTMgMCAwIDEgLjE3MiAwIC4yOTMuMjkzIDAgMCAxIC4xMi4wODIuOTE1LjkxNSAwIDAgMSAuMTM4LjU1MnpNNzEuMDQyIDQ1LjYwOGMuNTc2IDAgMS4wNDIuNDQ5IDEuMDQyIDEuMDAzIDAgLjU1My0uNDY2IDEuMDAyLTEuMDQyIDEuMDAyLS41NzUgMC0xLjA0Mi0uNDQ5LTEuMDQyLTEuMDAyIDAtLjU1NC40NjctMS4wMDMgMS4wNDItMS4wMDN6bTMuNzE1IDIuNTA3Yy0uNjQxLS4yODYtLjgxOC0uNDAxLS43MjQtLjc3Ny4xMy0uNTAyLjQyMi0uNTM3IDEuMDgzLS4zMzEgNC45MDMgMS41MTkgNS40MjQgNi42ODgtMS4wNTIgNy43MmwuMDQyLjYzN2EuNDk1LjQ5NSAwIDAgMS0uMjUuNTMxYy0uMTQ0LjA2Mi0uMzAyLjA5LS40NTkuMDgtLjUyMSAwLS43MTktLjE5NS0uNzE5LS41NjZ2LTIuNjY3YS40ODguNDg4IDAgMCAxIC4xMS0uMzg2LjUyOC41MjggMCAwIDEgLjM3LS4xODVjLjM5LS4wOC43MjktLjA1Ni43NjUuNDVsLjA1OC44NzNjMy41NDItLjYxMiA0LjU4NC0zLjY4NS43OTctNS4zOGgtLjAyMXoiLz48L2c+PC9nPjwvc3ZnPg==" /></div>
+
+        <div class="steam t1">
+            <div class="c1"></div>
+
+            <div class="c2"></div>
+
+            <div class="c3"></div>
+
+            <div class="c4"></div>
+
+            <div class="c5"></div>
+
+            <div class="c6"></div>
+
+            <div class="c7"></div>
+
+            <div class="c8"></div>
+
+            <div class="c9"></div>
+
+            <div class="c10"></div>
+        </div>
+
+        <div class="steam t2">
+            <div class="c1"></div>
+
+            <div class="c2"></div>
+
+            <div class="c3"></div>
+
+            <div class="c4"></div>
+
+            <div class="c5"></div>
+
+            <div class="c6"></div>
+
+            <div class="c7"></div>
+
+            <div class="c8"></div>
+
+            <div class="c9"></div>
+
+            <div class="c10"></div>
+        </div>
+
+        <div class="steam t3">
+            <div class="c1"></div>
+
+            <div class="c2"></div>
+
+            <div class="c3"></div>
+
+            <div class="c4"></div>
+
+            <div class="c5"></div>
+
+            <div class="c6"></div>
+
+            <div class="c7"></div>
+
+            <div class="c8"></div>
+
+            <div class="c9"></div>
+
+            <div class="c10"></div>
+        </div>
+
+        <div class="steam t4">
+            <div class="c1"></div>
+
+            <div class="c2"></div>
+
+            <div class="c3"></div>
+
+            <div class="c4"></div>
+
+            <div class="c5"></div>
+
+            <div class="c6"></div>
+
+            <div class="c7"></div>
+
+            <div class="c8"></div>
+
+            <div class="c9"></div>
+
+            <div class="c10"></div>
+        </div>
+    </div>
+</div>-->
+<!-- END PRELOADER ====================== -->
+<script type="text/javascript">
+    var pageRow = document.querySelector(".ActionPage-container");
+    (pageRow) ? pageRow.setAttribute("style", "width: 100%!important; max-width: 100%!important"): console.log("ActionPage-container = NULL");
+    //подключение loader_jquery
+    var new_script = document.createElement('script');
+    new_script.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js";
+    document.head.appendChild(new_script);
+
+    new_script.onload = function() {
+        var new_script = document.createElement('script');
+        new_script.src = "https://www.tui.ru/getmedia/c143421f-5690-411c-bfed-cae16d3cd916/all-script/";
+        document.head.appendChild(new_script);
+        new_script.onload = function() {
+            var new_script = document.createElement('script');
+            new_script.src = "https://www.youtube.com/iframe_api";
+            document.head.appendChild(new_script);
+
+
+
+        }
+    }
+</script>
+
+<head></head>
+<!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
+<div class="head" id="home-page-first-block">
+    <div class="center-block">
+        <div class="white-box">
+            <p class="header">{{firstBlockHeadNameBY1}}<br>
+                {{firstBlockHeadNameBY2}}</p>
+            <p class="comment"><span>{{firstBlockHeadCommentBY1}}</span> <span>{{firstBlockHeadCommentBY2}}</span></p>
+            <!--<div class="button">
+                <a v-bind:href=" firstBlockHeadPresentaionLink " target="_blank" style="color: white">{{firstBlockHeadPresentaionBY}}</a>
+            </div>
+            <div class="details">
+                {{firstBlockHeadDeatilsBY}}
+            </div>-->
+        </div>
+    </div>
+</div>
+<!-- ПЕРВЫЙ БЛОК END =========================================================== -->
+
+<div class="content-block">
+    <!-- TEXT START =========================================================== -->
+    <div class="text" id="home-page-text-block">
+        <strong>{{homePageTextBlockRU1}}</strong>{{homePageTextBlockBY2}}<br>
+        <br>
+        {{homePageTextBlockBY3}}
+    </div>
+    <!-- TEXT END =========================================================== -->
+
+    <!-- FUN SUN BLOCK TEXT START =========================================================== -->
+    <div class="block-head" id="home-page-fun-sun-block-text">
+        <div class="logo"><img v-bind:src=" homePageFunSunBlockLogo "></div>
+        <div class="about">
+            <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                {{homePageFunSunBlockTitleBY1}}
+            </div>
+            <div class="name">
+                {{homePageFunSunBlockTitleBY2}}
+            </div>
+            <p class="text">{{homePageFunSunBlockTextBY1}}</p>
+            <p class="text">{{homePageFunSunBlockTextBY2}}</p>
+        </div>
+    </div>
+    <!-- FUN SUN BLOCK TEXT START =========================================================== -->
+    <!-- FUN SUN BLOCK VIDEO AND HOTELS START =========================================================== -->
+    <div class="block" id="home-page-fun-sun-block-video-hotels">
+        <div class="video">
+            <a class="more" v-bind:href=" homeFunSunBlockPageLink " target="_blank">{{homeFunSunBlockPageLinkTextBY}}</a>
+            <div id="player"></div>
+            <div class="play video-fs picture1"><img v-bind:src=" homeFunSunBlockPageImage "></div>
+        </div>
+        <div class="list">
+            <div class="header">
+                {{homeFunSunBlockPageTitleBY}}
+            </div>
+            <div class="header country">
+                {{homeFunSunBlockPageTurkeyBY}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient1 " target="_blank">{{homeFunSunHotelName1}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient2 " target="_blank">{{homeFunSunHotelName2}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient3 " target="_blank">{{homeFunSunHotelName3}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient4 " target="_blank">{{homeFunSunHotelName4}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient5 " target="_blank">{{homeFunSunHotelName5}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient6 " target="_blank">{{homeFunSunHotelName6}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient7 " target="_blank">{{homeFunSunHotelName7}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient8 " target="_blank">{{homeFunSunHotelName8}}</a>
+            </div>
+            <div class="header country">
+                {{homeFunSunBlockPageCyprysBY}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient9 " target="_blank">{{homeFunSunHotelName9}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient10 " target="_blank">{{homeFunSunHotelName10}}</a>
+            </div>
+        </div>
+    </div>
+    <!-- FUN SUN BLOCK VIDEO AND HOTELS END =========================================================== -->
+
+    <!-- DAY NIGHT BLOCK TEXT START =========================================================== -->
+    <div class="block-head" id="home-page-day-night-block-text">
+        <div class="logo"><img v-bind:src=" homePageDayNightBlockLogo "></div>
+        <div class="about">
+            <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                {{homePageDayNightBlockTitleBY1}}
+            </div>
+            <div class="name">
+                {{homePageDayNightBlockTitleBY2}}
+            </div>
+            <p class="text">{{homePageDayNightBlockTextBY1}}</p>
+            <p class="text">{{homePageDayNightBlockTextBY2}}</p>
+            <p class="text">{{homePageDayNightBlockTextBY3}}</p>
+        </div>
+    </div>
+    <!-- DAY NIGHT BLOCK TEXT END =========================================================== -->
+
+    <!-- DAY NIGHT BLOCK VIDEO AND HOTELS START =========================================================== -->
+    <div class="block" id="home-page-day-night-block-video-hotels">
+        <div class="video2">
+            <a class="more" v-bind:href=" homeDayNightBlockPageLink " target="_blank">{{homeDayNightBlockPageLinkTextBY}}</a>
+            <div id="player2"></div>
+            <div class="play2 video-fs picture2"><img v-bind:src=" homeDayNightBlockPageImage "></div>
+        </div>
+        <div class="list">
+            <!--<div class="header"></div>-->
+            <div class="header country">
+                {{homeDayNightBlockPageTurkeyBY}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient1 " target="_blank">{{homeFunSunHotelName1}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient2 " target="_blank">{{homeFunSunHotelName2}}</a>
+            </div>
+        </div>
+    </div>
+    <!-- DAY NIGHT BLOCK VIDEO AND HOTELS END =========================================================== -->
+    <!-- TOUCAN BLOCK TEXT START =========================================================== -->
+    <div class="block-head" id="home-page-toucan-block-text">
+        <div class="logo"><img v-bind:src=" homePageToucanBlockLogo "></div>
+        <div class="about">
+            <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                {{homePageToucanBlockTitleBY1}}
+            </div>
+            <div class="name">
+                {{homePageToucanBlockTitleBY2}}
+            </div>
+            <p class="text">{{homePageToucanBlockTextBY1}}<br>
+                <br>
+                {{homePageToucanBlockTextBY2}}</p>
+            <ul class="text" style="list-style-type:disc">
+                <li>{{homePageToucanBlockSpisokItemBY1}}</li>
+                <li>{{homePageToucanBlockSpisokItemBY2}}</li>
+                <li>{{homePageToucanBlockSpisokItemBY3}}</li>
+            </ul>
+        </div>
+    </div>
+    <!-- TOUCAN BLOCK TEXT END =========================================================== -->
+
+    <!-- TOUCAN BLOCK VIDEO AND HOTELS START =========================================================== -->
+    <div class="block" id="home-page-toucan-block-video-hotels">
+        <div class="video3">
+            <a class="more" v-bind:href=" homeToucanBlockPageLink " target="_blank">{{homeDToucanBlockPageLinkTextBY}}</a>
+            <div id="player3"></div>
+            <div class="play3 video-fs picture3"><img v-bind:src=" homeToucanBlockPageImage "></div>
+        </div>
+        <div class="list" style="min-height:476px">
+
+            <div class="header country">
+                {{homeToucanBlockPageTurkeyBY}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient1 " target="_blank">{{homeToucanHotelName1}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient2 " target="_blank">{{homeToucanHotelName2}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient3 " target="_blank">{{homeToucanHotelName3}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient4 " target="_blank">{{homeToucanHotelName4}}</a>
+            </div>
+            <div class="header country">
+                {{homeToucanBlockPageCyprusBY}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient5 " target="_blank">{{homeToucanHotelName5}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient6 " target="_blank">{{homeToucanHotelName6}}</a>
+            </div>
+            <div class="header country">
+                {{homeToucanBlockPageMontenegroBY}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient7 " target="_blank">{{homeToucanHotelName7}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient8 " target="_blank">{{homeToucanHotelName8}}</a>
+            </div>
+            <div class="header country">
+                {{homeToucanBlockPageItalyBY}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient9 " target="_blank">{{homeToucanHotelName9}}</a>
+            </div>
+            <div class="header country">
+                {{homeToucanBlockPageSpainBY}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient10 " target="_blank">{{homeToucanHotelName10}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient11 " target="_blank">{{homeToucanHotelName11}}</a>
+            </div>
+            <div class="header country">
+                {{homeToucanBlockPageRussiaBY}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient12 " target="_blank">{{homeToucanHotelName12}}</a>
+            </div>
+            <div class="header country">
+                {{homeToucanBlockPageOaeBY}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient13 " target="_blank">{{homeToucanHotelName13}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient14 " target="_blank">{{homeToucanHotelName14}}</a>
+            </div>
+        </div>
+    </div>
+    <!-- TOUCAN BLOCK VIDEO AND HOTELS END =========================================================== -->
+    <!--<h3 style="text-align:center;font-size:22px;">ПОДПИШИТЕСЬ НА НАС</h3>-->
+    <!--<div class="soc-icons-big-block" style="margin:30px auto;width:118px"><a style="margin: 5px;" href="#"><img src="/getmedia/0bf951d7-5db7-48b0-b6ab-898f6f97cf39/logo-instagram-white-copy" /></a><a style="margin: 5px;" href="#"><img src="/getmedia/d2ca2e94-b7ee-4572-a925-2b0f72ac847b/logo-fb-white" /></a></div>-->
+</div>
+
+<!-- FOOTER START =================================================== -->
+
+<div class="footer-not-main" id="home-page-diff-footer">
+    <div class="centered">
+        <div class="left">
+            <h3 style="">{{agentFooterItemTitleBY}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameBY}}</a><br>
+            <a v-bind:href=" agentFooterItemAgentLinkBY ">{{agentFooterItemAgentLinkNameBY}}</a><br>
+            <a v-bind:href=" agentFooterItemB2bLinkBY ">{{agentFooterItemB2bLinkNameBY}}</a>
+        </div>
+        <div class="right">
+            <h3>{{agentFooterItemTitle2BY}}</h3>
+            <a v-bind:href=" agentFooterItemPhoneBY ">{{agentFooterItemPhoneNameBY}}</a><br>
+            <a v-bind:href=" agentFooterItemMailBY ">{{agentFooterItemMailNameBY}}</a>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER END =================================================== -->
+
+<!-- SCRIPT загрузки VUE  =================================================== -->
+<script>
+    const vueLinks = ['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+        'https://www.tui.ru/getmedia/a89a3517-3f15-4580-ad2f-504f09fafad9/VUE-diff-product-home-page',
+        'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer'
+    ];
+
+    function add_files(arr, type) {
+
+        count = 0;
+
+        function new_file(link) {
+            var script = document.createElement(type);
+            script.src = link;
+            script.async = false;
+            document.head.appendChild(script);
+            if (count < arr.length - 1) {
+                script.onload = function() {
+                    new_file(arr[count]);
+                }
+                script.onerror = function() {
+                    throw new Error(arr[count - 1] + ' loading error');
+                }
+                count++;
+            }
+        }
+
+        function error(text) {
+            throw new Error('the function takes two required arguments');
+        }
+
+        (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+            (arr === undefined) ? error('no link array') :
+            (type === undefined) ? error('no file type') : '';
+        new_file(arr[count]);
+    }
+
+    add_files(vueLinks, 'script');
+</script>

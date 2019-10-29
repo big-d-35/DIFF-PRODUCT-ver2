@@ -1,0 +1,526 @@
+<!-- FUN SUN HEADER MENU START ===================================-->
+
+<div class="container-fluid top-slider top-fs" id="fun-sun-page-header-menu" v-bind:style=" funSunPageHeaderMenuBackground ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 left-row">
+                <div class="col-md-12">
+                    <div class="topLeft row">
+                        <div class="icon-top col-md-2 col-3"><img alt="FN_logo" v-bind:src=" funSunPageHeaderMenuLogo " /></div>
+                    </div>
+
+                    <h2 style="margin-top:0!important">{{funSunPageHeaderMenuTitleRU}}</h2>
+
+                    <div class="col-12 die-all">
+                        <div class="die row">
+                            <div class="circle-logo"><img v-bind:src=" funSunPageHeaderMenuItemLogo1 " /></div>
+
+                            <div class="circle-text col-md-11 d1">{{funSunPageHeaderMenuItemNameRU1}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #2fd4ce"><img v-bind:src=" funSunPageHeaderMenuItemLogo2 " /></div>
+
+                            <div class="circle-text col-md-11 d2">{{funSunPageHeaderMenuItemNameRU2}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #fde900"><img v-bind:src=" funSunPageHeaderMenuItemLogo3 " /></div>
+
+                            <div class="circle-text col-md-11 d3">{{funSunPageHeaderMenuItemNameRU3}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #fdbc00"><img v-bind:src=" funSunPageHeaderMenuItemLogo4 " /></div>
+
+                            <div class="circle-text col-md-11 d4">{{funSunPageHeaderMenuItemNameRU4}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #fd18a9"><img v-bind:src=" funSunPageHeaderMenuItemLogo5 " /></div>
+
+                            <div class="circle-text col-md-11 d5">{{funSunPageHeaderMenuItemNameRU5}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #b954af"><img v-bind:src=" funSunPageHeaderMenuItemLogo6 " /></div>
+
+                            <div class="circle-text col-md-11 d6">funSunPageHeaderMenuItemNameRU6</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #b19fd3"><img v-bind:src=" funSunPageHeaderMenuItemLogo7 " /></div>
+
+                            <div class="circle-text col-md-11 d7">{{funSunPageHeaderMenuItemNameRU7}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #afdf00"><img v-bind:src=" funSunPageHeaderMenuItemLogo8 " /></div>
+
+                            <div class="circle-text col-md-11 d8">{{funSunPageHeaderMenuItemNameRU8}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 top-right row">
+                <div class="col-6 video">
+                    <div id="player">&nbsp;</div>
+
+                    <div class="play video-fs"><img v-bind:src=" funSunPageHeaderMenuVideoPlay " /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- FUN SUN HEADER MENU END ===================================-->
+
+<!-- FUN SUN PAGE MENU START ===================================-->
+<div class="container" id="fun-sun-page-menu">
+    <div class="row">
+        <div class="buttons-slider button-slider-mobile col-md-12">
+            <div class="col-md-2 col-12 button-slider button-slider-active" id="tb" onclick="smoothScrolling('#advantagesHotels')">
+                <p>{{funSunPageMenuItemRU1}}</p>
+            </div>
+
+            <div class="button-slider col-md-1 col-12" onclick="smoothScrolling('#hotels')">
+                <p>{{funSunPageMenuItemRU2}}</p>
+            </div>
+
+            <div class="button-slider col-md-3 col-12" onclick="window.open('/concepts/tui-fun-sun/entertainment-program-children-fs/')">
+                <p>{{funSunPageMenuItemRU3}}</p>
+            </div>
+
+            <div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/for-children-fs/')">
+                <p>{{funSunPageMenuItemRU4}}</p>
+            </div>
+
+            <div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/concerts-and-master-classes')">
+                <p>{{funSunPageMenuItemRU5}}</p>
+            </div>
+
+            <div class="button-slider col-md-3 col-12" onclick="window.open('http://b2b.tui.ru/default.php?page=search_tour&amp;')">
+                <p>{{funSunPageMenuItemRU6}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FUN SUN PAGE MENU END ===================================-->
+
+
+<!-- FUN SUN ADVENTAGIES HOTELS BLOCK START ======================= -->
+<div class="container" id="advantagesHotels">
+    <h2 style="text-transform: uppercase;">{{funSunPageMenuAdvantagiesTitleRU}}</h2>
+</div>
+
+<div class="container hotels-club-country sl">
+    <div class="buttons-navigations" id="fun-sun-page-hotels-adventagies-hotels-menu">
+        <a class="button-navigatin active-link" data-block=".slider_1" href="#s1b1">{{funSunPageMenuAdventagiesHotelsMenuItemRU1}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ В номере как дома -->
+        <a class="button-navigatin" data-block=".slider_1" href="#s1b2">{{funSunPageMenuAdventagiesHotelsMenuItemRU2}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Пройдитесь по территории -->
+        <a class="button-navigatin" data-block=".slider_1" href="#s1b3">{{funSunPageMenuAdventagiesHotelsMenuItemRU3}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Для детей -->
+        <a class="button-navigatin" data-block=".slider_1" href="#s1b4">{{funSunPageMenuAdventagiesHotelsMenuItemRU4}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Попробуйте блюда и напитки -->
+        <a class="button-navigatin" data-block=".slider_1" href="#s1b5">{{funSunPageMenuAdventagiesHotelsMenuItemRU5}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Займитесь спортом -->
+        <a class="button-navigatin" data-block=".slider_1" href="#s1b6">{{funSunPageMenuAdventagiesHotelsMenuItemRU6}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Развлекитесь -->
+    </div>
+
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ В номере как дома START -->
+
+    <div class="slider slider_1" id="s1b1">
+        <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies1">
+            <div class="col-md-4 myslide col-slider-3" v-for="funSunPageHotelsAdventagie1 in funSunPageHotelsAdventagies1">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie1.background ">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunPageHotelsAdventagie1.titleRU}}</h4>
+
+                        <p class="gey_p">{{funSunPageHotelsAdventagie1.textRU}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ В номере как дома END -->
+
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Пройдитесь по территории START -->
+
+    <div class="slider slider_1 n" id="s1b2">
+        <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies2">
+            <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageHotelsAdventagie2 in funSunPageHotelsAdventagies2 ">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie2.background ">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunPageHotelsAdventagie2.titleRU}}</h4>
+
+                        <p class="gey_p">{{funSunPageHotelsAdventagie2.textRU}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Пройдитесь по территории END -->
+
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Для детей START -->
+
+    <div class="slider slider_1 n" id="s1b3">
+        <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies3">
+            <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageHotelsAdventagie3 in funSunPageHotelsAdventagies3 ">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie3.background ">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunPageHotelsAdventagie3.titleRU}}</h4>
+
+                        <p class="gey_p">{{funSunPageHotelsAdventagie3.textRU}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Для детей END -->
+
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Попробуйте блюда и напитки START -->
+    <div class="slider slider_1 n" id="s1b4">
+        <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies4">
+            <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageHotelsAdventagie4 in funSunPageHotelsAdventagies4 ">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie4.background ">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunPageHotelsAdventagie4.titleRU}}</h4>
+
+                        <p class="gey_p">{{funSunPageHotelsAdventagie4.textRU}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Попробуйте блюда и напитки END -->
+
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Займитесь спортом START -->
+
+    <div class="slider slider_1 n" id="s1b5">
+        <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies5">
+            <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageHotelsAdventagie5 in funSunPageHotelsAdventagies5 ">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie5.background ">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunPageHotelsAdventagie5.titleRU}}</h4>
+
+                        <p class="gey_p">{{funSunPageHotelsAdventagie5.textRU}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Займитесь спортом END -->
+
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Развлекитесь START -->
+
+    <div class="slider slider_1 n" id="s1b6">
+        <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies6">
+            <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageHotelsAdventagie6 in funSunPageHotelsAdventagies6 ">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie6.background ">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunPageHotelsAdventagie6.titleRU}}</h4>
+
+                        <p class="gey_p">{{funSunPageHotelsAdventagie6.textRU}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Развлекитесь END -->
+</div>
+<!-- FUN SUN ADVENTAGIES HOTELS BLOCK END ======================= -->
+
+
+
+
+<!-- ОТЕЛИ СТАРТ  ================================================================= -->
+
+<div class="container-fluid block_3" id="hotels-fun-sun">
+    <div class="container" >
+        <h2 style="text-transform: uppercase;">{{ titleRU }}</h2>
+    </div>
+    <!-- ОТЕЛИ СТАРТ слайдер ========================================================================================= -->
+
+    <div class="row">
+        <div class="container sl" id="hotels">
+            <div class="buttons-navigations" >
+                <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b1">{{country1RU}}</a> <!-- Отели с концепцией Турция -->
+                <a class="button-navigatin" data-block=".slider_2" href="#s2b2">{{country2RU}}</a> <!-- Отели с концепцией Кипр -->
+            </div>
+            <!-- Отели с концепцией Турция -->
+
+            <div class="slider slider_2" id="s2b1">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country1Hotel in country1Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country1Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country1Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country1Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country1Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country1Hotel.hotelLinkAgent ">{{ country1Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
+
+            <!-- Отели с концепцией Кипр -->
+
+            <div class="slider slider_2 n" id="s2b2">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country2Hotel in country2Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country2Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country2Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country2Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country2Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country2Hotel.hotelLinkAgent ">{{ country2Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ОТЕЛИ END слайдер  ==================================================== -->
+</div>
+<!-- ОТЕЛИ END ===================================================================== -->
+
+<!-- РАЗВЛЕКАТЕЛЬНАЯ ПРОГРАММА START ================================= -->
+        <div class="container" id="entProgram">
+            <h2 style="text-transform: uppercase;">{{funSunPageEntProgramTitleRU}}</h2>
+        </div>
+
+        <div class="container hotels-club-country sl">
+            <div class="buttons-navigations" id="entProgramMenu">
+            <a class="button-navigatin active-link" data-block=".slider_3" href="#s3b1">{{funSunPageEntProgramMenuitem1RU}}</a> <!-- Развлекательная программа Для детей --> 
+            <a class="button-navigatin" data-block=".slider_3" href="#s3b2">{{funSunPageEntProgramMenuitem2RU}}</a> <!-- Развлекательная программа Для подростков --> 
+            <a class="button-navigatin" data-block=".slider_3" href="#s3b3">{{funSunPageEntProgramMenuitem3RU}}</a> <!-- Развлекательная программа Для всей семьи -->
+            </div>
+            <!-- Развлекательная программа Для детей -->
+
+            <div class="slider slider_3" id="s3b1">
+                <div class="row-slider" data-col="4">
+                    <div class="col-md-4 myslide col-slider-4" v-for="funSunPageEntProgram1 in funSunPageEntPrograms1">
+                        <div class="sliders-hotels hap-programs" v-bind:style="funSunPageEntProgram1.background">
+                            <div class="info-img">
+                                <h4> {{funSunPageEntProgram1.titleRU}} </h4>
+
+                                <!--<div class="time-start">
+                                    <p class="col-md-8">Время начала</p>
+
+                                    <p class="col-md-4">10:00</p>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <!-- Развлекательная программа Для подростков -->
+
+            <div class="slider slider_3" id="s3b2" style="display: none">
+                <div class="row-slider" data-col="4">
+                    <div class="col-md-4 myslide col-slider-4" v-for="funSunPageEntProgram2 in funSunPageEntPrograms2">
+                        <div class="sliders-hotels hap-programs" v-bind:style="funSunPageEntProgram2.background">
+                            <div class="info-img">
+                                <h4> {{funSunPageEntProgram2.titleRU}} </h4>
+
+                                <!--<div class="time-start">
+                                    <p class="col-md-8">Время начала</p>
+
+                                    <p class="col-md-4">10:00</p>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <!-- Развлекательная программа Для всей семьи -->
+
+            <div class="slider slider_3" id="s3b3" style="display: none">
+                <div class="row-slider" data-col="4">
+                    <div class="col-md-4 myslide col-slider-4" v-for="funSunPageEntProgram3 in funSunPageEntPrograms3">
+                        <div class="sliders-hotels hap-programs" v-bind:style="funSunPageEntProgram3.background">
+                            <div class="info-img">
+                                <h4> {{funSunPageEntProgram3.titleRU}} </h4>
+
+                                <!--<div class="time-start">
+                                    <p class="col-md-8">Время начала</p>
+
+                                    <p class="col-md-4">10:00</p>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        
+<!-- РАЗВЛЕКАТЕЛЬНАЯ ПРОГРАММА END ================================= -->
+
+<!--ПРОГРАММА АНИМАЦИИ START ================================= -->
+
+<div class="container" id="funSunAnimationProgDownload">
+    <div style="background:#e1f4fb;padding: 10px 7px;">
+        <div style="font-size:16px;text-align:center;">{{funSunPageAnimationProgTitle1RU}}</div>
+
+        <div style="margin-top:10px;text-align:center;">
+        <span v-bind:style=" funSunPageAnimationProgIcon ">
+        <span style="opacity:0">.</span>
+        </span>
+        <a v-bind:href=" funSunPageAnimationProgTitle2LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle2RU}}</a>
+        </div>
+        <!-- ***************************************** -->
+
+        <div style="margin-top:10px;text-align:center;">
+        <span v-bind:style=" funSunPageAnimationProgIcon ">
+        <span style="opacity:0">.</span>
+        </span>
+        <a v-bind:href=" funSunPageAnimationProgTitle3LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle3RU}}</a>
+        </div>
+        <!-- ***************************************** -->
+        
+        <div style="margin-top:10px;text-align:center;">
+        <span v-bind:style=" funSunPageAnimationProgIcon ">
+        <span style="opacity:0">.</span>
+        </span>
+        <a v-bind:href=" funSunPageAnimationProgTitle4LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle4RU}}</a>
+        </div>
+        <!-- ***************************************** -->
+
+        <div style="font-size:16px;text-align:center;margin-top:7px;">{{funSunPageAnimationProgTitle5RU}}</div>
+
+        <div style="margin-top:10px;text-align:center;">
+        <span v-bind:style=" funSunPageAnimationProgIcon ">
+        <span style="opacity:0">.</span>
+        </span>
+        <a v-bind:href=" funSunPageAnimationProgTitle6LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle6RU}}</a>
+        </div>
+        <!-- ***************************************** -->
+        
+        <div style="margin-top:10px;text-align:center;">
+        <span v-bind:style=" funSunPageAnimationProgIcon ">
+        <span style="opacity:0">.</span>
+        </span>
+        <a v-bind:href=" funSunPageAnimationProgTitle7LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle7RU}}</a>
+        </div>
+        <!-- ***************************************** -->
+        
+        <div style="margin-top:10px;text-align:center;">
+        <span v-bind:style=" funSunPageAnimationProgIcon ">
+        <span style="opacity:0">.</span>
+        </span>
+        <a v-bind:href=" funSunPageAnimationProgTitle8LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle8RU}}</a>
+        </div>
+    </div>
+</div>
+<!-- ПРОГРАММА АНИМАЦИИ END ================================= -->
+
+<!-- FOOTER START ================================= -->
+<div class="container-fluid footer-informations" style="margin-top: 3em">
+    <div class="row" id="funSunFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>{{funSunPageFooterTitle1RU}}</h3>
+                    <a v-bind:href=" funSunPageFooterSiteLink1 " target="_blank">{{funSunPageFooterSite1RU}}</a><br />
+                    <a v-bind:href=" funSunPageFooterSiteLink2RU " target="_blank">{{funSunPageFooterSite2RU}}</a><br />
+                    <a v-bind:href=" funSunPageFooterSiteLink3RU " target="_blank">{{funSunPageFooterSite3RU}}</a>
+                </div>
+
+                <div class="col-md-3">
+                    <h3>{{funSunPageFooterTitle2RU}}</h3>
+                    <a v-bind:href=" funSunPageFooterPhoneLinkRU ">{{funSunPageFooterPhoneTitleRU}}</a><br />
+                    <a v-bind:href=" funSunPageFooterMailLinkRU ">{{funSunPageFooterMailTitleRU}}</a>
+                </div>
+
+                <div class="col-md-3">
+                    <h3>{{funSunPageFooterTitle3RU}}</h3>
+
+                    <div class="row icons-footer col-10 col-md-12" style="justify-content: flex-start;">
+                        <a v-bind:href=" funSunPageFooterInstagramLink " target="_blank" style="margin: 5px;">
+                            <img v-bind:src=" funSunPageFooterInstagramImgLink " />
+                        </a>
+                        <a v-bind:href=" funSunPageFooterFacebookLink " target="_blank" style="margin: 5px;">
+                            <img v-bind:src=" funSunPageFooterFacebookImgLink " />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FOOTER END ================================= -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
+<script src="VUE-diff-product-fun-sun-page.js" defer></script>
+<script src="VUE-FS-fun-sun-hotels-ru-by-ua.js" defer></script>

@@ -1,0 +1,70 @@
+</ul>
+</nav>
+<script type="text/javascript">
+	var top_menu_ul = document.querySelector("#top-menu-navigation"),
+	li_1 = document.createElement("li"),
+	li_2 = document.createElement("li");
+	li_1.classList.add("label-menu");
+	li_2.classList.add("label-menu");
+	li_1.innerHTML = `<a href="/concepts/home/" style="color:#092a5e">Концепции отдыха TUI</a>
+									<div class="label-menu-2">
+										<a href="/concepts/tui-fun-sun" class="concept-link">
+											<img alt="FN_logo" src="https://www.tui.ru/getmedia/a43e4cf0-4244-45b4-8bd4-275b7d8ba1a9/logoTopFN">
+											<div>
+												<b>TUI FUN&amp;SUN</b><br>Семейный отдых
+											</div>
+										</a>
+										<a href="/concepts/tui-day-night" class="concept-link">
+											<img alt="FN_logo" src="https://www.tui.ru/getmedia/dfa8f32e-6221-4be8-9c2e-23d063b6b989/DN-logo_vertical_web">
+											<div>
+				
+<b>TUI DAY&amp;NIGHT</b><br>Молодежный отдых
+											</div>
+										</a>
+										<a href="/concepts/tui-toucan" class="concept-link">
+											<img alt="FN_logo" src="https://www.tui.ru/getmedia/eda1b56f-2532-46eb-8626-65425d799edf/TC-logo-mini-vertical">
+											<div>
+												<b>TUI MINI TOUCAN</b><br>Отдых с детьми
+											</div>
+										</a>
+                                        <a href="/concepts/home/" class="concept-link">
+											<img alt="TUI Diif product" src="https://www.tui.ru/getmedia/e7f4d372-680e-46e8-bb37-28e2ec6f2f50/toucan-main-page-100x100">
+											<div>
+												<b>О Концепциях <br>отдыха TUI</b>
+											</div>
+										</a>
+									</div>`;
+li_2.innerHTML	= `<a href="/premium/premium">TUI PREMIUM </a>`	;			
+top_menu_ul.appendChild(li_1)
+top_menu_ul.appendChild(li_2)
+
+  
+li_3 = document.createElement("li");
+li_3.classList.add("label-menu");
+li_3.innerHTML	= `<p class="support-top-menu" tabindex="1">        
+                   <a href="#">Дополнительные услуги</a>
+                        <span class="tip-top-menu" style="top:43px;left:67px;"> 
+                            <a href="https://www.tui.ru/aeroexpress/" target="_blank">Аэроэкспресс</a>
+                            <br>
+                            <a href="http://b2b.tui.ru/default.php?page=cl_refer&amp;" target="_blank">Подарочные сертификаты</a>
+                            <br>							
+                            <a href="/good-to-know/Landing-Pages/fast-track" target="_blank">Fast track</a>
+                            <br>
+                            <a href="/Actions/2019/Turkey/tui-premium-turkey-cyprus-packages" target="_blank">Пакеты привилегий</a>							
+                            <br>
+							<a href="/good-to-know/comfort-class" target="_blank">Выбор места в самолете</a>
+                            <br>														
+							<a href="/foxford" target="_blank">Школа «Фоксфорд»</a>							
+                            <br>
+                            <a href="/Partnership/insurance" target="_blank">Страхование</a>
+                        </span>
+                </p>`;			
+top_menu_ul.appendChild(li_3);
+  
+  
+</script>
+<!-- Скрыть TUIshop -->
+<script>
+	var shop = document.querySelector('.menu5');
+		shop.style.display = "none";
+</script>

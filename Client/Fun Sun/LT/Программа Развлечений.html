@@ -1,0 +1,1190 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript" >
+</script>
+<!--<script async src="https://www.tui.ru/getmedia/6e64783b-d6d6-4b51-ab25-d8d1ec72e234/all" type="text/javascript"></script> ДОБАВЛЯЕТ ВТОРЫЕ ТОЧКИ СЛАЙДЕРУ -->
+<link href="https://www.tui.ru/getmedia/d55fbf08-49b9-4516-8034-c14a0a99df6c/agent-all" rel="stylesheet" type="text/css" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://www.tui.ru/getmedia/2d2c07ca-d644-47a6-a242-1b3b2af5f750/style-dif/" rel="stylesheet" type="text/css" />
+<link href="https://www.tui.ru/getmedia/bf6ea601-998f-4d12-a155-de9eb383a651/style/" rel="stylesheet" type="text/css" />
+<link href="https://www.tui.ru/getmedia/0414d9ba-58ad-4eb8-935f-82cd7ca4fa17/carusel-style/" rel="stylesheet" type="text/css" />
+<link href="https://www.tui.ru/getmedia/b21d19ea-f1e9-41a6-9828-6a503839b616/lightslider/" rel="stylesheet" />
+<link href="https://www.tui.ru/getmedia/4eedcb71-1619-4922-b8be-117e2b2bb7fd/internal-diff-style/" rel="stylesheet" />
+<link href="https://www.tui.ru/getmedia/eec19a87-cf5a-40c7-8442-09183e60e372/all" rel="stylesheet" />
+<link href="dist/css/font-tui/font-tui.css" rel="stylesheet" type="text/css" />
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+
+<style type="text/css">
+    body {
+        font-family: "TUI-reg", sans-serif !important;
+    }
+
+    .desk .gey_p {
+        display: none;
+    }
+
+    .gey_p {
+        padding-left: 15px;
+    }
+
+    .sliders-hotels {
+        min-height: 10px !important;
+        margin-top: 1em;
+    }
+
+    .sliders-hotels h4 {
+        padding-left: 15px;
+    }
+
+    .slider-content {
+        min-height: auto !important;
+        margin: 2% 2% 0;
+        height: 52px;
+    }
+
+    .slider-content ul li {
+        color: #0c2c5c !important;
+    }
+
+    .slider_2 .slider-content {
+        height: auto;
+    }
+
+    .lSPager {
+        display: none;
+    }
+
+    .lSSlideOuter {
+        height: 100%;
+    }
+
+    .lSSlideOuter img {
+        width: auto;
+        height: 380px;
+    }
+
+    .lSAction>.lSPrev {
+        left: 15%;
+    }
+
+    .lSAction>.lSNext {
+        right: 15%;
+    }
+
+    .lSAction>.lSNext,
+    .lSAction>.lSPrev {
+        color: #5887a8;
+        font-size: 30px;
+        margin: 5px;
+        padding: 12px;
+        background: #fff;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        height: 56px;
+        width: 56px;
+        -webkit-box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
+        box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
+    }
+
+    .lSAction>.lSNext,
+    .lSAction>.lSPrev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lSAction>.lSNext:before {
+        content: " >";
+        font-weight: 100;
+        font-size: 1.3em;
+    }
+
+    .lSAction>.lSPrev:before {
+        content: "< ";
+        font-weight: 100;
+        font-size: 1.3em;
+    }
+
+    .tamplate,
+    #mobile {
+        display: none;
+        margin: 0 auto;
+    }
+
+    .tamplate .block-circle {
+        display: none;
+    }
+
+    @media screen and (max-width: 759px) {
+
+        .tamplate,
+        #mobile {
+            display: block;
+        }
+
+        .sliders-hotels {
+            margin-top: 0;
+        }
+
+        .info-footer {
+            padding: 0;
+        }
+
+        .row-f {
+            padding: 15px;
+        }
+
+        .footer-informations .col-12>h3 {
+            text-align: left;
+        }
+
+        .soc {
+            padding: 0;
+        }
+
+        .soc .icons-footer {
+            justify-content: flex-start;
+        }
+
+        .tit {
+            margin: 1.5em 0 0.5em;
+        }
+    }
+
+    .price-num {
+        display: block;
+    }
+
+    #s1b3 .tit {
+        display: none;
+    }
+
+    /* fixes */
+
+    h4 {
+        font-size: 0.9rem !important;
+    }
+
+    h2.margin-need {
+        margin-top: -30px !important
+    }
+
+    .vecherom .buttons-navigations {
+        display: none !important;
+    }
+
+    .button-slider {
+        height: 52px !important;
+    }
+
+    .button-slider p {
+        margin-bottom: 0.5rem;
+    }
+
+    .button-slider-active {
+        background-color: #C3E8FB !important;
+        box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
+    }
+
+    img.main-logo {
+        width: auto;
+        display: inline-block;
+        margin: 60px 20px 60px 0;
+    }
+
+    h1.main {
+        position: relative;
+        top: 35px;
+        display: inline-block;
+        margin: 80px 10px 20px 15px !important;
+        text-transform: uppercase;
+        font-size: 1.5em !important;
+        font-weight: bold !important;
+    }
+
+    #s4b1 .tit {
+        margin-top: 5%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        h1.main {
+            margin: -35px 10px 20px 0px !important;
+            top: 0;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        h2.margin-need {
+            margin-top: 0 !important;
+        }
+    }
+
+    @media screen and (max-width: 759px) {
+        #s4b1 .tit {
+            margin: 1.5em 0 0.5em;
+        }
+    }
+
+    #s1b1 .tit,
+    #s1b2 .tit,
+    #s1b3 .tit,
+    #s1b4 .tit,
+    #s1b5 .tit {
+        display: none;
+    }
+
+    .icons-footer {
+        margin-bottom: 1em;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.3em !important;
+    }
+
+    .top-dn {
+        background: none !important;
+    }
+
+    .slider div {
+        cursor: default !important;
+    }
+
+    .slider a {
+        cursor: pointer !important;
+    }
+
+    .block_3 {
+        margin-bottom: 0 !important
+    }
+
+    .desk {
+        justify-content: flex-start;
+    }
+    a {
+        text-decoration: none;
+        color: #092a5e;
+    }
+</style>
+<!-- ШРИФТ =============================================== -->
+<style>
+    @font-face {
+        font-family: 'TUI-reg';
+        src: url('https://www.tui.ru/getmedia/0c02516a-a2de-4325-ba89-f7ac294122a8/TUITypeLight-Regular');
+        src: url('https://www.tui.ru/getmedia/0c02516a-a2de-4325-ba89-f7ac294122a8/TUITypeLight-Regular?#iefix') format('embedded-opentype'),
+            url('https://www.tui.ru/getmedia/953947e9-cb5a-43a7-a16a-1ca276d08920/TUITypeLight-Regular') format('woff2'),
+            url('https://www.tui.ru/getmedia/73494612-776c-4364-b603-208f014e9bff/TUITypeLight-Regular') format('woff'),
+            url('https://www.tui.ru/getmedia/6294bb39-80a5-4825-9b12-a1bd5925de01/TUITypeLight-Regular') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+</style>
+<!-- ШРИФТ =============================================== -->
+<style type="text/css">
+        .button-slider {
+            -webkit-box-shadow: inset 0 -4px 0 0 #67C6F6 !important;
+            -moz-box-shadow: inset 0 -4px 0 0 #67C6F6 !important;
+            box-shadow: inset 0 -4px 0 0 #67C6F6 !important;
+            background-color: #67C6F6 !important;
+        }
+
+        .button-slider-active {
+            -webkit-box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
+            -moz-box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
+            box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
+            background-color: #C3E8FB !important;
+        }
+
+        .logo img {
+            width: 120px !important;
+            margin: 25px 0;
+        }
+    </style>
+<style type="text/css">
+    body {
+        font-family: "TUI-reg", sans-serif !important;
+    }
+
+    .desk .gey_p {
+        display: none;
+    }
+
+    .gey_p {
+        padding-left: 15px;
+    }
+
+    .top-slider {
+        position: relative;
+        background: white;
+        padding: 0;
+    }
+
+    .sliders-hotels {
+        min-height: 10px !important;
+        margin-top: 1em;
+    }
+
+    .sliders-hotels h4 {
+        padding-left: 15px;
+    }
+
+    .slider-content {
+        min-height: auto !important;
+        margin: 2% 2% 0;
+        height: 52px;
+    }
+
+    .slider_2 .slider-content {
+        height: auto;
+    }
+
+    .slider-content ul li {
+        color: #0c2c5c !important;
+    }
+
+    /*         .sl .slider-content {
+                        min-height: 336px !important;
+                    }*/
+
+    .lSPager {
+        display: none;
+    }
+
+
+    .lSSlideOuter img {
+        width: auto;
+        height: 380px;
+    }
+
+    .lSAction>.lSPrev {
+        left: 15%;
+    }
+
+    .lSAction>.lSNext {
+        right: 15%;
+    }
+
+    .lSAction>.lSNext,
+    .lSAction>.lSPrev {
+        color: #5887a8;
+        font-size: 30px;
+        margin: 5px;
+        padding: 12px;
+        background: #fff;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        height: 56px;
+        width: 56px;
+        -webkit-box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
+        box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
+    }
+
+    .lSAction>.lSNext,
+    .lSAction>.lSPrev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lSAction>.lSNext:before {
+        content: " >";
+        font-weight: 100;
+        font-size: 1.3em;
+    }
+
+    .lSAction>.lSPrev:before {
+        content: "< ";
+        font-weight: 100;
+        font-size: 1.3em;
+    }
+
+    .tamplate,
+    #mobile {
+        display: none;
+        margin: 0 auto;
+    }
+
+    .tamplate .block-circle {
+        display: none;
+    }
+
+    @media screen and (max-width: 759px) {
+
+        .tamplate,
+        #mobile {
+            display: block;
+        }
+
+        .sliders-hotels {
+            margin-top: 0;
+        }
+
+        .info-footer {
+            padding: 0;
+        }
+
+        .row-f {
+            padding: 15px;
+        }
+
+        .footer-informations .col-12>h3 {
+            text-align: left;
+        }
+
+        .soc {
+            padding: 0;
+        }
+
+        .soc .icons-footer {
+            justify-content: flex-start;
+        }
+
+        .tit {
+            margin: 1.5em 0 0.5em;
+        }
+    }
+
+    .price-num {
+        display: block;
+    }
+
+    #s1b3 .tit {
+        display: none;
+    }
+
+    /* fixes */
+    .price-num {
+        display: none;
+    }
+
+    h4 {
+        font-size: 1.5rem !important;
+    }
+
+    h2.margin-need {
+        margin-top: -30px !important
+    }
+
+    .vecherom .buttons-navigations {
+        display: none !important;
+    }
+
+    .button-slider {
+        height: 52px !important;
+    }
+
+    .button-slider-active {
+        background-color: #C3E8FB !important;
+        box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
+    }
+
+    .button-slider p {
+        margin-bottom: 0.5rem;
+    }
+
+    img.main-logo {
+        width: auto;
+        display: inline-block;
+        margin: 60px 20px 60px 0;
+    }
+
+    h1.main {
+        position: relative;
+        top: 35px;
+        display: inline-block;
+        margin: 80px 10px 20px 15px !important;
+        text-transform: uppercase;
+        font-size: 1.5em !important;
+        font-weight: bold !important;
+    }
+
+    #s4b1 .tit {
+        margin-top: 5%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        h1.main {
+            margin: -35px 10px 20px 0px !important;
+            top: 0;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        h2.margin-need {
+            margin-top: 0 !important;
+        }
+    }
+
+    @media screen and (max-width: 759px) {
+        #s4b1 .tit {
+            margin: 1.5em 0 0.5em;
+        }
+    }
+
+    #s1b1 .tit,
+    #s1b2 .tit,
+    #s1b3 .tit,
+    #s1b4 .tit,
+    #s1b5 .tit {
+        display: none;
+    }
+
+    .icons-footer {
+        margin-bottom: 1em;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.3em !important;
+    }
+
+    .top-dn {
+        background: none !important;
+    }
+
+    .slider div {
+        cursor: default !important;
+    }
+
+    .slider a {
+        cursor: pointer !important;
+    }
+
+    .block_3 {
+        margin-bottom: 0 !important
+    }
+
+    .desk {
+        justify-content: flex-start;
+    }
+</style>
+<style type="text/css">
+    
+    a {
+        text-decoration: none;
+        color: #092a5e;
+    }
+</style>
+<title></title>
+<div class="row-all">
+   
+
+    <!-- SLIDER PROGRAMMA START ============================= 
+
+    <div class="row-all">
+        <ul id="autoWidth">
+            <li>
+                <div class="myslide"><img src="https://www.tui.ru/getmedia/cf95e3b3-acbf-4d36-b9ab-27a2e8ddc649/top-slider-1" /></div>
+            </li>
+            <li>
+                <div class="myslide"><img src="https://www.tui.ru/getmedia/64715bc9-3b60-489f-b2de-cb30e75bfa9f/top-slider-2" /></div>
+            </li>
+            <li>
+                <div class="myslide"><img src="https://www.tui.ru/getmedia/2a24c68a-3e1a-456a-9dd7-776c03a95fa8/top-slider-3" /></div>
+            </li>
+            <li>
+                <div class="myslide"><img src="https://www.tui.ru/getmedia/02a4dd9b-9d82-43ed-ad84-6bd90cfb883f/top-slider-4" /></div>
+            </li>
+            <li>
+                <div class="myslide"><img src="https://www.tui.ru/getmedia/e6ce4b9f-1d2e-45d0-9136-55fbd0cd795b/top-slider-5" /></div>
+            </li>
+            <li>
+                <div class="myslide"><img src="https://www.tui.ru/getmedia/d9ad3fdf-ba24-4c26-9e55-08752818d3df/top-slider-6" /></div>
+            </li>
+        </ul>
+
+    </div>
+     SLIDER PROGRAMMA END ============================= -->
+
+    <!-- FUN SUN PAGE MENU START ===================================-->
+    <div class="container" id="fun-sun-page-menu">
+        <div class="row">
+            <div class="buttons-slider button-slider-mobile col-md-12">
+                <a class="col-md-2 col-12 button-slider " id="tb" v-bind:href="funSunPageMenuItemLinkClient1" target="_blank">
+                    <p>{{funSunPageMenuItemLT1}}</p>
+                </a>
+
+                <a class="button-slider col-md-1 col-12 " onclick="smoothScrolling('#hotels')">
+                    <p>{{funSunPageMenuItemLT2}}</p>
+                </a>
+
+                <a class="button-slider col-md-3 col-12 button-slider-active" onclick="smoothScrolling('#rs')">
+                    <p>{{funSunPageMenuItemLT3}}</p>
+                </a>
+
+                <a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkClient4" target="_blank">
+                    <p>{{funSunPageMenuItemLT4}}</p>
+                </a>
+
+                <a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkClient5" target="_blank">
+                    <p>{{funSunPageMenuItemLT5}}</p>
+                </a>
+
+                <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkClient6LT" target="_blank">
+                    <p>{{funSunPageMenuItemLT6}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- FUN SUN PAGE MENU END ===================================-->
+
+
+    <div class="container " id="funSunProgrammPage">
+        <img class="main-logo" src="https://www.tui.ru/getmedia/599fc8fa-8b25-484b-b09f-dc541a1360ab/logo" />
+        <h1 class="main">{{titleLT}}</h1>
+        <h2 class="margin-need">{{subTitleLT}}</h2>
+    </div>
+
+
+    <!--ПРОГРАММА АНИМАЦИИ START ================================= -->
+
+    <div class="container" id="funSunAnimationProgDownload">
+        <div style="background:#e1f4fb;padding: 10px 7px;">
+            <div style="font-size:16px;text-align:center;">{{funSunPageAnimationProgTitle1LT}}</div>
+
+            <div style="margin-top:10px;text-align:center;">
+                <span v-bind:style=" funSunPageAnimationProgIcon ">
+                    <span style="opacity:0">.</span>
+                </span>
+                <a v-bind:href=" funSunPageAnimationProgTitle2LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle2LT}}</a>
+            </div>
+            <!-- ***************************************** -->
+
+            <div style="margin-top:10px;text-align:center;">
+                <span v-bind:style=" funSunPageAnimationProgIcon ">
+                    <span style="opacity:0">.</span>
+                </span>
+                <a v-bind:href=" funSunPageAnimationProgTitle3LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle3LT}}</a>
+            </div>
+            <!-- ***************************************** -->
+
+            <div style="margin-top:10px;text-align:center;">
+                <span v-bind:style=" funSunPageAnimationProgIcon ">
+                    <span style="opacity:0">.</span>
+                </span>
+                <a v-bind:href=" funSunPageAnimationProgTitle4LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle4LT}}</a>
+            </div>
+            <!-- ***************************************** -->
+
+            <div style="font-size:16px;text-align:center;margin-top:7px;">{{funSunPageAnimationProgTitle5LT}}</div>
+
+            <div style="margin-top:10px;text-align:center;">
+                <span v-bind:style=" funSunPageAnimationProgIcon ">
+                    <span style="opacity:0">.</span>
+                </span>
+                <a v-bind:href=" funSunPageAnimationProgTitle6LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle6LT}}</a>
+            </div>
+            <!-- ***************************************** -->
+
+            <div style="margin-top:10px;text-align:center;">
+                <span v-bind:style=" funSunPageAnimationProgIcon ">
+                    <span style="opacity:0">.</span>
+                </span>
+                <a v-bind:href=" funSunPageAnimationProgTitle7LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle7LT}}</a>
+            </div>
+            <!-- ***************************************** -->
+
+            <div style="margin-top:10px;text-align:center;">
+                <span v-bind:style=" funSunPageAnimationProgIcon ">
+                    <span style="opacity:0">.</span>
+                </span>
+                <a v-bind:href=" funSunPageAnimationProgTitle8LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle8LT}}</a>
+            </div>
+        </div>
+    </div>
+    <!-- ПРОГРАММА АНИМАЦИИ END ================================= -->
+
+
+    <!-- SLIDER РАЗВЛЕЧЕНИЙ 1 START ======================= -->
+    
+    <div class="container hotels-club-country" id="earlyBook">
+        <!-- SLIDER РАЗВЛЕЧЕНИЙ MENU  START ======================= -->
+        <div class="buttons-navigations" id="funSunProgrammPageAllEntMenu">
+            <a class="button-navigatin active-link" data-block=".slider_1" href="#s1b1">{{menuItem1LT}}</a>
+            <a class="button-navigatin" data-block=".slider_1" href="#s1b2">{{menuItem2LT}}</a>
+            <a class="button-navigatin" data-block=".slider_1" href="#s1b3">{{menuItem3LT}}</a>
+            <a class="button-navigatin" data-block=".slider_1" href="#s1b4">{{menuItem4LT}}</a>
+            <a class="button-navigatin" data-block=".slider_1" href="#s1b5">{{menuItem5LT}}</a>
+        </div>
+        <!-- SLIDER РАЗВЛЕЧЕНИЙ MENU  END ======================= -->
+
+
+        <!-- ВКЛАДКА 1 SLIDER РАЗВЛЕЧЕНИЙ START ======================= -->
+        <div class="desk row slider slider_1" id="s1b1">
+
+            
+
+            <div class="sm-1 col-md-3 myslide col-slider-3" v-for="funSunProgrammPageAllEntSliderItem1 in funSunProgrammPageAllEntSliderItems1">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style=" funSunProgrammPageAllEntSliderItem1.background ">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunProgrammPageAllEntSliderItem1.titleLT}}</h4>
+
+                        <p class="gey_p">&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+        <!-- ВКЛАДКА 1 SLIDER РАЗВЛЕЧЕНИЙ END ======================= -->
+        
+        <!-- ВКЛАДКА 2 SLIDER РАЗВЛЕЧЕНИЙ START ======================= -->
+        <div class="row desk slider slider_1" id="s1b2" style="display: none">
+            
+
+            <div class="sm-1 col-md-3 myslide col-slider-3" v-for="funSunProgrammPageAllEntSliderItem2 in funSunProgrammPageAllEntSliderItems2">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style=" funSunProgrammPageAllEntSliderItem2.background ">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunProgrammPageAllEntSliderItem2.titleLT}}</h4>
+
+                        <p class="gey_p">&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- ВКЛАДКА 2 SLIDER РАЗВЛЕЧЕНИЙ END ======================= -->
+        
+        <!-- ВКЛАДКА 3 SLIDER РАЗВЛЕЧЕНИЙ START ======================= -->
+        <div class="row desk slider slider_1" id="s1b3" style="display: none">
+            
+
+            <div class="sm-1 col-md-3 myslide col-slider-3" v-for="funSunProgrammPageAllEntSliderItem3 in funSunProgrammPageAllEntSliderItems3">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style=" funSunProgrammPageAllEntSliderItem3.background ">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunProgrammPageAllEntSliderItem3.titleLT}}</h4>
+
+                        <p class="gey_p">&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- ВКЛАДКА 3 SLIDER РАЗВЛЕЧЕНИЙ END ======================= -->
+        
+        <!-- ВКЛАДКА 4 SLIDER РАЗВЛЕЧЕНИЙ START ======================= -->
+        <div class="row desk slider slider_1" id="s1b4" style="display: none">
+            
+
+            <div class="sm-1 col-md-3 myslide col-slider-3" v-for="funSunProgrammPageAllEntSliderItem4 in funSunProgrammPageAllEntSliderItems4">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style=" funSunProgrammPageAllEntSliderItem4.background ">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunProgrammPageAllEntSliderItem4.titleLT}}</h4>
+
+                        <p class="gey_p">&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- ВКЛАДКА 4 SLIDER РАЗВЛЕЧЕНИЙ END ======================= -->
+       
+        <!-- ВКЛАДКА 5 SLIDER РАЗВЛЕЧЕНИЙ START ======================= -->
+        <div class="row desk slider slider_1" id="s1b5" style="display: none">
+            
+
+            <div class="sm-1 col-md-3 myslide col-slider-3" v-for="funSunProgrammPageAllEntSliderItem5 in funSunProgrammPageAllEntSliderItems5">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style=" funSunProgrammPageAllEntSliderItem5.background ">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunProgrammPageAllEntSliderItem5.titleLT}}</h4>
+
+                        <p class="gey_p">&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- ВКЛАДКА 5 SLIDER РАЗВЛЕЧЕНИЙ END ======================= -->
+    </div>
+    
+    <!-- SLIDER РАЗВЛЕЧЕНИЙ 1 END ======================= -->
+    
+
+    <div class="container" id="rs">
+        <h2 style="margin-top:70px !important">{{titleLT}}</h2>
+    </div>
+
+   
+    <!-- SLIDER РАЗВЛЕЧЕНИЙ 2 START ======================= -->
+    <div class="container hotels-club-country container2" id="earlyBook">
+        <!-- SLIDER 2 РАЗВЛЕЧЕНИЙ MENU START ================== -->
+        <div class="buttons-navigations" id="funSunProgrammPageAllEntMenu2">
+            <a class="button-navigatin active-link" data-block=".slider_3" href="#s3b11">{{menuItem1LT}}</a>
+            <a class="button-navigatin" data-block=".slider_3" href="#s3b22">{{menuItem2LT}}</a>
+            <a class="button-navigatin" data-block=".slider_3" href="#s3b33">{{menuItem3LT}}</a>
+        </div>
+        <!-- SLIDER 2 РАЗВЛЕЧЕНИЙ MENU END ================== -->
+        
+        <!-- ВКЛАДКА 1 SLIDER 2 РАЗВЛЕЧЕНИЙ START ================== -->    
+        <div class="desk row slider slider_3" id="s3b11">
+            
+
+            <div class="sm-1 col-md-3 myslide col-slider-3" v-for="funSunProgrammPageAllEntSlider2Item1 in funSunProgrammPageAllEntSlider2Items1">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style="funSunProgrammPageAllEntSlider2Item1.background">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunProgrammPageAllEntSlider2Item1.titleLT}}</h4>
+
+                        <p class="gey_p">&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        
+            
+        </div>
+        <!-- ВКЛАДКА 1 SLIDER 2 РАЗВЛЕЧЕНИЙ END ================== -->        
+       
+       <!-- ВКЛАДКА 2 SLIDER 2 РАЗВЛЕЧЕНИЙ START ================== -->    
+        <div class="row desk slider slider_3" id="s3b22" style="display: none">
+            <!-- Таб 2-->
+            <div class="col-md-12" style="">
+                <h3 class="tit">{{titleLT}}</h3>
+            </div>
+
+            
+
+            <div class="sm-1 col-md-3 myslide col-slider-3" v-for="funSunProgrammPageAllEntSlider2Item2 in funSunProgrammPageAllEntSlider2Items2">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style="funSunProgrammPageAllEntSlider2Item2.background">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunProgrammPageAllEntSlider2Item2.titleLT}}</h4>
+
+                        <p class="gey_p">&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- ВКЛАДКА 2 SLIDER 2 РАЗВЛЕЧЕНИЙ END ================== -->
+      
+       <!-- ВКЛАДКА 3 SLIDER 2 РАЗВЛЕЧЕНИЙ START ================== -->    
+        <div class="row desk slider slider_3" id="s3b33" style="display: none">
+            
+            <div class="col-md-12" style="">
+                <h3 class="tit">{{titleLT}}</h3>
+            </div>
+            
+            <div class="sm-1 col-md-3 myslide col-slider-3" v-for="funSunProgrammPageAllEntSlider2Item3 in funSunProgrammPageAllEntSlider2Items3">
+                <div class="sliders-hotels">
+                    <div class="imgSlider" v-bind:style="funSunProgrammPageAllEntSlider2Item3.background">&nbsp;</div>
+
+                    <div class="slider-content">
+                        <h4>{{funSunProgrammPageAllEntSlider2Item3.titleLT}}</h4>
+
+                        <p class="gey_p">&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- ВКЛАДКА 3 SLIDER 2 РАЗВЛЕЧЕНИЙ END ================== -->
+    </div>
+    <!-- костыль№1 - третий подзаголовок Вечером -->
+    <!-- SLIDER РАЗВЛЕЧЕНИЙ 2 END ======================= -->
+   <!-- <div class="row"> 
+    <div class="container hotels-club-country vecherom" id="earlyBook">
+        
+        <div class="buttons-navigations">
+            <a class="button-navigatin active-link" data-block=".slider_4" href="#s4b1">Все</a>
+        </div>
+        
+        <div class="row desk slider slider_4" id="s4b1" style="">
+            <!-- сюда через костыль№1-скрипт вставляется копия слайда "Вечерние шоу", чтобы у блока 2 был визуально 3-й подзаголовок "Вечером" в табе "Все". Этот блок прячется при выборе других табов блока 2 
+        </div>
+    </div>-->
+
+
+
+
+    <!-- ОТЕЛИ СТАРТ  ================================================================= -->
+
+    <div class="container-fluid block_3">
+        <div class="container" id="hotels-name">
+            <h2 style="text-transform: uppercase;">{{funSunPageAllHotelsTitleLT}}</h2>
+        </div>
+        <!-- ОТЕЛИ СТАРТ слайдер ========================================================================================= -->
+
+        <div class="row">
+            <div class="container sl" id="hotels">
+                <div class="buttons-navigations" id="hotel-buttons">
+                    <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b1">{{countryName1LT}}</a> <!-- Отели с концепцией Турция -->
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b2">{{countryName2LT}}</a> <!-- Отели с концепцией Кипр -->
+                </div>
+                <!-- Отели с концепцией Турция -->
+
+                <div class="slider slider_2" id="s2b1">
+                    <div class="row-slider" data-col="3">
+                        <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+
+                        <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageAllTurkeyHotel in funSunPageAllTurkeyHotels ">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" funSunPageAllTurkeyHotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tallone">
+                                    <h4>{{funSunPageAllTurkeyHotel.countryLT}}</h4>
+
+                                    <p class="gey_p">{{funSunPageAllTurkeyHotel.hotelNameLT}}</p>
+
+                                    <ul>
+                                        <li>{{funSunPageAllTurkeyHotel.hotelItem1LT}}</li>
+                                        <li>{{funSunPageAllTurkeyHotel.hotelItem2LT}}</li>
+                                        <li>{{funSunPageAllTurkeyHotel.hotelItem3LT}}</li>
+                                        <li>{{funSunPageAllTurkeyHotel.hotelItem4LT}}</li>
+                                        <li>{{funSunPageAllTurkeyHotel.hotelItem5LT}}</li>
+                                        <li>{{funSunPageAllTurkeyHotel.hotelItem6LT}}</li>
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <!--<div class="col-md-7 price-num"><p>от <b>25 338</b> на одного</p><p>на 7 ночей</p></div>-->
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" funSunPageAllTurkeyHotel.hotelLinkClient ">{{ funSunPageAllTurkeyHotel.takeTourLT }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+
+                    </div>
+                </div>
+
+                <!-- Отели с концепцией Кипр -->
+
+                <div class="slider slider_2 n" id="s2b2">
+                    <div class="row-slider" data-col="3">
+                        <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+
+                        <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageAllCyprusHotel in funSunPageAllCyprusHotels ">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" funSunPageAllCyprusHotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{funSunPageAllCyprusHotel.countryLT}}</h4>
+
+                                    <p class="gey_p">{{funSunPageAllCyprusHotel.hotelNameLT}}</p>
+
+                                    <ul>
+                                        <li>{{funSunPageAllCyprusHotel.hotelItem1LT}}</li>
+                                        <li>{{funSunPageAllCyprusHotel.hotelItem2LT}}</li>
+                                        <li>{{funSunPageAllCyprusHotel.hotelItem3LT}}</li>
+                                        <li>{{funSunPageAllCyprusHotel.hotelItem4LT}}</li>
+                                        <li>{{funSunPageAllCyprusHotel.hotelItem5LT}}</li>
+                                        <li>{{funSunPageAllCyprusHotel.hotelItem6LT}}</li>
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <!--<div class="col-md-7 price-num"><p>от <b>34 895</b> на одного</p><p>на 7 ночей</p></div>-->
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" funSunPageAllCyprusHotel.hotelLinkClient ">{{ funSunPageAllCyprusHotel.takeTourLT }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ОТЕЛИ END слайдер  ==================================================== -->
+    </div>
+    <!-- ОТЕЛИ END ===================================================================== -->
+
+
+
+    <div class="container-fluid footer-informations" style="margin-top: 3em">
+        <div class="row" id="funSunFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>{{funSunPageFooterTitle1LT}}</h3>
+                        <a v-bind:href=" funSunPageFooterSiteLink1 " target="_blank">{{funSunPageFooterSite1LT}}</a><br />
+                        <a v-bind:href=" funSunPageFooterSiteLink2LV " target="_blank">{{funSunPageFooterSite2LT}}</a><br />
+                        <a v-bind:href=" funSunPageFooterSiteLink3LV " target="_blank">{{funSunPageFooterSite3LT}}</a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h3>{{funSunPageFooterTitle2LT}}</h3>
+                        <a v-bind:href=" funSunPageFooterPhoneLinkLT ">{{funSunPageFooterPhoneTitleLT}}</a><br />
+                        <a v-bind:href=" funSunPageFooterMailLinkLT ">{{funSunPageFooterMailTitleLT}}</a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h3>{{funSunPageFooterTitle3LT}}</h3>
+
+                        <div class="row icons-footer col-10 col-md-12" style="justify-content: flex-start;">
+                            <a v-bind:href=" funSunPageFooterInstagramLink " target="_blank" style="margin: 5px;">
+                                <img v-bind:src=" funSunPageFooterInstagramImgLink " />
+                            </a>
+                            <a v-bind:href=" funSunPageFooterFacebookLink " target="_blank" style="margin: 5px;">
+                                <img v-bind:src=" funSunPageFooterFacebookImgLink " />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER END ================================= -->
+
+
+</div>
+
+<!-- SCRIPT загрузки VUE  =================================================== -->
+<script>
+    const vueLinks = ['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+        'https://www.tui.ru/getmedia/8d1465da-5919-44bb-8550-8bc3ac3e0b7d/VUE-diff-product-fun-sun-page',
+        'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer',
+        'https://www.tui.ru/getmedia/869cdbe7-8ba7-4375-b5c3-3c0d2c4cba8c/VUE-FS-fun-sun-hotels-ee-lt-lv',
+        'https://www.tui.ru/getmedia/6e64783b-d6d6-4b51-ab25-d8d1ec72e234/all'                
+
+    ];
+
+    function add_files(arr, type) {
+
+        count = 0;
+
+        function new_file(link) {
+            var script = document.createElement(type);
+            script.src = link;
+            script.async = false;
+            document.head.appendChild(script);
+            if (count < arr.length - 1) {
+                script.onload = function() {
+                    new_file(arr[count]);
+                }
+                script.onerror = function() {
+                    throw new Error(arr[count - 1] + ' loading error');
+                }
+                count++;
+            }
+        }
+
+        function error(text) {
+            throw new Error('the function takes two required arguments');
+        }
+
+        (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+            (arr === undefined) ? error('no link array') :
+            (type === undefined) ? error('no file type') : '';
+        new_file(arr[count]);
+    }
+
+    add_files(vueLinks, 'script');
+</script>
+<script src="https://www.tui.ru/getmedia/6039e8fe-a0c4-4347-a1cd-3f0c350089ea/slider-Mobile" type="text/javascript">
+</script>
+<script src="https://www.youtube.com/iframe_api" type="text/javascript">
+</script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js" type="text/javascript">
+</script>
+<script src="https://www.tui.ru/getmedia/204066fd-7fc3-4009-a67f-5e5c14412ce7/scroll/" type="text/javascript">
+</script>
+<script src="https://www.tui.ru/getmedia/e14c79a9-1af1-4201-bd14-8567d5fbc516/lightslider/" type="text/javascript">
+</script>
+
+<!--<script src="https://www.tui.ru/getmedia/6b176d88-6bc0-48fa-aa88-4143bafe5ce4/carousel/" type="text/javascript">
+</script>
+<script src="https://www.tui.ru/getmedia/9214205f-646e-4ff8-8b2d-613f1852e8ec/js/" type="text/javascript">
+</script>-->
+<script type="text/javascript">
+    //height:0 for sliders with empty slides
+    jQuery('.hotels-club-country .tamplate .col-md-3.myslide.col-slider-3').each(function() {
+        if (!jQuery(this).is(':visible')) {
+            if (jQuery(this).parents('.tamplate').find('.col-md-3.myslide.col-slider-3').length == 1) {
+                jQuery(this).parents('.tamplate').attr('style', 'height:0');
+            }
+        }
+    });
+</script>
+<script type="text/javascript">
+    jQuery(function() {
+        /* костыль№1 для раздела-подзаголовка "Вечером" блока 2 - начало */
+        jQuery('#s4b1').html(jQuery('#s3b33').html());
+        jQuery('#s4b1 .col-md-12:first-child').show();
+        jQuery('#s4b1 .col-md-12:first-child .tit').show();
+        jQuery('#s4b1 .col-md-12:first-child .tit').text('Вечером');
+        jQuery(document).on('click', '.hotels-club-country.container2 .buttons-navigations a:not(.hotels-club-country.container2 .buttons-navigations a:first-child)', function() {
+            jQuery('.hotels-club-country.vecherom').hide();
+        });
+        jQuery(document).on('click', '.hotels-club-country.container2 .buttons-navigations a:first-child', function() {
+            jQuery('.hotels-club-country.vecherom').show();
+        });
+
+        jQuery('.hotels-club-country.container2 select.buttons-navigations').on('change', function() {
+            if (jQuery(".hotels-club-country.container2 select.buttons-navigations").prop('selectedIndex') > 0) {
+                jQuery('.hotels-club-country.vecherom').hide();
+            } else {
+                jQuery('.hotels-club-country.vecherom').show();
+            }
+        });
+        /* костыль№1 для раздела-подзаголовка "Вечером" блока 2 - конец */
+        jQuery(".smooth-scroll").click(function() {
+            $('html,body').animate({
+                scrollTop: $("h2:first-child").offset().top
+            }, 'slow');
+        });
+    });
+</script>
+<script type="text/javascript">
+    function smoothScrolling(element) {
+        document.querySelector(element).scrollIntoView({
+            block: "start",
+            behavior: "smooth"
+        });
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#autoWidth').lightSlider({
+            autoWidth: true,
+            loop: true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            }
+        });
+    });
+</script>

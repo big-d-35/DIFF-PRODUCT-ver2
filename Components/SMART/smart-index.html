@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- HEAD START ========================================================================= -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" >
+    <meta name="description" content="">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>TUI SMART</title>
+    
+<!-- CSS STYLE ======================================================================== -->
+   
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="css/smart-desktop.css">
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="css/smart-laptop.css">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="css/smart-tablet.css"> 
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="css/smart-mobile.css">
+    
+<!-- CSS STYLE ======================================================= -->
+    
+    
+    
+</head>
+
+<!-- HEAD END ========================================================================= -->
+
+
+
+<body>
+   
+<!-- MAIN START ======================================================================= -->
+   
+    <div class="smart" id="smart-diff">
+       
+       <!-- BANNER START ================================= -->
+       
+       
+        <div class="smart__banner">
+            <img v-bind:src=" bannerRU " alt="SMART Banner" class="smart__img ">    
+        </div>
+        
+        <!-- BANNER END ================================= -->
+        
+        <!-- ABOUT START ================================= -->
+        
+        <div class="smart__text">
+            <h2 class="smart__title"> {{titleRU}} </h2>
+            <p class="smart__about"> {{aboutRU}} </p>
+        </div>
+        
+        <!-- ABOUT END ================================= -->
+        
+        <!-- ФИШКИ START =============================== -->
+        
+        <div class="fishka">
+            <div class="fishka__item" v-for=" fishkiPoint in fishkiPoints" v-bind:style=" fishkiPoint.cssPart " >
+                <div class="fishka__text" >
+                    <h3 class="fishka__title"> {{ fishkiPoint.titleRU }} </h3>
+                </div>
+                <img v-bind:src=" fishkiPoint.image " alt="fishka image" class="fishka__img">
+                
+            </div>
+        </div>
+        
+        <!-- ФИШКИ END =============================== -->
+        
+        <!-- WHY START =============================== -->
+        
+        <div class="why">
+            <h2 class="smart__title"> {{ whyTitleRU }} </h2>
+            <div class="why__items">
+                <div class="why__item" v-for=" whyItem in whyItems ">
+                    <img v-bind:src=" whyItem.image " alt="image" class="why__img">
+                    <div class="why__text">
+                        <h3 class="why__title"> {{ whyItem.titleRU }} </h3>
+                        <ul class="why__spisok" v-for=" item in whyItem.items">
+                            <li class="why__spisok-item" > {{ item.itemRU }} </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+        <!-- WHY ENS ================================ -->
+        
+        <!-- OPEN DATES START =============================== -->
+        
+        <div class="country">
+            <h2 class="smart__title"> {{ dateTitleRU }} </h2>
+            <div class="country__items">
+                <div class="country__item" v-for=" openDate in openDates ">
+                    <h3 class="country__name"> {{ openDate.countryNameRU }} </h3>
+                    <div class="country__block" v-for=" hotel in openDate.hotels ">
+                        <a v-bind:href=" hotel.linkClient " class="country__hotel" target="_blank"> {{  hotel.name }} </a>
+                        <span class="country__date"> {{  hotel.date }} </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- OPEN DATES END =============================== -->
+        
+    </div>
+    
+<!-- MAIN END ========================================================================= -->
+    
+<!-- SCRIPTS START ==================================================================== --> 
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>  
+<script src="VUE-smart.js" defer></script>
+
+<!-- SCRIPTS END ====================================================================== -->   
+
+<!-- METRIKA START ====================================================================== -->   
+
+<!-- METRIKA END ====================================================================== --> 
+
+
+</body>
+</html>

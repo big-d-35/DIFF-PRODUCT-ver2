@@ -1,0 +1,321 @@
+<!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
+
+<div class="menu-top" id="home-page-diff-menu-top">
+    <div class="container">
+        <div class="row">
+            <a class="col-md-2 col-6 logo-img" href="/"><img :src=" logoLink "></a>
+            <div class="col-5 but-menu-mobile">
+                &nbsp;
+            </div>
+
+            <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
+
+            <div class="col-md-10 col-10 mobile_agent">
+                <div id="exit_menu">
+                    X
+                </div>
+                <div class="row menu-label">
+                    <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameRU}}</a>
+                    <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameRU}}</a>
+                    <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameRU}}</a>
+                    <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameRU}}</a>
+                    <div class="label-menu" style="position: relative;cursor: pointer">
+                        <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameRU}}</a>
+                        <div class="label-menu-2">
+                            <div class="concept-link">
+                                <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
+                                <div>
+                                    <a :href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                        {{menuItemFunSunNameRU}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemDayNightLink "><img alt="FN_logo" :src=" menuItemDayNightLogo "></a>
+                                <div>
+                                    <a :href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                        {{menuItemDayNightNameRU}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemToucanLink "><img alt="FN_logo" :src=" menuItemToucanLogo "></a>
+                                <div>
+                                    <a :href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                        {{menuItemToucanNameRU}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
+
+                                <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameRU1}}<br />
+                                            {{menuItemConceptsAboutNameRU2}}</b></a></div>
+                            </div>
+                        </div>
+                    </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
+                    <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkRU " target="_blank">{{menuItemLoginNameRU}}</a>
+                </div>
+            </div>
+
+            <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+
+            <div class="col-md-10">
+                <div class="row menu-telephone">
+                    <div class="col-md-8 col-7">
+                        <p class="telephone-title">{{menuPhoneTitleRU}}</p>
+                        <p class="telephone-number">{{menuPhonePhoneRU}}</p>
+                    </div>
+                    <a :href=" menuTouristSiteLinkRU " style="color: black">{{menuTouristSiteNameRU}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
+
+
+<!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
+<div class="head" id="home-page-first-block">
+    <div class="center-block">
+        <div class="white-box">
+            <p class="header">{{firstBlockHeadNameRU1}}<br>
+                {{firstBlockHeadNameRU2}}</p>
+            <p class="comment"><span>{{firstBlockHeadCommentRU1}}</span> <span>{{firstBlockHeadCommentRU2}}</span></p>
+            <div class="button-choice">
+                <a v-bind:href=" firstBlockHeadPresentaionLink " target="_blank">{{firstBlockHeadPresentaionRU}}</a>
+            </div>
+            <div class="details">
+                {{firstBlockHeadDeatilsRU}}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ПЕРВЫЙ БЛОК END =========================================================== -->
+
+<!-- TEXT START =========================================================== -->
+<div class="text" id="home-page-text-block">
+    <strong>{{homePageTextBlockRU1}}</strong>{{homePageTextBlockRU2}}<br>
+    <br>
+    {{homePageTextBlockRU3}}
+</div>
+<!-- TEXT END =========================================================== -->
+
+<!-- FUN SUN BLOCK TEXT START =========================================================== -->
+<div class="block-head" id="home-page-fun-sun-block-text">
+    <div class="logo"><img v-bind:src=" homePageFunSunBlockLogo "></div>
+    <div class="about">
+        <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+            {{homePageFunSunBlockTitleRU1}}
+        </div>
+        <div class="name">
+            {{homePageFunSunBlockTitleRU2}}
+        </div>
+        <p class="text">{{homePageFunSunBlockTextRU1}}</p>
+        <p class="text">{{homePageFunSunBlockTextRU2}}</p>
+    </div>
+</div>
+<!-- FUN SUN BLOCK TEXT END =========================================================== -->
+
+<!-- FUN SUN BLOCK VIDEO AND HOTELS START =========================================================== -->
+<div class="block" id="home-page-fun-sun-block-video-hotels">
+    <div class="video">
+        <a class="more" v-bind:href=" homeFunSunBlockPageLink " target="_blank">{{homeFunSunBlockPageLinkTextRU}}</a>
+        <div id="player"></div>
+        <div class="play video-fs picture1"><img v-bind:src=" homeFunSunBlockPageImage "></div>
+    </div>
+    <div class="list">
+        <div class="header">
+            {{homeFunSunBlockPageTitleRU}}
+        </div>
+        <div class="header country">
+            {{homeFunSunBlockPageTurkeyRU}}
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink1 " target="_blank">{{homeFunSunHotelName1}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink2 " target="_blank">{{homeFunSunHotelName2}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink3 " target="_blank">{{homeFunSunHotelName3}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink4 " target="_blank">{{homeFunSunHotelName4}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink5 " target="_blank">{{homeFunSunHotelName5}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink6 " target="_blank">{{homeFunSunHotelName6}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink7 " target="_blank">{{homeFunSunHotelName7}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink8 " target="_blank">{{homeFunSunHotelName8}}</a>
+        </div>
+        <div class="header country">
+            {{homeFunSunBlockPageCyprysRU}}
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink9 " target="_blank">{{homeFunSunHotelName9}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink10 " target="_blank">{{homeFunSunHotelName10}}</a>
+        </div>
+    </div>
+</div>
+<!-- FUN SUN BLOCK VIDEO AND HOTELS END =========================================================== -->
+
+<!-- DAY NIGHT BLOCK TEXT START =========================================================== -->
+<div class="block-head" id="home-page-day-night-block-text">
+    <div class="logo"><img v-bind:src=" homePageDayNightBlockLogo "></div>
+    <div class="about">
+        <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+            {{homePageDayNightBlockTitleRU1}}
+        </div>
+        <div class="name">
+            {{homePageDayNightBlockTitleRU2}}
+        </div>
+        <p class="text">{{homePageDayNightBlockTextRU1}}</p>
+        <p class="text">{{homePageDayNightBlockTextRU2}}</p>
+        <p class="text">{{homePageDayNightBlockTextRU3}}</p>
+    </div>
+</div>
+<!-- DAY NIGHT BLOCK TEXT END =========================================================== -->
+
+<!-- DAY NIGHT BLOCK VIDEO AND HOTELS START =========================================================== -->
+<div class="block" id="home-page-day-night-block-video-hotels">
+    <div class="video2">
+        <a class="more" v-bind:href=" homeDayNightBlockPageLink " target="_blank">{{homeDayNightBlockPageLinkTextRU}}</a>
+        <div id="player2"></div>
+        <div class="play2 video-fs picture2"><img v-bind:src=" homeDayNightBlockPageImage "></div>
+    </div>
+    <div class="list">
+        <!--<div class="header"></div>-->
+        <div class="header country">
+            {{homeDayNightBlockPageTurkeyRU}}
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink1 " target="_blank">{{homeFunSunHotelName1}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeFunSunHotelLink2 " target="_blank">{{homeFunSunHotelName2}}</a>
+        </div>
+    </div>
+</div>
+<!-- DAY NIGHT BLOCK VIDEO AND HOTELS END =========================================================== -->
+
+<!-- TOUCAN BLOCK TEXT START =========================================================== -->
+<div class="block-head" id="home-page-toucan-block-text">
+    <div class="logo"><img v-bind:src=" homePageToucanBlockLogo "></div>
+    <div class="about">
+        <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+            {{homePageToucanBlockTitleRU1}}
+        </div>
+        <div class="name">
+            {{homePageToucanBlockTitleRU2}}
+        </div>
+        <p class="text">{{homePageToucanBlockTextRU1}}<br>
+            <br>
+            {{homePageToucanBlockTextRU2}}</p>
+        <ul class="text" style="list-style-type:disc">
+            <li>{{homePageToucanBlockSpisokItemRU1}}</li>
+            <li>{{homePageToucanBlockSpisokItemRU2}}</li>
+            <li>{{homePageToucanBlockSpisokItemRU3}}</li>
+        </ul>
+    </div>
+</div>
+<!-- TOUCAN BLOCK TEXT END =========================================================== -->
+
+<!-- TOUCAN BLOCK VIDEO AND HOTELS START =========================================================== -->
+<div class="block" id="home-page-toucan-block-video-hotels">
+    <div class="video3">
+        <a class="more" v-bind:href=" homeToucanBlockPageLink " target="_blank">{{homeDToucanBlockPageLinkTextRU}}</a>
+        <div id="player3"></div>
+        <div class="play3 video-fs picture3"><img v-bind:src=" homeToucanBlockPageImage "></div>
+    </div>
+    <div class="list" style="min-height:476px">
+        
+        <div class="header country">
+            {{homeToucanBlockPageTurkeyRU}}
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink1 " target="_blank">{{homeToucanHotelName1}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink2 " target="_blank">{{homeToucanHotelName2}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink3 " target="_blank">{{homeToucanHotelName3}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink4 " target="_blank">{{homeToucanHotelName4}}</a>
+        </div>
+        <div class="header country">
+            {{homeToucanBlockPageCyprusRU}}
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink5 " target="_blank">{{homeToucanHotelName5}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink6 " target="_blank">{{homeToucanHotelName6}}</a>
+        </div>
+        <div class="header country">
+            {{homeToucanBlockPageMontenegroRU}}
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink7 " target="_blank">{{homeToucanHotelName7}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink8 " target="_blank">{{homeToucanHotelName8}}</a>
+        </div>
+        <div class="header country">
+            {{homeToucanBlockPageItalyRU}}
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink9 " target="_blank">{{homeToucanHotelName9}}</a>
+        </div>
+        <div class="header country">
+            {{homeToucanBlockPageSpainRU}}
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink10 " target="_blank">{{homeToucanHotelName10}}</a>
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink11 " target="_blank">{{homeToucanHotelName11}}</a>
+        </div>
+        <div class="header country">
+            {{homeToucanBlockPageRussiaRU}}
+        </div>
+        <div class="link">
+            <a v-bind:href=" homeToucanHotelLink12 " target="_blank">{{homeToucanHotelName12}}</a>
+        </div>
+    </div>
+</div>
+<!-- TOUCAN BLOCK VIDEO AND HOTELS END =========================================================== -->
+
+<!-- FOOTER START =================================================== -->
+
+<div class="footer-not-main" id="home-page-diff-footer">
+    <div class="centered">
+        <div class="left">
+            <h3 style="">{{agentFooterItemTitleRU}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameRU}}</a><br>
+            <a :href=" agentFooterItemAgentLinkRU ">{{agentFooterItemAgentLinkNameRU}}</a><br>
+            <a :href=" agentFooterItemB2bLinkRU ">{{agentFooterItemB2bLinkNameRU}}</a>
+        </div>
+        <div class="right">
+            <h3>{{agentFooterItemTitle2RU}}</h3>
+            <a :href=" agentFooterItemPhoneRU ">{{agentFooterItemPhoneNameRU}}</a><br>
+            <a :href=" agentFooterItemMailRU ">{{agentFooterItemMailNameRU}}</a>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER END =================================================== -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<!--<script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer"></script>-->
+<!--<script src="https://www.tui.ru/getmedia/a89a3517-3f15-4580-ad2f-504f09fafad9/VUE-diff-product-home-page"></script>-->
+<script src="VUE-diff-agent-header-footer.js"></script>
+<script src="VUE-diff-product-home-page.js"></script>
