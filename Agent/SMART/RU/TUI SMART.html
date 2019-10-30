@@ -23,6 +23,7 @@ VUE автоматом подтягивает нужный перевод, ес�
 <!-- CSS STYLE ======================================================================== -->
    
     <link rel="stylesheet" href="https://www.tui.ru/getmedia/03f1481f-8cca-4396-b4e9-9b650e5487f8/reset-min">
+    <link rel="stylesheet" href="https://agent.tui.ru/getmedia/c90faebe-2f36-4a4e-b999-42db34c28486/smart-hotels">
     <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/414ac703-1b5c-4067-9966-038780d2364f/smart-desktop">
     <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/493fe15d-0c98-408e-abe6-b938a271eab1/smart-laptop">
     <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/79d32b81-b2d1-45d9-87e1-8ac3ae9b91ff/smart-tablet"> 
@@ -34,7 +35,8 @@ VUE автоматом подтягивает нужный перевод, ес�
         <script type="text/javascript">
             const vueLinks = [
                 'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
-                'https://www.tui.ru/getmedia/18827348-c151-450f-8677-9e3b61cc8112/VUE-smart',
+                'https://agent.tui.ru/getmedia/496552a5-1f82-4237-af08-87e82976c5bd/VUE-smart',
+                'https://agent.tui.ru/getmedia/b95b64cc-d16b-4a2c-9d53-e34e9e1888e4/VUE-smart-hotels-ru-by-ua',
                 
 
             ];
@@ -178,11 +180,38 @@ VUE автоматом подтягивает нужный перевод, ес�
         
     </div>
     
+    <!-- SMART ОТЕЛИ СТАРТ ======================================= -->
+    
+    <div class="hotels" id="smart-hotels">
+        <h2 class="smart__title"> {{ hotelsTitleRU }} </h2>
+        
+        <div class="slider__buttons">
+            <h4 class="slider__button" v-for=" countryName in countryNames " v-bind:id=" countryName.id " v-bind:class="  countryName.class  ">{{countryName.nameRU}}</h4>
+        </div>
+        <div class="slider " v-for=" country in countrys" v-bind:class="  country.class  " v-bind:id=" country.id ">
+           
+           <!-- HOTEL START ========================-->
+            <div class="slide" v-for=" countryHotel in country.countryHotels" >
+                <img v-bind:src="  countryHotel.background " alt="" class="slide__image">
+                <h3 class="slide__title">{{countryHotel.countryNameRU}}</h3>
+                <h4 class="slide__name">{{countryHotel.hotelName}}</h4>
+                <ul class="slide__list">
+                    <li class="slide__list-item" v-for=" aboutHotelRUItem in countryHotel.aboutHotelRUItems ">{{ aboutHotelRUItem.item }}</li>
+                </ul>
+                <a v-bind:href=" countryHotel.hotelLinkAgent " class="slide__link" target="_blank">{{countryHotel.buttonRU}}</a>
+            </div>
+            
+            <!-- HOTEL END ========================-->
+            
+        </div>
+    </div>
+    
+    <!-- SMART ОТЕЛИ END ======================================= -->
+    
 <!-- MAIN END ========================================================================= -->
     
 <!-- SCRIPTS START ==================================================================== --> 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>  
-<script src="VUE-smart.js" defer></script>
+
 
 <!-- SCRIPTS END ====================================================================== -->   
 

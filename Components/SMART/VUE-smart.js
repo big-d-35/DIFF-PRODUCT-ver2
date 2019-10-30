@@ -400,7 +400,7 @@ const smartPage = new Vue ({
                 hotels : [
                     //HOTEL 1
                     {
-                        name: 'Club Marakesh Beach Hotel 4*',
+                        name: 'Smart Club Marakesh Beach Hotel 4*',
                         linkAgent : '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
                         linkClient : '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
                         date: 'май 2020',
@@ -408,7 +408,7 @@ const smartPage = new Vue ({
                     
                     //HOTEL 2
                     {
-                        name: 'Euphoria Bella Mare Hotel 4*',
+                        name: 'Smart Euphoria Bella Mare Hotel 4*',
                         linkAgent : '/Tours/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel',
                         linkClient : '/hotel/europe-turkey-alanya-mahmutlar-smart__euphoria__bella__mare__hotel/',
                         date: 'май 2020',
@@ -416,7 +416,7 @@ const smartPage = new Vue ({
                     
                     //HOTEL 3
                     {
-                        name: 'Limoncello Konakli Beach Hotel 5*',
+                        name: 'Smart Limoncello Konakli Beach Hotel 5*',
                         linkAgent : '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel',
                         linkClient : '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel/',
                         date: 'май 2020',
@@ -565,7 +565,8 @@ const smartPage = new Vue ({
                 ]
                 
             },*/
-        ]
+        ],
+        
         
     }
 })
