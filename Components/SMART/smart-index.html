@@ -20,7 +20,7 @@
     <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="css/smart-laptop.css">
     <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="css/smart-tablet.css"> 
     <link rel="stylesheet" media="all and (max-width: 600px)" href="css/smart-mobile.css">
-    
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- animation -->
     
 <!-- CSS STYLE ======================================================= -->
     
@@ -36,13 +36,13 @@
    
 <!-- MAIN START ======================================================================= -->
    
-    <div class="smart" id="smart-diff">
+    <div class="smart" id="smart-diff" >
        
        <!-- BANNER START ================================= -->
        
        
-        <div class="smart__banner">
-            <img v-bind:src=" bannerRU " alt="SMART Banner" class="smart__img ">    
+        <div class="smart__banner " v-bind:data-aos=" animation1 " >
+            <img v-bind:src=" bannerRU " alt="SMART Banner" class="smart__img">    
         </div>
         
         <!-- BANNER END ================================= -->
@@ -50,15 +50,15 @@
         <!-- ABOUT START ================================= -->
         
         <div class="smart__text">
-            <h2 class="smart__title"> {{titleRU}} </h2>
-            <p class="smart__about"> {{aboutRU}} </p>
+            <h2 class="smart__title" v-bind:data-aos=" animation1 "> {{titleRU}} </h2>
+            <p class="smart__about" v-bind:data-aos=" animation1 "> {{aboutRU}} </p>
         </div>
         
         <!-- ABOUT END ================================= -->
         
         <!-- ФИШКИ START =============================== -->
         
-        <div class="fishka">
+        <div class="fishka" v-bind:data-aos=" animation1 ">
             <div class="fishka__item" v-for=" fishkiPoint in fishkiPoints" v-bind:style=" fishkiPoint.cssPart " >
                 <div class="fishka__text" >
                     <h3 class="fishka__title"> {{ fishkiPoint.titleRU }} </h3>
@@ -72,8 +72,8 @@
         
         <!-- WHY START =============================== -->
         
-        <div class="why">
-            <h2 class="smart__title"> {{ whyTitleRU }} </h2>
+        <div class="why" v-bind:data-aos=" animation1 ">
+            <h2 class="smart__title" > {{ whyTitleRU }} </h2>
             <div class="why__items">
                 <div class="why__item" v-for=" whyItem in whyItems ">
                     <img v-bind:src=" whyItem.image " alt="image" class="why__img">
@@ -91,7 +91,7 @@
         
         <!-- OPEN DATES START =============================== -->
         
-        <div class="country">
+        <div class="country" v-bind:data-aos=" animation1 ">
             <h2 class="smart__title"> {{ dateTitleRU }} </h2>
             <div class="country__items">
                 <div class="country__item" v-for=" openDate in openDates ">
@@ -111,7 +111,7 @@
     
     <!-- SMART ОТЕЛИ СТАРТ ======================================= -->
     
-    <div class="hotels" id="smart-hotels">
+    <div class="hotels " id="smart-hotels" >
         <h2 class="smart__title"> {{ hotelsTitleRU }} </h2>
         
         <div class="slider__buttons">
@@ -144,6 +144,16 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>  
 <script src="VUE-smart.js" defer></script>
 <script src="VUE-smart-hotels-ru-by-ua.js" defer></script>
+<!--animation -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+
+    AOS.init({
+        delay: 200
+    });
+      
+</script>
+<!--animation -->
 
 <!-- SCRIPTS END ====================================================================== -->   
 
