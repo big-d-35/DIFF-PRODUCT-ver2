@@ -10,12 +10,8 @@ const smartPage = new Vue ({
         bannerLT : 'https://www.tui.ru/getmedia/60a7a44b-a8ee-4514-9005-5577425dcecd/banner-smart',
         bannerLV : 'https://www.tui.ru/getmedia/60a7a44b-a8ee-4514-9005-5577425dcecd/banner-smart',
         
-        //ANIMATION
-        animation1 : 'slide-down ease-in',
-        animation2 : 'animated fadeIn slow delay-2s',
-        animation3 : 'animated fadeIn slow delay-3s',
-        animation4 : 'animated fadeInUpBig slow delay-2s',
-        animation5 : 'animated fadeInUp slow delay-2s',
+        
+        
         
         //TITLE
         titleRU: 'Что такое SMART?',

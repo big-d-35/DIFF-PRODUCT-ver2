@@ -749,6 +749,13 @@
                         <div class="label-menu" style="position: relative;cursor: pointer">
                             <a v-bind:href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameUA}}</a>
                             <div class="label-menu-2">
+                               <div class="concept-link">
+                                <a :href=" menuItemSmartLink "><img alt="Smart_logo" :src=" menuItemSmartLogo "></a>
+                                <div>
+                                    <a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br>
+                                        {{menuItemSmartNameUA}}</a>
+                                </div>
+                            </div>
                                 <div class="concept-link">
                                     <a v-bind:href=" menuItemFunSunLink "><img alt="FN_logo" v-bind:src=" menuItemFunSunLogo "></a>
                                     <div>

@@ -173,13 +173,20 @@
                             X
                         </div>
                         <div class="row menu-label">
-                            <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameBY}}</a> 
-                            <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameBY}}</a> 
-                            <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameBY}}</a> 
+                            <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameBY}}</a>
+                            <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameBY}}</a>
+                            <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameBY}}</a>
                             <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameBY}}</a>
                             <div class="label-menu" style="position: relative;cursor: pointer">
                                 <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameBY}}</a>
                                 <div class="label-menu-2">
+                                    <div class="concept-link">
+                                        <a :href=" menuItemSmartLink "><img alt="Smart_logo" :src=" menuItemSmartLogo "></a>
+                                        <div>
+                                            <a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br>
+                                                {{menuItemSmartNameBY}}</a>
+                                        </div>
+                                    </div>
                                     <div class="concept-link">
                                         <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
                                         <div>
@@ -208,7 +215,7 @@
                                                     {{menuItemConceptsAboutNameBY2}}</b></a></div>
                                     </div>
                                 </div>
-                            </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a> 
+                            </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
                             <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkBY " target="_blank">{{menuItemLoginNameBY}}</a>
                         </div>
                     </div>
@@ -227,7 +234,6 @@
                 </div>
             </div>
         </div>
-        
         <!-- ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
         
        

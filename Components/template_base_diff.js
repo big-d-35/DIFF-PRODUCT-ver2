@@ -240,13 +240,13 @@ var table_fs_ee = {
             name_hotel: "FUN&SUN King Evelthon Beach 5*",
             href_tui_ee: "/hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/",
             href_agent_ee: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
-            data_hotel: "3.11.2019"
+            data_hotel: "01.05.2020"
         },
         {
             name_hotel: "FUN&SUN Anastasia Beach Hotel 4*",
             href_tui_ee: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/",
             href_agent_ee: "/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel",
-            data_hotel: "3.11.2019"
+            data_hotel: "01.05.2020"
         }
 	  ]
 };
@@ -331,13 +331,13 @@ var table_fs_lt = {
             name_hotel: "FUN&SUN King Evelthon Beach 5*",
             href_tui_lt: "/hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/",
             href_agent_lt: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
-            data_hotel: "3.11.2019"
+            data_hotel: "01.05.2020"
         },
         {
             name_hotel: "FUN&SUN Anastasia Beach Hotel 4*",
             href_tui_lt: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/",
             href_agent_lt: "/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel",
-            data_hotel: "3.11.2019"
+            data_hotel: "01.05.2020"
         }
 	  ]
 };
@@ -422,13 +422,13 @@ var table_fs_lv = {
             name_hotel: "FUN&SUN King Evelthon Beach 5*",
             href_tui_lv: "/hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/",
             href_agent_lv: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
-            data_hotel: "3.11.2019"
+            data_hotel: "01.05.2020"
         },
         {
             name_hotel: "FUN&SUN Anastasia Beach Hotel 4*",
             href_tui_lv: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/",
             href_agent_lv: "/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel",
-            data_hotel: "3.11.2019"
+            data_hotel: "01.05.2020"
         }
 	  ]
 };

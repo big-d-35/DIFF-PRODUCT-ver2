@@ -14,6 +14,7 @@
 // ШРИФТ =============================================== -->
 
 .smart {
+    margin-top: 40px;
     min-width: 1201px;
     max-width: 1920px;
     width: 100%;
@@ -25,13 +26,14 @@
     background: white;
     //BANNER START
     &__banner {
+        
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         overflow: hidden;
         height: 100%;
-        margin-bottom: 90px;
+        margin-bottom: 20px;
     }
     
     &__img {
@@ -50,7 +52,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     &__title {
         width: 90%;
@@ -106,7 +108,7 @@
     grid-template-rows: 1fr 1fr ;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
-    margin-bottom: 90px; 
+    margin-bottom: 20px; 
     &__item {
         
         display: flex;
@@ -160,7 +162,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
     &__items {
         width: 100%;
         width: 100%;
@@ -231,7 +233,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
     &__items {
         
         width: 100%;

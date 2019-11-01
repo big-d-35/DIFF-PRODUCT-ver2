@@ -20,7 +20,10 @@
     <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="css/smart-laptop.css">
     <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="css/smart-tablet.css"> 
     <link rel="stylesheet" media="all and (max-width: 600px)" href="css/smart-mobile.css">
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- animation -->
+    <link rel="stylesheet"  href="https://admin.tui.ru/getmedia/82f63621-090c-4d58-9b86-369a680a5911/header-footer-all-css-concepts">
+    
+   
+   
     
 <!-- CSS STYLE ======================================================= -->
     
@@ -34,6 +37,88 @@
 
 <body>
    
+<!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
+
+<div class="menu-top" id="home-page-diff-menu-top"  style="z-index: 10;">
+    <div class="container">
+        <div class="row">
+            <a class="col-md-2 col-6 logo-img" href="/"><img :src=" logoLink "></a>
+            <div class="col-5 but-menu-mobile">
+                &nbsp;
+            </div>
+
+            <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
+
+            <div class="col-md-10 col-10 mobile_agent">
+                <div id="exit_menu">
+                    X
+                </div>
+                <div class="row menu-label">
+                    <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameRU}}</a>
+                    <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameRU}}</a>
+                    <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameRU}}</a>
+                    <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameRU}}</a>
+                    <div class="label-menu" style="position: relative;cursor: pointer">
+                        <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameRU}}</a>
+                        <div class="label-menu-2">
+                           <div class="concept-link">
+                                <a :href=" menuItemSmartLink "><img alt="Smart_logo" :src=" menuItemSmartLogo "></a>
+                                <div>
+                                    <a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br>
+                                        {{menuItemSmartNameRU}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
+                                <div>
+                                    <a :href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                        {{menuItemFunSunNameRU}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemDayNightLink "><img alt="FN_logo" :src=" menuItemDayNightLogo "></a>
+                                <div>
+                                    <a :href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                        {{menuItemDayNightNameRU}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemToucanLink "><img alt="FN_logo" :src=" menuItemToucanLogo "></a>
+                                <div>
+                                    <a :href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                        {{menuItemToucanNameRU}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
+
+                                <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameRU1}}<br />
+                                            {{menuItemConceptsAboutNameRU2}}</b></a></div>
+                            </div>
+                        </div>
+                    </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
+                    <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkRU " target="_blank">{{menuItemLoginNameRU}}</a>
+                </div>
+            </div>
+
+            <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+
+            <div class="col-md-10">
+                <div class="row menu-telephone">
+                    <div class="col-md-8 col-7">
+                        <p class="telephone-title">{{menuPhoneTitleRU}}</p>
+                        <p class="telephone-number">{{menuPhonePhoneRU}}</p>
+                    </div>
+                    <a :href=" menuTouristSiteLinkRU " style="color: black">{{menuTouristSiteNameRU}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
+   
+   
 <!-- MAIN START ======================================================================= -->
    
     <div class="smart" id="smart-diff" >
@@ -41,24 +126,24 @@
        <!-- BANNER START ================================= -->
        
        
-        <div class="smart__banner " v-bind:data-aos=" animation1 " >
-            <img v-bind:src=" bannerRU " alt="SMART Banner" class="smart__img">    
+        <div class="smart__banner "   >
+            <img v-bind:src=" bannerRU " alt="SMART Banner" class="smart__img ">    
         </div>
         
         <!-- BANNER END ================================= -->
         
         <!-- ABOUT START ================================= -->
         
-        <div class="smart__text">
-            <h2 class="smart__title" v-bind:data-aos=" animation1 "> {{titleRU}} </h2>
-            <p class="smart__about" v-bind:data-aos=" animation1 "> {{aboutRU}} </p>
+        <div class="smart__text" >
+            <h2 class="smart__title" data-aos="slide-up" > {{titleRU}} </h2>
+            <p class="smart__about" data-aos="slide-up" > {{aboutRU}} </p>
         </div>
         
         <!-- ABOUT END ================================= -->
         
         <!-- ФИШКИ START =============================== -->
         
-        <div class="fishka" v-bind:data-aos=" animation1 ">
+        <div class="fishka" >
             <div class="fishka__item" v-for=" fishkiPoint in fishkiPoints" v-bind:style=" fishkiPoint.cssPart " >
                 <div class="fishka__text" >
                     <h3 class="fishka__title"> {{ fishkiPoint.titleRU }} </h3>
@@ -72,10 +157,10 @@
         
         <!-- WHY START =============================== -->
         
-        <div class="why" v-bind:data-aos=" animation1 ">
+        <div class="why" >
             <h2 class="smart__title" > {{ whyTitleRU }} </h2>
             <div class="why__items">
-                <div class="why__item" v-for=" whyItem in whyItems ">
+                <div class="why__item" v-for=" whyItem in whyItems " data-aos="slide-up">
                     <img v-bind:src=" whyItem.image " alt="image" class="why__img">
                     <div class="why__text">
                         <h3 class="why__title"> {{ whyItem.titleRU }} </h3>
@@ -89,22 +174,22 @@
         
         <!-- WHY ENS ================================ -->
         
-        <!-- OPEN DATES START =============================== -->
+        <!-- OPEN DATES START =============================== 
         
-        <div class="country" v-bind:data-aos=" animation1 ">
+        <div class="country" >
             <h2 class="smart__title"> {{ dateTitleRU }} </h2>
             <div class="country__items">
                 <div class="country__item" v-for=" openDate in openDates ">
                     <h3 class="country__name"> {{ openDate.countryNameRU }} </h3>
                     <div class="country__block" v-for=" hotel in openDate.hotels ">
-                        <a v-bind:href=" hotel.linkClient " class="country__hotel" target="_blank"> {{  hotel.name }} </a>
+                        <a v-bind:href=" hotel.linkAgent " class="country__hotel" target="_blank"> {{  hotel.name }} </a>
                         <span class="country__date"> {{  hotel.date }} </span>
                     </div>
                 </div>
             </div>
         </div>
         
-        <!-- OPEN DATES END =============================== -->
+         OPEN DATES END =============================== -->
         
     </div>
     
@@ -114,19 +199,21 @@
     <div class="hotels " id="smart-hotels" >
         <h2 class="smart__title"> {{ hotelsTitleRU }} </h2>
         
-        <div class="slider__buttons">
-            <button class="slider__button" v-for=" countryName in countryNames " v-bind:id=" countryName.id " v-bind:class="  countryName.class  ">{{countryName.nameRU}}</button>
+        <div class="slider__buttons" >
+            <a href="#" class="slider__button" v-for=" countryName in countryNames " v-bind:id=" countryName.id " v-bind:class="  countryName.class  ">{{countryName.nameRU}}</a>
         </div>
-        <div class="slider " v-for=" country in countrys" v-bind:class="  country.class  " v-bind:id=" country.id ">
+        <div class="slider " v-for=" country in countrys" v-bind:class="  country.class  " v-bind:id=" country.id " >
            
            <!-- HOTEL START ========================-->
             <div class="slide" v-for=" countryHotel in country.countryHotels" >
                 <img v-bind:src="  countryHotel.background " alt="" class="slide__image">
                 <h3 class="slide__title">{{countryHotel.countryNameRU}}</h3>
                 <h4 class="slide__name">{{countryHotel.hotelName}}</h4>
+                
                 <ul class="slide__list">
                     <li class="slide__list-item" v-for=" aboutHotelRUItem in countryHotel.aboutHotelRUItems ">{{ aboutHotelRUItem.item }}</li>
                 </ul>
+                <span class="slide__dates">{{ countryHotel.hotelDateRU }}</span>
                 <a v-bind:href=" countryHotel.hotelLinkAgent " class="slide__link" target="_blank">{{countryHotel.buttonRU}}</a>
             </div>
             
@@ -138,22 +225,15 @@
     <!-- SMART ОТЕЛИ END ======================================= -->
     
     
+    
 <!-- MAIN END ========================================================================= -->
     
 <!-- SCRIPTS START ==================================================================== --> 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>  
 <script src="VUE-smart.js" defer></script>
 <script src="VUE-smart-hotels-ru-by-ua.js" defer></script>
-<!--animation -->
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
+<script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer" defer></script>
 
-    AOS.init({
-        delay: 200
-    });
-      
-</script>
-<!--animation -->
 
 <!-- SCRIPTS END ====================================================================== -->   
 

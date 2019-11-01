@@ -11,6 +11,11 @@
     <link href="https://www.tui.ru/getmedia/c6ca8049-a79e-4d9f-afb1-6cf475407d34/style" rel="stylesheet" type="text/css">
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <style type="text/css">
+        
+.video-fs.picture4 {
+    background-image: url(https://www.tui.ru/getmedia/cc3f5959-4a03-4675-a791-5de8cfd7e5d4/Smart_2);
+}
+
         .row-all {
             background-color: white;
         }
@@ -142,6 +147,13 @@
                             <div class="label-menu" style="position: relative;cursor: pointer">
                                 <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameRU}}</a>
                                 <div class="label-menu-2">
+                                   <div class="concept-link">
+                                        <a :href=" menuItemSmartLink "><img alt="Smart_logo" :src=" menuItemSmartLogo "></a>
+                                        <div>
+                                            <a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br>
+                                                {{menuItemSmartNameRU}}</a>
+                                        </div>
+                                    </div>
                                     <div class="concept-link">
                                         <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
                                         <div>
@@ -705,6 +717,55 @@
                 {{homePageTextBlockRU3}}
             </div>
             <!-- TEXT END =========================================================== -->
+            
+            <!-- SMART BLOCK TEXT START =========================================================== -->
+            <div class="block-head" id="home-page-smart-block-text">
+                <div class="logo"><img v-bind:src=" logo "></div>
+                <div class="about">
+                    <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                        {{titleRU1}}
+                    </div>
+                    <div class="name">
+                        {{titleRU2}}
+                    </div>
+                    <p class="text">{{textRU1}}</p>
+                    <p class="text">{{textRU2}}</p>
+                    <p class="text">{{textRU3}}</p>
+                </div>
+            </div>
+            <!-- SMART BLOCK TEXT START =========================================================== -->
+            <!-- SMART BLOCK VIDEO AND HOTELS START =========================================================== -->
+            <div class="block" id="home-page-smart-block-video-hotels">
+                <div class="video">
+        <a class="more" v-bind:href=" homeSmartBlockPageLink " target="_blank">{{linkTextRU}}</a>
+        
+        <div class="video-fs picture4"><img v-bind:src=" homeSmartBlockPageImage " style="z-index: -10;"></div>
+    </div>
+                <div class="list">
+                    <div class="header">
+                        {{titleRU}}
+                    </div>
+                    <div class="header country">
+                        {{turkeyRU}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" hotelLink1Agent " target="_blank">{{hotelName1}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" hotelLink2Agent " target="_blank">{{hotelName2}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" hotelLink3Agent " target="_blank">{{hotelName3}}</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- SMART BLOCK VIDEO AND HOTELS END =========================================================== -->
+            
+            
+            
+            
+            
             <!-- FUN SUN BLOCK TEXT START =========================================================== -->
             <div class="block-head" id="home-page-fun-sun-block-text">
                 <div class="logo"><img v-bind:src=" homePageFunSunBlockLogo "></div>
@@ -944,9 +1005,11 @@
             var videoId1 = 'aNfLM37-szY';
             var videoId2 = 'x8bvMB_7H4Q';
             var videoId3 = 'ecAcSMIp3Kc';
+            var videoId4 = 'ecAcSMIp3Kc';
             var video = document.querySelector("div.video");
             var video2 = document.querySelector("div.video2");
             var video3 = document.querySelector("div.video3");
+            var video4 = document.querySelector("div.video4");
 
             function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player', {
@@ -975,6 +1038,15 @@
                     events: {
                         'onStateChange': onPlayerStateChange
                     }
+                }); 
+                player4 = new YT.Player('player4', {
+                    height: '100%',
+                    width: '100%',
+                    videoId: videoId4,
+                    modestbranding: 1,
+                    events: {
+                        'onStateChange': onPlayerStateChange
+                    }
                 });
             };
 
@@ -989,6 +1061,7 @@
                 video.addEventListener("click", customVideo);
                 video2.addEventListener("click", customVideo2);
                 video3.addEventListener("click", customVideo3);
+                video4.addEventListener("click", customVideo4);
 
                 function customVideo(e) {
                     var imgPlay = document.querySelector(".play"),
@@ -1026,6 +1099,19 @@
                             (vid3.webkitRequestFullscreen) ? vid3.webkitRequestFullscreen() :
                             (vid3.msRequestFullscreen) ? vid3.msRequestFullscreen() : "";
                         player3.playVideo();
+                    }
+                }
+                
+                function customVideo4(e) {
+                    var imgPlay4 = document.querySelector(".play4"),
+                        vid4 = video4.querySelector("#player4");
+                    if (e.target === vid4 || e.target.parentNode === imgPlay4) {
+                        imgPlay4.classList.add("playOn4");
+                        (vid4.requestFullscreen) ? vid4.requestFullscreen():
+                            (vid4.mozRequestFullScreen) ? vid4.mozRequestFullScreen() :
+                            (vid4.webkitRequestFullscreen) ? vid4.webkitRequestFullscreen() :
+                            (vid4.msRequestFullscreen) ? vid4.msRequestFullscreen() : "";
+                        player4.playVideo();
                     }
                 }
 

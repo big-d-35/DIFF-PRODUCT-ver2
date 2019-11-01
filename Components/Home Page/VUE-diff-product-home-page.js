@@ -74,6 +74,52 @@ const homePageTextBlock = new Vue ({
     }
 });
 
+//SMART
+const homePageSmartBlockText = new Vue ({
+    el: '#home-page-smart-block-text',
+    data: {
+        logo: 'https://www.tui.ru/getmedia/7eea7272-a23a-4d66-9df7-4eb7463c2a55/smart-logo-80px',
+        
+        titleRU1: 'Концепция отдыха SMART',
+        titleRU2: 'Умный подход к отдыху',
+        textRU1: 'Мы устраиваем революцию на рынке бюджетного отдыха! SMART - это концепция для каждого: для семей и для молодежи, которых объединяет одна цель и одно желание - насладиться качественным отдыхом за разумные деньги.',
+        textRU2: 'В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, бесплатный Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене. SMART дарит удовольствия для всех: натуральный кофе и кафе-пекарня, детский клуб и бесплатное мороженое, живая музыка и пивной бар с импортными напитками.',
+        textRU3: 'Кроме того, SMART заботится об окружающей среде, что означает экологически дружелюбную концепцию. Никаких пластиковых стаканчиков и трубочек, разумный подход к трате воды и энергии, мусорные урны для разделения отходов.',
+        
+        
+    }
+    
+});
+
+const homePageSmartBlockVideoHotels = new Vue ({
+    el: '#home-page-smart-block-video-hotels',
+    data: {
+        homeSmartBlockPageLink: '/concepts/smart/',
+        
+        linkTextRU: 'Подробнее',
+        homeSmartBlockPageImage: 'https://www.tui.ru/getmedia/9673f81a-e29f-4ead-b35c-2d4a6eeac6d9/fon-template',
+        titleRU: 'Отдых всей семьей в отелях SMART',
+        turkeyRU: 'Турция',
+        
+        hotelLink1Agent: '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
+        hotelLink1Client: '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
+        hotelName1: 'Smart Club Marakesh Beach Hotel 4*',
+        
+        hotelLink2Agent: '/Tours/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel',
+        hotelLink2Client: '/hotel/europe-turkey-alanya-mahmutlar-smart__euphoria__bella__mare__hotel/',
+        hotelName2: 'Smart Euphoria Bella Mare Hotel 4*',
+        
+        hotelLink3Agent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel',
+        hotelLink3Client: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel/',
+        hotelName3: 'Smart Limoncello Konakli Beach Hotel 5*',
+        
+        
+        
+        
+    }
+});
+
+
 //FUN SUN
 const homePageFunSunBlockText = new Vue ({
     el: '#home-page-fun-sun-block-text',
@@ -120,19 +166,19 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         
         homeFunSunBlockPageLinkTextRU: 'Подробнее',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
-        homeFunSunBlockPageTitleRU: 'Отдых всей семьей в отелях TUI FUN&SUN',
+        homeFunSunBlockPageTitleRU: 'Отдых всей семьей в отелях FUN&SUN',
         homeFunSunBlockPageTurkeyRU: 'Турция',
         homeFunSunBlockPageCyprysRU: 'Кипр',
         
         homeFunSunBlockPageLinkTextBY: 'Подробнее',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
-        homeFunSunBlockPageTitleBY: 'Отдых всей семьей в отелях TUI FUN&SUN',
+        homeFunSunBlockPageTitleBY: 'Отдых всей семьей в отелях FUN&SUN',
         homeFunSunBlockPageTurkeyBY: 'Турция',
         homeFunSunBlockPageCyprysBY: 'Кипр',
         
         homeFunSunBlockPageLinkTextUA: 'Подробнее',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
-        homeFunSunBlockPageTitleUA: 'Отдых всей семьей в отелях TUI FUN&SUN',
+        homeFunSunBlockPageTitleUA: 'Отдых всей семьей в отелях FUN&SUN',
         homeFunSunBlockPageTurkeyUA: 'Турция',
         homeFunSunBlockPageCyprysUA: 'Кипр',
         
@@ -144,7 +190,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         
         homeFunSunBlockPageLinkTextLT: 'Plačiau',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
-        homeFunSunBlockPageTitleLT: 'Visos šeimos poilsis TUI FUN&SUN viešbučiuose',
+        homeFunSunBlockPageTitleLT: 'Visos šeimos poilsis FUN&SUN viešbučiuose',
         homeFunSunBlockPageTurkeyLT: 'Turkija',
         homeFunSunBlockPageCyprysLT: 'Kipras',
         
@@ -221,19 +267,19 @@ const homePageDayNightBlockText = new Vue ({
         homePageDayNightBlockTextUA2: 'Вселенная, которая состоит из Солнечной системы "Ultra All Inclusive" с планетами свежевыжатого апельсинового сока, национальных блюд, европейской кухни, ресторанов a la carte, и бесплатного импортного алкоголя; Галактики развлечений с созвездиями "Wellness & Fitness", где для вас проводят мастер-классы именитые инструкторы, и "Night Life" с бесплатным входом в популярные ночные клубы, и бесконечного Wi-Fi.',
         homePageDayNightBlockTextUA3: 'Отдохнуть в передвижениях можно на станции "Номер" в уютной форме из фирменных халатов и тапочек за чашкой горячего чая.',
         
-        homePageDayNightBlockTitleEE1: 'Puhkus noortele TUI DAY&NIGHT Connected',
+        homePageDayNightBlockTitleEE1: 'Puhkus noortele DAY&NIGHT Connected',
         homePageDayNightBlockTitleEE2: 'Puhkus, mis annab energiat!',
         homePageDayNightBlockTextEE1: 'DAY&NIGHT Connected - see on seikluste, lõbustust ja positiivsete emotsioonide universum, mis jääb meelde koguks eluks!',
         homePageDayNightBlockTextEE2: '"Ultra All Inclusive" universum, mis koosneb värskelt pressitud mahladest, rahvuslikust ja Euroopa köögist, a la carte restoranidest ja tasuta imporditud alkohol; Meelelahutus galaktika: "Wellness - Fitness", kus kuulsad instruktorid teevad teile meistriklasse ning "Night Life" tasuta sissepääsuga populaarsetesse ööklubidesse ja piiramatu Wi-Fi ühendusega.',
         homePageDayNightBlockTextEE3: 'Välja puhata saate mugavas "hotellitoas" hommikumantli ja sussides, nautides tassikest teed või kohvi.',
         
-        homePageDayNightBlockTitleLT1: 'Poilsio koncepcija jaunimui TUI DAY&NIGHT Connected',
+        homePageDayNightBlockTitleLT1: 'Poilsio koncepcija jaunimui DAY&NIGHT Connected',
         homePageDayNightBlockTitleLT2: 'Poilsis jauniems ir aktyviems!',
         homePageDayNightBlockTextLT1: 'TUI DAY&NIGHT Connected - tai nuotykių ir teigiamų emocijų visata, kuri įsimins visam gyvenimui!',
         homePageDayNightBlockTextLT2: '',
         homePageDayNightBlockTextLT3: 'Poilsio koncepcija aktyvaus gyvenimo mylėtojams: nuo sporto užsiėmimų, SPA procedūrų iki teminių vakarėlių, komandinių žaidimų ir naktinių klubų',
         
-        homePageDayNightBlockTitleLV1: 'Jauniešu atpūtas koncepcija TUI DAY&NIGHT Connected',
+        homePageDayNightBlockTitleLV1: 'Jauniešu atpūtas koncepcija DAY&NIGHT Connected',
         homePageDayNightBlockTitleLV2: 'Enerģijas pilna atpūta!',
         homePageDayNightBlockTextLV1: 'TUI DAY&NIGHT Connected - vesela izklaides, pozitīvo emociju un piedzīvojumu pasaule, kuru jūs atcerēsieties visu mūžu!',
         homePageDayNightBlockTextLV2: 'Pasaule, kas sastāv no "Ultra All Inclusive" saules sistēmas, ar svaigi spiesto sulu, nacionālo ēdienu, eiropas virtuves, A La Carte restorānu un bezmaksas importēto alkoholisko dzērienu planētām; Izklaides galaktika ar zvaigznājiem Wellness - Fitness", kur notiek meistarklases ar slaveniem instruktoriem un "Night Life" ar bezmaksas ieeju populārajos nakts klubos, un bezgalīgs Wi-Fi.',

@@ -49,6 +49,17 @@ const AgentMenuHeader = new Vue ({
         menuItemConceptsNameLT: 'Poilsio koncepcijos',
         menuItemConceptsNameLV: 'Atpūtas koncepcijas',
         
+        //Smart
+        menuItemSmartLink: '/concepts/smart',
+        menuItemSmartLogo: 'https://www.tui.ru/getmedia/dae3517e-c26d-4e8c-9ed0-93d2faef2cd9/smart-logo-300px',
+        menuItemSmartName: 'SMART',
+        menuItemSmartNameRU: 'Умный подход к отдыху',
+        menuItemSmartNameBY: 'Умный подход к отдыху',
+        menuItemSmartNameUA: 'Умный подход к отдыху',
+        menuItemSmartNameEE: 'Nutikas lähenemine puhkamisele',
+        menuItemSmartNameLT: 'Protingas požiūris į poilsį',
+        menuItemSmartNameLV: 'Pārdomāta pieeja atpūtai',
+        
         //Fun Sun
         menuItemFunSunLink: '/concepts/tui-fun-sun',
         menuItemFunSunLogo: 'https://www.tui.ru/getmedia/a43e4cf0-4244-45b4-8bd4-275b7d8ba1a9/logoTopFN',
