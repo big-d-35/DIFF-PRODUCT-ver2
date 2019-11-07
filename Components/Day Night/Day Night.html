@@ -1,0 +1,43 @@
+
+<div class="row-all" >
+   
+   <!-- HEAD ICONS BLOCK START ======================== -->
+    <div class="container-fluid top-slider top-dn" id="day-night-icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left-row">
+                    <div class="col-md-12">
+                        <div class="topLeft row">
+                            <div class="icon-top col-md-2 col-3"><img alt="FN_logo" v-bind:src="logo" /></div>
+                        </div>
+
+                        <h2 style="margin-top:0!important">{{titleRU}}</h2>
+
+                        <div class="col-12 die-all">
+                            <div class="die row" v-for="row in rows">
+                                <div class="circle-logo" v-bind:style="row.iconStyle">
+                                    <img v-bind:src="row.icon" />
+                                </div>
+
+                                <div class="circle-text col-md-11" v-bind:style="row.textStyle">{{row.textRU}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 top-right row">
+                    <div class="col-md-6 col-6 video">
+                        <div id="player">&nbsp;</div>
+
+                        <div class="play video-dn"><img src="https://www.tui.ru/getmedia/be53258a-3b5d-4824-a9ff-e499e15ecbf9/play" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HEAD ICONS BLOCK END ======================== -->
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
+<script src="VUE-Day-Night.js" defer></script>

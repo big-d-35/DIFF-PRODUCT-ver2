@@ -30,16 +30,19 @@ VUE автоматом подтягивает нужный перевод, ес�
     <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/006d2476-5ac7-4e98-940c-101329e078ba/smart-mobile">
     
     <link rel="stylesheet"  href="https://www.tui.ru/getmedia/82f63621-090c-4d58-9b86-369a680a5911/header-footer-all-css-concepts">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
 <!-- CSS STYLE ======================================================= -->
     
-<!-- SCRIPT загрузки VUE  =================================================== -->
+<!-- SCRIPT загрузки VUE  =================================================== 
         <script type="text/javascript">
             const vueLinks = [
                 'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
                 'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer',
                 'https://www.tui.ru/getmedia/18827348-c151-450f-8677-9e3b61cc8112/VUE-smart',
                 'https://www.tui.ru/getmedia/726871ad-483c-469c-bbf0-7970400cb216/VUE-smart-hotels-ru-by-ua',
+               
                 
+               
                 
 
             ];
@@ -277,6 +280,7 @@ VUE автоматом подтягивает нужный перевод, ес�
         <div class="slider " v-for=" country in countrys" v-bind:class="  country.class  " v-bind:id=" country.id " >
            
            <!-- HOTEL START ========================-->
+           
             <div class="slide" v-for=" countryHotel in country.countryHotels" >
                 <img v-bind:src="  countryHotel.background " alt="" class="slide__image">
                 <h3 class="slide__title">{{countryHotel.countryNameRU}}</h3>
@@ -301,7 +305,55 @@ VUE автоматом подтягивает нужный перевод, ес�
 <!-- MAIN END ========================================================================= -->
     
 <!-- SCRIPTS START ==================================================================== --> 
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>  
+<script src="https://www.tui.ru/getmedia/18827348-c151-450f-8677-9e3b61cc8112/VUE-smart" defer></script>
+<script src="https://www.tui.ru/getmedia/726871ad-483c-469c-bbf0-7970400cb216/VUE-smart-hotels-ru-by-ua" defer></script>
+<script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer" defer></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" defer></script>
 
+<script defer>
+$(document).ready(function() {
+    $('#country1-slider').lightSlider({
+        item:3,
+        loop:false,
+        slideMove:1,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        mode: 'slide',
+        adaptiveHeight: false,
+        responsive : [
+            {
+                breakpoint:1200,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:10,
+                    autoWidth: true
+                  }
+            },
+            {
+                breakpoint:900,
+                settings: {
+                    item:2,
+                    slideMove:1,
+                    slideMargin:10,
+                    autoWidth: true
+                  }
+            },
+            {
+                breakpoint:600,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    slideMargin:10,
+                    autoWidth: true
+                  }
+            }
+        ]
+    });  
+  });    
+</script>
 <!-- SCRIPTS END ====================================================================== -->   
 
 <!-- METRIKA START ====================================================================== -->   

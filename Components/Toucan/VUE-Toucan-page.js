@@ -915,6 +915,25 @@ const toucanProgram = new Vue ({
                 linkLT: 'https://www.tui.ru/getmedia/9b973f93-e4c5-4909-96bb-88c1e4135bfa/LT-programm-UAE-Toucan-Mini-2020-blue',
                 linkLV: 'https://www.tui.ru/getmedia/775d1f3b-0303-41f8-9682-c93df0814eed/LV-programma-UAE-Toucan-Mini-2020-blue',
             },
+            
+            //3 ПРОГРАММА
+            {
+                icon : 'display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left',
+                
+                titleRU : 'Памятка МИНИ ТУКАН в ОАЭ',
+                titleBY : 'Памятка МИНИ ТУКАН в ОАЭ',
+                titleUA : 'Памятка МИНИ ТУКАН в ОАЭ',
+                titleEE : 'Memo MINI TUKAN AÜE',
+                titleLT : 'Atmintinė MINI TUKAN JAE',
+                titleLV : 'Memo MINI TUKAN AAE',
+
+                linkRU: 'https://www.tui.ru/getmedia/b8fc9335-5a5d-4cca-ab16-3e2297204d88/UA-shpargalka-OAE-Toucan-05-11-2019',
+                linkBY: 'https://www.tui.ru/getmedia/b8fc9335-5a5d-4cca-ab16-3e2297204d88/UA-shpargalka-OAE-Toucan-05-11-2019',
+                linkUA: 'https://www.tui.ru/getmedia/b8fc9335-5a5d-4cca-ab16-3e2297204d88/UA-shpargalka-OAE-Toucan-05-11-2019',
+                linkEE: 'https://www.tui.ru/getmedia/b8fc9335-5a5d-4cca-ab16-3e2297204d88/UA-shpargalka-OAE-Toucan-05-11-2019',
+                linkLT: 'https://www.tui.ru/getmedia/b8fc9335-5a5d-4cca-ab16-3e2297204d88/UA-shpargalka-OAE-Toucan-05-11-2019',
+                linkLV: 'https://www.tui.ru/getmedia/b8fc9335-5a5d-4cca-ab16-3e2297204d88/UA-shpargalka-OAE-Toucan-05-11-2019v',
+            },
         ]
     }
 })

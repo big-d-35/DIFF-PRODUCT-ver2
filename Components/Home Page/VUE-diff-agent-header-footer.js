@@ -2,6 +2,9 @@ const AgentMenuHeader = new Vue ({
     el: '#home-page-diff-menu-top',
     data: {
         logoLink: 'https://agent.tui.ru/Images/logo.png',
+        
+        
+        
         //Франшиза
         menuItemFranchaizingLink: '/Franchaizing',
         menuItemFranchaizingNameRU: 'Франчайзинг',
@@ -31,11 +34,10 @@ const AgentMenuHeader = new Vue ({
         
         //Магазин
         menuItemShopLink: '/Branded-Shop',
+        menuItemShopLinkUA: '/Information-page/tui-shop-new ',
         menuItemShopNameRU: 'TUI Shop',
         menuItemShopNameBY: 'TUI Shop',
-        menuItemShopNameUA: 'TUI Shop',
-        menuItemShopLinkUA: '/Information-page/tui-shop-new ',
-        
+        menuItemShopNameUA: 'Брендовая Продукция TUI ',
         menuItemShopNameEE: 'TUI Shop',
         menuItemShopNameLT: 'TUI Shop',
         menuItemShopNameLV: 'TUI Shop',
@@ -112,7 +114,7 @@ const AgentMenuHeader = new Vue ({
         //Премиум
         menuItemPremiumLink: '/premium/premium',
         menuItemPremiumLinkUA: '/information-page/tui-prestige/',
-        menuItemPremiumName: 'PREMIUM',
+        menuItemPremiumName: 'TUI Premium ',
         
         
         //Личный кабинет

@@ -704,9 +704,9 @@
                         <p>{{funSunPageMenuItemLT4}}</p>
                     </a>
 
-                    <a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkClient5" target="_blank">
+                    <!--<a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkClient5" target="_blank">
                         <p>{{funSunPageMenuItemLT5}}</p>
-                    </a>
+                    </a>-->
 
                     <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkClient6LT" target="_blank">
                         <p>{{funSunPageMenuItemLT6}}</p>
@@ -883,102 +883,96 @@
 
         <!-- ОТЕЛИ СТАРТ  ================================================================= -->
 
-        <div class="container-fluid block_3">
-            <div class="container" id="hotels-name">
-                <h2 style="text-transform: uppercase;">{{funSunPageAllHotelsTitleLT}}</h2>
-            </div>
+        <div class="container-fluid block_3" id="hotels-fun-sun">
+    <div class="container" >
+        <h2 style="text-transform: uppercase;">{{ titleLT }}</h2>
+    </div>
             <!-- ОТЕЛИ СТАРТ слайдер ========================================================================================= -->
 
             <div class="row">
                 <div class="container sl" id="hotels">
                     <div class="buttons-navigations" id="hotel-buttons">
-                        <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b1">{{countryName1LT}}</a> <!-- Отели с концепцией Турция -->
-                        <a class="button-navigatin" data-block=".slider_2" href="#s2b2">{{countryName2LT}}</a> <!-- Отели с концепцией Кипр -->
+                        <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b1">{{country1LT}}</a> <!-- Отели с концепцией Турция -->
+                        <a class="button-navigatin" data-block=".slider_2" href="#s2b2">{{country2LT}}</a> <!-- Отели с концепцией Кипр -->
                     </div>
-                    <!-- Отели с концепцией Турция -->
+                     <!-- Отели с концепцией Турция -->
 
-                    <div class="slider slider_2" id="s2b1">
-                        <div class="row-slider" data-col="3">
-                            <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+            <div class="slider slider_2" id="s2b1">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country1Hotel in country1Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country1Hotel.background ">&nbsp;</div>
 
-                            <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageAllTurkeyHotel in funSunPageAllTurkeyHotels ">
-                                <div class="sliders-hotels">
-                                    <div class="imgSlider" v-bind:style=" funSunPageAllTurkeyHotel.background ">&nbsp;</div>
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country1Hotel.countryNameLT }}</h4>
 
-                                    <div class="slider-content slide-height_tallone">
-                                        <h4>{{funSunPageAllTurkeyHotel.countryLT}}</h4>
+                                    <p class="gey_p">{{ country1Hotel.hotelName }}</p>
 
-                                        <p class="gey_p">{{funSunPageAllTurkeyHotel.hotelNameLT}}</p>
+                                    <ul >
+                                        <li v-for="aboutHotelLTItem in country1Hotel.aboutHotelLTItems"> {{ aboutHotelLTItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
 
-                                        <ul>
-                                            <li>{{funSunPageAllTurkeyHotel.hotelItem1LT}}</li>
-                                            <li>{{funSunPageAllTurkeyHotel.hotelItem2LT}}</li>
-                                            <li>{{funSunPageAllTurkeyHotel.hotelItem3LT}}</li>
-                                            <li>{{funSunPageAllTurkeyHotel.hotelItem4LT}}</li>
-                                            <li>{{funSunPageAllTurkeyHotel.hotelItem5LT}}</li>
-                                            <li>{{funSunPageAllTurkeyHotel.hotelItem6LT}}</li>
-                                        </ul>
-                                    </div>
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
 
-                                    <div class="row price">
-                                        <!--<div class="col-md-7 price-num"><p>от <b>25 338</b> на одного</p><p>на 7 ночей</p></div>-->
-                                        <div class="col-md-5">
-                                            <p class="tour_a"><a v-bind:href=" funSunPageAllTurkeyHotel.hotelLinkClient ">{{ funSunPageAllTurkeyHotel.takeTourLT }}</a></p>
-                                        </div>
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country1Hotel.hotelLinkClient ">{{ country1Hotel.buttonLT }}</a></p>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- ОДИН ОТЕЛЬ END ===================================-->
-
-
                         </div>
-                    </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
 
-                    <!-- Отели с концепцией Кипр -->
-
-                    <div class="slider slider_2 n" id="s2b2">
-                        <div class="row-slider" data-col="3">
-                            <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
-
-                            <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageAllCyprusHotel in funSunPageAllCyprusHotels ">
-                                <div class="sliders-hotels">
-                                    <div class="imgSlider" v-bind:style=" funSunPageAllCyprusHotel.background ">&nbsp;</div>
-
-                                    <div class="slider-content slide-height_tall">
-                                        <h4>{{funSunPageAllCyprusHotel.countryLT}}</h4>
-
-                                        <p class="gey_p">{{funSunPageAllCyprusHotel.hotelNameLT}}</p>
-
-                                        <ul>
-                                            <li>{{funSunPageAllCyprusHotel.hotelItem1LT}}</li>
-                                            <li>{{funSunPageAllCyprusHotel.hotelItem2LT}}</li>
-                                            <li>{{funSunPageAllCyprusHotel.hotelItem3LT}}</li>
-                                            <li>{{funSunPageAllCyprusHotel.hotelItem4LT}}</li>
-                                            <li>{{funSunPageAllCyprusHotel.hotelItem5LT}}</li>
-                                            <li>{{funSunPageAllCyprusHotel.hotelItem6LT}}</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="row price">
-                                        <!--<div class="col-md-7 price-num"><p>от <b>34 895</b> на одного</p><p>на 7 ночей</p></div>-->
-                                        <div class="col-md-5">
-                                            <p class="tour_a"><a v-bind:href=" funSunPageAllCyprusHotel.hotelLinkClient ">{{ funSunPageAllCyprusHotel.takeTourLT }}</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- ОДИН ОТЕЛЬ END ===================================-->
-
-
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
-            <!-- ОТЕЛИ END слайдер  ==================================================== -->
+
+            <!-- Отели с концепцией Кипр -->
+
+            <div class="slider slider_2 n" id="s2b2">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country2Hotel in country2Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country2Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country2Hotel.countryNameLT }}</h4>
+
+                                    <p class="gey_p">{{ country2Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLTItem in country2Hotel.aboutHotelLTItems"> {{ aboutHotelLTItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country2Hotel.hotelLinkClient ">{{ country2Hotel.buttonLT }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
         </div>
-        <!-- ОТЕЛИ END ===================================================================== -->
+    </div>
+    <!-- ОТЕЛИ END слайдер  ==================================================== -->
+</div>
+<!-- ОТЕЛИ END ===================================================================== -->
 
         <!-- FOOTER START ================================= -->
         <div class="container-fluid footer-informations" style="margin-top: 3em">

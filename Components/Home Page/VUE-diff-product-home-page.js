@@ -33,6 +33,7 @@ const homePageFirstBlock = new Vue ({
         
         //ПРЕЗЕНТАЦИЯ
         firstBlockHeadPresentaionLink: 'https://www.tui.ru/getmedia/b448c677-abf8-40ec-8578-1a05f7268b4b/TUI-Concept-Presentation_B2B_18-06',
+        firstBlockHeadPresentaionLinkUA: 'https://www.tui.ru/getmedia/67345b6e-5eb5-4eae-8523-8d35b61a67b5/UA_NEW-Concept-Presentation_B2B_04-11-2019',
         firstBlockHeadPresentaionRU: 'Презентация Дифф продукта',
         firstBlockHeadPresentaionBY: 'Презентация Дифф продукта',
         firstBlockHeadPresentaionUA: 'Презентация Дифф продукта',
@@ -98,7 +99,7 @@ const homePageSmartBlockVideoHotels = new Vue ({
         
         linkTextRU: 'Подробнее',
         homeSmartBlockPageImage: 'https://www.tui.ru/getmedia/9673f81a-e29f-4ead-b35c-2d4a6eeac6d9/fon-template',
-        titleRU: 'Отдых всей семьей в отелях SMART',
+        titleRU: 'Отдых в отелях SMART',
         turkeyRU: 'Турция',
         
         hotelLink1Agent: '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
@@ -129,32 +130,32 @@ const homePageFunSunBlockText = new Vue ({
         homePageFunSunBlockTitleRU1: 'Концепция семейного отдыха FUN&SUN',
         homePageFunSunBlockTitleRU2: 'Семейный отдых, продуманный в деталях',
         homePageFunSunBlockTextRU1: 'Во время отдыха для гостя FUN&SUN отель становится своеобразным миром в миниатюре, где номер - это квартира, Детский Клуб Тукан - детский сад и школа, море и разнообразные бассейны становятся самой приятной ванной на свете, главный ресторан - кухней мечты с бесконечным питанием, а рестораны a la carte - рестораны для выхода в "свет" всей семьей в выходной.',
-        homePageFunSunBlockTextRU2: 'Мы долго готовились к вашему приезду. К летнему сезону-2019, мы выбрали 10 прекрасных отелей, навели в них порядок и чистоту, разработали специальное меню, подготовили развлекательную и спортивную программы и, конечно же, обучили каждого сотрудника.',
+        homePageFunSunBlockTextRU2: 'Мы долго готовились к вашему приезду. Мы выбрали 20 прекрасных отелей, навели в них порядок и чистоту, разработали специальное меню, подготовили развлекательную и спортивную программы и, конечно же, обучили каждого сотрудника.',
         
         homePageFunSunBlockTitleBY1: 'Концепция семейного отдыха FUN&SUN',
         homePageFunSunBlockTitleBY2: 'Семейный отдых, продуманный в деталях',
         homePageFunSunBlockTextBY1: 'Во время отдыха для гостя FUN&SUN отель становится своеобразным миром в миниатюре, где номер - это квартира, Детский Клуб Тукан - детский сад и школа, море и разнообразные бассейны становятся самой приятной ванной на свете, главный ресторан - кухней мечты с бесконечным питанием, а рестораны a la carte - рестораны для выхода в "свет" всей семьей в выходной.',
-        homePageFunSunBlockTextBY2: 'Мы долго готовились к вашему приезду. К летнему сезону-2019, мы выбрали 10 прекрасных отелей, навели в них порядок и чистоту, разработали специальное меню, подготовили развлекательную и спортивную программы и, конечно же, обучили каждого сотрудника.',
+        homePageFunSunBlockTextBY2: 'Мы долго готовились к вашему приезду. Мы выбрали 20 прекрасных отелей, навели в них порядок и чистоту, разработали специальное меню, подготовили развлекательную и спортивную программы и, конечно же, обучили каждого сотрудника.',
         
         homePageFunSunBlockTitleUA1: 'Концепция семейного отдыха FUN&SUN',
         homePageFunSunBlockTitleUA2: 'Семейный отдых, продуманный в деталях',
         homePageFunSunBlockTextUA1: 'Во время отдыха для гостя FUN&SUN отель становится своеобразным миром в миниатюре, где номер - это квартира, Детский Клуб Тукан - детский сад и школа, море и разнообразные бассейны становятся самой приятной ванной на свете, главный ресторан - кухней мечты с бесконечным питанием, а рестораны a la carte - рестораны для выхода в "свет" всей семьей в выходной.',
-        homePageFunSunBlockTextUA2: 'Мы долго готовились к вашему приезду. К летнему сезону-2019, мы выбрали 10 прекрасных отелей, навели в них порядок и чистоту, разработали специальное меню, подготовили развлекательную и спортивную программы и, конечно же, обучили каждого сотрудника.',
+        homePageFunSunBlockTextUA2: 'Мы долго готовились к вашему приезду. Мы выбрали 20 прекрасных отелей, навели в них порядок и чистоту, разработали специальное меню, подготовили развлекательную и спортивную программы и, конечно же, обучили каждого сотрудника.',
         
         homePageFunSunBlockTitleEE1: 'FUN&SUN perepuhkuse konseptsioon',
         homePageFunSunBlockTitleEE2: 'Detailideni läbimõeldud perepuhkus',
         homePageFunSunBlockTextEE1: 'Puhkuse ajal FUN&SUN hotel muutub omapäraseks maailmaks miniatüüris, kus hotellituba - on just kui isiklik korter, lasteklubi Toucan on lasteaed ja kool, meri ning basseinid on maailma kõige meeldivam vann, pearestoran - on unistuse köök, ning a la carte - restoranid on selleks, et kogu perega õhtusöögi nautida.',
-        homePageFunSunBlockTextEE2: 'Me oleme teie saabumiseks ette valmistunud. Suve 2019 hooajaks oleme väljavalinud 10 hotelli 350-st, pannes tähele pisimad detailid ja väljatöötanud ideaalse puhkuse valemi nii täiskasvanutele kui ka lastele!',
+        homePageFunSunBlockTextEE2: 'Me oleme teie saabumiseks ette valmistunud. Hooajaks oleme väljavalinud 20 hotelli 350-st, pannes tähele pisimad detailid ja väljatöötanud ideaalse puhkuse valemi nii täiskasvanutele kui ka lastele!',
         
         homePageFunSunBlockTitleLT1: 'Šeimų poilsio koncepcija FUN&SUN',
         homePageFunSunBlockTitleLT2: 'Šeimos poilsis, apgalvotas iki smulkmenų',
         homePageFunSunBlockTextLT1: 'Atostogų metu FUN&SUN viešbučiai tampa savotišku miniatiūriniu pasauliu, kuriame kambarys - namai, „Toucan“ vaikų klubas - darželis ir mokykla, jūra ir įvairūs baseinai tampa maloniausiu vonios kambariu pasaulyje, restoranai - svajonių virtuve.',
-        homePageFunSunBlockTextLT2: 'Mes ilgai ruošiamės Jūsų atvykimui. 2019 m. vasaros sezonui pasirinkome 8 puikius viešbučius, sukūrėme specialius meniu, paruošėme pramogines ir sporto programas.',
+        homePageFunSunBlockTextLT2: 'Mes ilgai ruošiamės Jūsų atvykimui pasirinkome 8 puikius viešbučius, sukūrėme specialius meniu, paruošėme pramogines ir sporto programas.',
         
         homePageFunSunBlockTitleLV1: 'Ģimenes atpūtas koncepcija FUN&SUN',
         homePageFunSunBlockTitleLV2: 'Pārdomāta ģimenes atpūta',
         homePageFunSunBlockTextLV1: 'Atpūtas laikā FUN&SUN viesiem viesnīca kļūst par sava veida pasauli miniatūrā, kur viesnīcas numurs - ir dzīvoklis, bērnu klubs Mini Toucan - bērnudārzs un skola, jūra un baseini kļūst par labāko vannu, galvenais viesnīcas restorāns - sapņu virtuve ar nebeidzamu ēdienu izvēli, bet A La Carte restorāni - brīvdienu atpūtas "vieta" visai ģimenei.',
-        homePageFunSunBlockTextLV2: 'Mēs ilgi gatavojāmies jūsu uzņemšanai. Priekš 2019. gada vasaras sezonas mēs izvēlējāmies 10 brīnišķīgas viesnīcas, ieviesām kārtību un tīrību, izveidojām īpašu ēdienkarti, izklaides un sporta programmu, un, protams, apmācījām katru darbinieku.',
+        homePageFunSunBlockTextLV2: 'Mēs ilgi gatavojāmies jūsu uzņemšanai vasaras sezonas mēs izvēlējāmies 20 brīnišķīgas viesnīcas, ieviesām kārtību un tīrību, izveidojām īpašu ēdienkarti, izklaides un sporta programmu, un, protams, apmācījām katru darbinieku.',
     }
     
 });

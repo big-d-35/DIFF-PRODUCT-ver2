@@ -394,6 +394,51 @@ const funSunHotHotels = new Vue ({
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
             },
+            
+            //HOTEL 9
+            {
+                hotelName : 'FUN&SUN Club Euphoria Palm Beach 5*',
+                background: 'background: url(https://www.tui.ru/getmedia/c2885925-438a-4a46-9301-372ed0a7407d/814664);background-position: center;background-size: cover',
+                hotelLinkAgent: '/Tours/Europe/Turkey/side/Kizilagac/fun-sun-euphoria-palm-beach',
+                hotelLinkClient: '/hotel/europe-turkey-side-kizilagac-fun__sun__euphoria__palm__beach/',
+                
+                //EE
+                countryNameEE: 'Тürgi, Kyzylach',
+                aboutHotelEEItems: [
+                    { item: 'Isiklik liiva- ja kivikliburand, väli- ja sisebasseinid, veeliumäed' },
+                    { item: 'Hotell koosneb ühest peahoonest ja kahekorruselistest bungalode kompleksist' },
+                    { item: 'Suur hotelli pindala - 183 000 ruutmeetrit' },
+                    { item: 'Välibassein, lõõgastusbassein, sisebassein, 2 veeliumäge' },
+                    { item: 'Jõusaal, mitmeotstarbeline mänguväljak, disko, türgi saun / saun / leiliruum' },
+                    { item: '6 a la carte restorani' }
+                    
+                ],
+                buttonEE : 'Otsi reisi',
+                
+                //LT
+                countryNameLT: 'Turkija, Belekas',
+                aboutHotelLTItems: [
+                    { item: 'Viešbutis "2 in 1" LIFE - europetiško stiliaus ir MOOD - marokietiško stiliaus' },
+                    { item: 'Vasarnamiai MOOD - tai žalia teritorija su relax baseinais' },
+                    { item: 'Olimpinio dydžio baseinas' },
+                    { item: 'Kambariai PREMUIM kategorijos - Mood Suite, Villa' },
+                    { item: 'Atskira sporto zona Wellness & Fitness' },
+                    { item: 'Paplūdimys kasmet apdovanojamas "Mėlynąja vėliava"' }
+                ],
+                buttonLT : 'Pasirinkti',
+                
+                //LV
+                countryNameLV: 'Turcija, Beleka',
+                aboutHotelLVItems: [
+                    { item: 'Viesnīca "divi vienā": LIFE - Eiropas stils un marokāņu stils - MOOD' },
+                    { item: 'MOOD bungalo - apzaļumota noslēgtā teritorijā ar relax-baseiniem' },
+                    { item: 'Olimpiskā izmēra baseins' },
+                    { item: 'PREMUIM kategorijas numuri - Mood Suite, Villa' },
+                    { item: 'Atsevišķa sporta teritorija Wellness & Fitness' },
+                    { item: 'Pludmale ir gadu saņem "Zilo karogu"' }
+                ],
+                buttonLV : 'Izvēlēties ceļojumu',
+            },
         ],
         
         //HOTELS 2 КИПР
@@ -489,7 +534,102 @@ const funSunHotHotels = new Vue ({
                 buttonLV : 'Izvēlēties ceļojumu',
             },
             
+            //HOTEL 3
+            {
+                hotelName : 'FUN&SUN King Evelthon Beach 5*',
+                background: 'background: url(https://www.tui.ru/getmedia/bd2f0658-959f-447d-9c96-e20db587bbb7/f_KING13B-Pool-Area_f_1);background-position: center;background-size: cover',
+                hotelLinkAgent: '/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-king-evelthon-beach-hotel-resort',
+                hotelLinkClient: '/hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/',
+                
+                //EE
+                countryNameEE: 'Küpros, Pafos',
+                aboutHotelEEItems: [
+                    { item: 'Suur veepark täiskasvanutele ja lastele' },
+                    { item: 'Hotelli kogupindala on 100000 ruutmeetrit' },
+                    { item: 'Avar territoorium, mugavad toad' },
+                    { item: 'Kõrgetasemeline teenindus, mitmekesine toitlustus, hea infrastruktuur aktiivseks puhkuseks' },
+                    { item: 'Tasuta Wi-FI, Kõik hinnas, 3 a la carte restorani' },
+                    { item: 'Esimene rannajoon: hotelli ees on munitsipaalrand' },
+                    { item: 'Lastele: lastebassein, lasteklubi Toucan, lasteväljak, restoranid kõrgete toolidega lastele, lastemenüü' },
+                    
+                    
+                ],
+                buttonEE : 'Otsi reisi',
+                
+                //LT
+                countryNameLT: 'Kipras, Protaras',
+                aboutHotelLTItems: [
+                    { item: 'Protaro kuroto centre' },
+                    { item: 'Viešbutis dirba pagal All Inclusive ir HB+ maitinimo sistemas' },
+                    { item: 'Viešbutis įsikūręs šalia geriausių paplūdimių: Fig Tree Bay (150 m), Konnos Bay, Kalamies, Sunrise' },
+                    { item: 'Kambariai įvairaus dydžio: 2+3 aba 3+2 arba 4+1 asm.' },
+                    { item: 'Renovacija atlikta visuose kambariuose' },
+                    
+                ],
+                buttonLT : 'Pasirinkti',
+                
+                //LV
+                countryNameLV: 'Kipra, Protara',
+                aboutHotelLVItems: [
+                    { item: 'Viesnīca atrodas Protaras kūrorta centrā' },
+                    { item: 'Viesnīca piedāvā ēdināšanu pēc "Viss iekļauts" un HB+ sistēmam' },
+                    { item: 'Viesnīca atrodas blakus labākajiem pludmalem: Fig Tree Bay (600 metri), Konnos Bay, Kalamies, Sunrise' },
+                    { item: 'Izmitināšanas iespējas: 2 pieaugušie+3 bērni/3 pieaugušie+2 bērni/4 pieaugušie+1 bērns' },
+                    { item: 'Visi numuri ir renovēti' },
+                    { item: 'Jauni numuri' },
+                    
+                ],
+                buttonLV : 'Izvēlēties ceļojumu',
+            },
             
+            //HOTEL 4
+            {
+                hotelName : 'FUN&SUN Anastasia Beach Hotel 4*',
+                background: 'background: url(https://www.tui.ru/getmedia/b433218a-6a8a-46b1-b1fb-6fc594436d20/f_ART_4563_f_1);background-position: center;background-size: cover',
+                hotelLinkAgent: '/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel',
+                hotelLinkClient: '/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/',
+                
+                //EE
+                countryNameEE: 'Küpros, Protaras',
+                aboutHotelEEItems: [
+                    { item: 'Veepark (7 veeluimäe, aeglase vooluga jõgi, jacuzzi, vabaõhubassein ja lasteala; avatud maist oktoobrini)' },
+                    { item: 'Hotell asub Marlita lahe kuldsetest liivadest jalutuskäigu kaugusel' },
+                    { item: 'Veepark (7 veeluimäe, aeglase vooluga jõgi, jacuzzi, vabaõhubassein ja lasteala; avatud maist oktoobrini)' },
+                    { item: 'Magevee välibassein (2,30 m)' },
+                    { item: 'SPA ja wellness sisebassein, jõusaal, tenniseväljak, lauatennis' },
+                    { item: 'Lastele - lastebassein ja sisebassein, mis on FUN&SUN kontseptsiooni osa Toucan lasteklubist' },
+                    { item: 'Premium Kõik Hinnas. Hotellis on 3 a la carte restorani, lisaks külalised saavad tasuta külastada üks neljast a ala carte restoranidest linnas' },
+                    { item: 'Hotelli läheduses on liivane munitsipaalrand' },
+                    
+                    
+                ],
+                buttonEE : 'Otsi reisi',
+                
+                //LT
+                countryNameLT: 'Kipras, Protaras',
+                aboutHotelLTItems: [
+                    { item: 'Protaro kuroto centre' },
+                    { item: 'Viešbutis dirba pagal All Inclusive ir HB+ maitinimo sistemas' },
+                    { item: 'Viešbutis įsikūręs šalia geriausių paplūdimių: Fig Tree Bay (150 m), Konnos Bay, Kalamies, Sunrise' },
+                    { item: 'Kambariai įvairaus dydžio: 2+3 aba 3+2 arba 4+1 asm.' },
+                    { item: 'Renovacija atlikta visuose kambariuose' },
+                    
+                ],
+                buttonLT : 'Pasirinkti',
+                
+                //LV
+                countryNameLV: 'Kipra, Protara',
+                aboutHotelLVItems: [
+                    { item: 'Viesnīca atrodas Protaras kūrorta centrā' },
+                    { item: 'Viesnīca piedāvā ēdināšanu pēc "Viss iekļauts" un HB+ sistēmam' },
+                    { item: 'Viesnīca atrodas blakus labākajiem pludmalem: Fig Tree Bay (600 metri), Konnos Bay, Kalamies, Sunrise' },
+                    { item: 'Izmitināšanas iespējas: 2 pieaugušie+3 bērni/3 pieaugušie+2 bērni/4 pieaugušie+1 bērns' },
+                    { item: 'Visi numuri ir renovēti' },
+                    { item: 'Jauni numuri' },
+                    
+                ],
+                buttonLV : 'Izvēlēties ceļojumu',
+            },
         ],
         
     }

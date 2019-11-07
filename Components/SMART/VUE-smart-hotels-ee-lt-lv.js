@@ -4,7 +4,7 @@ const smartHotels = new Vue ({
         
         hotelsTitleEE : 'Отели с концепцией SMART',
         hotelsTitleLT : 'Отели с концепцией SMART',
-        hotelsTitleLV : 'Отели с концепцией SMART',
+        hotelsTitleLV : 'Viesnīcas ar SMART koncepciju',
         
         
         countryNames : [
@@ -14,18 +14,18 @@ const smartHotels = new Vue ({
                 id: 'country1',
                 nameEE: 'Турция',    
                 nameLT: 'Турция',    
-                nameLV: 'Турция', 
+                nameLV: 'Turcija', 
                 class: 'button-active',
             },
             
             //COUNTRY NAME 2
-            {
+            /*{
                 id: 'country2',
                 nameEE: 'Кипр',    
                 nameLT: 'Кипр',    
-                nameLV: 'Кипр', 
+                nameLV: 'Kipra', 
                 class: '',
-            },
+            },*/
         ],
         
         
@@ -51,6 +51,7 @@ const smartHotels = new Vue ({
                         { item: 'Компактная территория' },
                         { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
                     ],
+                    hotelDateEE : 'start 05.2020',    
                     buttonEE : 'Выбрать тур',
 
                     //LT
@@ -61,17 +62,19 @@ const smartHotels = new Vue ({
                         { item: 'Компактная территория' },
                         { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
                     ],
+                    hotelDateLT : 'start 05.2020',
                     buttonLT : 'Выбрать тур',
 
                     //LV
-                    countryNameLV: 'Турция, Инджекум',
+                    countryNameLV: 'Turcija, Beldibi',
                     aboutHotelLVItems: [
-                        { item: 'Собственный пляж' },
-                        { item: 'Бассейн с водными горками' },
-                        { item: 'Компактная территория' },
-                        { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
+                        { item: 'Privātā pludmale' },
+                        { item: 'Baseins ar ūdens slidkalniņiem' },
+                        { item: 'Kompakta teritorija' },
+                        { item: '2 āra baseini (280 kv. m un 200 kv.m)' },
                     ],
-                    buttonLV : 'Выбрать тур',
+                    hotelDateLV : 'start 05.2020',    
+                    buttonLV : 'Izvēlēties ceļojumu',
                 },
 
                     //HOTEL 2
@@ -91,6 +94,7 @@ const smartHotels = new Vue ({
                         { item: 'A la carte на пляже' },
 
                     ],
+                    hotelDateEE : 'start 05.2020',    
                     buttonEE : 'Выбрать тур',
 
                     //LT
@@ -102,18 +106,20 @@ const smartHotels = new Vue ({
                         { item: '2 водные горки' },
                         { item: 'A la carte на пляже' },
                     ],
+                    hotelDateLT : 'start 05.2020',    
                     buttonLT : 'Выбрать тур',
 
                     //LV
-                    countryNameLV: 'Турция, Инджекум',
+                    countryNameLV: 'Turcija, Mahmutlar',
                     aboutHotelLVItems: [
-                        { item: 'Песчано-галечный пляж' },
-                        { item: 'Компактная территория' },
-                        { item: 'Открытые бассейны' },
-                        { item: '2 водные горки' },
-                        { item: 'A la carte на пляже' },
+                        { item: 'Smilšu-oļu pludmale' },
+                        { item: 'Kompakta teritorija' },
+                        { item: 'Āra baseini' },
+                        { item: '2 ūdens slidkalniņi' },
+                        { item: 'A La Carte pludmalē' },
                     ],
-                    buttonLV : 'Выбрать тур',
+                    hotelDateLV : 'start 05.2020',    
+                    buttonLV : 'Izvēlēties ceļojumu',
                 },
 
                     //HOTEL 3
@@ -132,6 +138,7 @@ const smartHotels = new Vue ({
                         { item: 'Просторные номера' },
 
                     ],
+                    hotelDateEE : 'start 05.2020',    
                     buttonEE : 'Выбрать тур',
 
                     //LT
@@ -142,17 +149,19 @@ const smartHotels = new Vue ({
                         { item: 'Уникальный дизайн' },
                         { item: 'Просторные номера' },
                     ],
+                    hotelDateLT : 'start 05.2020',    
                     buttonLT : 'Выбрать тур',
 
                     //LV
-                    countryNameLV: 'Турция, Инджекум',
+                    countryNameLV: 'Turcija, Konakly',
                     aboutHotelLVItems: [
-                        { item: 'Песчаный пляж' },
-                        { item: 'Зеленая территория' },
-                        { item: 'Уникальный дизайн' },
-                        { item: 'Просторные номера' },
+                        { item: 'Smilšu pludmale' },
+                        { item: 'Zaļa teritorija' },
+                        { item: 'Unikāls dizains' },
+                        { item: 'Plaši numuri' },
                     ],
-                    buttonLV : 'Выбрать тур',
+                    hotelDateLV : 'start 05.2020',    
+                    buttonLV : 'Izvēlēties ceļojumu',
                 },
 
                     

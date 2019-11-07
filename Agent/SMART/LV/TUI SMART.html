@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- 
+Привет, все файлы по этой странице хранятся на TUI.ru / новый сайт / Концепции / TUI-SMART / в папках css js image и пр
+
+VUE автоматом подтягивает нужный перевод, если хотите изменить или добавить информацию обновляйте ее в файле VUE smart.js 
+
+
+-->
+
+
+<!-- HEAD START ========================================================================= -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" >
+    <meta name="description" content="">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>TUI SMART</title>
+    
+<!-- CSS STYLE ======================================================================== -->
+   
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/03f1481f-8cca-4396-b4e9-9b650e5487f8/reset-min">
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/ec719636-ff45-4328-b45d-eb0f6d4d0314/smart-hotels">
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/414ac703-1b5c-4067-9966-038780d2364f/smart-desktop">
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/493fe15d-0c98-408e-abe6-b938a271eab1/smart-laptop">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/79d32b81-b2d1-45d9-87e1-8ac3ae9b91ff/smart-tablet"> 
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/006d2476-5ac7-4e98-940c-101329e078ba/smart-mobile">
+    
+    <link rel="stylesheet"  href="https://www.tui.ru/getmedia/82f63621-090c-4d58-9b86-369a680a5911/header-footer-all-css-concepts">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
+<!-- CSS STYLE ======================================================= -->
+    
+<!-- SCRIPT загрузки VUE  =================================================== 
+        <script type="text/javascript">
+            const vueLinks = [
+                'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+                'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer',
+                'https://www.tui.ru/getmedia/18827348-c151-450f-8677-9e3b61cc8112/VUE-smart',
+                'https://www.tui.ru/getmedia/726871ad-483c-469c-bbf0-7970400cb216/VUE-smart-hotels-ru-by-ua',
+               
+                
+               
+                
+
+            ];
+
+            function add_files(arr, type) {
+
+                count = 0;
+
+                function new_file(link) {
+                    var script = document.createElement(type);
+                    script.src = link;
+                    script.async = false;
+                    document.head.appendChild(script);
+                    if (count < arr.length - 1) {
+                        script.onload = function() {
+                            new_file(arr[count]);
+                        }
+                        script.onerror = function() {
+                            throw new Error(arr[count - 1] + ' loading error');
+                        }
+                        count++;
+                    }
+                }
+
+                function error(text) {
+                    throw new Error('the function takes two required arguments');
+                }
+
+                (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+                    (arr === undefined) ? error('no link array') :
+                    (type === undefined) ? error('no file type') : '';
+                new_file(arr[count]);
+            }
+
+            add_files(vueLinks, 'script');
+        </script>    
+    
+    <!-- отключаем хэдере футер сайдблок на агенте ======================= -->
+    <style>
+        .mainHeader {
+            display: none;
+        }
+        .mainFooter {
+            display: none;
+        }
+        .informationBlock {
+            display: none;
+        }
+        .contentFooter {
+            display: none;
+        }
+        .contentWrapper {
+            width: 100%!important;
+            background: white!important;
+        }
+        .pageWrapper {
+            width: 100%!important;
+            background: white!important;
+        }
+    </style>
+    <!-- отключаем хэдере футер сайдблок на агенте ======================= -->
+</head>
+
+<!-- HEAD END ========================================================================= -->
+
+
+
+<body>
+   
+   <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
+
+<div class="menu-top" id="home-page-diff-menu-top"  style="z-index: 10;">
+    <div class="container">
+        <div class="row">
+            <a class="col-md-2 col-6 logo-img" href="/"><img :src=" logoLink "></a>
+            <div class="col-5 but-menu-mobile">
+                &nbsp;
+            </div>
+
+            <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
+
+            <div class="col-md-10 col-10 mobile_agent">
+                <div id="exit_menu">
+                    X
+                </div>
+                <div class="row menu-label">
+                    <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameLV}}</a>
+                    <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameLV}}</a>
+                    <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameLV}}</a>
+                    <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameLV}}</a>
+                    <div class="label-menu" style="position: relative;cursor: pointer">
+                        <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameLV}}</a>
+                        <div class="label-menu-2">
+                           <div class="concept-link">
+                                <a :href=" menuItemSmartLink "><img alt="Smart_logo" :src=" menuItemSmartLogo "></a>
+                                <div>
+                                    <a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br>
+                                        {{menuItemSmartNameLV}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
+                                <div>
+                                    <a :href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                        {{menuItemFunSunNameLV}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemDayNightLink "><img alt="FN_logo" :src=" menuItemDayNightLogo "></a>
+                                <div>
+                                    <a :href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                        {{menuItemDayNightNameLV}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemToucanLink "><img alt="FN_logo" :src=" menuItemToucanLogo "></a>
+                                <div>
+                                    <a :href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                        {{menuItemToucanNameLV}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
+
+                                <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameLV1}}<br />
+                                            {{menuItemConceptsAboutNameLV2}}</b></a></div>
+                            </div>
+                        </div>
+                    </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
+                    <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkLV " target="_blank">{{menuItemLoginNameLV}}</a>
+                </div>
+            </div>
+
+            <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+
+            <div class="col-md-10">
+                <div class="row menu-telephone">
+                    <div class="col-md-8 col-7">
+                        <p class="telephone-title">{{menuPhoneTitleLV}}</p>
+                        <p class="telephone-number">{{menuPhonePhoneLV}}</p>
+                    </div>
+                    <a :href=" menuTouristSiteLinkLV " style="color: black">{{menuTouristSiteNameLV}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
+   
+   
+<!-- MAIN START ======================================================================= -->
+   
+    <div class="smart" id="smart-diff" >
+       
+       <!-- BANNER START ================================= -->
+       
+       
+        <div class="smart__banner "   >
+            <img v-bind:src=" bannerRU " alt="SMART Banner" class="smart__img ">    
+        </div>
+        
+        <!-- BANNER END ================================= -->
+        
+        <!-- ABOUT START ================================= -->
+        
+        <div class="smart__text" >
+            <h2 class="smart__title"  > {{titleLV}} </h2>
+            <p class="smart__about"  > {{aboutLV}} </p>
+        </div>
+        
+        <!-- ABOUT END ================================= -->
+        
+        <!-- ФИШКИ START =============================== -->
+        
+        <div class="fishka" >
+            <div class="fishka__item" v-for=" fishkiPoint in fishkiPoints" v-bind:style=" fishkiPoint.cssPart " >
+                <div class="fishka__text" >
+                    <h3 class="fishka__title"> {{ fishkiPoint.titleLV }} </h3>
+                </div>
+                <img v-bind:src=" fishkiPoint.image " alt="fishka image" class="fishka__img">
+                
+            </div>
+        </div>
+        
+        <!-- ФИШКИ END =============================== -->
+        
+        <!-- WHY START =============================== -->
+        
+        <div class="why" >
+            <h2 class="smart__title" > {{ whyTitleLV }} </h2>
+            <div class="why__items">
+                <div class="why__item" v-for=" whyItem in whyItems " data-aos="slide-up">
+                    <img v-bind:src=" whyItem.image " alt="image" class="why__img">
+                    <div class="why__text">
+                        <h3 class="why__title"> {{ whyItem.titleLV }} </h3>
+                        <ul class="why__spisok" v-for=" item in whyItem.items">
+                            <li class="why__spisok-item" > {{ item.itemLV }} </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+        <!-- WHY ENS ================================ -->
+        
+        <!-- OPEN DATES START =============================== 
+        
+        <div class="country" >
+            <h2 class="smart__title"> {{ dateTitleLV }} </h2>
+            <div class="country__items">
+                <div class="country__item" v-for=" openDate in openDates ">
+                    <h3 class="country__name"> {{ openDate.countryNameRU }} </h3>
+                    <div class="country__block" v-for=" hotel in openDate.hotels ">
+                        <a v-bind:href=" hotel.linkAgent " class="country__hotel" target="_blank"> {{  hotel.name }} </a>
+                        <span class="country__date"> {{  hotel.date }} </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         OPEN DATES END =============================== -->
+        
+    </div>
+    
+    
+    <!-- SMART ОТЕЛИ СТАРТ ======================================= -->
+    
+    <div class="hotels " id="smart-hotels" >
+        <h2 class="smart__title"> {{ hotelsTitleLV }} </h2>
+        
+        <div class="slider__buttons" >
+            <a href="#" class="slider__button" v-for=" countryName in countryNames " v-bind:id=" countryName.id " v-bind:class="  countryName.class  ">{{countryName.nameLV}}</a>
+        </div>
+        <div class="slider " v-for=" country in countrys" v-bind:class="  country.class  " v-bind:id=" country.id " >
+           
+           <!-- HOTEL START ========================-->
+           
+            <div class="slide" v-for=" countryHotel in country.countryHotels" >
+                <img v-bind:src="  countryHotel.background " alt="" class="slide__image">
+                <h3 class="slide__title">{{countryHotel.countryNameLV}}</h3>
+                <h4 class="slide__name">{{countryHotel.hotelName}}</h4>
+                
+                <ul class="slide__list">
+                    <li class="slide__list-item" v-for=" aboutHotelLVItem in countryHotel.aboutHotelLVItems ">{{ aboutHotelLVItem.item }}</li>
+                </ul>
+                <span class="slide__dates">{{ countryHotel.hotelDateLV }}</span>
+                <a v-bind:href=" countryHotel.hotelLinkAgent " class="slide__link" target="_blank">{{countryHotel.buttonLV}}</a>
+            </div>
+            
+            <!-- HOTEL END ========================-->
+            
+        </div>
+    </div>
+    
+    <!-- SMART ОТЕЛИ END ======================================= -->
+    
+    
+    
+<!-- MAIN END ========================================================================= -->
+    
+<!-- SCRIPTS START ==================================================================== --> 
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>  
+<script src="https://www.tui.ru/getmedia/18827348-c151-450f-8677-9e3b61cc8112/VUE-smart" defer></script>
+<script src="https://www.tui.ru/getmedia/4b4524fc-523e-4464-be84-fda34efbea0c/VUE-smart-hotels-ee-lt-lv" defer></script>
+<script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer" defer></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" defer></script>
+
+<script defer>
+$(document).ready(function() {
+    $('#country1-slider').lightSlider({
+        item:3,
+        loop:false,
+        slideMove:1,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        mode: 'slide',
+        adaptiveHeight: false,
+        responsive : [
+            {
+                breakpoint:1200,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:10,
+                    autoWidth: true
+                  }
+            },
+            {
+                breakpoint:900,
+                settings: {
+                    item:2,
+                    slideMove:1,
+                    slideMargin:10,
+                    autoWidth: true
+                  }
+            },
+            {
+                breakpoint:600,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    slideMargin:10,
+                    autoWidth: true
+                  }
+            }
+        ]
+    });  
+  });    
+</script>
+<!-- SCRIPTS END ====================================================================== -->   
+
+<!-- METRIKA START ====================================================================== -->   
+
+<!-- METRIKA END ====================================================================== --> 
+
+
+</body>
+</html>

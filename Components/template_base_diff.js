@@ -4,7 +4,7 @@
 //RUSSIA BY UA
 var table_fs = {
     title_page_origin: "СЕМЕЙНЫЙ ОТДЫХ ПО ДОСТУПНОЙ ЦЕНЕ",
-    description_page_origin: "<p>Мы прислушиваемся к отзывам клиентов, постоянно изучаем потребности наших гостей и современные мировые тенденции в сфере отдыха и гостеприимства. Поэтому из отпуска вы привезете не только шоколадный загар, но и целую копилку ярких, незабываемых впечатлений!<br><br>К летнему сезону-2019 мы выбрали 10 отелей из 350-ти, предусмотрели мельчайшие детали и вывели формулу идеального отдыха для взрослых и детей!</p><h3>Грандиозный сюрприз для гостей FUN&SUN – концерты звёзд и мастер-классы от известных фитнес-инструкторов всё лето!</h3><p></p>С 28 апреля по 26 сентября любимые группы в отелях FUN&SUN в Турции!<br>В каждом отеле каждый месяц:<br>Пропаганда, Белый орёл, Rumbero’s, Estradarada, ViRUS!, Корни<br><br><strong>C 7 мая по 28 сентября профессиональные мастер-классы от лучших wellness и fitness инструкторов в отелях FUN&SUN в Турции и на Кипре!</strong><br>НЕДЕЛЯ ЗУМБЫ И АКВАЗУМБЫ, СИЛОВЫЕ И МУЛЬТИФУНКЦИОНАЛЬНЫЕ ТРЕНИРОВКИ, ТАНЦЕВАЛЬНЫЙ СТЕП И ДУХОВНЫЕ ПРАКТИКИ<br><span>Подробную программу концертов и фитнес-инструкторов для каждого отеля смотрите на странице отеля.</span></p>",
+    description_page_origin: "<p>Мы прислушиваемся к отзывам клиентов, постоянно изучаем потребности наших гостей и современные мировые тенденции в сфере отдыха и гостеприимства. Поэтому из отпуска вы привезете не только шоколадный загар, но и целую копилку ярких, незабываемых впечатлений!<br></p>",
     title: "Отели FUN&SUN",
     description: "Дата закрытия концепции в отелях, включая клуб Тукан",
     table_description: [
@@ -161,7 +161,7 @@ var table_fs = {
 //EE
 var table_fs_ee = {
     title_page_origin: "PEREPUHKUS TASKUKOHASE HINNAGA",
-    description_page_origin: "<p>Me pidevalt uurime klientide tagasisidet, küsitleme klientide vajadusi ja jälgime globaalseid trende. Seetõttu puhkuselt tagasi tulles, jääb teil mitte ainult kuldne päevitus, vaid ka hulgaliselt emotsioone ja eredaid mälestusi!<br><br>2019. aasta suvehooajaks valisime 350-st 10 hotelli. Töötlesime läbi kõige pisemaid detaile ning koostasime ideaalse valemi täiskasvanute ja laste puhkuseks!</p><h3>FUN&SUN külaliste suurepärane üllatus - staaride kontserdid ja tuntud fitness instruktorite meistriklaasid kogu suve!</h3><p></p>28 aprill kuni 26 september tuntud bändid FUN&SUN hotellides Türgis!<br> Kõikides hotellides iga kuu:<br> Propaganda, White Eagle, Rumbero&#39;s, Estradarada, ViRUS!, Korni<br><br><strong>7 mai kuni 28 september toimuvad meistriklassid parimate wellness ja fitness instruktorite poolt FUN&SUN hotellides Türgis ja Küprosel!</strong><br>ZUMBA JA VEEAEROOBIKA NÄDAL, JÕUTREENINGUD, STEP JA VAIMNE PRAKTIKA<br><span>Kontserdite ja meistriklasside täpsema ajakava leiate hotelli kodulehel.</span></p>",
+    description_page_origin: "<p>Me pidevalt uurime klientide tagasisidet, küsitleme klientide vajadusi ja jälgime globaalseid trende. Seetõttu puhkuselt tagasi tulles, jääb teil mitte ainult kuldne päevitus, vaid ka hulgaliselt emotsioone ja eredaid mälestusi!<br></p>",
     title: "FUN&SUN Hotellid",
     description: "Kontseptsioonide ja Toucan klubi lõppkuupäev",
     table_description: [
@@ -254,7 +254,7 @@ var table_fs_ee = {
 //LT
 var table_fs_lt = {
     title_page_origin: "ŠEIMOS POILSIS",
-    description_page_origin: "<p>Mes atsižvelgiame į turistų atsiliepimus, nuolat domimės jūsų poreikiais ir dabartinėmis pasaulinėmis tendencijomis laisvalaikio ir poilsio srityje. Todėl iš atostogų parsivešite ne tik šokoladinį įdegį, bet ir gausybę nepamirštamų įspūdžių!<br><br>2019 metų sezonui mes atrinkome 10 viešbučių idealiai tinkančių tiek suaugusiųjų, tiek vaikų poilsiui!</p><h3>Siurprizas FUN&SUN viešbučių svečiams – visą vasarą žvaigždžių koncertai ir žymių fitneso instruktorių treniruotės!</h3><p></p>Nuo balandžio 28 d. iki rugsėjo 26 d. populiariausios grupės FUN&SUN viešbučiuose Turkijoje!<br>Viešbučiuose kiekvieną mėnesį:<br>Propaganda, Baltas erelis, Rumbero’s, Estradarada, ViRUS!, Korni<br><br><strong>Nuo gegužės 7 d. iki rugsėjo 28 d. profesionalios wellness ir fitness instruktorių pamokos FUN&SUN viešbučiuose Turkijoje ir Kipre!</strong><br>SAVAITĖ ZUMBOS IR AKVAZUMBOS, JĖGOS BEI FUNKCINĖS TRENIRUOTĖS, STEPAS IR DVASINĖS PRAKTIKOS<br><span>Išsamesnę programą rasite oficialiame viešbučio tinklapyje.</span></p>",
+    description_page_origin: "<p>Mes atsižvelgiame į turistų atsiliepimus, nuolat domimės jūsų poreikiais ir dabartinėmis pasaulinėmis tendencijomis laisvalaikio ir poilsio srityje. Todėl iš atostogų parsivešite ne tik šokoladinį įdegį, bet ir gausybę nepamirštamų įspūdžių!<br></p>",
     title: "FUN&SUN viešbučiai",
     description: "Koncepcijos pabaigos data viešbučiuose, įskaitant Toucan vaikų klubą",
     table_description: [
@@ -345,7 +345,7 @@ var table_fs_lt = {
 //LV
 var table_fs_lv = {
     title_page_origin: "ĢIMENES ATPŪTA PAR PIEEJAMU CENU",
-    description_page_origin: "<p>Mēs ieklausāmies mūsu klientu atsauksmēs, nepārtraukti pētam mūsu klientu vajadzības un mūsdienu atpūtas un viesmīlības tendences. Tāpēc no atvaļinājuma jūs atvedīsiet ne tikai iedegumu, bet arī veselu krājumu ar spilgtiem un neaizmirstamiem iespaidiem!  <br><br>Sezonai Vasara 2019 mēs esam izvēlējušies 10 viesnīcas no 350, ņēmuši vērā visas nianses un izveidojām formulu ideālai atpūtai pieaugušajiem un bērniem! </p><h3>Grandiozais pārsteigums FUN&SUN viesnīcu viesiem – koncerti un pasaules slaveno fitnesa instruktoru meistarklases visas vasaras garumā! </h3><p></p>No 28 aprīļa līdz 26 septembrim iecienītākās mūzikas grupas uzstāsies FUN&SUN viesnīcās Turcijā! <br> Katra viesnīcā katru mēnesi:<br>Propaganda, Belij orel, Rumbero’s, Estradarada, ViRUS!, Korni<br><br><strong>No 7 maija līdz 28 septembrim profesionālās meistarklases no labākajiem wellness un fitnesa instruktoriem  FUN&SUN  viesnīcās Turcijā un Kiprā!</strong><br>ZUMBAS NEDĒĻA UN AKVAZUMBA, SPĒKA UN DAUDZFUNKCIONĀLIE TRENIŅI, DEJU STEPS UN GARĪGĀS PRAKSES.<br><span>Pilnu koncerta un fitnesa instuktoru programmu skatīties viesnīcu mājas lapās.</span></p>",
+    description_page_origin: "<p>Mēs ieklausāmies mūsu klientu atsauksmēs, nepārtraukti pētam mūsu klientu vajadzības un mūsdienu atpūtas un viesmīlības tendences. Tāpēc no atvaļinājuma jūs atvedīsiet ne tikai iedegumu, bet arī veselu krājumu ar spilgtiem un neaizmirstamiem iespaidiem!  <br></p>",
     title: "Viesnīcas ar FUN&SUN koncepciju",
     description: "Koncepcijas slēgšanas datums viesnīcās, t.sk klubu Toucan.",
     table_description: [
@@ -855,7 +855,7 @@ var table_tc_lv = {
 //RUSSIA BY UA
 var table_dn = {
     title_page_origin: "АКТИВНЫЙ ОТДЫХ В ФОРМАТЕ DAY&NIGHT Connected!",
-    description_page_origin: "<p>«Отдых — 🔥!». Именно так вы будете отвечать о своем отпуске после посещения наших отелей DAY&amp;NIGHT Connected! Здесь собираются только молодые и активные люди, для которых жизнь немыслима без спорта, танцев и веселья. Присоединяйтесь к нашей команде и ваш отдых заиграет самыми яркими красками</p><h3>Attention!<br>DAY&amp;NIGHT Connected заряжает энергией:</h3><p>Проведи вечер под невероятные ритмы классных диджеев, которые знают, что такое драйв!</p><p><b>DJ LUTIQUE</b> – талантливый музыкант и композитор, автор и ведущий популярного микс-шоу PREVIEW на радио. Он знает всё о стиле House, сотрудничает с европейскими лейблами, делает собственные и ремикширует популярные звездные треки.</p><p><b>DJ MANIAK</b> – диджей, саунд-продюсер, эксклюзивный резидент популярного российского лейбла Luxury Music. Один из самых популярных и востребованных DJ Украины.</p><p><b>DJ HARUN ERKEZEN</b> – автор 3 ярких альбомов, треки которого на Youtube собрали более 15 млн просмотров. Среди его ремиксов работы для Madonna, Rihanna, Lady Gaga, David Guetta и многих других мировых звезд.</p><h3>Грандиозный сюрприз для гостей DAY&NIGHT CONNECTED – концерты звёзд и мастер-классы от известных фитнес-инструкторов всё лето!</h3><p>7 июня - Estradarada <br>7 июля – Rumbero’s<br>3 августа – Пропаганда<br></p><h3>DAY&NIGHT Connected Club Life Belek 5* (Турция, Белек)</h3><p>9 июня Estradarada <br>5 июля – Rumbero’s<br>2 августа – Пропаганда<br></p><p><strong>C 15 мая по 25 сентября профессиональные мастер-классы от лучших wellness и fitness инструкторов в отелях DAY&NIGHT Connected!</strong></p><p>НЕДЕЛЯ ЗУМБЫ И АКВАЗУМБЫ, СИЛОВЫЕ И МУЛЬТИФУНКЦИОНАЛЬНЫЕ ТРЕНИРОВКИ, ТАНЦЕВАЛЬНЫЙ СТЕП И ДУХОВНЫЕ ПРАКТИКИ</p><p>Подробную программу фитнес-инструкторов для каждого отеля смотрите на странице отеля.</p>",
+    description_page_origin: "<p>«Отдых — 🔥!». Именно так вы будете отвечать о своем отпуске после посещения наших отелей DAY&amp;NIGHT Connected! Здесь собираются только молодые и активные люди, для которых жизнь немыслима без спорта, танцев и веселья. Присоединяйтесь к нашей команде и ваш отдых заиграет самыми яркими красками</p>",
     title: "Отели DAY&NIGHT Connected (Турция)",
     description: "Дата закрытия концепции в отелях",
     hotel: [
@@ -882,7 +882,7 @@ var table_dn = {
 	  ],
     table_description: [
         {
-            desc_info: "Выступления популярных диджеев каждый понедельник и вторник с 6.05 по 01.10.2019",
+            desc_info: "",
             desc_link: "https://goo.gl/CHGBTw",
             count: 1
 		  }
@@ -967,7 +967,7 @@ var table_dn = {
 //EE
 var table_dn_ee = {
     title_page_origin: "DAY&NIGHT Connected AKTIIVNE PUHKUS",
-    description_page_origin: "<p>«Puhkus oli — 🔥!». Just nii hakate rääkima oma puhkusest peale DAY&amp;NIGHT Connected hotelli külastamist! Siin on ainult noored ja aktiivsed külalised, kelle jaoks elu on täis sporti, tantsimist ja lõbutsemist! Liituge meiega, ja nautige täis erksaid värve ja häid emotsioone puhkust</p><h3>Attention!<br>DAY&amp;NIGHT Connected annab energiat:</h3><p>Veetke õhtu uskumatu rütmidega koos lahedate DJ-ga, kes teavad, mis on drive!</p><p><b>DJ LUTIQUE</b> – andekas muusik ja helilooja, raadios populaarse PREVIEW mix-show autor ja host. Ta teab kõike House'i stiili kohta, teeb koostööd Euroopa plaadifirmadega, teeb ise ja remiksib populaarseid lugusid.</p><p><b>DJ MANIAK</b> – DJ, heliprodutsent, populaarse Vene plaadifirma Luxury Music kaasomanik. Üks populaarsemaid ja ihaldatumaid DJ-sid Ukrainas.</p><p><b>DJ HARUN ERKEZEN</b> – 3 kuulsa albumi autor, mille lood Youtube'is on kogunud üle 15 miljoni vaatamist. Tema remikside hulgas on koostööd Madonna, Rihanna, Lady Gaga, David Guetta ja paljude teiste maailmatähtedega.</p><h3>DAY&NIGHT CONNECTED külaliste suurejooneline üllatus - staaride kontserdid ja kuulsate fitness instruktorite meistriklaasid kogu suve! </h3> <p> 7. juuni - Estradarada<br>7 juuli - Rumbero’s<br>3 august - Propaganda<br></p><h3>DAY&NIGHT Connected Club Life Belek 5* (Türgi, Belek)</h3><p>9 juuni Estradarada <br>5 juuli – Rumbero’s<br>2 august – Propaganda<br></p><p><strong> 15 mai kuni 25 september professionaalsed meistriklassid parimate wellness ja fitness instruktorite poolt DAY&NIGHT Connected hotellides!</strong></p><p> ZUMBA JA VEE-ZUMBA, JÕUTREENINGUD, STEP JA VAIMNE PRAKTIKA</p><p> täpsemat ajakava leiate hotelli kodulehel.</p>",
+    description_page_origin: "<p>«Puhkus oli — 🔥!». Just nii hakate rääkima oma puhkusest peale DAY&amp;NIGHT Connected hotelli külastamist! Siin on ainult noored ja aktiivsed külalised, kelle jaoks elu on täis sporti, tantsimist ja lõbutsemist! Liituge meiega, ja nautige täis erksaid värve ja häid emotsioone puhkust</p>",
     title: "DAY&NIGHT Connected (Türgi) hotellid",
     description: "Kontseptsioonide lõppkuupäevad hotellides",
     hotel: [
@@ -986,7 +986,7 @@ var table_dn_ee = {
 	  ],
     table_description: [
         {
-            desc_info: "Populaarsete DJ-de esinemised igal esmaspäeval ja teisipäeval 6.05–01.10.2019",
+            desc_info: "",
             desc_link: "https://goo.gl/CHGBTw",
             count: 1
 		  }
@@ -1071,7 +1071,7 @@ var table_dn_ee = {
 //LT
 var table_dn_lt = {
     title_page_origin: "AKTYVUS POILSIS SU DAY&NIGHT Connected!",
-    description_page_origin: "<p>«Atostogos — 🔥!». Būtent taip Jūs apibūdinsite savo atostogas draugams sugrįžę iš poilsio mūsų DAY&NIGHT Connected viešbučių! Čia atostogas renkasi jauni ir aktyvūs žmonės, kurie neįsivaizduoja savo gyvenimo be sporto, šokių ir linksmybių.</p><h3>Dėmesio!<br>DAY&amp;NIGHT Connected užkrečia energija:</h3><p>Praleiskite vakarą šokant pagal populiarius muzikos ritmus!</p><p><b>DJ LUTIQUE</b> – talentingas muzikantas ir prodiuseris, populiarios radijo laidos PREVIEW autorius ir vedantysis. Jis žino viską apie House stiliaus muziką.</p><p><b>DJ HARUN ERKEZEN</b> –  išleidęs jau 3 albumus, klipai Youtube kanale viršiję net 15 mln. peržiūrų. Dirbo su tokios žvaigdėmis kaip Madonna, Rihanna, Lady Gaga, David Guetta ir kt.</p><h3>Siurprizas DAY&NIGHT CONNECTED viešbučių svečiams – visą vasarą žvaigždžių koncertai ir fitneso intruktorių master class!</h3><p>Birželio 7 d. - Estradarada <br>Birželio 7 d. – Rumbero’s<br>Rugpjūčio 3 d. – Propaganda<br></p><h3>DAY&NIGHT Connected Club Life Belek 5* (Turkija, Belekas)</h3><p>Birželio 9 d. Estradarada <br>Liepos 5 d. – Rumbero’s<br>Rugpjūčio 2 d. – Propaganda<br></p><p><strong>Nuo gegužės 15 d. iki rugsėjo 25 d. profesionalių wellness ir fitness instruktorių treniruotės DAY&NIGHT Connected viešbučiuose!</strong></p><p>SAVAITĖ ZUMBOS IR AKVAZUMBOS, JĖGOS IR FUNKCINĖS TRENIRUOTĖS, STEPAS IR DVASINĖS PRAKTIKOS</p><p>Išsamesnę programą rasite oficialiame viešbučio tinklapyje.</p>",
+    description_page_origin: "<p>«Atostogos — 🔥!». Būtent taip Jūs apibūdinsite savo atostogas draugams sugrįžę iš poilsio mūsų DAY&NIGHT Connected viešbučių! Čia atostogas renkasi jauni ir aktyvūs žmonės, kurie neįsivaizduoja savo gyvenimo be sporto, šokių ir linksmybių.</p>",
     title: "DAY&NIGHT Connected viešbučiai (Turkija)",
     description: "Koncepcijos pabaigos data",
     hotel: [
@@ -1090,7 +1090,7 @@ var table_dn_lt = {
 	  ],
     table_description: [
         {
-            desc_info: "Populiarių DJ pasirodymai kiekvieną pirmadienį ir antradienį nuo 6.05 iki 01.10.2019",
+            desc_info: "",
             desc_link: "https://goo.gl/CHGBTw",
             count: 1
 		  }
@@ -1175,7 +1175,7 @@ var table_dn_lt = {
 //LV
 var table_dn_lv = {
     title_page_origin: "Jauniešu atpūta DAY&NIGHT Connected!",
-    description_page_origin: "<p>«Atpūta— 🔥!». Tieši tādā veidā jūs komentēsiet savu atvaļinājumu, apmeklējot mūsu viesnīcas DAY&amp;NIGHT Connected! Šeit ierodas jauni un aktīvi cilvēki, kuriem dzīve nav iedomājama bez sporta, dejām un jautrības. Pievienojieties mūsu komandai un jūsu brīvdienas būs krāšņākas! </p><h3>Attention!<br>DAY&amp;NIGHT Connected uzlāda ar enerģiju:</h3><p>Pavadi vakaru klausoties neticamus dīdžeju ritmus, kuri zina, kas ir draivs! </p><p><b>DJ LUTIQUE</b> – ir talantīgs mūziķis un komponists, autors un populārās PREVIEW mix - šova vadītājs radio. Viņš zina visu par House stilu, veido savus trekus un remiksē populāros zvaigžņu trekus. </p><p><b>DJ MANIAK</b> – didžejs, skaņu producents, Luxury Music ekskluzīvs rezidents. Viens no populārākajiem un pieprasītākajiem dzidžejiem Ukrainā. </p><p><b>DJ HARUN ERKEZEN</b> – ir 3 spilgtu albumu autors, kura Youtube treki ir savākuši vairāk nekā 15 miljonus skatu. Viņš veidoja remiksus priekš: Madonna, Rihanna, Lady Gaga, David Guetta un daudzām citām pasaules zvaigznēm. </p><h3>Grandiozais pārsteigums  DAY&NIGHT CONNECTED viesiem – koncerti un pasaules slaveno fitnesa instruktoru meistarklases visas vasaras garumā! </h3><p>7 jūnijā - Estradarada <br>7 jūlijā – Rumbero’s<br>3 augustā – Propaganda<br></p><h3>DAY&NIGHT Connected Club Life Belek 5* (Turcija, Beleka)</h3><p>9 jūnijā Estradarada <br>5 jūlijā – Rumbero’s<br>2 augustā – Propaganda<br></p><p><strong>No 15 maija līdz 25 septembrim profesionālās meistarklases no labākajiem wellness un fitnesa instruktoriem DAY&NIGHT Connected viesnīcās!</strong></p><p>ZUMBAS NEDĒĻA UN AKVAZUMBA, SPĒKA UN DAUDZFUNKCIONALIE TRENIŅI, DEJU STEPS UN GARĪGĀS PRAKSES. </p><p>Detalizēta fitnesa instruktoru programma katrai viesnīcai atrodama viesnīcas majas lapā. </p>",
+    description_page_origin: "<p>«Atpūta— 🔥!». Tieši tādā veidā jūs komentēsiet savu atvaļinājumu, apmeklējot mūsu viesnīcas DAY&amp;NIGHT Connected! Šeit ierodas jauni un aktīvi cilvēki, kuriem dzīve nav iedomājama bez sporta, dejām un jautrības. Pievienojieties mūsu komandai un jūsu brīvdienas būs krāšņākas! </p>",
     title: "Viesnīcas DAY&NIGHT Connected (Turcija)",
     description: "Koncepcijas slēgšanas datums viesnīcās",
     hotel: [
@@ -1193,7 +1193,7 @@ var table_dn_lv = {
 	  ],
     table_description: [
         {
-            desc_info: "Populāro didžeju uzstāšanās notiek pirmdienās un otrdienās no 06.05 līdz 01.10.2019 ",
+            desc_info: "",
             desc_link: "https://goo.gl/CHGBTw",
             count: 1
 		  }

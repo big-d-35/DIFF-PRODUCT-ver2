@@ -213,69 +213,86 @@
     }
 </style>
 <div class="row-all">
-    <div class="menu-top">
-        <div class="container">
-            <div class="row"><a class="col-md-2 col-6 logo-img" href="/"><img src="http://agent.tui.ru/Images/logo.png" /></a>
-                <div class="col-5 but-menu-mobile">&nbsp;</div>
+    <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
 
+    <div class="menu-top" id="home-page-diff-menu-top">
+        <div class="container">
+            <div class="row">
+                <a class="col-md-2 col-6 logo-img" href="/"><img v-bind:src=" logoLink "></a>
+                <div class="col-5 but-menu-mobile">
+                    &nbsp;
+                </div>
 
                 <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
 
                 <div class="col-md-10 col-10 mobile_agent">
-                    <div id="exit_menu">X</div>
-
-                    <div class="row menu-label"><a class="label-menu" href="/Franchaizing" target="_blank">Франчайзинг</a> <a class="label-menu" href="/partnership" target="_blank">Сотрудничество</a> <a class="label-menu" href="https://ssam.samo.travel/ssam/?uid=191745" target="_blank">Outsource</a> <a class="label-menu" href="/Branded-Shop" style="visibility: hidden;" target="_blank">TUI Shop</a>
-
-                        <div class="label-menu" style="position: relative;cursor: pointer"><a href="/concepts/home/" style="color:#092a5e">Концепции отдыха</a>
-
+                    <div id="exit_menu">
+                        X
+                    </div>
+                    <div class="row menu-label">
+                        <a class="label-menu" v-bind:href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameUA}}</a>
+                        <a class="label-menu" v-bind:href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameUA}}</a>
+                        <a class="label-menu" v-bind:href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameUA}}</a>
+                        <a class="label-menu" v-bind:href=" menuItemShopLinkUA " target="_blank">{{menuItemShopNameUA}}</a>
+                        <div class="label-menu" style="position: relative;cursor: pointer">
+                            <a v-bind:href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameUA}}</a>
                             <div class="label-menu-2">
-                                <div class="concept-link"><a href="http://agent.tui.ua/concepts/tui-fun-sun"><img alt="FN_logo" src="https://www.tui.ru/getmedia/a43e4cf0-4244-45b4-8bd4-275b7d8ba1a9/logoTopFN" /></a>
-
-                                    <div><a href="http://agent.tui.ua/concepts/tui-fun-sun"><b>FUN&amp;SUN</b><br />
-                                            Семейный отдых</a></div>
+                               <div class="concept-link">
+                                <a :href=" menuItemSmartLink "><img alt="Smart_logo" :src=" menuItemSmartLogo "></a>
+                                <div>
+                                    <a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br>
+                                        {{menuItemSmartNameUA}}</a>
                                 </div>
-
-                                <div class="concept-link"><a href="http://agent.tui.ua/concepts/tui-day-night"><img alt="FN_logo" src="https://www.tui.ru/getmedia/dfa8f32e-6221-4be8-9c2e-23d063b6b989/DN-logo_vertical_web" /></a>
-
-                                    <div><a href="http://agent.tui.ua/concepts/tui-day-night"><b>DAY&amp;NIGHT</b><br />
-                                            Молодежный отдых</a></div>
-                                </div>
-
-                                <div class="concept-link"><a href="http://agent.tui.ua/concepts/tui_toucan"><img alt="FN_logo" src="https://www.tui.ru/getmedia/eda1b56f-2532-46eb-8626-65425d799edf/TC-logo-mini-vertical" /></a>
-
-                                    <div><a href="http://agent.tui.ua/concepts/tui_toucan"><b>MINI TOUCAN</b><br />
-                                            Отдых с детьми</a></div>
-                                </div>
-
-                                <div class="concept-link">
-                                    <a href="/concepts/home"><img alt="Home_logo" src="https://www.tui.ru/getmedia/e7f4d372-680e-46e8-bb37-28e2ec6f2f50/toucan-main-page-100x100" /></a>
-
-                                    <div><a href="/concepts/home"><b>О концепциях<br />
-                                                отдыха</b></a></div>
-                                </div>
-
                             </div>
-                        </div>
-                        <!-- <a class="label-menu" href="/premium/premium" target="_blank">TUI PREMIUM</a> <a class="label-menu log enter" data-bind="click: LoginClick" href="http://b2b.tui.ru/default.php?page=cl_refer&amp;" target="_blank">Личный кабинет</a> -->
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemFunSunLink "><img alt="FN_logo" v-bind:src=" menuItemFunSunLogo "></a>
+                                    <div>
+                                        <a v-bind:href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                            {{menuItemFunSunNameUA}}</a>
+                                    </div>
+                                </div>
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemDayNightLink "><img alt="FN_logo" v-bind:src=" menuItemDayNightLogo "></a>
+                                    <div>
+                                        <a v-bind:href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                            {{menuItemDayNightNameUA}}</a>
+                                    </div>
+                                </div>
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemToucanLink "><img alt="FN_logo" v-bind:src=" menuItemToucanLogo "></a>
+                                    <div>
+                                        <a v-bind:href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                            {{menuItemToucanNameUA}}</a>
+                                    </div>
+                                </div>
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
+
+                                    <div><a v-bind:href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameUA1}}<br />
+                                                {{menuItemConceptsAboutNameUA2}}</b></a></div>
+                                </div>
+                            </div>
+                        </div><a class="label-menu" v-bind:href=" menuItemPremiumLinkUA " target="_blank">{{menuItemPremiumName}}</a>
+                        <a class="label-menu log enter" data-bind="click: LoginClick" v-bind:href=" menuItemLoginNamelinkUA " target="_blank">{{menuItemLoginNameUA}}</a>
                     </div>
                 </div>
-
 
                 <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
 
                 <div class="col-md-10">
                     <div class="row menu-telephone">
-                        <div class="col-md-6">
-                            <p class="telephone-title">Агентствам:</p>
-
-                            <p class="telephone-number">044 401 08 08</p>
+                        <div class="col-md-8 col-7">
+                            <p class="telephone-title">{{menuPhoneTitleUA}}</p>
+                            <p class="telephone-number">{{menuPhonePhoneUA}}</p>
                         </div>
-                        <a href="http://www.tui.ua" style="color: black">Сайт для туристов</a>
+                        <a v-bind:href=" menuTouristSiteLinkUA " style="color: black">{{menuTouristSiteNameUA}}</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
 
     <ul id="autoWidth">
         <li>
@@ -314,9 +331,9 @@
                     <p>Развлечения и спорт</p>
                 </div>
 
-                <div class="col-md-3 col-12 button-slider" onclick="window.open('/concepts/tui-day-night/concerts-and-master-classes')">
+                <!--<div class="col-md-3 col-12 button-slider" onclick="window.open('/concepts/tui-day-night/concerts-and-master-classes')">
                     <p>Афиша 2019</p>
-                </div>
+                </div>-->
 
                 <div class="col-md-3 col-12 button-slider" onclick="window.open('http://b2b.tui.ua/default.php?page=search_tour&amp;')">
                     <p>Перейти к бронированию</p>
@@ -1276,6 +1293,47 @@
             </div>
         </div>
     </div>
+    <!-- SCRIPT загрузки VUE  =================================================== -->
+<script>
+    const vueLinks = ['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+        
+        'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer',
+        
+
+    ];
+
+    function add_files(arr, type) {
+
+        count = 0;
+
+        function new_file(link) {
+            var script = document.createElement(type);
+            script.src = link;
+            script.async = false;
+            document.head.appendChild(script);
+            if (count < arr.length - 1) {
+                script.onload = function() {
+                    new_file(arr[count]);
+                }
+                script.onerror = function() {
+                    throw new Error(arr[count - 1] + ' loading error');
+                }
+                count++;
+            }
+        }
+
+        function error(text) {
+            throw new Error('the function takes two required arguments');
+        }
+
+        (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+            (arr === undefined) ? error('no link array') :
+            (type === undefined) ? error('no file type') : '';
+        new_file(arr[count]);
+    }
+
+    add_files(vueLinks, 'script');
+</script>
     <script src="https://www.tui.ru/getmedia/6039e8fe-a0c4-4347-a1cd-3f0c350089ea/slider-Mobile" type="text/javascript">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript">

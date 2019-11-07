@@ -19,7 +19,7 @@ const smartPage = new Vue ({
         titleUA: 'Что такое SMART?',
         titleEE: '',
         titleLT: '',
-        titleLV: '',
+        titleLV: 'Kas ir SMART?',
         
         //ABOUT
         aboutRU : 'SMART – это концепция отдыха, созданная для тех, кто хочет качественно отдохнуть за разумные деньги. Главное, что мы сделали – добавили пятизвездочный сервис в четырехзвездочные отели. И оставили цену прежней.',
@@ -27,7 +27,7 @@ const smartPage = new Vue ({
         aboutUA : 'SMART – это концепция отдыха, созданная для тех, кто хочет качественно отдохнуть за разумные деньги. Главное, что мы сделали – добавили пятизвездочный сервис в четырехзвездочные отели. И оставили цену прежней.',
         aboutEE : '',
         aboutLT : '',
-        aboutLV : '',
+        aboutLV : 'SMART ir atpūtas koncepcija, kas radīta tiem, kas vēlas labi atpūsties par saprātīgu cenu. Galvenais, ko mēs izdarījām, pievienojam pieczvaigžņu apkalpošanas līmeni četrzvaigžņu viesnīcām, bet cenu atstājam tādu pašu”.',
         
         //ФИШКИ
         fishkiPoints : [
@@ -44,7 +44,7 @@ const smartPage = new Vue ({
                 titleUA : 'Кофе 100% Арабика и выпечка',  
                 titleEE : '',  
                 titleLT : '',  
-                titleLV : '',
+                titleLV : '100% Arabika kafija un konditorejas izstrādājumi',
             },
             
             //2 POINT
@@ -58,7 +58,7 @@ const smartPage = new Vue ({
                 titleUA : 'Бесплатный и быстрый wi-fi',  
                 titleEE : '',  
                 titleLT : '',  
-                titleLV : '',  
+                titleLV : 'Bezmaksas un ātrgaitas WI-FI',  
             },
             
             //3 POINT
@@ -72,7 +72,7 @@ const smartPage = new Vue ({
                 titleUA : 'Фирменный Beer Bar & Street food',  
                 titleEE : '',  
                 titleLT : '',  
-                titleLV : '',
+                titleLV : 'Beer Bar & Street food',
             },
             
             //4 POINT
@@ -86,7 +86,7 @@ const smartPage = new Vue ({
                 titleUA : 'Подарок каждому гостю',  
                 titleEE : '',  
                 titleLT : '',  
-                titleLV : '',
+                titleLV : 'Dāvana katram viesim',
             },
             
             //5 POINT
@@ -100,7 +100,7 @@ const smartPage = new Vue ({
                 titleUA : 'В номере: халаты и тапочки, чайник, утюг (по запросу)',  
                 titleEE : '',  
                 titleLT : '',  
-                titleLV : '',
+                titleLV : 'Numurā: peldmeteļi un čības, tējkanna, gludeklis (pēc pieprasījuma)',
                 
             },
         ],
@@ -111,7 +111,7 @@ const smartPage = new Vue ({
         whyTitleUA : 'Почему SMART?',
         whyTitleEE : '',
         whyTitleLT : '',
-        whyTitleLV : '',
+        whyTitleLV : 'Kāpēc SMART?',
         
         whyItems : [
             
@@ -123,7 +123,7 @@ const smartPage = new Vue ({
                 titleUA : 'Улучшенный сервис',
                 titleEE : '',
                 titleLT : '',
-                titleLV : '',
+                titleLV : 'Uzlabotais apkalpošanas līmenis',
                 
                 items : [
                     
@@ -133,7 +133,7 @@ const smartPage = new Vue ({
                         itemUA : 'Чай и кофе в номерах',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Tēja un kafija numuros',    
                     },
                     
                     {
@@ -142,7 +142,7 @@ const smartPage = new Vue ({
                         itemUA : 'Тапочки и набор для душа',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Čības un vannas istabas piederumu komplekts',    
                     },
                     
                     {
@@ -151,7 +151,7 @@ const smartPage = new Vue ({
                         itemUA : 'Бесплатный сейф и утюг',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Bezmaksas seifs un gludeklis',    
                     },
                     
                     {
@@ -160,7 +160,7 @@ const smartPage = new Vue ({
                         itemUA : 'Бесплатный WI-FI',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Bezmaksas WI-FI',    
                     },
                     
                     {
@@ -169,7 +169,7 @@ const smartPage = new Vue ({
                         itemUA : 'Бережное отношение к окружающей среде',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Saudzīga attieksme pret apkārtējo vidi',    
                     },
                     
                     {
@@ -178,7 +178,7 @@ const smartPage = new Vue ({
                         itemUA : 'Фирменный набор для ванной',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Vannas istabas piederumu komplekts',    
                     },
                 ]
                 
@@ -192,7 +192,7 @@ const smartPage = new Vue ({
                 titleUA : 'Новый подход к питанию',
                 titleEE : '',
                 titleLT : '',
-                titleLV : '',
+                titleLV : 'Jauns ēdināšanas veids',
                 
                 items : [
                     
@@ -202,7 +202,7 @@ const smartPage = new Vue ({
                         itemUA : 'A la carte ресторан',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'A La Carte restorāns',    
                     },
                     
                     {
@@ -211,16 +211,16 @@ const smartPage = new Vue ({
                         itemUA : 'Тематические ужины',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Tematiskās vakariņas',    
                     },
                     
                     {
-                        itemRU : 'Домашняя пекарня',    
-                        itemBY : 'Домашняя пекарня',    
-                        itemUA : 'Домашняя пекарня',    
+                        itemRU : 'Свежая выпечка',    
+                        itemBY : 'Свежая выпечка',    
+                        itemUA : 'Свежая выпечка',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Mājas ceptuve',    
                     },
                     
                     {
@@ -229,7 +229,7 @@ const smartPage = new Vue ({
                         itemUA : 'Пивной бар',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Alus bārs',    
                     },
                     
                     {
@@ -238,7 +238,7 @@ const smartPage = new Vue ({
                         itemUA : 'Street food',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Street food',    
                     },
                     
                     {
@@ -247,7 +247,7 @@ const smartPage = new Vue ({
                         itemUA : 'Блюда домашней кухни',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Mājas virtuves ēdieni',    
                     },
                 ]
                 
@@ -261,7 +261,7 @@ const smartPage = new Vue ({
                 titleUA : 'Только нужные развлечения',
                 titleEE : '',
                 titleLT : '',
-                titleLV : '',
+                titleLV : 'Tikai interesantas izklaides',
                 
                 items : [
                     
@@ -271,7 +271,7 @@ const smartPage = new Vue ({
                         itemUA : 'Живая музыка',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Dzīvā mūzika',    
                     },
                     
                     {
@@ -280,7 +280,7 @@ const smartPage = new Vue ({
                         itemUA : 'Вечерние шоу',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Vakara šovi',    
                     },
                     
                     {
@@ -289,7 +289,7 @@ const smartPage = new Vue ({
                         itemUA : 'Танцевальные программы',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Deju programmas',    
                     },
                     
                     {
@@ -298,7 +298,7 @@ const smartPage = new Vue ({
                         itemUA : 'Пенные вечеринки',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Putu ballītes',    
                     },
                     
                     {
@@ -307,7 +307,7 @@ const smartPage = new Vue ({
                         itemUA : 'Спортивные активности',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Sporta aktivitātes',    
                     },
                     
                     
@@ -323,7 +323,7 @@ const smartPage = new Vue ({
                 titleUA : 'Для детей',
                 titleEE : '',
                 titleLT : '',
-                titleLV : '',
+                titleLV : 'Bērniem',
                 
                 items : [
                     
@@ -333,7 +333,7 @@ const smartPage = new Vue ({
                         itemUA : 'Детское меню',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Bērnu ēdienkarte',    
                     },
                     
                     {
@@ -342,7 +342,7 @@ const smartPage = new Vue ({
                         itemUA : 'Детский клуб',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Bērnu klubs',    
                     },
                     
                     {
@@ -351,7 +351,7 @@ const smartPage = new Vue ({
                         itemUA : 'Бесплатное мороженое',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Bezmaksas saldējums',    
                     },
                     
                     {
@@ -360,7 +360,7 @@ const smartPage = new Vue ({
                         itemUA : 'Открытая площадка для игр с навесом',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Āra rotaļu laukums zem nojumes',    
                     },
                     
                     {
@@ -369,7 +369,7 @@ const smartPage = new Vue ({
                         itemUA : 'Брендированный подарок',    
                         itemEE : '',    
                         itemLT : '',    
-                        itemLV : '',    
+                        itemLV : 'Brendu dāvana',    
                     },
                     
                     
@@ -385,7 +385,7 @@ const smartPage = new Vue ({
         dateTitleUA : 'Даты открытий концепции в отелях',
         dateTitleEE : '',
         dateTitleLT : '',
-        dateTitleLV : '',
+        dateTitleLV : 'Koncepcijas atklāšanas datumi viesnīcās',
         
         openDates : [
             
@@ -397,7 +397,7 @@ const smartPage = new Vue ({
                 countryNameUA: 'Турция',
                 countryNameEE: '',
                 countryNameLT: '',
-                countryNameLV: '',
+                countryNameLV: 'Turcija',
                 
                 hotels : [
                     //HOTEL 1
@@ -405,7 +405,7 @@ const smartPage = new Vue ({
                         name: 'Smart Club Marakesh Beach Hotel 4*',
                         linkAgent : '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
                         linkClient : '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
-                        date: 'май 2020',
+                        date: '05.2020',
                     },
                     
                     //HOTEL 2
@@ -413,7 +413,7 @@ const smartPage = new Vue ({
                         name: 'Smart Euphoria Bella Mare Hotel 4*',
                         linkAgent : '/Tours/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel',
                         linkClient : '/hotel/europe-turkey-alanya-mahmutlar-smart__euphoria__bella__mare__hotel/',
-                        date: 'май 2020',
+                        date: '05.2020',
                     },
                     
                     //HOTEL 3
@@ -421,7 +421,7 @@ const smartPage = new Vue ({
                         name: 'Smart Limoncello Konakli Beach Hotel 5*',
                         linkAgent : '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel',
                         linkClient : '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel/',
-                        date: 'май 2020',
+                        date: '05.2020',
                     },
                     
                     

@@ -42,7 +42,7 @@
         box-sizing: border-box;
     }
 </style>
-<title></title>
+<title>FUN SUN</title>
 <div class="row-all">
 
     <!-- FUN SUN HEADER MENU START ===================================-->
@@ -143,9 +143,9 @@
                     <p>{{funSunPageMenuItemLV4}}</p>
                 </a>
 
-                <a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkClient5" target="_blank">
+                <!--<a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkClient5" target="_blank">
                     <p>{{funSunPageMenuItemLV5}}</p>
-                </a>
+                </a>-->
 
                 <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkClient6LV" target="_blank">
                     <p>{{funSunPageMenuItemLV6}}</p>
@@ -240,7 +240,7 @@
     </div>
 
     <div class="container">
-        <!-- VIDEO ==================================================================== -->
+        <!-- VIDEO ==================================================================== 
 
         <style>
             .video-fun-sun {
@@ -367,7 +367,7 @@
                 }
             });
         </script>
-        <!-- VIDEO ==================================================================== -->
+         VIDEO ==================================================================== -->
     </div>
 
 
@@ -517,11 +517,98 @@
 
     <!-- FUN SUN ADVENTAGIES HOTELS BLOCK END ======================= -->
 
-    <div class="container-fluid block_3" id="hotels">
-        <div class="container" id="hotels-name">
-            <h2 style="text-transform: uppercase;">{{funSunPageAllHotelsTitleLV}}</h2>
+    <!-- ОТЕЛИ СТАРТ  ================================================================= -->
+
+        <div class="container-fluid block_3" id="hotels-fun-sun">
+    <div class="container" >
+        <h2 style="text-transform: uppercase;">{{ titleLV }}</h2>
+    </div>
+            <!-- ОТЕЛИ СТАРТ слайдер ========================================================================================= -->
+
+            <div class="row">
+                <div class="container sl" id="hotels">
+                    <div class="buttons-navigations" id="hotel-buttons">
+                        <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b1">{{country1LV}}</a> <!-- Отели с концепцией Турция -->
+                        <a class="button-navigatin" data-block=".slider_2" href="#s2b2">{{country2LV}}</a> <!-- Отели с концепцией Кипр -->
+                    </div>
+                     <!-- Отели с концепцией Турция -->
+
+            <div class="slider slider_2" id="s2b1">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country1Hotel in country1Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country1Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country1Hotel.countryNameLV }}</h4>
+
+                                    <p class="gey_p">{{ country1Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLVItem in country1Hotel.aboutHotelLVItems"> {{ aboutHotelLVItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country1Hotel.hotelLinkClient ">{{ country1Hotel.buttonLV }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
+
+            <!-- Отели с концепцией Кипр -->
+
+            <div class="slider slider_2 n" id="s2b2">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country2Hotel in country2Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country2Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country2Hotel.countryNameLV }}</h4>
+
+                                    <p class="gey_p">{{ country2Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLVItem in country2Hotel.aboutHotelLVItems"> {{ aboutHotelLVItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country2Hotel.hotelLinkClient ">{{ country2Hotel.buttonLV }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
         </div>
     </div>
+    <!-- ОТЕЛИ END слайдер  ==================================================== -->
+</div>
+<!-- ОТЕЛИ END ===================================================================== -->
 </div>
 
 
@@ -805,6 +892,7 @@
     const vueLinks = ['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
         'https://www.tui.ru/getmedia/8d1465da-5919-44bb-8550-8bc3ac3e0b7d/VUE-diff-product-fun-sun-page',
         'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer',
+        'https://www.tui.ru/getmedia/869cdbe7-8ba7-4375-b5c3-3c0d2c4cba8c/VUE-FS-fun-sun-hotels-ee-lt-lv',
         'https://www.tui.ru/getmedia/6e64783b-d6d6-4b51-ab25-d8d1ec72e234/all'
     ];
 

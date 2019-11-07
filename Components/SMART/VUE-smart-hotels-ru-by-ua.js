@@ -44,7 +44,7 @@ const smartHotels = new Vue ({
                     hotelLinkClient: '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
 
                     //RU
-                    countryNameRU: 'Турция, Инджекум',
+                    countryNameRU: 'Турция, Бельдиби',
                     aboutHotelRUItems: [
                         { item: 'Собственный пляж' },
                         { item: 'Бассейн с водными горками' },
@@ -55,7 +55,7 @@ const smartHotels = new Vue ({
                     buttonRU : 'Выбрать тур',
 
                     //BY
-                    countryNameBY: 'Турция, Инджекум',
+                    countryNameBY: 'Турция, Бельдиби',
                     aboutHotelBYItems: [
                         { item: 'Собственный пляж' },
                         { item: 'Бассейн с водными горками' },
@@ -66,7 +66,7 @@ const smartHotels = new Vue ({
                     buttonBY : 'Выбрать тур',
 
                     //UA
-                    countryNameUA: 'Турция, Инджекум',
+                    countryNameUA: 'Турция, Бельдиби',
                     aboutHotelUAItems: [
                         { item: 'Собственный пляж' },
                         { item: 'Бассейн с водными горками' },
@@ -85,7 +85,7 @@ const smartHotels = new Vue ({
                     hotelLinkClient: '/hotel/europe-turkey-alanya-mahmutlar-smart__euphoria__bella__mare__hotel/',
 
                     //RU
-                    countryNameRU: 'Турция, Инджекум',
+                    countryNameRU: 'Турция, Махмутлар',
                     aboutHotelRUItems: [
                         { item: 'Песчано-галечный пляж' },
                         { item: 'Компактная территория' },
@@ -98,7 +98,7 @@ const smartHotels = new Vue ({
                     buttonRU : 'Выбрать тур',
 
                     //BY
-                    countryNameBY: 'Турция, Инджекум',
+                    countryNameBY: 'Турция, Махмутлар',
                     aboutHotelBYItems: [
                         { item: 'Песчано-галечный пляж' },
                         { item: 'Компактная территория' },
@@ -110,7 +110,7 @@ const smartHotels = new Vue ({
                     buttonBY : 'Выбрать тур',
 
                     //UA
-                    countryNameUA: 'Турция, Инджекум',
+                    countryNameUA: 'Турция, Махмутлар',
                     aboutHotelUAItems: [
                         { item: 'Песчано-галечный пляж' },
                         { item: 'Компактная территория' },
@@ -130,7 +130,7 @@ const smartHotels = new Vue ({
                     hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel/',
 
                     //RU
-                    countryNameRU: 'Турция, Инджекум',
+                    countryNameRU: 'Турция, Конаклы',
                     aboutHotelRUItems: [
                         { item: 'Песчаный пляж' },
                         { item: 'Зеленая территория' },
@@ -142,7 +142,7 @@ const smartHotels = new Vue ({
                     buttonRU : 'Выбрать тур',
 
                     //BY
-                    countryNameBY: 'Турция, Инджекум',
+                    countryNameBY: 'Турция, Конаклы',
                     aboutHotelBYItems: [
                         { item: 'Песчаный пляж' },
                         { item: 'Зеленая территория' },
@@ -153,7 +153,7 @@ const smartHotels = new Vue ({
                     buttonBY : 'Выбрать тур',
 
                     //UA
-                    countryNameUA: 'Турция, Инджекум',
+                    countryNameUA: 'Турция, Конаклы',
                     aboutHotelUAItems: [
                         { item: 'Песчаный пляж' },
                         { item: 'Зеленая территория' },
@@ -165,14 +165,14 @@ const smartHotels = new Vue ({
                 },
 
                     //HOTEL 4
-                    /*{
+                    {
                     hotelName : 'Smart Club Hotel Mirabell',
                     background: 'https://www.tui.ru/getmedia/960b240d-2407-4940-8d3e-247396f9eb4a/T12_hotel_Pegasos-Club',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
                     hotelLinkClient: '/hotel/europe-turkey-alanya-incekum-pegasos__club/',
 
                     //RU
-                    countryNameRU: 'Турция, Инджекум',
+                    countryNameRU: 'Турция, Конаклы',
                     aboutHotelRUItems: [
                         { item: '70% номеров с видом на море' },
                         { item: 'Размещение с домашними животными' },
@@ -180,28 +180,31 @@ const smartHotels = new Vue ({
                         { item: '2 водные горки' },
 
                     ],
+                    hotelDateRU : 'запуск май 2020',
                     buttonRU : 'Выбрать тур',
 
                     //BY
-                    countryNameBY: 'Турция, Инджекум',
+                    countryNameBY: 'Турция, Конаклы',
                     aboutHotelBYItems: [
                         { item: '70% номеров с видом на море' },
                         { item: 'Размещение с домашними животными' },
                         { item: '2 открытых бассейна (230 кв.м и 165 кв.м)' },
                         { item: '2 водные горки' },
                     ],
+                    hotelDateBY : 'запуск май 2020',    
                     buttonBY : 'Выбрать тур',
 
                     //UA
-                    countryNameUA: 'Турция, Инджекум',
+                    countryNameUA: 'Турция, Конаклы',
                     aboutHotelUAItems: [
                         { item: '70% номеров с видом на море' },
                         { item: 'Размещение с домашними животными' },
                         { item: '2 открытых бассейна (230 кв.м и 165 кв.м)' },
                         { item: '2 водные горки' },
                     ],
+                    hotelDateUA : 'запуск май 2020',    
                     buttonUA : 'Выбрать тур',
-                },*/
+                },
                 ],
             },
             

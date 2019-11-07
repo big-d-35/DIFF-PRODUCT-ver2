@@ -1,5 +1,5 @@
 <head></head>
-<title></title>
+<title>FUN SUN</title>
 <script defer src="https://www.tui.ru/getmedia/91751be2-e1fb-443e-b4f4-66aab0b2a7f2/template_engine" type="text/javascript">
 </script>
 <script src="https://www.tui.ru/getmedia/d87eaac3-bfe8-4d28-b122-f5631b032cc1/template_base_diff" type="text/javascript">
@@ -100,50 +100,50 @@
                             X
                         </div>
                         <div class="row menu-label">
-                            <a class="label-menu" v-bind:href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameUA}}</a>
-                            <a class="label-menu" v-bind:href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameUA}}</a>
-                            <a class="label-menu" v-bind:href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameUA}}</a>
-                            <a class="label-menu" v-bind:href=" menuItemShopLinkUA " target="_blank">{{menuItemShopNameUA}}</a>
+                            <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameUA}}</a> 
+                            <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameUA}}</a> 
+                            <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameUA}}</a> 
+                            <a class="label-menu" :href=" menuItemShopLinkUA " target="_blank">{{menuItemShopNameUA}}</a>
                             <div class="label-menu" style="position: relative;cursor: pointer">
                                 <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameUA}}</a>
                                 <div class="label-menu-2">
                                    <div class="concept-link">
-                                <a :href=" menuItemSmartLink "><img alt="Smart_logo" :src=" menuItemSmartLogo "></a>
-                                <div>
-                                    <a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br>
-                                        {{menuItemSmartNameUA}}</a>
-                                </div>
-                            </div>
-                                    <div class="concept-link">
-                                        <a v-bind:href=" menuItemFunSunLink "><img alt="FN_logo" v-bind:src=" menuItemFunSunLogo "></a>
+                                        <a :href=" menuItemSmartLink "><img alt="Smart_logo" :src=" menuItemSmartLogo "></a>
                                         <div>
-                                            <a v-bind:href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                            <a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br>
+                                                {{menuItemSmartNameUA}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
+                                        <div>
+                                            <a :href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
                                                 {{menuItemFunSunNameUA}}</a>
                                         </div>
                                     </div>
                                     <div class="concept-link">
-                                        <a v-bind:href=" menuItemDayNightLink "><img alt="FN_logo" v-bind:src=" menuItemDayNightLogo "></a>
+                                        <a :href=" menuItemDayNightLink "><img alt="FN_logo" :src=" menuItemDayNightLogo "></a>
                                         <div>
-                                            <a v-bind:href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                            <a :href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
                                                 {{menuItemDayNightNameUA}}</a>
                                         </div>
                                     </div>
                                     <div class="concept-link">
-                                        <a v-bind:href=" menuItemToucanLink "><img alt="FN_logo" v-bind:src=" menuItemToucanLogo "></a>
+                                        <a :href=" menuItemToucanLink "><img alt="FN_logo" :src=" menuItemToucanLogo "></a>
                                         <div>
-                                            <a v-bind:href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                            <a :href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
                                                 {{menuItemToucanNameUA}}</a>
                                         </div>
                                     </div>
                                     <div class="concept-link">
-                                        <a v-bind:href=" menuItemConceptsAboutLink "><img alt="Home_logo" v-bind:src=" menuItemConceptsAboutLogo " /></a>
+                                        <a :href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
 
-                                        <div><a v-bind:href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameUA1}}<br />
+                                        <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameUA1}}<br />
                                                     {{menuItemConceptsAboutNameUA2}}</b></a></div>
                                     </div>
                                 </div>
-                            </div><a class="label-menu" v-bind:href=" menuItemPremiumLinkUA " target="_blank">{{menuItemPremiumName}}</a>
-                            <a class="label-menu log enter" data-bind="click: LoginClick" v-bind:href=" menuItemLoginNamelinkUA " target="_blank">{{menuItemLoginNameUA}}</a>
+                            </div><a class="label-menu" :href=" menuItemPremiumLinkUA " target="_blank">{{menuItemPremiumName}}</a> 
+                            <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkUA " target="_blank">{{menuItemLoginNameUA}}</a>
                         </div>
                     </div>
 
@@ -262,9 +262,9 @@
                 <p>{{funSunPageMenuItemUA4}}</p>
             </a>
 
-            <a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkAgent5" target="_blank">
+            <!--<a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkAgent5" target="_blank">
                 <p>{{funSunPageMenuItemUA5}}</p>
-            </a>
+            </a>-->
 
             <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkAgent6UA" target="_blank">
                 <p>{{funSunPageMenuItemUA6}}</p>
@@ -359,7 +359,7 @@
         </div>
 
         <div class="container">
-            <!-- VIDEO ==================================================================== -->
+            <!-- VIDEO ==================================================================== 
             <style type="text/css">
                 .video-fun-sun {
                     width: 100%;
@@ -480,7 +480,7 @@
                         }
                     }
                 });
-            </script><!-- VIDEO ==================================================================== -->
+            </script> VIDEO ==================================================================== -->
         </div>
 
        <!-- FUN SUN ADVENTAGIES HOTELS BLOCK START ======================= -->
