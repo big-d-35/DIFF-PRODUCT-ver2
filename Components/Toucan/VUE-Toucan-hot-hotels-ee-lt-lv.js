@@ -640,7 +640,7 @@ const toucanHotHotels = new Vue ({
             
             
             //HOTEL
-            {
+            /*{
                 hotelName : 'Don Juan Tossa 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/d163d8fb-7186-4929-96d2-27b24b9a144e/hontana-hossa-min);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa',
@@ -681,7 +681,7 @@ const toucanHotHotels = new Vue ({
                     
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
-            },
+            },*/
             
             
         ],

@@ -50,6 +50,8 @@ const smartHotels = new Vue ({
                         { item: 'Бассейн с водными горками' },
                         { item: 'Компактная территория' },
                         { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
+                        { item: 'Бары отеля, расположенные рядом с пляжем' },
+                        { item: 'Детская площадка на пляже под тентом' },
                     ],
                     hotelDateRU : 'запуск май 2020',    
                     buttonRU : 'Выбрать тур',
@@ -61,6 +63,8 @@ const smartHotels = new Vue ({
                         { item: 'Бассейн с водными горками' },
                         { item: 'Компактная территория' },
                         { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
+                        { item: 'Бары отеля, расположенные рядом с пляжем' },
+                        { item: 'Детская площадка на пляже под тентом' },
                     ],
                     hotelDateBY : 'запуск май 2020',    
                     buttonBY : 'Выбрать тур',
@@ -72,6 +76,8 @@ const smartHotels = new Vue ({
                         { item: 'Бассейн с водными горками' },
                         { item: 'Компактная территория' },
                         { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
+                        { item: 'Бары отеля, расположенные рядом с пляжем' },
+                        { item: 'Детская площадка на пляже под тентом' },
                     ],
                     hotelDateUA : 'запуск май 2020',
                     buttonUA : 'Выбрать тур',
@@ -87,11 +93,12 @@ const smartHotels = new Vue ({
                     //RU
                     countryNameRU: 'Турция, Махмутлар',
                     aboutHotelRUItems: [
-                        { item: 'Песчано-галечный пляж' },
+                        { item: 'Собственный песчано-галечный пляж в 50 м (через дорогу)' },
                         { item: 'Компактная территория' },
                         { item: 'Открытые бассейны' },
                         { item: '2 водные горки' },
                         { item: 'A la carte на пляже' },
+                        { item: 'Promo (номера стандарт по акционной стоимости)' },
 
                     ],
                     hotelDateRU : 'запуск май 2020',    
@@ -100,11 +107,12 @@ const smartHotels = new Vue ({
                     //BY
                     countryNameBY: 'Турция, Махмутлар',
                     aboutHotelBYItems: [
-                        { item: 'Песчано-галечный пляж' },
+                        { item: 'Собственный песчано-галечный пляж в 50 м (через дорогу)' },
                         { item: 'Компактная территория' },
                         { item: 'Открытые бассейны' },
                         { item: '2 водные горки' },
                         { item: 'A la carte на пляже' },
+                        { item: 'Promo (номера стандарт по акционной стоимости)' },
                     ],
                     hotelDateBY : 'запуск май 2020',    
                     buttonBY : 'Выбрать тур',
@@ -112,11 +120,12 @@ const smartHotels = new Vue ({
                     //UA
                     countryNameUA: 'Турция, Махмутлар',
                     aboutHotelUAItems: [
-                        { item: 'Песчано-галечный пляж' },
+                        { item: 'Собственный песчано-галечный пляж в 50 м (через дорогу)' },
                         { item: 'Компактная территория' },
                         { item: 'Открытые бассейны' },
                         { item: '2 водные горки' },
                         { item: 'A la carte на пляже' },
+                        { item: 'Promo (номера стандарт по акционной стоимости)' },
                     ],
                     hotelDateUA : 'запуск май 2020',    
                     buttonUA : 'Выбрать тур',
@@ -126,16 +135,19 @@ const smartHotels = new Vue ({
                     {
                     hotelName : 'Smart Limoncello Konakli Beach Hotel 5*',
                     background: 'https://agent.tui.ru/img/c49774bb-b878-4f04-bec6-d043ea833e95/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel.jpg?geo=1&width=620&height=380',
-                    hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel',
-                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel/',
+                    hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel-(ex-Club-Konakli)',
+                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel__(ex__club__konakli)/',
 
                     //RU
                     countryNameRU: 'Турция, Конаклы',
                     aboutHotelRUItems: [
-                        { item: 'Песчаный пляж' },
-                        { item: 'Зеленая территория' },
-                        { item: 'Уникальный дизайн' },
-                        { item: 'Просторные номера' },
+                        { item: 'Главный ресторан в марроканском стиле ' },
+                        { item: 'Бары в отеле с красивым интерьером' },
+                        { item: 'Большой открытый бассейн' },
+                        { item: 'Водные горки' },
+                        { item: 'Крытый бассейн' },
+                        { item: 'Собственный песчаный пляж в 200 м' },
+                        { item: 'Есть семейные номера с одной и двумя спальнями' },
 
                     ],
                     hotelDateRU : 'запуск май 2020',    
@@ -144,10 +156,13 @@ const smartHotels = new Vue ({
                     //BY
                     countryNameBY: 'Турция, Конаклы',
                     aboutHotelBYItems: [
-                        { item: 'Песчаный пляж' },
-                        { item: 'Зеленая территория' },
-                        { item: 'Уникальный дизайн' },
-                        { item: 'Просторные номера' },
+                        { item: 'Главный ресторан в марроканском стиле ' },
+                        { item: 'Бары в отеле с красивым интерьером' },
+                        { item: 'Большой открытый бассейн' },
+                        { item: 'Водные горки' },
+                        { item: 'Крытый бассейн' },
+                        { item: 'Собственный песчаный пляж в 200 м' },
+                        { item: 'Есть семейные номера с одной и двумя спальнями' },
                     ],
                     hotelDateBY : 'запуск май 2020',    
                     buttonBY : 'Выбрать тур',
@@ -155,10 +170,13 @@ const smartHotels = new Vue ({
                     //UA
                     countryNameUA: 'Турция, Конаклы',
                     aboutHotelUAItems: [
-                        { item: 'Песчаный пляж' },
-                        { item: 'Зеленая территория' },
-                        { item: 'Уникальный дизайн' },
-                        { item: 'Просторные номера' },
+                        { item: 'Главный ресторан в марроканском стиле ' },
+                        { item: 'Бары в отеле с красивым интерьером' },
+                        { item: 'Большой открытый бассейн' },
+                        { item: 'Водные горки' },
+                        { item: 'Крытый бассейн' },
+                        { item: 'Собственный песчаный пляж в 200 м' },
+                        { item: 'Есть семейные номера с одной и двумя спальнями' },
                     ],
                     hotelDateUA : 'запуск май 2020',    
                     buttonUA : 'Выбрать тур',
@@ -166,10 +184,10 @@ const smartHotels = new Vue ({
 
                     //HOTEL 4
                     {
-                    hotelName : 'Smart Club Hotel Mirabell',
-                    background: 'https://www.tui.ru/getmedia/960b240d-2407-4940-8d3e-247396f9eb4a/T12_hotel_Pegasos-Club',
-                    hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
-                    hotelLinkClient: '/hotel/europe-turkey-alanya-incekum-pegasos__club/',
+                    hotelName : 'Smart Club Hotel Mirabell 4*',
+                    background: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=bfdecb3c-4e14-4400-83d9-4e426598fd1c&height=460',
+                    hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Club-Hotel-Mirabell',
+                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-club__hotel__mirabell/',
 
                     //RU
                     countryNameRU: 'Турция, Конаклы',
@@ -178,6 +196,9 @@ const smartHotels = new Vue ({
                         { item: 'Размещение с домашними животными' },
                         { item: '2 открытых бассейна (230 кв.м и 165 кв.м)' },
                         { item: '2 водные горки' },
+                        { item: 'Красивое современное здание отеля' },
+                        { item: 'SPA центр' },
+                        { item: 'Собственный песчано-галечный пляж (через переход)' },
 
                     ],
                     hotelDateRU : 'запуск май 2020',
@@ -190,6 +211,9 @@ const smartHotels = new Vue ({
                         { item: 'Размещение с домашними животными' },
                         { item: '2 открытых бассейна (230 кв.м и 165 кв.м)' },
                         { item: '2 водные горки' },
+                        { item: 'Красивое современное здание отеля' },
+                        { item: 'SPA центр' },
+                        { item: 'Собственный песчано-галечный пляж (через переход)' },
                     ],
                     hotelDateBY : 'запуск май 2020',    
                     buttonBY : 'Выбрать тур',
@@ -201,6 +225,9 @@ const smartHotels = new Vue ({
                         { item: 'Размещение с домашними животными' },
                         { item: '2 открытых бассейна (230 кв.м и 165 кв.м)' },
                         { item: '2 водные горки' },
+                        { item: 'Красивое современное здание отеля' },
+                        { item: 'SPA центр' },
+                        { item: 'Собственный песчано-галечный пляж (через переход)' },
                     ],
                     hotelDateUA : 'запуск май 2020',    
                     buttonUA : 'Выбрать тур',

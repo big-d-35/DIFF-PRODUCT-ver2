@@ -6,7 +6,7 @@ var table_fs = {
     title_page_origin: "СЕМЕЙНЫЙ ОТДЫХ ПО ДОСТУПНОЙ ЦЕНЕ",
     description_page_origin: "<p>Мы прислушиваемся к отзывам клиентов, постоянно изучаем потребности наших гостей и современные мировые тенденции в сфере отдыха и гостеприимства. Поэтому из отпуска вы привезете не только шоколадный загар, но и целую копилку ярких, незабываемых впечатлений!<br></p>",
     title: "Отели FUN&SUN",
-    description: "Дата закрытия концепции в отелях, включая клуб Тукан",
+    description: "Начало работы концепции в отелях, включая клуб Тукан",
     table_description: [
         {
             desc_info: "<p style=\"text-align: center\">Праздничная неделя открытия в отелях FUN&SUN Comfort Beach Resort 5* и FUN&SUN Club Di Finica 5*</p><img style=\"width: 50%; margin: 10px auto\" src=\"https://www.tui.ru/getmedia/0bf38e9c-7d54-43ec-9cd6-209d3a0e2f91/FS-Welcome-Week-2019-595x842\">",
@@ -14,6 +14,7 @@ var table_fs = {
 		  }
 	  ],
     hotel: [
+        
         {
             country_hotel: "Турция",
             country_Turkey: "TUR",
@@ -24,7 +25,7 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire",
             href_agent_ua: "/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire",
             href_agent_by: "/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
@@ -35,7 +36,7 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort",
             href_agent_ua: "/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort",
             href_agent_by: "/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
@@ -46,7 +47,7 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek",
             href_agent_ua: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek",
             href_agent_by: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
@@ -57,7 +58,7 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek",
             href_agent_ua: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek",
             href_agent_by: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
@@ -68,7 +69,7 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S",
             href_agent_ua: "/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S",
             href_agent_by: "/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
@@ -79,7 +80,7 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort",
             href_agent_ua: "/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort",
             href_agent_by: "/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
@@ -90,7 +91,7 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica",
             href_agent_ua: "/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica",
             href_agent_by: "/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
@@ -101,7 +102,7 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach",
             href_agent_ua: "/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach",
             href_agent_by: "/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
@@ -112,7 +113,40 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Turkey/side/Kizilagac/fun-sun-euphoria-palm-beach",
             href_agent_ua: "/Tours/Europe/Turkey/side/Kizilagac/fun-sun-euphoria-palm-beach",
             href_agent_by: "/Tours/Europe/Turkey/side/Kizilagac/fun-sun-euphoria-palm-beach",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
+        },
+        {
+            country_Turkey: "TUR",
+            name_hotel: " FUN&SUN Imperial Sunland Resort 5*",
+            href_tui_ru: "/hotel/europe-turkey-kemer-beldibi-fun__sun__imperial__sunland__resort__(ex__sunland__resor/",
+            href_tui_ua: "/hotel/europe-turkey-kemer-beldibi-fun__sun__imperial__sunland__resort__(ex__sunland__resor/",
+            href_tui_by: "/hotel/europe-turkey-kemer-beldibi-fun__sun__imperial__sunland__resort__(ex__sunland__resor/",
+            href_agent_ru: "/Tours/Europe/Turkey/Kemer/Beldibi/FUN-SUN-Imperial-Sunland-Resort-(ex-Sunland-Resor",
+            href_agent_ua: "/Tours/Europe/Turkey/Kemer/Beldibi/FUN-SUN-Imperial-Sunland-Resort-(ex-Sunland-Resor",
+            href_agent_by: "/Tours/Europe/Turkey/Kemer/Beldibi/FUN-SUN-Imperial-Sunland-Resort-(ex-Sunland-Resor",
+            data_hotel: "1.05.2020"
+        },
+        {
+            country_Turkey: "TUR",
+            name_hotel: " FUN&SUN Life Side Resort Hotel 5*",
+            href_tui_ru: "/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/",
+            href_tui_ua: "/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/",
+            href_tui_by: "/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/",
+            href_agent_ru: "/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel",
+            href_agent_ua: "/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel",
+            href_agent_by: "/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel",
+            data_hotel: "1.05.2020"
+        },
+        {
+            country_Turkey: "TUR",
+            name_hotel: " FUN&SUN Life Belek 5*",
+            href_tui_ru: "/hotel/europe-turkey-belek-bogazkent-fun__sun__life__belek/",
+            href_tui_ua: "/hotel/europe-turkey-belek-bogazkent-fun__sun__life__belek/",
+            href_tui_by: "/hotel/europe-turkey-belek-bogazkent-fun__sun__life__belek/",
+            href_agent_ru: "/Tours/Europe/Turkey/belek/Bogazkent/FUN-SUN-Life-Belek",
+            href_agent_ua: "/Tours/Europe/Turkey/belek/Bogazkent/FUN-SUN-Life-Belek",
+            href_agent_by: "/Tours/Europe/Turkey/belek/Bogazkent/FUN-SUN-Life-Belek",
+            data_hotel: "1.05.2020"
         },
         {
             country_hotel: "Кипр",
@@ -123,7 +157,7 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites",
             href_agent_ua: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites",
             href_agent_by: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites",
-            data_hotel: "3.11.2019"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: " FUN&SUN Panthea Waterpark 4*",
@@ -133,7 +167,7 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
             href_agent_ua: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
             href_agent_by: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
-            data_hotel: "3.11.2019"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: " FUN&SUN King Evelthon Beach 5*",
@@ -143,7 +177,7 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-king-evelthon-beach-hotel-resort",
             href_agent_ua: "/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-king-evelthon-beach-hotel-resort",
             href_agent_by: "/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-king-evelthon-beach-hotel-resort",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: " FUN&SUN Anastasia Beach Hotel 4*",
@@ -153,7 +187,29 @@ var table_fs = {
             href_agent_ru: "/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel",
             href_agent_ua: "/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel",
             href_agent_by: "/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
+        },
+        {
+            country_hotel: "Черногория",
+            name_hotel: " FUN&SUN Pearl Beach Resort 4*",
+            href_tui_ru: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_tui_ua: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_tui_by: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_agent_ru: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            href_agent_ua: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            href_agent_by: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            data_hotel: "1.05.2020"
+        },
+        {
+            country_hotel: "Испания",
+            name_hotel: " FUN&SUN Sorra Daurada 4*",
+            href_tui_ru: "/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/",
+            href_tui_ua: "/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/",
+            href_tui_by: "/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/",
+            href_agent_ru: "/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada",
+            href_agent_ua: "/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada",
+            href_agent_by: "/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada",
+            data_hotel: "лето 2020"
         },
 	  ]
 };
@@ -178,35 +234,35 @@ var table_fs_ee = {
             name_hotel: "FUN&SUN Miarosa Ghazal Resort 5*",
             href_tui_ee: "/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/",
             href_agent_ee: "/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN River Resort Belek 5*",
             href_tui_ee: "/hotel/europe-turkey-belek-belek-tui__fun__sun__river__resort__belek/",
             href_agent_ee: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Club Belek 5*",
             href_tui_ee: "/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/",
             href_agent_ee: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Club Serra Palace 5*",
             href_tui_ee: "/hotel/europe-turkey-side-kizilot-tui__fun__sun__club__serra__palace/",
             href_agent_ee: "/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Comfort Beach Resort 5*",
             href_tui_ee: "/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/",
             href_agent_ee: "/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
 
         {
@@ -214,39 +270,39 @@ var table_fs_ee = {
             name_hotel: "FUN&SUN Miarosa Incekum Beach 5*",
             href_tui_ee: "/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/",
             href_agent_ee: "/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Club Euphoria Palm Beach 5*",
             href_tui_ee: "/hotel/europe-turkey-side-kizilagac-fun__sun__euphoria__palm__beach/",
             href_agent_ee: "/Tours/Europe/Turkey/side/Kizilagac/fun-sun-euphoria-palm-beach",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_hotel: "Küpros",
             name_hotel: "FUN&SUN Vangelis Hotel & Suite 4*",
             href_tui_ee: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__vangelis__hotel__suites/",
             href_agent_ee: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites",
-            data_hotel: "3.11.2019"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: "FUN&SUN Panthea Waterpark 4*",
             href_tui_ee: "/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/",
             href_agent_ee: "/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-king-evelthon-beach-hotel-resort",
-            data_hotel: "3.11.2019"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: "FUN&SUN King Evelthon Beach 5*",
             href_tui_ee: "/hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/",
             href_agent_ee: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
-            data_hotel: "01.05.2020"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: "FUN&SUN Anastasia Beach Hotel 4*",
             href_tui_ee: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/",
             href_agent_ee: "/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel",
-            data_hotel: "01.05.2020"
+            data_hotel: "1.05.2020"
         }
 	  ]
 };
@@ -270,74 +326,74 @@ var table_fs_lt = {
             name_hotel: "FUN&SUN Miarosa Ghazal Resort 5*",
             href_tui_lt: "/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/",
             href_agent_lt: "http://agent.tui.ru/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN River Resort Belek 5*",
             href_tui_lt: "/hotel/europe-turkey-belek-belek-tui__fun__sun__river__resort__belek/",
             href_agent_lt: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Club Belek 5*",
             href_tui_lt: "/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/",
             href_agent_lt: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Club Serra Palace 5*",
             href_tui_lt: "/hotel/europe-turkey-side-kizilot-tui__fun__sun__club__serra__palace/",
             href_agent_lt: "/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Comfort Beach Resort 5*",
             href_tui_lt: "/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/",
             href_agent_lt: "/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Miarosa Incekum Beach 5*",
             href_tui_lt: "/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/",
             href_agent_lt: "/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Club Euphoria Palm Beach 5*",
             href_tui_lt: "/hotel/europe-turkey-side-kizilagac-fun__sun__euphoria__palm__beach/",
             href_agent_lt: "/Tours/Europe/Turkey/side/Kizilagac/fun-sun-euphoria-palm-beach",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_hotel: "Kipras",
             name_hotel: "FUN&SUN Vangelis Hotel & Suite 4*",
             href_tui_lt: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__vangelis__hotel__suites/",
             href_agent_lt: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites",
-            data_hotel: "3.11.2019"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: "FUN&SUN Panthea Waterpark 4*",
             href_tui_lt: "/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/",
             href_agent_lt: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
-            data_hotel: "3.11.2019"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: "FUN&SUN King Evelthon Beach 5*",
             href_tui_lt: "/hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/",
             href_agent_lt: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
-            data_hotel: "01.05.2020"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: "FUN&SUN Anastasia Beach Hotel 4*",
             href_tui_lt: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/",
             href_agent_lt: "/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel",
-            data_hotel: "01.05.2020"
+            data_hotel: "1.05.2020"
         }
 	  ]
 };
@@ -361,74 +417,74 @@ var table_fs_lv = {
             name_hotel: "FUN&SUN Miarosa Ghazal Resort 5*",
             href_tui_lv: "/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/",
             href_agent_lv: "http://agent.tui.ua/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN River Resort Belek 5*",
             href_tui_lv: "/hotel/europe-turkey-belek-belek-tui__fun__sun__river__resort__belek/",
             href_agent_lv: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Club Belek 5*",
             href_tui_lv: "/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/",
             href_agent_lv: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Club Serra Palace 5*",
             href_tui_lv: "/hotel/europe-turkey-side-kizilot-tui__fun__sun__club__serra__palace/",
             href_agent_lv: "/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Comfort Beach Resort 5*",
             href_tui_lv: "/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/",
             href_agent_lv: "/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Miarosa Incekum Beach 5*",
             href_tui_lv: "/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/",
             href_agent_lv: "/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "FUN&SUN Club Euphoria Palm Beach 5*",
             href_tui_lv: "/hotel/europe-turkey-side-kizilagac-fun__sun__euphoria__palm__beach/",
             href_agent_lv: "/Tours/Europe/Turkey/side/Kizilagac/fun-sun-euphoria-palm-beach",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_hotel: "Kipra",
             name_hotel: "FUN&SUN Vangelis Hotel & Suite 4*",
             href_tui_lv: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__vangelis__hotel__suites/",
             href_agent_lv: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites",
-            data_hotel: "3.11.2019"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: "FUN&SUN Panthea Waterpark 4*",
             href_tui_lv: "/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/",
             href_agent_lv: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
-            data_hotel: "3.11.2019"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: "FUN&SUN King Evelthon Beach 5*",
             href_tui_lv: "/hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/",
             href_agent_lv: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
-            data_hotel: "01.05.2020"
+            data_hotel: "1.05.2020"
         },
         {
             name_hotel: "FUN&SUN Anastasia Beach Hotel 4*",
             href_tui_lv: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/",
             href_agent_lv: "/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel",
-            data_hotel: "01.05.2020"
+            data_hotel: "1.05.2020"
         }
 	  ]
 };
@@ -442,7 +498,7 @@ var table_tc = {
     description_page_origin: "<p>Отели с детскими клубами Мини Тукан позволяют провести долгожданный отпуск в спокойствии за безопасность и развлечения ребенка для родителей, и весело и познавательно для детей.</p><p><b>Что такое клуб Мини Тукан?</b><br></p><ul class=\"dopInfo\" style=\"margin-left:30px;list-style-type: disc!important\"> <li>Концепция «Тукан-путешественник» ―увлекательные приключения в разных странах</li> <li>Программа на русском языке для детей двух возрастов: Тукан Kids 4-7 лет и Тукан Junior 8-12 лет</li> <li>Клуб работает 6 дней в неделю, с 10-00 до 12-30, с 14-30 до 17-00.</li> <li>Вечером ― мини-диско</li> </ul>",
     h_1: "Отдых с детьми Мини Тукан на море",
     title: "Отели с Клубами Мини Тукан",
-    description: "Дата закрытия клубов Тукан в отелях",
+    description: "Дата открытия клубов Тукан в отелях",
     hotel: [
         {
             country_hotel: "Турция",
@@ -454,7 +510,7 @@ var table_tc = {
             href_agent_ru: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
             href_agent_ua: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
             href_agent_by: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
 	    },
         {
             country_Turkey: "TUR",
@@ -465,7 +521,7 @@ var table_tc = {
             href_agent_ru: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club",
             href_agent_ua: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club",
             href_agent_by: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
@@ -476,7 +532,7 @@ var table_tc = {
             href_agent_ru: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort",
             href_agent_ua: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort",
             href_agent_by: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
@@ -487,7 +543,7 @@ var table_tc = {
             href_agent_ru: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal",
             href_agent_ua: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal",
             href_agent_by: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.05.2020"
         },
         {
             country_hotel: "Кипр",
@@ -498,7 +554,7 @@ var table_tc = {
             href_agent_ru: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/",
             href_agent_ua: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/",
             href_agent_by: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "15.05.2020"
         },
         {
             name_hotel: "St Raphael Resort 5*",
@@ -508,7 +564,17 @@ var table_tc = {
             href_agent_ru: "/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/",
             href_agent_ua: "/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/",
             href_agent_by: "/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/",
-            data_hotel: "Открыт с мая 2020"
+            data_hotel: "1.06.2020"
+        },
+        {
+            name_hotel: "Tasia Maris Garden 3*",
+            href_tui_ru: "/hotel/europe-cyprus-ayia__napa-ayia__napa-tasia__maris__gardens/",
+            href_tui_ua: "/hotel/europe-cyprus-ayia__napa-ayia__napa-tasia__maris__gardens/",
+            href_tui_by: "/hotel/europe-cyprus-ayia__napa-ayia__napa-tasia__maris__gardens/",
+            href_agent_ru: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/tasia-maris-gardens",
+            href_agent_ua: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/tasia-maris-gardens",
+            href_agent_by: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/tasia-maris-gardens",
+            data_hotel: "1.05.2020"
         },
         {
             country_hotel: "Черногория",
@@ -519,7 +585,7 @@ var table_tc = {
             href_agent_ru: "/tours/europe/montenegro/budvanska-rivijera/budva/aleksandar/",
             href_agent_ua: "/tours/europe/montenegro/budvanska-rivijera/budva/aleksandar/",
             href_agent_by: "/tours/europe/montenegro/budvanska-rivijera/budva/aleksandar/",
-            data_hotel: "30.09.2019"
+            data_hotel: "1.06.2020"
         },
         {
             name_hotel: "Castellastva 4*",
@@ -529,18 +595,18 @@ var table_tc = {
             href_agent_ru: "/tours/europe/montenegro/budvanska-rivijera/petrovac/castellastva/",
             href_agent_ua: "/tours/europe/montenegro/budvanska-rivijera/petrovac/castellastva/",
             href_agent_by: "/tours/europe/montenegro/budvanska-rivijera/petrovac/castellastva/",
-            data_hotel: "30.09.2019"
+            data_hotel: "1.06.2020"
         },
         {
             country_hotel: "Италия",
-            name_hotel: "Garden Resort Calabria (ex. Valtur Garden) 4*",
+            name_hotel: "Falkensteiner Club Funimation Calabria (ex. Garden Resort Calabria) 4*",
             href_tui_ru: "/hotel/europe-italy-calabria-pizzo-garden__resort__calabria/",
             href_tui_ua: "/hotel/europe-italy-calabria-pizzo-garden__resort__calabria/",
             href_tui_by: "/hotel/europe-italy-calabria-pizzo-garden__resort__calabria/",
             href_agent_ru: "/Tours/Europe/Italy/Calabria/Pizzo/Valtur-Garden-Calabria",
             href_agent_ua: "/Tours/Europe/Italy/Calabria/Pizzo/Valtur-Garden-Calabria",
             href_agent_by: "/Tours/Europe/Italy/Calabria/Pizzo/Valtur-Garden-Calabria",
-            data_hotel: "30.09.2019"
+            data_hotel: "1.06.2020"
         },
         {
             country_hotel: "Испания",
@@ -551,9 +617,9 @@ var table_tc = {
             href_agent_ru: "/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort",
             href_agent_ua: "/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort",
             href_agent_by: "/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort",
-            data_hotel: "30.09.2019"
+            data_hotel: "1.06.2020"
         },
-        {
+        /*{
             name_hotel: "Don Juan Tossa 4*",
             href_tui_ru: "/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/",
             href_tui_ua: "/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/",
@@ -562,18 +628,8 @@ var table_tc = {
             href_agent_ua: "/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa",
             href_agent_by: "/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa",
             data_hotel: "30.09.2019"
-        },
-        {
-            country_hotel: "Россия",
-            name_hotel: "Бархатные сезоны 3*",
-            href_tui_ru: "/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/",
-            href_tui_ua: "/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/",
-            href_tui_by: "/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/",
-            href_agent_ru: "/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom",
-            href_agent_ua: "/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom",
-            href_agent_by: "/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom",
-            data_hotel: "20.09.2019"
-        },
+        },*/
+        
         {
             country_hotel: "ОАЭ",
             name_hotel: "Al Hamra Village Golf & Beach Resort 4*",
@@ -583,7 +639,7 @@ var table_tc = {
             href_agent_ru: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort",
             href_agent_ua: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort",
             href_agent_by: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort",
-            data_hotel: "Открыт с 21.10.2019"
+            data_hotel: "21.10.2019"
         },
         {
             name_hotel: "Al Hamra Residence 5*",
@@ -593,7 +649,7 @@ var table_tc = {
             href_agent_ru: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence",
             href_agent_ua: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence",
             href_agent_by: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence",
-            data_hotel: "Открыт с 21.10.2019"
+            data_hotel: "21.10.2019"
         },
         {
             name_hotel: "Blue Diamond Alsalam Resort 5*",
@@ -603,7 +659,7 @@ var table_tc = {
             href_agent_ru: "/Tours/Asia/UAE/Fujairah/Fujairah-beach-hotels/blue-diamond-alsalam-resort",
             href_agent_ua: "/Tours/Asia/UAE/Fujairah/Fujairah-beach-hotels/blue-diamond-alsalam-resort",
             href_agent_by: "/Tours/Asia/UAE/Fujairah/Fujairah-beach-hotels/blue-diamond-alsalam-resort",
-            data_hotel: "Открыт с 10.11.2019"
+            data_hotel: "10.11.2019"
         }
 
 	  ]
@@ -783,42 +839,43 @@ var table_tc_lv = {
             name_hotel: "Kilikya Resort Camyuva 5*",
             href_tui_lv: "/hotel/europe-turkey-kemer-camyuva-kilikya__resort__camyuva/",
             href_agent_lv: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
 	    },
         {
             country_Turkey: "TUR",
             name_hotel: "Pegasos Club 4*",
             href_tui_lv: "/hotel/europe-turkey-alanya-incekum-pegasos__club/",
             href_agent_lv: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "Pegasos Resort 5*",
             href_tui_lv: "/hotel/europe-turkey-alanya-incekum-pegasos__resort/",
             href_agent_lv: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_Turkey: "TUR",
             name_hotel: "Pegasos Royal 5*",
             href_tui_lv: "/hotel/europe-turkey-alanya-incekum-pegasos__royal/",
             href_agent_lv: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal",
-            data_hotel: "15.10.2019"
+            data_hotel: "1.05.2020"
         },
         {
             country_hotel: "Kipra",
             name_hotel: "Christofinia 4*	",
             href_tui_lv: "/hotel/europe-cyprus-ayia__napa-ayia__napa-christofinia/",
             href_agent_lv: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/",
-            data_hotel: "30.09.2019"
+            data_hotel: "15.05.2020"
         },
         {
             name_hotel: "St Raphael Resort 5*",
             href_tui_lv: "/hotel/europe-cyprus-limasol__resort-limasol__city-st__raphael__resort/",
             href_agent_lv: "/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/",
-            data_hotel: "30.09.2019"
+            data_hotel: "1.06.2020"
         },
+        
         {
             country_hotel: "Spānija",
             name_hotel: "Don Juan Tossa 4*",
@@ -856,10 +913,12 @@ var table_tc_lv = {
 var table_dn = {
     title_page_origin: "АКТИВНЫЙ ОТДЫХ В ФОРМАТЕ DAY&NIGHT Connected!",
     description_page_origin: "<p>«Отдых — 🔥!». Именно так вы будете отвечать о своем отпуске после посещения наших отелей DAY&amp;NIGHT Connected! Здесь собираются только молодые и активные люди, для которых жизнь немыслима без спорта, танцев и веселья. Присоединяйтесь к нашей команде и ваш отдых заиграет самыми яркими красками</p>",
-    title: "Отели DAY&NIGHT Connected (Турция)",
-    description: "Дата закрытия концепции в отелях",
+    title: "Отели DAY&NIGHT Connected ",
+    description: "Начало работы концепции в отелях",
     hotel: [
         {
+            country_hotel: "Турция",
+            country_Turkey: "TUR",
             name_hotel: " DAY&NIGHT Connected Club Hydros 5*",
             href_tui_ru: "/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/",
             href_tui_ua: "/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/",
@@ -867,17 +926,31 @@ var table_dn = {
             href_agent_ru: "/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros",
             href_agent_ua: "/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros",
             href_agent_by: "/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros",
-            data_hotel: "15.10.2019"
+            data_hotel: "01.05.2020"
         },
         {
-            name_hotel: " DAY&NIGHT Connected Club Life Belek 5*",
-            href_tui_ru: "/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/",
-            href_tui_ua: "/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/",
-            href_tui_by: "/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/",
-            href_agent_ru: "/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek",
-            href_agent_ua: "/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek",
-            href_agent_by: "/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek",
-            data_hotel: "15.10.2019"
+            
+            country_Turkey: "TUR",
+            name_hotel: " DAY&NIGHT Connected Imperial Turkiz Hotel 5*",
+            href_tui_ru: "/hotel/europe-turkey-kemer-kemer__center-day__night__connected__imperial__turkiz__hotel/",
+            href_tui_ua: "/hotel/europe-turkey-kemer-kemer__center-day__night__connected__imperial__turkiz__hotel/",
+            href_tui_by: "/hotel/europe-turkey-kemer-kemer__center-day__night__connected__imperial__turkiz__hotel/",
+            href_agent_ru: "/Tours/Europe/Turkey/Kemer/Kemer-Center/day-night-connected-imperial-turkiz-hotel",
+            href_agent_ua: "/Tours/Europe/Turkey/Kemer/Kemer-Center/day-night-connected-imperial-turkiz-hotel",
+            href_agent_by: "/Tours/Europe/Turkey/Kemer/Kemer-Center/day-night-connected-imperial-turkiz-hotel",
+            data_hotel: "01.05.2020"
+        },
+        {
+            country_hotel: "Кипр",
+            country_Turkey: "CYP",
+            name_hotel: " DAY&NIGHT Connected  Season 4*",
+            href_tui_ru: "/hotel/europe-cyprus-ayia__napa-ayia__napa-day__night__connected__seasons/",
+            href_tui_ua: "/hotel/europe-cyprus-ayia__napa-ayia__napa-day__night__connected__seasons/",
+            href_tui_by: "/hotel/europe-cyprus-ayia__napa-ayia__napa-day__night__connected__seasons/",
+            href_agent_ru: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons",
+            href_agent_ua: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons",
+            href_agent_by: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons",
+            data_hotel: "01.05.2020"
         }
 	  ],
     table_description: [
@@ -975,13 +1048,13 @@ var table_dn_ee = {
             name_hotel: " DAY&NIGHT Connected Club Hydros 5*",
             href_tui_ee: "/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/",
             href_agent_ee: "/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros",
-            data_hotel: "15.10.2019"
+            data_hotel: "01.05.2020"
         },
         {
             name_hotel: " DAY&NIGHT Connected Club Life Belek 5*",
             href_tui_ee: "/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/",
             href_agent_ee: "/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek",
-            data_hotel: "15.10.2019"
+            data_hotel: "01.05.2020"
         }
 	  ],
     table_description: [
@@ -1079,13 +1152,13 @@ var table_dn_lt = {
             name_hotel: " DAY&NIGHT Connected Club Hydros 5*",
             href_tui_lt: "/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/",
             href_agent_lt: "/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros",
-            data_hotel: "15.10.2019"
+            data_hotel: "01.05.2020"
         },
         {
             name_hotel: " DAY&NIGHT Connected Club Life Belek 5*",
             href_tui_lt: "/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/",
             href_agent_lt: "/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek",
-            data_hotel: "15.10.2019"
+            data_hotel: "01.05.2020"
         }
 	  ],
     table_description: [
@@ -1183,13 +1256,9 @@ var table_dn_lv = {
             name_hotel: " DAY&NIGHT Connected Club Hydros 5*",
             href_tui_lv: "/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/",
             href_agent_lv: "/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros",
-            data_hotel: "15.10.2019"
+            data_hotel: "01.05.2020"
         },
-	    /*{
-	    	name_hotel: "DAY&NIGHT Connected Club Life Belek 5*", 
-	    	href_tui_lv: "https://goo.gl/rbeZwe",  
-	    	href_agent_lv: "https://goo.gl/8BWYSG", 
-	    	data_hotel: "15.10.2019"}*/
+	    
 	  ],
     table_description: [
         {

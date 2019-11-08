@@ -14,6 +14,10 @@
 </style>
 <!-- ШРИФТ =============================================== -->
 <style type="text/css">
+    .video-fs.picture4 {
+    background-image: url(https://www.tui.ru/getmedia/cc3f5959-4a03-4675-a791-5de8cfd7e5d4/Smart_2);
+        height: 100%;
+}
     body {
         font-family: TUI-reg, TUI;
     }
@@ -610,6 +614,53 @@
     </div>
     <!-- TEXT END =========================================================== -->
 
+   <!-- SMART BLOCK TEXT START =========================================================== -->
+            <div class="block-head" id="home-page-smart-block-text">
+                <div class="logo"><img v-bind:src=" logo "></div>
+                <div class="about">
+                    <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                        {{titleBY1}}
+                    </div>
+                    <div class="name">
+                        {{titleBY2}}
+                    </div>
+                    <p class="text">{{textBY1}}</p>
+                    <p class="text">{{textBY2}}</p>
+                    <p class="text">{{textBY3}}</p>
+                </div>
+            </div>
+            <!-- SMART BLOCK TEXT START =========================================================== -->
+            <!-- SMART BLOCK VIDEO AND HOTELS START =========================================================== -->
+            <div class="block" id="home-page-smart-block-video-hotels">
+                <div class="video">
+        <a class="more" v-bind:href=" homeSmartBlockPageLink " target="_blank">{{linkTextBY}}</a>
+        
+        <div class="video-fs picture4"><img v-bind:src=" homeSmartBlockPageImage " style="z-index: -10;"></div>
+    </div>
+                <div class="list">
+                    <div class="header">
+                        {{titleBY}}
+                    </div>
+                    <div class="header country">
+                        {{turkeyBY}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" hotelLink1Client " target="_blank">{{hotelName1}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" hotelLink2Client " target="_blank">{{hotelName2}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" hotelLink3Client " target="_blank">{{hotelName3}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" hotelLink4Client " target="_blank">{{hotelName4}}</a>
+                    </div>
+                </div>
+            </div>
+            <!-- SMART BLOCK VIDEO AND HOTELS END =========================================================== -->
+   
+   
     <!-- FUN SUN BLOCK TEXT START =========================================================== -->
     <div class="block-head" id="home-page-fun-sun-block-text">
         <div class="logo"><img v-bind:src=" homePageFunSunBlockLogo "></div>
@@ -807,6 +858,9 @@
             </div>
             <div class="link">
                 <a v-bind:href=" homeToucanHotelLinkClient14 " target="_blank">{{homeToucanHotelName14}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient15 " target="_blank">{{homeToucanHotelName15}}</a>
             </div>
         </div>
     </div>

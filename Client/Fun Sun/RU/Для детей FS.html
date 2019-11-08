@@ -594,7 +594,7 @@
         </div>
         <!-- FOR CHILDREN БУФЕТ PICS ==================== -->
 
-     <!-- ОТЕЛИ СТАРТ  ================================================================= -->
+      <!-- ОТЕЛИ СТАРТ  ================================================================= -->
 
 <div class="container-fluid block_3" id="hotels-fun-sun">
     <div class="container" >
@@ -607,6 +607,9 @@
             <div class="buttons-navigations" >
                 <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b1">{{country1RU}}</a> <!-- Отели с концепцией Турция -->
                 <a class="button-navigatin" data-block=".slider_2" href="#s2b2">{{country2RU}}</a> <!-- Отели с концепцией Кипр -->
+                <!--<a class="button-navigatin" data-block=".slider_2" href="#s2b3">{{country3RU}}</a>  Отели с концепцией ЕГИПЕТ -->
+                <a class="button-navigatin" data-block=".slider_2" href="#s2b4">{{country4RU}}</a> <!-- Отели с концепцией ЧЕРОНОГОРИЯ -->
+                <a class="button-navigatin" data-block=".slider_2" href="#s2b5">{{country5RU}}</a> <!-- Отели с концепцией ИСПАНИЯ -->
             </div>
             <!-- Отели с концепцией Турция -->
 
@@ -681,6 +684,119 @@
                     
                 </div>
             </div>
+            
+            <!-- Отели с концепцией ЕГИПЕТ
+
+            <div class="slider slider_2 n" id="s2b3">
+                <div class="row-slider" data-col="3"> -->
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country3Hotel in country3Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country3Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country3Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country3Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country3Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country3Hotel.hotelLinkClient ">{{ country3Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                     ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+               <!-- </div>
+            </div>-->
+            
+            <!-- Отели с концепцией  ЧЕРНОГОРИЯ -->
+
+            <div class="slider slider_2 n" id="s2b4">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country4Hotel in country4Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country4Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country4Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country4Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country4Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country4Hotel.hotelLinkClient ">{{ country4Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
+            
+            <!-- Отели с концепцией  ИСПАНИЯ -->
+
+            <div class="slider slider_2 n" id="s2b5">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country5Hotel in country5Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country5Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country5Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country5Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country5Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country5Hotel.hotelLinkClient ">{{ country5Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
+            
+            
         </div>
     </div>
     <!-- ОТЕЛИ END слайдер  ==================================================== -->

@@ -87,7 +87,17 @@ const homePageSmartBlockText = new Vue ({
         textRU2: 'В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, бесплатный Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене. SMART дарит удовольствия для всех: натуральный кофе и кафе-пекарня, детский клуб и бесплатное мороженое, живая музыка и пивной бар с импортными напитками.',
         textRU3: 'Кроме того, SMART заботится об окружающей среде, что означает экологически дружелюбную концепцию. Никаких пластиковых стаканчиков и трубочек, разумный подход к трате воды и энергии, мусорные урны для разделения отходов.',
         
+        titleBY1: 'Концепция отдыха SMART',
+        titleBY2: 'Умный подход к отдыху',
+        textBY1: 'Мы устраиваем революцию на рынке бюджетного отдыха! SMART - это концепция для каждого: для семей и для молодежи, которых объединяет одна цель и одно желание - насладиться качественным отдыхом за разумные деньги.',
+        textBY2: 'В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, бесплатный Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене. SMART дарит удовольствия для всех: натуральный кофе и кафе-пекарня, детский клуб и бесплатное мороженое, живая музыка и пивной бар с импортными напитками.',
+        textBY3: 'Кроме того, SMART заботится об окружающей среде, что означает экологически дружелюбную концепцию. Никаких пластиковых стаканчиков и трубочек, разумный подход к трате воды и энергии, мусорные урны для разделения отходов.',
         
+        titleUA1: 'Концепция отдыха SMART',
+        titleUA2: 'Умный подход к отдыху',
+        textUA1: 'Мы устраиваем революцию на рынке бюджетного отдыха! SMART - это концепция для каждого: для семей и для молодежи, которых объединяет одна цель и одно желание - насладиться качественным отдыхом за разумные деньги.',
+        textUA2: 'В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, бесплатный Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене. SMART дарит удовольствия для всех: натуральный кофе и кафе-пекарня, детский клуб и бесплатное мороженое, живая музыка и пивной бар с импортными напитками.',
+        textUA3: 'Кроме того, SMART заботится об окружающей среде, что означает экологически дружелюбную концепцию. Никаких пластиковых стаканчиков и трубочек, разумный подход к трате воды и энергии, мусорные урны для разделения отходов.',
     }
     
 });
@@ -98,9 +108,16 @@ const homePageSmartBlockVideoHotels = new Vue ({
         homeSmartBlockPageLink: '/concepts/smart/',
         
         linkTextRU: 'Подробнее',
+        linkTextBY: 'Подробнее',
+        linkTextUA: 'Подробнее',
         homeSmartBlockPageImage: 'https://www.tui.ru/getmedia/9673f81a-e29f-4ead-b35c-2d4a6eeac6d9/fon-template',
         titleRU: 'Отдых в отелях SMART',
+        titleBY: 'Отдых в отелях SMART',
+        titleUA: 'Отдых в отелях SMART',
+        
         turkeyRU: 'Турция',
+        turkeyBY: 'Турция',
+        turkeyUA: 'Турция',
         
         hotelLink1Agent: '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
         hotelLink1Client: '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
@@ -110,11 +127,13 @@ const homePageSmartBlockVideoHotels = new Vue ({
         hotelLink2Client: '/hotel/europe-turkey-alanya-mahmutlar-smart__euphoria__bella__mare__hotel/',
         hotelName2: 'Smart Euphoria Bella Mare Hotel 4*',
         
-        hotelLink3Agent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel',
-        hotelLink3Client: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel/',
+        hotelLink3Agent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel-(ex-Club-Konakli)',
+        hotelLink3Client: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel__(ex__club__konakli)/',
         hotelName3: 'Smart Limoncello Konakli Beach Hotel 5*',
         
-        
+        hotelLink4Agent: '/Tours/Europe/Turkey/Alanya/Konakli/Club-Hotel-Mirabell',
+        hotelLink4Client: '/hotel/europe-turkey-alanya-konakli-club__hotel__mirabell/',
+        hotelName4: 'Smart Club Hotel Mirabell 4*',
         
         
     }
@@ -140,7 +159,7 @@ const homePageFunSunBlockText = new Vue ({
         homePageFunSunBlockTitleUA1: 'Концепция семейного отдыха FUN&SUN',
         homePageFunSunBlockTitleUA2: 'Семейный отдых, продуманный в деталях',
         homePageFunSunBlockTextUA1: 'Во время отдыха для гостя FUN&SUN отель становится своеобразным миром в миниатюре, где номер - это квартира, Детский Клуб Тукан - детский сад и школа, море и разнообразные бассейны становятся самой приятной ванной на свете, главный ресторан - кухней мечты с бесконечным питанием, а рестораны a la carte - рестораны для выхода в "свет" всей семьей в выходной.',
-        homePageFunSunBlockTextUA2: 'Мы долго готовились к вашему приезду. Мы выбрали 20 прекрасных отелей, навели в них порядок и чистоту, разработали специальное меню, подготовили развлекательную и спортивную программы и, конечно же, обучили каждого сотрудника.',
+        /*homePageFunSunBlockTextUA2: 'Мы долго готовились к вашему приезду. Мы выбрали 20 прекрасных отелей, навели в них порядок и чистоту, разработали специальное меню, подготовили развлекательную и спортивную программы и, конечно же, обучили каждого сотрудника.',*/
         
         homePageFunSunBlockTitleEE1: 'FUN&SUN perepuhkuse konseptsioon',
         homePageFunSunBlockTitleEE2: 'Detailideni läbimõeldud perepuhkus',
@@ -170,18 +189,27 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageTitleRU: 'Отдых всей семьей в отелях FUN&SUN',
         homeFunSunBlockPageTurkeyRU: 'Турция',
         homeFunSunBlockPageCyprysRU: 'Кипр',
+        homeFunSunBlockPageEgyptRU: '',
+        homeFunSunBlockPageMontenegroRU: 'Черногория',
+        homeFunSunBlockPageSpainRU: 'Испания',
         
         homeFunSunBlockPageLinkTextBY: 'Подробнее',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
         homeFunSunBlockPageTitleBY: 'Отдых всей семьей в отелях FUN&SUN',
         homeFunSunBlockPageTurkeyBY: 'Турция',
         homeFunSunBlockPageCyprysBY: 'Кипр',
+        homeFunSunBlockPageEgyptBY: '',
+        homeFunSunBlockPageMontenegroBY: 'Черногория',
+        homeFunSunBlockPageSpainBY: 'Испания',
         
         homeFunSunBlockPageLinkTextUA: 'Подробнее',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
         homeFunSunBlockPageTitleUA: 'Отдых всей семьей в отелях FUN&SUN',
         homeFunSunBlockPageTurkeyUA: 'Турция',
         homeFunSunBlockPageCyprysUA: 'Кипр',
+        homeFunSunBlockPageEgyptUA: 'Египет',
+        homeFunSunBlockPageMontenegroUA: 'Черногория',
+        homeFunSunBlockPageSpainUA: 'Испания',
         
         homeFunSunBlockPageLinkTextEE: 'Täpsemalt',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
@@ -201,6 +229,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageTurkeyLV: 'Turcija',
         homeFunSunBlockPageCyprysLV: 'Kipra',
         
+        //ТУРЦИЯ
         homeFunSunHotelLink1: '/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort',
         homeFunSunHotelLinkClient1: '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',
         homeFunSunHotelName1: 'FUN&SUN Miarosa Ghazal Resort 5*',
@@ -233,6 +262,23 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunHotelLinkClient8: '/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/',
         homeFunSunHotelName8: 'FUN&SUN Miarosa Incekum Beach 5*',
         
+        homeFunSunHotelLink13: '/Tours/Europe/Turkey/side/Kizilagac/fun-sun-euphoria-palm-beach',
+        homeFunSunHotelLinkClient13: '/hotel/europe-turkey-side-kizilagac-fun__sun__euphoria__palm__beach/',
+        homeFunSunHotelName13: 'FUN&SUN Euphoria Palm Beach 5*',
+        
+        homeFunSunHotelLink14: '/Tours/Europe/Turkey/Kemer/Beldibi/FUN-SUN-Imperial-Sunland-Resort-(ex-Sunland-Resor',
+        homeFunSunHotelLinkClient14: '/hotel/europe-turkey-kemer-beldibi-fun__sun__imperial__sunland__resort__(ex__sunland__resor/',
+        homeFunSunHotelName14: 'FUN&SUN Imperial Sunland Resort 5*',
+        
+        homeFunSunHotelLink15: '/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel',
+        homeFunSunHotelLinkClient15: '/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/',
+        homeFunSunHotelName15: 'FUN&SUN Life Side Resort Hotel 5*',
+        
+        homeFunSunHotelLink16: '/Tours/Europe/Turkey/belek/Bogazkent/FUN-SUN-Life-Belek',
+        homeFunSunHotelLinkClient16: '/hotel/europe-turkey-belek-bogazkent-fun__sun__life__belek/',
+        homeFunSunHotelName16: 'FUN&SUN Life Belek 5*',
+        
+        //КИПР
         homeFunSunHotelLink9: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark',
         homeFunSunHotelLinkClient9: '/hotel/europe-cyprus-ayia__napa-ayia__napa-tui__fun__sun__panthea__waterpark/',
         homeFunSunHotelName9: 'FUN&SUN Panthea Waterpark 4*',
@@ -241,6 +287,28 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunHotelLinkClient10: '/hotel/europe-cyprus-protaras-protaras__city-vangelis__hotel__suites/',
         homeFunSunHotelName10: 'FUN&SUN Vangelis Hotel & Suite 4*',
         
+        homeFunSunHotelLink18: '/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-king-evelthon-beach-hotel-resort',
+        homeFunSunHotelLinkClient18: '/hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/',
+        homeFunSunHotelName18: 'FUN&SUN King Evelthon Beach Hotel 5*',
+        
+        homeFunSunHotelLink19: '/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel',
+        homeFunSunHotelLinkClient19: '/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/',
+        homeFunSunHotelName19: 'FUN&SUN Anastasia Beach Hotel 4*',
+        
+        //EGYPT ПОКА ТОЛЬКО UA
+        homeFunSunHotelLink11: '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace',
+        homeFunSunHotelLinkClient11: '/hotel/africa-egypt-hurghada-hurghada-albatros__palace__resort/',
+        homeFunSunHotelName11: 'FUN&SUN Albatros Palace 5*',
+        
+        //ЧЕРНОГРИЯ
+        homeFunSunHotelLink12: '/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort',
+        homeFunSunHotelLinkClient12: '/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/',
+        homeFunSunHotelName12: 'FUN&SUN Pearl Beach Resort 4*',
+        
+        //ИСПАНИЯ
+        homeFunSunHotelLink17: '/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada',
+        homeFunSunHotelLinkClient17: '/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/',
+        homeFunSunHotelName17: 'FUN&SUN Sorra Daurada 4*',
     }
 });
 
@@ -265,7 +333,7 @@ const homePageDayNightBlockText = new Vue ({
         homePageDayNightBlockTitleUA1: 'Концепция молодежного отдыха DAY&NIGHT Connected',
         homePageDayNightBlockTitleUA2: 'Отдых, заряжающий энергией!',
         homePageDayNightBlockTextUA1: 'DAY&NIGHT Connected - это целая Вселенная приключений, веселья и ярких положительных эмоций, которые запомнятся на всю жизнь!',
-        homePageDayNightBlockTextUA2: 'Вселенная, которая состоит из Солнечной системы "Ultra All Inclusive" с планетами свежевыжатого апельсинового сока, национальных блюд, европейской кухни, ресторанов a la carte, и бесплатного импортного алкоголя; Галактики развлечений с созвездиями "Wellness & Fitness", где для вас проводят мастер-классы именитые инструкторы, и "Night Life" с бесплатным входом в популярные ночные клубы, и бесконечного Wi-Fi.',
+        /*homePageDayNightBlockTextUA2: 'Вселенная, которая состоит из Солнечной системы "Ultra All Inclusive" с планетами свежевыжатого апельсинового сока, национальных блюд, европейской кухни, ресторанов a la carte, и бесплатного импортного алкоголя; Галактики развлечений с созвездиями "Wellness & Fitness", где для вас проводят мастер-классы именитые инструкторы, и "Night Life" с бесплатным входом в популярные ночные клубы, и бесконечного Wi-Fi.',*/
         homePageDayNightBlockTextUA3: 'Отдохнуть в передвижениях можно на станции "Номер" в уютной форме из фирменных халатов и тапочек за чашкой горячего чая.',
         
         homePageDayNightBlockTitleEE1: 'Puhkus noortele DAY&NIGHT Connected',
@@ -298,12 +366,14 @@ const homePageDayNightBlockVideoHotels = new Vue ({
         homeDayNightBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
         homeDayNightBlockPageLinkTextRU: 'Подробнее',
         homeDayNightBlockPageTurkeyRU: 'Турция',
+        homeDayNightBlockPageCyprysRU: 'Кипр',
         
         homeDayNightBlockPageLinkTextBY: 'Подробнее',
         homeDayNightBlockPageTurkeyBY: 'Турция',
         
         homeDayNightBlockPageLinkTextUA: 'Подробнее',
         homeDayNightBlockPageTurkeyUA: 'Турция',
+        homeDayNightBlockPageEgyptUA: 'Египет',
         
         homeDayNightBlockPageLinkTextEE: 'Täpsemalt',
         homeDayNightBlockPageTurkeyEE: 'Türgi',
@@ -318,11 +388,18 @@ const homePageDayNightBlockVideoHotels = new Vue ({
         homeFunSunHotelLinkClient1: '/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/',
         homeFunSunHotelName1: 'DAY&NIGHT Connected Club Hydros 5*',
         
-        homeFunSunHotelLink2: '/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek',
-        homeFunSunHotelLinkClient2: '/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/',
-        homeFunSunHotelName2: 'DAY&NIGHT Connected Club Life Belek 5*',
+        homeFunSunHotelLink2: '/Tours/Europe/Turkey/Kemer/Kemer-Center/day-night-connected-imperial-turkiz-hotel',
+        homeFunSunHotelLinkClient2: '/hotel/europe-turkey-kemer-kemer__center-day__night__connected__imperial__turkiz__hotel/',
+        homeFunSunHotelName2: 'DAY&NIGHT Connected Imperial Turkiz Hotel',
+    
+        //ТОЛЬКО НА УКРАИНЕ
+        homeFunSunHotelLink3: '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/day-night-connected-tropitel-waves',
+        homeFunSunHotelLinkClient3: '/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/',
+        homeFunSunHotelName3: 'DAY&NIGHT Connected Tropitel Waves 5*',
         
-        
+        homeFunSunHotelLink4: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons',
+        homeFunSunHotelLinkClient4: '/hotel/europe-cyprus-ayia__napa-ayia__napa-day__night__connected__seasons/',
+        homeFunSunHotelName4: 'DAY&NIGHT Connected  Season 4*',
     }
 });
 
@@ -478,15 +555,15 @@ const homePageToucanBlockVideoHotels = new Vue ({
         
         homeToucanHotelLink9: '/Tours/Europe/Italy/Calabria/Pizzo/Valtur-Garden-Calabria',
         homeToucanHotelLinkClient9: '/hotel/europe-italy-calabria-pizzo-garden__resort__calabria/',
-        homeToucanHotelName9: 'Garden Resort Calabria (ex. Valtur Garden) 4*',
+        homeToucanHotelName9: 'Falkensteiner Club Funimation Calabria (ex. Garden Resort Calabria) 4*',
         
         homeToucanHotelLink10: '/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort',
         homeToucanHotelLinkClient10: '/hotel/europe-spain-costa__dorada-la__pineda-estival__park__hotel__resort/',
         homeToucanHotelName10: 'Estival Park Hotel Resort 4*',
         
-        homeToucanHotelLink11: '/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa',
+        /*homeToucanHotelLink11: '/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa',
         homeToucanHotelLinkClient11: '/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/',
-        homeToucanHotelName11: 'Don Juan Tossa 4*',
+        homeToucanHotelName11: 'Don Juan Tossa 4*',*/
         
         homeToucanHotelLink12: '/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom',
         homeToucanHotelLinkClient12: '/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/',
@@ -499,5 +576,13 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanHotelLink14: '/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence',
         homeToucanHotelLinkClient14: '/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/',
         homeToucanHotelName14: 'Al Hamra Residence 5*',
+        
+        homeToucanHotelLink15: '/Tours/Asia/UAE/Fujairah/Fujairah-beach-hotels/blue-diamond-alsalam-resort',
+        homeToucanHotelLinkClient15: '/hotel/asia-uae-fujairah-fujairah__beach__hotels-blue__diamond__alsalam__resort/',
+        homeToucanHotelName15: 'Blue Diamond AlSalam Resort 5*',
+        
+        homeToucanHotelLink16: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/tasia-maris-gardens',
+        homeToucanHotelLinkClient16: '/hotel/europe-cyprus-ayia__napa-ayia__napa-tasia__maris__gardens/',
+        homeToucanHotelName16: 'Tasia Maris Garden 3*',
     }
 });

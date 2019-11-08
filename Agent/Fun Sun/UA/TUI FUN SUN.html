@@ -211,7 +211,7 @@
                         <div class="die row">
                             <div class="circle-logo" style="background: #b954af"><img v-bind:src=" funSunPageHeaderMenuItemLogo6 " /></div>
 
-                            <div class="circle-text col-md-11 d6">funSunPageHeaderMenuItemNameUA6</div>
+                            <div class="circle-text col-md-11 d6">{{funSunPageHeaderMenuItemNameUA6}}</div>
                         </div>
 
                         <div class="die row">
@@ -295,6 +295,13 @@
               <td>{{data_hotel}}</td>
           </tr>
         {{/each}}
+        <tr>
+            <td colspan="2" style="text-align: center">Египет</td>
+        </tr>
+        <tr>
+            <td><a href="/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace">FUN&SUN Albatros Palace 5*</a></td>
+            <td>Открыт с 01.04.2020</td>
+        </tr>
         </tbody>
         </table>
         {{#each table_description}}
@@ -306,19 +313,8 @@
         {{/each}}
         </script>
             <div class="block-table">&nbsp;</div>
-            <!-- <table class="contentTable">
-    <tbody>
-        <tr>
-            <td style="width:50%"><strong>Отели TUI FUN&amp;SUN</strong></td>
-            <td><strong>Дата открытия концепции в отелях, включая клуб Тукан</strong></td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align: center">Турция</td>
-        </tr>
-        <tr>
-            <td><a href="/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire/">TUI FUN&amp;SUN Club Saphire 5*&nbsp; &nbsp;</a></td>
-            <td>01.05.2019</td>
-        </tr>
+            
+       <!-- <table class="contentTable"> 
         <tr>
             <td><a href="/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort">TUI FUN&amp;SUN Miarosa Ghazal Resort 5*</a></td>
             <td>01.05.2019</td>
@@ -354,7 +350,7 @@
             <td><a href="/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark/">TUI FUN&amp;SUN Panthea Waterpark 4*</a></td>
             <td>01.05.2019</td>
         </tr>
-    </tbody>
+    
 </table> -->
         </div>
 
@@ -641,6 +637,7 @@
             <div class="buttons-navigations" >
                 <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b1">{{country1UA}}</a> <!-- Отели с концепцией Турция -->
                 <a class="button-navigatin" data-block=".slider_2" href="#s2b2">{{country2UA}}</a> <!-- Отели с концепцией Кипр -->
+                <a class="button-navigatin" data-block=".slider_2" href="#s2b3">{{country3UA}}</a> <!-- Отели с концепцией ЕГИПЕТ -->
             </div>
             <!-- Отели с концепцией Турция -->
 
@@ -705,6 +702,43 @@
 
                                     <div class="col-md-5">
                                         <p class="tour_a"><a v-bind:href=" country2Hotel.hotelLinkAgent ">{{ country2Hotel.buttonUA }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
+            
+            <!-- Отели с концепцией ЕГИПЕТ -->
+
+            <div class="slider slider_2 n" id="s2b3">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country3Hotel in country3Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country3Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country3Hotel.countryNameUA }}</h4>
+
+                                    <p class="gey_p">{{ country3Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelUAItem in country3Hotel.aboutHotelUAItems"> {{ aboutHotelUAItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country3Hotel.hotelLinkAgent ">{{ country3Hotel.buttonUA }}</a></p>
                                     </div>
                                 </div>
                             </div>
