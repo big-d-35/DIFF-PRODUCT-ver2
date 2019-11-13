@@ -793,9 +793,21 @@ const funSunHotHotels = new Vue ({
                 hotelName : 'FUN&SUN Albatros Palace 5*',
                 background: 'background: url(https://www.tui.ru/getmedia/b615e0bc-a053-452a-9366-135d40212d30/albatros);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace',
-                hotelLinkClient: '/hotel/africa-egypt-hurghada-hurghada-albatros__palace__resort/',
+                hotelLinkClient: '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-fun__sun__albatros__palace/',
                 
-                
+                //BY
+                countryNameBY: 'Египет, Шарм Эль Шейх (Монтаза)',
+                aboutHotelBYItems: [
+                    { item: 'Большая уютная территория' },
+                    { item: 'Новые номера (2019 г.)' },
+                    { item: '3 ресторана на завтрак/обед и 4 ресторана на ужин бесплатно' },
+                    { item: '7 баров (включая бар 24 часа бесплатно)' },
+                    { item: '9 бассейнов для взрослых и детей (1 подогреваемый бассейн в зимний период)' },
+                    { item: 'Собственный аквапарк (18 горок)' },
+                    { item: 'Пляж с красивым коралловым рифом' },
+                    { item: 'Понтон 100 м' },
+                ],
+                buttonBY : 'Выбрать тур',
                 
                 //UA
                 countryNameUA: 'Египет, Шарм Эль Шейх (Монтаза)',

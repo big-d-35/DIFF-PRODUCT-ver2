@@ -32,7 +32,7 @@ const homePageFirstBlock = new Vue ({
         firstBlockHeadCommentLV2: 'jo jūs paši par to mums pastāstījāt!',
         
         //ПРЕЗЕНТАЦИЯ
-        firstBlockHeadPresentaionLink: 'https://www.tui.ru/getmedia/b448c677-abf8-40ec-8578-1a05f7268b4b/TUI-Concept-Presentation_B2B_18-06',
+        firstBlockHeadPresentaionLink: 'https://www.tui.ru/getmedia/b448c677-abf8-40ec-8578-1a05f7268b4b/NEW-Concept-Presentation_B2B_31-10',
         firstBlockHeadPresentaionLinkUA: 'https://www.tui.ru/getmedia/67345b6e-5eb5-4eae-8523-8d35b61a67b5/UA_NEW-Concept-Presentation_B2B_04-11-2019',
         firstBlockHeadPresentaionRU: 'Презентация Дифф продукта',
         firstBlockHeadPresentaionBY: 'Презентация Дифф продукта',
@@ -98,6 +98,26 @@ const homePageSmartBlockText = new Vue ({
         textUA1: 'Мы устраиваем революцию на рынке бюджетного отдыха! SMART - это концепция для каждого: для семей и для молодежи, которых объединяет одна цель и одно желание - насладиться качественным отдыхом за разумные деньги.',
         textUA2: 'В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, бесплатный Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене. SMART дарит удовольствия для всех: натуральный кофе и кафе-пекарня, детский клуб и бесплатное мороженое, живая музыка и пивной бар с импортными напитками.',
         textUA3: 'Кроме того, SMART заботится об окружающей среде, что означает экологически дружелюбную концепцию. Никаких пластиковых стаканчиков и трубочек, разумный подход к трате воды и энергии, мусорные урны для разделения отходов.',
+        
+        titleEE1: 'SMART puhkuse kontseptsioon',
+        titleEE2: 'Nutikas lähenemine puhkusele',
+        textEE1: 'Me korraldame taskukohase puhkuse revolutsiooni turul! SMART on kontseptsioon kõigile: peredele ja noortele, kellel on üks eesmärk ja üks soov - nautida kvaliteetset puhkust mõistliku hinnaga.',
+        textEE2: 'Esiteks pakume ühe tärni võrra paremat teenust: animatsiooni, lasteklubi, sööke ja jooke, tasuta WiFi-t, äratuntavat disaini ja kvaliteeti taskukohase hinnaga. SMART kingib naudingut kõigile: naturaalne kohv ja kohvik-pagariäri, lasteklubi ning tasuta jäätis, elav muusika ja imporditud jookidega õllebaar.',
+        textEE3: 'Lisaks sellele hoolitseb SMART keskkonna eest ning on välja töötanud keskkonnasõbralikku kontseptsiooni. Ei mingeid plasttopse ja joogikõrsi, vee ja energia kasutamise mõistlik lähenemine, jäätmete sorteerimine.',
+        
+        titleLT1: 'Poilsio koncepcija SMART',
+        titleLT2: 'Protingas požiūris į poilsį',
+        textLT1: 'Revoliucija ekonominio poilsio rinkoje! SMART – tai koncepcija kiekvienam: tiek šeimoms, tiek jaunimui, kurie turi vieną tikslą ir norą - mėgautis kokybiškomis atostogomis už priimtiną kainą.',
+        textLT2: 'Visų pirma, mes siūlome paslaugą žvaigždute aukščiau: animaciją, vaikų klubą, maistą ir gėrimus, nemokamą Wi-Fi, atpažįstamą dizaino stilių ir kokybę už prieinamą kainą. SMART teikia malonumą kiekvienam: natūrali kava ir kepyklėlė, vaikų klubas ir nemokami ledai, gyva muzika ir alaus baras su importiniais gėrimais.',
+        textLT3: 'Be to, SMART rūpinasi aplinka, o tai reiškia ekologišką idėją. Jokių plastikinių puodelių ir šiaudelių, protingas būdas nešvaistyti vandens ir energijos, šiukšliadėžės atliekų rūšiavimui.',
+        
+        titleLV1: 'Atpūtas koncepcija SMART',
+        titleLV2: 'Gudrā pieeja atpūtai',
+        textLV1: 'Mēs rīkojam revolūciju budžeta atpūtas tirgū! SMART - koncepcija katrām:  gan ģimenem gan jauniešiem, kuriem ir vienots mērķis un viena vēlme - labi atpūsties par saprātīgu cenu.',
+        textLV2: 'Pirmkārt, mēs piedāvājam 5* zvaigznēm atbilstošu servisu: animācija, bērnu klubs, ēdināšana un dzērieni, bezmaksas Wi-Fi, labi pazīstamu stilu dizainā un kvalitāti par pieejamu cenu. SMART tas ir: naturāla kafija un kafejnīca-ceptuve, bērnu klubs un bezmaksas saldējums, dzīvā mūzika un alus bārs ar importētiem dzērieniem.',
+        textLV3: 'Bez tam, SMART rūpējas par apkārtējo vidi, kas nozīme videi draudzīgu koncepciju. Nekādu plastmasas glāzīšu un salmiņu, gudrā pieeja ūdens un elektroenerģijas patēriņam, atkritumu šķirošanas tvertnes.',
+
+
     }
     
 });
@@ -110,14 +130,25 @@ const homePageSmartBlockVideoHotels = new Vue ({
         linkTextRU: 'Подробнее',
         linkTextBY: 'Подробнее',
         linkTextUA: 'Подробнее',
+        linkTextEE: 'Uuri lähemalt',
+        linkTextLT: 'Plačiau',
+        linkTextLV: 'Sīkāk',
+        
         homeSmartBlockPageImage: 'https://www.tui.ru/getmedia/9673f81a-e29f-4ead-b35c-2d4a6eeac6d9/fon-template',
+        
         titleRU: 'Отдых в отелях SMART',
         titleBY: 'Отдых в отелях SMART',
         titleUA: 'Отдых в отелях SMART',
+        titleEE: 'Puhkus SMART hotellides',
+        titleLT: 'Poilsis SMART viešbučiuose',
+        titleLV: 'Atpūta SMART vesnīcās',
         
         turkeyRU: 'Турция',
         turkeyBY: 'Турция',
         turkeyUA: 'Турция',
+        turkeyEE: 'Türgi',
+        turkeyLT: 'Turkija',
+        turkeyLV: 'Turcija',
         
         hotelLink1Agent: '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
         hotelLink1Client: '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
@@ -189,7 +220,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageTitleRU: 'Отдых всей семьей в отелях FUN&SUN',
         homeFunSunBlockPageTurkeyRU: 'Турция',
         homeFunSunBlockPageCyprysRU: 'Кипр',
-        homeFunSunBlockPageEgyptRU: '',
+        homeFunSunBlockPageEgyptRU: 'Египет',
         homeFunSunBlockPageMontenegroRU: 'Черногория',
         homeFunSunBlockPageSpainRU: 'Испания',
         
@@ -198,7 +229,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageTitleBY: 'Отдых всей семьей в отелях FUN&SUN',
         homeFunSunBlockPageTurkeyBY: 'Турция',
         homeFunSunBlockPageCyprysBY: 'Кипр',
-        homeFunSunBlockPageEgyptBY: '',
+        homeFunSunBlockPageEgyptBY: 'Египет',
         homeFunSunBlockPageMontenegroBY: 'Черногория',
         homeFunSunBlockPageSpainBY: 'Испания',
         
@@ -216,18 +247,27 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageTitleEE: 'Perepuhkus TUI FUN&SUN hotellides',
         homeFunSunBlockPageTurkeyEE: 'Türgi',
         homeFunSunBlockPageCyprysEE: 'Küpros',
+        homeFunSunBlockPageEgyptEE: 'Egiptus',
+        homeFunSunBlockPageMontenegroEE: 'Montenegro',
+        homeFunSunBlockPageSpainEE: 'Hispaania',
         
         homeFunSunBlockPageLinkTextLT: 'Plačiau',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
         homeFunSunBlockPageTitleLT: 'Visos šeimos poilsis FUN&SUN viešbučiuose',
         homeFunSunBlockPageTurkeyLT: 'Turkija',
         homeFunSunBlockPageCyprysLT: 'Kipras',
+        homeFunSunBlockPageEgyptLT: 'Egiptas',
+        homeFunSunBlockPageMontenegroLT: 'Juodkalnija',
+        homeFunSunBlockPageSpainLT: 'Ispanija',
         
         homeFunSunBlockPageLinkTextLV: 'Sīkāk',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
         homeFunSunBlockPageTitleLV: 'Atpūta visai ģimenei FUN&SUN viesnīcas',
         homeFunSunBlockPageTurkeyLV: 'Turcija',
         homeFunSunBlockPageCyprysLV: 'Kipra',
+        homeFunSunBlockPageEgyptLV: 'Ēģipte',
+        homeFunSunBlockPageMontenegroLV: 'Melnkalne',
+        homeFunSunBlockPageSpainLV: 'Spānija',
         
         //ТУРЦИЯ
         homeFunSunHotelLink1: '/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort',
@@ -297,7 +337,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         
         //EGYPT ПОКА ТОЛЬКО UA
         homeFunSunHotelLink11: '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace',
-        homeFunSunHotelLinkClient11: '/hotel/africa-egypt-hurghada-hurghada-albatros__palace__resort/',
+        homeFunSunHotelLinkClient11: '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-fun__sun__albatros__palace/',
         homeFunSunHotelName11: 'FUN&SUN Albatros Palace 5*',
         
         //ЧЕРНОГРИЯ
@@ -377,13 +417,19 @@ const homePageDayNightBlockVideoHotels = new Vue ({
         
         homeDayNightBlockPageLinkTextEE: 'Täpsemalt',
         homeDayNightBlockPageTurkeyEE: 'Türgi',
+        homeDayNightBlockPageCyprysEE: 'Küpros',
+        homeDayNightBlockPageEgyptEE: 'Egiptus',
         
         homeDayNightBlockPageLinkTextLT: 'Plačiau',
         homeDayNightBlockPageTurkeyLT: 'Turkija',
+        homeDayNightBlockPageCyprysLT: 'Kipras',
+        homeDayNightBlockPageEgyptLT: 'Egiptas',
         
         homeDayNightBlockPageLinkTextLV: 'Sīkāk',
         homeDayNightBlockPageTurkeyLV: 'Turcija',
-               
+        homeDayNightBlockPageCyprysLV: 'Kipra',
+        homeDayNightBlockPageEgyptLV: 'Ēģipte',
+        
         homeFunSunHotelLink1: '/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros',
         homeFunSunHotelLinkClient1: '/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/',
         homeFunSunHotelName1: 'DAY&NIGHT Connected Club Hydros 5*',
@@ -394,7 +440,7 @@ const homePageDayNightBlockVideoHotels = new Vue ({
     
         //ТОЛЬКО НА УКРАИНЕ
         homeFunSunHotelLink3: '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/day-night-connected-tropitel-waves',
-        homeFunSunHotelLinkClient3: '/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/',
+        homeFunSunHotelLinkClient3: '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-day__night__connected__tropitel__waves/',
         homeFunSunHotelName3: 'DAY&NIGHT Connected Tropitel Waves 5*',
         
         homeFunSunHotelLink4: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons',
@@ -497,11 +543,11 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageLinkTextEE: 'Täpsemalt',
         homeToucanBlockPageTurkeyEE: 'Türgi',
         homeToucanBlockPageCyprusEE: 'Küpros',
-        homeToucanBlockPageMontenegroEE: '',
-        homeToucanBlockPageItalyEE: '',
+        homeToucanBlockPageMontenegroEE: 'Montenegro',
+        homeToucanBlockPageItalyEE: 'Itaalia',
         homeToucanBlockPageSpainEE: 'Hispaania',
         homeToucanBlockPageRussiaEE: '',
-        homeToucanBlockPageOaeEE: 'OAE',
+        homeToucanBlockPageOaeEE: 'AÜE',
         
         homeToucanBlockPageLinkTextLT: 'Plačiau',
         homeToucanBlockPageTurkeyLT: 'Turkija',
@@ -519,7 +565,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageItalyLV: 'Itālija',
         homeToucanBlockPageSpainLV: 'Spānija',
         homeToucanBlockPageRussiaLV: 'Krievija',
-        homeToucanBlockPageOaeLV: 'OAE',
+        homeToucanBlockPageOaeLV: 'AAE',
                
         homeToucanHotelLink1: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
         homeToucanHotelLinkClient1: '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',

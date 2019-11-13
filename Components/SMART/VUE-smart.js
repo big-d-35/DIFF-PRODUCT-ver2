@@ -95,9 +95,9 @@ const smartPage = new Vue ({
                 cssPart: 'background-color: #ffdcc6; grid-area: block5; ',
                 
                 image: 'https://www.tui.ru/getmedia/1a56fec2-5abf-43e7-931a-9674341108d3/img-flower',    
-                titleRU : 'В номере: халаты и тапочки, чайник, утюг (по запросу)',  
-                titleBY : 'В номере: халаты и тапочки, чайник, утюг (по запросу)',  
-                titleUA : 'В номере: халаты и тапочки, чайник, утюг (по запросу)',  
+                titleRU : 'В номере: тапочки, чайник, утюг (по запросу)',  
+                titleBY : 'В номере: тапочки, чайник, утюг (по запросу)',  
+                titleUA : 'В номере: тапочки, чайник, утюг (по запросу)',  
                 titleEE : '',  
                 titleLT : '',  
                 titleLV : 'Numurā: peldmeteļi un čības, tējkanna, gludeklis (pēc pieprasījuma)',
@@ -137,9 +137,9 @@ const smartPage = new Vue ({
                     },
                     
                     {
-                        itemRU : 'Тапочки и набор для душа',    
-                        itemBY : 'Тапочки и набор для душа',    
-                        itemUA : 'Тапочки и набор для душа',    
+                        itemRU : 'Тапочки в номерах',    
+                        itemBY : 'Тапочки в номерах',    
+                        itemUA : 'Тапочки в номерах',    
                         itemEE : '',    
                         itemLT : '',    
                         itemLV : 'Čības un vannas istabas piederumu komplekts',    

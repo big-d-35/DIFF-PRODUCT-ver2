@@ -460,7 +460,55 @@ const toucanHotHotels = new Vue ({
                 buttonLV : 'Izvēlēties ceļojumu',
             },
             
-            
+            //HOTEL
+            {
+                hotelName : 'Tasia Maris Garden 3*',
+                background: 'background: url(https://www.tui.ru/getmedia/1673daeb-3112-43fa-a2e7-04a41da112c4/f_PreviewImage_f_7);background-position: center;background-size: cover',
+                hotelLinkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/tasia-maris-gardens',
+                hotelLinkClient: '/hotel/europe-cyprus-ayia__napa-ayia__napa-tasia__maris__gardens/',
+                
+                //EE
+                countryNameEE: 'Küpros, Ayia Napa',
+                aboutHotelEEItems: [
+                    { item: 'Ayia Napa kesklinnas' },
+                    { item: 'Avarad toad on ehitatud korterite põhimõttel' },
+                    { item: 'Tubadel on rõdu / terrass ja täielikult varustatud köögid' },
+                    { item: 'Ilusad alad, millel on avar bassein ja 2-korruselised bungalowe' },
+                    { item: 'Munitsipaalliivarand 50 m. kõrgusel' },
+                    { item: 'Nissi rand 500 meetrit' },
+                    { item: 'Mullivann, päikeseterrass (tasuta lamamistoolide ja päikesevarjudega)' },
+                    
+                    
+                    
+                ],
+                buttonEE : 'Otsi reisi',
+                
+                //LT
+                countryNameLT: 'Kipras, Ayia Napa',
+                aboutHotelLTItems: [
+                    { item: 'Ayia Napos centre' },
+                    { item: 'Erdvūs kambariai pastatyti butų principu' },
+                    { item: 'Kambariuose yra balkonas / terasa ir virtuvės su visa įranga.' },
+                    { item: 'Puikūs plotai su erdviu baseinu ir dviejų aukštų vasarnamiais' },
+                    { item: 'Savivaldybės smėlio paplūdimys 50 m atstumu' },
+                    { item: 'Nissi paplūdimys 500 metrų' },
+                    { item: 'Sūkurinė vonia, saulės terasa (su nemokamais gultais ir saulės voniomis)' },
+                ],
+                buttonLT : 'Pasirinkti',
+                
+                //LV
+                countryNameLV: 'Kipra, Aijanapa',
+                aboutHotelLVItems: [
+                    { item: 'Aijanapas centrā' },
+                    { item: 'Plašās istabas ir veidotas pēc dzīvokļu principa' },
+                    { item: 'Numuriem ir balkons / terase un pilnībā aprīkotas virtuves.' },
+                    { item: 'Skaista teritorija ar plašu baseinu un divstāvu vasarnīcām' },
+                    { item: 'Pašvaldības smilšu pludmale 50 m attālumā' },
+                    { item: 'Nissi pludmale 500 metri' },
+                    { item: 'Džakuzi, sauļošanās terase (ar bezmaksas sauļošanās krēsliem un saulessargiem)' },
+                ],
+                buttonLV : 'Izvēlēties ceļojumu',
+            },
         ],
         
         //HOTELS 4 ЧЕРНОГОРИЯ
@@ -552,7 +600,7 @@ const toucanHotHotels = new Vue ({
         country5Hotels : [
             //HOTEL
             {
-                hotelName : 'Garden Resort Calabria (ex. Valtur Garden) 4*',
+                hotelName : 'Falkensteiner Club Funimation Calabria (ex. Garden Resort Calabria) 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/2bc0a092-4458-4eb9-9f9d-e6b27024967a/italy-hotels-min);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Italy/Calabria/Pizzo/Valtur-Garden-Calabria',
                 hotelLinkClient: '/hotel/europe-italy-calabria-pizzo-garden__resort__calabria/',
@@ -690,7 +738,7 @@ const toucanHotHotels = new Vue ({
         //HOTELS 8 OAE
         country8Hotels : [
             //HOTEL
-            {
+            /*{
                 hotelName : 'Al Hamra Village Golf & Beach Resort 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/7d1ba713-d51b-4603-96d0-532147ae9b8a/T15_Hotel_Al-Hamra-Village-Golf-Beach-Resort-1);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-Beach-Hotels/al-hamra-village-golf-beach-resort',
@@ -737,11 +785,11 @@ const toucanHotHotels = new Vue ({
                     
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
-            },
+            },*/
             
             
             //HOTEL
-            {
+            /*{
                 hotelName : 'Al Hamra Residence 5*',
                 background: 'background: url(https://www.tui.ru/getmedia/d01735ab-c45f-46a4-ba4d-d107366f623c/T16_hotel_Al-Hamra-Residence);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence',
@@ -785,7 +833,7 @@ const toucanHotHotels = new Vue ({
                     
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
-            },
+            },*/
             
             //HOTEL
             {

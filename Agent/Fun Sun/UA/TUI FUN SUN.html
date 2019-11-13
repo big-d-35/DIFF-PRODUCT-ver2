@@ -300,7 +300,7 @@
         </tr>
         <tr>
             <td><a href="/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace">FUN&SUN Albatros Palace 5*</a></td>
-            <td>Открыт с 01.04.2020</td>
+            <td>с 15.12.2019</td>
         </tr>
         </tbody>
         </table>
@@ -351,7 +351,7 @@
             <td>01.05.2019</td>
         </tr>
     
-</table> -->
+</table>
         </div>
 
         <div class="container">
@@ -476,9 +476,9 @@
                         }
                     }
                 });
-            </script> VIDEO ==================================================================== -->
+            </script> VIDEO ==================================================================== 
         </div>
-
+ -->
        <!-- FUN SUN ADVENTAGIES HOTELS BLOCK START ======================= -->
         <div class="container" id="advantagesHotels">
             <h2 style="text-transform: uppercase;">{{funSunPageMenuAdvantagiesTitleUA}}</h2>
@@ -624,11 +624,12 @@
 
         <!-- FUN SUN ADVENTAGIES HOTELS BLOCK END ======================= -->
 
+
         <!-- ОТЕЛИ СТАРТ  ================================================================= -->
 
 <div class="container-fluid block_3" id="hotels-fun-sun">
     <div class="container" >
-        <h2 style="text-transform: uppercase;">{{ titleUA }}</h2>
+        <h2 style="text-transform: uppercase;">{{ titleBY }}</h2>
     </div>
     <!-- ОТЕЛИ СТАРТ слайдер ========================================================================================= -->
 
@@ -637,7 +638,9 @@
             <div class="buttons-navigations" >
                 <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b1">{{country1UA}}</a> <!-- Отели с концепцией Турция -->
                 <a class="button-navigatin" data-block=".slider_2" href="#s2b2">{{country2UA}}</a> <!-- Отели с концепцией Кипр -->
-                <a class="button-navigatin" data-block=".slider_2" href="#s2b3">{{country3UA}}</a> <!-- Отели с концепцией ЕГИПЕТ -->
+                <a class="button-navigatin" data-block=".slider_2" href="#s2b3">{{country3UA}}</a>  <!-- Отели с концепцией ЕГИПЕТ -->
+                <a class="button-navigatin" data-block=".slider_2" href="#s2b4">{{country4UA}}</a> <!-- Отели с концепцией ЧЕРОНОГОРИЯ -->
+                <a class="button-navigatin" data-block=".slider_2" href="#s2b5">{{country5UA}}</a> <!-- Отели с концепцией ИСПАНИЯ -->
             </div>
             <!-- Отели с концепцией Турция -->
 
@@ -716,8 +719,8 @@
             <!-- Отели с концепцией ЕГИПЕТ -->
 
             <div class="slider slider_2 n" id="s2b3">
-                <div class="row-slider" data-col="3">
-                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                <div class="row-slider" data-col="3"> 
+                    <!-- ОДИН ОТЕЛЬ СТАРТ =================================== -->
                     
                     <div class="col-md-4 myslide col-slider-3" v-for=" country3Hotel in country3Hotels">
                             <div class="sliders-hotels">
@@ -744,11 +747,86 @@
                             </div>
                         </div>
                     
+                   <!--  ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
+            
+            <!-- Отели с концепцией  ЧЕРНОГОРИЯ -->
+
+            <div class="slider slider_2 n" id="s2b4">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country4Hotel in country4Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country4Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country4Hotel.countryNameUA }}</h4>
+
+                                    <p class="gey_p">{{ country4Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelUAItem in country4Hotel.aboutHotelUAItems"> {{ aboutHotelUAItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country4Hotel.hotelLinkAgent ">{{ country4Hotel.buttonUA }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
                     <!-- ОДИН ОТЕЛЬ END ===================================-->
 
                     
                 </div>
             </div>
+            
+            <!-- Отели с концепцией  ИСПАНИЯ -->
+
+            <div class="slider slider_2 n" id="s2b5">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country5Hotel in country5Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country5Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country5Hotel.countryNameUA }}</h4>
+
+                                    <p class="gey_p">{{ country5Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelUAItem in country5Hotel.aboutHotelUAItems"> {{ aboutHotelUAItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country5Hotel.hotelLinkAgent ">{{ country5Hotel.buttonUA }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
+            
         </div>
     </div>
     <!-- ОТЕЛИ END слайдер  ==================================================== -->
