@@ -202,14 +202,25 @@ var table_fs = {
         },
         {
             country_hotel: "Испания",
-            name_hotel: " FUN&SUN Sorra Daurada 4*",
+            name_hotel: " FUN&SUN Sorra Daurada Splash 4*",
             href_tui_ru: "/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/",
             href_tui_ua: "/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/",
             href_tui_by: "/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/",
             href_agent_ru: "/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada",
             href_agent_ua: "/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada",
             href_agent_by: "/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada",
-            data_hotel: "лето 2020"
+            data_hotel: "01.06.2020"
+        },
+        {
+            country_hotel: "Греция",
+            name_hotel: " FUN&SUN Apollo Palace 5*",
+            href_tui_ru: "/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/",
+            href_tui_ua: "/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/",
+            href_tui_by: "/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/",
+            href_agent_ru: "/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace",
+            href_agent_ua: "/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace",
+            href_agent_by: "/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace",
+            data_hotel: "15.05.2020"
         },
 	  ]
 };
@@ -342,10 +353,10 @@ var table_fs_ee = {
         },
         {
             country_hotel: "Hispaania",
-            name_hotel: "FUN&SUN Sorra Daurada 4*",
+            name_hotel: "FUN&SUN Sorra Daurada Splash 4*",
             href_tui_ee: "/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/",
             href_agent_ee: "/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada",
-            data_hotel: "1.05.2020"
+            data_hotel: "01.06.2020"
         },
         {
             country_hotel: "Egiptus",
@@ -353,6 +364,13 @@ var table_fs_ee = {
             href_tui_ee: "/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-fun__sun__albatros__palace/",
             href_agent_ee: "/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace",
             data_hotel: "1.05.2020"
+        },
+        {
+            country_hotel: "Kreeka",
+            name_hotel: "FUN&SUN Apollo Palace 5*",
+            href_tui_ee: "/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/",
+            href_agent_ee: "/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace",
+            data_hotel: "15.05.2020"
         },
 	  ]
 };
@@ -483,10 +501,10 @@ var table_fs_lt = {
         },
         {
             country_hotel: "Ispanija",
-            name_hotel: "FUN&SUN Sorra Daurada 4*",
+            name_hotel: "FUN&SUN Sorra Daurada Splash 4*",
             href_tui_lt: "/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/",
             href_agent_lt: "/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada",
-            data_hotel: "1.05.2020"
+            data_hotel: "01.06.2020"
         },
         {
             country_hotel: "Egiptas",
@@ -494,6 +512,13 @@ var table_fs_lt = {
             href_tui_lt: "/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-fun__sun__albatros__palace/",
             href_agent_lt: "/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace",
             data_hotel: "1.05.2020"
+        },
+        {
+            country_hotel: "Graikija",
+            name_hotel: "FUN&SUN Apollo Palace 5*",
+            href_tui_lt: "/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/",
+            href_agent_lt: "/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace",
+            data_hotel: "15.05.2020"
         },
 	  ]
 };
@@ -624,10 +649,10 @@ var table_fs_lv = {
         },
         {
             country_hotel: "Ispanija",
-            name_hotel: "FUN&SUN Sorra Daurada 4*",
+            name_hotel: "FUN&SUN Sorra Daurada Splash 4*",
             href_tui_lv: "/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/",
             href_agent_lv: "/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada",
-            data_hotel: "1.05.2020"
+            data_hotel: "01.06.2020"
         },
         {
             country_hotel: "Ēgipte",
@@ -635,6 +660,13 @@ var table_fs_lv = {
             href_tui_lv: "/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-fun__sun__albatros__palace/",
             href_agent_lv: "/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace",
             data_hotel: "1.05.2020"
+        },
+        {
+            country_hotel: "Grieķija",
+            name_hotel: "FUN&SUN Apollo Palace 5*",
+            href_tui_lv: "/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/",
+            href_agent_lv: "/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace",
+            data_hotel: "15.05.2020"
         },
 	  ]
 };

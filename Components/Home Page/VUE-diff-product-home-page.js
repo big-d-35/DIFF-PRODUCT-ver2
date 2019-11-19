@@ -223,6 +223,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageEgyptRU: 'Египет',
         homeFunSunBlockPageMontenegroRU: 'Черногория',
         homeFunSunBlockPageSpainRU: 'Испания',
+        homeFunSunBlockPageGreeceRU: 'Греция',
         
         homeFunSunBlockPageLinkTextBY: 'Подробнее',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
@@ -232,6 +233,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageEgyptBY: 'Египет',
         homeFunSunBlockPageMontenegroBY: 'Черногория',
         homeFunSunBlockPageSpainBY: 'Испания',
+        homeFunSunBlockPageGreeceBY: 'Греция',
         
         homeFunSunBlockPageLinkTextUA: 'Подробнее',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
@@ -241,6 +243,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageEgyptUA: 'Египет',
         homeFunSunBlockPageMontenegroUA: 'Черногория',
         homeFunSunBlockPageSpainUA: 'Испания',
+        homeFunSunBlockPageGreeceUA: 'Греция',
         
         homeFunSunBlockPageLinkTextEE: 'Täpsemalt',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
@@ -250,6 +253,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageEgyptEE: 'Egiptus',
         homeFunSunBlockPageMontenegroEE: 'Montenegro',
         homeFunSunBlockPageSpainEE: 'Hispaania',
+        homeFunSunBlockPageGreeceEE: 'Kreeka',
         
         homeFunSunBlockPageLinkTextLT: 'Plačiau',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
@@ -259,6 +263,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageEgyptLT: 'Egiptas',
         homeFunSunBlockPageMontenegroLT: 'Juodkalnija',
         homeFunSunBlockPageSpainLT: 'Ispanija',
+        homeFunSunBlockPageGreeceLT: 'Graikija',
         
         homeFunSunBlockPageLinkTextLV: 'Sīkāk',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
@@ -268,6 +273,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageEgyptLV: 'Ēģipte',
         homeFunSunBlockPageMontenegroLV: 'Melnkalne',
         homeFunSunBlockPageSpainLV: 'Spānija',
+        homeFunSunBlockPageGreeceLV: 'Grieķija',
         
         //ТУРЦИЯ
         homeFunSunHotelLink1: '/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort',
@@ -348,7 +354,12 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         //ИСПАНИЯ
         homeFunSunHotelLink17: '/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada',
         homeFunSunHotelLinkClient17: '/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/',
-        homeFunSunHotelName17: 'FUN&SUN Sorra Daurada 4*',
+        homeFunSunHotelName17: 'FUN&SUN Sorra Daurada Splash 4*',
+        
+        //ГРЕЦИЯ
+        homeFunSunHotelLink20: '/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace',
+        homeFunSunHotelLinkClient20: '/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/',
+        homeFunSunHotelName20: 'FUN&SUN Apollo Palace 5*',
     }
 });
 

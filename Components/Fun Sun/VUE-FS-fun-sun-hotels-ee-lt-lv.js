@@ -25,6 +25,7 @@ const funSunHotHotels = new Vue ({
         country3EE: 'Egiptus',
         country4EE: 'Montenegro',
         country5EE: 'Hispaania',
+        country6EE: 'Kreeka',
         
         
         //LT 
@@ -33,6 +34,7 @@ const funSunHotHotels = new Vue ({
         country3LT: 'Egiptas',
         country4LT: 'Juodkalnija',
         country5LT: 'Ispanija',
+        country6LT: 'Graikija',
         
         
         //LV 
@@ -41,6 +43,7 @@ const funSunHotHotels = new Vue ({
         country3LV: 'Ēģipte',
         country4LV: 'Melnkalne',
         country5LV: 'Spānija',
+        country6LV: 'Grieķija',
         
         
         //HOTELS 1 ТУРЦИЯ
@@ -97,28 +100,28 @@ const funSunHotHotels = new Vue ({
                 hotelLinkClient: '/hotel/europe-turkey-kemer-finike-tui__fun__sun__club__di__finica/',
                 
                 //EE
-                countryNameEE: 'Турция, Кемер (Финике)',
+                countryNameEE: 'Türgi, Kemer',
                 aboutHotelEEItems: [
-                    { item: 'Уникальное месторасположение' },
-                    { item: 'Отель окружен апельсиновыми рощами' },
-                    { item: 'Просторный пляж с плавным входом' },
-                    { item: 'Новые номера' },
-                    { item: 'Большая зеленая территория' },
-                    { item: 'Водные горки' }
+                    { item: 'Ainulaadne asukohta' },
+                    { item: 'Hotelli ümbritsevad apelsinipuusalud' },
+                    { item: 'Avar, laugja kallasega randUued toad' },
+                    { item: 'Suur. roheline territoorium' },
+                    { item: 'Veeliumäed' },
+                    
                 ],
-                buttonEE : 'Выбрать тур',
+                buttonEE : 'Otsi reisi',
                 
                 //LT
-                countryNameLT: 'Турция, Кемер (Финике)',
+                countryNameLT: 'Turkija, Kemeras ',
                 aboutHotelLTItems: [
-                    { item: 'Уникальное месторасположение' },
-                    { item: 'Отель окружен апельсиновыми рощами' },
-                    { item: 'Просторный пляж с плавным входом' },
-                    { item: 'Новые номера' },
-                    { item: 'Большая зеленая территория' },
-                    { item: 'Водные горки' }
+                    { item: 'Unikali vita' },
+                    { item: 'Viešbutis išsidėstęs apelsinų giraitės apsuptyje' },
+                    { item: 'Paltus paplūdimys su nuožulniu įėjimu į jūrą' },
+                    { item: 'Nauji kambariai' },
+                    { item: 'Didelė, žalia teritorija' },
+                    { item: 'vandens kalneliai' }
                 ],
-                buttonLT : 'Выбрать тур',
+                buttonLT : 'Pasirinkti',
                 
                 //LV
                 countryNameLV: 'Turcija, Kemera (Finike)',
@@ -231,38 +234,38 @@ const funSunHotHotels = new Vue ({
                 hotelLinkClient: '/hotel/europe-turkey-kemer-tekirova-tui__fun__sun__club__saphire/',
                 
                 //EE
-                countryNameEE: 'Турция, Кемер (Текирова)',
+                countryNameEE: 'Türgi, Kemer ',
                 aboutHotelEEItems: [
-                    { item: 'Выгодная стоимость' },
-                    { item: 'Зеленая территория с сосновыми деревьями' },
-                    { item: 'Оборудование Zippline на детской площадке' },
-                    { item: 'Новая зона Chill out 18+ (только для взрослых, с круглосуточным баром и закусками)' },
-                    { item: 'Отдельная Relax зона с бассейном и баром' },
-                    { item: 'Первый отель по концепции FUN&SUN' }
+                    { item: 'Hea hind' },
+                    { item: 'Roheline territoorium, kus kasvavad männid' },
+                    { item: 'Zippline-varustusega laste mänguväljak' },
+                    { item: 'Uus Chill out 18+ tsoon (ainult täiskasvanutele, ööpäevaringse baari ja suupistetega)' },
+                    { item: 'Eraldatud Relax tsoon basseini ja baariga' },
+                    { item: 'Esimene FUN&SUN kontseptsiooniga hotell' }
                 ],
-                buttonEE : 'Выбрать тур',
+                buttonEE : 'Otsi reisi',
                 
                 //LT
-                countryNameLT: 'Турция, Кемер (Текирова)',
+                countryNameLT: 'Turkija, Kemeras',
                 aboutHotelLTItems: [
-                    { item: 'Выгодная стоимость' },
-                    { item: 'Зеленая территория с сосновыми деревьями' },
-                    { item: 'Оборудование Zippline на детской площадке' },
-                    { item: 'Новая зона Chill out 18+ (только для взрослых, с круглосуточным баром и закусками)' },
-                    { item: 'Отдельная Relax зона с бассейном и баром' },
-                    { item: 'Первый отель по концепции FUN&SUN' }
+                    { item: 'Gera kaina' },
+                    { item: 'žalia teritorija su pušimis' },
+                    { item: 'Zipline įranga vaikų aikštelė' },
+                    { item: 'Nauja Chill out 18+ zona (tik suaugusiems, su 24 val. veikiančiu baru ir užkandžiais)' },
+                    { item: 'Relax zona su baseinu ir baru' },
+                    { item: 'Pirmasis FUN&SUN koncepcijos viešbutis' }
                 ],
-                buttonLT : 'Выбрать тур',
+                buttonLT : 'Pasirinkti',
                 
                 //LV
-                countryNameLV: 'Турция, Кемер (Текирова)',
+                countryNameLV: 'Turcija, Kemera',
                 aboutHotelLVItems: [
-                    { item: 'Выгодная стоимость' },
-                    { item: 'Зеленая территория с сосновыми деревьями' },
-                    { item: 'Оборудование Zippline на детской площадке' },
-                    { item: 'Новая зона Chill out 18+ (только для взрослых, с круглосуточным баром и закусками)' },
-                    { item: 'Отдельная Relax зона с бассейном и баром' },
-                    { item: 'Первый отель по концепции FUN&SUN' }
+                    { item: 'Izdevīga cena' },
+                    { item: 'Apzaļumota teritorija ar priežu kokiem' },
+                    { item: '"Zippline" aprīkojums bērnu rotaļu laukumā' },
+                    { item: 'Jauna "Chill out" zona 18+ (tikai pieaugušajiem, bārs un uzkodas 24h)' },
+                    { item: 'Atsevišķa "Relax" zona ar baseinu un bāru' },
+                    { item: 'Pirma viesnīca pēc FUN&SUN koncepcijas' }
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
             },
@@ -457,40 +460,40 @@ const funSunHotHotels = new Vue ({
                 hotelLinkClient: '/hotel/europe-turkey-kemer-beldibi-fun__sun__imperial__sunland__resort__(ex__sunland__resor/',
                 
                 //EE
-                countryNameEE: 'Турция, Кемер',
+                countryNameEE: 'Türgi, Kemer',
                 aboutHotelEEItems: [
-                    { item: 'Отель с компактной зеленой территорией, красивой архитектурой' },
-                    { item: 'В большинстве номеров отеля – вид на море' },
-                    { item: 'Собственный песчано-галечный пляж с пирсом' },
-                    { item: 'Relax-бассейн' },
-                    { item: 'Красивый SPA-комплекс' },
-                    { item: '3 a la carte ресторана' },
+                    { item: 'Kompaktse rohelise territooriumi ja ilusa arhitektuuriga hotell' },
+                    { item: 'Enamikes tubades - merevaade' },
+                    { item: 'Oma liiva- ja kivikluburand' },
+                    { item: 'kai Lõõgastusbassein' },
+                    { item: 'Ilus SPA-kompleks' },
+                    { item: '3 a la carte restorani' },
                     
                     
                 ],
-                buttonEE : 'Выбрать тур',
+                buttonEE : 'Otsi reisi',
                 
                 //LT
-                countryNameLT: 'Турция, Кемер',
+                countryNameLT: 'Turkija, Kemeras',
                 aboutHotelLTItems: [
-                    { item: 'Отель с компактной зеленой территорией, красивой архитектурой' },
-                    { item: 'В большинстве номеров отеля – вид на море' },
-                    { item: 'Собственный песчано-галечный пляж с пирсом' },
-                    { item: 'Relax-бассейн' },
-                    { item: 'Красивый SPA-комплекс' },
-                    { item: '3 a la carte ресторана' },
+                    { item: 'Viešbutis su kompaktiška, žalia teritorija, graži architektūra' },
+                    { item: 'Dauguma kambarių - su vaizdu į jūrą' },
+                    { item: 'Nuosavas smėlio-žvyro paplūdimys' },
+                    { item: 'Relax baseinas' },
+                    { item: 'Gražus SPA centras' },
+                    { item: '3 a la carte restoranai' },
                 ],
-                buttonLT : 'Выбрать тур',
+                buttonLT : 'Pasirinkti',
                 
                 //LV
-                countryNameLV: 'Турция, Кемер',
+                countryNameLV: 'Turcija, Kemera',
                 aboutHotelLVItems: [
-                    { item: 'Отель с компактной зеленой территорией, красивой архитектурой' },
-                    { item: 'В большинстве номеров отеля – вид на море' },
-                    { item: 'Собственный песчано-галечный пляж с пирсом' },
-                    { item: 'Relax-бассейн' },
-                    { item: 'Красивый SPA-комплекс' },
-                    { item: '3 a la carte ресторана' },
+                    { item: 'Viesnīca ar kompaktu, apzaļumotu teritoriju, skaistu arhitektūru' },
+                    { item: 'Vairākums viesnīcas numuru ir ar skatu uz jūru' },
+                    { item: 'Privātā smilšu-oļu pludmale ar piestātni' },
+                    { item: 'Relax-baseins' },
+                    { item: 'Skaists SPA komplekss' },
+                    { item: '3 A La Carte restorāni' },
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
             },
@@ -503,35 +506,35 @@ const funSunHotHotels = new Vue ({
                 hotelLinkClient: '/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/',
                 
                 //EE
-                countryNameEE: 'Турция, Кемер',
+                countryNameEE: 'Türgi, Kemer',
                 aboutHotelEEItems: [
-                    { item: 'Детский открытый бассейн' },
-                    { item: 'Первая береговая линия' },
-                    { item: 'Собственный пирс' },
-                    { item: 'Детский клуб' },
+                    { item: 'Laste välibassein' },
+                    { item: 'Esimene rannajoon' },
+                    { item: 'Oma kai' },
+                    { item: 'Lasteklubi' },
                     
                     
                     
                 ],
-                buttonEE : 'Выбрать тур',
+                buttonEE : 'Otsi reisi',
                 
                 //LT
-                countryNameLT: 'Турция, Кемер',
+                countryNameLT: 'Turkija, Kemeras',
                 aboutHotelLTItems: [
-                    { item: 'Детский открытый бассейн' },
-                    { item: 'Первая береговая линия' },
-                    { item: 'Собственный пирс' },
-                    { item: 'Детский клуб' },
+                    { item: 'Vaikų lauko baseinas' },
+                    { item: '1-oje viešbučių linijoje' },
+                    { item: 'Nuosavas pirsas' },
+                    { item: 'Vaikų klubas' },
                 ],
-                buttonLT : 'Выбрать тур',
+                buttonLT : 'Pasirinkti',
                 
                 //LV
-                countryNameLV: 'Турция, Кемер',
+                countryNameLV: 'Turcija, Kemera',
                 aboutHotelLVItems: [
-                    { item: 'Детский открытый бассейн' },
-                    { item: 'Первая береговая линия' },
-                    { item: 'Собственный пирс' },
-                    { item: 'Детский клуб' },
+                    { item: 'Bērnu āra baseins' },
+                    { item: 'Pirmajā līnija no pludmales' },
+                    { item: 'Privātā piestātne' },
+                    { item: 'Bērnu klubs' },
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
             },
@@ -544,44 +547,44 @@ const funSunHotHotels = new Vue ({
                 hotelLinkClient: '/hotel/europe-turkey-belek-bogazkent-fun__sun__life__belek/',
                 
                 //EE
-                countryNameEE: 'Турция, Белек, Буазкент',
+                countryNameEE: 'Тürgi, Belek',
                 aboutHotelEEItems: [
-                    { item: 'Отель с компактной территорией' },
-                    { item: 'Собственный песчано-галечный пляж' },
-                    { item: 'Кинотеатр на 50 мест' },
-                    { item: 'SPA центр' },
-                    { item: '3 a la carte ресторана' },
-                    { item: 'Вкусное питание во всех ресторанах отеля' },
-                    { item: 'Новый детский клуб Тукан с детской площадкой' },
+                    { item: 'Kompaktse territooriumiga hotell' },
+                    { item: 'Oma liiva- ja kivikliburand' },
+                    { item: '50-kohaline kino' },
+                    { item: '3 a la carte restorani' },
+                    { item: 'Maitsev toit kõikides hotelli restoranides' },
+                    { item: 'Uus lasteklubi Toucan koos' },
+                    { item: 'Mänguväljakuga' },
                     
                     
                     
                 ],
-                buttonEE : 'Выбрать тур',
+                buttonEE : 'Otsi reisi',
                 
                 //LT
-                countryNameLT: 'Турция, Белек, Буазкент',
+                countryNameLT: 'Turkija, Belekas',
                 aboutHotelLTItems: [
-                    { item: 'Отель с компактной территорией' },
-                    { item: 'Собственный песчано-галечный пляж' },
-                    { item: 'Кинотеатр на 50 мест' },
-                    { item: 'SPA центр' },
-                    { item: '3 a la carte ресторана' },
-                    { item: 'Вкусное питание во всех ресторанах отеля' },
-                    { item: 'Новый детский клуб Тукан с детской площадкой' },
+                    { item: 'Viešbutis su kompaktiška teritorija' },
+                    { item: 'Nuosavas, smėlio-žvyro paplūdimys' },
+                    { item: 'Kino teatras (50 asm.)' },
+                    { item: 'SPA centras' },
+                    { item: '3 a la Carte restoranai' },
+                    { item: 'Skanus maistas' },
+                    { item: 'Naujas Toucan vaikų klubas' },
                 ],
-                buttonLT : 'Выбрать тур',
+                buttonLT : 'Pasirinkti',
                 
                 //LV
-                countryNameLV: 'Турция, Белек, Буазкент',
+                countryNameLV: 'Turcija, Beleka, Boazkenta',
                 aboutHotelLVItems: [
-                    { item: 'Отель с компактной территорией' },
-                    { item: 'Собственный песчано-галечный пляж' },
-                    { item: 'Кинотеатр на 50 мест' },
-                    { item: 'SPA центр' },
-                    { item: '3 a la carte ресторана' },
-                    { item: 'Вкусное питание во всех ресторанах отеля' },
-                    { item: 'Новый детский клуб Тукан с детской площадкой' },
+                    { item: 'Viesnīca ar kompaktu teritoriju' },
+                    { item: 'Privātā smilšu-oļu pludmale' },
+                    { item: 'Kinoteātris 50 personām' },
+                    { item: 'SPA centrs' },
+                    { item: '3 A La Carte restorāni' },
+                    { item: 'Garda ēdināšana visos viesnīcas restorānos' },
+                    { item: 'Jauns bērnu klubs Toucan ar rotaļu laukumu' },
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
             },
@@ -793,44 +796,44 @@ const funSunHotHotels = new Vue ({
                 hotelLinkClient: '/hotel/africa-egypt-hurghada-hurghada-albatros__palace__resort/',
                 
                 //EE
-                countryNameEE: 'Египет, Шарм Эль Шейх (Монтаза)',
+                countryNameEE: 'Egiptus, Sharm El Sheikh (Montaza)',
                 aboutHotelEEItems: [
-                    { item: 'Большая уютная территория' },
-                    { item: 'Новые номера (2019 г.)' },
-                    { item: '3 ресторана на завтрак/обед и 4 ресторана на ужин бесплатно' },
-                    { item: '7 баров (включая бар 24 часа бесплатно)' },
-                    { item: '9 бассейнов для взрослых и детей (1 подогреваемый бассейн в зимний период)' },
-                    { item: 'Собственный аквапарк (18 горок)' },
-                    { item: 'Пляж с красивым коралловым рифом' },
-                    { item: 'Понтон 100 м' },
+                    { item: 'Suur ja hubane territoorium' },
+                    { item: 'Uued toad (2019. a)' },
+                    { item: '3 restorani hommikusöögi/lõunaks ning 4 restorani õhtusöögiks - tasuta' },
+                    { item: '7 baari (kaasa arvatud 24 h baar - tasuta)' },
+                    { item: '9 basseini täiskasvanutele ja lastele (1 soojendusega talvel)' },
+                    { item: 'Oma veekeskus (18 veeliumäge)' },
+                    { item: 'Ilusa korallrifiga rand' },
+                    { item: 'Kai - 100 m' },
                 ],
-                buttonEE : 'Выбрать тур',
+                buttonEE : 'Otsi reisi',
                 
                 //LT
-                countryNameLT: 'Египет, Шарм Эль Шейх (Монтаза)',
+                countryNameLT: 'Egiptas, Šarm el Šeichas (Montaza)',
                 aboutHotelLTItems: [
-                    { item: 'Большая уютная территория' },
-                    { item: 'Новые номера (2019 г.)' },
-                    { item: '3 ресторана на завтрак/обед и 4 ресторана на ужин бесплатно' },
-                    { item: '7 баров (включая бар 24 часа бесплатно)' },
-                    { item: '9 бассейнов для взрослых и детей (1 подогреваемый бассейн в зимний период)' },
-                    { item: 'Собственный аквапарк (18 горок)' },
-                    { item: 'Пляж с красивым коралловым рифом' },
-                    { item: 'Понтон 100 м' },
+                    { item: 'Didelė, jauki teritorija' },
+                    { item: 'Nauji kambariai (2019 m.)' },
+                    { item: '3 restoranai pusryčiams/pietums ir 4 restoranai vakarienei - nemokama' },
+                    { item: '7 barai (įskaitant barą dirbantį 24 val., nemokama)' },
+                    { item: '9 baseinai suaugusiems ir vaikams (1 iš jų šildomas žiemos metu)' },
+                    { item: 'Nuosavas vandens pramogų parkas (18 vandens kalnelių)' },
+                    { item: 'Paplūdimys su gražiu koraliniu rifu' },
+                    { item: 'Pontonas - 100 m.' },
                 ],
-                buttonLT : 'Выбрать тур',
+                buttonLT : 'Pasirinkti',
                 
                 //LV
-                countryNameLV: 'Египет, Шарм Эль Шейх (Монтаза)',
+                countryNameLV: 'Ēģipte, Šarmelšeiha (Montaza)',
                 aboutHotelLVItems: [
-                    { item: 'Большая уютная территория' },
-                    { item: 'Новые номера (2019 г.)' },
-                    { item: '3 ресторана на завтрак/обед и 4 ресторана на ужин бесплатно' },
-                    { item: '7 баров (включая бар 24 часа бесплатно)' },
-                    { item: '9 бассейнов для взрослых и детей (1 подогреваемый бассейн в зимний период)' },
-                    { item: 'Собственный аквапарк (18 горок)' },
-                    { item: 'Пляж с красивым коралловым рифом' },
-                    { item: 'Понтон 100 м' },
+                    { item: 'Liela omulīga teritorija' },
+                    { item: 'Jauni numuri (2019.g)' },
+                    { item: 'Brokastis/pusdienas notiek 3 restorānos, vakariņas - 4 restorānos (bezmaksas)' },
+                    { item: '7 bāri (ieskaitot 24h bāru, bezmaksas)' },
+                    { item: '9 baseini pieaugušajiem un bērniem (1 baseins ziemas sezonā ir apsildāms)' },
+                    { item: 'Privāts ūdens atrakciju parks (18 ūdens slidkalniņi)' },
+                    { item: 'Pludmale ar skaistu koraļļu rifu' },
+                    { item: 'Pontons 100 m' },
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
             },
@@ -849,39 +852,39 @@ const funSunHotHotels = new Vue ({
                 //EE
                 countryNameEE: 'Черногория, Чань',
                 aboutHotelEEItems: [
-                    { item: 'Отель на первой береговой линии.' },
-                    { item: 'Жемчужный пляж – песчано-галечный, в 80 м от отеля' },
-                    { item: 'Зонты и шезлонги - бесплатно' },
-                    { item: '«Отель – курорт» с очень большой территорией (около 100 000 м2)' },
-                    { item: 'Просторные номера с большими лоджиями' },
-                    { item: 'Большой детский клуб' },
-                    { item: 'Первый отель для российских туристов с активной анимацией для детей и взрослых' },
+                    { item: 'Hotell esimesel rannajoonel' },
+                    { item: 'Liiva- ja kivikliburand, hotellist 80 m kaugusel' },
+                    { item: 'Randa peetakse üheks parimaks Montenegro rannaks' },
+                    { item: 'Päikesevarjud ja lamamistoolid - tasuta. "Hotell-kuurort" - väga suure territooriumiga (umbes 100 000 m2)' },
+                    { item: 'Suurte lodžadega avarad toad' },
+                    { item: 'Suur lasteklubi' },
+                    { item: 'Hotell pakub aktiivset animatsiooniprogrammi täiskasvanutele ja lastele ' },
                 ],
-                buttonEE : 'Выбрать тур',
+                buttonEE : 'Otsi reisi',
                 
                 //LT
-                countryNameLT: 'Черногория, Чань',
+                countryNameLT: 'Juodkalnija, Chan',
                 aboutHotelLTItems: [
-                    { item: 'Отель на первой береговой линии.' },
-                    { item: 'Жемчужный пляж – песчано-галечный, в 80 м от отеля' },
-                    { item: 'Зонты и шезлонги - бесплатно' },
-                    { item: '«Отель – курорт» с очень большой территорией (около 100 000 м2)' },
-                    { item: 'Просторные номера с большими лоджиями' },
-                    { item: 'Большой детский клуб' },
-                    { item: 'Первый отель для российских туристов с активной анимацией для детей и взрослых' },
+                    { item: 'Viešbutis 1-oje linijoje' },
+                    { item: 'Smėlio-žvyro paplūdimys, 80 m iki viešbučio' },
+                    { item: 'Vienas geriausių paplūdimių Juodkalnijoje' },
+                    { item: '"viešbutis-kurortas" su labai didele teritorija (apie 100 000 kv. m)' },
+                    { item: 'Erdvūs kambariai su dideliais balkonais' },
+                    { item: 'Didelis vaikų klubas' },
+                    { item: 'Pirmas viešbutis Rusijos turistams su aktyvia animacine programa suaugusiems ir vaikams ' },
                 ],
-                buttonLT : 'Выбрать тур',
+                buttonLT : 'Pasirinkti',
                 
                 //LV
-                countryNameLV: 'Черногория, Чань',
+                countryNameLV: 'Melnkalne, Chan',
                 aboutHotelLVItems: [
-                    { item: 'Отель на первой береговой линии.' },
-                    { item: 'Жемчужный пляж – песчано-галечный, в 80 м от отеля' },
-                    { item: 'Зонты и шезлонги - бесплатно' },
-                    { item: '«Отель – курорт» с очень большой территорией (около 100 000 м2)' },
-                    { item: 'Просторные номера с большими лоджиями' },
-                    { item: 'Большой детский клуб' },
-                    { item: 'Первый отель для российских туристов с активной анимацией для детей и взрослых' },
+                    { item: 'Pirmajā līnijā no pludmales' },
+                    { item: 'Smilšu-oļu pludmale, 80 m attālumā no viesnīcas (viena no Melnkalnes labākajām pludmalēm)' },
+                    { item: 'Saulessargi un atpūtas krēsli - bezmaksas' },
+                    { item: '"Viesnīca-kūrorts" aizņem lielu teritoriju (100 000 kv.m)' },
+                    { item: 'Plaši numuri ar lielam lodžijam' },
+                    { item: 'Liels bērnu klubs ' },
+                    { item: 'Viesnīca ar aktīvu animācijas programmu pieaugušajiem un bērniem' },
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
             },
@@ -892,48 +895,97 @@ const funSunHotHotels = new Vue ({
         country5Hotels : [
             //HOTEL 1
             {
-                hotelName : 'FUN&SUN Sorra Daurada 4*',
+                hotelName : 'FUN&SUN Sorra Daurada Splash 4*',
                 background: 'background: url(https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=77d05490-2114-48e1-8cbc-ddb50076d54b&height=460);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada',
                 hotelLinkClient: '/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/',
                 
                 //EE
-                countryNameEE: 'Испания, Коста де Барселона',
+                countryNameEE: 'Hispaania, Costa de Barcelona',
                 aboutHotelEEItems: [
-                    { item: 'Первый отель по концепции FUN&SUN в Испании' },
-                    { item: 'Отель на первой береговой линии через дорогу' },
-                    { item: 'Будет работать по системе  HB и All Inclusive' },
-                    { item: 'Будет большой детский клуб' },
-                    { item: 'Детский аквапарк' },
-                    { item: 'Отель полностью реновирован' },
-                    { item: 'Спокойный регион' },
+                    { item: 'Esimene FUN&SUN kontseptsiooniga hotell Hispaanias' },
+                    { item: 'Hotell esimesel rannajoonel (üle tee)' },
+                    { item: 'Hotellis tuleb toitlustus poolpansion (HB) ja "kõik hinnas" (AI)' },
+                    { item: 'Avatakse suur lasteklubi' },
+                    { item: 'Laste veekeskus' },
+                    { item: 'Hotell on täielikult renoveeritud' },
+                    { item: 'Rahulik piirkond' },
                     
                 ],
-                buttonEE : 'Выбрать тур',
+                buttonEE : 'Otsi reisi',
                 
                 //LT
-                countryNameLT: 'Испания, Коста де Барселона',
+                countryNameLT: 'Ispanija, Kosta de Barselona',
                 aboutHotelLTItems: [
-                    { item: 'Первый отель по концепции FUN&SUN в Испании' },
-                    { item: 'Отель на первой береговой линии через дорогу' },
-                    { item: 'Будет работать по системе  HB и All Inclusive' },
-                    { item: 'Будет большой детский клуб' },
-                    { item: 'Детский аквапарк' },
-                    { item: 'Отель полностью реновирован' },
-                    { item: 'Спокойный регион' },
+                    { item: 'Pirmasis FUN&SUN koncepcijos viešbutis Ispanijoje' },
+                    { item: 'Viešbutis 1-oje linijoje, per kelią iki paplūdimio' },
+                    { item: 'Dirba pagal HB ir AI maitinimo sistemas' },
+                    { item: 'Didelis vaikų klubas, vaikų vandens pramogų parkas' },
+                    { item: 'Viešbutis visiškai atnaujintas' },
+                    { item: 'Ramus regionas' },
+                    
                 ],
-                buttonLT : 'Выбрать тур',
+                buttonLT : 'Pasirinkti',
                 
                 //LV
-                countryNameLV: 'Испания, Коста де Барселона',
+                countryNameLV: 'Spānija, Kosta de Barselona',
                 aboutHotelLVItems: [
-                    { item: 'Первый отель по концепции FUN&SUN в Испании' },
-                    { item: 'Отель на первой береговой линии через дорогу' },
-                    { item: 'Будет работать по системе  HB и All Inclusive' },
-                    { item: 'Будет большой детский клуб' },
-                    { item: 'Детский аквапарк' },
-                    { item: 'Отель полностью реновирован' },
-                    { item: 'Спокойный регион' },
+                    { item: 'Pirmā viesnīca pēc FUN&SUN koncepcijas Spānijā' },
+                    { item: 'Viesnīca atrodas pludmales pirmajā līnijā, pāri ceļam' },
+                    { item: 'Viesnīca darbosies pēc puspansijas un "Viss iekļauts" ēdināšanas sistēmām' },
+                    { item: 'Būs liels bērnu klubs' },
+                    { item: 'Bērnu ūdens atrakciju parks' },
+                    { item: 'Viesnīca ir pilnīgi renovēta' },
+                    { item: 'Klusa atrašanas vieta' },
+                ],
+                buttonLV : 'Izvēlēties ceļojumu',
+            },
+
+        ],
+        
+        //HOTELS 5 ГРЕЦИЯ
+        country6Hotels : [
+            //HOTEL 1
+            {
+                hotelName : 'FUN&SUN Apollo Palace 5*',
+                background: 'background: url(https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=1f8171ff-2fff-421f-9736-c20495904ff0&height=460);background-position: center;background-size: cover',
+                hotelLinkAgent: '/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace',
+                hotelLinkClient: '/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/',
+                
+                //EE
+                countryNameEE: 'Kreeka, Korfu',
+                aboutHotelEEItems: [
+                    { item: 'Esimene rannajoon, kõigest mõne sammu kaugusel rannast' },
+                    { item: 'Lamamistoolid ja päikesevarjud ranna eraldatud tsoonis on hotellikülalistele tasuta' },
+                    { item: 'Mugavad toad võimalusega majutada 2+2' },
+                    { item: 'Suur territoorium, kus kasvavad oliivipuud' },
+                    { item: '3 basseini, neist 2 lasteosaga' },
+                    
+                    
+                ],
+                buttonEE : 'Otsi reisi',
+                
+                //LT
+                countryNameLT: 'Graikija, Korfu',
+                aboutHotelLTItems: [
+                    { item: '1-oje viešbučių linijoje, keli žingsniai iki paplūdimio' },
+                    { item: 'Skėčiai, gultai tam tikroje paplūdimio dalyje - nemokama' },
+                    { item: 'Patogūs kambariai su apgyvendinimo galimybe 2+2' },
+                    { item: 'Didelė viešbučio teritorija su alyvuogių giraite' },
+                    { item: '3 baseinai (2 iš jų su vaikų skyriumi)' },
+                    
+                ],
+                buttonLT : 'Pasirinkti',
+                
+                //LV
+                countryNameLV: 'Grieķija, Korfu',
+                aboutHotelLVItems: [
+                    { item: 'Pludmales pirmajā līnijā, dažu soļu attālumā no pludmales' },
+                    { item: 'Atpūtas krēsli un saulessargi atsevišķā pludmales zonā, viesnīcas viesiem - bezmaksas' },
+                    { item: 'Komfortablie numuri ar izmitināšanu 2+2' },
+                    { item: 'Liela viesnīcas teritorija ar olīvkokiem' },
+                    { item: '3 baseini, divi no tiem ir ar bērnu zonu' },
+                    
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
             },

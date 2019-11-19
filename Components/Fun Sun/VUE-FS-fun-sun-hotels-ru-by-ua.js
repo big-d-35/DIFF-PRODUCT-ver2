@@ -25,6 +25,7 @@ const funSunHotHotels = new Vue ({
         country3RU: 'Египет',
         country4RU: 'Черногория',
         country5RU: 'Испания',
+        country6RU: 'Греция',
         
         
         //BY 
@@ -33,6 +34,7 @@ const funSunHotHotels = new Vue ({
         country3BY: 'Египет',
         country4BY: 'Черногория',
         country5BY: 'Испания',
+        country6BY: 'Греция',
         
         //UA 
         country1UA: 'Турция',
@@ -40,6 +42,7 @@ const funSunHotHotels = new Vue ({
         country3UA: 'Египет',
         country4UA: 'Черногория',
         country5UA: 'Испания',
+        country6UA: 'Греция',
         
         //HOTELS 1 ТУРЦИЯ
         country1Hotels : [
@@ -881,7 +884,7 @@ const funSunHotHotels = new Vue ({
         country5Hotels : [
             //HOTEL 1
             {
-                hotelName : 'FUN&SUN Sorra Daurada 4*',
+                hotelName : 'FUN&SUN Sorra Daurada Splash 4*',
                 background: 'background: url(https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=77d05490-2114-48e1-8cbc-ddb50076d54b&height=460);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada',
                 hotelLinkClient: '/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/',
@@ -923,6 +926,53 @@ const funSunHotHotels = new Vue ({
                     { item: 'Детский аквапарк' },
                     { item: 'Отель полностью реновирован' },
                     { item: 'Спокойный регион' },
+                ],
+                buttonUA : 'Выбрать тур',
+            },
+
+        ],
+        
+        //HOTELS 6 ГРЕЦИЯ
+        country6Hotels : [
+            //HOTEL 1
+            {
+                hotelName : 'FUN&SUN Apollo Palace 5*',
+                background: 'background: url(https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=1f8171ff-2fff-421f-9736-c20495904ff0&height=460);background-position: center;background-size: cover',
+                hotelLinkAgent: '/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace',
+                hotelLinkClient: '/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/',
+                
+                //RU
+                countryNameRU: 'Греция, Корфу',
+                aboutHotelRUItems: [
+                    { item: 'Первая береговая линия, в нескольких шагах от пляжа' },
+                    { item: 'Шезлонги и зонтики в выделенной зоне пляжа бесплатные для гостей отеля' },
+                    { item: 'Комфортабельные номера с возможностью размещения 2+2' },
+                    { item: 'Большая территория отеля с оливковой рощей' },
+                    { item: '3 бассейна, 2 из которых с детской секцией' },
+                    
+                    
+                ],
+                buttonRU : 'Выбрать тур',
+                
+                //BY
+                countryNameBY: 'Греция, Корфу',
+                aboutHotelBYItems: [
+                    { item: 'Первая береговая линия, в нескольких шагах от пляжа' },
+                    { item: 'Шезлонги и зонтики в выделенной зоне пляжа бесплатные для гостей отеля' },
+                    { item: 'Комфортабельные номера с возможностью размещения 2+2' },
+                    { item: 'Большая территория отеля с оливковой рощей' },
+                    { item: '3 бассейна, 2 из которых с детской секцией' },
+                ],
+                buttonBY : 'Выбрать тур',
+                
+                //UA
+                countryNameUA: 'Греция, Корфу',
+                aboutHotelUAItems: [
+                    { item: 'Первая береговая линия, в нескольких шагах от пляжа' },
+                    { item: 'Шезлонги и зонтики в выделенной зоне пляжа бесплатные для гостей отеля' },
+                    { item: 'Комфортабельные номера с возможностью размещения 2+2' },
+                    { item: 'Большая территория отеля с оливковой рощей' },
+                    { item: '3 бассейна, 2 из которых с детской секцией' },
                 ],
                 buttonUA : 'Выбрать тур',
             },

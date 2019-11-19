@@ -332,130 +332,7 @@
 </table> -->
         </div>
 
-        <div class="container">
-            <!-- VIDEO ==================================================================== 
-            <style type="text/css">
-                .video-fun-sun {
-                    width: 100%;
-                    max-width: 1100px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    margin-top: 30px;
-                }
-
-                .video-fun-sun__video-block {
-                    width: 48%;
-                    min-width: 320px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    align-items: center;
-                }
-
-                .youtube {
-                    margin: 4px;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    position: relative;
-
-                }
-
-                .video-fun-sun__video-block__link {
-                    margin-top: 10px;
-                    margin-bottom: 30px;
-                    width: 100%;
-                    text-align: center;
-                    cursor: pointer;
-                }
-
-                .playfs {
-                    background: url('https://www.tui.ru/getmedia/8a51ddd2-89bc-4c18-8149-e5b14a478a3d/play-img') no-repeat center center;
-                    background-size: 120px 64px;
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    opacity: .8;
-                    filter: alpha(opacity=80);
-                    -webkit-transition: all 0.2s ease-out;
-                    -moz-transition: all 0.2s ease-out;
-                    -o-transition: all 0.2s ease-out;
-                    transition: all 0.2s ease-out;
-                }
-
-                @media screen and (max-width: 768px) {
-                    .video-fun-sun__video-block {
-                        width: 98%;
-                        min-width: 320px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        align-items: center;
-                    }
-                }
-            </style>
-            <div class="video-fun-sun">
-                <div class="video-fun-sun__video-block">
-                    <div class="youtube" id="ycn_8UdMem8" style="width:100%; height: 320px">&nbsp;</div>
-                    <a class="video-fun-sun__video-block__link" href="https://www.tui.ru/concepts/tui-fun-sun/concerts-and-master-classes/" target="_blank">Fitnesa meistarklašu grafiks FUN&amp;SUN viesnīcās</a>
-                </div>
-
-                <div class="video-fun-sun__video-block">
-                    <div class="youtube" id="gLseASL5MQ8" style="width: 100%; height: 320px">&nbsp;</div>
-                    <a class="video-fun-sun__video-block__link" href="https://www.tui.ru/concepts/tui-fun-sun/concerts-and-master-classes/" target="_blank">Skatuves mākslinieku uzstāšanas grafiks FUN&amp;SUN viesnīcās</a>
-                </div>
-            </div>
-            <script>
-                function rvideo(f) {
-                    /in/.test(document.readyState) ? setTimeout('rvideo(' + f + ')', 9) : f()
-                }
-                rvideo(function() {
-                    if (!document.getElementsByClassName) {
-                        // IE8 support
-                        var getElementsByClassName = function(node, classname) {
-                            var a = [];
-                            var re = new RegExp('(^| )' + classname + '( |$)');
-                            var els = node.getElementsByTagName("*");
-                            for (var i = 0, j = els.length; i < j; i++)
-                                if (re.test(els[i].className)) a.push(els[i]);
-                            return a;
-                        }
-                        var videos = getElementsByClassName(document.body, "youtube");
-                    } else {
-                        var videos = document.getElementsByClassName("youtube");
-                    }
-
-                    var nb_videos = videos.length;
-                    for (var i = 0; i < nb_videos; i++) {
-                        // Based on the YouTube ID, we can easily find the thumbnail image
-                        videos[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + videos[i].id + '/sddefault.jpg)';
-
-                        // Overlay the Play icon to make it look like a video player
-                        var play = document.createElement("div");
-                        play.setAttribute("class", "playfs");
-                        videos[i].appendChild(play);
-
-                        videos[i].onclick = function() {
-                            // Create an iFrame with autoplay set to true
-                            var iframe = document.createElement("iframe");
-                            var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
-                            if (this.getAttribute("data-params")) iframe_url += '&' + this.getAttribute("data-params");
-                            iframe.setAttribute("src", iframe_url);
-                            iframe.setAttribute("frameborder", '0');
-
-                            // The height and width of the iFrame should be the same as parent
-                            iframe.style.width = this.style.width;
-                            iframe.style.height = this.style.height;
-
-                            // Replace the YouTube thumbnail with YouTube Player
-                            this.parentNode.replaceChild(iframe, this);
-                        }
-                    }
-                });
-            </script> VIDEO ==================================================================== -->
-        </div>
+       
         <!-- FUN SUN ADVENTAGIES HOTELS BLOCK START ======================= -->
 
         <div class="container" id="advantagesHotels">
@@ -591,6 +468,7 @@
                         <a class="button-navigatin" data-block=".slider_2" href="#s2b3">{{country3LV}}</a> <!-- Отели с концепцией ЕГИПЕТ -->
                         <a class="button-navigatin" data-block=".slider_2" href="#s2b4">{{country4LV}}</a> <!-- Отели с концепцией ЧЕРНОГОРИЯ -->
                         <a class="button-navigatin" data-block=".slider_2" href="#s2b5">{{country5LV}}</a> <!-- Отели с концепцией ИСПАНИЯ -->
+                        <a class="button-navigatin" data-block=".slider_2" href="#s2b6">{{country6LV}}</a> <!-- Отели с концепцией ГРЕЦИЯ -->
                     </div>
                      <!-- Отели с концепцией Турция -->
 
@@ -777,6 +655,43 @@
                 </div>
             </div>
             
+            <!-- Отели с концепцией ГРЕЦИЯ -->
+
+            <div class="slider slider_2 n" id="s2b6">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country6Hotel in country6Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country6Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country6Hotel.countryNameLV }}</h4>
+
+                                    <p class="gey_p">{{ country6Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelLVItem in country6Hotel.aboutHotelLVItems"> {{ aboutHotelLVItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country6Hotel.hotelLinkAgent ">{{ country6Hotel.buttonLV }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
+            
         </div>
     </div>
     <!-- ОТЕЛИ END слайдер  ==================================================== -->
@@ -847,28 +762,28 @@
             </div>
         </div>
         <!-- РАЗВЛЕКАТЕЛЬНАЯ ПРОГРАММА END ================================= -->
-        <!--ПРОГРАММА АНИМАЦИИ START ================================= -->
+        <!--ПРОГРАММА АНИМАЦИИ START ================================= 
 
         <div class="container" id="funSunAnimationProgDownload">
             <div style="background:#e1f4fb;padding: 10px 7px;">
                 <div style="font-size:16px;text-align:center;">{{funSunPageAnimationProgTitle1LV}}</div>
 
                 <div style="margin-top:10px;text-align:center;"><span v-bind:style=" funSunPageAnimationProgIcon "><span style="opacity:0">.</span> </span> <a style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank" v-bind:href=" funSunPageAnimationProgTitle2LinkRU ">{{funSunPageAnimationProgTitle2LV}}</a></div>
-                <!-- ***************************************** -->
+                
 
                 <div style="margin-top:10px;text-align:center;"><span v-bind:style=" funSunPageAnimationProgIcon "><span style="opacity:0">.</span> </span> <a style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank" v-bind:href=" funSunPageAnimationProgTitle3LinkRU ">{{funSunPageAnimationProgTitle3LV}}</a></div>
-                <!-- ***************************************** -->
+                
 
                 <div style="margin-top:10px;text-align:center;"><span v-bind:style=" funSunPageAnimationProgIcon "><span style="opacity:0">.</span> </span> <a style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank" v-bind:href=" funSunPageAnimationProgTitle4LinkRU ">{{funSunPageAnimationProgTitle4LV}}</a></div>
-                <!-- ***************************************** -->
+                
 
                 <div style="font-size:16px;text-align:center;margin-top:7px;">{{funSunPageAnimationProgTitle5LV}}</div>
 
                 <div style="margin-top:10px;text-align:center;"><span v-bind:style=" funSunPageAnimationProgIcon "><span style="opacity:0">.</span> </span> <a style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank" v-bind:href=" funSunPageAnimationProgTitle6LinkRU ">{{funSunPageAnimationProgTitle6LV}}</a></div>
-                <!-- ***************************************** -->
+                
 
                 <div style="margin-top:10px;text-align:center;"><span v-bind:style=" funSunPageAnimationProgIcon "><span style="opacity:0">.</span> </span> <a style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank" v-bind:href=" funSunPageAnimationProgTitle7LinkRU ">{{funSunPageAnimationProgTitle7LV}}</a></div>
-                <!-- ***************************************** -->
+                
 
                 <div style="margin-top:10px;text-align:center;"><span v-bind:style=" funSunPageAnimationProgIcon "><span style="opacity:0">.</span> </span> <a style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank" v-bind:href=" funSunPageAnimationProgTitle8LinkRU ">{{funSunPageAnimationProgTitle8LV}}</a></div>
             </div>

@@ -1,217 +1,301 @@
-const smartHotels = new Vue ({
-    el : '#',
+const smartHotels = new Vue({
+    el: '#hotels',
     data: {
-        
-        hotelsTitleRU : 'Отели с концепцией SMART',
-        hotelsTitleBY : 'Отели с концепцией SMART',
-        hotelsTitleUA : 'Отели с концепцией SMART',
-        
-        
-        countryNames : [
-            
+
+        titleRU: 'Отели с концепцией DAY&NIGHT Connected',
+        titleBY: 'Отели с концепцией DAY&NIGHT Connected',
+        titleUA: 'Отели с концепцией DAY&NIGHT Connected',
+
+
+        countryNames: [
+
             //COUNTRY NAME 1
             {
                 id: 'country1',
-                nameRU: 'Турция',    
-                nameBY: 'Турция',    
-                nameUA: 'Турция', 
-                class: 'button-active',
+                nameRU: 'Турция',
+                nameBY: 'Турция',
+                nameUA: 'Турция',
+                class: 'active-link',
+                dataBlock: '.slider_2',
+                link: '#s2b1',
+                showRU: true,
+                showBY: true,
+                showUA: true,
+                
+            },
+
+            //COUNTRY NAME 2
+            {
+                id: 'country2',
+                nameRU: 'Кипр',
+                nameBY: 'Кипр',
+                nameUA: 'Кипр',
+                class: '',
+                dataBlock: '.slider_2',
+                link: '#s2b2',
+                showRU: true,
+                showBY: true,
+                showUA: true,
+                
             },
             
-            //COUNTRY NAME 2
-            /*{
-                id: 'country2',
-                nameRU: 'Кипр',    
-                nameBY: 'Кипр',    
-                nameUA: 'Кипр', 
-                class: '',
-            },*/
-        ],
-        
-        
-        countrys : [
+            //COUNTRY NAME 3
             {
-                id: 'country1-slider',
-                class: 'slider-active',
-                //HOTELS 1 ТУРЦИЯ
-                countryHotels : [
+                id: 'country3',
+                nameRU: 'Египет',
+                nameBY: 'Египет',
+                nameUA: 'Египет',
+                class: '',
+                dataBlock: '.slider_2',
+                link: '#s2b3',
+                showRU: false,
+                showBY: true,
+                showUA: true,
+                
+            },
+        ],
 
-                    //HOTEL 1
+        sliderBlocks: [
+
+            //ТУРЦИЯ
+            {
+                id: 's2b1',
+                class: '',
+                showRU: true,
+                showBY: true,
+                showUA: true,
+                
+                
+                hotels: [
+
+                        //HOTEL 1
                     {
-                    hotelName : 'Smart Club Marakesh Beach Hotel 4*',
-                    background: 'https://agent.tui.ru/img/9f32661c-239f-4db0-a47e-527e707b3209/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel.jpg',
-                    hotelLinkAgent: '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
-                    hotelLinkClient: '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
+                        name: 'DAY&NIGHT Connected Club Hydros 5*',
+                        background: 'background: url(https://www.tui.ru/getmedia/fcd8f40b-a716-4950-9889-ef1b177b6f2d/f_20170515_0821_f_1);background-position: center;background-size: cover',
+                        hotelLinkAgent: '/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros/',
+                        hotelLinkClient: '/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/',
 
-                    //RU
-                    countryNameRU: 'Турция, Бельдиби',
-                    aboutHotelRUItems: [
-                        { item: 'Собственный пляж' },
-                        { item: 'Бассейн с водными горками' },
-                        { item: 'Компактная территория' },
-                        { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
-                    ],
-                    hotelDateRU : 'запуск май 2020',    
-                    buttonRU : 'Выбрать тур',
+                        //RU
+                        countryNameRU: 'Турция, Кемер',
+                        aboutHotelRUItems: [
+                                { item: 'Центр Кемера' },
+                                { item: 'Реновация в 2018 году' },
+                                { item: 'Апельсиновая роща на территории' },
+                                { item: 'Ночные клубы AURA и INFERNO (5 мин. пешком)' },
+                                { item: 'Водные горки для взрослых' },
+                                { item: 'Галечный пляж с кристально чистой водой и пирсом' },
 
-                    //BY
-                    countryNameBY: 'Турция, Бельдиби',
-                    aboutHotelBYItems: [
-                        { item: 'Собственный пляж' },
-                        { item: 'Бассейн с водными горками' },
-                        { item: 'Компактная территория' },
-                        { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
-                    ],
-                    hotelDateBY : 'запуск май 2020',    
-                    buttonBY : 'Выбрать тур',
+                        ],
+                        hotelDateRU: 'запуск май 2020',
+                        buttonRU: 'Выбрать тур',
 
-                    //UA
-                    countryNameUA: 'Турция, Бельдиби',
-                    aboutHotelUAItems: [
-                        { item: 'Собственный пляж' },
-                        { item: 'Бассейн с водными горками' },
-                        { item: 'Компактная территория' },
-                        { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
-                    ],
-                    hotelDateUA : 'запуск май 2020',
-                    buttonUA : 'Выбрать тур',
-                },
+                        //BY
+                        countryNameBY: 'Турция, Кемер',
+                        aboutHotelBYItems: [
+                                { item: 'Центр Кемера' },
+                                { item: 'Реновация в 2018 году' },
+                                { item: 'Апельсиновая роща на территории' },
+                                { item: 'Ночные клубы AURA и INFERNO (5 мин. пешком)' },
+                                { item: 'Водные горки для взрослых' },
+                                { item: 'Галечный пляж с кристально чистой водой и пирсом' },
 
+                        ],
+                        hotelDateBY: 'запуск май 2020',
+                        buttonBY: 'Выбрать тур',
+
+                        //UA
+                        countryNameUA: 'Турция, Кемер',
+                        aboutHotelUAItems: [
+                                { item: 'Центр Кемера' },
+                                { item: 'Реновация в 2018 году' },
+                                { item: 'Апельсиновая роща на территории' },
+                                { item: 'Ночные клубы AURA и INFERNO (5 мин. пешком)' },
+                                { item: 'Водные горки для взрослых' },
+                                { item: 'Галечный пляж с кристально чистой водой и пирсом' },
+
+                        ],
+                        hotelDateUA: 'запуск май 2020',
+                        buttonUA: 'Выбрать тур',
+                    },
+                    
                     //HOTEL 2
                     {
-                    hotelName : 'Smart Euphoria Bella Mare Hotel 4*',
-                    background: 'https://agent.tui.ru/img/c13ba3f4-345b-4f64-a14d-3f1ebd5eb092/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel.jpg',
-                    hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel',
-                    hotelLinkClient: '/hotel/europe-turkey-alanya-mahmutlar-smart__euphoria__bella__mare__hotel/',
+                        name: 'DAY&NIGHT Connected Imperial Turkiz Hotel 5*',
+                        background: 'background: url(https://agent.tui.ru/img/8613f679-7613-4df2-8f49-6b87c5a5c464/Europe/Turkey/Kemer/Kemer-Center/day-night-connected-imperial-turkiz-hotel.jpg?geo=1);background-position: center;background-size: cover',
+                        hotelLinkAgent: '/Tours/Europe/Turkey/Kemer/Kemer-Center/day-night-connected-imperial-turkiz-hotel',
+                        hotelLinkClient: '/hotel/europe-turkey-kemer-kemer__center-day__night__connected__imperial__turkiz__hotel/',
 
-                    //RU
-                    countryNameRU: 'Турция, Махмутлар',
-                    aboutHotelRUItems: [
-                        { item: 'Песчано-галечный пляж' },
-                        { item: 'Компактная территория' },
-                        { item: 'Открытые бассейны' },
-                        { item: '2 водные горки' },
-                        { item: 'A la carte на пляже' },
+                        //RU
+                        countryNameRU: 'Турция, Кемер',
+                        aboutHotelRUItems: [
+                                { item: 'Cобственный песчано-галечный пляж' },
+                                { item: 'Три a la carte ресторана' },
+                                { item: 'Сцена для велнес активностей и препати вечеринок на пляже' },
+                                { item: 'Бесплатный вход в ночные клубы Aura и Inferno' },
+                                
 
-                    ],
-                    hotelDateRU : 'запуск май 2020',    
-                    buttonRU : 'Выбрать тур',
+                        ],
+                        hotelDateRU: 'запуск май 2020',
+                        buttonRU: 'Выбрать тур',
 
-                    //BY
-                    countryNameBY: 'Турция, Махмутлар',
-                    aboutHotelBYItems: [
-                        { item: 'Песчано-галечный пляж' },
-                        { item: 'Компактная территория' },
-                        { item: 'Открытые бассейны' },
-                        { item: '2 водные горки' },
-                        { item: 'A la carte на пляже' },
-                    ],
-                    hotelDateBY : 'запуск май 2020',    
-                    buttonBY : 'Выбрать тур',
+                        //BY
+                        countryNameBY: 'Турция, Кемер',
+                        aboutHotelBYItems: [
+                                { item: 'Cобственный песчано-галечный пляж' },
+                                { item: 'Три a la carte ресторана' },
+                                { item: 'Сцена для велнес активностей и препати вечеринок на пляже' },
+                                { item: 'Бесплатный вход в ночные клубы Aura и Inferno' },
 
-                    //UA
-                    countryNameUA: 'Турция, Махмутлар',
-                    aboutHotelUAItems: [
-                        { item: 'Песчано-галечный пляж' },
-                        { item: 'Компактная территория' },
-                        { item: 'Открытые бассейны' },
-                        { item: '2 водные горки' },
-                        { item: 'A la carte на пляже' },
-                    ],
-                    hotelDateUA : 'запуск май 2020',    
-                    buttonUA : 'Выбрать тур',
-                },
+                        ],
+                        hotelDateBY: 'запуск май 2020',
+                        buttonBY: 'Выбрать тур',
 
-                    //HOTEL 3
-                    {
-                    hotelName : 'Smart Limoncello Konakli Beach Hotel 5*',
-                    background: 'https://agent.tui.ru/img/c49774bb-b878-4f04-bec6-d043ea833e95/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel.jpg?geo=1&width=620&height=380',
-                    hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel',
-                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel/',
+                        //UA
+                        countryNameUA: 'Турция, Кемер',
+                        aboutHotelUAItems: [
+                                { item: 'Cобственный песчано-галечный пляж' },
+                                { item: 'Три a la carte ресторана' },
+                                { item: 'Сцена для велнес активностей и препати вечеринок на пляже' },
+                                { item: 'Бесплатный вход в ночные клубы Aura и Inferno' },
 
-                    //RU
-                    countryNameRU: 'Турция, Конаклы',
-                    aboutHotelRUItems: [
-                        { item: 'Песчаный пляж' },
-                        { item: 'Зеленая территория' },
-                        { item: 'Уникальный дизайн' },
-                        { item: 'Просторные номера' },
-
-                    ],
-                    hotelDateRU : 'запуск май 2020',    
-                    buttonRU : 'Выбрать тур',
-
-                    //BY
-                    countryNameBY: 'Турция, Конаклы',
-                    aboutHotelBYItems: [
-                        { item: 'Песчаный пляж' },
-                        { item: 'Зеленая территория' },
-                        { item: 'Уникальный дизайн' },
-                        { item: 'Просторные номера' },
-                    ],
-                    hotelDateBY : 'запуск май 2020',    
-                    buttonBY : 'Выбрать тур',
-
-                    //UA
-                    countryNameUA: 'Турция, Конаклы',
-                    aboutHotelUAItems: [
-                        { item: 'Песчаный пляж' },
-                        { item: 'Зеленая территория' },
-                        { item: 'Уникальный дизайн' },
-                        { item: 'Просторные номера' },
-                    ],
-                    hotelDateUA : 'запуск май 2020',    
-                    buttonUA : 'Выбрать тур',
-                },
-
-                    //HOTEL 4
-                    {
-                    hotelName : 'Smart Club Hotel Mirabell',
-                    background: 'https://www.tui.ru/getmedia/960b240d-2407-4940-8d3e-247396f9eb4a/T12_hotel_Pegasos-Club',
-                    hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
-                    hotelLinkClient: '/hotel/europe-turkey-alanya-incekum-pegasos__club/',
-
-                    //RU
-                    countryNameRU: 'Турция, Конаклы',
-                    aboutHotelRUItems: [
-                        { item: '70% номеров с видом на море' },
-                        { item: 'Размещение с домашними животными' },
-                        { item: '2 открытых бассейна (230 кв.м и 165 кв.м)' },
-                        { item: '2 водные горки' },
-
-                    ],
-                    hotelDateRU : 'запуск май 2020',
-                    buttonRU : 'Выбрать тур',
-
-                    //BY
-                    countryNameBY: 'Турция, Конаклы',
-                    aboutHotelBYItems: [
-                        { item: '70% номеров с видом на море' },
-                        { item: 'Размещение с домашними животными' },
-                        { item: '2 открытых бассейна (230 кв.м и 165 кв.м)' },
-                        { item: '2 водные горки' },
-                    ],
-                    hotelDateBY : 'запуск май 2020',    
-                    buttonBY : 'Выбрать тур',
-
-                    //UA
-                    countryNameUA: 'Турция, Конаклы',
-                    aboutHotelUAItems: [
-                        { item: '70% номеров с видом на море' },
-                        { item: 'Размещение с домашними животными' },
-                        { item: '2 открытых бассейна (230 кв.м и 165 кв.м)' },
-                        { item: '2 водные горки' },
-                    ],
-                    hotelDateUA : 'запуск май 2020',    
-                    buttonUA : 'Выбрать тур',
-                },
+                        ],
+                        hotelDateUA: 'запуск май 2020',
+                        buttonUA: 'Выбрать тур',
+                    },
                 ],
             },
             
+            //КИПР
+            {
+                id: 's2b2',
+                class: 'n',
+                showRU: true,
+                showBY: true,
+                showUA: true,
+                
+                
+                hotels: [
+
+                        //HOTEL 1
+                    {
+                        name: 'DAY&NIGHT Connected Season 4*',
+                        background: 'background: url(https://agent.tui.ru/img/8dfbd302-20bb-42c8-98f9-ee6d2f6e958b/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons.jpg?geo=1);background-position: center;background-size: cover',
+                        hotelLinkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons',
+                        hotelLinkClient: '/hotel/europe-cyprus-ayia__napa-ayia__napa-day__night__connected__seasons/',
+
+                        //RU
+                        countryNameRU: 'Кипр, Айя-Напа',
+                        aboutHotelRUItems: [
+                                { item: 'Открытый бассейн' },
+                                { item: 'Муниципальный песчаный пляж в 5 минутах' },
+                                { item: 'Отель расположен в центре Айя-Напы' },
+                                { item: 'Один a la carte ресторан' },
+                                { item: 'Бесплатный вход в ночной клуб Castle в VIP-зону и бесплатным напитком' },
+                                
+
+                        ],
+                        hotelDateRU: 'запуск май 2020',
+                        buttonRU: 'Выбрать тур',
+
+                        //BY
+                        countryNameBY: 'Кипр, Айя-Напа',
+                        aboutHotelBYItems: [
+                                { item: 'Открытый бассейн' },
+                                { item: 'Муниципальный песчаный пляж в 5 минутах' },
+                                { item: 'Отель расположен в центре Айя-Напы' },
+                                { item: 'Один a la carte ресторан' },
+                                { item: 'Бесплатный вход в ночной клуб Castle в VIP-зону и бесплатным напитком' },
+
+                        ],
+                        hotelDateBY: 'запуск май 2020',
+                        buttonBY: 'Выбрать тур',
+
+                        //UA
+                        countryNameUA: 'Кипр, Айя-Напа',
+                        aboutHotelUAItems: [
+                                { item: 'Открытый бассейн' },
+                                { item: 'Муниципальный песчаный пляж в 5 минутах' },
+                                { item: 'Отель расположен в центре Айя-Напы' },
+                                { item: 'Один a la carte ресторан' },
+                                { item: 'Бесплатный вход в ночной клуб Castle в VIP-зону и бесплатным напитком' },
+
+                        ],
+                        hotelDateUA: 'запуск май 2020',
+                        buttonUA: 'Выбрать тур',
+                    },
+                    
+                    
+                ],
+            },
             
+            //ЕГИПЕТ
+            {
+                id: 's2b3',
+                class: 'n',
+                showRU: false,
+                showBY: true,
+                showUA: true,
+                
+                
+                hotels: [
+
+                        //HOTEL 1
+                    {
+                        name: 'DAY&NIGHT Connected Tropitel Waves 5*',
+                        background: 'background: url(https://www.tui.ru/getmedia/5d66d0ce-b9b0-43de-83c2-5869230e9870/day-night);background-position: center;background-size: cover',
+                        hotelLinkAgent: '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/day-night-connected-tropitel-waves',
+                        hotelLinkClient: '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-day__night__connected__tropitel__waves/',
+
+                        //RU
+                        countryNameRU: 'Египет, Шарм Эль Шейх',
+                        aboutHotelRUItems: [
+                                { item: 'Компактная территория' },
+                                { item: 'Центр Наама Бэй (1 км, через отель Tropitel Naama Bay Hotel 5*, 10 минут пешком)' },
+                                { item: 'Абсолютно новый отель (2019 г.)' },
+                                { item: 'Водные горки для взрослых (с подогревом в зимний период)' },
+                                { item: 'Пляж с песчаным заходом с берега в безветренной бухте' },
+                                { item: 'Рядом с отелем популярный торговый центр, рыбные рестораны и модные ночные клубы' },
+                                
+
+                        ],
+                        hotelDateRU: 'запуск май 2020',
+                        buttonRU: 'Выбрать тур',
+
+                        //BY
+                        countryNameBY: 'Египет, Шарм Эль Шейх',
+                        aboutHotelBYItems: [
+                                { item: 'Компактная территория' },
+                                { item: 'Центр Наама Бэй (1 км, через отель Tropitel Naama Bay Hotel 5*, 10 минут пешком)' },
+                                { item: 'Абсолютно новый отель (2019 г.)' },
+                                { item: 'Водные горки для взрослых (с подогревом в зимний период)' },
+                                { item: 'Пляж с песчаным заходом с берега в безветренной бухте' },
+                                { item: 'Рядом с отелем популярный торговый центр, рыбные рестораны и модные ночные клубы' },
+
+                        ],
+                        hotelDateBY: 'запуск май 2020',
+                        buttonBY: 'Выбрать тур',
+
+                        //UA
+                        countryNameUA: 'Египет, Шарм Эль Шейх',
+                        aboutHotelUAItems: [
+                                { item: 'Компактная территория' },
+                                { item: 'Центр Наама Бэй (1 км, через отель Tropitel Naama Bay Hotel 5*, 10 минут пешком)' },
+                                { item: 'Абсолютно новый отель (2019 г.)' },
+                                { item: 'Водные горки для взрослых (с подогревом в зимний период)' },
+                                { item: 'Пляж с песчаным заходом с берега в безветренной бухте' },
+                                { item: 'Рядом с отелем популярный торговый центр, рыбные рестораны и модные ночные клубы' },
+
+                        ],
+                        hotelDateUA: 'запуск май 2020',
+                        buttonUA: 'Выбрать тур',
+                    },
+                    
+                    
+                ],
+            }
+
         ],
-        
-        
-        
+
     }
 })
+    

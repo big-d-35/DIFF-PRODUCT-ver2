@@ -53,7 +53,7 @@ const AgentMenuHeader = new Vue ({
         
         //Smart
         menuItemSmartLink: '/concepts/smart',
-        menuItemSmartLogo: 'https://www.tui.ru/getmedia/dae3517e-c26d-4e8c-9ed0-93d2faef2cd9/smart-logo-300px',
+        menuItemSmartLogo: 'https://www.tui.ru/getmedia/511d2990-bd5a-4111-a3f4-8480839ebd52/Smart-Logo_1',
         menuItemSmartName: 'SMART',
         menuItemSmartNameRU: 'Умный подход к отдыху',
         menuItemSmartNameBY: 'Умный подход к отдыху',

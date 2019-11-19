@@ -387,7 +387,7 @@
     </div>
 
 
-    <!--ПРОГРАММА АНИМАЦИИ START ================================= -->
+    <!--ПРОГРАММА АНИМАЦИИ START ================================= 
 
     <div class="container" id="funSunAnimationProgDownload">
         <div style="background:#e1f4fb;padding: 10px 7px;">
@@ -399,7 +399,7 @@
                 </span>
                 <a v-bind:href=" funSunPageAnimationProgTitle2LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle2RU}}</a>
             </div>
-            <!-- ***************************************** -->
+            
 
             <div style="margin-top:10px;text-align:center;">
                 <span v-bind:style=" funSunPageAnimationProgIcon ">
@@ -407,7 +407,7 @@
                 </span>
                 <a v-bind:href=" funSunPageAnimationProgTitle3LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle3RU}}</a>
             </div>
-            <!-- ***************************************** -->
+            
 
             <div style="margin-top:10px;text-align:center;">
                 <span v-bind:style=" funSunPageAnimationProgIcon ">
@@ -415,7 +415,7 @@
                 </span>
                 <a v-bind:href=" funSunPageAnimationProgTitle4LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle4RU}}</a>
             </div>
-            <!-- ***************************************** -->
+           
 
             <div style="font-size:16px;text-align:center;margin-top:7px;">{{funSunPageAnimationProgTitle5RU}}</div>
 
@@ -425,7 +425,7 @@
                 </span>
                 <a v-bind:href=" funSunPageAnimationProgTitle6LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle6RU}}</a>
             </div>
-            <!-- ***************************************** -->
+            
 
             <div style="margin-top:10px;text-align:center;">
                 <span v-bind:style=" funSunPageAnimationProgIcon ">
@@ -433,7 +433,7 @@
                 </span>
                 <a v-bind:href=" funSunPageAnimationProgTitle7LinkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px" target="_blank">{{funSunPageAnimationProgTitle7RU}}</a>
             </div>
-            <!-- ***************************************** -->
+            
 
             <div style="margin-top:10px;text-align:center;">
                 <span v-bind:style=" funSunPageAnimationProgIcon ">
@@ -683,6 +683,7 @@
                 <!--<a class="button-navigatin" data-block=".slider_2" href="#s2b3">{{country3RU}}</a>  Отели с концепцией ЕГИПЕТ -->
                 <a class="button-navigatin" data-block=".slider_2" href="#s2b4">{{country4RU}}</a> <!-- Отели с концепцией ЧЕРОНОГОРИЯ -->
                 <a class="button-navigatin" data-block=".slider_2" href="#s2b5">{{country5RU}}</a> <!-- Отели с концепцией ИСПАНИЯ -->
+                <a class="button-navigatin" data-block=".slider_2" href="#s2b6">{{country6RU}}</a> <!-- Отели с концепцией ГРЕЦИЯ -->
             </div>
             <!-- Отели с концепцией Турция -->
 
@@ -869,6 +870,42 @@
                 </div>
             </div>
             
+            <!-- Отели с концепцией  ГРЕЦИЯ -->
+
+            <div class="slider slider_2 n" id="s2b6">
+                <div class="row-slider" data-col="3">
+                    <!-- ОДИН ОТЕЛЬ СТАРТ ===================================-->
+                    
+                    <div class="col-md-4 myslide col-slider-3" v-for=" country6Hotel in country6Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country6Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country6Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country6Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country6Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country6Hotel.hotelLinkClient ">{{ country6Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- ОДИН ОТЕЛЬ END ===================================-->
+
+                    
+                </div>
+            </div>
             
         </div>
     </div>
