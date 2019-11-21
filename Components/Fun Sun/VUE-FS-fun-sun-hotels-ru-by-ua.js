@@ -501,7 +501,7 @@ const funSunHotHotels = new Vue ({
             
             //HOTEL 11
             {
-                hotelName : 'FUN&SUN Life Side Resort Hotel 5*',
+                hotelName : 'FUN&SUN Life Side 5',
                 background: 'background: url(https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=f21e1fe8-2170-4202-9ada-d5b4701659c4&height=460);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel',
                 hotelLinkClient: '/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/',
@@ -885,7 +885,7 @@ const funSunHotHotels = new Vue ({
             //HOTEL 1
             {
                 hotelName : 'FUN&SUN Sorra Daurada Splash 4*',
-                background: 'background: url(https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=77d05490-2114-48e1-8cbc-ddb50076d54b&height=460);background-position: center;background-size: cover',
+                background: 'background: url(https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=bf556f49-b34b-4fbe-bf37-0ab3976ab5ec&height=460);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada',
                 hotelLinkClient: '/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/',
                 

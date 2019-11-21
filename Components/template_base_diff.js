@@ -128,7 +128,7 @@ var table_fs = {
         },
         {
             country_Turkey: "TUR",
-            name_hotel: " FUN&SUN Life Side Resort Hotel 5*",
+            name_hotel: " FUN&SUN Life Side 5*",
             href_tui_ru: "/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/",
             href_tui_ua: "/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/",
             href_tui_by: "/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/",
@@ -314,7 +314,7 @@ var table_fs_ee = {
         },
         {
             country_Turkey: "TUR",
-            name_hotel: "FUN&SUN Life Side Resort Hotel 5*",
+            name_hotel: "FUN&SUN Life Side 5*",
             href_tui_ee: "/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/",
             href_agent_ee: "/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel",
             data_hotel: "1.05.2020"
@@ -462,7 +462,7 @@ var table_fs_lt = {
         },
         {
             country_Turkey: "TUR",
-            name_hotel: "FUN&SUN Life Side Resort Hotel 5*",
+            name_hotel: "FUN&SUN Life Side 5*",
             href_tui_lt: "/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/",
             href_agent_lt: "/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel",
             data_hotel: "1.05.2020"
@@ -610,7 +610,7 @@ var table_fs_lv = {
         },
         {
             country_Turkey: "TUR",
-            name_hotel: "FUN&SUN Life Side Resort Hotel 5*",
+            name_hotel: "FUN&SUN Life Side 5*",
             href_tui_lv: "/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/",
             href_agent_lv: "/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel",
             data_hotel: "1.05.2020"
@@ -801,7 +801,7 @@ var table_tc = {
             href_agent_by: "/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort",
             data_hotel: "1.06.2020"
         },
-        /*{
+        {
             name_hotel: "Don Juan Tossa 4*",
             href_tui_ru: "/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/",
             href_tui_ua: "/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/",
@@ -809,8 +809,8 @@ var table_tc = {
             href_agent_ru: "/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa",
             href_agent_ua: "/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa",
             href_agent_by: "/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa",
-            data_hotel: "30.09.2019"
-        },*/
+            data_hotel: "01.06.2020"
+        },
         
         {
             country_hotel: "ОАЭ",
@@ -930,6 +930,12 @@ var table_tc_ee = {
             href_agent_ee: "/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort",
             data_hotel: "1.06.2020"
         },
+        {
+            name_hotel: "Don Juan Tossa 4*",
+            href_tui_ee: "/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/",
+            href_agent_ee: "/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa",
+            data_hotel: "01.06.2020"
+        },
         /*{
             country_hotel: "OAE",
             name_hotel: "Al Hamra Village Golf & Beach Resort 4*",
@@ -1038,6 +1044,12 @@ var table_tc_lt = {
             href_agent_lt: "/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort",
             data_hotel: "1.06.2020"
         },
+        {
+            name_hotel: "Don Juan Tossa 4*",
+            href_tui_lt: "/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/",
+            href_agent_lt: "/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa",
+            data_hotel: "01.06.2020"
+        },
         /*{
             country_hotel: "OAE",
             name_hotel: "Al Hamra Village Golf & Beach Resort 4*",
@@ -1145,6 +1157,12 @@ var table_tc_lv = {
             href_tui_lv: "/hotel/europe-spain-costa__dorada-la__pineda-estival__park__hotel__resort/",
             href_agent_lv: "/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort",
             data_hotel: "1.06.2020"
+        },
+        {
+            name_hotel: "Don Juan Tossa 4*",
+            href_tui_lv: "/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/",
+            href_agent_lv: "/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa",
+            data_hotel: "01.06.2020"
         },
         /*{
             
@@ -1308,18 +1326,36 @@ var table_dn_ee = {
     title: "DAY&NIGHT Connected (Türgi) hotellid",
     description: "Kontseptsioonide lõppkuupäevad hotellides",
     hotel: [
-        {
+        /*{
             name_hotel: " DAY&NIGHT Connected Club Hydros 5*",
             href_tui_ee: "/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/",
             href_agent_ee: "/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros",
             data_hotel: "01.05.2020"
-        },
+        },*/
         {
-            name_hotel: " DAY&NIGHT Connected Club Life Belek 5*",
+            country_hotel: "Türgi",
+            country_Turkey: "TUR",
+            name_hotel: "DAY&NIGHT Connected Club Life Belek 5*",
             href_tui_ee: "/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/",
             href_agent_ee: "/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek",
             data_hotel: "01.05.2020"
-        }
+        },
+        {
+            country_hotel: "Küpros",
+            country_Turkey: "CYP",
+            name_hotel: "DAY&NIGHT Connected Season 4*",
+            href_tui_ee: "/hotel/europe-cyprus-ayia__napa-ayia__napa-day__night__connected__seasons/",
+            href_agent_ee: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons",
+            data_hotel: "01.05.2020"
+        },
+        {
+            country_hotel: "Egiptus",
+            country_Turkey: "EGP",
+            name_hotel: "DAY&NIGHT Connected Tropitel Waves 5*",
+            href_tui_ee: "/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-day__night__connected__tropitel__waves/",
+            href_agent_ee: "/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/day-night-connected-tropitel-waves",
+            data_hotel: "15.12.2019"
+        },
 	  ],
     table_description: [
         {
@@ -1412,18 +1448,36 @@ var table_dn_lt = {
     title: "DAY&NIGHT Connected viešbučiai (Turkija)",
     description: "Koncepcijos pabaigos data",
     hotel: [
-        {
+        /*{
             name_hotel: " DAY&NIGHT Connected Club Hydros 5*",
             href_tui_lt: "/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/",
             href_agent_lt: "/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros",
             data_hotel: "01.05.2020"
-        },
+        },*/
         {
-            name_hotel: " DAY&NIGHT Connected Club Life Belek 5*",
+            country_hotel: "Turkija",
+            country_Turkey: "TUR",
+            name_hotel: "DAY&NIGHT Connected Club Life Belek 5*",
             href_tui_lt: "/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/",
             href_agent_lt: "/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek",
             data_hotel: "01.05.2020"
-        }
+        },
+        {
+            country_hotel: "Kipras",
+            country_Turkey: "CYP",
+            name_hotel: "DAY&NIGHT Connected Season 4*",
+            href_tui_lt: "/hotel/europe-cyprus-ayia__napa-ayia__napa-day__night__connected__seasons/",
+            href_agent_lt: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons",
+            data_hotel: "01.05.2020"
+        },
+        {
+            country_hotel: "Egiptas",
+            country_Turkey: "EGP",
+            name_hotel: "DAY&NIGHT Connected Tropitel Waves 5*",
+            href_tui_lt: "/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-day__night__connected__tropitel__waves/",
+            href_agent_lt: "/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/day-night-connected-tropitel-waves",
+            data_hotel: "15.12.2019"
+        },
 	  ],
     table_description: [
         {
@@ -1516,13 +1570,36 @@ var table_dn_lv = {
     title: "Viesnīcas DAY&NIGHT Connected (Turcija)",
     description: "Koncepcijas slēgšanas datums viesnīcās",
     hotel: [
-        {
+        /*{
             name_hotel: " DAY&NIGHT Connected Club Hydros 5*",
             href_tui_lv: "/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/",
             href_agent_lv: "/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros",
             data_hotel: "01.05.2020"
+        },*/
+	    {
+            country_hotel: "Turcija",
+            country_Turkey: "TUR",
+            name_hotel: "DAY&NIGHT Connected Club Life Belek 5*",
+            href_tui_lv: "/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/",
+            href_agent_lv: "/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek",
+            data_hotel: "01.05.2020"
         },
-	    
+        {
+            country_hotel: "Kipra",
+            country_Turkey: "CYP",
+            name_hotel: "DAY&NIGHT Connected Season 4*",
+            href_tui_lv: "/hotel/europe-cyprus-ayia__napa-ayia__napa-day__night__connected__seasons/",
+            href_agent_lv: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons",
+            data_hotel: "01.05.2020"
+        },
+        {
+            country_hotel: "Ēģipte",
+            country_Turkey: "EGP",
+            name_hotel: "DAY&NIGHT Connected Tropitel Waves 5*",
+            href_tui_lv: "/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-day__night__connected__tropitel__waves/",
+            href_agent_lv: "/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/day-night-connected-tropitel-waves",
+            data_hotel: "15.12.2019"
+        },
 	  ],
     table_description: [
         {

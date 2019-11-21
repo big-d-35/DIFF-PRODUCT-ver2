@@ -12,8 +12,8 @@ const smartHotels = new Vue ({
             //COUNTRY NAME 1
             {
                 id: 'country1',
-                nameEE: 'Турция',    
-                nameLT: 'Турция',    
+                nameEE: 'Türgi',    
+                nameLT: 'Turkija',    
                 nameLV: 'Turcija', 
                 class: 'button-active',
                 showEE: true,

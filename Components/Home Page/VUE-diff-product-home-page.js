@@ -79,7 +79,7 @@ const homePageTextBlock = new Vue ({
 const homePageSmartBlockText = new Vue ({
     el: '#home-page-smart-block-text',
     data: {
-        logo: 'https://www.tui.ru/getmedia/7eea7272-a23a-4d66-9df7-4eb7463c2a55/smart-logo-80px',
+        logo: 'https://www.tui.ru/getmedia/52f90797-c27f-4d1d-91c9-ce88f091eccf/Smart-Logo-80px',
         
         titleRU1: 'Концепция отдыха SMART',
         titleRU2: 'Умный подход к отдыху',
@@ -318,7 +318,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         
         homeFunSunHotelLink15: '/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel',
         homeFunSunHotelLinkClient15: '/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/',
-        homeFunSunHotelName15: 'FUN&SUN Life Side Resort Hotel 5*',
+        homeFunSunHotelName15: 'FUN&SUN Life Side 5',
         
         homeFunSunHotelLink16: '/Tours/Europe/Turkey/belek/Bogazkent/FUN-SUN-Life-Belek',
         homeFunSunHotelLinkClient16: '/hotel/europe-turkey-belek-bogazkent-fun__sun__life__belek/',
@@ -618,9 +618,9 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanHotelLinkClient10: '/hotel/europe-spain-costa__dorada-la__pineda-estival__park__hotel__resort/',
         homeToucanHotelName10: 'Estival Park Hotel Resort 4*',
         
-        /*homeToucanHotelLink11: '/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa',
+        homeToucanHotelLink11: '/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa',
         homeToucanHotelLinkClient11: '/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/',
-        homeToucanHotelName11: 'Don Juan Tossa 4*',*/
+        homeToucanHotelName11: 'Don Juan Tossa 4*',
         
         homeToucanHotelLink12: '/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom',
         homeToucanHotelLinkClient12: '/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/',
