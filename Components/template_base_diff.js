@@ -372,6 +372,13 @@ var table_fs_ee = {
             href_agent_ee: "/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace",
             data_hotel: "15.05.2020"
         },
+        {
+            country_hotel: "Montenegro",
+            name_hotel: " Pearl Beach Resort 4*",
+            href_tui_ee: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_agent_ee: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            data_hotel: "2.05.2020"
+        },
 	  ]
 };
 
@@ -519,6 +526,13 @@ var table_fs_lt = {
             href_tui_lt: "/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/",
             href_agent_lt: "/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace",
             data_hotel: "15.05.2020"
+        },
+        {
+            country_hotel: "Juodkalnija",
+            name_hotel: "FUN&SUN Pearl Beach Resort 4*",
+            href_tui_lt: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_agent_lt: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            data_hotel: "2.05.2020"
         },
 	  ]
 };
@@ -668,6 +682,13 @@ var table_fs_lv = {
             href_agent_lv: "/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace",
             data_hotel: "15.05.2020"
         },
+        {
+            country_hotel: "Melnkalne",
+            name_hotel: "Pearl Beach Resort 4*",
+            href_tui_lv: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_agent_lv: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            data_hotel: "2.05.2020"
+        },
 	  ]
 };
 
@@ -682,8 +703,8 @@ var table_tc = {
     title: "Отели с Клубами Мини Тукан",
     description: "Дата открытия клубов Тукан в отелях",
     hotel: [
-        {
-            country_hotel: "Турция",
+        /*{
+            
             country_Turkey: "TUR",
             name_hotel: "Kilikya Resort Camyuva 5*",
             href_tui_ru: "/hotel/europe-turkey-kemer-camyuva-kilikya__resort__camyuva/",
@@ -693,8 +714,9 @@ var table_tc = {
             href_agent_ua: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
             href_agent_by: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
             data_hotel: "1.05.2020"
-	    },
+	    },*/
         {
+            country_hotel: "Турция",
             country_Turkey: "TUR",
             name_hotel: "Pegasos Club 4*",
             href_tui_ru: "/hotel/europe-turkey-alanya-incekum-pegasos__club/",
@@ -779,6 +801,17 @@ var table_tc = {
             href_agent_by: "/tours/europe/montenegro/budvanska-rivijera/petrovac/castellastva/",
             data_hotel: "1.06.2020"
         },
+        /*{
+            
+            name_hotel: "Pearl Beach Resort 4*",
+            href_tui_ru: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_tui_ua: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_tui_by: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_agent_ru: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            href_agent_ua: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            href_agent_by: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            data_hotel: "2.05.2020"
+        },*/
         {
             country_hotel: "Италия",
             name_hotel: "Falkensteiner Club Funimation Calabria (ex. Garden Resort Calabria) 4*",
@@ -855,15 +888,16 @@ var table_tc_ee = {
     title: "Mini Toucan hotellidega klubid",
     description: "Toucan klubide lõppkuupäevad",
     hotel: [
-        {
-            country_hotel: "Türgi",
+        /*{
+            
             country_Turkey: "TUR",
             name_hotel: "Kilikya Resort Camyuva 5*",
             href_tui_ee: "/hotel/europe-turkey-kemer-camyuva-kilikya__resort__camyuva/",
             href_agent_ee: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
             data_hotel: "1.05.2020"
-	    },
+	    },*/
         {
+            country_hotel: "Türgi",
             country_Turkey: "TUR",
             name_hotel: "Pegasos Club 4*",
             href_tui_ee: "/hotel/europe-turkey-alanya-incekum-pegasos__club/",
@@ -916,6 +950,12 @@ var table_tc_ee = {
             href_agent_ee: "/tours/europe/montenegro/budvanska-rivijera/petrovac/castellastva/",
             data_hotel: "1.06.2020"
         },
+        /*{
+            name_hotel: "Pearl Beach Resort 4*",
+            href_tui_ee: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_agent_ee: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            data_hotel: "2.05.2020"
+        },*/
         {
             country_hotel: "Itaalia",
             name_hotel: "Falkensteiner Club Funimation Calabria (ex. Garden Resort Calabria) 4*",
@@ -969,15 +1009,16 @@ var table_tc_lt = {
     title: "Viešbučiai su Mini Toucan vaikų klubu",
     description: "Vaikų klubo Toucan uždarymo data viešbučiuose",
     hotel: [
-        {
-            country_hotel: "Turkija",
+        /*{
+            
             country_Turkey: "TUR",
             name_hotel: "Kilikya Resort Camyuva 5*",
             href_tui_lt: "/hotel/europe-turkey-kemer-camyuva-kilikya__resort__camyuva/",
             href_agent_lt: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
             data_hotel: "1.05.2020"
-	    },
+	    },*/
         {
+            country_hotel: "Turkija",
             country_Turkey: "TUR",
             name_hotel: "Pegasos Club 4*",
             href_tui_lt: "/hotel/europe-turkey-alanya-incekum-pegasos__club/",
@@ -1030,6 +1071,12 @@ var table_tc_lt = {
             href_agent_lt: "/tours/europe/montenegro/budvanska-rivijera/petrovac/castellastva/",
             data_hotel: "1.06.2020"
         },
+        /*{
+            name_hotel: "Pearl Beach Resort 4*",
+            href_tui_lt: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_agent_lt: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            data_hotel: "2.05.2020"
+        },*/
         {
             country_hotel: "Italija",
             name_hotel: "Falkensteiner Club Funimation Calabria (ex. Garden Resort Calabria) 4*",
@@ -1083,15 +1130,16 @@ var table_tc_lv = {
     title: "Viesnīcas ar Mini Toucan Klubiem",
     description: "Toucan klubu slēgšanas datums viesnīcās",
     hotel: [
-        {
-            country_hotel: "Turcija",
+        /*{
+            
             country_Turkey: "TUR",
             name_hotel: "Kilikya Resort Camyuva 5*",
             href_tui_lv: "/hotel/europe-turkey-kemer-camyuva-kilikya__resort__camyuva/",
             href_agent_lv: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
             data_hotel: "1.05.2020"
-	    },
+	    },*/
         {
+            country_hotel: "Turcija",
             country_Turkey: "TUR",
             name_hotel: "Pegasos Club 4*",
             href_tui_lv: "/hotel/europe-turkey-alanya-incekum-pegasos__club/",
@@ -1144,6 +1192,12 @@ var table_tc_lv = {
             href_agent_lv: "/tours/europe/montenegro/budvanska-rivijera/petrovac/castellastva/",
             data_hotel: "1.06.2020"
         },
+        /*{
+            name_hotel: "Pearl Beach Resort 4*",
+            href_tui_lv: "/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/",
+            href_agent_lv: "/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort",
+            data_hotel: "2.05.2020"
+        },*/
         {
             country_hotel: "Italija",
             name_hotel: "Falkensteiner Club Funimation Calabria (ex. Garden Resort Calabria) 4*",

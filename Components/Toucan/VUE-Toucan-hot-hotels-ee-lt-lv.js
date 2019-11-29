@@ -196,7 +196,7 @@ const toucanHotHotels = new Vue ({
             
             
             //HOTEL
-            {
+            /*{
                 hotelName : 'Kilikya Resort Camyuva 5*',
                 background: 'background: url(https://www.tui.ru/getmedia/2e390b7d-5b2a-4434-9933-5c3749992bed/f_Kilikya-Resort-min);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva',
@@ -237,7 +237,7 @@ const toucanHotHotels = new Vue ({
                     
                 ],
                 buttonLV : 'Izvēlēties ceļojumu',
-            },
+            },*/
             
             
         ],

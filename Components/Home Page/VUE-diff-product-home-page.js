@@ -32,7 +32,7 @@ const homePageFirstBlock = new Vue ({
         firstBlockHeadCommentLV2: 'jo jūs paši par to mums pastāstījāt!',
         
         //ПРЕЗЕНТАЦИЯ
-        firstBlockHeadPresentaionLink: 'https://www.tui.ru/getmedia/b448c677-abf8-40ec-8578-1a05f7268b4b/NEW-Concept-Presentation_B2B_31-10',
+        firstBlockHeadPresentaionLink: 'https://www.tui.ru/getmedia/b448c677-abf8-40ec-8578-1a05f7268b4b/NEW_Concept_Presentation_B2B_31-10',
         firstBlockHeadPresentaionLinkUA: 'https://www.tui.ru/getmedia/67345b6e-5eb5-4eae-8523-8d35b61a67b5/UA_NEW-Concept-Presentation_B2B_04-11-2019',
         firstBlockHeadPresentaionRU: 'Презентация Дифф продукта',
         firstBlockHeadPresentaionBY: 'Презентация Дифф продукта',
@@ -84,37 +84,37 @@ const homePageSmartBlockText = new Vue ({
         titleRU1: 'Концепция отдыха SMART',
         titleRU2: 'Умный подход к отдыху',
         textRU1: 'Мы устраиваем революцию на рынке бюджетного отдыха! SMART - это концепция для каждого: для семей и для молодежи, которых объединяет одна цель и одно желание - насладиться качественным отдыхом за разумные деньги.',
-        textRU2: 'В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, бесплатный Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене. SMART дарит удовольствия для всех: натуральный кофе и кафе-пекарня, детский клуб и бесплатное мороженое, живая музыка и пивной бар с импортными напитками.',
+        textRU2: 'В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, бесплатный Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене. SMART дарит удовольствия для всех: натуральный кофе и кафе-пекарня, детский клуб и бесплатное мороженое, живая музыка и пивной бар с различными сортами пива местных производителей.',
         textRU3: 'Кроме того, SMART заботится об окружающей среде, что означает экологически дружелюбную концепцию. Никаких пластиковых стаканчиков и трубочек, разумный подход к трате воды и энергии, мусорные урны для разделения отходов.',
         
         titleBY1: 'Концепция отдыха SMART',
         titleBY2: 'Умный подход к отдыху',
         textBY1: 'Мы устраиваем революцию на рынке бюджетного отдыха! SMART - это концепция для каждого: для семей и для молодежи, которых объединяет одна цель и одно желание - насладиться качественным отдыхом за разумные деньги.',
-        textBY2: 'В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, бесплатный Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене. SMART дарит удовольствия для всех: натуральный кофе и кафе-пекарня, детский клуб и бесплатное мороженое, живая музыка и пивной бар с импортными напитками.',
+        textBY2: 'В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, бесплатный Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене. SMART дарит удовольствия для всех: натуральный кофе и кафе-пекарня, детский клуб и бесплатное мороженое, живая музыка и пивной бар с различными сортами пива местных производителей.',
         textBY3: 'Кроме того, SMART заботится об окружающей среде, что означает экологически дружелюбную концепцию. Никаких пластиковых стаканчиков и трубочек, разумный подход к трате воды и энергии, мусорные урны для разделения отходов.',
         
         titleUA1: 'Концепция отдыха SMART',
         titleUA2: 'Умный подход к отдыху',
         textUA1: 'Мы устраиваем революцию на рынке бюджетного отдыха! SMART - это концепция для каждого: для семей и для молодежи, которых объединяет одна цель и одно желание - насладиться качественным отдыхом за разумные деньги.',
-        textUA2: 'В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, бесплатный Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене. SMART дарит удовольствия для всех: натуральный кофе и кафе-пекарня, детский клуб и бесплатное мороженое, живая музыка и пивной бар с импортными напитками.',
+        textUA2: 'В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, бесплатный Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене. SMART дарит удовольствия для всех: натуральный кофе и кафе-пекарня, детский клуб и бесплатное мороженое, живая музыка и пивной бар с различными сортами пива местных производителей.',
         textUA3: 'Кроме того, SMART заботится об окружающей среде, что означает экологически дружелюбную концепцию. Никаких пластиковых стаканчиков и трубочек, разумный подход к трате воды и энергии, мусорные урны для разделения отходов.',
         
         titleEE1: 'SMART puhkuse kontseptsioon',
         titleEE2: 'Nutikas lähenemine puhkusele',
         textEE1: 'Me korraldame taskukohase puhkuse revolutsiooni turul! SMART on kontseptsioon kõigile: peredele ja noortele, kellel on üks eesmärk ja üks soov - nautida kvaliteetset puhkust mõistliku hinnaga.',
-        textEE2: 'Esiteks pakume ühe tärni võrra paremat teenust: animatsiooni, lasteklubi, sööke ja jooke, tasuta WiFi-t, äratuntavat disaini ja kvaliteeti taskukohase hinnaga. SMART kingib naudingut kõigile: naturaalne kohv ja kohvik-pagariäri, lasteklubi ning tasuta jäätis, elav muusika ja imporditud jookidega õllebaar.',
+        textEE2: 'Esiteks pakume ühe tärni võrra paremat teenust: animatsiooni, lasteklubi, sööke ja jooke, tasuta WiFi-t, äratuntavat disaini ja kvaliteeti taskukohase hinnaga. SMART kingib naudingut kõigile: naturaalne kohv ja kohvik-pagariäri, lasteklubi ning tasuta jäätis.',
         textEE3: 'Lisaks sellele hoolitseb SMART keskkonna eest ning on välja töötanud keskkonnasõbralikku kontseptsiooni. Ei mingeid plasttopse ja joogikõrsi, vee ja energia kasutamise mõistlik lähenemine, jäätmete sorteerimine.',
         
         titleLT1: 'Poilsio koncepcija SMART',
         titleLT2: 'Protingas požiūris į poilsį',
         textLT1: 'Revoliucija ekonominio poilsio rinkoje! SMART – tai koncepcija kiekvienam: tiek šeimoms, tiek jaunimui, kurie turi vieną tikslą ir norą - mėgautis kokybiškomis atostogomis už priimtiną kainą.',
-        textLT2: 'Visų pirma, mes siūlome paslaugą žvaigždute aukščiau: animaciją, vaikų klubą, maistą ir gėrimus, nemokamą Wi-Fi, atpažįstamą dizaino stilių ir kokybę už prieinamą kainą. SMART teikia malonumą kiekvienam: natūrali kava ir kepyklėlė, vaikų klubas ir nemokami ledai, gyva muzika ir alaus baras su importiniais gėrimais.',
+        textLT2: 'Visų pirma, mes siūlome paslaugą žvaigždute aukščiau: animaciją, vaikų klubą, maistą ir gėrimus, nemokamą Wi-Fi, atpažįstamą dizaino stilių ir kokybę už prieinamą kainą. SMART teikia malonumą kiekvienam: natūrali kava ir kepyklėlė, vaikų klubas ir nemokami ledai.',
         textLT3: 'Be to, SMART rūpinasi aplinka, o tai reiškia ekologišką idėją. Jokių plastikinių puodelių ir šiaudelių, protingas būdas nešvaistyti vandens ir energijos, šiukšliadėžės atliekų rūšiavimui.',
         
         titleLV1: 'Atpūtas koncepcija SMART',
         titleLV2: 'Gudrā pieeja atpūtai',
         textLV1: 'Mēs rīkojam revolūciju budžeta atpūtas tirgū! SMART - koncepcija katrām:  gan ģimenem gan jauniešiem, kuriem ir vienots mērķis un viena vēlme - labi atpūsties par saprātīgu cenu.',
-        textLV2: 'Pirmkārt, mēs piedāvājam 5* zvaigznēm atbilstošu servisu: animācija, bērnu klubs, ēdināšana un dzērieni, bezmaksas Wi-Fi, labi pazīstamu stilu dizainā un kvalitāti par pieejamu cenu. SMART tas ir: naturāla kafija un kafejnīca-ceptuve, bērnu klubs un bezmaksas saldējums, dzīvā mūzika un alus bārs ar importētiem dzērieniem.',
+        textLV2: 'Pirmkārt, mēs piedāvājam 5* zvaigznēm atbilstošu servisu: animācija, bērnu klubs, ēdināšana un dzērieni, bezmaksas Wi-Fi, labi pazīstamu stilu dizainā un kvalitāti par pieejamu cenu. SMART tas ir: naturāla kafija un kafejnīca-ceptuve, bērnu klubs un bezmaksas saldējums.',
         textLV3: 'Bez tam, SMART rūpējas par apkārtējo vidi, kas nozīme videi draudzīgu koncepciju. Nekādu plastmasas glāzīšu un salmiņu, gudrā pieeja ūdens un elektroenerģijas patēriņam, atkritumu šķirošanas tvertnes.',
 
 
@@ -152,19 +152,27 @@ const homePageSmartBlockVideoHotels = new Vue ({
         
         hotelLink1Agent: '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
         hotelLink1Client: '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
-        hotelName1: 'Smart Club Marakesh Beach Hotel 4*',
+        hotelName1: 'SMART Club Marakesh Beach Hotel 4*',
         
         hotelLink2Agent: '/Tours/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel',
         hotelLink2Client: '/hotel/europe-turkey-alanya-mahmutlar-smart__euphoria__bella__mare__hotel/',
-        hotelName2: 'Smart Euphoria Bella Mare Hotel 4*',
+        hotelName2: 'SMART Euphoria Bella Mare Hotel 4*',
         
         hotelLink3Agent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel-(ex-Club-Konakli)',
         hotelLink3Client: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel__(ex__club__konakli)/',
-        hotelName3: 'Smart Limoncello Konakli Beach Hotel 5*',
+        hotelName3: 'SMART Limoncello Konakli Beach Hotel 5*',
         
         hotelLink4Agent: '/Tours/Europe/Turkey/Alanya/Konakli/Club-Hotel-Mirabell',
         hotelLink4Client: '/hotel/europe-turkey-alanya-konakli-club__hotel__mirabell/',
-        hotelName4: 'Smart Club Hotel Mirabell 4*',
+        hotelName4: 'SMART Club Hotel Mirabell 4*',
+        
+        hotelLink5Agent: '/Tours/Europe/Turkey/Antalya/Lara/Lara-Family-Star-Iron-Ambassador',
+        hotelLink5Client: '/hotel/europe-turkey-antalya-lara-smart__lara__family/',
+        hotelName5: 'SMART Lara Family 5*',
+        
+        hotelLink6Agent: '/Tours/Europe/Turkey/Kemer/Beldibi/SMART-Asdem-Beach',
+        hotelLink6Client: '/hotel/europe-turkey-kemer-beldibi-smart__asdem__beach/',
+        hotelName6: 'SMART Asdem Beach 5*',
         
         
     }
@@ -590,9 +598,9 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanHotelLinkClient3: '/hotel/europe-turkey-alanya-incekum-pegasos__royal/',
         homeToucanHotelName3: 'Pegasos Royal 5*',
         
-        homeToucanHotelLink4: '/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva',
+        /*homeToucanHotelLink4: '/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva',
         homeToucanHotelLinkClient4: '/hotel/europe-turkey-kemer-camyuva-kilikya__resort__camyuva/',
-        homeToucanHotelName4: 'Kilikya Resort Camyuva 5*',
+        homeToucanHotelName4: 'Kilikya Resort Camyuva 5*',*/
         
         homeToucanHotelLink5: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/',
         homeToucanHotelLinkClient5: '/hotel/europe-cyprus-ayia__napa-ayia__napa-christofinia/',
@@ -641,5 +649,10 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanHotelLink16: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/tasia-maris-gardens',
         homeToucanHotelLinkClient16: '/hotel/europe-cyprus-ayia__napa-ayia__napa-tasia__maris__gardens/',
         homeToucanHotelName16: 'Tasia Maris Garden 3*',
+        
+        //ЧЕРНОГРИЯ
+        homeToucanHotelLink17: '/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort',
+        homeToucanHotelLinkClient17: '/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/',
+        homeToucanHotelName17: 'Pearl Beach Resort 4*',
     }
 });

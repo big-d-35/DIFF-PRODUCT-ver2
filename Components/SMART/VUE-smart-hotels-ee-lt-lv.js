@@ -47,7 +47,7 @@ const smartHotels = new Vue ({
 
                     //HOTEL 1
                     {
-                    hotelName : 'Smart Club Marakesh Beach Hotel 4*',
+                    hotelName : 'SMART Club Marakesh Beach Hotel 4*',
                     background: 'https://agent.tui.ru/img/9f32661c-239f-4db0-a47e-527e707b3209/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel.jpg',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
                     hotelLinkClient: '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
@@ -93,7 +93,7 @@ const smartHotels = new Vue ({
 
                     //HOTEL 2
                     {
-                    hotelName : 'Smart Euphoria Bella Mare Hotel 4*',
+                    hotelName : 'SMART Euphoria Bella Mare Hotel 4*',
                     background: 'https://agent.tui.ru/img/c13ba3f4-345b-4f64-a14d-3f1ebd5eb092/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel.jpg',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel',
                     hotelLinkClient: '/hotel/europe-turkey-alanya-mahmutlar-smart__euphoria__bella__mare__hotel/',
@@ -141,7 +141,7 @@ const smartHotels = new Vue ({
 
                     //HOTEL 3
                     {
-                    hotelName : 'Smart Limoncello Konakli Beach Hotel 5*',
+                    hotelName : 'SMART Limoncello Konakli Beach Hotel 5*',
                     background: 'https://agent.tui.ru/img/c49774bb-b878-4f04-bec6-d043ea833e95/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel.jpg?geo=1&width=620&height=380',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel',
                     hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel/',
@@ -191,7 +191,7 @@ const smartHotels = new Vue ({
 
                     //HOTEL 4
                     {
-                    hotelName : 'Smart Club Hotel Mirabell 4*',
+                    hotelName : 'SMART Club Hotel Mirabell 4*',
                     background: 'https://agent.tui.ru/img/bfdecb3c-4e14-4400-83d9-4e426598fd1c/Europe/Turkey/Alanya/Konakli/SMART-Mirabell-Hotel.jpg?geo=1&width=620&height=380',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Club-Hotel-Mirabell',
                     hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-club__hotel__mirabell/',
