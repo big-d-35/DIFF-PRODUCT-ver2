@@ -834,7 +834,7 @@ const funSunHotHotels = new Vue ({
             //HOTEL 1
             {
                 hotelName : 'FUN&SUN Pearl Beach Resort 4*',
-                background: 'background: url(https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=577a6197-20da-4d59-a642-53425ce79503&height=460);background-position: center;background-size: cover',
+                background: 'background: url(https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=ca9e5526-502a-4dfb-947b-9d6b1784d4a6&height=460);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort',
                 hotelLinkClient: '/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/',
                 

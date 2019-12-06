@@ -14,7 +14,7 @@ const smartHotels = new Vue ({
             
             //COUNTRY NAME 1
             {
-                id: 'country1',
+                id: 'country1-slider', //Этого нет на продакшене -slider
                 nameRU: 'Турция',    
                 nameBY: 'Турция',    
                 nameUA: 'Турция', 
@@ -25,8 +25,8 @@ const smartHotels = new Vue ({
             },
             
             //COUNTRY NAME 2
-            /*{
-                id: 'country2',
+            {
+                id: 'country2-slider',
                 nameRU: 'Кипр',    
                 nameBY: 'Кипр',    
                 nameUA: 'Кипр', 
@@ -34,7 +34,19 @@ const smartHotels = new Vue ({
                 showRU: true,
                 showBY: true,
                 showUA: true,
-            },*/
+            },
+            
+            //COUNTRY NAME 3
+            {
+                id: 'country3-slider',
+                nameRU: 'Египет',    
+                nameBY: 'Египет',    
+                nameUA: 'Египет', 
+                class: '',
+                showRU: true,
+                showBY: true,
+                showUA: true,
+            },
             
             
         ],
@@ -54,6 +66,7 @@ const smartHotels = new Vue ({
 
                     //HOTEL 1
                     {
+                    
                     hotelName : 'SMART Club Marakesh Beach Hotel 4*',
                     background: 'https://agent.tui.ru/img/9f32661c-239f-4db0-a47e-527e707b3209/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel.jpg',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
@@ -101,6 +114,7 @@ const smartHotels = new Vue ({
 
                     //HOTEL 2
                     {
+                    
                     hotelName : 'SMART Euphoria Bella Mare Hotel 4*',
                     background: 'https://agent.tui.ru/img/c13ba3f4-345b-4f64-a14d-3f1ebd5eb092/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel.jpg',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel',
@@ -149,10 +163,11 @@ const smartHotels = new Vue ({
 
                     //HOTEL 3
                     {
+                    
                     hotelName : 'SMART Limoncello Konakli Beach Hotel 5*',
                     background: 'https://agent.tui.ru/img/c49774bb-b878-4f04-bec6-d043ea833e95/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel.jpg?geo=1&width=620&height=380',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel-(ex-Club-Konakli)',
-                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel__(ex__club__konakli)/',
+                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-smart__limoncello__konakli__beach__hotel/',
 
                     //RU
                     countryNameRU: 'Турция, Конаклы',
@@ -200,10 +215,11 @@ const smartHotels = new Vue ({
 
                     //HOTEL 4
                     {
+                    
                     hotelName : 'SMART Club Hotel Mirabell 4*',
                     background: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=bfdecb3c-4e14-4400-83d9-4e426598fd1c&height=460',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Club-Hotel-Mirabell',
-                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-club__hotel__mirabell/',
+                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-smart__mirabell__hotel/',
 
                     //RU
                     countryNameRU: 'Турция, Конаклы',
@@ -251,6 +267,7 @@ const smartHotels = new Vue ({
                     
                     //HOTEL 5
                     {
+                    
                     hotelName : 'SMART Lara Family 5*',
                     background: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=cb15144e-b409-40d2-9d98-a9c2170537da&height=460',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Antalya/Lara/Lara-Family-Star-Iron-Ambassador',
@@ -302,6 +319,7 @@ const smartHotels = new Vue ({
                     
                     //HOTEL 6
                     {
+                    
                     hotelName : 'SMART Asdem Beach 5*',
                     background: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=d511c15f-1b36-4c82-b22d-c9aabf7610eb&height=460',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Kemer/Beldibi/SMART-Asdem-Beach',
@@ -349,17 +367,18 @@ const smartHotels = new Vue ({
             },
             
             //КИПР
-            /*{
-                id: 'country2',
+            {
+                id: 'country2-slider',
                 class: '',
                 showRU: true,
                 showBY: true,
                 showUA: true,
-                //HOTELS 1 ТУРЦИЯ
+                //HOTELS 2 КИПР
                 countryHotels : [
 
                     //HOTEL 1
                     {
+                    
                     hotelName : 'Smart Club Marakesh Beach Hotel 4*',
                     background: 'https://agent.tui.ru/img/9f32661c-239f-4db0-a47e-527e707b3209/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel.jpg',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
@@ -407,6 +426,7 @@ const smartHotels = new Vue ({
 
                     //HOTEL 2
                     {
+                    
                     hotelName : 'Smart Euphoria Bella Mare Hotel 4*',
                     background: 'https://agent.tui.ru/img/c13ba3f4-345b-4f64-a14d-3f1ebd5eb092/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel.jpg',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel',
@@ -455,6 +475,7 @@ const smartHotels = new Vue ({
 
                     //HOTEL 3
                     {
+                    
                     hotelName : 'Smart Limoncello Konakli Beach Hotel 5*',
                     background: 'https://agent.tui.ru/img/c49774bb-b878-4f04-bec6-d043ea833e95/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel.jpg?geo=1&width=620&height=380',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel-(ex-Club-Konakli)',
@@ -506,6 +527,7 @@ const smartHotels = new Vue ({
 
                     //HOTEL 4
                     {
+                    
                     hotelName : 'Smart Club Hotel Mirabell 4*',
                     background: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=bfdecb3c-4e14-4400-83d9-4e426598fd1c&height=460',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Club-Hotel-Mirabell',
@@ -555,7 +577,172 @@ const smartHotels = new Vue ({
                     buttonUA : 'Выбрать тур',
                 },
                 ],
-            },*/
+                
+                
+            }, 
+            
+            //ЕГИПЕТ
+            {
+                id: 'country3-slider',
+                class: '',
+                showRU: true,
+                showBY: true,
+                showUA: true,
+                //HOTELS 3 ЕГИПЕТ
+                countryHotels : [
+
+                    //HOTEL 1
+                    {
+                    
+                    hotelName : 'Smart Club Marakesh Beach Hotel 4*',
+                    background: 'https://agent.tui.ru/img/9f32661c-239f-4db0-a47e-527e707b3209/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel.jpg',
+                    hotelLinkAgent: '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
+                    hotelLinkClient: '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
+
+                    //RU
+                    countryNameRU: 'Турция, Бельдиби',
+                    aboutHotelRUItems: [
+                        { item: 'Собственный пляж' },
+                        { item: 'Бассейн с водными горками' },
+                        { item: 'Компактная территория' },
+                        { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
+                        { item: 'Бары отеля, расположенные рядом с пляжем' },
+                        { item: 'Детская площадка на пляже под тентом' },
+                    ],
+                    hotelDateRU : 'запуск май 2020',    
+                    buttonRU : 'Выбрать тур',
+
+                    //BY
+                    countryNameBY: 'Турция, Бельдиби',
+                    aboutHotelBYItems: [
+                        { item: 'Собственный пляж' },
+                        { item: 'Бассейн с водными горками' },
+                        { item: 'Компактная территория' },
+                        { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
+                        { item: 'Бары отеля, расположенные рядом с пляжем' },
+                        { item: 'Детская площадка на пляже под тентом' },
+                    ],
+                    hotelDateBY : 'запуск май 2020',    
+                    buttonBY : 'Выбрать тур',
+
+                    //UA
+                    countryNameUA: 'Турция, Бельдиби',
+                    aboutHotelUAItems: [
+                        { item: 'Собственный пляж' },
+                        { item: 'Бассейн с водными горками' },
+                        { item: 'Компактная территория' },
+                        { item: '2 открытых бассейна (280 кв. м и 200 кв.м)' },
+                        { item: 'Бары отеля, расположенные рядом с пляжем' },
+                        { item: 'Детская площадка на пляже под тентом' },
+                    ],
+                    hotelDateUA : 'запуск май 2020',
+                    buttonUA : 'Выбрать тур',
+                },
+
+                    //HOTEL 2
+                    {
+                    
+                    hotelName : 'Smart Euphoria Bella Mare Hotel 4*',
+                    background: 'https://agent.tui.ru/img/c13ba3f4-345b-4f64-a14d-3f1ebd5eb092/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel.jpg',
+                    hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel',
+                    hotelLinkClient: '/hotel/europe-turkey-alanya-mahmutlar-smart__euphoria__bella__mare__hotel/',
+
+                    //RU
+                    countryNameRU: 'Турция, Махмутлар',
+                    aboutHotelRUItems: [
+                        { item: 'Собственный песчано-галечный пляж в 50 м (через дорогу)' },
+                        { item: 'Компактная территория' },
+                        { item: 'Открытые бассейны' },
+                        { item: '2 водные горки' },
+                        { item: 'A la carte на пляже' },
+                        { item: 'Promo (номера стандарт по акционной стоимости)' },
+
+                    ],
+                    hotelDateRU : 'запуск май 2020',    
+                    buttonRU : 'Выбрать тур',
+
+                    //BY
+                    countryNameBY: 'Турция, Махмутлар',
+                    aboutHotelBYItems: [
+                        { item: 'Собственный песчано-галечный пляж в 50 м (через дорогу)' },
+                        { item: 'Компактная территория' },
+                        { item: 'Открытые бассейны' },
+                        { item: '2 водные горки' },
+                        { item: 'A la carte на пляже' },
+                        { item: 'Promo (номера стандарт по акционной стоимости)' },
+                    ],
+                    hotelDateBY : 'запуск май 2020',    
+                    buttonBY : 'Выбрать тур',
+
+                    //UA
+                    countryNameUA: 'Турция, Махмутлар',
+                    aboutHotelUAItems: [
+                        { item: 'Собственный песчано-галечный пляж в 50 м (через дорогу)' },
+                        { item: 'Компактная территория' },
+                        { item: 'Открытые бассейны' },
+                        { item: '2 водные горки' },
+                        { item: 'A la carte на пляже' },
+                        { item: 'Promo (номера стандарт по акционной стоимости)' },
+                    ],
+                    hotelDateUA : 'запуск май 2020',    
+                    buttonUA : 'Выбрать тур',
+                },
+                    
+                    //HOTEL 3
+                    {
+                    
+                    hotelName : 'Smart Euphoria Bella Mare Hotel 4*',
+                    background: 'https://agent.tui.ru/img/c13ba3f4-345b-4f64-a14d-3f1ebd5eb092/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel.jpg',
+                    hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel',
+                    hotelLinkClient: '/hotel/europe-turkey-alanya-mahmutlar-smart__euphoria__bella__mare__hotel/',
+
+                    //RU
+                    countryNameRU: 'Турция, Махмутлар',
+                    aboutHotelRUItems: [
+                        { item: 'Собственный песчано-галечный пляж в 50 м (через дорогу)' },
+                        { item: 'Компактная территория' },
+                        { item: 'Открытые бассейны' },
+                        { item: '2 водные горки' },
+                        { item: 'A la carte на пляже' },
+                        { item: 'Promo (номера стандарт по акционной стоимости)' },
+
+                    ],
+                    hotelDateRU : 'запуск май 2020',    
+                    buttonRU : 'Выбрать тур',
+
+                    //BY
+                    countryNameBY: 'Турция, Махмутлар',
+                    aboutHotelBYItems: [
+                        { item: 'Собственный песчано-галечный пляж в 50 м (через дорогу)' },
+                        { item: 'Компактная территория' },
+                        { item: 'Открытые бассейны' },
+                        { item: '2 водные горки' },
+                        { item: 'A la carte на пляже' },
+                        { item: 'Promo (номера стандарт по акционной стоимости)' },
+                    ],
+                    hotelDateBY : 'запуск май 2020',    
+                    buttonBY : 'Выбрать тур',
+
+                    //UA
+                    countryNameUA: 'Турция, Махмутлар',
+                    aboutHotelUAItems: [
+                        { item: 'Собственный песчано-галечный пляж в 50 м (через дорогу)' },
+                        { item: 'Компактная территория' },
+                        { item: 'Открытые бассейны' },
+                        { item: '2 водные горки' },
+                        { item: 'A la carte на пляже' },
+                        { item: 'Promo (номера стандарт по акционной стоимости)' },
+                    ],
+                    hotelDateUA : 'запуск май 2020',    
+                    buttonUA : 'Выбрать тур',
+                },
+                    
+
+                    
+                ],
+                
+                
+            }, 
         ],
         
         

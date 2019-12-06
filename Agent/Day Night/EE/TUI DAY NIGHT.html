@@ -34,78 +34,129 @@
     /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
 </style>
 <meta content="width=device-width,initial-scale=1" name="viewport" />
+<!-- SCRIPT загрузки VUE  =================================================== -->
+<script>
+    const vueLinks = ['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+      
+        'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer',
+       
+    ];
+
+    function add_files(arr, type) {
+
+        count = 0;
+
+        function new_file(link) {
+            var script = document.createElement(type);
+            script.src = link;
+            script.async = false;
+            document.head.appendChild(script);
+            if (count < arr.length - 1) {
+                script.onload = function() {
+                    new_file(arr[count]);
+                }
+                script.onerror = function() {
+                    throw new Error(arr[count - 1] + ' loading error');
+                }
+                count++;
+            }
+        }
+
+        function error(text) {
+            throw new Error('the function takes two required arguments');
+        }
+
+        (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+            (arr === undefined) ? error('no link array') :
+            (type === undefined) ? error('no file type') : '';
+        new_file(arr[count]);
+    }
+
+    add_files(vueLinks, 'script');
+</script>
 
 
 <div class="row-all">
-    <div class="menu-top">
-        <div class="container">
-            <div class="row"><a class="col-md-2 col-6 logo-img" href="/"><img src="http://agent.tui.ru/Images/logo.png" /></a>
-                <div class="col-5 but-menu-mobile">&nbsp;</div>
+ <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
 
-                <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
-
-                <div class="col-md-10 col-10 mobile_agent">
-                    <div id="exit_menu">X</div>
-
-                    <div class="row menu-label">
-                        <a class="label-menu" href="/Franchaizing" target="_blank">Frantsiis</a>
-                        <a class="label-menu" href="/Partnership" target="_blank">Koostöö</a>
-                        <a class="label-menu" href="/About/About-company" target="_blank">Meist</a>
-                        <a class="label-menu" href="/Branded-Shop" target="_blank">TUI Shop</a>
-
-                        <div class="label-menu" style="position: relative;cursor: pointer">
-                            <a href="/concepts/home/" style="color:#092a5e">TUI puhkuse konseptsioonid</a>
-
-                            <div class="label-menu-2">
-                                <div class="concept-link">
-                                    <a href="/concepts/tui-fun-sun"><img alt="FN_logo" src="https://www.tui.ru/getmedia/a43e4cf0-4244-45b4-8bd4-275b7d8ba1a9/logoTopFN" /></a>
-
-                                    <div><a href="/concepts/tui-fun-sun"><b>TUI FUN&amp;SUN</b><br />
-                                            Perepuhkus</a></div>
-                                </div>
-
-                                <div class="concept-link">
-                                    <a href="/concepts/tui-day-night"><img alt="FN_logo" src="https://www.tui.ru/getmedia/dfa8f32e-6221-4be8-9c2e-23d063b6b989/DN-logo_vertical_web" /></a>
-
-                                    <div><a href="/concepts/tui-day-night"><b>TUI DAY&amp;NIGHT</b><br />
-                                            Noorte puhkus</a></div>
-                                </div>
-
-                                <div class="concept-link">
-                                    <a href="/concepts/tui_toucan"><img alt="FN_logo" src="https://www.tui.ru/getmedia/eda1b56f-2532-46eb-8626-65425d799edf/TC-logo-mini-vertical" /></a>
-
-                                    <div><a href="/concepts/tui-toucan"><b>TUI MINI TOUCAN</b><br />
-                                            Puhkus lastega</a></div>
-                                </div>
-
-                                <div class="concept-link">
-                                    <a href="/concepts/home"><img alt="Home_logo" src="https://www.tui.ru/getmedia/e7f4d372-680e-46e8-bb37-28e2ec6f2f50/toucan-main-page-100x100" /></a>
-
-                                    <div><a href="/concepts/home"><b>TUI puhkuse<br />
-                                                kontseptsioonidest</b></a></div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <a class="label-menu" href="/premium/premium" target="_blank">TUI PREMIUM</a> <a class="label-menu log enter" data-bind="click: LoginClick" href="http://b2b.tui.ee/default.php?page=cl_refer&amp;" target="_blank">Kliendile</a>
+        <div class="menu-top" id="home-page-diff-menu-top">
+            <div class="container">
+                <div class="row">
+                    <a class="col-md-2 col-6 logo-img" href="/"><img v-bind:src=" logoLink "></a>
+                    <div class="col-5 but-menu-mobile">
+                        &nbsp;
                     </div>
-                </div>
 
-                <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+                    <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
 
-                <div class="col-md-10">
-                    <div class="row menu-telephone">
-                        <div class="col-md-8 col-7">
-                            <p class="telephone-title">Agentidele:</p>
-
-                            <p class="telephone-number">+372 3350005</p>
+                    <div class="col-md-10 col-10 mobile_agent">
+                        <div id="exit_menu">
+                            X
                         </div>
-                        <a href="http://www.tui.ru" style="color: black">Veebileht turistidele</a>
+                        <div class="row menu-label">
+                            <a class="label-menu" v-bind:href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameEE}}</a>
+                            <a class="label-menu" v-bind:href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameEE}}</a>
+                            <a class="label-menu" v-bind:href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameEE}}</a>
+                            <a class="label-menu" v-bind:href=" menuItemShopLink " target="_blank">{{menuItemShopNameEE}}</a>
+                            <div class="label-menu" style="position: relative;cursor: pointer">
+                                <a v-bind:href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameEE}}</a>
+                                <div class="label-menu-2">
+                                   <div class="concept-link">
+                                <a :href=" menuItemSmartLink "><img alt="Smart_logo" :src=" menuItemSmartLogo "></a>
+                                <div>
+                                    <a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br>
+                                        {{menuItemSmartNameEE}}</a>
+                                </div>
+                            </div>
+                                    <div class="concept-link">
+                                        <a v-bind:href=" menuItemFunSunLink "><img alt="FN_logo" v-bind:src=" menuItemFunSunLogo "></a>
+                                        <div>
+                                            <a v-bind:href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                                {{menuItemFunSunNameEE}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a v-bind:href=" menuItemDayNightLink "><img alt="FN_logo" v-bind:src=" menuItemDayNightLogo "></a>
+                                        <div>
+                                            <a v-bind:href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                                {{menuItemDayNightNameEE}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a v-bind:href=" menuItemToucanLink "><img alt="FN_logo" v-bind:src=" menuItemToucanLogo "></a>
+                                        <div>
+                                            <a v-bind:href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                                {{menuItemToucanNameEE}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a v-bind:href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
+
+                                        <div><a v-bind:href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameEE1}}<br />
+                                                    {{menuItemConceptsAboutNameEE2}}</b></a></div>
+                                    </div>
+                                </div>
+                            </div><a class="label-menu" v-bind:href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
+                            <a class="label-menu log enter" data-bind="click: LoginClick" v-bind:href=" menuItemLoginNamelinkEE " target="_blank">{{menuItemLoginNameEE}}</a>
+                        </div>
+                    </div>
+
+                    <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+
+                    <div class="col-md-10">
+                        <div class="row menu-telephone">
+                            <div class="col-md-8 col-7">
+                                <p class="telephone-title">{{menuPhoneTitleEE}}</p>
+                                <p class="telephone-number">{{menuPhonePhoneEE}}</p>
+                            </div>
+                            <a v-bind:href=" menuTouristSiteLinkEE " style="color: black">{{menuTouristSiteNameEE}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
 
     <div class="row-all">
         <div class="container-fluid top-slider top-dn">

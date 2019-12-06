@@ -1,10 +1,10 @@
 
 
 @media (min-width: 1201px) {
-    .lSSlideWrapper {
-        max-width: 900px!important;
-        overflow: hidden;
-    }
+//    .lSSlideWrapper {
+//        max-width: 900px!important;
+//        overflow: hidden;
+//    }
     .hotels {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -59,17 +59,68 @@
     }
     .slider {
         height: 500px;
-        
+        width: 860px;
         display: none;
         flex-direction: row;
         align-items: baseline;
         justify-content: flex-start;
+        overflow-x: hidden;
         
+    }
+    .slider__container {
+        width: 960px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        position: relative;
+    }
+    .slider__left-nav {
         
+        color: grey;
+        position: absolute;
+        left: 0px;
+        font-size: 30px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        border: 0px;
+        background: rgba(255,255,255,0.8);
+        cursor: pointer;
+    }
+    .slider__left-nav:hover {
+        color: #092a5e;
+        background: rgba(255,255,255,1);
+    }
+    .slider__right-nav {
+        
+        color: grey;
+        position: absolute;
+        right: 0px;
+        font-size: 30px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        border: 0px;
+        background: rgba(255,255,255,0.8);
+        cursor: pointer;
+    }
+    .slider__right-nav:hover {
+        color: #092a5e;
+        background: rgba(255,255,255,1);
     }
     .slide {
         min-width: 280px!important;
+        width: 300px;
         height: 500px;
+        
+        margin-right: 5px;
+        margin-left: 5px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -181,6 +232,7 @@
     .slider-active {
         display: flex;
     }
+    
 }
 
 @media all and (min-width: 901px) and (max-width: 1200px) {

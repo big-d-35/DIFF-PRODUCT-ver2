@@ -18,7 +18,7 @@ const smartPage = new Vue ({
         titleBY: 'Что такое SMART?',
         titleUA: 'Что такое SMART?',
         titleEE: 'Mis on SMART?',
-        titleLT: 'Kas yra SMART?',
+        titleLT: 'SMART – kas tai?',
         titleLV: 'Kas ir SMART?',
         
         //ABOUT
@@ -26,7 +26,7 @@ const smartPage = new Vue ({
         aboutBY : 'SMART – это концепция отдыха, созданная для тех, кто хочет качественно отдохнуть за разумные деньги. Главное, что мы сделали – добавили пятизвездочный сервис в четырехзвездочные отели. И оставили цену прежней.',
         aboutUA : 'SMART – это концепция отдыха, созданная для тех, кто хочет качественно отдохнуть за разумные деньги. Главное, что мы сделали – добавили пятизвездочный сервис в четырехзвездочные отели. И оставили цену прежней.',
         aboutEE : 'SMART on puhkuskontseptsioon, mis on loodud neile, kes soovivad mõistliku hinnaga puhata. Põhiline, mida tegime, oli viietärnihotelli lisamine neljatärnihotellidele. Ja nad jätsid hinna samaks.',
-        aboutLT : 'SMART yra atostogų koncepcija, sukurta norintiems gerai pailsėti už priimtiną kainą. Svarbiausia, ką mes padarėme, - penkių žvaigždučių paslaugą papildėme keturių žvaigždučių viešbučiais. Ir jie kainą paliko nepakeistą.',
+        aboutLT : 'SMART – poilsio koncepcija, sukurta ieškantiems kokybiško poilsio už prieinamą kainą. Puikios atostogos net ir keturių žvaigždučių viešbučiuose – garantuotos.',
         aboutLV : 'SMART ir atpūtas koncepcija, kas radīta tiem, kas vēlas labi atpūsties par saprātīgu cenu. Galvenais, ko mēs izdarījām, pievienojam pieczvaigžņu apkalpošanas līmeni četrzvaigžņu viesnīcām, bet cenu atstājam tādu pašu”.',
         
         //ФИШКИ
@@ -57,7 +57,7 @@ const smartPage = new Vue ({
                 titleBY : 'Бесплатный и быстрый wi-fi',  
                 titleUA : 'Бесплатный и быстрый wi-fi',  
                 titleEE : 'Tasuta ja kiire wi-fi',  
-                titleLT : 'Nemokamas ir greitas „wi-fi“',  
+                titleLT : 'Nemokamas belaidis internetas',  
                 titleLV : 'Bezmaksas un ātrgaitas WI-FI',  
             },
             
@@ -99,7 +99,7 @@ const smartPage = new Vue ({
                 titleBY : 'В номере: тапочки, чайник, утюг (по запросу)',  
                 titleUA : 'В номере: тапочки, чайник, утюг (по запросу)',  
                 titleEE : 'Mugavused: toasussid, veekeetja, triikraud (nõudmisel)',  
-                titleLT : 'Patogumai: šlepetės, virdulys, lygintuvas (paprašius)',  
+                titleLT : 'Kambaryje: šlepetės, virdulys, lygintuvas (pagal užklausimą)',  
                 titleLV : 'Numurā: peldmeteļi un čības, tējkanna, gludeklis (pēc pieprasījuma)',
                 
             },
@@ -122,7 +122,7 @@ const smartPage = new Vue ({
                 titleBY : 'Улучшенный сервис',
                 titleUA : 'Улучшенный сервис',
                 titleEE : 'Suurepärane teenindus',
-                titleLT : 'Aukščiausias aptarnavimas',
+                titleLT : 'Kokybiškas aptarnavimas',
                 titleLV : 'Uzlabotais apkalpošanas līmenis',
                 
                 items : [
@@ -132,7 +132,7 @@ const smartPage = new Vue ({
                         itemBY : 'Чай и кофе в номерах',    
                         itemUA : 'Чай и кофе в номерах',    
                         itemEE : 'Tee ja kohv tubades',    
-                        itemLT : 'Arbata ir kava kambariuose',    
+                        itemLT : 'Kava ir arbata kambaryje',    
                         itemLV : 'Tēja un kafija numuros',    
                     },
                     
@@ -141,7 +141,7 @@ const smartPage = new Vue ({
                         itemBY : 'Тапочки в номерах',    
                         itemUA : 'Тапочки в номерах',    
                         itemEE : 'Tubades sussid',    
-                        itemLT : 'Kambariuose šlepetės',    
+                        itemLT : 'Šlepetės kambaryje',    
                         itemLV : 'Čības un vannas istabas piederumu komplekts',    
                     },
                     
@@ -159,7 +159,7 @@ const smartPage = new Vue ({
                         itemBY : 'Бесплатный WI-FI',    
                         itemUA : 'Бесплатный WI-FI',    
                         itemEE : 'Tasuta WI-FI',    
-                        itemLT : 'Nemokamas WI-FI',    
+                        itemLT : 'Nemokamas Wi-Fi',    
                         itemLV : 'Bezmaksas WI-FI',    
                     },
                     
@@ -168,7 +168,7 @@ const smartPage = new Vue ({
                         itemBY : 'Бережное отношение к окружающей среде',    
                         itemUA : 'Бережное отношение к окружающей среде',    
                         itemEE : 'Keskkonna austamine',    
-                        itemLT : 'Pagarba aplinkai',    
+                        itemLT : 'Dėmesys aplinkai',    
                         itemLV : 'Saudzīga attieksme pret apkārtējo vidi',    
                     },
                     
@@ -177,7 +177,7 @@ const smartPage = new Vue ({
                         itemBY : 'Фирменный набор для ванной',    
                         itemUA : 'Фирменный набор для ванной',    
                         itemEE : 'Signature vannikomplekt',    
-                        itemLT : 'Parašo vonios rinkinys',    
+                        itemLT : 'Specialus vonios rinkinys',    
                         itemLV : 'Vannas istabas piederumu komplekts',    
                     },
                 ]
@@ -191,7 +191,7 @@ const smartPage = new Vue ({
                 titleBY : 'Новый подход к питанию',
                 titleUA : 'Новый подход к питанию',
                 titleEE : 'Uus lähenemisviis toitumisele',
-                titleLT : 'Naujas požiūris į mitybą',
+                titleLT : 'Kitoks požiūris į mitybą',
                 titleLV : 'Jauns ēdināšanas veids',
                 
                 items : [
@@ -237,7 +237,7 @@ const smartPage = new Vue ({
                         itemBY : 'Street food',    
                         itemUA : 'Street food',    
                         itemEE : 'Street food',    
-                        itemLT : 'Street food',    
+                        itemLT : 'Greitas maistas',    
                         itemLV : 'Street food',    
                     },
                     
@@ -246,7 +246,7 @@ const smartPage = new Vue ({
                         itemBY : 'Блюда домашней кухни',    
                         itemUA : 'Блюда домашней кухни',    
                         itemEE : 'Kodune kokandus',    
-                        itemLT : 'Namų virimas',    
+                        itemLT : 'Vietinės virtuvės patiekalai',    
                         itemLV : 'Mājas virtuves ēdieni',    
                     },
                 ]
@@ -260,7 +260,7 @@ const smartPage = new Vue ({
                 titleBY : 'Только нужные развлечения',
                 titleUA : 'Только нужные развлечения',
                 titleEE : 'Ainult vajalik meelelahutus',
-                titleLT : 'Tik būtina pramoga',
+                titleLT : 'Pramogos',
                 titleLV : 'Tikai interesantas izklaides',
                 
                 items : [
@@ -279,7 +279,7 @@ const smartPage = new Vue ({
                         itemBY : 'Вечерние шоу',    
                         itemUA : 'Вечерние шоу',    
                         itemEE : 'Õhtused saated',    
-                        itemLT : 'Vakariniai pasirodymai',    
+                        itemLT : 'Vakaro programa',    
                         itemLV : 'Vakara šovi',    
                     },
                     
@@ -288,7 +288,7 @@ const smartPage = new Vue ({
                         itemBY : 'Танцевальные программы',    
                         itemUA : 'Танцевальные программы',    
                         itemEE : 'Tantsukavad',    
-                        itemLT : 'Šokių programos',    
+                        itemLT : 'Šokių pasirodymai',    
                         itemLV : 'Deju programmas',    
                     },
                     
@@ -332,7 +332,7 @@ const smartPage = new Vue ({
                         itemBY : 'Детское меню',    
                         itemUA : 'Детское меню',    
                         itemEE : 'Laste menüü',    
-                        itemLT : 'Vaikų meniu',    
+                        itemLT : 'Vaikiškas meniu',    
                         itemLV : 'Bērnu ēdienkarte',    
                     },
                     
@@ -359,7 +359,7 @@ const smartPage = new Vue ({
                         itemBY : 'Открытая площадка для игр с навесом',    
                         itemUA : 'Открытая площадка для игр с навесом',    
                         itemEE : 'Mänguala õues varikatusega',    
-                        itemLT : 'Lauko žaidimų zona su baldakimu',    
+                        itemLT : 'Dengta lauko žaidimų zona',    
                         itemLV : 'Āra rotaļu laukums zem nojumes',    
                     },
                     
@@ -368,7 +368,7 @@ const smartPage = new Vue ({
                         itemBY : 'Брендированный подарок',    
                         itemUA : 'Брендированный подарок',    
                         itemEE : 'Kaubamärgiga kingitus',    
-                        itemLT : 'Firminė dovana',    
+                        itemLT : 'Viešbučio dovana',    
                         itemLV : 'Brendu dāvana',    
                     },
                     

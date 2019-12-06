@@ -79,7 +79,7 @@ const homePageTextBlock = new Vue ({
 const homePageSmartBlockText = new Vue ({
     el: '#home-page-smart-block-text',
     data: {
-        logo: 'https://www.tui.ru/getmedia/52f90797-c27f-4d1d-91c9-ce88f091eccf/Smart-Logo-80px',
+        logo: 'https://www.tui.ru/getmedia/7eea7272-a23a-4d66-9df7-4eb7463c2a55/Smart-Logo-80px',
         
         titleRU1: 'Концепция отдыха SMART',
         titleRU2: 'Умный подход к отдыху',
@@ -159,11 +159,11 @@ const homePageSmartBlockVideoHotels = new Vue ({
         hotelName2: 'SMART Euphoria Bella Mare Hotel 4*',
         
         hotelLink3Agent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel-(ex-Club-Konakli)',
-        hotelLink3Client: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel__(ex__club__konakli)/',
+        hotelLink3Client: '/hotel/europe-turkey-alanya-konakli-smart__limoncello__konakli__beach__hotel/',
         hotelName3: 'SMART Limoncello Konakli Beach Hotel 5*',
         
         hotelLink4Agent: '/Tours/Europe/Turkey/Alanya/Konakli/Club-Hotel-Mirabell',
-        hotelLink4Client: '/hotel/europe-turkey-alanya-konakli-club__hotel__mirabell/',
+        hotelLink4Client: '/hotel/europe-turkey-alanya-konakli-smart__mirabell__hotel/',
         hotelName4: 'SMART Club Hotel Mirabell 4*',
         
         hotelLink5Agent: '/Tours/Europe/Turkey/Antalya/Lara/Lara-Family-Star-Iron-Ambassador',

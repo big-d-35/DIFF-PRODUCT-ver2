@@ -21,7 +21,7 @@
     <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="css/smart-tablet.css"> 
     <link rel="stylesheet" media="all and (max-width: 600px)" href="css/smart-mobile.css">
     <link rel="stylesheet"  href="https://admin.tui.ru/getmedia/82f63621-090c-4d58-9b86-369a680a5911/header-footer-all-css-concepts">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
+<!--    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">-->
     
    
    
@@ -127,27 +127,42 @@
     <div class="hotels " id="smart-hotels" >
         <h2 class="smart__title"> {{ hotelsTitleRU }} </h2>
         
-        <div class="slider__buttons" >
-            <a href="#" class="slider__button" v-for=" countryName in countryNames " v-bind:id=" countryName.id " v-bind:class="  countryName.class  " v-if="countryName.showRU" v-bind:data-id="countryName.id">{{countryName.nameRU}}</a>
+        <div class="slider__buttons" id="slider-navigation">
+            <a 
+            href="#" 
+            class="slider__button" 
+            v-for=" countryName in countryNames "  
+            v-bind:class="  countryName.class  " 
+            v-if="countryName.showRU" 
+            v-bind:data-id="countryName.id">{{countryName.nameRU}}</a>
         </div>
-        <div class="slider " v-for=" country in countrys" v-bind:class="  country.class  " v-bind:id=" country.id " v-bind:data-id=" country.id " v-if="country.showRU">
-           
-           <!-- HOTEL START ========================-->
-           
-            <div class="slide" v-for=" countryHotel in country.countryHotels" >
-                <img v-bind:src="  countryHotel.background " alt="" class="slide__image">
-                <h3 class="slide__title">{{countryHotel.countryNameRU}}</h3>
-                <h4 class="slide__name">{{countryHotel.hotelName}}</h4>
-                
-                <ul class="slide__list">
-                    <li class="slide__list-item" v-for=" aboutHotelRUItem in countryHotel.aboutHotelRUItems ">{{ aboutHotelRUItem.item }}</li>
-                </ul>
-                <span class="slide__dates">{{ countryHotel.hotelDateRU }}</span>
-                <a v-bind:href=" countryHotel.hotelLinkAgent " class="slide__link" target="_blank">{{countryHotel.buttonRU}}</a>
+        <div class="slider__container" id="slider-container">
+           <button class="slider__left-nav" id="slider-left-button">&lt;</button>
+           <button class="slider__right-nav" id="slider-right-button">&gt;</button>
+            <div 
+              class="slider " 
+              v-for=" country in countrys" 
+              v-bind:class="  country.class  " 
+              v-bind:data-id=" country.id " 
+              v-if="country.showRU">
+
+               <!-- HOTEL START ======================== -->
+
+                <div class="slide"  v-for=" countryHotel in country.countryHotels" v-bind:class="countryHotel.class">
+                    <img v-bind:src="  countryHotel.background " alt="" class="slide__image">
+                    <h3 class="slide__title">{{countryHotel.countryNameRU}}</h3>
+                    <h4 class="slide__name">{{countryHotel.hotelName}}</h4>
+
+                    <ul class="slide__list">
+                        <li class="slide__list-item" v-for=" aboutHotelRUItem in countryHotel.aboutHotelRUItems ">{{ aboutHotelRUItem.item }}</li>
+                    </ul>
+                    <span class="slide__dates">{{ countryHotel.hotelDateRU }}</span>
+                    <a v-bind:href=" countryHotel.hotelLinkAgent " class="slide__link" target="_blank">{{countryHotel.buttonRU}}</a>
+                </div>
+
+                <!-- HOTEL END ======================== -->
+
             </div>
-            
-            <!-- HOTEL END ========================-->
-            
         </div>
     </div>
     
@@ -242,9 +257,10 @@
 <style>
 
 </style>
+<!--
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" defer></script>
-<script src="script-for-slider-hotels.js"></script>
+<script src="script-for-slider-hotels.js"></script>-->
 <script src="script-slider-js.js" defer></script>
 <!-- SLIDER SETTINGS ======================== -->
 

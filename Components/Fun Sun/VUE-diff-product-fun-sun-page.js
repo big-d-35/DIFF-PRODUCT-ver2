@@ -208,7 +208,7 @@ const funSunPageMenuAdventagiesHotelsMenu = new Vue ({
         funSunPageMenuAdventagiesHotelsMenuItemBY4: 'Попробуйте блюда и напитки',
         funSunPageMenuAdventagiesHotelsMenuItemUA4: 'Попробуйте блюда и напитки',
         funSunPageMenuAdventagiesHotelsMenuItemEE4: 'Proovige sööke ja jooke',
-        funSunPageMenuAdventagiesHotelsMenuItemLT4: 'Pragaukite patiekalų ir gėrimų',
+        funSunPageMenuAdventagiesHotelsMenuItemLT4: 'Paragaukite patiekalų ir gėrimų',
         funSunPageMenuAdventagiesHotelsMenuItemLV4: 'Nogaršojiet dzērienus un ēdienus',
         
         funSunPageMenuAdventagiesHotelsMenuItemRU5: 'Займитесь спортом',

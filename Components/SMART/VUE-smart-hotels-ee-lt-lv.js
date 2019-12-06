@@ -144,7 +144,7 @@ const smartHotels = new Vue ({
                     hotelName : 'SMART Limoncello Konakli Beach Hotel 5*',
                     background: 'https://agent.tui.ru/img/c49774bb-b878-4f04-bec6-d043ea833e95/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel.jpg?geo=1&width=620&height=380',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel',
-                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-limoncello__konakli__beach__hotel/',
+                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-smart__limoncello__konakli__beach__hotel/',
 
                     //EE
                     countryNameEE: 'Türgi, Konakli',
@@ -169,7 +169,7 @@ const smartHotels = new Vue ({
                         { item: 'Gražus interjeras viešbučio baruose' },
                         { item: 'Didelis lauko baseinas, vandens kalneliai, uždaras baseinas ' },
                         { item: 'Nuosavas, smėlio paplūdimys už 200 m' },
-                        { item: 'Šeimyniniai numeriai: su 1 ir 2 miegamaisiais' },
+                        { item: 'Šeimyniniai kambariai: su 1 ir 2 miegamaisiais' },
                     ],
                     hotelDateLT : 'start 05.2020',    
                     buttonLT : 'Pasirinkite',
@@ -194,7 +194,7 @@ const smartHotels = new Vue ({
                     hotelName : 'SMART Club Hotel Mirabell 4*',
                     background: 'https://agent.tui.ru/img/bfdecb3c-4e14-4400-83d9-4e426598fd1c/Europe/Turkey/Alanya/Konakli/SMART-Mirabell-Hotel.jpg?geo=1&width=620&height=380',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Club-Hotel-Mirabell',
-                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-club__hotel__mirabell/',
+                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-smart__mirabell__hotel/',
 
                     //EE
                     countryNameEE: 'Türgi, Konakli',
@@ -216,11 +216,11 @@ const smartHotels = new Vue ({
                     countryNameLT: 'Turkija, Konakli',
                     aboutHotelLTItems: [
                         { item: 'Gražus, modernus viešbutis' },
-                        { item: '70% numuru ir ar skatu uz jūru' },
-                        { item: '2 āra baseini (230 kv.m un 165 kv.m)' },
-                        { item: '2 ūdens slidkalniņi' },
-                        { item: 'SPA centrs' },
-                        { item: 'Privātā smilšu-oļu pludmale (pāri pārejai)' },
+                        { item: '70% kambarių su vaizdu į jūrą' },
+                        { item: '2 lauko baseinai (230 kv.m ir 165 kv.m)' },
+                        { item: '2 vandens kalneliai' },
+                        { item: 'SPA centras' },
+                        { item: 'Nuosavas smėlio -žvyro paplūdimys (per kelią)' },
                     ],
                     hotelDateLT : 'start 05.2020',    
                     buttonLT : 'Pasirinkite',
@@ -239,6 +239,102 @@ const smartHotels = new Vue ({
                     hotelDateLV : 'start 05.2020',    
                     buttonLV : 'Izvēlieties tūri',
                 },
+                    
+                     //HOTEL 5
+                    {
+                    hotelName : 'SMART Lara Family 5*',
+                    background: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=cb15144e-b409-40d2-9d98-a9c2170537da&height=460',
+                    hotelLinkAgent: '/Tours/Europe/Turkey/Antalya/Lara/Lara-Family-Star-Iron-Ambassador',
+                    hotelLinkClient: '/hotel/europe-turkey-antalya-lara-smart__lara__family/',
+
+                    //EE
+                    countryNameEE: 'Türgi, Antalya',
+                    aboutHotelEEItems: [
+                        { item: 'Ilus kaasaegne hotellihoone' },
+                        { item: '70% tubadest on merevaatega' },
+                        { item: 'Majutus koos lemmikloomadega on lubatud' },
+                        { item: '2 välibasseini (230 m2 ja 165 m2)' },
+                        { item: '2 veeliumäge' },
+                        { item: 'SPA-keskus' },
+                        { item: 'Oma liiva- ja kivikliburand (ülekäigu kaudu)' },
+                        
+
+                    ],
+                    hotelDateEE : 'start 05.2020',    
+                    buttonEE : 'Valige ringkäik',
+
+                    //LT
+                    countryNameLT: 'Turkija, Antalija',
+                    aboutHotelLTItems: [
+                        { item: 'Viešbutis atidarytas - 2019 m.' },
+                        { item: 'Paplūdimys 1 km iki viešbučio (kas valandą važiuoja autobusiukas)' },
+                        { item: '2 lauko baseinai (600 ir 900 kv.m)' },
+                        { item: 'Nemokama: sauna ir fitneso centras' },
+                        { item: 'Stalo tenisas' },
+                        { item: '2 a la carte restoranai' },
+                        { item: 'Baras prie baseino ir paplūdimyje' },
+                    ],
+                    hotelDateLT : 'start 05.2020',    
+                    buttonLT : 'Pasirinkite',
+
+                    //LV
+                    countryNameLV: 'Turcija, Antālija',
+                    aboutHotelLVItems: [
+                        { item: 'Jauna viesnīca, atvēršanas gads - 2019 .g.' },
+                        { item: 'Pludmale atrodas 1 km attālumā no viesnīcas (shuttle bus no viesnīcas kursē katru stundu)' },
+                        
+                    ],
+                    hotelDateLV : 'start 05.2020',    
+                    buttonLV : 'Izvēlieties tūri',
+                },
+                  
+                     //HOTEL 6
+                    {
+                    hotelName : 'SMART Asdem Beach 5*',
+                    background: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=d511c15f-1b36-4c82-b22d-c9aabf7610eb&height=460',
+                    hotelLinkAgent: '/Tours/Europe/Turkey/Kemer/Beldibi/SMART-Asdem-Beach',
+                    hotelLinkClient: '/hotel/europe-turkey-kemer-beldibi-smart__asdem__beach/',
+
+                    //EE
+                    countryNameEE: 'Türgi, Antalya',
+                    aboutHotelEEItems: [
+                        { item: 'Ilus kaasaegne hotellihoone' },
+                        { item: '70% tubadest on merevaatega' },
+                        { item: 'Majutus koos lemmikloomadega on lubatud' },
+                        { item: '2 välibasseini (230 m2 ja 165 m2)' },
+                        { item: '2 veeliumäge' },
+                        { item: 'SPA-keskus' },
+                        { item: 'Oma liiva- ja kivikliburand (ülekäigu kaudu)' },
+                        
+
+                    ],
+                    hotelDateEE : 'start 05.2020',    
+                    buttonEE : 'Valige ringkäik',
+
+                    //LT
+                    countryNameLT: 'Turkija, Antalija',
+                    aboutHotelLTItems: [
+                        { item: 'Teniso kortas ir stalo tenisas' },
+                        { item: 'Hamamas ir sauna - nemokama, SPA (mokama)' },
+                        { item: 'Nuosavas smėlio - žvyro paplūdimys, ilgis - 120 m. Yra pirsas' },
+                        { item: 'Vaikiškas inventorius, pagal užklausimą, nemokama.' },
+                        
+                    ],
+                    hotelDateLT : 'start 05.2020',    
+                    buttonLT : 'Pasirinkite',
+
+                    //LV
+                    countryNameLV: 'Turcija, Antālija',
+                    aboutHotelLVItems: [
+                        { item: 'Tenisa korts un galda teniss' },
+                        { item: 'Hamāma un sauna - bezmaksas, SPA (maksas)' },
+                        
+                    ],
+                    hotelDateLV : 'start 05.2020',    
+                    buttonLV : 'Izvēlieties tūri',
+                },
+                    
+                    
                 ],
             },
             
