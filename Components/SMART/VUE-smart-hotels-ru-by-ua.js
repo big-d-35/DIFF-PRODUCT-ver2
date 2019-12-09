@@ -14,7 +14,7 @@ const smartHotels = new Vue ({
             
             //COUNTRY NAME 1
             {
-                id: 'country1-slider', //Этого нет на продакшене -slider
+                id: 'country1', //Этого нет на продакшене -slider
                 nameRU: 'Турция',    
                 nameBY: 'Турция',    
                 nameUA: 'Турция', 
@@ -25,7 +25,7 @@ const smartHotels = new Vue ({
             },
             
             //COUNTRY NAME 2
-            {
+           /* {
                 id: 'country2-slider',
                 nameRU: 'Кипр',    
                 nameBY: 'Кипр',    
@@ -46,7 +46,7 @@ const smartHotels = new Vue ({
                 showRU: true,
                 showBY: true,
                 showUA: true,
-            },
+            }, */
             
             
         ],
@@ -113,7 +113,7 @@ const smartHotels = new Vue ({
                 },
 
                     //HOTEL 2
-                    {
+                    /*{
                     
                     hotelName : 'SMART Euphoria Bella Mare Hotel 4*',
                     background: 'https://agent.tui.ru/img/c13ba3f4-345b-4f64-a14d-3f1ebd5eb092/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel.jpg',
@@ -159,7 +159,7 @@ const smartHotels = new Vue ({
                     ],
                     hotelDateUA : 'запуск май 2020',    
                     buttonUA : 'Выбрать тур',
-                },
+                },*/
 
                     //HOTEL 3
                     {
@@ -367,7 +367,7 @@ const smartHotels = new Vue ({
             },
             
             //КИПР
-            {
+            /*{
                 id: 'country2-slider',
                 class: '',
                 showRU: true,
@@ -579,10 +579,10 @@ const smartHotels = new Vue ({
                 ],
                 
                 
-            }, 
+            }, */
             
             //ЕГИПЕТ
-            {
+          /*  {
                 id: 'country3-slider',
                 class: '',
                 showRU: true,
@@ -742,7 +742,7 @@ const smartHotels = new Vue ({
                 ],
                 
                 
-            }, 
+            }, */
         ],
         
         

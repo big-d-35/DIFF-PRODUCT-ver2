@@ -92,7 +92,7 @@ const smartHotels = new Vue ({
                 },
 
                     //HOTEL 2
-                    {
+                /*    {
                     hotelName : 'SMART Euphoria Bella Mare Hotel 4*',
                     background: 'https://agent.tui.ru/img/c13ba3f4-345b-4f64-a14d-3f1ebd5eb092/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel.jpg',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Mahmutlar/Smart-Euphoria-Bella-Mare-Hotel',
@@ -137,7 +137,7 @@ const smartHotels = new Vue ({
                     ],
                     hotelDateLV : 'start 05.2020',    
                     buttonLV : 'Izvēlieties tūri',
-                },
+                }, */
 
                     //HOTEL 3
                     {
