@@ -1,0 +1,512 @@
+.concepts {
+    &__main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: 'TUITypeCyrillicLight'; 
+    }
+}
+
+.banner {
+    &__concepts {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        width: 90%;
+        max-width: 1132px;
+        min-width: 832px;
+        height: 400px;
+        background-image: url(https://www.tui.ru/getmedia/8e6d1ac6-955f-4fc3-bddc-648db3c1a4c9/banner_Fun-Sun);
+        border-radius: 10px;
+        &:hover {
+                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
+            }
+    }
+    &__titles {
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-bottom: 54px;
+    }
+    &__logo {
+        width: 317px;
+        
+    }
+    &__text {
+        margin-left: 40px;
+        font-family: TUITypeCyrillic;
+          font-size: 25px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3c3c3c;
+        list-style-type: none;
+        
+    }
+    &__text-item {
+        margin-bottom: 20px;
+        
+    }
+    &__text-item::before {
+        content: "\2022";
+        color: #ffaf00;
+        font-weight: bold;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 20px;
+    }
+}
+
+.about {
+    &__concepts {
+        margin-bottom: 60px;
+        width: 90%;
+        max-width: 1100px;
+        min-width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-family: TUITypeCyrillic;
+          font-size: 40px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #3c3c3c;
+    }
+    &__text {
+        font-family: TUITypeCyrillic;
+        font-size: 25px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #737373 ;
+    }
+}
+
+.services {
+    &__concepts {
+        margin-bottom: 60px;
+        width: 90%;
+        max-width: 1152px;
+        min-width: 852px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-family: TUITypeCyrillicLight;
+          font-size: 30px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #3c3c3c;
+    }
+    &__blocks {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__block {
+        margin: 10px;
+        width: 45%;
+        min-height: 360px;
+        border-radius: 5px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        overflow: hidden;
+        &:hover {
+                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
+            }
+    }
+    &__img {
+        width: 130px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    &__text {
+        width: 75%;
+        margin-top: 30px;
+        z-index: 10;
+    }
+    &__name {
+        font-family: TUITypeCyrillicLight;
+          font-size: 25px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3c3c3c;
+        margin-bottom: 20px;
+    }
+    &__items {
+        font-family: TUIType;
+          font-size: 17px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #000000;
+        list-style-type: none;
+    }
+    &__item {
+        width: 90%;
+        margin-bottom: 15px;
+        &::before {
+            content: "\2022";
+            color: #dad1c2;
+            font-weight: bold;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.entertaiments {
+    &__concepts {
+        margin-bottom: 60px;
+        width: 100%;
+        max-width: 1152px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-family: TUITypeCyrillicLight;
+          font-size: 30px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #3c3c3c;
+    }
+    &__blocks {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__block {
+        margin: 10px;
+        width: 554px;
+        min-height: 300px;
+        border-radius: 5px;
+          border: solid 1px #e7e3db;
+          background-color: #ffffff;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        overflow: hidden;
+        &:hover {
+                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
+            }
+    }
+    &__img {
+        width: 180px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    &__text {
+        width: 65%;
+        margin-top: 30px;
+    }
+    &__name {
+        font-family: TUITypeCyrillicLight;
+          font-size: 25px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3c3c3c;
+        margin-bottom: 20px;
+    }
+    &__items {
+        font-family: TUITypeCyrillicLight;
+          font-size: 17px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.65;
+          letter-spacing: normal;
+          color: #000000;
+    }
+    &__item {
+        width: 90%;
+        
+        &::before {
+            content: "\2022";
+            color: #ffaf00;
+            font-weight: bold;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.photos {
+    &__concepts {
+        margin-bottom: 60px;
+        width: 90%;
+        max-width: 1152px;
+        min-width: 850px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title {
+       margin-bottom: 30px;
+        font-family: TUITypeCyrillicLight;
+          font-size: 30px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #3c3c3c; 
+    }
+    &__block {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    &__video {
+        width: 55%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    &__video-img {
+        width: 90%;
+        
+        margin: 10px;
+        border-radius: 10px;
+    }
+    &__photos {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    &__photo {
+        width: 42%;
+        margin: 10px;
+        border-radius: 10px;
+    }
+}
+
+.programs {
+    &__concepts {
+        margin-bottom: 60px;
+        width: 90%;
+        max-width: 1152px;
+        min-width: 852px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title {
+       margin-bottom: 30px;
+        font-family: TUITypeCyrillicLight;
+          font-size: 30px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #3c3c3c; 
+    }
+    &__blocks {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__block {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    &__names {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &__icon {
+        width: 40px;
+        margin-right: 20px;
+    }
+    &__name {
+        font-family: TUITypeCyrillicLight;
+          font-size: 20px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3c3c3c;
+    }
+    &__items {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 60px
+    }
+    &__text {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-family: TUITypeCyrillic;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3c3c3c;
+        margin-bottom: 10px;
+    }
+    &__item {
+        
+        cursor: pointer;
+        font-family: TUITypeCyrillicLight;
+          font-size: 15px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #1896cf;
+        text-decoration: none;
+        text-align: left;
+        transition: border-bottom 0.2s linear;
+            &:hover {
+                border-bottom: 2px solid #092a5e;
+            }
+    }
+    &__download {
+        width: 20px;
+        
+    }
+}
+
+
+.allhotels {
+    &__concepts {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 100%;
+        background-color: #f6f4f0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__blocks {
+        
+        width: 90%;
+        max-width: 1052px;
+        min-width: 852px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    &__block {
+        width: 20%;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__name {
+        font-family: TUITypeCyrillicLight;
+          font-size: 18px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3c3c3c;
+        margin-bottom: 10px;
+    }
+    &__link {
+        cursor: pointer;
+        width: 100%;
+        font-family: TUITypeCyrillic;
+          font-size: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #092a5e;
+        text-decoration: none;
+        transition: color 0.2s linear;
+            &:hover {
+                color: #1896cf;
+            }
+    }
+    
+}
