@@ -53,12 +53,12 @@ const smartPage = new Vue ({
                 cssPart: 'background-color: #dbfff7; grid-area: block2;  ',
                 
                 image: 'https://www.tui.ru/getmedia/d5827639-6f10-4811-b264-08860a3a461c/wifi@3x_1',    
-                titleRU : 'Бесплатный и быстрый wi-fi',  
-                titleBY : 'Бесплатный и быстрый wi-fi',  
-                titleUA : 'Бесплатный и быстрый wi-fi',  
-                titleEE : 'Tasuta ja kiire wi-fi',  
-                titleLT : 'Nemokamas belaidis internetas',  
-                titleLV : 'Bezmaksas un ātrgaitas WI-FI',  
+                titleRU : 'Wi-fi',  
+                titleBY : 'Wi-fi',  
+                titleUA : 'Wi-fi',  
+                titleEE : 'Wi-fi',  
+                titleLT : 'Wi-fi',  
+                titleLV : 'Wi-fi',  
             },
             
             //3 POINT
@@ -81,9 +81,9 @@ const smartPage = new Vue ({
                 cssPart: 'background-color: #ffdcc6; grid-area: block3; ',
                 
                 image: 'https://www.tui.ru/getmedia/09865c88-8465-414e-8afa-7cd13d3bceb4/gift',    
-                titleRU : 'Подарок каждому гостю',  
-                titleBY : 'Подарок каждому гостю',  
-                titleUA : 'Подарок каждому гостю',  
+                titleRU : 'Подарки гостям',  
+                titleBY : 'Подарки гостям',  
+                titleUA : 'Подарки гостям',  
                 titleEE : 'Kingitus igale külalisele',  
                 titleLT : 'Dovana kiekvienam svečiui',  
                 titleLV : 'Dāvana katram viesim',

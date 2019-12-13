@@ -1,0 +1,993 @@
+
+@keyframes my-animation {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media (min-width: 1201px) {
+    .hotels {
+        &__concepts {
+            width: 100%;
+            margin-bottom: 60px;
+            width: 100%;
+            max-width: 1152px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__countries {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        &__country {
+            font-family: TUITypeCyrillic;
+              font-size: 17px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: #092a5e;
+            margin-right: 30px;
+            background-color: transparent;
+            border: 0px;
+            cursor: pointer;
+            text-align: left;
+            text-transform: uppercase;
+            padding-bottom: 4px;
+            transition: border-bottom 0.2s linear;
+            &:hover {
+                border-bottom: solid 3px #ffaf00;
+            }
+        }
+        &__countries-mobile {
+            display: none;
+        }
+        &__country-mobile {
+            display: none;
+            
+        }
+        &__blocks {
+            width: 100%;
+            display: none;
+            opacity: 1;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__block {
+            width: 360px;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 10px;
+            border: solid 1px #e7e3db;
+            border-radius: 10px;
+            transition: box-shadow 0.2s linear;
+            &:hover {
+                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
+            }
+        }
+        &__banner {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            height: 120px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            
+        }
+        &__poster {
+            position: absolute;
+            top: 0px;
+            left:0px;
+            z-index: -1;
+        }
+        &__place {
+            z-index: 10;
+            font-family: TUITypeCyrillicLight;
+              font-size: 17px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #ffffff;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        &__sale {
+            z-index: 10;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 7px;
+            padding-right: 7px;
+            margin-bottom: 8px;
+            margin-right: 20px;
+              border-radius: 50%;
+              background-color: #ffe600;
+            text-align: center;
+            font-family: TUITypeCyrillicLight;
+              font-size: 15px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #092a5e;
+        }
+        &__text {
+            width: 318px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        &__name {
+            font-family: TUITypeCyrillicLight;
+              font-size: 20px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #092a5e;
+            margin-bottom: 35px;
+        }
+        &__info {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &__about {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__description {
+            font-family: TUITypeCyrillic;
+              font-size: 15px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #3c3c3c;
+            margin-bottom: 10px;
+        }
+        &__prices {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-bottom: 10px;
+        }
+        &__price-old {
+            font-family: TUITypeCyrillic;
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: right;
+              color: #b9b9b9;
+            text-decoration: line-through;
+        }
+        &__price-new {
+            font-family: TUITypeCyrillic;
+              font-size: 30px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: right;
+              color: #092a5e;
+        }
+        &__link {
+            width: 100%;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border-radius: 5px;
+            border: solid 2px #ffaf00;
+            background-color: #ffffff;
+            font-family: TUITypeCyrillic;
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #ffaf00;
+            text-decoration: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.2s linear;
+            &:hover {
+                border-radius: 5px;
+                background-color: #ffaf00;
+                color: white;
+            }
+        }
+    
+    }
+    
+    .hotels-active {
+        display: flex;
+        opacity: 1;
+        animation-name: my-animation;
+        animation-duration: 0.5s;
+    }
+    .active-country {
+        border-bottom: solid 3px #092a5e;
+    }
+}
+
+@media all and (min-width: 901px) and (max-width: 1200px) {
+     .hotels {
+        &__concepts {
+            width: 100%;
+            margin-bottom: 60px;
+            width: 100%;
+            max-width: 1152px;
+            min-width: 852px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__countries {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        &__country {
+            font-family: TUITypeCyrillic;
+              font-size: 17px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: #092a5e;
+            margin-right: 30px;
+            background-color: transparent;
+            border: 0px;
+            cursor: pointer;
+            text-align: left;
+            text-transform: uppercase;
+            padding-bottom: 4px;
+            transition: border-bottom 0.2s linear;
+            &:hover {
+                border-bottom: solid 3px #ffaf00;
+            }
+        }
+        &__countries-mobile {
+            display: none;
+        }
+        &__country-mobile {
+            display: none;
+            
+        }
+        &__blocks {
+            width: 90%;
+            display: none;
+            opacity: 0;
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__block {
+            width: 360px;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 10px;
+            border: solid 1px #e7e3db;
+            border-radius: 10px;
+            transition: box-shadow 0.2s linear;
+            &:hover {
+                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
+            }
+        }
+        &__banner {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            height: 120px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            
+        }
+        &__poster {
+            position: absolute;
+            top: 0px;
+            left:0px;
+            z-index: -1;
+        }
+        &__place {
+            z-index: 10;
+            font-family: TUITypeCyrillicLight;
+              font-size: 17px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #ffffff;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        &__sale {
+            z-index: 10;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 7px;
+            padding-right: 7px;
+            margin-bottom: 8px;
+            margin-right: 20px;
+              border-radius: 50%;
+              background-color: #ffe600;
+            text-align: center;
+            font-family: TUITypeCyrillicLight;
+              font-size: 15px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #092a5e;
+        }
+        &__text {
+            width: 318px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        &__name {
+            font-family: TUITypeCyrillicLight;
+              font-size: 20px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #092a5e;
+            margin-bottom: 35px;
+        }
+        &__info {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &__about {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__description {
+            font-family: TUITypeCyrillic;
+              font-size: 15px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #3c3c3c;
+            margin-bottom: 10px;
+        }
+        &__prices {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-bottom: 10px;
+        }
+        &__price-old {
+            font-family: TUITypeCyrillic;
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: right;
+              color: #b9b9b9;
+            text-decoration: line-through;
+        }
+        &__price-new {
+            font-family: TUITypeCyrillic;
+              font-size: 30px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: right;
+              color: #092a5e;
+        }
+        &__link {
+            width: 100%;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border-radius: 5px;
+            border: solid 2px #ffaf00;
+            background-color: #ffffff;
+            font-family: TUITypeCyrillic;
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #ffaf00;
+            text-decoration: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.2s linear;
+            &:hover {
+                border-radius: 5px;
+                background-color: #ffaf00;
+                color: white;
+            }
+        }
+    
+    }
+    
+    .hotels-active {
+        display: flex;
+        opacity: 1;
+        animation-name: my-animation;
+        animation-duration: 0.5s;
+    }
+    .active-country {
+        border-bottom: solid 3px #092a5e;
+    }
+}
+
+@media all and (min-width: 601px) and (max-width: 900px) {
+     .hotels {
+        &__concepts {
+            width: 100%;
+            margin-bottom: 60px;
+            width: 100%;
+            max-width: 832px;
+            min-width: 532px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__countries {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        &__country {
+            font-family: TUITypeCyrillic;
+              font-size: 17px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: #092a5e;
+            margin-right: 15px;
+            background-color: transparent;
+            border: 0px;
+            cursor: pointer;
+            text-align: left;
+            text-transform: uppercase;
+            padding-bottom: 4px;
+            transition: border-bottom 0.2s linear;
+            &:hover {
+                border-bottom: solid 3px #ffaf00;
+            }
+        }
+        &__countries-mobile {
+            display: none;
+        }
+        &__country-mobile {
+            display: none;
+            
+        }
+        &__blocks {
+            width: 90%;
+            display: none;
+            opacity: 0;
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__block {
+            width: 44%;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 10px;
+            border: solid 1px #e7e3db;
+            border-radius: 10px;
+            transition: box-shadow 0.2s linear;
+            &:hover {
+                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
+            }
+        }
+        &__banner {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            height: 120px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            
+        }
+        &__poster {
+            position: absolute;
+            top: 0px;
+            left:0px;
+            z-index: -1;
+        }
+        &__place {
+            z-index: 10;
+            font-family: TUITypeCyrillicLight;
+              font-size: 17px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #ffffff;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        &__sale {
+            z-index: 10;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 7px;
+            padding-right: 7px;
+            margin-bottom: 8px;
+            margin-right: 20px;
+              border-radius: 50%;
+              background-color: #ffe600;
+            text-align: center;
+            font-family: TUITypeCyrillicLight;
+              font-size: 15px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #092a5e;
+        }
+        &__text {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 20px;
+            padding-left: 0px;
+        }
+        &__name {
+            font-family: TUITypeCyrillicLight;
+              font-size: 14px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #092a5e;
+            margin-bottom: 35px;
+        }
+        &__info {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &__about {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__description {
+            font-family: TUITypeCyrillic;
+              font-size: 14px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #3c3c3c;
+            margin-bottom: 10px;
+        }
+        &__prices {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-bottom: 10px;
+        }
+        &__price-old {
+            font-family: TUITypeCyrillic;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: right;
+              color: #b9b9b9;
+            text-decoration: line-through;
+        }
+        &__price-new {
+            font-family: TUITypeCyrillic;
+              font-size: 18px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: right;
+              color: #092a5e;
+        }
+        &__link {
+            width: 100%;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border-radius: 5px;
+            border: solid 2px #ffaf00;
+            background-color: #ffffff;
+            font-family: TUITypeCyrillic;
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #ffaf00;
+            text-decoration: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.2s linear;
+            &:hover {
+                border-radius: 5px;
+                background-color: #ffaf00;
+                color: white;
+            }
+        }
+    
+    }
+    
+    .hotels-active {
+        display: flex;
+        opacity: 1;
+        animation-name: my-animation;
+        animation-duration: 0.5s;
+    }
+    .active-country {
+        border-bottom: solid 3px #092a5e;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .hotels {
+        &__concepts {
+            width: 100%;
+            margin-bottom: 60px;
+            width: 100%;
+            max-width: 550px;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__countries {
+            width: 90%;
+            display: none;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        &__country {
+            font-family: TUITypeCyrillic;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: #092a5e;
+            margin-right: 5px;
+            background-color: transparent;
+            border: 0px;
+            cursor: pointer;
+            text-align: left;
+            text-transform: uppercase;
+            padding-bottom: 4px;
+            transition: border-bottom 0.2s linear;
+            &:hover {
+                border-bottom: solid 3px #ffaf00;
+            }
+        }
+        &__countries-mobile {
+            width: 90%;
+            border-radius: 5px;
+            height: 50px;
+            margin-bottom: 20px;
+            border: solid 2px #ffaf00;
+            font-family: TUITypeCyrillic;
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: #092a5e;
+            padding-left: 20px;
+        }
+        &__country-mobile {
+            width: 100%;
+            font-family: TUITypeCyrillic;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: #092a5e;
+            
+        }
+        &__blocks {
+            width: 90%;
+            display: none;
+            opacity: 0;
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__block {
+            width: 90%;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 10px;
+            border: solid 1px #e7e3db;
+            border-radius: 10px;
+            transition: box-shadow 0.2s linear;
+            &:hover {
+                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
+            }
+        }
+        &__banner {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            height: 120px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            
+        }
+        &__poster {
+            
+            position: absolute;
+            top: 0px;
+            left:0px;
+            z-index: -1;
+        }
+        &__place {
+            z-index: 10;
+            font-family: TUITypeCyrillicLight;
+              font-size: 17px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #ffffff;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        &__sale {
+            z-index: 10;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 7px;
+            padding-right: 7px;
+            margin-bottom: 8px;
+            margin-right: 20px;
+              border-radius: 50%;
+              background-color: #ffe600;
+            text-align: center;
+            font-family: TUITypeCyrillicLight;
+              font-size: 15px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #092a5e;
+        }
+        &__text {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 20px;
+            padding-left: 0px;
+        }
+        &__name {
+            font-family: TUITypeCyrillicLight;
+              font-size: 18px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #092a5e;
+            margin-bottom: 20px;
+        }
+        &__info {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &__about {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__description {
+            font-family: TUITypeCyrillic;
+              font-size: 14px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #3c3c3c;
+            margin-bottom: 10px;
+        }
+        &__prices {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-bottom: 10px;
+        }
+        &__price-old {
+            font-family: TUITypeCyrillic;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: right;
+              color: #b9b9b9;
+            text-decoration: line-through;
+        }
+        &__price-new {
+            font-family: TUITypeCyrillic;
+              font-size: 18px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: right;
+              color: #092a5e;
+        }
+        &__link {
+            width: 100%;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border-radius: 5px;
+            border: solid 2px #ffaf00;
+            background-color: #ffffff;
+            font-family: TUITypeCyrillic;
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #ffaf00;
+            text-decoration: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.2s linear;
+            &:hover {
+                border-radius: 5px;
+                background-color: #ffaf00;
+                color: white;
+            }
+        }
+    
+    }
+    
+    .hotels-active {
+        display: flex;
+        opacity: 1;
+        animation-name: my-animation;
+        animation-duration: 0.5s;
+    }
+    .active-country {
+        border-bottom: solid 3px #092a5e;
+    }
+}

@@ -194,7 +194,7 @@ const smartHotels = new Vue ({
                     hotelName : 'SMART Club Hotel Mirabell 4*',
                     background: 'https://agent.tui.ru/img/bfdecb3c-4e14-4400-83d9-4e426598fd1c/Europe/Turkey/Alanya/Konakli/SMART-Mirabell-Hotel.jpg?geo=1&width=620&height=380',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Club-Hotel-Mirabell',
-                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-smart__mirabell__hotel/',
+                    hotelLinkClient: '/hotel/europe-turkey-alanya-konakli-smart__club__hotel__mirabell/',
 
                     //EE
                     countryNameEE: 'Türgi, Konakli',

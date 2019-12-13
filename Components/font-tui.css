@@ -1,12 +1,42 @@
 <!-- ШРИФТ =============================================== -->
 <style>
     @font-face {
-        font-family: 'TUI-reg';
+        font-family: 'TUITypeLight-Regular';
         src: url('https://www.tui.ru/getmedia/0c02516a-a2de-4325-ba89-f7ac294122a8/TUITypeLight-Regular');
         src: url('https://www.tui.ru/getmedia/0c02516a-a2de-4325-ba89-f7ac294122a8/TUITypeLight-Regular?#iefix') format('embedded-opentype'),
             url('https://www.tui.ru/getmedia/953947e9-cb5a-43a7-a16a-1ca276d08920/TUITypeLight-Regular') format('woff2'),
             url('https://www.tui.ru/getmedia/73494612-776c-4364-b603-208f014e9bff/TUITypeLight-Regular') format('woff'),
             url('https://www.tui.ru/getmedia/6294bb39-80a5-4825-9b12-a1bd5925de01/TUITypeLight-Regular') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+</style>
+<!-- ШРИФТ =============================================== -->
+
+<!-- ШРИФТ =============================================== -->
+<style>
+    @font-face {
+        font-family: 'TUITypeCyrillic';
+        src: url('https://www.tui.ru/getmedia/29d9e100-5e6c-4f89-8348-f18a82ddf7b8/TUITypeCyrillic-Regular_hinted_fix_rouble');
+        src: 
+            url('https://www.tui.ru/getmedia/910bc6e7-90d1-47b2-84ff-81220c6888ee/TUITypeCyrillic-Regular_hinted_fix_rouble') format('woff2'),
+            url('https://www.tui.ru/getmedia/a9a13042-961a-4059-9ce6-3541c02d237e/TUITypeCyrillic-Regular_hinted_fix_rouble') format('woff'),
+            url('https://www.tui.ru/getmedia/29d9e100-5e6c-4f89-8348-f18a82ddf7b8/TUITypeCyrillic-Regular_hinted_fix_rouble') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+</style>
+<!-- ШРИФТ =============================================== -->
+
+<!-- ШРИФТ =============================================== -->
+<style>
+    @font-face {
+        font-family: 'TUITypeCyrillicLight';
+        src: url('https://www.tui.ru/getmedia/6becd8f2-8778-421f-900d-c4f254bee767/TUITypeCyrillicLight-Regular_hinted_fix_rouble');
+        src: 
+            url('https://www.tui.ru/getmedia/49e5cc76-4045-468f-86f0-a12ead052579/TUITypeCyrillicLight-Regular_hinted_fix_rouble') format('woff2'),
+            url('https://www.tui.ru/getmedia/20dc32fa-f639-495c-85f1-ce59988966ba/TUITypeCyrillicLight-Regular_hinted_fix_rouble') format('woff'),
+            url('https://www.tui.ru/getmedia/6becd8f2-8778-421f-900d-c4f254bee767/TUITypeCyrillicLight-Regular_hinted_fix_rouble') format('truetype');
         font-weight: 300;
         font-style: normal;
     }

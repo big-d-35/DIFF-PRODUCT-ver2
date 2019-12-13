@@ -15,18 +15,45 @@
     <!-- CSS STYLE ======================================================================== -->
 
     <link rel="stylesheet" href="../CSS-for-all-New-Concepts/reset.min.css">
-
-    <link rel="stylesheet" media="all and (min-width: 1201px)" href="">
-    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="">
-    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="">
-    <link rel="stylesheet" media="all and (max-width: 600px)" href="">
+    <link rel="stylesheet" href="css/hotels-concepts.css">
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="css/desktop.css">
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="css/laptop.css">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="css/tablet.css">
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="css/mobile.css">
 
 
 
 
 
     <!-- CSS STYLE ======================================================= -->
-
+    <!-- ШРИФТ =============================================== -->
+    <style>
+        @font-face {
+            font-family: 'TUITypeCyrillic';
+            src: url('https://www.tui.ru/getmedia/29d9e100-5e6c-4f89-8348-f18a82ddf7b8/TUITypeCyrillic-Regular_hinted_fix_rouble');
+            src:
+                url('https://www.tui.ru/getmedia/910bc6e7-90d1-47b2-84ff-81220c6888ee/TUITypeCyrillic-Regular_hinted_fix_rouble') format('woff2'),
+                url('https://www.tui.ru/getmedia/a9a13042-961a-4059-9ce6-3541c02d237e/TUITypeCyrillic-Regular_hinted_fix_rouble') format('woff'),
+                url('https://www.tui.ru/getmedia/29d9e100-5e6c-4f89-8348-f18a82ddf7b8/TUITypeCyrillic-Regular_hinted_fix_rouble') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+    </style>
+    <!-- ШРИФТ =============================================== -->
+    <!-- ШРИФТ =============================================== -->
+    <style>
+        @font-face {
+            font-family: 'TUITypeCyrillicLight';
+            src: url('https://www.tui.ru/getmedia/6becd8f2-8778-421f-900d-c4f254bee767/TUITypeCyrillicLight-Regular_hinted_fix_rouble');
+            src:
+                url('https://www.tui.ru/getmedia/49e5cc76-4045-468f-86f0-a12ead052579/TUITypeCyrillicLight-Regular_hinted_fix_rouble') format('woff2'),
+                url('https://www.tui.ru/getmedia/20dc32fa-f639-495c-85f1-ce59988966ba/TUITypeCyrillicLight-Regular_hinted_fix_rouble') format('woff'),
+                url('https://www.tui.ru/getmedia/6becd8f2-8778-421f-900d-c4f254bee767/TUITypeCyrillicLight-Regular_hinted_fix_rouble') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+    </style>
+    <!-- ШРИФТ =============================================== -->
 
 
 </head>
@@ -40,34 +67,36 @@
 <div class="concepts__main" id="fun-sun">
    
    <!-- BANNER ===================================== -->
-    <div class="banner__concepts">
+    <div class="banner__concepts" v-bind:class="bannerConceptsBckg">
         <div class="banner__titles">
-            <img src="" alt="FUN SUN Logo" class="banner__logo">
+            <img v-bind:src=" logo " v-bind:alt=" logoAlt " class="banner__logo">
             <h2 class="banner__title"></h2>
         </div>
         <ul class="banner__text">
-            <li class="banner__text-item"></li>
+            <li class="banner__text-item" v-for=' bannerItem in bannerItems '>{{ bannerItem.itemRU }}</li>
         </ul>
     </div>  
     <!-- BANNER ===================================== -->
     
     <!-- ABOUT ===================================== -->
     <div class="about__concepts">
-        <h2 class="about__title"></h2>
-        <p class="about__text"></p>
+        <h2 class="about__title">{{aboutTitleRU}}</h2>
+        <p class="about__text">{{aboutTextRU}}</p>
     </div>    
     <!-- ABOUT ===================================== -->
     
     <!-- SERVICES ===================================== -->
     <div class="services__concepts">
-        <h2 class="services__title"></h2>
+        <h2 class="services__title">{{servicesTitleRU}}</h2>
         <div class="services__blocks">
-            <div class="services__block">
-                <img src="" alt="" class="services__img">
+            <div class="services__block" v-for=" servicesItem in servicesItems" v-bind:style=" servicesItem.cssBckg ">
+                <img v-bind:src=" servicesItem.image " v-bind:alt=" servicesItem.imageAlt " class="services__img">
                 <div class="services__text">
-                    <h3 class="services__name"></h3>
+                    <h3 class="services__name">{{ servicesItem.titleRU }}</h3>
                     <ul class="services__items">
-                        <li class="services__item"></li>
+                        <li class="services__item" v-for=" item in servicesItem.items ">
+                            {{ item.itemRU }}
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -77,14 +106,15 @@
     
     <!-- ENTERTAIMENT ===================================== -->
     <div class="entertaiments__concepts">
-        <h2 class="entertaiments__title"></h2>
-        <div class="entertaiments__blocks">
-            <div class="entertaiments__block">
-                <img src="" alt="" class="entertaiments__img">
+        <h2 class="entertaiments__title">{{ entTitleRU }}</h2>
+        <div class="entertaiments__blocks" >
+            <div class="entertaiments__block" v-for=" entItem in entItems" v-bind:style=" entItem.cssBckg ">
+                <img v-bind:src=" entItem.image " v-bind:alt=" entItem.imageAlt " class="entertaiments__img">
                 <div class="entertaiments__text">
-                    <h3 class="entertaiments__name"></h3>
+                    <h3 class="entertaiments__name">{{ entItem.titleRU }}</h3>
                     <ul class="entertaiments__items">
-                        <li class="entertaiments__item"></li>
+                        <li class="entertaiments__item" v-for=" item in entItem.items ">
+                            {{ item.itemRU }}</li>
                     </ul>
                 </div>
             </div>
@@ -93,13 +123,39 @@
     <!-- ENTERTAIMENT ===================================== -->
     
     <!-- HOTELS ===================================== -->
-    <div class="hotels__concepts">
+    <div class="hotels__concepts" id="hotels-concepts-block">
         <div class="hotels__countries">
-            <button class="hotels__country"></button>
+           
+            <button v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</button>
+ 
         </div>
-        <div class="hotels__blocks">
-            <div class="hotels__block">
-                
+        
+        <select class="hotels__countries-mobile">
+              <option class="hotels__country-mobile" v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU">{{ countryName.nameRU }}</option>
+              
+        </select>
+        
+        <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showRU " class="hotels__blocks" v-bind:class=" countryHotel.class ">
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels ">
+                <div class="hotels__banner">
+                    <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
+                    <h3 class="hotels__place">{{ hotel.place }}</h3>
+                    <h6 class="hotels__sale">{{ hotel.sale }}</h6>
+                </div>
+                <div class="hotels__text">
+                    <h3 class="hotels__name">{{ hotel.name }}</h3>
+                    <div class="hotels__info">
+                        <div class="hotels__about">
+                            <p class="hotels__description">{{ hotel.nights }}</p>
+                            <p class="hotels__description">{{ hotel.service }}</p>
+                        </div>
+                        <div class="hotels__prices">
+                            <p class="hotels__price-old">{{ hotel.oldPrice }}</p>
+                            <p class="hotels__price-new">{{ hotel.price }}</p>
+                        </div>
+                    </div>
+                    <a v-bind:href=" hotel.agentLink " class="hotels__link" target="_blank"> {{ buttonRU }}</a>
+                </div>
             </div>
         </div>
     </div>
@@ -108,11 +164,13 @@
     
     <!-- PHOTOS ===================================== -->
     <div class="photos__concepts">
-        <h2 class="photos__title"></h2>
+        <h2 class="photos__title">{{ photosTitleRU }}</h2>
         <div class="photos__block">
-            <div class="photos__video"></div>
+            <div class="photos__video">
+                <img v-bind:src=" photosVideoImg " alt="" class="photos__video-img">
+            </div>
             <div class="photos__photos">
-                <img src="" alt="" class="photos__photo">
+                <img v-for=" photosItem in photosItems " v-bind:src=" photosItem.image " v-bind:alt=" photosItem.imageAlt " class="photos__photo" >
             </div>
         </div>
     </div>
@@ -121,17 +179,22 @@
     
     <!-- PROGRAMS ===================================== -->
     <div class="programs__concepts">
-        <h2 class="programs__title"></h2>
-        <div class="programs__block">
-            <div class="programs__names">
-               <img src="" alt="" class="programs__icon">
-               <h3 class="programs__name"></h3>
-            </div>
-            <div class="programs__items">
-                <a href="" class="programs__item" target="_blank">
-                       
-                    <img src="" alt="" class="programs__download">
-                </a>
+        <h2 class="programs__title">{{ prgrmTitleRU }}</h2>
+        <div class="programs__blocks">
+            <div class="programs__block" v-for=" prgrmItem in prgrmItems ">
+                <div class="programs__names">
+                    <img v-bind:src=" prgrmItem.image " v-bind:alt="  prgrmItem.imageAlt " class="programs__icon">
+                    <h3 class="programs__name">{{ prgrmItem.titleRU }}</h3>
+                </div>
+                <div class="programs__items">
+                    <h3 class="programs__text" v-for=" item in prgrmItem.items ">{{ item.itemRU }}
+                        <a v-bind:href=" item.linkRU " class="programs__item" target="_blank">
+                            <img v-bind:src=" prgrmIcon " v-bind:alt=" prgrmIconAlt " class="programs__download">
+                            {{ prgrmDownloadRU }}
+                        </a>
+                    </h3>
+
+                </div>
             </div>
         </div>
     </div>
@@ -140,9 +203,11 @@
     
     <!-- ALL HOTELS ===================================== -->
     <div class="allhotels__concepts">
-        <div class="allhotels__block">
-            <h3 class="allhotels__name"></h3>
-            <a href="" class="allhotels__link" target="_blank"></a>
+        <div class="allhotels__blocks">
+            <div class="allhotels__block" v-for=" allHotel in allHotels">
+                <h3 class="allhotels__name">{{ allHotel.countryRU }}</h3>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkAgent " class="allhotels__link" target="_blank">{{ hotel.name }}</a>
+            </div>
         </div>
     </div>
     <!-- ALL HOTELS ===================================== -->
@@ -153,9 +218,10 @@
 
 <!-- SCRIPTS START ==================================================================== -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
-<script src="" defer></script>
-<script src="" defer></script>
-<script src="" defer></script>
+<script src="VUE-hotels-Fun-Sun-ru-ua-by.js" defer></script>
+<script src="VUE-fun-sun.js" defer></script>
+
+<script src="fun-sun-hotels-script.js" defer></script>
 
 
 
