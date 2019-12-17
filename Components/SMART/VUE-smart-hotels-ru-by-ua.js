@@ -84,31 +84,7 @@ const hotels = new Vue({
                 showBY : true,
                 showUA : true,
                 hotels : [
-                    {
-                        img: 'https://agent.tui.ru/img/9f32661c-239f-4db0-a47e-527e707b3209/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel.jpg',
-                        sale: '20%',
-                        place: 'Кемер / Финике',
-                        name : 'SMART Club Marakesh Beach Hotel 4*',
-                        agentLink : '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
-                        clientLink : '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
-                        nights : '7 ночей',
-                        service : 'Ultra All Inclusive',
-                        price: 'от 112 000 ₽',
-                        oldPrice: '145 232 ₽',
-                    },
                     
-                    {
-                        img: 'https://agent.tui.ru/img/c49774bb-b878-4f04-bec6-d043ea833e95/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel.jpg?geo=1&width=620&height=380',
-                        sale: '20%',
-                        place: 'Турция, Бельдиби',
-                        name : 'SMART Limoncello Konakli Beach Hotel 5*',
-                        agentLink : '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel-(ex-Club-Konakli)',
-                        clientLink : '/hotel/europe-turkey-alanya-konakli-smart__limoncello__konakli__beach__hotel/',
-                        nights : '7 ночей',
-                        service : 'Ultra All Inclusive',
-                        price: 'от 112 000 ₽',
-                        oldPrice: '145 232 ₽',
-                    },
                     
                     {
                         img: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=bfdecb3c-4e14-4400-83d9-4e426598fd1c&height=460',
@@ -126,7 +102,7 @@ const hotels = new Vue({
                     {
                         img: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=cb15144e-b409-40d2-9d98-a9c2170537da&height=460',
                         sale: '20%',
-                        place: 'Турция, Анталья',
+                        place: 'Турция / Анталья',
                         name : 'SMART Lara Family 5*',
                         agentLink : '/Tours/Europe/Turkey/Antalya/Lara/Lara-Family-Star-Iron-Ambassador',
                         clientLink : '/hotel/europe-turkey-antalya-lara-smart__lara__family/',
@@ -139,7 +115,7 @@ const hotels = new Vue({
                     {
                         img: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=d511c15f-1b36-4c82-b22d-c9aabf7610eb&height=460',
                         sale: '20%',
-                        place: 'Турция, Анталья',
+                        place: 'Турция / Анталья',
                         name : 'SMART Asdem Beach 5*',
                         agentLink : '/Tours/Europe/Turkey/Kemer/Beldibi/SMART-Asdem-Beach',
                         clientLink : '/hotel/europe-turkey-kemer-beldibi-smart__asdem__beach/',
@@ -149,6 +125,31 @@ const hotels = new Vue({
                         oldPrice: '145 232 ₽',
                     },
                     
+                    {
+                        img: 'https://agent.tui.ru/img/9f32661c-239f-4db0-a47e-527e707b3209/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel.jpg',
+                        sale: '20%',
+                        place: 'Кемер / Финике',
+                        name : 'SMART Club Marakesh Beach Hotel 4*',
+                        agentLink : '/Tours/Europe/Turkey/Kemer/Beldibi/Smart-Club-Marakesh-Beach-Hotel',
+                        clientLink : '/hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/',
+                        nights : '7 ночей',
+                        service : 'Ultra All Inclusive',
+                        price: 'от 112 000 ₽',
+                        oldPrice: '145 232 ₽',
+                    },
+                    
+                    {
+                        img: 'https://agent.tui.ru/img/c49774bb-b878-4f04-bec6-d043ea833e95/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel.jpg?geo=1&width=620&height=380',
+                        sale: '20%',
+                        place: 'Турция / Бельдиби',
+                        name : 'SMART Limoncello Konakli Beach Hotel 5*',
+                        agentLink : '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel-(ex-Club-Konakli)',
+                        clientLink : '/hotel/europe-turkey-alanya-konakli-smart__limoncello__konakli__beach__hotel/',
+                        nights : '7 ночей',
+                        service : 'Ultra All Inclusive',
+                        price: 'от 112 000 ₽',
+                        oldPrice: '145 232 ₽',
+                    },
                     
                 ],
             },
