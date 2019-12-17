@@ -149,10 +149,10 @@
                             <p class="hotels__description">{{ hotel.nights }}</p>
                             <p class="hotels__description">{{ hotel.service }}</p>
                         </div>
-                        <div class="hotels__prices">
+                        <!--<div class="hotels__prices">
                             <p class="hotels__price-old">{{ hotel.oldPrice }}</p>
                             <p class="hotels__price-new">{{ hotel.price }}</p>
-                        </div>
+                        </div>-->
                     </div>
                     <a v-bind:href=" hotel.agentLink " class="hotels__link" target="_blank"> {{ buttonRU }}</a>
                 </div>
@@ -162,7 +162,7 @@
     <!-- HOTELS ===================================== -->
     
     
-    <!-- PHOTOS ===================================== -->
+    <!-- PHOTOS =====================================
     <div class="photos__concepts">
         <h2 class="photos__title">{{ photosTitleRU }}</h2>
         <div class="photos__block">
@@ -177,7 +177,7 @@
     <!-- PHOTOS ===================================== -->
     
     
-    <!-- PROGRAMS ===================================== -->
+    <!-- PROGRAMS =====================================
     <div class="programs__concepts">
         <h2 class="programs__title">{{ prgrmTitleRU }}</h2>
         <div class="programs__blocks">

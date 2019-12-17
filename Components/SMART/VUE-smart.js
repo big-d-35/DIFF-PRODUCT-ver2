@@ -164,9 +164,9 @@ const smartPage = new Vue ({
                     },
                     
                     {
-                        itemRU : 'Бережное отношение к окружающей среде',    
-                        itemBY : 'Бережное отношение к окружающей среде',    
-                        itemUA : 'Бережное отношение к окружающей среде',    
+                        itemRU : 'Забота об окружающей среде',    
+                        itemBY : 'Забота об окружающей среде',    
+                        itemUA : 'Забота об окружающей среде',    
                         itemEE : 'Keskkonna austamine',    
                         itemLT : 'Dėmesys aplinkai',    
                         itemLV : 'Saudzīga attieksme pret apkārtējo vidi',    
@@ -197,18 +197,18 @@ const smartPage = new Vue ({
                 items : [
                     
                     {
-                        itemRU : 'A la carte ресторан',    
-                        itemBY : 'A la carte ресторан',    
-                        itemUA : 'A la carte ресторан',    
+                        itemRU : 'A la carte рестораны',    
+                        itemBY : 'A la carte рестораны',    
+                        itemUA : 'A la carte рестораны',    
                         itemEE : 'A la carte restoran',    
                         itemLT : 'A la carte restoranas',    
                         itemLV : 'A La Carte restorāns',    
                     },
                     
                     {
-                        itemRU : 'Тематические ужины',    
-                        itemBY : 'Тематические ужины',    
-                        itemUA : 'Тематические ужины',    
+                        itemRU : 'Блюда для веганов и аллергиков',    
+                        itemBY : 'Блюда для веганов и аллергиков',    
+                        itemUA : 'Блюда для веганов и аллергиков',    
                         itemEE : 'Temaatilised õhtusöögid',    
                         itemLT : 'Teminės vakarienės',    
                         itemLV : 'Tematiskās vakariņas',    
@@ -233,9 +233,9 @@ const smartPage = new Vue ({
                     },
                     
                     {
-                        itemRU : 'Street food',    
-                        itemBY : 'Street food',    
-                        itemUA : 'Street food',    
+                        itemRU : 'Street food на колесах',    
+                        itemBY : 'Street food на колесах',    
+                        itemUA : 'Street food на колесах',    
                         itemEE : 'Street food',    
                         itemLT : 'Greitas maistas',    
                         itemLV : 'Street food',    
@@ -337,12 +337,12 @@ const smartPage = new Vue ({
                     },
                     
                     {
-                        itemRU : 'Детский клуб',    
-                        itemBY : 'Детский клуб',    
-                        itemUA : 'Детский клуб',    
-                        itemEE : 'Laste klubi',    
-                        itemLT : 'Vaikų klubas',    
-                        itemLV : 'Bērnu klubs',    
+                        itemRU : 'Детский клуб Mini Toucan',    
+                        itemBY : 'Детский клуб Mini Toucan',    
+                        itemUA : 'Детский клуб Mini Toucan',    
+                        itemEE : 'Laste klubi Mini Toucan',    
+                        itemLT : 'Vaikų klubas Mini Toucan',    
+                        itemLV : 'Bērnu klubs Mini Toucan',    
                     },
                     
                     {
