@@ -14,7 +14,7 @@
 
     <!-- CSS STYLE ======================================================================== -->
 
-<link rel="stylesheet" href="https://www.tui.ru/getmedia/17d935e1-f4c1-4c03-99ac-3359781db840/header-footer-all-css-concepts">
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/17d935e1-f4c1-4c03-99ac-3359781db840/header-footer-all-css-concepts">
     <link rel="stylesheet" href="https://www.tui.ru/getmedia/28ac71ad-53fa-4e23-bc03-6658895fd4c9/hotels-concepts">
     <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/d09b6270-5a8a-4d54-86c3-8046428a2edd/desktop">
     <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/b70c243b-bb99-49c1-b9d3-3c9a304b972d/laptop">
@@ -251,7 +251,7 @@
     
     <!-- HOTELS ===================================== -->
     <div class="hotels__concepts" id="hotels-concepts-block">
-        <div class="hotels__countries">
+        <div class="hotels__countries" id="hotels-concepts-buttons-block">
            
             <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showBY" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameBY }}</a>
  
@@ -263,7 +263,7 @@
         </select>
         
         <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showBY " class="hotels__blocks" v-bind:class=" countryHotel.class ">
-            <div class="hotels__block" v-for=" hotel in countryHotel.hotels ">
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels " v-if="hotel.showBY">
                 <div class="hotels__banner">
                     <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
                     <h3 class="hotels__place">{{ hotel.place }}</h3>
@@ -331,9 +331,9 @@
     <!-- ALL HOTELS ===================================== -->
     <div class="allhotels__concepts">
         <div class="allhotels__blocks">
-            <div class="allhotels__block" v-for=" allHotel in allHotels">
+            <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showBY">
                 <h3 class="allhotels__name">{{ allHotel.countryBY }}</h3>
-                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkAgent " class="allhotels__link" target="_blank">{{ hotel.name }}</a>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkAgent " class="allhotels__link" v-if="hotel.showBY" target="_blank">{{ hotel.name }}</a>
             </div>
         </div>
     </div>

@@ -10,16 +10,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>TUI Fun and Sun</title>
+    <title>TUI Day and Night</title>
 
     <!-- CSS STYLE ======================================================================== -->
-
-
-    <link rel="stylesheet" href="https://www.tui.ru/getmedia/28ac71ad-53fa-4e23-bc03-6658895fd4c9/hotels-concepts">
-    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/d09b6270-5a8a-4d54-86c3-8046428a2edd/desktop">
-    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/b70c243b-bb99-49c1-b9d3-3c9a304b972d/laptop">
-    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/95a46c39-1670-4da2-ac1f-58f91cefd9c3/tablet">
-    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/4af90570-f145-4f85-ae52-ca4f553aa886/mobile">
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/17d935e1-f4c1-4c03-99ac-3359781db840/header-footer-all-css-concepts">
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/d4d7b368-5b53-48db-ba78-bbb734584824/hotels-concepts">
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/17fc3d10-a655-4d88-aa36-090663b885ce/desktop">
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/d8ed8eb7-c0a3-4c2f-a04a-9511e727da38/laptop">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/42825a13-9dc1-47a0-b469-6b8e3833a1a4/tablet">
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/6cbad9f7-8843-479d-bb52-a157c00dc43c/mobile">
 
     <!-- CSS STYLE ======================================================= -->
     <!-- ШРИФТ =============================================== -->
@@ -50,7 +49,7 @@
         }
     </style>
     <!-- ШРИФТ =============================================== -->
-    <style>
+<style>
         .ActionPage {
             background: transparent!important; 
             
@@ -70,14 +69,15 @@
     }
         
     </style>
-    <!-- SCRIPT загрузки VUE  =================================================== -->
+
+<!-- SCRIPT загрузки VUE  =================================================== -->
 <script>
     const vueLinks = [
         'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
-        'https://www.tui.ru/getmedia/c588d8ed-32ae-4cfc-af70-3782798359b0/VUE-hotels-Fun-Sun-ru-ua-by-NEW',
-        'https://www.tui.ru/getmedia/9932cbb7-6b5a-4389-b147-0e5269d6320e/VUE-fun-sun',
-        'https://www.tui.ru/getmedia/a3807bcb-a5c6-4b1a-9aa5-3ccfa3106e57/fun-sun-hotels-script',
-        
+        'https://www.tui.ru/getmedia/d68f9382-4607-450a-b140-75dd818719bd/VUE-hotels-day-night-ru-ua-by-NEW',
+        'https://www.tui.ru/getmedia/85681a56-57a1-4981-ba56-4a4179c46108/VUE-day-night',
+        'https://www.tui.ru/getmedia/cc47bad7-ac05-4580-878b-05ea8808d485/day-night-hotels-script',
+        'https://www.tui.ru/getmedia/db0b021d-bdd3-4a94-a5f6-e797ed62b2a3/diff-header-footer-for-concepts',
         
     ];
 
@@ -113,18 +113,15 @@
 
     add_files(vueLinks, 'script');
 </script>
-
 </head>
 
 <!-- HEAD END ========================================================================= -->
 
 <body>
 
-<!-- MAIN START ============================================================= -->
+<!-- MAIN START ========================================================================= -->
 
-
-
-<div class="concepts__main" id="fun-sun">
+<div class="concepts__main" id="day-night">
    
    <!-- BANNER ===================================== -->
     <div class="banner__concepts" v-bind:class="bannerConceptsBckg">
@@ -164,7 +161,7 @@
     </div>
     <!-- SERVICES ===================================== -->
     
-    <!-- ENTERTAIMENT ===================================== -->
+    <!-- ENTERTAIMENT ===================================== 
     <div class="entertaiments__concepts">
         <h2 class="entertaiments__title">{{ entTitleUA }}</h2>
         <div class="entertaiments__blocks" >
@@ -247,8 +244,8 @@
                     <h3 class="programs__name">{{ prgrmItem.titleUA }}</h3>
                 </div>
                 <div class="programs__items">
-                    <h3 class="programs__text" v-for=" item in prgrmItem.items ">{{ item.itemUA }}
-                        <a v-bind:href=" item.linkUA " class="programs__item" target="_blank">
+                    <h3 class="programs__text" v-for=" item in prgrmItem.items ">{{ item.itemRU }}
+                        <a v-bind:href=" item.linkRU " class="programs__item" target="_blank">
                             <img v-bind:src=" prgrmIcon " v-bind:alt=" prgrmIconAlt " class="programs__download">
                             {{ prgrmDownloadUA }}
                         </a>
@@ -274,10 +271,11 @@
 </div>
 
 
-
 <!-- MAIN END ========================================================================= -->
 
 <!-- SCRIPTS START ==================================================================== -->
+
+
 
 
 <!-- SCRIPTS END ====================================================================== -->

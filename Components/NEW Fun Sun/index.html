@@ -124,7 +124,7 @@
     
     <!-- HOTELS ===================================== -->
     <div class="hotels__concepts" id="hotels-concepts-block">
-        <div class="hotels__countries">
+        <div class="hotels__countries" id="hotels-concepts-buttons-block">
            
             <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</a>
  
@@ -136,7 +136,7 @@
         </select>
         
         <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showRU " class="hotels__blocks" v-bind:class=" countryHotel.class ">
-            <div class="hotels__block" v-for=" hotel in countryHotel.hotels ">
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels " v-if="hotel.showRU">
                 <div class="hotels__banner">
                     <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
                     <h3 class="hotels__place">{{ hotel.place }}</h3>
@@ -204,9 +204,9 @@
     <!-- ALL HOTELS ===================================== -->
     <div class="allhotels__concepts">
         <div class="allhotels__blocks">
-            <div class="allhotels__block" v-for=" allHotel in allHotels">
+            <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showRU">
                 <h3 class="allhotels__name">{{ allHotel.countryRU }}</h3>
-                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkAgent " class="allhotels__link" target="_blank">{{ hotel.name }}</a>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkAgent " class="allhotels__link" v-if="hotel.showRU" target="_blank">{{ hotel.name }}</a>
             </div>
         </div>
     </div>

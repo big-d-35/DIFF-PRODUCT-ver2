@@ -183,7 +183,7 @@
     
     <!-- HOTELS ===================================== -->
     <div class="hotels__concepts" id="hotels-concepts-block">
-        <div class="hotels__countries">
+        <div class="hotels__countries" id="hotels-concepts-buttons-block">
            
             <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showBY" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameBY }}</a>
  
@@ -194,8 +194,8 @@
               
         </select>
         
-        <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showUA " class="hotels__blocks" v-bind:class=" countryHotel.class ">
-            <div class="hotels__block" v-for=" hotel in countryHotel.hotels ">
+        <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showUA " class="hotels__blocks" v-bind:class=" countryHotel.class " >
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels " v-if="hotel.showBY">
                 <div class="hotels__banner">
                     <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
                     <h3 class="hotels__place">{{ hotel.place }}</h3>
@@ -263,9 +263,9 @@
     <!-- ALL HOTELS ===================================== -->
     <div class="allhotels__concepts">
         <div class="allhotels__blocks">
-            <div class="allhotels__block" v-for=" allHotel in allHotels">
+            <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showBY">
                 <h3 class="allhotels__name">{{ allHotel.countryBY }}</h3>
-                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkClient " class="allhotels__link" target="_blank">{{ hotel.name }}</a>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkClient " class="allhotels__link" v-if="hotel.showBY" target="_blank">{{ hotel.name }}</a>
             </div>
         </div>
     </div>

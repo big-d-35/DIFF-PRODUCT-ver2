@@ -10,16 +10,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>TUI Fun and Sun</title>
+    <title>TUI Day and Night</title>
 
     <!-- CSS STYLE ======================================================================== -->
-
-
-    <link rel="stylesheet" href="https://www.tui.ru/getmedia/28ac71ad-53fa-4e23-bc03-6658895fd4c9/hotels-concepts">
-    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/d09b6270-5a8a-4d54-86c3-8046428a2edd/desktop">
-    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/b70c243b-bb99-49c1-b9d3-3c9a304b972d/laptop">
-    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/95a46c39-1670-4da2-ac1f-58f91cefd9c3/tablet">
-    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/4af90570-f145-4f85-ae52-ca4f553aa886/mobile">
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/17d935e1-f4c1-4c03-99ac-3359781db840/header-footer-all-css-concepts">
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/d4d7b368-5b53-48db-ba78-bbb734584824/hotels-concepts">
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/17fc3d10-a655-4d88-aa36-090663b885ce/desktop">
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/d8ed8eb7-c0a3-4c2f-a04a-9511e727da38/laptop">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/42825a13-9dc1-47a0-b469-6b8e3833a1a4/tablet">
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/6cbad9f7-8843-479d-bb52-a157c00dc43c/mobile">
 
     <!-- CSS STYLE ======================================================= -->
     <!-- ШРИФТ =============================================== -->
@@ -50,34 +49,38 @@
         }
     </style>
     <!-- ШРИФТ =============================================== -->
-    <style>
-        .ActionPage {
-            background: transparent!important; 
-            
+
+<style>
+        /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
+    .pageWrapper {
+        width: 100% !important;
     }
-        .AppContainer {
-       
-        background-color: transparent!important; 
-       
+
+    .mainHeader {
+        display: none !important;
     }
-        .static {
-            width: 100%!important;
-        }
-        
-    *, :after, :before {
-        background-repeat: no-repeat; 
-        box-sizing: content-box; 
+
+    .contentFooter {
+        display: none !important;
     }
-        
+
+    .mainFooter {
+        display: none !important;
+    }
+    body {
+        background: white!important;
+    }
+    /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
     </style>
-    <!-- SCRIPT загрузки VUE  =================================================== -->
+
+<!-- SCRIPT загрузки VUE  =================================================== -->
 <script>
     const vueLinks = [
         'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
-        'https://www.tui.ru/getmedia/c588d8ed-32ae-4cfc-af70-3782798359b0/VUE-hotels-Fun-Sun-ru-ua-by-NEW',
-        'https://www.tui.ru/getmedia/9932cbb7-6b5a-4389-b147-0e5269d6320e/VUE-fun-sun',
-        'https://www.tui.ru/getmedia/a3807bcb-a5c6-4b1a-9aa5-3ccfa3106e57/fun-sun-hotels-script',
-        
+        'https://www.tui.ru/getmedia/d68f9382-4607-450a-b140-75dd818719bd/VUE-hotels-day-night-ru-ua-by-NEW',
+        'https://www.tui.ru/getmedia/85681a56-57a1-4981-ba56-4a4179c46108/VUE-day-night',
+        'https://www.tui.ru/getmedia/cc47bad7-ac05-4580-878b-05ea8808d485/day-night-hotels-script',
+        'https://www.tui.ru/getmedia/db0b021d-bdd3-4a94-a5f6-e797ed62b2a3/diff-header-footer-for-concepts',
         
     ];
 
@@ -120,11 +123,76 @@
 
 <body>
 
-<!-- MAIN START ============================================================= -->
+<!-- MAIN START ========================================================================= -->
 
 
+<!-- ВЕРХНЕЕ МЕНЮ TOP START==================== -->
+    <div class="menu-top" id="home-page-diff-menu-top" style="padding-bottom: 20px;">
+        <div class="container">
+            <div class="row"><a class="col-md-2 col-6 logo-img" href="/"><img v-bind:src=" logoLink " /></a>
+                <div class="col-5 but-menu-mobile">&nbsp;</div>
+                <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
 
-<div class="concepts__main" id="fun-sun">
+                <div class="col-md-10 col-10 mobile_agent">
+                    <div id="exit_menu">X</div>
+
+                    <div class="row menu-label"><a class="label-menu" target="_blank" v-bind:href=" menuItemFranchaizingLink ">{{menuItemFranchaizingNameUA}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemPartnershipLink ">{{menuItemPartnershipNameUA}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemAboutLink ">{{menuItemAboutNameUA}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemShopLink ">{{menuItemShopNameUA}}</a>
+
+                        <div class="label-menu" style="position: relative;cursor: pointer"><a style="color:#092a5e" v-bind:href=" menuItemConceptsLink ">{{menuItemConceptsNameUA}}</a>
+
+                            <div class="label-menu-2">
+                                <div class="concept-link"><a :href=" menuItemSmartLink "><img :src=" menuItemSmartLogo " alt="Smart_logo" /></a>
+
+                                    <div><a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br />
+                                            {{menuItemSmartNameUA}}</a></div>
+                                </div>
+
+                                <div class="concept-link"><a v-bind:href=" menuItemFunSunLink "><img alt="FN_logo" v-bind:src=" menuItemFunSunLogo " /></a>
+
+                                    <div><a v-bind:href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br />
+                                            {{menuItemFunSunNameUA}}</a></div>
+                                </div>
+
+                                <div class="concept-link"><a v-bind:href=" menuItemDayNightLink "><img alt="FN_logo" v-bind:src=" menuItemDayNightLogo " /></a>
+
+                                    <div><a v-bind:href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br />
+                                            {{menuItemDayNightNameUA}}</a></div>
+                                </div>
+
+                                <div class="concept-link"><a v-bind:href=" menuItemToucanLink "><img alt="FN_logo" v-bind:src=" menuItemToucanLogo " /></a>
+
+                                    <div><a v-bind:href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br />
+                                            {{menuItemToucanNameUA}}</a></div>
+                                </div>
+
+                                <div class="concept-link"><a v-bind:href=" menuItemConceptsAboutLink "><img :src=" menuItemConceptsAboutLogo " alt="Home_logo" /></a>
+
+                                    <div><a v-bind:href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameUA1}}<br />
+                                                {{menuItemConceptsAboutNameUA2}}</b></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="label-menu" target="_blank" v-bind:href=" menuItemPremiumLink ">{{menuItemPremiumName}}</a> <a class="label-menu log enter" data-bind="click: LoginClick" target="_blank" v-bind:href=" menuItemLoginNamelinkUA ">{{menuItemLoginNameUA}}</a>
+                    </div>
+                </div>
+                <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+
+                <div class="col-md-10">
+                    <div class="row menu-telephone">
+                        <div class="col-md-8 col-7">
+                            <p class="telephone-title">{{menuPhoneTitleUA}}</p>
+
+                            <p class="telephone-number">{{menuPhonePhoneUA}}</p>
+                        </div>
+                        <a style="color: black" v-bind:href=" menuTouristSiteLinkUA ">{{menuTouristSiteNameUA}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
+
+<div class="concepts__main" id="day-night">
    
    <!-- BANNER ===================================== -->
     <div class="banner__concepts" v-bind:class="bannerConceptsBckg">
@@ -164,7 +232,7 @@
     </div>
     <!-- SERVICES ===================================== -->
     
-    <!-- ENTERTAIMENT ===================================== -->
+    <!-- ENTERTAIMENT ===================================== 
     <div class="entertaiments__concepts">
         <h2 class="entertaiments__title">{{ entTitleUA }}</h2>
         <div class="entertaiments__blocks" >
@@ -214,7 +282,7 @@
                             <p class="hotels__price-new">{{ hotel.price }}</p>
                         </div>-->
                     </div>
-                    <a v-bind:href=" hotel.clientLink " class="hotels__link" target="_blank"> {{ buttonUA }}</a>
+                    <a v-bind:href=" hotel.agentLink " class="hotels__link" target="_blank"> {{ buttonUA }}</a>
                 </div>
             </div>
         </div>
@@ -247,7 +315,7 @@
                     <h3 class="programs__name">{{ prgrmItem.titleUA }}</h3>
                 </div>
                 <div class="programs__items">
-                    <h3 class="programs__text" v-for=" item in prgrmItem.items ">{{ item.itemUA }}
+                    <h3 class="programs__text" v-for=" item in prgrmItem.items ">{{ item.itemRU }}
                         <a v-bind:href=" item.linkUA " class="programs__item" target="_blank">
                             <img v-bind:src=" prgrmIcon " v-bind:alt=" prgrmIconAlt " class="programs__download">
                             {{ prgrmDownloadUA }}
@@ -266,18 +334,46 @@
         <div class="allhotels__blocks">
             <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showUA">
                 <h3 class="allhotels__name">{{ allHotel.countryUA }}</h3>
-                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkClient " class="allhotels__link" v-if="hotel.showUA" target="_blank">{{ hotel.name }}</a>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkAgent " class="allhotels__link" v-if="hotel.showUA" target="_blank">{{ hotel.name }}</a>
             </div>
         </div>
     </div>
     <!-- ALL HOTELS ===================================== -->
 </div>
 
+<!-- FOOTER START ================================= -->
 
+        <div class="container-fluid footer-informations" style="margin-top: 3em" id="home-page-diff-footer">
+            <div class="row" id="funSunFooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h3>{{funSunPageFooterTitle1UA}}</h3>
+                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink1 ">{{funSunPageFooterSite1UA}}</a><br />
+                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink2UA ">{{funSunPageFooterSite2UA}}</a><br />
+                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink3UA ">{{funSunPageFooterSite3UA}}</a>
+                        </div>
 
+                        <div class="col-md-3">
+                            <h3>{{funSunPageFooterTitle2UA}}</h3>
+                            <a v-bind:href=" funSunPageFooterPhoneLinkUA ">{{funSunPageFooterPhoneTitleUA}}</a><br />
+                            <a v-bind:href=" funSunPageFooterMailLinkUA ">{{funSunPageFooterMailTitleUA}}</a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h3>{{funSunPageFooterTitle3UA}}</h3>
+
+                            <div class="row icons-footer col-10 col-md-12" style="justify-content: flex-start;"><a style="margin: 5px;" target="_blank" v-bind:href=" funSunPageFooterInstagramLink "> <img v-bind:src=" funSunPageFooterInstagramImgLink " /> </a> <a style="margin: 5px;" target="_blank" v-bind:href=" funSunPageFooterFacebookLink "> <img v-bind:src=" funSunPageFooterFacebookImgLink " /> </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER END ================================= -->
 <!-- MAIN END ========================================================================= -->
 
 <!-- SCRIPTS START ==================================================================== -->
+
 
 
 <!-- SCRIPTS END ====================================================================== -->

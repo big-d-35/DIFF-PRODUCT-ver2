@@ -1,5 +1,5 @@
 
-const buttonsBlock = document.getElementById('hotels-concepts-block');
+const buttonsBlock = document.getElementById('hotels-concepts-buttons-block');
 const optionsBlock = document.getElementById('hotels-options-mobile');
 const countrySliders = document.getElementsByClassName('hotels__blocks');
 const buttonActive = document.getElementsByClassName('active-country');

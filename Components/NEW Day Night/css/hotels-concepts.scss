@@ -43,7 +43,7 @@
             padding-bottom: 4px;
             transition: border-bottom 0.2s linear;
             &:hover {
-                border-bottom: solid 3px #ffaf00;
+                border-bottom: solid 3px #5bcbf5;
             }
         }
         &__countries-mobile {
@@ -64,10 +64,10 @@
         }
         &__block {
             width: 360px;
-            min-height: 320px;
+            min-height: 350px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: flex-start;
             margin: 10px;
             border: solid 1px #e7e3db;
@@ -133,9 +133,10 @@
         }
         &__text {
             width: 318px;
+            height: 210px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: flex-start;
             padding-top: 20px;
             padding-left: 20px;
@@ -212,7 +213,7 @@
             padding-top: 13px;
             padding-bottom: 13px;
             border-radius: 5px;
-            border: solid 2px #ffaf00;
+            border: solid 2px #5bcbf5;
             background-color: #ffffff;
             font-family: TUITypeCyrillic;
               font-size: 20px;
@@ -222,14 +223,14 @@
               line-height: normal;
               letter-spacing: normal;
               text-align: center;
-              color: #ffaf00;
+              color: #5bcbf5;
             text-decoration: none;
             cursor: pointer;
             margin-bottom: 20px;
             transition: background-color 0.2s linear;
             &:hover {
                 border-radius: 5px;
-                background-color: #ffaf00;
+                background-color: #5bcbf5;
                 color: white;
             }
         }
@@ -287,7 +288,7 @@
             padding-bottom: 4px;
             transition: border-bottom 0.2s linear;
             &:hover {
-                border-bottom: solid 3px #ffaf00;
+                border-bottom: solid 3px #5bcbf5;
             }
         }
         &__countries-mobile {
@@ -309,10 +310,10 @@
         }
         &__block {
             width: 360px;
-            min-height: 320px;
+            min-height: 350px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: flex-start;
             margin: 10px;
             border: solid 1px #e7e3db;
@@ -378,9 +379,10 @@
         }
         &__text {
             width: 318px;
+            height: 210px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: flex-start;
             padding-top: 20px;
             padding-left: 20px;
@@ -455,7 +457,7 @@
             padding-top: 13px;
             padding-bottom: 13px;
             border-radius: 5px;
-            border: solid 2px #ffaf00;
+            border: solid 2px #5bcbf5;
             background-color: #ffffff;
             font-family: TUITypeCyrillic;
               font-size: 20px;
@@ -465,14 +467,14 @@
               line-height: normal;
               letter-spacing: normal;
               text-align: center;
-              color: #ffaf00;
+              color: #5bcbf5;
             text-decoration: none;
             cursor: pointer;
             margin-bottom: 20px;
             transition: background-color 0.2s linear;
             &:hover {
                 border-radius: 5px;
-                background-color: #ffaf00;
+                background-color: #5bcbf5;
                 color: white;
             }
         }
@@ -530,7 +532,7 @@
             padding-bottom: 4px;
             transition: border-bottom 0.2s linear;
             &:hover {
-                border-bottom: solid 3px #ffaf00;
+                border-bottom: solid 3px #5bcbf5;
             }
         }
         &__countries-mobile {
@@ -552,10 +554,10 @@
         }
         &__block {
             width: 44%;
-            min-height: 320px;
+            min-height: 330px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: center;
             margin: 10px;
             border: solid 1px #e7e3db;
@@ -621,9 +623,10 @@
         }
         &__text {
             width: 90%;
+            height: 190px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: flex-start;
             padding-top: 20px;
             padding-left: 0px;
@@ -698,7 +701,7 @@
             padding-top: 13px;
             padding-bottom: 13px;
             border-radius: 5px;
-            border: solid 2px #ffaf00;
+            border: solid 2px #5bcbf5;
             background-color: #ffffff;
             font-family: TUITypeCyrillic;
               font-size: 20px;
@@ -708,14 +711,14 @@
               line-height: normal;
               letter-spacing: normal;
               text-align: center;
-              color: #ffaf00;
+              color: #5bcbf5;
             text-decoration: none;
             cursor: pointer;
             margin-bottom: 20px;
             transition: background-color 0.2s linear;
             &:hover {
                 border-radius: 5px;
-                background-color: #ffaf00;
+                background-color: #5bcbf5;
                 color: white;
             }
         }
@@ -773,7 +776,7 @@
             padding-bottom: 4px;
             transition: border-bottom 0.2s linear;
             &:hover {
-                border-bottom: solid 3px #ffaf00;
+                border-bottom: solid 3px #5bcbf5;
             }
         }
         &__countries-mobile {
@@ -781,7 +784,7 @@
             border-radius: 5px;
             height: 50px;
             margin-bottom: 20px;
-            border: solid 2px #ffaf00;
+            border: solid 2px #5bcbf5;
             font-family: TUITypeCyrillic;
               font-size: 20px;
               font-weight: normal;
@@ -964,7 +967,7 @@
             padding-top: 13px;
             padding-bottom: 13px;
             border-radius: 5px;
-            border: solid 2px #ffaf00;
+            border: solid 2px #5bcbf5;
             background-color: #ffffff;
             font-family: TUITypeCyrillic;
               font-size: 20px;
@@ -974,14 +977,14 @@
               line-height: normal;
               letter-spacing: normal;
               text-align: center;
-              color: #ffaf00;
+              color: #5bcbf5;
             text-decoration: none;
             cursor: pointer;
             margin-bottom: 20px;
             transition: background-color 0.2s linear;
             &:hover {
                 border-radius: 5px;
-                background-color: #ffaf00;
+                background-color: #5bcbf5;
                 color: white;
             }
         }

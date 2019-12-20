@@ -67,6 +67,18 @@ const hotels = new Vue({
                 nameBY : 'Греция',
                 nameUA : 'Греция',
             },
+            
+            //ЕГИПЕТ
+            {  
+                showRU : false,
+                showBY : true,
+                showUA : true,
+                id: 'country6',
+                class: '',
+                nameRU : 'Египет',
+                nameBY : 'Египет',
+                nameUA : 'Египет',
+            },
         ],
         
         //HOTELS
@@ -81,6 +93,9 @@ const hotels = new Vue({
                 showUA : true,
                 hotels : [
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/1f00015d-eff8-44ff-becf-c6d2b465ac0e/Miarosa-Ghazal-Resort_1',
                         sale: '20%',
                         place: 'Алания, Авсаллар',
@@ -94,6 +109,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/bcd9dbab-08b5-489b-90e7-7d48959cf2f2/Club-Belek',
                         sale: '20%',
                         place: 'Белек',
@@ -107,6 +125,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/d9560ac0-a8c2-4c26-9c7a-61a9b29be7e4/Club-Saphire_1',
                         sale: '20%',
                         place: 'Кемер, Текирова',
@@ -120,6 +141,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/953c8c3d-48b2-48f5-ba10-71ce94430838/Club-Serra-Palace',
                         sale: '20%',
                         place: 'Сиде, Кызылот',
@@ -133,6 +157,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/84164241-0222-4fc9-aa71-cc81d4fd2c58/River-Resort-Belek',
                         sale: '20%',
                         place: 'Белек',
@@ -146,6 +173,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/7b76fd59-1ff9-46eb-a5bb-c86c07577e4f/Comfort-Beach-Resort',
                         sale: '20%',
                         place: 'Кемер, Гейнюк',
@@ -159,6 +189,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/be906884-e3c2-412a-8530-b0a5fdd77bb8/Club-Di-Finica',
                         sale: '20%',
                         place: 'Кемер, Финике',
@@ -172,6 +205,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/ef9430a1-735e-4219-953d-20c6d403b23d/Miarosa-Incekum-Beach',
                         sale: '20%',
                         place: 'Алания, Авсаллар',
@@ -185,6 +221,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/b08f65c2-fae3-4d6a-baa5-cd084bf3443b/Euphoria-Palm-Beach',
                         sale: '20%',
                         place: 'Сиде, Кызылач',
@@ -198,6 +237,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/42b59a9c-51f4-4fa0-8d2b-a108b88395e0/Imperial-Sunland-Resort',
                         sale: '20%',
                         place: 'Кемер, Бедьдиби',
@@ -211,6 +253,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/a07a86c9-3237-49c0-acac-3b9988a809a3/Life-Side',
                         sale: '20%',
                         place: 'Сиде',
@@ -224,6 +269,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/b3c67f75-636d-441e-adc9-98665323f061/Life-Belek',
                         sale: '20%',
                         place: 'Белек, Буазкент',
@@ -247,6 +295,9 @@ const hotels = new Vue({
                 showUA : true,
                 hotels : [
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/1e1900ef-4404-4768-9198-527c2d5325fa/Panthea-Waterpark',
                         sale: '20%',
                         place: 'Айя-Напа',
@@ -261,6 +312,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/badfcfe1-40b0-47d2-921c-29e1b22377a4/Vangelis-Hotel-Suite',
                         sale: '20%',
                         place: 'Протарас',
@@ -275,6 +329,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/fd5d72e2-5948-4580-ae39-be4500bb4b7a/King-Evelthon-Beach-Hotel_1',
                         sale: '20%',
                         place: 'Пафос',
@@ -289,6 +346,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/3e7db49a-ccd4-4c6f-8c0a-262fed1013a8/Anastasia-Beach-Hotel',
                         sale: '20%',
                         place: 'Протарас',
@@ -303,6 +363,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/2b191fc1-ad5a-41b4-bfc8-661c060e82a9/Callisto-Holiday-Beach',
                         sale: '20%',
                         place: 'Айя-Напа',
@@ -317,6 +380,9 @@ const hotels = new Vue({
                     },
                     
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/1271fb3d-68b3-4773-a18a-f14ef63a7dcd/Akteon-Holiday-Village',
                         sale: '20%',
                         place: 'Хлорака, Пафос',
@@ -341,6 +407,9 @@ const hotels = new Vue({
                 showUA : true,
                 hotels : [
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/990c303e-252d-47a6-908d-5207f5fa407d/Pearl-Beach-Resort',
                         sale: '20%',
                         place: 'Чань',
@@ -365,6 +434,9 @@ const hotels = new Vue({
                 showUA : true,
                 hotels : [
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/ee4dd747-bd8e-4792-8127-7628ab87c25b/Sorra-Daurada-Splash',
                         sale: '20%',
                         place: 'Коста де Барселона',
@@ -389,12 +461,42 @@ const hotels = new Vue({
                 showUA : true,
                 hotels : [
                     {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
                         img: 'https://www.tui.ru/getmedia/967adb30-26ce-47c1-a499-0cc126047c47/Apollo-Palace',
                         sale: '20%',
                         place: 'Корфу',
                         name : 'FUN&SUN Apollo Palace 5*',
                         agentLink : '/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace',
                         clientLink : '/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/',
+                        nights : 'Новинка сезона! ',
+                        service : 'Начало работы по концепции: 15 мая 2020',
+                        price: 'от 112 000 ₽',
+                        oldPrice: '145 232 ₽',
+                    
+                    },
+                ],
+            },
+            
+            //ЕГИПЕТ
+            {
+                id: 'country6',
+                class: '',
+                showRU : false,
+                showBY : true,
+                showUA : true,
+                hotels : [
+                    {
+                        showRU : false,
+                        showBY : true,
+                        showUA : true,
+                        img: 'https://www.tui.ru/getmedia/0fb65072-1a43-4279-8b57-d669c5bf357c/Albatros-Palace',
+                        sale: '20%',
+                        place: 'Шарм-эль-Шейх',
+                        name : 'FUN&SUN Albatros Palace 5*',
+                        agentLink : '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace',
+                        clientLink : '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-fun__sun__albatros__palace/',
                         nights : 'Новинка сезона! ',
                         service : 'Начало работы по концепции: 15 мая 2020',
                         price: 'от 112 000 ₽',

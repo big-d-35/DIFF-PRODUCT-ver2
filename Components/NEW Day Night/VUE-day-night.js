@@ -117,6 +117,15 @@ const concepts = new Vue({
                         itemLV : '',
                     },
                     
+                    {
+                        itemRU : 'Подарок в номере:пляжная сумка',
+                        itemBY : 'Подарок в номере:пляжная сумка',
+                        itemUA : 'Подарок в номере:пляжная сумка',
+                        itemEE : '',
+                        itemLT : '',
+                        itemLV : '',
+                    },
+                    
                     
                 ],
             },
@@ -217,9 +226,9 @@ const concepts = new Vue({
                     },
                     
                     {
-                        itemRU : 'Мастер-классы по приготовлению коктейлей',
-                        itemBY : 'Мастер-классы по приготовлению коктейлей',
-                        itemUA : 'Мастер-классы по приготовлению коктейлей',
+                        itemRU : 'Кулинарные мастер-классы',
+                        itemBY : 'Кулинарные мастер-классы',
+                        itemUA : 'Кулинарные мастер-классы',
                         itemEE : '',
                         itemLT : '',
                         itemLV : '',
@@ -643,6 +652,9 @@ const concepts = new Vue({
             
             //TURKEY
             {
+                showRU : true,
+                showBY : true,
+                showUA : true,
                 countryRU : 'Турция',
                 countryBY : 'Турция',
                 countryUA : 'Турция',
@@ -652,82 +664,33 @@ const concepts = new Vue({
                 
                 hotels : [
                     {
-                        name: 'FUN&SUN Miarosa Ghazal Resort 5*',
-                        linkAgent: '/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort',
-                        linkClient : '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
+                        name: 'DAY&NIGHT Connected Club Hydros 5*',
+                        linkAgent: '/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros',
+                        linkClient : '/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/',
                     },
                     
                     {
-                        name: 'FUN&SUN Club Belek 5*',
-                        linkAgent: '/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek',
-                        linkClient : '/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/',
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
+                        name: 'DAY&NIGHT Connected Imperial Turkiz Hotel 5*',
+                        linkAgent: '/Tours/Europe/Turkey/Kemer/Kemer-Center/day-night-connected-imperial-turkiz-hotel',
+                        linkClient : '/hotel/europe-turkey-kemer-kemer__center-day__night__connected__imperial__turkiz__hotel/',
                     },
                     
-                    {
-                        name: 'FUN&SUN Club Saphire 5*',
-                        linkAgent: '/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire',
-                        linkClient : '/hotel/europe-turkey-kemer-tekirova-tui__fun__sun__club__saphire/',
-                    },
                     
-                    {
-                        name: 'FUN&SUN Club Serra Palace 5*',
-                        linkAgent: '/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace',
-                        linkClient : '/hotel/europe-turkey-side-kizilot-tui__fun__sun__club__serra__palace/',
-                    },
-                    
-                    {
-                        name: 'FUN&SUN River Resort Belek 5*',
-                        linkAgent: '/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek',
-                        linkClient : '/hotel/europe-turkey-belek-belek-tui__fun__sun__river__resort__belek/',
-                    },
-                    
-                    {
-                        name: 'FUN&SUN Comfort Beach Resort 5*',
-                        linkAgent: '/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort',
-                        linkClient : '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/',
-                    },
-                    
-                    {
-                        name: 'FUN&SUN Club Di Finica 5*',
-                        linkAgent: '/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica',
-                        linkClient : '/hotel/europe-turkey-kemer-finike-tui__fun__sun__club__di__finica/',
-                    },
-                    
-                    {
-                        name: 'FUN&SUN Miarosa Incekum Beach 5*',
-                        linkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach',
-                        linkClient : '/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/',
-                    },
-                    
-                    {
-                        name: 'FUN&SUN Euphoria Palm Beach 5*',
-                        linkAgent: '/Tours/Europe/Turkey/side/Kizilagac/fun-sun-euphoria-palm-beach',
-                        linkClient : '/hotel/europe-turkey-side-kizilagac-fun__sun__euphoria__palm__beach/',
-                    },
-                    
-                    {
-                        name: 'FUN&SUN Imperial Sunland Resort 5*',
-                        linkAgent: '/Tours/Europe/Turkey/Kemer/Beldibi/FUN-SUN-Imperial-Sunland-Resort-(ex-Sunland-Resor',
-                        linkClient : '/hotel/europe-turkey-kemer-beldibi-fun__sun__imperial__sunland__resort__(ex__sunland__resor/',
-                    },
-                    
-                    {
-                        name: 'FUN&SUN Life Side 5',
-                        linkAgent: '/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel',
-                        linkClient : '/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/',
-                    },
-                    
-                    {
-                        name: 'FUN&SUN Life Belek 5*',
-                        linkAgent: '/Tours/Europe/Turkey/belek/Bogazkent/FUN-SUN-Life-Belek',
-                        linkClient : '/hotel/europe-turkey-belek-bogazkent-fun__sun__life__belek/',
-                    },
                     
                 ],
             },
             
              //CYPRYS
             {
+                showRU : true,
+                showBY : true,
+                showUA : true,
                 countryRU : 'Кипр',
                 countryBY : 'Кипр',
                 countryUA : 'Кипр',
@@ -737,96 +700,53 @@ const concepts = new Vue({
                 
                 hotels : [
                     {
-                        name: 'FUN&SUN Panthea Waterpark 4*',
-                        linkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark',
-                        linkClient : '/hotel/europe-cyprus-ayia__napa-ayia__napa-tui__fun__sun__panthea__waterpark/',
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
+                        name: 'DAY&NIGHT Connected Season 4*',
+                        linkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons',
+                        linkClient : '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons',
                     },
                     
-                    {
-                        name: 'FUN&SUN Vangelis Hotel & Suite 4*',
-                        linkAgent: '/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites',
-                        linkClient : '/hotel/europe-cyprus-protaras-protaras__city-vangelis__hotel__suites/',
-                    },
                     
-                    {
-                        name: 'FUN&SUN King Evelthon Beach Hotel 5*',
-                        linkAgent: '/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-king-evelthon-beach-hotel-resort',
-                        linkClient : '/hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/',
-                    },
-                    
-                    {
-                        name: 'FUN&SUN Anastasia Beach Hotel 4*',
-                        linkAgent: '/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel',
-                        linkClient : '/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/',
-                    },
                     
                     
                     
                 ],
             },
             
-            //ЧЕРНОГОРИЯ
+            
+            //ЕГИПЕТ
             {
-                countryRU : 'Черногория',
-                countryBY : 'Черногория',
-                countryUA : 'Черногория',
+                showRU : false,
+                showBY : true,
+                showUA : true,
+                countryRU : 'Египет',
+                countryBY : 'Египет',
+                countryUA : 'Египет',
                 countryEE : '',
                 countryLT : '',
                 countryLV : '',
                 
                 hotels : [
                     {
-                        name: 'FUN&SUN Pearl Beach Resort 4*',
-                        linkAgent: '/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort',
-                        linkClient : '/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/',
+                        showRU : false,
+                        showBY : true,
+                        showUA : true,
+                        name: 'DAY&NIGHT Connected Tropitel Waves 5*',
+                        linkAgent: '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/day-night-connected-tropitel-waves',
+                        linkClient : '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-day__night__connected__tropitel__waves/',
                     },
-                                
+                    
+                    
+                    
                     
                     
                 ],
             },
             
-            //ИСПАНИЯ
-            {
-                countryRU : 'Испания',
-                countryBY : 'Испания',
-                countryUA : 'Испания',
-                countryEE : '',
-                countryLT : '',
-                countryLV : '',
-                
-                hotels : [
-                    {
-                        name: 'FUN&SUN Sorra Daurada Splash 4*',
-                        linkAgent: '/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada',
-                        linkClient : '/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/',
-                    },
-                                
-                    
-                    
-                ],
-            },
             
-            //ГРЕЦИЯ
-            {
-                countryRU : 'Греция',
-                countryBY : 'Греция',
-                countryUA : 'Греция',
-                countryEE : '',
-                countryLT : '',
-                countryLV : '',
-                
-                hotels : [
-                    {
-                        name: 'FUN&SUN Apollo Palace 5*',
-                        linkAgent: '/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace',
-                        linkClient : '/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/',
-                    },
-                                
-                    
-                    
-                ],
-            },
+            
         ],
     }
 })
