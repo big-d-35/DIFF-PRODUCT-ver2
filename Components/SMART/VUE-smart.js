@@ -22,9 +22,9 @@ const smartPage = new Vue ({
         titleLV: 'Kas ir SMART?',
         
         //ABOUT
-        aboutRU : 'SMART – это концепция отдыха, созданная для тех, кто хочет качественно отдохнуть за разумные деньги. Главное, что мы сделали – добавили пятизвездочный сервис в четырехзвездочные отели. И оставили цену прежней.',
-        aboutBY : 'SMART – это концепция отдыха, созданная для тех, кто хочет качественно отдохнуть за разумные деньги. Главное, что мы сделали – добавили пятизвездочный сервис в четырехзвездочные отели. И оставили цену прежней.',
-        aboutUA : 'SMART – это концепция отдыха, созданная для тех, кто хочет качественно отдохнуть за разумные деньги. Главное, что мы сделали – добавили пятизвездочный сервис в четырехзвездочные отели. И оставили цену прежней.',
+        aboutRU : 'SMART – это современный подход к отдыху, когда звездность отеля и другие составляющие классического турпакета хотя бы ненадолго не имеют никакого значения, потому что вы фокусируетесь только на своих впечатлениях. SMART – это то, что действительно важно на отдыхе.',
+        aboutBY : 'SMART – это современный подход к отдыху, когда звездность отеля и другие составляющие классического турпакета хотя бы ненадолго не имеют никакого значения, потому что вы фокусируетесь только на своих впечатлениях. SMART – это то, что действительно важно на отдыхе.',
+        aboutUA : 'SMART – это современный подход к отдыху, когда звездность отеля и другие составляющие классического турпакета хотя бы ненадолго не имеют никакого значения, потому что вы фокусируетесь только на своих впечатлениях. SMART – это то, что действительно важно на отдыхе.',
         aboutEE : 'SMART on puhkuskontseptsioon, mis on loodud neile, kes soovivad mõistliku hinnaga puhata. Põhiline, mida tegime, oli viietärnihotelli lisamine neljatärnihotellidele. Ja nad jätsid hinna samaks.',
         aboutLT : 'SMART – poilsio koncepcija, sukurta ieškantiems kokybiško poilsio už prieinamą kainą. Puikios atostogos net ir keturių žvaigždučių viešbučiuose – garantuotos.',
         aboutLV : 'SMART ir atpūtas koncepcija, kas radīta tiem, kas vēlas labi atpūsties par saprātīgu cenu. Galvenais, ko mēs izdarījām, pievienojam pieczvaigžņu apkalpošanas līmeni četrzvaigžņu viesnīcām, bet cenu atstājam tādu pašu”.',
@@ -39,12 +39,12 @@ const smartPage = new Vue ({
                 cssPart: 'background-color: #ffdcc6; grid-area: block1; ',
                 
                 image: 'https://www.tui.ru/getmedia/11df7d91-5c73-4c90-b4ff-a145216b9a73/img-coffee',    
-                titleRU : 'Кофе 100% Арабика и выпечка',  
-                titleBY : 'Кофе 100% Арабика и выпечка',  
-                titleUA : 'Кофе 100% Арабика и выпечка',  
-                titleEE : '100% Arabica kohv ja kondiitritooted',  
-                titleLT : '100% „Arabica“ kava ir pyragaičiai',  
-                titleLV : '100% Arabika kafija un konditorejas izstrādājumi',
+                titleRU : 'Забота об окружающей среде',  
+                titleBY : 'Забота об окружающей среде',  
+                titleUA : 'Забота об окружающей среде',  
+                titleEE : 'Keskkonna austamine',  
+                titleLT : 'Dėmesys aplinkai',  
+                titleLV : 'Saudzīga attieksme pret apkārtējo vidi',
             },
             
             //2 POINT
@@ -53,12 +53,12 @@ const smartPage = new Vue ({
                 cssPart: 'background-color: #dbfff7; grid-area: block2;  ',
                 
                 image: 'https://www.tui.ru/getmedia/d5827639-6f10-4811-b264-08860a3a461c/wifi@3x_1',    
-                titleRU : 'Wi-fi',  
-                titleBY : 'Wi-fi',  
-                titleUA : 'Wi-fi',  
-                titleEE : 'Wi-fi',  
-                titleLT : 'Wi-fi',  
-                titleLV : 'Wi-fi',  
+                titleRU : 'Wi-Fi на территории отеля и в номерах',  
+                titleBY : 'Wi-Fi на территории отеля и в номерах',  
+                titleUA : 'Wi-Fi на территории отеля и в номерах',  
+                titleEE : 'Wi-Fi',  
+                titleLT : 'Wi-Fi',  
+                titleLV : 'Wi-Fi',  
             },
             
             //3 POINT
@@ -67,12 +67,12 @@ const smartPage = new Vue ({
                 cssPart: 'background-color: #dbfff7; grid-area: block4; ',
                 
                 image: 'https://www.tui.ru/getmedia/9673f81a-e29f-4ead-b35c-2d4a6eeac6d9/fon-template',    
-                titleRU : 'Фирменный Beer Bar & Street food',  
-                titleBY : 'Фирменный Beer Bar & Street food',  
-                titleUA : 'Фирменный Beer Bar & Street food',  
-                titleEE : 'Beer Bar & Street food',  
-                titleLT : 'Beer Bar & Street food',  
-                titleLV : 'Beer Bar & Street food',
+                titleRU : 'Кофе Арабика и выпечка',  
+                titleBY : 'Кофе Арабика и выпечка',  
+                titleUA : 'Кофе Арабика и выпечка',  
+                titleEE : 'Arabica kohv ja kondiitritooted',  
+                titleLT : 'Arabica kava ir pyragaičiai',  
+                titleLV : 'Arabika kafija un konditorejas izstrādājumi',
             },
             
             //4 POINT
@@ -95,9 +95,9 @@ const smartPage = new Vue ({
                 cssPart: 'background-color: #ffdcc6; grid-area: block5; ',
                 
                 image: 'https://www.tui.ru/getmedia/1a56fec2-5abf-43e7-931a-9674341108d3/img-flower',    
-                titleRU : 'В номере: тапочки, чайник, утюг (по запросу)',  
-                titleBY : 'В номере: тапочки, чайник, утюг (по запросу)',  
-                titleUA : 'В номере: тапочки, чайник, утюг (по запросу)',  
+                titleRU : 'В номере: тапочки, чайник, набор для душа',  
+                titleBY : 'В номере: тапочки, чайник, набор для душа',  
+                titleUA : 'В номере: тапочки, чайник, набор для душа',  
                 titleEE : 'Mugavused: toasussid, veekeetja, triikraud (nõudmisel)',  
                 titleLT : 'Kambaryje: šlepetės, virdulys, lygintuvas (pagal užklausimą)',  
                 titleLV : 'Numurā: peldmeteļi un čības, tējkanna, gludeklis (pēc pieprasījuma)',
@@ -118,9 +118,9 @@ const smartPage = new Vue ({
             //ITEM 1
             {
                 image : 'https://www.tui.ru/getmedia/e3f8ad2d-91ff-4305-badd-577980e8a14e/img-services@2x',
-                titleRU : 'Улучшенный сервис',
-                titleBY : 'Улучшенный сервис',
-                titleUA : 'Улучшенный сервис',
+                titleRU : 'В номерах',
+                titleBY : 'В номерах',
+                titleUA : 'В номерах',
                 titleEE : 'Suurepärane teenindus',
                 titleLT : 'Kokybiškas aptarnavimas',
                 titleLV : 'Uzlabotais apkalpošanas līmenis',
@@ -128,45 +128,45 @@ const smartPage = new Vue ({
                 items : [
                     
                     {
-                        itemRU : 'Чай и кофе в номерах',    
-                        itemBY : 'Чай и кофе в номерах',    
-                        itemUA : 'Чай и кофе в номерах',    
+                        itemRU : 'Чайник, чай и кофе',    
+                        itemBY : 'Чайник, чай и кофе',    
+                        itemUA : 'Чайник, чай и кофе',    
                         itemEE : 'Tee ja kohv tubades',    
                         itemLT : 'Kava ir arbata kambaryje',    
                         itemLV : 'Tēja un kafija numuros',    
                     },
                     
                     {
-                        itemRU : 'Тапочки в номерах',    
-                        itemBY : 'Тапочки в номерах',    
-                        itemUA : 'Тапочки в номерах',    
+                        itemRU : 'Тапочки',    
+                        itemBY : 'Тапочки',    
+                        itemUA : 'Тапочки',    
                         itemEE : 'Tubades sussid',    
                         itemLT : 'Šlepetės kambaryje',    
                         itemLV : 'Čības un vannas istabas piederumu komplekts',    
                     },
                     
                     {
-                        itemRU : 'Бесплатный сейф и утюг',    
-                        itemBY : 'Бесплатный сейф и утюг',    
-                        itemUA : 'Бесплатный сейф и утюг',    
+                        itemRU : 'Сейф, фен и утюг',    
+                        itemBY : 'Сейф, фен и утюг',    
+                        itemUA : 'Сейф, фен и утюг',    
                         itemEE : 'Tasuta seif ja triikraud',    
                         itemLT : 'Nemokamas seifas ir lygintuvas',    
                         itemLV : 'Bezmaksas seifs un gludeklis',    
                     },
                     
                     {
-                        itemRU : 'Бесплатный WI-FI',    
-                        itemBY : 'Бесплатный WI-FI',    
-                        itemUA : 'Бесплатный WI-FI',    
-                        itemEE : 'Tasuta WI-FI',    
-                        itemLT : 'Nemokamas Wi-Fi',    
-                        itemLV : 'Bezmaksas WI-FI',    
+                        itemRU : 'WI-FI',    
+                        itemBY : 'WI-FI',    
+                        itemUA : 'WI-FI',    
+                        itemEE : 'WI-FI',    
+                        itemLT : 'Wi-Fi',    
+                        itemLV : 'WI-FI',    
                     },
                     
                     {
-                        itemRU : 'Забота об окружающей среде',    
-                        itemBY : 'Забота об окружающей среде',    
-                        itemUA : 'Забота об окружающей среде',    
+                        itemRU : 'Вода в мини-баре каждый день',    
+                        itemBY : 'Вода в мини-баре каждый день',    
+                        itemUA : 'Вода в мини-баре каждый день',    
                         itemEE : 'Keskkonna austamine',    
                         itemLT : 'Dėmesys aplinkai',    
                         itemLV : 'Saudzīga attieksme pret apkārtējo vidi',    
@@ -197,9 +197,18 @@ const smartPage = new Vue ({
                 items : [
                     
                     {
-                        itemRU : 'A la carte рестораны',    
-                        itemBY : 'A la carte рестораны',    
-                        itemUA : 'A la carte рестораны',    
+                        itemRU : 'Попкорн перед вечерним шоу',    
+                        itemBY : 'Попкорн перед вечерним шоу',    
+                        itemUA : 'Попкорн перед вечерним шоу',    
+                        itemEE : 'Kodune kokandus',    
+                        itemLT : 'Vietinės virtuvės patiekalai',    
+                        itemLV : 'Mājas virtuves ēdieni',     
+                    },
+                    
+                    {
+                        itemRU : 'Посещение а la carte ресторана 1 раз',    
+                        itemBY : 'Посещение а la carte ресторана 1 раз',    
+                        itemUA : 'Посещение а la carte ресторана 1 раз',    
                         itemEE : 'A la carte restoran',    
                         itemLT : 'A la carte restoranas',    
                         itemLV : 'A La Carte restorāns',    
@@ -215,9 +224,9 @@ const smartPage = new Vue ({
                     },
                     
                     {
-                        itemRU : 'Свежая выпечка',    
-                        itemBY : 'Свежая выпечка',    
-                        itemUA : 'Свежая выпечка',    
+                        itemRU : 'Импортный виски',    
+                        itemBY : 'Импортный виски',    
+                        itemUA : 'Импортный виски',    
                         itemEE : 'Õllebaar',    
                         itemLT : 'Švieži kepiniai',    
                         itemLV : 'Mājas ceptuve',    
@@ -241,14 +250,7 @@ const smartPage = new Vue ({
                         itemLV : 'Street food',    
                     },
                     
-                    {
-                        itemRU : 'Блюда домашней кухни',    
-                        itemBY : 'Блюда домашней кухни',    
-                        itemUA : 'Блюда домашней кухни',    
-                        itemEE : 'Kodune kokandus',    
-                        itemLT : 'Vietinės virtuvės patiekalai',    
-                        itemLV : 'Mājas virtuves ēdieni',    
-                    },
+                    
                 ]
                 
             },
@@ -256,9 +258,9 @@ const smartPage = new Vue ({
             //ITEM 3
             {
                 image : 'https://www.tui.ru/getmedia/b323c7de-ba7f-4aa9-8631-aea6e691ead1/img-music@2x',
-                titleRU : 'Только нужные развлечения',
-                titleBY : 'Только нужные развлечения',
-                titleUA : 'Только нужные развлечения',
+                titleRU : 'Развлечения',
+                titleBY : 'Развлечения',
+                titleUA : 'Развлечения',
                 titleEE : 'Ainult vajalik meelelahutus',
                 titleLT : 'Pramogos',
                 titleLV : 'Tikai interesantas izklaides',
@@ -346,9 +348,9 @@ const smartPage = new Vue ({
                     },
                     
                     {
-                        itemRU : 'Бесплатное мороженое',    
-                        itemBY : 'Бесплатное мороженое',    
-                        itemUA : 'Бесплатное мороженое',    
+                        itemRU : 'Мороженое в определенные часы',    
+                        itemBY : 'Мороженое в определенные часы',    
+                        itemUA : 'Мороженое в определенные часы',    
                         itemEE : 'Tasuta jäätis',    
                         itemLT : 'Nemokami ledai',    
                         itemLV : 'Bezmaksas saldējums',    
@@ -364,9 +366,9 @@ const smartPage = new Vue ({
                     },
                     
                     {
-                        itemRU : 'Брендированный подарок',    
-                        itemBY : 'Брендированный подарок',    
-                        itemUA : 'Брендированный подарок',    
+                        itemRU : 'BIO огород с пряными травами',    
+                        itemBY : 'BIO огород с пряными травами',    
+                        itemUA : 'BIO огород с пряными травами',    
                         itemEE : 'Kaubamärgiga kingitus',    
                         itemLT : 'Viešbučio dovana',    
                         itemLV : 'Brendu dāvana',    

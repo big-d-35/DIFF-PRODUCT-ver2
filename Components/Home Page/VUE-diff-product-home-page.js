@@ -351,7 +351,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         
         homeFunSunHotelLink21: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/fun-sun-callisto-holiday-village',
         homeFunSunHotelLinkClient21: '/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__callisto__holiday__village/',
-        homeFunSunHotelName21: 'FUN&SUN Callisto Holiday Beach 4*',
+        homeFunSunHotelName21: 'FUN&SUN Callisto Holiday Village 4*',
         
         homeFunSunHotelLink22: '/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-akteon-holiday-village',
         homeFunSunHotelLinkClient22: '/hotel/europe-cyprus-paphos-paphos-fun__sun__akteon__holiday__village/',
@@ -548,6 +548,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageSpainRU: 'Испания',
         homeToucanBlockPageRussiaRU: 'Россия, Сочи',
         homeToucanBlockPageOaeRU: 'ОАЭ',
+        homeToucanBlockPageGreeceRU: 'Греция',
         
         homeDToucanBlockPageLinkTextBY: 'Подробнее',
         homeToucanBlockPageTurkeyBY: 'Турция',
@@ -557,6 +558,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageSpainBY: 'Испания',
         homeToucanBlockPageRussiaBY: 'Россия, Сочи',
         homeToucanBlockPageOaeBY: 'ОАЭ',
+        homeToucanBlockPageGreeceBY: 'Греция',
         
         homeToucanBlockPageLinkTextUA: 'Подробнее',
         homeToucanBlockPageTurkeyUA: 'Турция',
@@ -566,6 +568,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageSpainUA: 'Испания',
         homeToucanBlockPageRussiaUA: 'Россия, Сочи',
         homeToucanBlockPageOaeUA: 'ОАЭ',
+        homeToucanBlockPageGreeceUA: 'Греция',
         
         homeToucanBlockPageLinkTextEE: 'Täpsemalt',
         homeToucanBlockPageTurkeyEE: 'Türgi',
@@ -575,6 +578,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageSpainEE: 'Hispaania',
         homeToucanBlockPageRussiaEE: '',
         homeToucanBlockPageOaeEE: 'AÜE',
+        homeToucanBlockPageGreeceEE: 'Kreeka',
         
         homeToucanBlockPageLinkTextLT: 'Plačiau',
         homeToucanBlockPageTurkeyLT: 'Turkija',
@@ -584,6 +588,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageSpainLT: 'Ispanija',
         homeToucanBlockPageRussiaLT: 'Rusija',
         homeToucanBlockPageOaeLT: 'OAE',
+        homeToucanBlockPageGreeceLT: 'Graikija',
         
         homeToucanBlockPageLinkTextLV: 'Sīkāk',
         homeToucanBlockPageTurkeyLV: 'Turcija',
@@ -593,6 +598,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageSpainLV: 'Spānija',
         homeToucanBlockPageRussiaLV: 'Krievija',
         homeToucanBlockPageOaeLV: 'AAE',
+        homeToucanBlockPageGreeceLV: 'Grieķija',
                
         homeToucanHotelLink1: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
         homeToucanHotelLinkClient1: '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',
@@ -662,5 +668,10 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanHotelLink17: '/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort',
         homeToucanHotelLinkClient17: '/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/',
         homeToucanHotelName17: 'Pearl Beach Resort 4*',
+        
+        //ГРЕЦИЯ
+        homeToucanHotelLink18: '/Tours/Europe/Greece/Crete/Anissaras/mitsis-serita-beach',
+        homeToucanHotelLinkClient18: '/hotel/europe-greece-crete-anissaras-mitsis__serita__beach/',
+        homeToucanHotelName18: 'Serita Beach Resort 5*',
     }
 });

@@ -64,13 +64,13 @@
 
 <!-- MAIN START ========================================================================= -->
 
-<div class="concepts__main" id="fun-sun">
+<div class="concepts__main" id="toucan-page">
    
    <!-- BANNER ===================================== -->
     <div class="banner__concepts" v-bind:class="bannerConceptsBckg">
         <div class="banner__titles">
             <img v-bind:src=" logo " v-bind:alt=" logoAlt " class="banner__logo">
-            <h2 class="banner__title"></h2>
+            <h2 class="banner__title">{{bannerTitleRU}}</h2>
         </div>
         <ul class="banner__text">
             <li class="banner__text-item" v-for=' bannerItem in bannerItems '>{{ bannerItem.itemRU }}</li>
@@ -104,7 +104,7 @@
     </div>
     <!-- SERVICES ===================================== -->
     
-    <!-- ENTERTAIMENT ===================================== -->
+    <!-- ENTERTAIMENT ===================================== 
     <div class="entertaiments__concepts">
         <h2 class="entertaiments__title">{{ entTitleRU }}</h2>
         <div class="entertaiments__blocks" >
@@ -124,9 +124,9 @@
     
     <!-- HOTELS ===================================== -->
     <div class="hotels__concepts" id="hotels-concepts-block">
-        <div class="hotels__countries">
+        <div class="hotels__countries" id="hotels-concepts-buttons-block">
            
-            <button v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</button>
+            <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</a>
  
         </div>
         
@@ -136,11 +136,11 @@
         </select>
         
         <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showRU " class="hotels__blocks" v-bind:class=" countryHotel.class ">
-            <div class="hotels__block" v-for=" hotel in countryHotel.hotels ">
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels " v-if="hotel.showRU">
                 <div class="hotels__banner">
                     <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
                     <h3 class="hotels__place">{{ hotel.place }}</h3>
-                    <h6 class="hotels__sale">{{ hotel.sale }}</h6>
+                    <!--<h6 class="hotels__sale">{{ hotel.sale }}</h6>-->
                 </div>
                 <div class="hotels__text">
                     <h3 class="hotels__name">{{ hotel.name }}</h3>
@@ -149,10 +149,10 @@
                             <p class="hotels__description">{{ hotel.nights }}</p>
                             <p class="hotels__description">{{ hotel.service }}</p>
                         </div>
-                        <div class="hotels__prices">
+                        <!--<div class="hotels__prices">
                             <p class="hotels__price-old">{{ hotel.oldPrice }}</p>
                             <p class="hotels__price-new">{{ hotel.price }}</p>
-                        </div>
+                        </div>-->
                     </div>
                     <a v-bind:href=" hotel.agentLink " class="hotels__link" target="_blank"> {{ buttonRU }}</a>
                 </div>
@@ -162,7 +162,7 @@
     <!-- HOTELS ===================================== -->
     
     
-    <!-- PHOTOS ===================================== -->
+    <!-- PHOTOS =====================================
     <div class="photos__concepts">
         <h2 class="photos__title">{{ photosTitleRU }}</h2>
         <div class="photos__block">
@@ -177,7 +177,7 @@
     <!-- PHOTOS ===================================== -->
     
     
-    <!-- PROGRAMS ===================================== -->
+    <!-- PROGRAMS =====================================
     <div class="programs__concepts">
         <h2 class="programs__title">{{ prgrmTitleRU }}</h2>
         <div class="programs__blocks">
@@ -204,9 +204,9 @@
     <!-- ALL HOTELS ===================================== -->
     <div class="allhotels__concepts">
         <div class="allhotels__blocks">
-            <div class="allhotels__block" v-for=" allHotel in allHotels">
+            <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showRU">
                 <h3 class="allhotels__name">{{ allHotel.countryRU }}</h3>
-                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkAgent " class="allhotels__link" target="_blank">{{ hotel.name }}</a>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkAgent " class="allhotels__link" v-if="hotel.showRU" target="_blank">{{ hotel.name }}</a>
             </div>
         </div>
     </div>
@@ -218,10 +218,10 @@
 
 <!-- SCRIPTS START ==================================================================== -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
-<script src="VUE-hotels-Fun-Sun-ru-ua-by.js" defer></script>
-<script src="VUE-fun-sun.js" defer></script>
+<script src="VUE-hotels-Toucan-ru-ua-by-NEW.js" defer></script>
+<script src="VUE-toucan.js" defer></script>
 
-<script src="fun-sun-hotels-script.js" defer></script>
+<script src="VUE-toucan.js" defer></script>
 
 
 

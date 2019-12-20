@@ -170,6 +170,7 @@
         list-style-type: none;
     }
     &__item {
+        font-family: TUITypeCyrillic;
         width: 90%;
         margin-bottom: 10px;
         &::before {
@@ -251,6 +252,7 @@
         margin-bottom: 10px;
     }
     &__items {
+        list-style-type: none;
         font-family: TUITypeCyrillic;
           font-size: 14px;
           font-weight: normal;
@@ -261,6 +263,8 @@
           color: #000000;
     }
     &__item {
+        
+        list-style-type: none;
         width: 90%;
         margin-bottom: 7px;
         &::before {

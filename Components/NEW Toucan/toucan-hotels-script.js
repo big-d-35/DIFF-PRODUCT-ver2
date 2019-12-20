@@ -1,12 +1,12 @@
 
-const buttonsBlock = document.getElementById('hotels-concepts-block');
+const buttonsBlock = document.getElementById('hotels-concepts-buttons-block');
 const optionsBlock = document.getElementById('hotels-options-mobile');
 const countrySliders = document.getElementsByClassName('hotels__blocks');
 const buttonActive = document.getElementsByClassName('active-country');
 
 //Переключаем табы
 buttonsBlock.addEventListener('click', function (event) {
-        let target = event.target.closest('button');
+        let target = event.target.closest('a');
         let targetButton = event.target.closest('[data-id]');
 
 
