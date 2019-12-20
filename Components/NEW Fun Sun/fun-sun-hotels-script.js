@@ -6,7 +6,7 @@ const buttonActive = document.getElementsByClassName('active-country');
 
 //Переключаем табы
 buttonsBlock.addEventListener('click', function (event) {
-        let target = event.target.closest('button');
+        let target = event.target.closest('a');
         let targetButton = event.target.closest('[data-id]');
 
 

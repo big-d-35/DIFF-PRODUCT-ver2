@@ -14,16 +14,12 @@
 
     <!-- CSS STYLE ======================================================================== -->
 
-    <link rel="stylesheet" href="../CSS-for-all-New-Concepts/reset.min.css">
-    <link rel="stylesheet" href="css/hotels-concepts.css">
-    <link rel="stylesheet" media="all and (min-width: 1201px)" href="css/desktop.css">
-    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="css/laptop.css">
-    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="css/tablet.css">
-    <link rel="stylesheet" media="all and (max-width: 600px)" href="css/mobile.css">
 
-
-
-
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/28ac71ad-53fa-4e23-bc03-6658895fd4c9/hotels-concepts">
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/d09b6270-5a8a-4d54-86c3-8046428a2edd/desktop">
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/b70c243b-bb99-49c1-b9d3-3c9a304b972d/laptop">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/95a46c39-1670-4da2-ac1f-58f91cefd9c3/tablet">
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/4af90570-f145-4f85-ae52-ca4f553aa886/mobile">
 
     <!-- CSS STYLE ======================================================= -->
     <!-- ШРИФТ =============================================== -->
@@ -54,7 +50,68 @@
         }
     </style>
     <!-- ШРИФТ =============================================== -->
+    <style>
+        .ActionPage {
+            background: transparent!important; 
+            
+    }
+        .AppContainer {
+       
+        background-color: transparent!important; 
+       
+    }
+        .static {
+            width: 100%!important;
+        }
+        
+    *, :after, :before {
+        background-repeat: no-repeat; 
+        box-sizing: content-box; 
+    }
+    </style>
+    <!-- SCRIPT загрузки VUE  =================================================== -->
+<script>
+    const vueLinks = [
+        'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+        'https://www.tui.ru/getmedia/c588d8ed-32ae-4cfc-af70-3782798359b0/VUE-hotels-Fun-Sun-ru-ua-by-NEW',
+        'https://www.tui.ru/getmedia/9932cbb7-6b5a-4389-b147-0e5269d6320e/VUE-fun-sun',
+        'https://www.tui.ru/getmedia/a3807bcb-a5c6-4b1a-9aa5-3ccfa3106e57/fun-sun-hotels-script',
+        
+        
+    ];
 
+    function add_files(arr, type) {
+
+        count = 0;
+
+        function new_file(link) {
+            var script = document.createElement(type);
+            script.src = link;
+            script.async = false;
+            document.head.appendChild(script);
+            if (count < arr.length - 1) {
+                script.onload = function() {
+                    new_file(arr[count]);
+                }
+                script.onerror = function() {
+                    throw new Error(arr[count - 1] + ' loading error');
+                }
+                count++;
+            }
+        }
+
+        function error(text) {
+            throw new Error('the function takes two required arguments');
+        }
+
+        (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+            (arr === undefined) ? error('no link array') :
+            (type === undefined) ? error('no file type') : '';
+        new_file(arr[count]);
+    }
+
+    add_files(vueLinks, 'script');
+</script>
 
 </head>
 
@@ -62,9 +119,11 @@
 
 <body>
 
-<!-- MAIN START ========================================================================= -->
+<!-- MAIN START ============================================================= -->
 
-<div class="concepts__main" id="day-night">
+
+
+<div class="concepts__main" id="fun-sun">
    
    <!-- BANNER ===================================== -->
     <div class="banner__concepts" v-bind:class="bannerConceptsBckg">
@@ -104,7 +163,7 @@
     </div>
     <!-- SERVICES ===================================== -->
     
-    <!-- ENTERTAIMENT ===================================== 
+    <!-- ENTERTAIMENT ===================================== -->
     <div class="entertaiments__concepts">
         <h2 class="entertaiments__title">{{ entTitleRU }}</h2>
         <div class="entertaiments__blocks" >
@@ -154,7 +213,7 @@
                             <p class="hotels__price-new">{{ hotel.price }}</p>
                         </div>-->
                     </div>
-                    <a v-bind:href=" hotel.agentLink " class="hotels__link" target="_blank"> {{ buttonRU }}</a>
+                    <a v-bind:href=" hotel.clientLink " class="hotels__link" target="_blank"> {{ buttonRU }}</a>
                 </div>
             </div>
         </div>
@@ -206,7 +265,7 @@
         <div class="allhotels__blocks">
             <div class="allhotels__block" v-for=" allHotel in allHotels">
                 <h3 class="allhotels__name">{{ allHotel.countryRU }}</h3>
-                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkAgent " class="allhotels__link" target="_blank">{{ hotel.name }}</a>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkClient " class="allhotels__link" target="_blank">{{ hotel.name }}</a>
             </div>
         </div>
     </div>
@@ -214,15 +273,10 @@
 </div>
 
 
+
 <!-- MAIN END ========================================================================= -->
 
 <!-- SCRIPTS START ==================================================================== -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
-<script src="VUE-hotels-day-night-ru-ua-by-NEW.js" defer></script>
-<script src="VUE-day-night.js" defer></script>
-
-<script src="day-night-hotels-script.js" defer></script>
-
 
 
 <!-- SCRIPTS END ====================================================================== -->

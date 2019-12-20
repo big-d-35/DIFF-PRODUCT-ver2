@@ -349,6 +349,14 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunHotelLinkClient19: '/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/',
         homeFunSunHotelName19: 'FUN&SUN Anastasia Beach Hotel 4*',
         
+        homeFunSunHotelLink21: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/fun-sun-callisto-holiday-village',
+        homeFunSunHotelLinkClient21: '/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__callisto__holiday__village/',
+        homeFunSunHotelName21: 'FUN&SUN Callisto Holiday Beach 4*',
+        
+        homeFunSunHotelLink22: '/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-akteon-holiday-village',
+        homeFunSunHotelLinkClient22: '/hotel/europe-cyprus-paphos-paphos-fun__sun__akteon__holiday__village/',
+        homeFunSunHotelName22: 'FUN&SUN Akteon Holiday Village 4*',
+        
         //EGYPT ПОКА ТОЛЬКО UA
         homeFunSunHotelLink11: '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace',
         homeFunSunHotelLinkClient11: '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-fun__sun__albatros__palace/',

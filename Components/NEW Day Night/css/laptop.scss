@@ -19,9 +19,9 @@
         height: 400px;
         background-image: url(https://www.tui.ru/getmedia/8e6d1ac6-955f-4fc3-bddc-648db3c1a4c9/banner_Fun-Sun);
         border-radius: 10px;
-        &:hover {
-                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
-            }
+//        &:hover {
+//                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
+//            }
     }
     &__titles {
         margin-left: 40px;
@@ -137,9 +137,9 @@
         flex-direction: row;
         justify-content: flex-end;
         overflow: hidden;
-        &:hover {
-                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
-            }
+//        &:hover {
+//                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
+//            }
     }
     &__img {
         width: 130px;
@@ -164,7 +164,7 @@
         margin-bottom: 20px;
     }
     &__items {
-        font-family: TUIType;
+        font-family: TUITypeCyrillic;
           font-size: 17px;
           font-weight: 300;
           font-stretch: normal;
@@ -175,6 +175,7 @@
         list-style-type: none;
     }
     &__item {
+        font-family: TUITypeCyrillic;
         width: 90%;
         margin-bottom: 15px;
         &::before {
@@ -231,9 +232,9 @@
         flex-direction: row;
         justify-content: flex-end;
         overflow: hidden;
-        &:hover {
-                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
-            }
+//        &:hover {
+//                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
+//            }
     }
     &__img {
         width: 180px;
@@ -257,6 +258,7 @@
         margin-bottom: 20px;
     }
     &__items {
+        list-style-type: none;
         font-family: TUITypeCyrillicLight;
           font-size: 17px;
           font-weight: normal;
@@ -268,7 +270,7 @@
     }
     &__item {
         width: 90%;
-        
+        list-style-type: none;
         &::before {
             content: "\2022";
             color: #ffaf00;
@@ -504,6 +506,7 @@
           color: #092a5e;
         text-decoration: none;
         transition: color 0.2s linear;
+        margin-bottom: 15px;
             &:hover {
                 color: #1896cf;
             }

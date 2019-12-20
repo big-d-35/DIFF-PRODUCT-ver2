@@ -126,7 +126,7 @@
     <div class="hotels__concepts" id="hotels-concepts-block">
         <div class="hotels__countries">
            
-            <button v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</button>
+            <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</a>
  
         </div>
         
@@ -140,7 +140,7 @@
                 <div class="hotels__banner">
                     <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
                     <h3 class="hotels__place">{{ hotel.place }}</h3>
-                    <h6 class="hotels__sale">{{ hotel.sale }}</h6>
+                    <!--<h6 class="hotels__sale">{{ hotel.sale }}</h6>-->
                 </div>
                 <div class="hotels__text">
                     <h3 class="hotels__name">{{ hotel.name }}</h3>
@@ -218,7 +218,7 @@
 
 <!-- SCRIPTS START ==================================================================== -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
-<script src="VUE-hotels-Fun-Sun-ru-ua-by.js" defer></script>
+<script src="VUE-hotels-Fun-Sun-ru-ua-by-NEW.js" defer></script>
 <script src="VUE-fun-sun.js" defer></script>
 
 <script src="fun-sun-hotels-script.js" defer></script>

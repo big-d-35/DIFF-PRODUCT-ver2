@@ -58,12 +58,12 @@ const concepts = new Vue({
         aboutTitleLT: 'Что такое FUN&SUN?',
         aboutTitleLV: 'Что такое FUN&SUN?',
         
-        aboutTextRU: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости отеля учатся самостоятельности, играют и развиваются с русскоязычными аниматорами в клубе Тукан.',
-        aboutTextBY: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости отеля учатся самостоятельности, играют и развиваются с русскоязычными аниматорами в клубе Тукан.',
-        aboutTextUA: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости отеля учатся самостоятельности, играют и развиваются с русскоязычными аниматорами в клубе Тукан.',
-        aboutTextEE: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости отеля учатся самостоятельности, играют и развиваются с русскоязычными аниматорами в клубе Тукан.',
-        aboutTextLT: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости отеля учатся самостоятельности, играют и развиваются с русскоязычными аниматорами в клубе Тукан.',
-        aboutTextLV: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости отеля учатся самостоятельности, играют и развиваются с русскоязычными аниматорами в клубе Тукан.',
+        aboutTextRU: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости учатся самостоятельности, играют и развиваются в клубе Тукан.',
+        aboutTextBY: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости учатся самостоятельности, играют и развиваются в клубе Тукан.',
+        aboutTextUA: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости учатся самостоятельности, играют и развиваются в клубе Тукан.',
+        aboutTextEE: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости учатся самостоятельности, играют и развиваются в клубе Тукан.',
+        aboutTextLT: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости учатся самостоятельности, играют и развиваются в клубе Тукан.',
+        aboutTextLV: 'FUN&SUN – это концепция семейного отдыха. Мы знаем, как непросто бывает отдыхать всей семьей, поэтому при создании концепции учли интересы и взрослых, и детей. Пока взрослые наслаждаются долгожданной тишиной в зоне Chill Out 18+, юные гости учатся самостоятельности, играют и развиваются в клубе Тукан.',
         
         //SERVICES
         servicesTitleRU : 'Услуги в отелях FUN&SUN',
@@ -744,7 +744,7 @@ const concepts = new Vue({
                     {
                         name: 'FUN&SUN Life Side 5',
                         linkAgent: '/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel',
-                        linkClient : '/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/',
+                        linkClient : '/hotel/europe-turkey-side-manavgat-fun__sun__life__side/',
                     },
                     
                     {
@@ -769,13 +769,13 @@ const concepts = new Vue({
                     {
                         name: 'FUN&SUN Panthea Waterpark 4*',
                         linkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark',
-                        linkClient : '/hotel/europe-cyprus-ayia__napa-ayia__napa-tui__fun__sun__panthea__waterpark/',
+                        linkClient : '/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/',
                     },
                     
                     {
                         name: 'FUN&SUN Vangelis Hotel & Suite 4*',
                         linkAgent: '/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites',
-                        linkClient : '/hotel/europe-cyprus-protaras-protaras__city-vangelis__hotel__suites/',
+                        linkClient : '/hotel/europe-cyprus-protaras-protaras__city-fun__sun__vangelis__hotel__suites/',
                     },
                     
                     {
@@ -790,7 +790,17 @@ const concepts = new Vue({
                         linkClient : '/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/',
                     },
                     
+                    {
+                        name: 'FUN&SUN Callisto Holiday Beach 4*',
+                        linkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/fun-sun-callisto-holiday-village',
+                        linkClient : '/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__callisto__holiday__village/',
+                    },
                     
+                    {
+                        name: 'FUN&SUN Akteon Holiday Village 4*',
+                        linkAgent: '/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-akteon-holiday-village',
+                        linkClient : '/hotel/europe-cyprus-paphos-paphos-fun__sun__akteon__holiday__village/',
+                    },
                     
                 ],
             },
@@ -829,7 +839,7 @@ const concepts = new Vue({
                     {
                         name: 'FUN&SUN Sorra Daurada Splash 4*',
                         linkAgent: '/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada',
-                        linkClient : '/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/',
+                        linkClient : '/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-fun__sun__sorra__daurada__splash/',
                     },
                                 
                     
