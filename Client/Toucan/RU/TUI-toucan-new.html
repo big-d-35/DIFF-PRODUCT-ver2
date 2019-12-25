@@ -14,12 +14,12 @@
 
     <!-- CSS STYLE ======================================================================== -->
 
-    <link rel="stylesheet" href="../CSS-for-all-New-Concepts/reset.min.css">
-    <link rel="stylesheet" href="css/hotels-concepts.css">
-    <link rel="stylesheet" media="all and (min-width: 1201px)" href="css/desktop.css">
-    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="css/laptop.css">
-    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="css/tablet.css">
-    <link rel="stylesheet" media="all and (max-width: 600px)" href="css/mobile.css">
+    
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/5398241b-73d3-4801-b1b8-46194a2b95ad/hotels-concepts">
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/e706cec2-842d-403e-9622-a63f695b6c37/desktop">
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/6b842bc2-0641-4ad8-bf30-f7356a74cc5e/laptop">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/f22ba45c-a755-482c-87c8-ac719fc62779/tablet">
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/db7acf0b-a47b-4bfd-b549-64b3adfddb95/mobile">
 
 
 
@@ -54,8 +54,68 @@
         }
     </style>
     <!-- ШРИФТ =============================================== -->
+<style>
+        .ActionPage {
+            background: transparent!important; 
+            
+    }
+        .AppContainer {
+       
+        background-color: transparent!important; 
+       
+    }
+        .static {
+            width: 100%!important;
+        }
+        
+    *, :after, :before {
+        background-repeat: no-repeat; 
+        box-sizing: content-box; 
+    }
+    </style>
+<!-- SCRIPT загрузки VUE  =================================================== -->
+<script>
+    const vueLinks = [
+        'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+        'https://www.tui.ru/getmedia/7da4d964-f515-4436-83db-f6f8d5b6c911/VUE-hotels-Toucan-ru-ua-by-NEW',
+        'https://www.tui.ru/getmedia/95c04f5b-2fd9-4733-b948-57d8ee1b109e/VUE-toucan',
+        'https://www.tui.ru/getmedia/3e56b4b4-5770-433d-a63e-f73ff9fd9ede/toucan-hotels-script',
+        
+        
+    ];
 
+    function add_files(arr, type) {
 
+        count = 0;
+
+        function new_file(link) {
+            var script = document.createElement(type);
+            script.src = link;
+            script.async = false;
+            document.head.appendChild(script);
+            if (count < arr.length - 1) {
+                script.onload = function() {
+                    new_file(arr[count]);
+                }
+                script.onerror = function() {
+                    throw new Error(arr[count - 1] + ' loading error');
+                }
+                count++;
+            }
+        }
+
+        function error(text) {
+            throw new Error('the function takes two required arguments');
+        }
+
+        (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+            (arr === undefined) ? error('no link array') :
+            (type === undefined) ? error('no file type') : '';
+        new_file(arr[count]);
+    }
+
+    add_files(vueLinks, 'script');
+</script>
 </head>
 
 <!-- HEAD END ========================================================================= -->
@@ -63,6 +123,9 @@
 <body>
 
 <!-- MAIN START ========================================================================= -->
+
+
+
 
 <div class="concepts__main" id="toucan-page">
    
@@ -167,7 +230,7 @@
                             <p class="hotels__price-new">{{ hotel.price }}</p>
                         </div>-->
                     </div>
-                    <a v-bind:href=" hotel.agentLink " class="hotels__link" target="_blank"> {{ buttonRU }}</a>
+                    <a v-bind:href=" hotel.clientLink " class="hotels__link" target="_blank"> {{ buttonRU }}</a>
                 </div>
             </div>
         </div>
@@ -221,7 +284,7 @@
         <div class="allhotels__blocks">
             <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showRU">
                 <h3 class="allhotels__name">{{ allHotel.countryRU }}</h3>
-                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkAgent " class="allhotels__link" v-if="hotel.showRU" target="_blank">{{ hotel.name }}</a>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkClient " class="allhotels__link" v-if="hotel.showRU" target="_blank">{{ hotel.name }}</a>
             </div>
         </div>
     </div>
@@ -229,15 +292,11 @@
 </div>
 
 
+
 <!-- MAIN END ========================================================================= -->
 
 <!-- SCRIPTS START ==================================================================== -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
-<script src="VUE-hotels-Toucan-ru-ua-by-NEW.js" defer></script>
 
-<script src="VUE-toucan.js" defer></script>
-
-<script src="toucan-hotels-script.js" defer></script>
 
 
 

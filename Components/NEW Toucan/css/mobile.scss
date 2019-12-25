@@ -17,17 +17,32 @@
         max-width: 550px;
         min-width: 280px;
         height: 350px;
-        background-image: url(https://www.tui.ru/getmedia/8e6d1ac6-955f-4fc3-bddc-648db3c1a4c9/banner_Fun-Sun);
+        background-image: url(https://www.tui.ru/getmedia/e1c004db-7cbd-41c6-b5ac-9584f65f8b8c/banner-toucan);
         border-radius: 10px;
     }
     &__titles {
-        margin-left: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 20px;
         margin-top: 30px;
         margin-bottom: 35px;
     }
+    &__title {
+        width: 50%;
+        font-family: TUITypeCyrillicLight;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.24;
+        letter-spacing: normal;
+        color: #3c3c3c;
+    }
     &__logo {
-        width: 220px;
-        
+        width: 80px;
+        margin-right: 20px;
     }
     &__text {
         width: 90%;
@@ -183,6 +198,79 @@
             margin-right: 5px;
         }
     }
+}
+
+.whattodo {
+    &__concepts {
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 550px;
+        min-width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-family: TUITypeCyrillicLight;
+          font-size: 20px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #3c3c3c;
+    }
+    &__block {
+        width: 90%;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 5px;
+        border: solid 1px #e7e3db;
+        background-color: #ffffff;
+    }
+    &__image {
+        
+        width: 80%;
+        margin-bottom: 40px;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    &__spisok {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    &__item {
+       font-family: TUITypeCyrillic;
+          font-size: 15px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3c3c3c; 
+        margin-bottom: 15px;
+        &::before {
+            content: "\2022";
+            color: #aad700;
+            font-weight: bold;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-right: 5px;
+        }
+    }
+    
 }
 
 .entertaiments {
@@ -400,12 +488,12 @@
           color: #3c3c3c;
     }
     &__items {
-        width: 85%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding-left: 50px
+        padding-left: 0px
     }
     &__text {
         width: 100%;

@@ -3274,7 +3274,7 @@ h3 {
 }
 
 .oae h2 {
-    font-size: 2.5em !important
+    
 }
 
 .icons-oae {
@@ -3292,7 +3292,7 @@ h3 {
 }
 
 .hot a {
-    color: inherit !important
+    
 }
 
 .row-ski a {
@@ -3518,9 +3518,7 @@ select::-ms-expand {
 }
 
 h2 {
-    font-size: 1.5em !important;
-    margin: 1.5em 0 1em !important;
-    font-weight: 700 !important
+    
 }
 
 img {
@@ -4189,7 +4187,7 @@ html {
     }
 
     .container > h2 {
-        margin-right: -10px !important
+        
     }
 
     .ActionPage-container {
@@ -4260,9 +4258,7 @@ html {
     }
 
     h2 {
-        font-size: 1.5em !important;
-        margin: 1.5em 0 1em !important;
-        font-weight: 700 !important
+        
     }
 
     img {

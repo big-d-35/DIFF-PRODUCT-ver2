@@ -146,7 +146,7 @@ const concepts = new Vue({
                 items : [
                     
                     {
-                        itemRU : 'Свежевыжатый апельсиновый сок на завтрак',
+                        itemRU : 'Творческие и кулинарные мастер-классы ',
                         itemBY : 'Свежевыжатый апельсиновый сок на завтрак',
                         itemUA : 'Свежевыжатый апельсиновый сок на завтрак',
                         itemEE : '',
@@ -155,54 +155,134 @@ const concepts = new Vue({
                     },
                     
                     {
-                        itemRU : 'Рестораны a la carte',
-                        itemBY : 'Рестораны a la carte',
-                        itemUA : 'Рестораны a la carte',
+                        itemRU : 'Развивающие игры',
+                        itemBY : 'Развивающие игры',
+                        itemUA : 'Развивающие игры',
                         itemEE : '',
                         itemLT : '',
                         itemLV : '',
                     },
                     
                     {
-                        itemRU : 'Диетический уголок в главном ресторане',
-                        itemBY : 'Диетический уголок в главном ресторане',
-                        itemUA : 'Диетический уголок в главном ресторане',
+                        itemRU : 'Спортивные соревнования  ',
+                        itemBY : 'Спортивные соревнования  ',
+                        itemUA : 'Спортивные соревнования  ',
                         itemEE : '',
                         itemLT : '',
                         itemLV : '',
                     },
                     
                     {
-                        itemRU : 'Импортные алкогольные напитки',
-                        itemBY : 'Импортные алкогольные напитки',
-                        itemUA : 'Импортные алкогольные напитки',
+                        itemRU : 'Детская дискотека в завершение дня',
+                        itemBY : 'Детская дискотека в завершение дня',
+                        itemUA : 'Детская дискотека в завершение дня',
                         itemEE : '',
                         itemLT : '',
                         itemLV : '',
                     },
                     
-                    {
-                        itemRU : 'Тематические ужины 7 дней в неделю',
-                        itemBY : 'Тематические ужины 7 дней в неделю',
-                        itemUA : 'Тематические ужины 7 дней в неделю',
-                        itemEE : '',
-                        itemLT : '',
-                        itemLV : '',
-                    },
                     
-                    {
-                        itemRU : 'Мороженое в дневные часы',
-                        itemBY : 'Мороженое в дневные часы',
-                        itemUA : 'Мороженое в дневные часы',
-                        itemEE : '',
-                        itemLT : '',
-                        itemLV : '',
-                    },
                 ],
             },
             
             
             
+        ],
+        
+        //WHATTODO
+        whattodoTitleRU : 'Чем будет занят ребенок?',
+        whattodoTitleBY : 'Чем будет занят ребенок?',
+        whattodoTitleUA : 'Чем будет занят ребенок?',
+        whattodoTitleEE : 'Чем будет занят ребенок?',
+        whattodoTitleLT : 'Чем будет занят ребенок?',
+        whattodoTitleLV : 'Чем будет занят ребенок?',
+        
+        whattodoImage : 'https://www.tui.ru/getmedia/de08d3b4-c7fa-4499-9b18-c8f8c127f3fd/fitness-1@2x',
+        
+        whattodoItems : [
+            //1
+            {
+                items : [
+                    
+                    {
+                        itemRU : 'Аквагрим',
+                        itemBY : 'Аквагрим',
+                        itemUA : 'Аквагрим',
+                        itemEE : 'Аквагрим',
+                        itemLT : 'Аквагрим',
+                        itemLV : 'Аквагрим',
+                    },
+                    
+                    {
+                        itemRU : 'Олимпийские игры',
+                        itemBY : 'Олимпийские игры',
+                        itemUA : 'Олимпийские игры',
+                        itemEE : 'Олимпийские игры',
+                        itemLT : 'Олимпийские игры',
+                        itemLV : 'Аквагрим',
+                    },
+                    
+                    {
+                        itemRU : 'Йога, степ и танцевальная аэробика',
+                        itemBY : 'Йога, степ и танцевальная аэробика',
+                        itemUA : 'Йога, степ и танцевальная аэробика',
+                        itemEE : 'Аквагрим',
+                        itemLT : 'Аквагрим',
+                        itemLV: 'Аквагрим',
+                    },
+                    
+                    {
+                        itemRU : 'День рождения Тукана',
+                        itemBY : 'День рождения Тукана',
+                        itemUA : 'День рождения Тукана',
+                        itemEE : 'День рождения Тукана',
+                        itemLT : 'Аквагрим',
+                        itemLV : 'Аквагрим',
+                    },
+                ]
+            },
+            
+            //2
+            {
+                items : [
+                    
+                    {
+                        itemRU : 'Игры в детском бассейне',
+                        itemBY : 'Игры в детском бассейне',
+                        itemUA : 'Игры в детском бассейне',
+                        itemEE : 'Игры в детском бассейне',
+                        itemLT : 'Аквагрим',
+                        itemLV : 'Аквагрим',
+                    },
+                    
+                    {
+                        itemRU : 'Настольные и музыкальные игры',
+                        itemBY : 'Настольные и музыкальные игры',
+                        itemUA : 'Настольные и музыкальные игры',
+                        itemEE : 'Настольные и музыкальные игры',
+                        itemLT : 'Олимпийские игры',
+                        itemLV : 'Аквагрим',
+                    },
+                    
+                    {
+                        itemRU : 'Тематические квесты ',
+                        itemBY : 'Тематические квесты ',
+                        itemUA : 'Тематические квесты ',
+                        itemEE : 'Тематические квесты ',
+                        itemLT : 'Аквагрим',
+                        itemLV: 'Аквагрим',
+                    },
+                    
+                    {
+                        itemRU : 'Увлекательные эксперименты',
+                        itemBY : 'Увлекательные эксперименты',
+                        itemUA : 'Увлекательные эксперименты',
+                        itemEE : 'Увлекательные эксперименты',
+                        itemLT : 'Аквагрим',
+                        itemLV : 'Аквагрим',
+                    },
+                ]
+            }
         ],
         
         //ENTERTAIMENT
@@ -409,12 +489,12 @@ const concepts = new Vue({
         ],
         
         //PROGRAMS
-        prgrmTitleRU : 'Программы  в отелях FUN&SUN',
-        prgrmTitleBY : 'Программы  в отелях FUN&SUN',
-        prgrmTitleUA : 'Программы  в отелях FUN&SUN',
-        prgrmTitleEE : 'Программы  в отелях FUN&SUN',
-        prgrmTitleLT : 'Программы  в отелях FUN&SUN',
-        prgrmTitleLV : 'Программы  в отелях FUN&SUN',
+        prgrmTitleRU : 'Программы в отелях Мини Тукан',
+        prgrmTitleBY : 'Программы в отелях Мини Тукан',
+        prgrmTitleUA : 'Программы в отелях Мини Тукан',
+        prgrmTitleEE : 'Программы в отелях Мини Тукан',
+        prgrmTitleLT : 'Программы в отелях Мини Тукан',
+        prgrmTitleLV : 'Программы в отелях Мини Тукан',
         
         prgrmIcon : 'https://www.tui.ru/getmedia/4b9080ea-918e-41db-beb3-2765e73f191f/icon-download@3x',
         prgrmIconAlt : 'icon download',
@@ -430,7 +510,7 @@ const concepts = new Vue({
             //1
             {
                 cssBckg : '',
-                image: 'https://www.tui.ru/getmedia/fe4b34df-28e0-49b8-8aea-c277feee1717/icon-balloons-color@3x',
+                //image: 'https://www.tui.ru/getmedia/fe4b34df-28e0-49b8-8aea-c277feee1717/icon-balloons-color@3x',
                 imageAlt : 'icon animation',
                 titleRU: 'Анимация',
                 titleBY: 'Анимация',
@@ -442,37 +522,37 @@ const concepts = new Vue({
                 items : [
                     
                     {
-                        itemRU : 'Программа анимации в Турции',
-                        itemBY : 'Программа анимации в Турции',
-                        itemUA : 'Программа анимации в Турции',
+                        itemRU : 'Программа в отеле Al Hamra Residence & Village',
+                        itemBY : 'Программа в отеле Al Hamra Residence & Village',
+                        itemUA : 'Программа в отеле Al Hamra Residence & Village',
                         itemEE : '',
                         itemLT : '',
                         itemLV : '',
                         
-                        linkRU : '',
+                        linkRU : 'https://www.tui.ru/getmedia/f6ac0b63-9b0d-49a0-9f84-857bac7bb8b8/progamma-UAE-Toucan-Mini-2020',
                     },
                     
-                    {
-                        itemRU : 'Программа анимации на Кипре',
-                        itemBY : 'Программа анимации на Кипре',
-                        itemUA : 'Программа анимации на Кипре',
-                        itemEE : '',
-                        itemLT : '',
-                        itemLV : '',
-                        
-                        linkRU : '',
-                    },
-                    
-                    {
-                        itemRU : 'Вечерние шоу на Кипре',
-                        itemBY : 'Вечерние шоу на Кипре',
-                        itemUA : 'Вечерние шоу на Кипре',
-                        itemEE : '',
-                        itemLT : '',
-                        itemLV : '',
-                        
-                        linkRU : '',
-                    },
+//                    {
+//                        itemRU : 'Программа анимации на Кипре',
+//                        itemBY : 'Программа анимации на Кипре',
+//                        itemUA : 'Программа анимации на Кипре',
+//                        itemEE : '',
+//                        itemLT : '',
+//                        itemLV : '',
+//                        
+//                        linkRU : '',
+//                    },
+//                    
+//                    {
+//                        itemRU : 'Вечерние шоу на Кипре',
+//                        itemBY : 'Вечерние шоу на Кипре',
+//                        itemUA : 'Вечерние шоу на Кипре',
+//                        itemEE : '',
+//                        itemLT : '',
+//                        itemLV : '',
+//                        
+//                        linkRU : '',
+//                    },
                     
                     
                 ],
@@ -481,7 +561,7 @@ const concepts = new Vue({
             //2
             {
                 cssBckg : '',
-                image: 'https://www.tui.ru/getmedia/78718935-f8b0-442a-b376-7d4a3ada37e0/icon-playground-color@3x_1',
+                //image: 'https://www.tui.ru/getmedia/78718935-f8b0-442a-b376-7d4a3ada37e0/icon-playground-color@3x_1',
                 imageAlt : 'icon Kids club',
                 titleRU: 'Детский клуб Toucan',
                 titleBY: 'Детский клуб Toucan',
@@ -493,37 +573,37 @@ const concepts = new Vue({
                 items : [
                     
                     {
-                        itemRU : 'Программа клубов Тукан в Турции',
-                        itemBY : 'Программа клубов Тукан в Турции',
-                        itemUA : 'Программа клубов Тукан в Турции',
+                        itemRU : 'Программа в отеле Blue Diamond AlSalam Resort 5*',
+                        itemBY : 'Программа в отеле Blue Diamond AlSalam Resort 5*',
+                        itemUA : 'Программа в отеле Blue Diamond AlSalam Resort 5*',
                         itemEE : '',
                         itemLT : '',
                         itemLV : '',
                         
-                        linkRU : '',
+                        linkRU : 'https://www.tui.ru/getmedia/db80ed7a-4d6b-4658-9e42-6b55f4f166a4/RU-programm-UAE-Toucan-Mini-2020-fuja',
                     },
                     
-                    {
-                        itemRU : 'Программа клубов Тукан на Кипре',
-                        itemBY : 'Программа клубов Тукан на Кипре',
-                        itemUA : 'Программа клубов Тукан на Кипре',
-                        itemEE : '',
-                        itemLT : '',
-                        itemLV : '',
-                        
-                        linkRU : '',
-                    },
-                    
-                    {
-                        itemRU : 'Программа клубов Тукан на Кипре',
-                        itemBY : 'Программа клубов Тукан на Кипре',
-                        itemUA : 'Программа клубов Тукан на Кипре',
-                        itemEE : '',
-                        itemLT : '',
-                        itemLV : '',
-                        
-                        linkRU : '',
-                    },
+//                    {
+//                        itemRU : 'Программа клубов Тукан на Кипре',
+//                        itemBY : 'Программа клубов Тукан на Кипре',
+//                        itemUA : 'Программа клубов Тукан на Кипре',
+//                        itemEE : '',
+//                        itemLT : '',
+//                        itemLV : '',
+//                        
+//                        linkRU : '',
+//                    },
+//                    
+//                    {
+//                        itemRU : 'Программа клубов Тукан на Кипре',
+//                        itemBY : 'Программа клубов Тукан на Кипре',
+//                        itemUA : 'Программа клубов Тукан на Кипре',
+//                        itemEE : '',
+//                        itemLT : '',
+//                        itemLV : '',
+//                        
+//                        linkRU : '',
+//                    },
                     
                     
                 ],
@@ -551,109 +631,30 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
-                        name: 'FUN&SUN Miarosa Ghazal Resort 5*',
-                        linkAgent: '/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort',
-                        linkClient : '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',
+                        name: 'Pegasos Club 4*',
+                        linkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
+                        linkClient : '/europe-turkey-alanya-incekum-pegasos__club/',
                     },
                     
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
-                        name: 'FUN&SUN Club Belek 5*',
-                        linkAgent: '/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek',
-                        linkClient : '/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/',
+                        name: 'Pegasos Resort 5*',
+                        linkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort',
+                        linkClient : '/hotel/europe-turkey-alanya-incekum-pegasos__resort/',
                     },
                     
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
-                        name: 'FUN&SUN Club Saphire 5*',
+                        name: 'Pegasos Royal 5*',
                         linkAgent: '/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire',
                         linkClient : '/hotel/europe-turkey-kemer-tekirova-tui__fun__sun__club__saphire/',
                     },
                     
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN Club Serra Palace 5*',
-                        linkAgent: '/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace',
-                        linkClient : '/hotel/europe-turkey-side-kizilot-tui__fun__sun__club__serra__palace/',
-                    },
                     
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN River Resort Belek 5*',
-                        linkAgent: '/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek',
-                        linkClient : '/hotel/europe-turkey-belek-belek-tui__fun__sun__river__resort__belek/',
-                    },
-                    
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN Comfort Beach Resort 5*',
-                        linkAgent: '/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort',
-                        linkClient : '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/',
-                    },
-                    
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN Club Di Finica 5*',
-                        linkAgent: '/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica',
-                        linkClient : '/hotel/europe-turkey-kemer-finike-tui__fun__sun__club__di__finica/',
-                    },
-                    
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN Miarosa Incekum Beach 5*',
-                        linkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach',
-                        linkClient : '/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/',
-                    },
-                    
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN Euphoria Palm Beach 5*',
-                        linkAgent: '/Tours/Europe/Turkey/side/Kizilagac/fun-sun-euphoria-palm-beach',
-                        linkClient : '/hotel/europe-turkey-side-kizilagac-fun__sun__euphoria__palm__beach/',
-                    },
-                    
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN Imperial Sunland Resort 5*',
-                        linkAgent: '/Tours/Europe/Turkey/Kemer/Beldibi/FUN-SUN-Imperial-Sunland-Resort-(ex-Sunland-Resor',
-                        linkClient : '/hotel/europe-turkey-kemer-beldibi-fun__sun__imperial__sunland__resort__(ex__sunland__resor/',
-                    },
-                    
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN Life Side 5',
-                        linkAgent: '/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel',
-                        linkClient : '/hotel/europe-turkey-side-manavgat-fun__sun__life__side/',
-                    },
-                    
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN Life Belek 5*',
-                        linkAgent: '/Tours/Europe/Turkey/belek/Bogazkent/FUN-SUN-Life-Belek',
-                        linkClient : '/hotel/europe-turkey-belek-bogazkent-fun__sun__life__belek/',
-                    },
                     
                 ],
             },
@@ -675,55 +676,30 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
-                        name: 'FUN&SUN Panthea Waterpark 4*',
-                        linkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark',
-                        linkClient : '/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/',
+                        name: 'Christofinia 4*',
+                        linkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/',
+                        linkClient : '/hotel/europe-cyprus-ayia__napa-ayia__napa-christofinia/',
                     },
                     
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
-                        name: 'FUN&SUN Vangelis Hotel & Suite 4*',
-                        linkAgent: '/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites',
-                        linkClient : '/hotel/europe-cyprus-protaras-protaras__city-fun__sun__vangelis__hotel__suites/',
+                        name: 'St. Raphael Resort 5*',
+                        linkAgent: '/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/',
+                        linkClient : '/hotel/europe-cyprus-limasol__resort-limasol__city-st__raphael__resort/',
                     },
                     
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
-                        name: 'FUN&SUN King Evelthon Beach Hotel 5*',
-                        linkAgent: '/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-king-evelthon-beach-hotel-resort',
-                        linkClient : '/hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/',
+                        name: 'Tasia Maris Garden 3*',
+                        linkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/tasia-maris-gardens',
+                        linkClient : '/hotel/europe-cyprus-ayia__napa-ayia__napa-tasia__maris__gardens/',
                     },
                     
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN Anastasia Beach Hotel 4*',
-                        linkAgent: '/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel',
-                        linkClient : '/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/',
-                    },
                     
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN Callisto Holiday Village 4*',
-                        linkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/fun-sun-callisto-holiday-village',
-                        linkClient : '/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__callisto__holiday__village/',
-                    },
-                    
-                    {
-                        showRU : true,
-                        showBY : true,
-                        showUA : true,
-                        name: 'FUN&SUN Akteon Holiday Village 4*',
-                        linkAgent: '/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-akteon-holiday-village',
-                        linkClient : '/hotel/europe-cyprus-paphos-paphos-fun__sun__akteon__holiday__village/',
-                    },
                     
                 ],
             },
@@ -745,12 +721,19 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
-                        name: 'FUN&SUN Pearl Beach Resort 4*',
-                        linkAgent: '/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort',
-                        linkClient : '/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/',
+                        name: 'Aleksandar 4*',
+                        linkAgent: '/tours/europe/montenegro/budvanska-rivijera/budva/aleksandar/',
+                        linkClient : '/hotel/europe-montenegro-budvanska__rivijera-budva-aleksandar/',
                     },
                                 
-                    
+                    {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
+                        name: 'Castellastva 4*',
+                        linkAgent: '/tours/europe/montenegro/budvanska-rivijera/petrovac/castellastva/',
+                        linkClient : '/hotel/europe-montenegro-budvanska__rivijera-petrovac-castellastva/',
+                    },
                     
                 ],
             },
@@ -772,12 +755,19 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
-                        name: 'FUN&SUN Sorra Daurada Splash 4*',
-                        linkAgent: '/Tours/Europe/Spain/Costa-De-Barcelona/Malgrat-De-Mar/Sorra-Daurada',
-                        linkClient : '/hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-fun__sun__sorra__daurada__splash/',
+                        name: 'Estival Park Hotel Resort 4*',
+                        linkAgent: '/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort',
+                        linkClient : '/hotel/europe-spain-costa__dorada-la__pineda-estival__park__hotel__resort/',
                     },
                                 
-                    
+                    {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
+                        name: 'Don Juan Tossa 4*',
+                        linkAgent: '/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa',
+                        linkClient : '/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/',
+                    },
                     
                 ],
             },
@@ -799,9 +789,9 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
-                        name: 'FUN&SUN Apollo Palace 5*',
-                        linkAgent: '/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace',
-                        linkClient : '/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/',
+                        name: 'Serita Beach Resort 5*',
+                        linkAgent: '/Tours/Europe/Greece/Crete/Anissaras/mitsis-serita-beach',
+                        linkClient : '/hotel/europe-greece-crete-anissaras-mitsis__serita__beach/',
                     },
                                 
                     
@@ -809,26 +799,96 @@ const concepts = new Vue({
                 ],
             },
             
-            //ЕГИПЕТ
+            //ОАЭ
             {
-                showRU : false,
+                showRU : true,
                 showBY : true,
                 showUA : true,
-                countryRU : 'Египет',
-                countryBY : 'Египет',
-                countryUA : 'Египет',
+                countryRU : 'ОАЭ',
+                countryBY : 'ОАЭ',
+                countryUA : 'ОАЭ',
                 countryEE : '',
                 countryLT : '',
                 countryLV : '',
                 
                 hotels : [
                     {
-                        showRU : false,
+                        showRU : true,
                         showBY : true,
                         showUA : true,
-                        name: 'FUN&SUN Albatros Palace 5*',
-                        linkAgent: '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace',
-                        linkClient : '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-fun__sun__albatros__palace/',
+                        name: 'Al Hamra Village Golf & Beach Resort 4*',
+                        linkAgent: '/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort',
+                        linkClient : '/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/',
+                    },
+                                
+                    {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
+                        name: 'Al Hamra Residence 5*',
+                        linkAgent: '/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence',
+                        linkClient : '/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/',
+                    },
+                    
+                    {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
+                        name: 'Blue Diamond AlSalam Resort 5*',
+                        linkAgent: '/Tours/Asia/UAE/Fujairah/Fujairah-beach-hotels/blue-diamond-alsalam-resort',
+                        linkClient : '/hotel/asia-uae-fujairah-fujairah__beach__hotels-blue__diamond__alsalam__resort/',
+                    },
+                    
+                ],
+            },
+            
+            //ИТАЛИЯ
+            {
+                showRU : true,
+                showBY : true,
+                showUA : true,
+                countryRU : 'Италия',
+                countryBY : 'Италия',
+                countryUA : 'Италия',
+                countryEE : '',
+                countryLT : '',
+                countryLV : '',
+                
+                hotels : [
+                    {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
+                        name: 'Falkensteiner Club Funimation Calabria (ex. Garden Resort Calabria) 4*',
+                        linkAgent: '/Tours/Europe/Italy/Calabria/Pizzo/Valtur-Garden-Calabria',
+                        linkClient : '/hotel/europe-italy-calabria-pizzo-garden__resort__calabria/',
+                    },
+                                
+                    
+                    
+                ],
+            },
+            
+            //РОССИЯ
+            {
+                showRU : true,
+                showBY : false,
+                showUA : false,
+                countryRU : 'Россия',
+                countryBY : 'Россия',
+                countryUA : 'Россия',
+                countryEE : '',
+                countryLT : '',
+                countryLV : '',
+                
+                hotels : [
+                    {
+                        showRU : true,
+                        showBY : false,
+                        showUA : false,
+                        name: 'Бархатные сезоны 3*',
+                        linkAgent: '/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom',
+                        linkClient : '/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/',
                     },
                                 
                     

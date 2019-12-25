@@ -17,20 +17,35 @@
         max-width: 1132px;
         min-width: 832px;
         height: 400px;
-        background-image: url(https://www.tui.ru/getmedia/8e6d1ac6-955f-4fc3-bddc-648db3c1a4c9/banner_Fun-Sun);
+        background-image: url(https://www.tui.ru/getmedia/e1c004db-7cbd-41c6-b5ac-9584f65f8b8c/banner-toucan);
         border-radius: 10px;
 //        &:hover {
 //                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
 //            }
     }
     &__titles {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
         margin-left: 40px;
         margin-top: 30px;
-        margin-bottom: 54px;
+        margin-bottom: 20px;
+    }
+    &__title {
+        width: 30%;
+        font-family: TUITypeCyrillic;
+          font-size: 30px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3c3c3c;
     }
     &__logo {
-        width: 317px;
-        
+        width: 150px;
+        margin-right: 20px;
     }
     &__text {
         margin-left: 40px;
@@ -188,6 +203,76 @@
             margin-right: 5px;
         }
     }
+}
+
+.whattodo {
+    &__concepts {
+        margin-bottom: 60px;
+        width: 90%;
+        max-width: 1152px;
+        min-width: 852px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-family: TUITypeCyrillicLight;
+          font-size: 30px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #3c3c3c;
+    }
+    &__block {
+        width: 100%;
+        height: 190px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+        border-radius: 5px;
+        border: solid 1px #e7e3db;
+        background-color: #ffffff;
+    }
+    &__image {
+        height: 180px;
+        margin-bottom: 5px;
+        margin-right: 25px;
+    }
+    &__spisok {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &__item {
+       font-family: TUITypeCyrillic;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3c3c3c; 
+        margin-bottom: 15px;
+        &::before {
+            content: "\2022";
+            color: #aad700;
+            font-weight: bold;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-right: 5px;
+        }
+    }
+    
 }
 
 .entertaiments {
@@ -403,7 +488,7 @@
           color: #3c3c3c;
     }
     &__items {
-        width: 75%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -411,7 +496,7 @@
         padding-left: 60px
     }
     &__text {
-        width: 100%;
+        width: 70%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -425,9 +510,14 @@
           letter-spacing: normal;
           color: #3c3c3c;
         margin-bottom: 10px;
+        
     }
     &__item {
         
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-start;
         cursor: pointer;
         font-family: TUITypeCyrillicLight;
           font-size: 15px;

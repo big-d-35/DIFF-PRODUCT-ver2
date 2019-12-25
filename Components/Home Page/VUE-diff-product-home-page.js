@@ -168,7 +168,7 @@ const homePageSmartBlockVideoHotels = new Vue ({
         
         hotelLink5Agent: '/Tours/Europe/Turkey/Antalya/Lara/Lara-Family-Star-Iron-Ambassador',
         hotelLink5Client: '/hotel/europe-turkey-antalya-lara-smart__lara__family/',
-        hotelName5: 'SMART Lara Family 5*',
+        hotelName5: 'SMART Lara Star 5*',
         
         hotelLink6Agent: '/Tours/Europe/Turkey/Kemer/Beldibi/SMART-Asdem-Beach',
         hotelLink6Client: '/hotel/europe-turkey-kemer-beldibi-smart__asdem__beach/',
@@ -339,11 +339,11 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         
         homeFunSunHotelLink10: '/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites',
         homeFunSunHotelLinkClient10: '/hotel/europe-cyprus-protaras-protaras__city-vangelis__hotel__suites/',
-        homeFunSunHotelName10: 'FUN&SUN Vangelis Hotel & Suite 4*',
+        homeFunSunHotelName10: 'FUN&SUN Vangelis Hotel & Suites 4*',
         
         homeFunSunHotelLink18: '/Tours/Europe/Cyprus/Paphos/Paphos/fun-sun-king-evelthon-beach-hotel-resort',
         homeFunSunHotelLinkClient18: '/hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/',
-        homeFunSunHotelName18: 'FUN&SUN King Evelthon Beach Hotel 5*',
+        homeFunSunHotelName18: 'FUN&SUN King Evelthon Beach Hotel & Resort 5*',
         
         homeFunSunHotelLink19: '/Tours/Europe/Cyprus/Protaras/Protaras-city/fun-sun-anastasia-beach-hotel',
         homeFunSunHotelLinkClient19: '/hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/',

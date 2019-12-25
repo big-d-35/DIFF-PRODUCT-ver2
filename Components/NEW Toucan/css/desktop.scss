@@ -16,7 +16,7 @@
         width: 100%;
         max-width: 1232px;
         height: 400px;
-        background-image: url(https://admin.tui.ru/getmedia/e1c004db-7cbd-41c6-b5ac-9584f65f8b8c/banner-toucan);
+        background-image: url(https://www.tui.ru/getmedia/e1c004db-7cbd-41c6-b5ac-9584f65f8b8c/banner-toucan);
         border-radius: 10px;
 //        &:hover {
 //                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
@@ -199,6 +199,75 @@
             margin-right: 5px;
         }
     }
+}
+
+.whattodo {
+    &__concepts {
+        margin-bottom: 60px;
+        width: 100%;
+        max-width: 1152px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-family: TUITypeCyrillicLight;
+          font-size: 30px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #3c3c3c;
+    }
+    &__block {
+        width: 100%;
+        height: 214px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+        border-radius: 5px;
+        border: solid 1px #e7e3db;
+        background-color: #ffffff;
+    }
+    &__image {
+        height: 238px;
+        margin-bottom: 5px;
+        margin-right: 25px;
+    }
+    &__spisok {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &__item {
+       font-family: TUITypeCyrillic;
+          font-size: 17px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #3c3c3c; 
+        margin-bottom: 20px;
+        &::before {
+            content: "\2022";
+            color: #aad700;
+            font-weight: bold;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-right: 5px;
+        }
+    }
+    
 }
 
 .entertaiments {
@@ -416,7 +485,7 @@
         padding-left: 80px
     }
     &__text {
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -432,7 +501,10 @@
         margin-bottom: 20px;
     }
     &__item {
-        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-start;
         cursor: pointer;
         font-family: TUITypeCyrillicLight;
           font-size: 17px;
@@ -451,10 +523,11 @@
     }
     &__download {
         width: 20px;
-        
+        margin-right: 5px;
         
     }
 }
+
 
 
 .allhotels {
