@@ -168,7 +168,7 @@ const homePageSmartBlockVideoHotels = new Vue ({
         
         hotelLink5Agent: '/Tours/Europe/Turkey/Antalya/Lara/Lara-Family-Star-Iron-Ambassador',
         hotelLink5Client: '/hotel/europe-turkey-antalya-lara-smart__lara__family/',
-        hotelName5: 'SMART Lara Family 5*',
+        hotelName5: 'SMART Lara Star 5*',
         
         hotelLink6Agent: '/Tours/Europe/Turkey/Kemer/Beldibi/SMART-Asdem-Beach',
         hotelLink6Client: '/hotel/europe-turkey-kemer-beldibi-smart__asdem__beach/',
