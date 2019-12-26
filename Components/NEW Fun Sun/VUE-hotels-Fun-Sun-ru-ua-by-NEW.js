@@ -98,7 +98,7 @@ const hotels = new Vue({
                         showUA : true,
                         img: 'https://www.tui.ru/getmedia/1f00015d-eff8-44ff-becf-c6d2b465ac0e/Miarosa-Ghazal-Resort_1',
                         sale: '20%',
-                        place: 'Алания, Авсаллар',
+                        place: 'Кемер, Гейнюк',
                         name : 'FUN&SUN Miarosa Ghazal Resort 5*',
                         agentLink : '/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort',
                         clientLink : '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',
