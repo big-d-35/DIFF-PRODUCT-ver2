@@ -268,7 +268,7 @@ const smartHotels = new Vue ({
                     //HOTEL 5
                     {
                     
-                    hotelName : 'SMART Lara Family 5*',
+                    hotelName : 'SMART Lara Star 5*',
                     background: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=cb15144e-b409-40d2-9d98-a9c2170537da&height=460',
                     hotelLinkAgent: '/Tours/Europe/Turkey/Antalya/Lara/Lara-Family-Star-Iron-Ambassador',
                     hotelLinkClient: '/hotel/europe-turkey-antalya-lara-smart__lara__family/',

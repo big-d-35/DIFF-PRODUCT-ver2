@@ -372,7 +372,7 @@ const hotels = new Vue({
                     },
                     
                     {
-                        showRU : false,
+                        showRU : true,
                         showBY : true,
                         showUA : true,
                         img: 'https://www.tui.ru/getmedia/4519946b-b42f-45d4-bba3-e83e5ffff4cb/Al-Hamra-Residence',
@@ -389,7 +389,7 @@ const hotels = new Vue({
                     },
                     
                     {
-                        showRU : false,
+                        showRU : true,
                         showBY : true,
                         showUA : true,
                         img: 'https://www.tui.ru/getmedia/3433d368-f89a-4c40-ab96-bfdae0d36f44/Blue-Diamond-AlSalam-Resort',

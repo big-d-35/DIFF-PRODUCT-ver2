@@ -134,7 +134,7 @@ const concepts = new Vue({
             //2
             {
                 cssBckg : 'background-color: #eaf5bf;',
-                image: 'https://www.tui.ru/getmedia/149fc60f-a532-4427-a317-03158d6ffcaa/sport-1',
+                image: 'https://www.tui.ru/getmedia/30fbab5f-2229-468b-aeb5-40980bc0451b/ball2',
                 imageAlt : 'Sport',
                 titleRU: 'Развлечения',
                 titleBY: 'Развлечения',
