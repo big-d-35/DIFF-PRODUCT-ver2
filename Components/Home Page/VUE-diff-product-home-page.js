@@ -673,5 +673,10 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanHotelLink18: '/Tours/Europe/Greece/Crete/Anissaras/mitsis-serita-beach',
         homeToucanHotelLinkClient18: '/hotel/europe-greece-crete-anissaras-mitsis__serita__beach/',
         homeToucanHotelName18: 'Serita Beach Resort 5*',
+        
+        //ИСПАНИЯ
+        homeToucanHotelLink19: '/Tours/Europe/Spain/Mallorca-Palma-de-Mallorca/Palma-Nova/Sol-Palmanova-Mallorca',
+        homeToucanHotelLinkClient19: '/hotel/europe-spain-mallorca__palma__de__mallorca-palma__nova-sol__palmanova__mallorca/',
+        homeToucanHotelName19: 'Sol Palmanova - Mallorca 4*',
     }
 });

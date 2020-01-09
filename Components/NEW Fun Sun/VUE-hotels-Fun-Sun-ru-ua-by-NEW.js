@@ -498,7 +498,7 @@ const hotels = new Vue({
                         agentLink : '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace',
                         clientLink : '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-fun__sun__albatros__palace/',
                         nights : 'Новинка сезона! ',
-                        service : 'Начало работы по концепции: 15 мая 2020',
+                        service : 'Начало работы по концепции: 01.04.2020',
                         price: 'от 112 000 ₽',
                         oldPrice: '145 232 ₽',
                     

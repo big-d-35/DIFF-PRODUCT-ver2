@@ -326,7 +326,7 @@ const smartHotels = new Vue ({
                     hotelLinkClient: '/hotel/europe-turkey-kemer-beldibi-smart__asdem__beach/',
 
                     //RU
-                    countryNameRU: 'Турция, Анталья',
+                    countryNameRU: 'Турция, Бельдиби',
                     aboutHotelRUItems: [
                         { item: 'Теннисный корт и настольный теннис' },
                         { item: 'Хамам и сауна - бесплатно, СПА (платно)' },
@@ -339,7 +339,7 @@ const smartHotels = new Vue ({
                     buttonRU : 'Выбрать тур',
 
                     //BY
-                    countryNameBY: 'Турция, Анталья',
+                    countryNameBY: 'Турция, Бельдиби',
                     aboutHotelBYItems: [
                         { item: 'Теннисный корт и настольный теннис' },
                         { item: 'Хамам и сауна - бесплатно, СПА (платно)' },
@@ -351,7 +351,7 @@ const smartHotels = new Vue ({
                     buttonBY : 'Выбрать тур',
 
                     //UA
-                    countryNameUA: 'Турция, Анталья',
+                    countryNameUA: 'Турция, Бельдиби',
                     aboutHotelUAItems: [
                         { item: 'Теннисный корт и настольный теннис' },
                         { item: 'Хамам и сауна - бесплатно, СПА (платно)' },

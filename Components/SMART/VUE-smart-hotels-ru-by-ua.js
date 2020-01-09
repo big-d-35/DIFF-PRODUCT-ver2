@@ -115,7 +115,7 @@ const hotels = new Vue({
                     {
                         img: 'https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=d511c15f-1b36-4c82-b22d-c9aabf7610eb&height=460',
                         sale: '20%',
-                        place: 'Турция / Анталья',
+                        place: 'Турция / Бельдиби',
                         name : 'SMART Asdem Beach 5*',
                         agentLink : '/Tours/Europe/Turkey/Kemer/Beldibi/SMART-Asdem-Beach',
                         clientLink : '/hotel/europe-turkey-kemer-beldibi-smart__asdem__beach/',
