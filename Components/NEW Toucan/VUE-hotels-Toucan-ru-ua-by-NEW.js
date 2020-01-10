@@ -470,7 +470,7 @@ const hotels = new Vue({
                         agentLink : '/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom',
                         clientLink : '/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/',
                         nights : 'Новинка сезона! ',
-                        service : 'Начало работы детского клуба: 15 мая 2020',
+                        service : '',
                         price: 'от 112 000 ₽',
                         oldPrice: '145 232 ₽',
                     

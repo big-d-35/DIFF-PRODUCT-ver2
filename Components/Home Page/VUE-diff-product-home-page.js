@@ -174,7 +174,9 @@ const homePageSmartBlockVideoHotels = new Vue ({
         hotelLink6Client: '/hotel/europe-turkey-kemer-beldibi-smart__asdem__beach/',
         hotelName6: 'SMART Asdem Beach 5*',
         
-        
+        hotelLink7Agent: '/Tours/Europe/Turkey/side/Sorgun/smart-serra-park-hotel',
+        hotelLink7Client: '/hotel/europe-turkey-side-sorgun-smart__serra__park__hotel/',
+        hotelName7: 'SMART Serra Park Hotel 4*',
     }
 });
 

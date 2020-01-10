@@ -363,6 +363,58 @@ const smartHotels = new Vue ({
                     buttonUA : 'Выбрать тур',
                 },
                     
+                    //HOTEL 7
+                    {
+                    
+                    hotelName : 'SMART Serra Park Hotel 4*',
+                    background: 'https://agent.tui.ru/img/8ab870f5-c793-4596-a0d2-cbb05d9160f6/Europe/Turkey/side/Sorgun/smart-serra-park-hotel.jpg',
+                    hotelLinkAgent: '/Tours/Europe/Turkey/side/Sorgun/smart-serra-park-hotel',
+                    hotelLinkClient: '/hotel/europe-turkey-side-sorgun-smart__serra__park__hotel/',
+
+                    //RU
+                    countryNameRU: 'Турция, Манавгат',
+                    aboutHotelRUItems: [
+                        { item: 'Собственный песчаный пляж (в 600 м от отеля – шатл-бас каждые 30 мин)' },
+                        { item: '2 открытых бассейна' },
+                        { item: '3 водные горки' },
+                        { item: 'Хамам и сауна – бесплатно ' },
+                        { item: 'Есть семейные номера с двумя спальнями ' },
+                        { item: 'Есть номера для лиц с ограниченными возможностями ' },
+                        
+
+                    ],
+                    hotelDateRU : 'запуск май 2020',
+                    buttonRU : 'Выбрать тур',
+
+                    //BY
+                    countryNameBY: 'Турция, Манавгат',
+                    aboutHotelBYItems: [
+                        { item: 'Собственный песчаный пляж (в 600 м от отеля – шатл-бас каждые 30 мин)' },
+                        { item: '2 открытых бассейна' },
+                        { item: '3 водные горки' },
+                        { item: 'Хамам и сауна – бесплатно ' },
+                        { item: 'Есть семейные номера с двумя спальнями ' },
+                        { item: 'Есть номера для лиц с ограниченными возможностями ' },
+                        
+                    ],
+                    hotelDateBY : 'запуск май 2020',    
+                    buttonBY : 'Выбрать тур',
+
+                    //UA
+                    countryNameUA: 'Турция, Манавгат',
+                    aboutHotelUAItems: [
+                        { item: 'Собственный песчаный пляж (в 600 м от отеля – шатл-бас каждые 30 мин)' },
+                        { item: '2 открытых бассейна' },
+                        { item: '3 водные горки' },
+                        { item: 'Хамам и сауна – бесплатно ' },
+                        { item: 'Есть семейные номера с двумя спальнями ' },
+                        { item: 'Есть номера для лиц с ограниченными возможностями ' },
+                        
+                    ],
+                    hotelDateUA : 'запуск май 2020',    
+                    buttonUA : 'Выбрать тур',
+                },
+                    
                 ],
             },
             
