@@ -82,7 +82,7 @@ const smartHotels = new Vue ({
                         { item: 'Бары отеля, расположенные рядом с пляжем' },
                         { item: 'Детская площадка на пляже под тентом' },
                     ],
-                    hotelDateRU : 'запуск май 2020',    
+                    hotelDateRU : 'запуск 25 апреля 2020',    
                     buttonRU : 'Выбрать тур',
 
                     //BY
@@ -95,7 +95,7 @@ const smartHotels = new Vue ({
                         { item: 'Бары отеля, расположенные рядом с пляжем' },
                         { item: 'Детская площадка на пляже под тентом' },
                     ],
-                    hotelDateBY : 'запуск май 2020',    
+                    hotelDateBY : 'запуск 25 апреля 2020',    
                     buttonBY : 'Выбрать тур',
 
                     //UA
@@ -108,7 +108,7 @@ const smartHotels = new Vue ({
                         { item: 'Бары отеля, расположенные рядом с пляжем' },
                         { item: 'Детская площадка на пляже под тентом' },
                     ],
-                    hotelDateUA : 'запуск май 2020',
+                    hotelDateUA : 'запуск 25 апреля 2020',
                     buttonUA : 'Выбрать тур',
                 },
 
@@ -181,7 +181,7 @@ const smartHotels = new Vue ({
                         { item: 'Есть семейные номера с одной и двумя спальнями' },
 
                     ],
-                    hotelDateRU : 'запуск май 2020',    
+                    hotelDateRU : 'запуск 25 апреля 2020',    
                     buttonRU : 'Выбрать тур',
 
                     //BY
@@ -195,7 +195,7 @@ const smartHotels = new Vue ({
                         { item: 'Собственный песчаный пляж в 200 м' },
                         { item: 'Есть семейные номера с одной и двумя спальнями' },
                     ],
-                    hotelDateBY : 'запуск май 2020',    
+                    hotelDateBY : 'запуск 25 апреля 2020',    
                     buttonBY : 'Выбрать тур',
 
                     //UA
@@ -209,7 +209,7 @@ const smartHotels = new Vue ({
                         { item: 'Собственный песчаный пляж в 200 м' },
                         { item: 'Есть семейные номера с одной и двумя спальнями' },
                     ],
-                    hotelDateUA : 'запуск май 2020',    
+                    hotelDateUA : 'запуск 25 апреля 2020',    
                     buttonUA : 'Выбрать тур',
                 },
 
@@ -233,7 +233,7 @@ const smartHotels = new Vue ({
                         { item: 'Собственный песчано-галечный пляж (через переход)' },
 
                     ],
-                    hotelDateRU : 'запуск май 2020',
+                    hotelDateRU : 'запуск 25 апреля 2020',
                     buttonRU : 'Выбрать тур',
 
                     //BY
@@ -247,7 +247,7 @@ const smartHotels = new Vue ({
                         { item: 'SPA центр' },
                         { item: 'Собственный песчано-галечный пляж (через переход)' },
                     ],
-                    hotelDateBY : 'запуск май 2020',    
+                    hotelDateBY : 'запуск 25 апреля 2020',    
                     buttonBY : 'Выбрать тур',
 
                     //UA
@@ -261,7 +261,7 @@ const smartHotels = new Vue ({
                         { item: 'SPA центр' },
                         { item: 'Собственный песчано-галечный пляж (через переход)' },
                     ],
-                    hotelDateUA : 'запуск май 2020',    
+                    hotelDateUA : 'запуск 25 апреля 2020',    
                     buttonUA : 'Выбрать тур',
                 },
                     
@@ -285,7 +285,7 @@ const smartHotels = new Vue ({
                         { item: 'Бар у бассейна и бар на пляже' },
 
                     ],
-                    hotelDateRU : 'запуск май 2020',
+                    hotelDateRU : 'запуск 25 апреля 2020',
                     buttonRU : 'Выбрать тур',
 
                     //BY
@@ -299,7 +299,7 @@ const smartHotels = new Vue ({
                         { item: '2 ресторана a la carte' },
                         { item: 'Бар у бассейна и бар на пляже' },
                     ],
-                    hotelDateBY : 'запуск май 2020',    
+                    hotelDateBY : 'запуск 25 апреля 2020',    
                     buttonBY : 'Выбрать тур',
 
                     //UA
@@ -313,7 +313,7 @@ const smartHotels = new Vue ({
                         { item: '2 ресторана a la carte' },
                         { item: 'Бар у бассейна и бар на пляже' },
                     ],
-                    hotelDateUA : 'запуск май 2020',    
+                    hotelDateUA : 'запуск 25 апреля 2020',    
                     buttonUA : 'Выбрать тур',
                 },
                     
@@ -335,7 +335,7 @@ const smartHotels = new Vue ({
                         
 
                     ],
-                    hotelDateRU : 'запуск май 2020',
+                    hotelDateRU : 'запуск 25 апреля 2020',
                     buttonRU : 'Выбрать тур',
 
                     //BY
@@ -347,7 +347,7 @@ const smartHotels = new Vue ({
                         { item: 'Детский инвентарь по запросу бесплатно' },
                         
                     ],
-                    hotelDateBY : 'запуск май 2020',    
+                    hotelDateBY : 'запуск 25 апреля 2020',    
                     buttonBY : 'Выбрать тур',
 
                     //UA
@@ -359,7 +359,7 @@ const smartHotels = new Vue ({
                         { item: 'Детский инвентарь по запросу бесплатно' },
                         
                     ],
-                    hotelDateUA : 'запуск май 2020',    
+                    hotelDateUA : 'запуск 25 апреля 2020',    
                     buttonUA : 'Выбрать тур',
                 },
                     
@@ -383,7 +383,7 @@ const smartHotels = new Vue ({
                         
 
                     ],
-                    hotelDateRU : 'запуск май 2020',
+                    hotelDateRU : 'запуск 25 апреля 2020',
                     buttonRU : 'Выбрать тур',
 
                     //BY
@@ -397,7 +397,7 @@ const smartHotels = new Vue ({
                         { item: 'Есть номера для лиц с ограниченными возможностями ' },
                         
                     ],
-                    hotelDateBY : 'запуск май 2020',    
+                    hotelDateBY : 'запуск 25 апреля 2020',    
                     buttonBY : 'Выбрать тур',
 
                     //UA
@@ -411,7 +411,7 @@ const smartHotels = new Vue ({
                         { item: 'Есть номера для лиц с ограниченными возможностями ' },
                         
                     ],
-                    hotelDateUA : 'запуск май 2020',    
+                    hotelDateUA : 'запуск 25 апреля 2020',    
                     buttonUA : 'Выбрать тур',
                 },
                     

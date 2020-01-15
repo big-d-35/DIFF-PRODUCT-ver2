@@ -234,6 +234,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageMontenegroRU: 'Черногория',
         homeFunSunBlockPageSpainRU: 'Испания',
         homeFunSunBlockPageGreeceRU: 'Греция',
+        homeFunSunBlockPageItalyRU: 'Италия',
         
         homeFunSunBlockPageLinkTextBY: 'Подробнее',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
@@ -244,6 +245,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageMontenegroBY: 'Черногория',
         homeFunSunBlockPageSpainBY: 'Испания',
         homeFunSunBlockPageGreeceBY: 'Греция',
+        homeFunSunBlockPageItalyBY: 'Италия',
         
         homeFunSunBlockPageLinkTextUA: 'Подробнее',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
@@ -254,6 +256,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageMontenegroUA: 'Черногория',
         homeFunSunBlockPageSpainUA: 'Испания',
         homeFunSunBlockPageGreeceUA: 'Греция',
+        homeFunSunBlockPageItalyUA: 'Италия',
         
         homeFunSunBlockPageLinkTextEE: 'Täpsemalt',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
@@ -264,6 +267,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageMontenegroEE: 'Montenegro',
         homeFunSunBlockPageSpainEE: 'Hispaania',
         homeFunSunBlockPageGreeceEE: 'Kreeka',
+        homeFunSunBlockPageItalyEE: 'Itaalia',
         
         homeFunSunBlockPageLinkTextLT: 'Plačiau',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
@@ -274,6 +278,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageMontenegroLT: 'Juodkalnija',
         homeFunSunBlockPageSpainLT: 'Ispanija',
         homeFunSunBlockPageGreeceLT: 'Graikija',
+        homeFunSunBlockPageItalyLT: 'Italija',
         
         homeFunSunBlockPageLinkTextLV: 'Sīkāk',
         homeFunSunBlockPageImage: 'https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play',
@@ -284,6 +289,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageMontenegroLV: 'Melnkalne',
         homeFunSunBlockPageSpainLV: 'Spānija',
         homeFunSunBlockPageGreeceLV: 'Grieķija',
+        homeFunSunBlockPageItalyLV: 'Itālija',
         
         //ТУРЦИЯ
         homeFunSunHotelLink1: '/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort',
@@ -378,6 +384,11 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunHotelLink20: '/Tours/Europe/Greece/Corfu/Messonghi/sentido-apollo-palace',
         homeFunSunHotelLinkClient20: '/hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/',
         homeFunSunHotelName20: 'FUN&SUN Apollo Palace 5*',
+        
+        //ИТАЛИЯ
+        homeFunSunHotelLink23: '/Tours/Europe/Italy/Calabria/Squillace/club-esse-sunbeach',
+        homeFunSunHotelLinkClient23: '/hotel/europe-italy-calabria-squillace-club__esse__sunbeach/',
+        homeFunSunHotelName23: 'FUN&SUN Club Esse Sunbeach 4*',
     }
 });
 
@@ -603,7 +614,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageGreeceLV: 'Grieķija',
                
         homeToucanHotelLink1: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
-        homeToucanHotelLinkClient1: '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',
+        homeToucanHotelLinkClient1: '/hotel/europe-turkey-alanya-incekum-pegasos__club/',
         homeToucanHotelName1: 'Pegasos Club 4*',
         
         homeToucanHotelLink2: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort',
