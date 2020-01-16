@@ -600,7 +600,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageItalyLT: 'Italija',
         homeToucanBlockPageSpainLT: 'Ispanija',
         homeToucanBlockPageRussiaLT: 'Rusija',
-        homeToucanBlockPageOaeLT: 'OAE',
+        homeToucanBlockPageOaeLT: 'JAE',
         homeToucanBlockPageGreeceLT: 'Graikija',
         
         homeToucanBlockPageLinkTextLV: 'Sīkāk',
