@@ -19,8 +19,8 @@
         &__concepts {
             width: 100%;
             margin-bottom: 60px;
-            width: 100%;
-            max-width: 1152px;
+           
+            
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -28,6 +28,7 @@
         }
         &__countries {
             width: 100%;
+            max-width: 1152px;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -64,6 +65,7 @@
         }
         &__blocks {
             width: 100%;
+            max-width: 1152px;
             display: none;
             opacity: 1;
             flex-direction: row;
@@ -108,7 +110,7 @@
         }
         &__place {
             z-index: 10;
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 17px;
               font-weight: bold;
               font-stretch: normal;
@@ -130,7 +132,7 @@
               border-radius: 50%;
               background-color: #ff530e;
             text-align: center;
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 15px;
               font-weight: bold;
               font-stretch: normal;
@@ -150,7 +152,7 @@
             padding-left: 0px;
         }
         &__name {
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 20px;
               font-weight: bold;
               font-stretch: normal;
@@ -261,9 +263,8 @@
         &__concepts {
             width: 100%;
             margin-bottom: 60px;
-            width: 100%;
-            max-width: 1152px;
-            min-width: 852px;
+            
+            
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -271,6 +272,8 @@
         }
         &__countries {
             width: 90%;
+            max-width: 1152px;
+            min-width: 852px;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -309,7 +312,8 @@
             width: 90%;
             display: none;
             opacity: 0;
-            
+            max-width: 1152px;
+            min-width: 852px;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: flex-start;
@@ -352,7 +356,7 @@
         }
         &__place {
             z-index: 10;
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 17px;
               font-weight: bold;
               font-stretch: normal;
@@ -374,7 +378,7 @@
               border-radius: 50%;
               background-color: #ff530e;
             text-align: center;
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 15px;
               font-weight: bold;
               font-stretch: normal;
@@ -394,7 +398,7 @@
             padding-left: 00px;
         }
         &__name {
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 20px;
               font-weight: bold;
               font-stretch: normal;
@@ -594,7 +598,7 @@
         }
         &__place {
             z-index: 10;
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 17px;
               font-weight: bold;
               font-stretch: normal;
@@ -616,7 +620,7 @@
               border-radius: 50%;
               background-color: #ff530e;
             text-align: center;
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 15px;
               font-weight: bold;
               font-stretch: normal;
@@ -636,7 +640,7 @@
             padding-left: 0px;
         }
         &__name {
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 14px;
               font-weight: bold;
               font-stretch: normal;
@@ -859,7 +863,7 @@
         }
         &__place {
             z-index: 10;
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 17px;
               font-weight: bold;
               font-stretch: normal;
@@ -881,7 +885,7 @@
               border-radius: 50%;
               background-color: #ff530e;
             text-align: center;
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 15px;
               font-weight: bold;
               font-stretch: normal;
@@ -901,7 +905,7 @@
             padding-left: 0px;
         }
         &__name {
-            font-family: TUITypeCyrillicLight;
+            font-family: TUITypeCyrillic;
               font-size: 18px;
               font-weight: bold;
               font-stretch: normal;

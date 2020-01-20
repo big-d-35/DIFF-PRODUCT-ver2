@@ -33,7 +33,7 @@ const homePageFirstBlock = new Vue ({
         
         //ПРЕЗЕНТАЦИЯ
         firstBlockHeadPresentaionLink: 'https://www.tui.ru/getmedia/b448c677-abf8-40ec-8578-1a05f7268b4b/NEW_Concept_Presentation_B2B_31-10',
-        firstBlockHeadPresentaionLinkUA: 'https://www.tui.ru/getmedia/67345b6e-5eb5-4eae-8523-8d35b61a67b5/UA_NEW-Concept-Presentation_B2B_04-11-2019',
+        firstBlockHeadPresentaionLinkUA: 'https://www.tui.ru/getmedia/b448c677-abf8-40ec-8578-1a05f7268b4b/NEW_Concept_Presentation_B2B_31-10',
         firstBlockHeadPresentaionRU: 'Презентация Дифф продукта',
         firstBlockHeadPresentaionBY: 'Презентация Дифф продукта',
         firstBlockHeadPresentaionUA: 'Презентация Дифф продукта',
@@ -398,19 +398,19 @@ const homePageDayNightBlockText = new Vue ({
     data: {
         homePageDayNightBlockLogo: 'https://www.tui.ru/getmedia/82b48419-a310-45c9-a9d0-4b4fe86c85de/logo-FN',
         
-        homePageDayNightBlockTitleRU1: 'Концепция молодежного отдыха DAY&NIGHT Connected',
+        homePageDayNightBlockTitleRU1: 'Концепция активного отдыха DAY&NIGHT Connected',
         homePageDayNightBlockTitleRU2: 'Отдых, заряжающий энергией!',
         homePageDayNightBlockTextRU1: 'DAY&NIGHT Connected - это целая Вселенная приключений, веселья и ярких положительных эмоций, которые запомнятся на всю жизнь!',
         homePageDayNightBlockTextRU2: 'Вселенная, которая состоит из Солнечной системы "Ultra All Inclusive" с планетами свежевыжатого апельсинового сока, национальных блюд, европейской кухни, ресторанов a la carte, и бесплатного импортного алкоголя; Галактики развлечений с созвездиями "Wellness & Fitness", где для вас проводят мастер-классы именитые инструкторы, и "Night Life" с бесплатным входом в популярные ночные клубы, и бесконечного Wi-Fi.',
         homePageDayNightBlockTextRU3: 'Отдохнуть в передвижениях можно на станции "Номер" в уютной форме из фирменных халатов и тапочек за чашкой горячего чая.',
         
-        homePageDayNightBlockTitleBY1: 'Концепция молодежного отдыха DAY&NIGHT Connected',
+        homePageDayNightBlockTitleBY1: 'Концепция активного отдыха DAY&NIGHT Connected',
         homePageDayNightBlockTitleBY2: 'Отдых, заряжающий энергией!',
         homePageDayNightBlockTextBY1: 'DAY&NIGHT Connected - это целая Вселенная приключений, веселья и ярких положительных эмоций, которые запомнятся на всю жизнь!',
         homePageDayNightBlockTextBY2: 'Вселенная, которая состоит из Солнечной системы "Ultra All Inclusive" с планетами свежевыжатого апельсинового сока, национальных блюд, европейской кухни, ресторанов a la carte, и бесплатного импортного алкоголя; Галактики развлечений с созвездиями "Wellness & Fitness", где для вас проводят мастер-классы именитые инструкторы, и "Night Life" с бесплатным входом в популярные ночные клубы, и бесконечного Wi-Fi.',
         homePageDayNightBlockTextBY3: 'Отдохнуть в передвижениях можно на станции "Номер" в уютной форме из фирменных халатов и тапочек за чашкой горячего чая.',
         
-        homePageDayNightBlockTitleUA1: 'Концепция молодежного отдыха DAY&NIGHT Connected',
+        homePageDayNightBlockTitleUA1: 'Концепция активного отдыха DAY&NIGHT Connected',
         homePageDayNightBlockTitleUA2: 'Отдых, заряжающий энергией!',
         homePageDayNightBlockTextUA1: 'DAY&NIGHT Connected - это целая Вселенная приключений, веселья и ярких положительных эмоций, которые запомнятся на всю жизнь!',
         /*homePageDayNightBlockTextUA2: 'Вселенная, которая состоит из Солнечной системы "Ultra All Inclusive" с планетами свежевыжатого апельсинового сока, национальных блюд, европейской кухни, ресторанов a la carte, и бесплатного импортного алкоголя; Галактики развлечений с созвездиями "Wellness & Fitness", где для вас проводят мастер-классы именитые инструкторы, и "Night Life" с бесплатным входом в популярные ночные клубы, и бесконечного Wi-Fi.',*/
@@ -485,7 +485,7 @@ const homePageDayNightBlockVideoHotels = new Vue ({
         
         homeFunSunHotelLink4: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons',
         homeFunSunHotelLinkClient4: '/hotel/europe-cyprus-ayia__napa-ayia__napa-day__night__connected__seasons/',
-        homeFunSunHotelName4: 'DAY&NIGHT Connected  Season 4*',
+        homeFunSunHotelName4: 'DAY&NIGHT Connected  Seasons 4*',
     }
 });
 

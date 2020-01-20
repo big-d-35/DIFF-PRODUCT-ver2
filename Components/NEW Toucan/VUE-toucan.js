@@ -769,6 +769,14 @@ const concepts = new Vue({
                         linkClient : '/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/',
                     },
                     
+                    {
+                        showRU : true,
+                        showBY : true,
+                        showUA : true,
+                        name: 'Sol Palmanova - Mallorca 4*',
+                        linkAgent: '/Tours/Europe/Spain/Mallorca-Palma-de-Mallorca/Palma-Nova/Sol-Palmanova-Mallorca',
+                        linkClient : '/hotel/europe-spain-mallorca__palma__de__mallorca-palma__nova-sol__palmanova__mallorca/',
+                    },
                 ],
             },
             

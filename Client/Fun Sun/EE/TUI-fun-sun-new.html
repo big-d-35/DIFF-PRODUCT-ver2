@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ee">
 
 <!-- HEAD START ========================================================================= -->
 
@@ -10,15 +10,16 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>TUI Day and Night</title>
+    <title>TUI Fun and Sun</title>
 
     <!-- CSS STYLE ======================================================================== -->
-    <link rel="stylesheet" href="https://www.tui.ru/getmedia/17d935e1-f4c1-4c03-99ac-3359781db840/header-footer-all-css-concepts">
-    <link rel="stylesheet" href="https://www.tui.ru/getmedia/d4d7b368-5b53-48db-ba78-bbb734584824/hotels-concepts">
-    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/17fc3d10-a655-4d88-aa36-090663b885ce/desktop">
-    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/d8ed8eb7-c0a3-4c2f-a04a-9511e727da38/laptop">
-    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/42825a13-9dc1-47a0-b469-6b8e3833a1a4/tablet">
-    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/6cbad9f7-8843-479d-bb52-a157c00dc43c/mobile">
+
+<link rel="stylesheet" href="https://www.tui.ru/getmedia/17d935e1-f4c1-4c03-99ac-3359781db840/header-footer-all-css-concepts">
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/28ac71ad-53fa-4e23-bc03-6658895fd4c9/hotels-concepts">
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/d09b6270-5a8a-4d54-86c3-8046428a2edd/desktop">
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/b70c243b-bb99-49c1-b9d3-3c9a304b972d/laptop">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/95a46c39-1670-4da2-ac1f-58f91cefd9c3/tablet">
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/4af90570-f145-4f85-ae52-ca4f553aa886/mobile">
 
     <!-- CSS STYLE ======================================================= -->
     <!-- ШРИФТ =============================================== -->
@@ -49,33 +50,15 @@
         }
     </style>
     <!-- ШРИФТ =============================================== -->
-<style>
-        .ActionPage {
-            background: transparent!important; 
-            
-    }
-        .AppContainer {
-       
-        background-color: transparent!important; 
-       
-    }
-        .static {
-            width: 100%!important;
-        }
-        
-    *, :after, :before {
-        background-repeat: no-repeat; 
-        box-sizing: content-box; 
-    }
-    </style>
+
     <!-- SCRIPT загрузки VUE  =================================================== -->
 <script>
     const vueLinks = [
         'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
-        'https://www.tui.ru/getmedia/d68f9382-4607-450a-b140-75dd818719bd/VUE-hotels-day-night-ru-ua-by-NEW',
-        'https://www.tui.ru/getmedia/85681a56-57a1-4981-ba56-4a4179c46108/VUE-day-night',
-        'https://www.tui.ru/getmedia/cc47bad7-ac05-4580-878b-05ea8808d485/day-night-hotels-script',
-        'https://www.tui.ru/getmedia/db0b021d-bdd3-4a94-a5f6-e797ed62b2a3/diff-header-footer-for-concepts',
+        'https://www.tui.ru/getmedia/7db13db4-3957-4d8e-b8f2-6c062e4e7b73/VUE-hotels-Fun-Sun-ee-NEW',
+        'https://www.tui.ru/getmedia/9932cbb7-6b5a-4389-b147-0e5269d6320e/VUE-fun-sun',
+        'https://www.tui.ru/getmedia/a3807bcb-a5c6-4b1a-9aa5-3ccfa3106e57/fun-sun-hotels-script',
+        
         
     ];
 
@@ -111,15 +94,21 @@
 
     add_files(vueLinks, 'script');
 </script>
+
+
+
 </head>
 
 <!-- HEAD END ========================================================================= -->
 
 <body>
 
-<!-- MAIN START ========================================================================= -->
+<!-- MAIN START ============================================================= -->
 
-<div class="concepts__main" id="day-night">
+
+
+
+<div class="concepts__main" id="fun-sun">
    
    <!-- BANNER ===================================== -->
     <div class="banner__concepts" v-bind:class="bannerConceptsBckg">
@@ -128,29 +117,29 @@
             <h2 class="banner__title"></h2>
         </div>
         <ul class="banner__text">
-            <li class="banner__text-item" v-for=' bannerItem in bannerItems '>{{ bannerItem.itemRU }}</li>
+            <li class="banner__text-item" v-for=' bannerItem in bannerItems '>{{ bannerItem.itemEE }}</li>
         </ul>
     </div>  
     <!-- BANNER ===================================== -->
     
     <!-- ABOUT ===================================== -->
     <div class="about__concepts">
-        <h2 class="about__title">{{aboutTitleRU}}</h2>
-        <p class="about__text">{{aboutTextRU}}</p>
+        <h2 class="about__title">{{aboutTitleEE}}</h2>
+        <p class="about__text">{{aboutTextEE}}</p>
     </div>    
     <!-- ABOUT ===================================== -->
     
     <!-- SERVICES ===================================== -->
     <div class="services__concepts">
-        <h2 class="services__title">{{servicesTitleRU}}</h2>
+        <h2 class="services__title">{{servicesTitleEE}}</h2>
         <div class="services__blocks">
             <div class="services__block" v-for=" servicesItem in servicesItems" v-bind:style=" servicesItem.cssBckg ">
                 <img v-bind:src=" servicesItem.image " v-bind:alt=" servicesItem.imageAlt " class="services__img">
                 <div class="services__text">
-                    <h3 class="services__name">{{ servicesItem.titleRU }}</h3>
+                    <h3 class="services__name">{{ servicesItem.titleEE }}</h3>
                     <ul class="services__items">
                         <li class="services__item" v-for=" item in servicesItem.items ">
-                            {{ item.itemRU }}
+                            {{ item.itemEE }}
                         </li>
                     </ul>
                 </div>
@@ -159,17 +148,17 @@
     </div>
     <!-- SERVICES ===================================== -->
     
-    <!-- ENTERTAIMENT ===================================== 
+    <!-- ENTERTAIMENT ===================================== -->
     <div class="entertaiments__concepts">
-        <h2 class="entertaiments__title">{{ entTitleRU }}</h2>
+        <h2 class="entertaiments__title">{{ entTitleEE }}</h2>
         <div class="entertaiments__blocks" >
             <div class="entertaiments__block" v-for=" entItem in entItems" v-bind:style=" entItem.cssBckg ">
                 <img v-bind:src=" entItem.image " v-bind:alt=" entItem.imageAlt " class="entertaiments__img">
                 <div class="entertaiments__text">
-                    <h3 class="entertaiments__name">{{ entItem.titleRU }}</h3>
+                    <h3 class="entertaiments__name">{{ entItem.titleEE }}</h3>
                     <ul class="entertaiments__items">
                         <li class="entertaiments__item" v-for=" item in entItem.items ">
-                            {{ item.itemRU }}</li>
+                            {{ item.itemEE }}</li>
                     </ul>
                 </div>
             </div>
@@ -181,17 +170,17 @@
     <div class="hotels__concepts" id="hotels-concepts-block">
         <div class="hotels__countries" id="hotels-concepts-buttons-block">
            
-            <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</a>
+            <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showEE" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameEE }}</a>
  
         </div>
         
         <select class="hotels__countries-mobile" id="hotels-options-mobile">
-              <option class="hotels__country-mobile" v-for=" countryName in countryNames " v-bind:data-option=' countryName.id ' v-if="countryName.showRU">{{ countryName.nameRU }}</option>
+              <option class="hotels__country-mobile" v-for=" countryName in countryNames " v-bind:data-option=' countryName.id ' v-if="countryName.showEE">{{ countryName.nameEE }}</option>
               
         </select>
         
-        <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showRU " class="hotels__blocks" v-bind:class=" countryHotel.class ">
-            <div class="hotels__block" v-for=" hotel in countryHotel.hotels " v-if="hotel.showRU">
+        <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showEE " class="hotels__blocks" v-bind:class=" countryHotel.class ">
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels " v-if="hotel.showEE">
                 <div class="hotels__banner">
                     <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
                     <h3 class="hotels__place">{{ hotel.place }}</h3>
@@ -209,7 +198,7 @@
                             <p class="hotels__price-new">{{ hotel.price }}</p>
                         </div>-->
                     </div>
-                    <a v-bind:href=" hotel.clientLink " class="hotels__link" target="_blank"> {{ buttonRU }}</a>
+                    <a v-bind:href=" hotel.clientLink " class="hotels__link" target="_blank"> {{ buttonEE }}</a>
                 </div>
             </div>
         </div>
@@ -219,7 +208,7 @@
     
     <!-- PHOTOS =====================================
     <div class="photos__concepts">
-        <h2 class="photos__title">{{ photosTitleRU }}</h2>
+        <h2 class="photos__title">{{ photosTitleEE }}</h2>
         <div class="photos__block">
             <div class="photos__video">
                 <img v-bind:src=" photosVideoImg " alt="" class="photos__video-img">
@@ -234,18 +223,18 @@
     
     <!-- PROGRAMS =====================================
     <div class="programs__concepts">
-        <h2 class="programs__title">{{ prgrmTitleRU }}</h2>
+        <h2 class="programs__title">{{ prgrmTitleEE }}</h2>
         <div class="programs__blocks">
             <div class="programs__block" v-for=" prgrmItem in prgrmItems ">
                 <div class="programs__names">
                     <img v-bind:src=" prgrmItem.image " v-bind:alt="  prgrmItem.imageAlt " class="programs__icon">
-                    <h3 class="programs__name">{{ prgrmItem.titleRU }}</h3>
+                    <h3 class="programs__name">{{ prgrmItem.titleEE }}</h3>
                 </div>
                 <div class="programs__items">
-                    <h3 class="programs__text" v-for=" item in prgrmItem.items ">{{ item.itemRU }}
-                        <a v-bind:href=" item.linkRU " class="programs__item" target="_blank">
+                    <h3 class="programs__text" v-for=" item in prgrmItem.items ">{{ item.itemEE }}
+                        <a v-bind:href=" item.linkEE " class="programs__item" target="_blank">
                             <img v-bind:src=" prgrmIcon " v-bind:alt=" prgrmIconAlt " class="programs__download">
-                            {{ prgrmDownloadRU }}
+                            {{ prgrmDownloadEE }}
                         </a>
                     </h3>
 
@@ -259,9 +248,9 @@
     <!-- ALL HOTELS ===================================== -->
     <div class="allhotels__concepts">
         <div class="allhotels__blocks">
-            <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showRU">
-                <h3 class="allhotels__name">{{ allHotel.countryRU }}</h3>
-                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkClient " class="allhotels__link" v-if="hotel.showRU" target="_blank">{{ hotel.name }}</a>
+            <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showEE">
+                <h3 class="allhotels__name">{{ allHotel.countryEE }}</h3>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkClient " class="allhotels__link" v-if="hotel.showEE" target="_blank">{{ hotel.name }}</a>
             </div>
         </div>
     </div>
@@ -269,13 +258,10 @@
 </div>
 
 
+
 <!-- MAIN END ========================================================================= -->
 
 <!-- SCRIPTS START ==================================================================== -->
-
-<script type="text/javascript">
-document.getElementById('subscription-form').style.display = 'none'
-</script>
 
 
 <!-- SCRIPTS END ====================================================================== -->

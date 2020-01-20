@@ -107,7 +107,7 @@ const hotels = new Vue({
                         img: 'https://www.tui.ru/getmedia/07a2e26a-3385-4abe-a489-3a2e8acdabde/Connected-Season',
                         sale: '20%',
                         place: 'Айя-Напа',
-                        name : 'DAY&NIGHT Connected Season 4*',
+                        name : 'DAY&NIGHT Connected Seasons 4*',
                         agentLink : '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons',
                         clientLink : '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons',
                         nights : 'Новинка сезона!',
@@ -130,7 +130,7 @@ const hotels = new Vue({
                 showUA : true,
                 hotels : [
                     {
-                        showRU : false,
+                        showRU : true,
                         showBY : true,
                         showUA : true,
                         img: 'https://www.tui.ru/getmedia/5e79c6d1-7d88-4c0a-b7ec-c58ee7e9a0a1/Connected-Tropitel-Waves',
@@ -146,6 +146,7 @@ const hotels = new Vue({
                     
                     },
                     
+                   
                     
                 ],
             },

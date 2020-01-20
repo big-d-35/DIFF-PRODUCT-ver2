@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!-- 
-Привет, все файлы по этой странице хранятся на TUI.ru / новый сайт / Концепции / TUI-SMART / в папках css js image и пр
-
-VUE автоматом подтягивает нужный перевод, если хотите изменить или добавить информацию обновляйте ее в файле VUE smart.js 
-
-
--->
-
 
 <!-- HEAD START ========================================================================= -->
 
@@ -22,92 +14,22 @@ VUE автоматом подтягивает нужный перевод, ес�
     
 <!-- CSS STYLE ======================================================================== -->
    
-    <link rel="stylesheet" href="https://www.tui.ru/getmedia/03f1481f-8cca-4396-b4e9-9b650e5487f8/reset-min">
-    <link rel="stylesheet" href="https://www.tui.ru/getmedia/ec719636-ff45-4328-b45d-eb0f6d4d0314/smart-hotels">
-    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/414ac703-1b5c-4067-9966-038780d2364f/smart-desktop">
-    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/493fe15d-0c98-408e-abe6-b938a271eab1/smart-laptop">
-    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/79d32b81-b2d1-45d9-87e1-8ac3ae9b91ff/smart-tablet"> 
-    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/006d2476-5ac7-4e98-940c-101329e078ba/smart-mobile">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/smart-hotels.css">
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="css/smart-desktop.css">
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="css/smart-laptop.css">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="css/smart-tablet.css"> 
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="css/smart-mobile.css">
+    <link rel="stylesheet"  href="https://admin.tui.ru/getmedia/82f63621-090c-4d58-9b86-369a680a5911/header-footer-all-css-concepts">
+<!--    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">-->
     
-    <link rel="stylesheet"  href="https://www.tui.ru/getmedia/82f63621-090c-4d58-9b86-369a680a5911/header-footer-all-css-concepts">
+   
+   
     
 <!-- CSS STYLE ======================================================= -->
     
+   
     
-    
-<!-- SCRIPT загрузки VUE  =================================================== -->
-        <script type="text/javascript">
-            const vueLinks = [
-                'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
-                'https://www.tui.ru/getmedia/db0b021d-bdd3-4a94-a5f6-e797ed62b2a3/diff-header-footer-for-concepts',
-                'https://www.tui.ru/getmedia/18827348-c151-450f-8677-9e3b61cc8112/VUE-smart',
-                'https://www.tui.ru/getmedia/0fe57bec-54f3-4650-bfec-d4b805f324ba/VUE-smart-hotels-ru-by-ua-NEW',
-                'https://www.tui.ru/getmedia/ff7c258d-402b-4513-ae53-08ae3794d7a5/Smart-hotels-script',
-                
-               
-                
-
-            ];
-
-            function add_files(arr, type) {
-
-                count = 0;
-
-                function new_file(link) {
-                    var script = document.createElement(type);
-                    script.src = link;
-                    script.async = false;
-                    document.head.appendChild(script);
-                    if (count < arr.length - 1) {
-                        script.onload = function() {
-                            new_file(arr[count]);
-                        }
-                        script.onerror = function() {
-                            throw new Error(arr[count - 1] + ' loading error');
-                        }
-                        count++;
-                    }
-                }
-
-                function error(text) {
-                    throw new Error('the function takes two required arguments');
-                }
-
-                (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
-                    (arr === undefined) ? error('no link array') :
-                    (type === undefined) ? error('no file type') : '';
-                new_file(arr[count]);
-            }
-
-            add_files(vueLinks, 'script');
-        </script>    
-    
-    <!-- отключаем хэдере футер сайдблок на агенте ======================= -->
-    <style>
-        .mainHeader {
-            display: none;
-        }
-        .mainFooter {
-            display: none;
-        }
-        .informationBlock {
-            display: none;
-        }
-        .contentFooter {
-            display: none;
-        }
-        .contentWrapper {
-            width: 100%!important;
-            
-        }
-        .pageWrapper {
-            width: 100%!important;
-            
-            overflow: hidden;
-        }
-        
-    </style>
-    <!-- отключаем хэдере футер сайдблок на агенте ======================= -->
 </head>
 
 <!-- HEAD END ========================================================================= -->
@@ -116,7 +38,7 @@ VUE автоматом подтягивает нужный перевод, ес�
 
 <body>
    
-   <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
+<!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== 
 
 <div class="menu-top" id="home-page-diff-menu-top"  style="z-index: 10;">
     <div class="container">
@@ -126,7 +48,7 @@ VUE автоматом подтягивает нужный перевод, ес�
                 &nbsp;
             </div>
 
-            <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
+            
 
             <div class="col-md-10 col-10 mobile_agent">
                 <div id="exit_menu">
@@ -180,7 +102,7 @@ VUE автоматом подтягивает нужный перевод, ес�
                 </div>
             </div>
 
-            <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+            <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== 
 
             <div class="col-md-10">
                 <div class="row menu-telephone">
@@ -195,10 +117,12 @@ VUE автоматом подтягивает нужный перевод, ес�
     </div>
 </div>
 
-<!-- ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
+ ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
    
    
 <!-- MAIN START ======================================================================= -->
+   
+   
    
     <div class="smart" id="smart-diff" >
        
@@ -214,8 +138,8 @@ VUE автоматом подтягивает нужный перевод, ес�
         <!-- ABOUT START ================================= -->
         
         <div class="smart__text" >
-            <h2 class="smart__title"  > {{titleRU}} </h2>
-            <p class="smart__about"  > {{aboutRU}} </p>
+            <h2 class="smart__title" data-aos="slide-up" > {{titleRU}} </h2>
+            <p class="smart__about" data-aos="slide-up" > {{aboutRU}} </p>
         </div>
         
         <!-- ABOUT END ================================= -->
@@ -253,31 +177,11 @@ VUE автоматом подтягивает нужный перевод, ес�
         
         <!-- WHY ENS ================================ -->
         
-        <!-- OPEN DATES START =============================== 
-        
-        <div class="country" >
-            <h2 class="smart__title"> {{ dateTitleRU }} </h2>
-            <div class="country__items">
-                <div class="country__item" v-for=" openDate in openDates ">
-                    <h3 class="country__name"> {{ openDate.countryNameRU }} </h3>
-                    <div class="country__block" v-for=" hotel in openDate.hotels ">
-                        <a v-bind:href=" hotel.linkAgent " class="country__hotel" target="_blank"> {{  hotel.name }} </a>
-                        <span class="country__date"> {{  hotel.date }} </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-         OPEN DATES END =============================== -->
-        
-    </div>
-    
-    
-    <!-- HOTELS ===================================== -->
+        <!-- HOTELS ===================================== -->
     <div class="hotels__concepts" id="hotels-concepts-block">
         <div class="hotels__countries">
            
-            <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</a>
+            <button v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</button>
  
         </div>
         
@@ -311,41 +215,55 @@ VUE автоматом подтягивает нужный перевод, ес�
         </div>
     </div>
     <!-- HOTELS ===================================== -->
-    
-    <!-- FOOTER START ================================= -->
-
-        <div class="container-fluid footer-informations" style="margin-top: 3em" id="home-page-diff-footer">
-            <div class="row" id="funSunFooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h3>{{funSunPageFooterTitle1RU}}</h3>
-                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink1 ">{{funSunPageFooterSite1RU}}</a><br />
-                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink2RU ">{{funSunPageFooterSite2RU}}</a><br />
-                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink3RU ">{{funSunPageFooterSite3RU}}</a>
-                        </div>
-
-                        <div class="col-md-3">
-                            <h3>{{funSunPageFooterTitle2RU}}</h3>
-                            <a v-bind:href=" funSunPageFooterPhoneLinkRU ">{{funSunPageFooterPhoneTitleRU}}</a><br />
-                            <a v-bind:href=" funSunPageFooterMailLinkRU ">{{funSunPageFooterMailTitleRU}}</a>
-                        </div>
-
-                        <div class="col-md-3">
-                            <h3>{{funSunPageFooterTitle3RU}}</h3>
-
-                            <div class="row icons-footer col-10 col-md-12" style="justify-content: flex-start;"><a style="margin: 5px;" target="_blank" v-bind:href=" funSunPageFooterInstagramLink "> <img v-bind:src=" funSunPageFooterInstagramImgLink " /> </a> <a style="margin: 5px;" target="_blank" v-bind:href=" funSunPageFooterFacebookLink "> <img v-bind:src=" funSunPageFooterFacebookImgLink " /> </a></div>
-                        </div>
+        
+        
+        <!-- OPEN DATES START =============================== 
+        
+        <div class="country" >
+            <h2 class="smart__title"> {{ dateTitleRU }} </h2>
+            <div class="country__items">
+                <div class="country__item" v-for=" openDate in openDates ">
+                    <h3 class="country__name"> {{ openDate.countryNameRU }} </h3>
+                    <div class="country__block" v-for=" hotel in openDate.hotels ">
+                        <a v-bind:href=" hotel.linkAgent " class="country__hotel" target="_blank"> {{  hotel.name }} </a>
+                        <span class="country__date"> {{  hotel.date }} </span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- FOOTER END ================================= -->
+        
+         OPEN DATES END =============================== -->
+        
+    </div>
+    
+    
+    
+    
+    
     
 <!-- MAIN END ========================================================================= -->
     
 <!-- SCRIPTS START ==================================================================== --> 
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>  
+<script src="VUE-smart-hotels-ru-by-ua.js" defer></script>
+<script src="VUE-smart.js" defer></script>
 
+<script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer" defer></script>
+
+<!-- SLIDER ============================= -->
+<style>
+
+</style>
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" defer></script>
+<script src="script-for-slider-hotels.js"></script>-->
+<script src="Smart-hotels-script.js" defer></script>
+<!-- SLIDER SETTINGS ======================== -->
+
+
+
+<!-- SLIDER ============================= -->
 
 <!-- SCRIPTS END ====================================================================== -->   
 

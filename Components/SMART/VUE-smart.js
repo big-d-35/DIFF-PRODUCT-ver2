@@ -242,12 +242,12 @@ const smartPage = new Vue ({
                     },
                     
                     {
-                        itemRU : 'Street food на колесах',    
-                        itemBY : 'Street food на колесах',    
-                        itemUA : 'Street food на колесах',    
-                        itemEE : 'Street food',    
-                        itemLT : 'Greitas maistas',    
-                        itemLV : 'Street food',    
+                        itemRU : 'Фирменный стритфуд – гирос',    
+                        itemBY : 'Фирменный стритфуд – гирос',    
+                        itemUA : 'Фирменный стритфуд – гирос',    
+                        itemEE : 'Signature tänavatoit - güroskoobid',    
+                        itemLT : 'Parašas gatvės maistas - giroskopai',    
+                        itemLV : 'Signature Street Food - Gyros',    
                     },
                     
                     

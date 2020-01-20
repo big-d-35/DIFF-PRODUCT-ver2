@@ -23,12 +23,12 @@ VUE автоматом подтягивает нужный перевод, ес�
 <!-- CSS STYLE ======================================================================== -->
     
     <!--<link rel="stylesheet" href="https://www.tui.ru/getmedia/03f1481f-8cca-4396-b4e9-9b650e5487f8/reset-min">-->
-    <link rel="stylesheet" href="https://www.tui.ru/getmedia/ec719636-ff45-4328-b45d-eb0f6d4d0314/smart-hotels">
+     <link rel="stylesheet" href="https://www.tui.ru/getmedia/ec719636-ff45-4328-b45d-eb0f6d4d0314/smart-hotels">
     <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/414ac703-1b5c-4067-9966-038780d2364f/smart-desktop">
     <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/493fe15d-0c98-408e-abe6-b938a271eab1/smart-laptop">
     <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/79d32b81-b2d1-45d9-87e1-8ac3ae9b91ff/smart-tablet"> 
     <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/006d2476-5ac7-4e98-940c-101329e078ba/smart-mobile">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
+   
     <style>
         .ActionPage-container {
             background: white!important;
@@ -40,10 +40,10 @@ VUE автоматом подтягивает нужный перевод, ес�
         <script type="text/javascript">
             const vueLinks = [
                 'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+                'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer',
                 'https://www.tui.ru/getmedia/18827348-c151-450f-8677-9e3b61cc8112/VUE-smart',
-                'https://www.tui.ru/getmedia/726871ad-483c-469c-bbf0-7970400cb216/VUE-smart-hotels-ru-by-ua',
-               'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js',
-                'https://www.tui.ru/getmedia/0a4c4ca8-a5cb-45e6-9c53-190ca6bf9290/script-for-slider-hotels',
+                'https://www.tui.ru/getmedia/0fe57bec-54f3-4650-bfec-d4b805f324ba/VUE-smart-hotels-ru-by-ua-NEW',
+                'https://www.tui.ru/getmedia/ff7c258d-402b-4513-ae53-08ae3794d7a5/Smart-hotels-script',
 
             ];
 
@@ -164,42 +164,52 @@ VUE автоматом подтягивает нужный перевод, ес�
         
     </div>
     
-    <!-- SMART ОТЕЛИ СТАРТ ======================================= -->
     
-    <div class="hotels " id="smart-hotels" >
-        <h2 class="smart__title"> {{ hotelsTitleRU }} </h2>
-        
-        <div class="slider__buttons" >
-            <a href="#" class="slider__button" v-for=" countryName in countryNames " v-bind:id=" countryName.id " v-bind:class="  countryName.class " v-if="countryName.showRU" v-bind:data-id="countryName.id">{{countryName.nameRU}}</a>
+    <!-- HOTELS ===================================== -->
+    <div class="hotels__concepts" id="hotels-concepts-block">
+        <div class="hotels__countries">
+           
+            <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</a>
+ 
         </div>
-        <div class="slider " v-for=" country in countrys" v-bind:class="  country.class  " v-bind:id=" country.id " v-bind:data-id=" country.id " v-if="country.showRU">
-           
-           <!-- HOTEL START ========================-->
-           
-            <div class="slide" v-for=" countryHotel in country.countryHotels" >
-                <img v-bind:src="  countryHotel.background " alt="" class="slide__image">
-                <h3 class="slide__title">{{countryHotel.countryNameRU}}</h3>
-                <h4 class="slide__name">{{countryHotel.hotelName}}</h4>
-                
-                <ul class="slide__list">
-                    <li class="slide__list-item" v-for=" aboutHotelRUItem in countryHotel.aboutHotelRUItems ">{{ aboutHotelRUItem.item }}</li>
-                </ul>
-                <span class="slide__dates">{{ countryHotel.hotelDateRU }}</span>
-                <a v-bind:href=" countryHotel.hotelLinkClient " class="slide__link" target="_blank">{{countryHotel.buttonRU}}</a>
+        
+        <select class="hotels__countries-mobile" id="hotels-options-mobile">
+              <option class="hotels__country-mobile" v-for=" countryName in countryNames " v-bind:data-option=' countryName.id ' v-if="countryName.showRU">{{ countryName.nameRU }}</option>
+              
+        </select>
+        
+        <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showRU " class="hotels__blocks" v-bind:class=" countryHotel.class ">
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels ">
+                <div class="hotels__banner">
+                    <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
+                    <h3 class="hotels__place">{{ hotel.place }}</h3>
+                    <!--<h6 class="hotels__sale">{{ hotel.sale }}</h6>-->
+                </div>
+                <div class="hotels__text">
+                    <h3 class="hotels__name">{{ hotel.name }}</h3>
+                    <div class="hotels__info">
+                        <div class="hotels__about">
+                            <p class="hotels__description">{{ hotel.nights }}</p>
+                            <p class="hotels__description">{{ hotel.service }}</p>
+                        </div>
+                        <!--<div class="hotels__prices">
+                            <p class="hotels__price-old">{{ hotel.oldPrice }}</p>
+                            <p class="hotels__price-new">{{ hotel.price }}</p>
+                        </div>-->
+                    </div>
+                    <a v-bind:href=" hotel.clientLink " class="hotels__link" target="_blank"> {{ buttonRU }}</a>
+                </div>
             </div>
-            
-            <!-- HOTEL END ========================-->
-            
         </div>
     </div>
-    
-    <!-- SMART ОТЕЛИ END ======================================= -->
-    
+    <!-- HOTELS ===================================== -->
     
 <!-- MAIN END ========================================================================= -->
     
 <!-- SCRIPTS START ==================================================================== --> 
-
+<script type="text/javascript">
+document.getElementById('subscription-form').style.display = 'none'
+</script>
 
 
 <!-- SCRIPTS END ====================================================================== -->   

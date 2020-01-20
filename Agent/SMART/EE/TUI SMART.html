@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ee">
 <!-- 
 Привет, все файлы по этой странице хранятся на TUI.ru / новый сайт / Концепции / TUI-SMART / в папках css js image и пр
 
@@ -30,7 +30,7 @@ VUE автоматом подтягивает нужный перевод, ес�
     <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/006d2476-5ac7-4e98-940c-101329e078ba/smart-mobile">
     
     <link rel="stylesheet"  href="https://www.tui.ru/getmedia/82f63621-090c-4d58-9b86-369a680a5911/header-footer-all-css-concepts">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
+    
 <!-- CSS STYLE ======================================================= -->
     
     
@@ -39,12 +39,12 @@ VUE автоматом подтягивает нужный перевод, ес�
         <script type="text/javascript">
             const vueLinks = [
                 'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
-                'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer',
+                'https://www.tui.ru/getmedia/db0b021d-bdd3-4a94-a5f6-e797ed62b2a3/diff-header-footer-for-concepts',
                 'https://www.tui.ru/getmedia/18827348-c151-450f-8677-9e3b61cc8112/VUE-smart',
-                'https://www.tui.ru/getmedia/4b4524fc-523e-4464-be84-fda34efbea0c/VUE-smart-hotels-ee-lt-lv',
-               '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js',
-               'https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js',
-               'https://www.tui.ru/getmedia/0a4c4ca8-a5cb-45e6-9c53-190ca6bf9290/script-for-slider-hotels',
+                'https://www.tui.ru/getmedia/39564d94-2c87-41ea-afd1-6c8d5cc3f315/VUE-smart-hotels-ee-NEW',
+                'https://www.tui.ru/getmedia/ff7c258d-402b-4513-ae53-08ae3794d7a5/Smart-hotels-script',
+               
+               
                 
                
                 
@@ -100,11 +100,11 @@ VUE автоматом подтягивает нужный перевод, ес�
         }
         .contentWrapper {
             width: 100%!important;
-            background: white!important;
+            
         }
         .pageWrapper {
             width: 100%!important;
-            background: white!important;
+            
             overflow: hidden;
         }
         
@@ -275,38 +275,74 @@ VUE автоматом подтягивает нужный перевод, ес�
     </div>
     
     
-    <!-- SMART ОТЕЛИ СТАРТ ======================================= -->
-    
-    <div class="hotels " id="smart-hotels" >
-        <h2 class="smart__title"> {{ hotelsTitleEE }} </h2>
-        
-        <div class="slider__buttons" >
-            <a href="#" class="slider__button" v-for=" countryName in countryNames " v-bind:id=" countryName.id " v-bind:class="  countryName.class  " v-if="countryName.showEE" v-bind:data-id="countryName.id">{{countryName.nameEE}}</a>
+    <!-- HOTELS ===================================== -->
+    <div class="hotels__concepts" id="hotels-concepts-block">
+        <div class="hotels__countries">
+           
+            <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showEE" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameEE }}</a>
+ 
         </div>
-        <div class="slider " v-for=" country in countrys" v-bind:class="  country.class  " v-bind:id=" country.id " v-bind:data-id=" country.id " v-if="country.showEE">
-           
-           <!-- HOTEL START ========================-->
-           
-            <div class="slide" v-for=" countryHotel in country.countryHotels" >
-                <img v-bind:src="  countryHotel.background " alt="" class="slide__image">
-                <h3 class="slide__title">{{countryHotel.countryNameEE}}</h3>
-                <h4 class="slide__name">{{countryHotel.hotelName}}</h4>
-                
-                <ul class="slide__list">
-                    <li class="slide__list-item" v-for=" aboutHotelEEItem in countryHotel.aboutHotelEEItems ">{{ aboutHotelEEItem.item }}</li>
-                </ul>
-                <span class="slide__dates">{{ countryHotel.hotelDateEE }}</span>
-                <a v-bind:href=" countryHotel.hotelLinkAgent " class="slide__link" target="_blank">{{countryHotel.buttonEE}}</a>
+        
+        <select class="hotels__countries-mobile" id="hotels-options-mobile">
+              <option class="hotels__country-mobile" v-for=" countryName in countryNames " v-bind:data-option=' countryName.id ' v-if="countryName.showEE">{{ countryName.nameEE }}</option>
+              
+        </select>
+        
+        <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showEE " class="hotels__blocks" v-bind:class=" countryHotel.class ">
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels ">
+                <div class="hotels__banner">
+                    <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
+                    <h3 class="hotels__place">{{ hotel.place }}</h3>
+                    <!--<h6 class="hotels__sale">{{ hotel.sale }}</h6>-->
+                </div>
+                <div class="hotels__text">
+                    <h3 class="hotels__name">{{ hotel.name }}</h3>
+                    <div class="hotels__info">
+                        <div class="hotels__about">
+                            <p class="hotels__description">{{ hotel.nights }}</p>
+                            <p class="hotels__description">{{ hotel.service }}</p>
+                        </div>
+                        <!--<div class="hotels__prices">
+                            <p class="hotels__price-old">{{ hotel.oldPrice }}</p>
+                            <p class="hotels__price-new">{{ hotel.price }}</p>
+                        </div>-->
+                    </div>
+                    <a v-bind:href=" hotel.clientLink " class="hotels__link" target="_blank"> {{ buttonEE }}</a>
+                </div>
             </div>
-            
-            <!-- HOTEL END ========================-->
-            
         </div>
     </div>
+    <!-- HOTELS ===================================== -->
     
-    <!-- SMART ОТЕЛИ END ======================================= -->
-    
-    
+    <!-- FOOTER START ================================= -->
+
+        <div class="container-fluid footer-informations" style="margin-top: 3em">
+            <div class="row" id="home-page-diff-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h3>{{funSunPageFooterTitle1EE}}</h3>
+                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink1 ">{{funSunPageFooterSite1EE}}</a><br />
+                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink2EE ">{{funSunPageFooterSite2EE}}</a><br />
+                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink3EE ">{{funSunPageFooterSite3EE}}</a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h3>{{funSunPageFooterTitle2EE}}</h3>
+                            <a v-bind:href=" funSunPageFooterPhoneLinkEE ">{{funSunPageFooterPhoneTitleEE}}</a><br />
+                            <a v-bind:href=" funSunPageFooterMailLinkEE ">{{funSunPageFooterMailTitleEE}}</a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h3>{{funSunPageFooterTitle3EE}}</h3>
+
+                            <div class="row icons-footer col-10 col-md-12" style="justify-content: flex-start;"><a style="margin: 5px;" target="_blank" v-bind:href=" funSunPageFooterInstagramLink "> <img v-bind:src=" funSunPageFooterInstagramImgLink " /> </a> <a style="margin: 5px;" target="_blank" v-bind:href=" funSunPageFooterFacebookLink "> <img v-bind:src=" funSunPageFooterFacebookImgLink " /> </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER END ================================= -->
     
 <!-- MAIN END ========================================================================= -->
     

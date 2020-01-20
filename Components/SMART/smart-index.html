@@ -181,7 +181,7 @@
     <div class="hotels__concepts" id="hotels-concepts-block">
         <div class="hotels__countries">
            
-            <button v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</button>
+            <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</a>
  
         </div>
         
@@ -245,7 +245,7 @@
     
 <!-- SCRIPTS START ==================================================================== --> 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>  
-<script src="VUE-smart-hotels-ru-by-ua.js" defer></script>
+<script src="VUE-smart-hotels-ru-by-ua-NEW.js" defer></script>
 <script src="VUE-smart.js" defer></script>
 
 <script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer" defer></script>
