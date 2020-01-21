@@ -50,29 +50,12 @@
     </style>
     <!-- ШРИФТ =============================================== -->
     <style>
-        /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
-    .pageWrapper {
-        width: 100% !important;
-    }
-
-    .mainHeader {
-        display: none !important;
-    }
-
-    .contentFooter {
-        display: none !important;
-    }
-
-    .mainFooter {
-        display: none !important;
-    }
-    body {
-        background: white!important;
-    }
-        .page {
-            background: none;
+        .ActionPage {
+            background: transparent;
         }
-    /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
+        .AppContainer {
+            background: transparent!important;
+        }
     </style>
     <!-- SCRIPT загрузки VUE  =================================================== -->
 <script>
@@ -81,7 +64,7 @@
         'https://www.tui.ru/getmedia/3ed45a8c-3499-4ce0-be84-c3e88798ae8b/VUE-hotels-day-night-ee-NEW',
         'https://www.tui.ru/getmedia/85681a56-57a1-4981-ba56-4a4179c46108/VUE-day-night',
         'https://www.tui.ru/getmedia/cc47bad7-ac05-4580-878b-05ea8808d485/day-night-hotels-script',
-        'https://www.tui.ru/getmedia/db0b021d-bdd3-4a94-a5f6-e797ed62b2a3/diff-header-footer-for-concepts',
+        
         
     ];
 
@@ -126,71 +109,7 @@
 
 <!-- MAIN START ========================================================================= -->
 
-<!-- ВЕРХНЕЕ МЕНЮ TOP START==================== -->
-    <div class="menu-top" id="home-page-diff-menu-top" style="padding-bottom: 20px;">
-        <div class="container">
-            <div class="row"><a class="col-md-2 col-6 logo-img" href="/"><img v-bind:src=" logoLink " /></a>
-                <div class="col-5 but-menu-mobile">&nbsp;</div>
-                <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
 
-                <div class="col-md-10 col-10 mobile_agent">
-                    <div id="exit_menu">X</div>
-
-                    <div class="row menu-label"><a class="label-menu" target="_blank" v-bind:href=" menuItemFranchaizingLink ">{{menuItemFranchaizingNameEE}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemPartnershipLink ">{{menuItemPartnershipNameEE}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemAboutLink ">{{menuItemAboutNameEE}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemShopLink ">{{menuItemShopNameEE}}</a>
-
-                        <div class="label-menu" style="position: relative;cursor: pointer"><a style="color:#092a5e" v-bind:href=" menuItemConceptsLink ">{{menuItemConceptsNameEE}}</a>
-
-                            <div class="label-menu-2">
-                                <div class="concept-link"><a :href=" menuItemSmartLink "><img :src=" menuItemSmartLogo " alt="Smart_logo" /></a>
-
-                                    <div><a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br />
-                                            {{menuItemSmartNameEE}}</a></div>
-                                </div>
-
-                                <div class="concept-link"><a v-bind:href=" menuItemFunSunLink "><img alt="FN_logo" v-bind:src=" menuItemFunSunLogo " /></a>
-
-                                    <div><a v-bind:href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br />
-                                            {{menuItemFunSunNameEE}}</a></div>
-                                </div>
-
-                                <div class="concept-link"><a v-bind:href=" menuItemDayNightLink "><img alt="FN_logo" v-bind:src=" menuItemDayNightLogo " /></a>
-
-                                    <div><a v-bind:href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br />
-                                            {{menuItemDayNightNameEE}}</a></div>
-                                </div>
-
-                                <div class="concept-link"><a v-bind:href=" menuItemToucanLink "><img alt="FN_logo" v-bind:src=" menuItemToucanLogo " /></a>
-
-                                    <div><a v-bind:href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br />
-                                            {{menuItemToucanNameEE}}</a></div>
-                                </div>
-
-                                <div class="concept-link"><a v-bind:href=" menuItemConceptsAboutLink "><img :src=" menuItemConceptsAboutLogo " alt="Home_logo" /></a>
-
-                                    <div><a v-bind:href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameEE1}}<br />
-                                                {{menuItemConceptsAboutNameEE2}}</b></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="label-menu" target="_blank" v-bind:href=" menuItemPremiumLink ">{{menuItemPremiumName}}</a> <a class="label-menu log enter" data-bind="click: LoginClick" target="_blank" v-bind:href=" menuItemLoginNamelinkEE ">{{menuItemLoginNameEE}}</a>
-                    </div>
-                </div>
-                <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
-
-                <div class="col-md-10">
-                    <div class="row menu-telephone">
-                        <div class="col-md-8 col-7">
-                            <p class="telephone-title">{{menuPhoneTitleEE}}</p>
-
-                            <p class="telephone-number">{{menuPhonePhoneEE}}</p>
-                        </div>
-                        <a style="color: black" v-bind:href=" menuTouristSiteLinkEE ">{{menuTouristSiteNameEE}}</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
 
 <div class="concepts__main" id="day-night">
    
@@ -282,7 +201,7 @@
                             <p class="hotels__price-new">{{ hotel.price }}</p>
                         </div>-->
                     </div>
-                    <a v-bind:href="'https://www.tui.ee' + hotel.clientLink " class="hotels__link" target="_blank"> {{ buttonEE }}</a>
+                    <a v-bind:href=" hotel.clientLink " class="hotels__link" target="_blank"> {{ buttonEE }}</a>
                 </div>
             </div>
         </div>
@@ -334,42 +253,14 @@
         <div class="allhotels__blocks">
             <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showEE"> 
                 <h3 class="allhotels__name">{{ allHotel.countryEE }}</h3>
-                <a v-for=" hotel in allHotel.hotels " v-bind:href="'https://www.tui.ee' + hotel.linkClient " class="allhotels__link" v-if="hotel.showEE" target="_blank">{{ hotel.name }}</a>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkClient " class="allhotels__link" v-if="hotel.showEE" target="_blank">{{ hotel.name }}</a>
             </div>
         </div>
     </div>
     <!-- ALL HOTELS ===================================== -->
 </div>
 
-<!-- FOOTER START ================================= -->
 
-        <div class="container-fluid footer-informations" style="margin-top: 3em" id="home-page-diff-footer">
-            <div class="row" id="funSunFooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h3>{{funSunPageFooterTitle1EE}}</h3>
-                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink1 ">{{funSunPageFooterSite1EE}}</a><br />
-                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink2EE ">{{funSunPageFooterSite2EE}}</a><br />
-                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink3EE ">{{funSunPageFooterSite3EE}}</a>
-                        </div>
-
-                        <div class="col-md-3">
-                            <h3>{{funSunPageFooterTitle2EE}}</h3>
-                            <a v-bind:href=" funSunPageFooterPhoneLinkEE ">{{funSunPageFooterPhoneTitleEE}}</a><br />
-                            <a v-bind:href=" funSunPageFooterMailLinkEE ">{{funSunPageFooterMailTitleEE}}</a>
-                        </div>
-
-                        <div class="col-md-3">
-                            <h3>{{funSunPageFooterTitle3EE}}</h3>
-
-                            <div class="row icons-footer col-10 col-md-12" style="justify-content: flex-start;"><a style="margin: 5px;" target="_blank" v-bind:href=" funSunPageFooterInstagramLink "> <img v-bind:src=" funSunPageFooterInstagramImgLink " /> </a> <a style="margin: 5px;" target="_blank" v-bind:href=" funSunPageFooterFacebookLink "> <img v-bind:src=" funSunPageFooterFacebookImgLink " /> </a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FOOTER END ================================= -->
 
 <!-- MAIN END ========================================================================= -->
 

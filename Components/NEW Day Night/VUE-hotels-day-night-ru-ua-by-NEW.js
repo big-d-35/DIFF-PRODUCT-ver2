@@ -109,7 +109,7 @@ const hotels = new Vue({
                         place: 'Айя-Напа',
                         name : 'DAY&NIGHT Connected Seasons 4*',
                         agentLink : '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons',
-                        clientLink : '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/day-night-connected-seasons',
+                        clientLink : '/hotel/europe-cyprus-ayia__napa-ayia__napa-day__night__connected__seasons/',
                         nights : 'Новинка сезона!',
                         service : 'Начало работы по концепции: 1 мая 2020',
                         price: 'от 112 000 ₽',
