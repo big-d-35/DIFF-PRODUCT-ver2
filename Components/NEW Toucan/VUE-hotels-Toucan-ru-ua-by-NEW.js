@@ -125,7 +125,7 @@ const hotels = new Vue({
                         place: 'Инджекум',
                         name : 'Pegasos Club 4*',
                         agentLink : '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
-                        clientLink : '/europe-turkey-alanya-incekum-pegasos__club/',
+                        clientLink : '/hotel/europe-turkey-alanya-incekum-pegasos__club/',
                         nights : 'Начало работы детского клуба:',
                         service : '25 апреля 2020',
                         price: 'от 112 000 ₽',

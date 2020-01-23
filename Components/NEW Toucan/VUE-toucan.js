@@ -11,7 +11,7 @@ const concepts = new Vue({
         bannerTitleUA : 'Программа для детей от 4 до 12 лет',
         bannerTitleEE : 'Программа для детей от 4 до 12 лет',
         bannerTitleLT : 'Программа для детей от 4 до 12 лет',
-        bannerTitleLV : 'Программа для детей от 4 до 12 лет',
+        bannerTitleLV : 'Programma bērniem vecumā no 4 līdz 12 gadiem',
         
         bannerItems: [
             
@@ -22,7 +22,7 @@ const concepts = new Vue({
                 itemUA: 'Аниматоры, с которыми интересно',
                 itemEE: 'Аниматоры, с которыми интересно',
                 itemLT: 'Аниматоры, с которыми интересно',
-                itemLV: '',
+                itemLV: 'Animatori, ar kuriem ir interesanti',
                 
             },
             
@@ -32,7 +32,7 @@ const concepts = new Vue({
                 itemUA: 'Умные игры, которые развивают',
                 itemEE: 'Умные игры, которые развивают',
                 itemLT: 'Клуб Тукан для детей от 0 до 12 лет',
-                itemLV: '',
+                itemLV: 'Attīstošās spēle',
                 
             },
             
@@ -45,7 +45,7 @@ const concepts = new Vue({
                 itemUA: 'Подарки всем гостям клуба',
                 itemEE: 'Подарки всем гостям клуба',
                 itemLT: 'Уголок матери и ребенка 24 часа',
-                itemLV: '',
+                itemLV: 'Dāvanas katram kluba viesim',
                 
             },
             
@@ -58,14 +58,14 @@ const concepts = new Vue({
         aboutTitleUA: 'Что такое Мини Тукан?',
         aboutTitleEE: 'Что такое Мини Тукан?',
         aboutTitleLT: 'Что такое Мини Тукан?',
-        aboutTitleLV: 'Что такое Мини Тукан?',
+        aboutTitleLV: 'Kas ir Mini Toucan?',
         
         aboutTextRU: 'Благодаря клубу Мини Тукан, родители могут посвятить время себе и не переживать за безопасность своих детей. А юные гости отеля смогут почувствовать себя самостоятельными путешественниками.',
         aboutTextBY: 'Благодаря клубу Мини Тукан, родители могут посвятить время себе и не переживать за безопасность своих детей. А юные гости отеля смогут почувствовать себя самостоятельными путешественниками.',
         aboutTextUA: 'Благодаря клубу Мини Тукан, родители могут посвятить время себе и не переживать за безопасность своих детей. А юные гости отеля смогут почувствовать себя самостоятельными путешественниками.',
         aboutTextEE: 'Благодаря клубу Мини Тукан, родители могут посвятить время себе и не переживать за безопасность своих детей. А юные гости отеля смогут почувствовать себя самостоятельными путешественниками.',
         aboutTextLT: 'Благодаря клубу Мини Тукан, родители могут посвятить время себе и не переживать за безопасность своих детей. А юные гости отеля смогут почувствовать себя самостоятельными путешественниками.',
-        aboutTextLV: 'Благодаря клубу Мини Тукан, родители могут посвятить время себе и не переживать за безопасность своих детей. А юные гости отеля смогут почувствовать себя самостоятельными путешественниками.',
+        aboutTextLV: 'Pateicoties klubam Mini Toucan vecāki var veltīt laiku sev un neuztraukties par bērnu drošību. Bet jaunākie viesi varēs iejūsties pastāvīga ceļotāja lomā.',
         
         //SERVICES
         servicesTitleRU : 'Услуги в детском клубе Мини Тукан',
@@ -73,7 +73,7 @@ const concepts = new Vue({
         servicesTitleUA : 'Услуги в детском клубе Мини Тукан',
         servicesTitleEE : 'Услуги в детском клубе Мини Тукан',
         servicesTitleLT : 'Услуги в детском клубе Мини Тукан',
-        servicesTitleLV : 'Услуги в отелях FUN&SUN',
+        servicesTitleLV : 'Pakalpojumi bēnu klubā Mini Toucan',
         
         servicesItems : [
             
@@ -87,7 +87,7 @@ const concepts = new Vue({
                 titleUA: 'Инфраструктура',
                 titleEE: 'Инфраструктура',
                 titleLT: 'Как дома',
-                titleLV: 'Как дома',
+                titleLV: 'Infrastruktūŗa',
                 
                 items : [
                     
@@ -97,7 +97,7 @@ const concepts = new Vue({
                         itemUA : 'Игровые комнаты',
                         itemEE : '',
                         itemLT : '',
-                        itemLV : '',
+                        itemLV : 'Rotaļu istabas',
                     },
                     
                     {
@@ -106,7 +106,7 @@ const concepts = new Vue({
                         itemUA : 'Открытый детский бассейн',
                         itemEE : '',
                         itemLT : '',
-                        itemLV : '',
+                        itemLV : 'Āra bērnu baseins',
                     },
                     
                     {
@@ -115,7 +115,7 @@ const concepts = new Vue({
                         itemUA : 'Детское меню в главном ресторане',
                         itemEE : '',
                         itemLT : '',
-                        itemLV : '',
+                        itemLV : 'Bērnu ēdienkarte galvenajā restorānā',
                     },
                     
                     {
@@ -124,7 +124,7 @@ const concepts = new Vue({
                         itemUA : 'Игровая площадка на открытом воздухе',
                         itemEE : '',
                         itemLT : '',
-                        itemLV : '',
+                        itemLV : 'Rotaļu laukums svaigā gaisā',
                     },
                     
                     
@@ -141,7 +141,7 @@ const concepts = new Vue({
                 titleUA: 'Развлечения',
                 titleEE: 'Развлечения',
                 titleLT: 'Развлечения',
-                titleLV: 'Улучшенное питание',
+                titleLV: 'Izklaides',
                 
                 items : [
                     
@@ -151,7 +151,7 @@ const concepts = new Vue({
                         itemUA : 'Творческие и кулинарные мастер-классы',
                         itemEE : '',
                         itemLT : '',
-                        itemLV : '',
+                        itemLV : 'Radošas un kulinārijas meistarklases',
                     },
                     
                     {
@@ -160,7 +160,7 @@ const concepts = new Vue({
                         itemUA : 'Развивающие игры',
                         itemEE : '',
                         itemLT : '',
-                        itemLV : '',
+                        itemLV : 'Attīstošās rotaļas',
                     },
                     
                     {
@@ -169,7 +169,7 @@ const concepts = new Vue({
                         itemUA : 'Спортивные соревнования  ',
                         itemEE : '',
                         itemLT : '',
-                        itemLV : '',
+                        itemLV : 'Sporta sacensības ',
                     },
                     
                     {
@@ -178,7 +178,7 @@ const concepts = new Vue({
                         itemUA : 'Детская дискотека в завершение дня',
                         itemEE : '',
                         itemLT : '',
-                        itemLV : '',
+                        itemLV : 'Bērnu diskotēka aktīvas dienas noslēgumā',
                     },
                     
                     
@@ -195,7 +195,7 @@ const concepts = new Vue({
         whattodoTitleUA : 'Чем будет занят ребенок?',
         whattodoTitleEE : 'Чем будет занят ребенок?',
         whattodoTitleLT : 'Чем будет занят ребенок?',
-        whattodoTitleLV : 'Чем будет занят ребенок?',
+        whattodoTitleLV : 'Ar ko būs nodarbināts bērnu? ',
         
         whattodoImage : 'https://www.tui.ru/getmedia/de08d3b4-c7fa-4499-9b18-c8f8c127f3fd/fitness-1@2x',
         
@@ -210,7 +210,7 @@ const concepts = new Vue({
                         itemUA : 'Аквагрим',
                         itemEE : 'Аквагрим',
                         itemLT : 'Аквагрим',
-                        itemLV : 'Аквагрим',
+                        itemLV : 'Akvagrims',
                     },
                     
                     {
@@ -219,7 +219,7 @@ const concepts = new Vue({
                         itemUA : 'Олимпийские игры',
                         itemEE : 'Олимпийские игры',
                         itemLT : 'Олимпийские игры',
-                        itemLV : 'Аквагрим',
+                        itemLV : 'Olimpiskās spēles ',
                     },
                     
                     {
@@ -228,7 +228,7 @@ const concepts = new Vue({
                         itemUA : 'Йога, степ и танцевальная аэробика',
                         itemEE : 'Аквагрим',
                         itemLT : 'Аквагрим',
-                        itemLV: 'Аквагрим',
+                        itemLV: 'Joga, steps un deju aerobika',
                     },
                     
                     {
@@ -237,7 +237,7 @@ const concepts = new Vue({
                         itemUA : 'День рождения Тукана',
                         itemEE : 'День рождения Тукана',
                         itemLT : 'Аквагрим',
-                        itemLV : 'Аквагрим',
+                        itemLV : 'Tukāna dzimšanas diena',
                     },
                 ]
             },
@@ -252,7 +252,7 @@ const concepts = new Vue({
                         itemUA : 'Игры в детском бассейне',
                         itemEE : 'Игры в детском бассейне',
                         itemLT : 'Аквагрим',
-                        itemLV : 'Аквагрим',
+                        itemLV : 'Rotaļas bērnu baseinā ',
                     },
                     
                     {
@@ -261,7 +261,7 @@ const concepts = new Vue({
                         itemUA : 'Настольные и музыкальные игры',
                         itemEE : 'Настольные и музыкальные игры',
                         itemLT : 'Олимпийские игры',
-                        itemLV : 'Аквагрим',
+                        itemLV : 'Galda un muzikālās spēles',
                     },
                     
                     {
@@ -270,7 +270,7 @@ const concepts = new Vue({
                         itemUA : 'Тематические квесты ',
                         itemEE : 'Тематические квесты ',
                         itemLT : 'Аквагрим',
-                        itemLV: 'Аквагрим',
+                        itemLV: 'Tematiskie uzdevumi',
                     },
                     
                     {
@@ -279,7 +279,7 @@ const concepts = new Vue({
                         itemUA : 'Увлекательные эксперименты',
                         itemEE : 'Увлекательные эксперименты',
                         itemLT : 'Аквагрим',
-                        itemLV : 'Аквагрим',
+                        itemLV : 'Aizraujoši eksperimenti',
                     },
                 ]
             }
@@ -494,7 +494,7 @@ const concepts = new Vue({
         prgrmTitleUA : 'Программы в отелях Мини Тукан',
         prgrmTitleEE : 'Программы в отелях Мини Тукан',
         prgrmTitleLT : 'Программы в отелях Мини Тукан',
-        prgrmTitleLV : 'Программы в отелях Мини Тукан',
+        prgrmTitleLV : 'Programmas Mini Toucan viesnīcās',
         
         prgrmIcon : 'https://www.tui.ru/getmedia/4b9080ea-918e-41db-beb3-2765e73f191f/icon-download@3x',
         prgrmIconAlt : 'icon download',
@@ -503,7 +503,7 @@ const concepts = new Vue({
         prgrmDownloadUA: 'Cкачать',
         prgrmDownloadEE: 'Cкачать',
         prgrmDownloadLT: 'Cкачать',
-        prgrmDownloadLV: 'Cкачать',
+        prgrmDownloadLV: 'Lejuplādēt ',
         
         prgrmItems : [
             
@@ -517,7 +517,7 @@ const concepts = new Vue({
                 titleUA: 'Анимация',
                 titleEE: 'Анимация',
                 titleLT: 'Анимация',
-                titleLV: 'Анимация',
+                titleLV: 'Animācija',
                 
                 items : [
                     
@@ -527,7 +527,7 @@ const concepts = new Vue({
                         itemUA : 'Программа в отеле Al Hamra Residence & Village',
                         itemEE : '',
                         itemLT : '',
-                        itemLV : '',
+                        itemLV : 'Programma viesnīcā Al Hamra Residence & Village',
                         
                         linkRU : 'https://www.tui.ru/getmedia/f6ac0b63-9b0d-49a0-9f84-857bac7bb8b8/progamma-UAE-Toucan-Mini-2020',
                     },
@@ -568,7 +568,7 @@ const concepts = new Vue({
                 titleUA: 'Детский клуб Toucan',
                 titleEE: 'Детский клуб Toucan',
                 titleLT: 'Детский клуб Toucan',
-                titleLV: 'Детский клуб Toucan',
+                titleLV: 'Bērnu klubs Toucan',
                 
                 items : [
                     
@@ -578,7 +578,7 @@ const concepts = new Vue({
                         itemUA : 'Программа в отеле Blue Diamond AlSalam Resort 5*',
                         itemEE : '',
                         itemLT : '',
-                        itemLV : '',
+                        itemLV : 'Programma viesnīvā Blue Diamond AlSalam Resort 5*',
                         
                         linkRU : 'https://www.tui.ru/getmedia/db80ed7a-4d6b-4658-9e42-6b55f4f166a4/RU-programm-UAE-Toucan-Mini-2020-fuja',
                     },
@@ -619,27 +619,36 @@ const concepts = new Vue({
                 showRU : true,
                 showBY : true,
                 showUA : true,
+                showEE : true,
+                showLT : true,
+                showLV : true,
                 countryRU : 'Турция',
                 countryBY : 'Турция',
                 countryUA : 'Турция',
                 countryEE : '',
                 countryLT : '',
-                countryLV : '',
+                countryLV : 'Turcija',
                 
                 hotels : [
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Pegasos Club 4*',
                         linkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
-                        linkClient : '/europe-turkey-alanya-incekum-pegasos__club/',
+                        linkClient : '/hotel/europe-turkey-alanya-incekum-pegasos__club/',
                     },
                     
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Pegasos Resort 5*',
                         linkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort',
                         linkClient : '/hotel/europe-turkey-alanya-incekum-pegasos__resort/',
@@ -649,6 +658,9 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Pegasos Royal 5*',
                         linkAgent: '/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire',
                         linkClient : '/hotel/europe-turkey-kemer-tekirova-tui__fun__sun__club__saphire/',
@@ -664,18 +676,24 @@ const concepts = new Vue({
                 showRU : true,
                 showBY : true,
                 showUA : true,
+                showEE : true,
+                showLT : true,
+                showLV : true,
                 countryRU : 'Кипр',
                 countryBY : 'Кипр',
                 countryUA : 'Кипр',
                 countryEE : '',
                 countryLT : '',
-                countryLV : '',
+                countryLV : 'Kipra',
                 
                 hotels : [
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Christofinia 4*',
                         linkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/',
                         linkClient : '/hotel/europe-cyprus-ayia__napa-ayia__napa-christofinia/',
@@ -685,6 +703,9 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'St. Raphael Resort 5*',
                         linkAgent: '/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/',
                         linkClient : '/hotel/europe-cyprus-limasol__resort-limasol__city-st__raphael__resort/',
@@ -694,6 +715,9 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Tasia Maris Garden 3*',
                         linkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/tasia-maris-gardens',
                         linkClient : '/hotel/europe-cyprus-ayia__napa-ayia__napa-tasia__maris__gardens/',
@@ -709,18 +733,24 @@ const concepts = new Vue({
                 showRU : true,
                 showBY : true,
                 showUA : true,
+                showEE : true,
+                showLT : true,
+                showLV : true,
                 countryRU : 'Черногория',
                 countryBY : 'Черногория',
                 countryUA : 'Черногория',
                 countryEE : '',
                 countryLT : '',
-                countryLV : '',
+                countryLV : 'Melnkalne',
                 
                 hotels : [
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Aleksandar 4*',
                         linkAgent: '/tours/europe/montenegro/budvanska-rivijera/budva/aleksandar/',
                         linkClient : '/hotel/europe-montenegro-budvanska__rivijera-budva-aleksandar/',
@@ -730,6 +760,9 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Castellastva 4*',
                         linkAgent: '/tours/europe/montenegro/budvanska-rivijera/petrovac/castellastva/',
                         linkClient : '/hotel/europe-montenegro-budvanska__rivijera-petrovac-castellastva/',
@@ -743,18 +776,24 @@ const concepts = new Vue({
                 showRU : true,
                 showBY : true,
                 showUA : true,
+                showEE : true,
+                showLT : true,
+                showLV : true,
                 countryRU : 'Испания',
                 countryBY : 'Испания',
                 countryUA : 'Испания',
                 countryEE : '',
                 countryLT : '',
-                countryLV : '',
+                countryLV : 'Spānija',
                 
                 hotels : [
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Estival Park Hotel Resort 4*',
                         linkAgent: '/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort',
                         linkClient : '/hotel/europe-spain-costa__dorada-la__pineda-estival__park__hotel__resort/',
@@ -764,6 +803,9 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Don Juan Tossa 4*',
                         linkAgent: '/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa',
                         linkClient : '/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/',
@@ -773,6 +815,9 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : false,
+                        showLT : false,
+                        showLV : false,
                         name: 'Sol Palmanova - Mallorca 4*',
                         linkAgent: '/Tours/Europe/Spain/Mallorca-Palma-de-Mallorca/Palma-Nova/Sol-Palmanova-Mallorca',
                         linkClient : '/hotel/europe-spain-mallorca__palma__de__mallorca-palma__nova-sol__palmanova__mallorca/',
@@ -785,18 +830,24 @@ const concepts = new Vue({
                 showRU : true,
                 showBY : true,
                 showUA : true,
+                showEE : true,
+                showLT : true,
+                showLV : true,
                 countryRU : 'Греция',
                 countryBY : 'Греция',
                 countryUA : 'Греция',
                 countryEE : '',
                 countryLT : '',
-                countryLV : '',
+                countryLV : 'Grieķija',
                 
                 hotels : [
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Serita Beach Resort 5*',
                         linkAgent: '/Tours/Europe/Greece/Crete/Anissaras/mitsis-serita-beach',
                         linkClient : '/hotel/europe-greece-crete-anissaras-mitsis__serita__beach/',
@@ -812,18 +863,24 @@ const concepts = new Vue({
                 showRU : true,
                 showBY : true,
                 showUA : true,
+                showEE : true,
+                showLT : true,
+                showLV : true,
                 countryRU : 'ОАЭ',
                 countryBY : 'ОАЭ',
                 countryUA : 'ОАЭ',
                 countryEE : '',
                 countryLT : '',
-                countryLV : '',
+                countryLV : 'AAE',
                 
                 hotels : [
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : false,
+                        showLT : false,
+                        showLV : false,
                         name: 'Al Hamra Village Golf & Beach Resort 4*',
                         linkAgent: '/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort',
                         linkClient : '/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/',
@@ -833,6 +890,9 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : false,
+                        showLT : false,
+                        showLV : false,
                         name: 'Al Hamra Residence 5*',
                         linkAgent: '/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence',
                         linkClient : '/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/',
@@ -842,6 +902,9 @@ const concepts = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Blue Diamond AlSalam Resort 5*',
                         linkAgent: '/Tours/Asia/UAE/Fujairah/Fujairah-beach-hotels/blue-diamond-alsalam-resort',
                         linkClient : '/hotel/asia-uae-fujairah-fujairah__beach__hotels-blue__diamond__alsalam__resort/',
@@ -855,18 +918,24 @@ const concepts = new Vue({
                 showRU : true,
                 showBY : true,
                 showUA : true,
+                showEE : true,
+                showLT : true,
+                showLV : true,
                 countryRU : 'Италия',
                 countryBY : 'Италия',
                 countryUA : 'Италия',
                 countryEE : '',
                 countryLT : '',
-                countryLV : '',
+                countryLV : 'Itālija',
                 
                 hotels : [
                     {
                         showRU : true,
                         showBY : true,
                         showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
                         name: 'Falkensteiner Club Funimation Calabria (ex. Garden Resort Calabria) 4*',
                         linkAgent: '/Tours/Europe/Italy/Calabria/Pizzo/Valtur-Garden-Calabria',
                         linkClient : '/hotel/europe-italy-calabria-pizzo-garden__resort__calabria/',
@@ -882,18 +951,24 @@ const concepts = new Vue({
                 showRU : true,
                 showBY : false,
                 showUA : false,
+                showEE : false,
+                showLT : false,
+                showLV : false,
                 countryRU : 'Россия',
                 countryBY : 'Россия',
                 countryUA : 'Россия',
                 countryEE : '',
                 countryLT : '',
-                countryLV : '',
+                countryLV : 'Krievija',
                 
                 hotels : [
                     {
                         showRU : true,
                         showBY : false,
                         showUA : false,
+                        showEE : false,
+                        showLT : false,
+                        showLV : false,
                         name: 'Бархатные сезоны 3*',
                         linkAgent: '/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom',
                         linkClient : '/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/',

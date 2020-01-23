@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<!-- HEAD START ========================================================================= -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>TUI Toucan</title>
+
+    <!-- CSS STYLE ======================================================================== -->
+
+    
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/5398241b-73d3-4801-b1b8-46194a2b95ad/hotels-concepts">
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/e706cec2-842d-403e-9622-a63f695b6c37/desktop">
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/6b842bc2-0641-4ad8-bf30-f7356a74cc5e/laptop">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/f22ba45c-a755-482c-87c8-ac719fc62779/tablet">
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/db7acf0b-a47b-4bfd-b549-64b3adfddb95/mobile">
+
+
+
+
+
+    <!-- CSS STYLE ======================================================= -->
+    <!-- ШРИФТ =============================================== -->
+    <style>
+        @font-face {
+            font-family: 'TUITypeCyrillic';
+            src: url('https://www.tui.ru/getmedia/29d9e100-5e6c-4f89-8348-f18a82ddf7b8/TUITypeCyrillic-Regular_hinted_fix_rouble');
+            src:
+                url('https://www.tui.ru/getmedia/910bc6e7-90d1-47b2-84ff-81220c6888ee/TUITypeCyrillic-Regular_hinted_fix_rouble') format('woff2'),
+                url('https://www.tui.ru/getmedia/a9a13042-961a-4059-9ce6-3541c02d237e/TUITypeCyrillic-Regular_hinted_fix_rouble') format('woff'),
+                url('https://www.tui.ru/getmedia/29d9e100-5e6c-4f89-8348-f18a82ddf7b8/TUITypeCyrillic-Regular_hinted_fix_rouble') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+    </style>
+    <!-- ШРИФТ =============================================== -->
+    <!-- ШРИФТ =============================================== -->
+    <style>
+        @font-face {
+            font-family: 'TUITypeCyrillicLight';
+            src: url('https://www.tui.ru/getmedia/6becd8f2-8778-421f-900d-c4f254bee767/TUITypeCyrillicLight-Regular_hinted_fix_rouble');
+            src:
+                url('https://www.tui.ru/getmedia/49e5cc76-4045-468f-86f0-a12ead052579/TUITypeCyrillicLight-Regular_hinted_fix_rouble') format('woff2'),
+                url('https://www.tui.ru/getmedia/20dc32fa-f639-495c-85f1-ce59988966ba/TUITypeCyrillicLight-Regular_hinted_fix_rouble') format('woff'),
+                url('https://www.tui.ru/getmedia/6becd8f2-8778-421f-900d-c4f254bee767/TUITypeCyrillicLight-Regular_hinted_fix_rouble') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+    </style>
+    <!-- ШРИФТ =============================================== -->
+<style>
+    .ActionPage {
+        background: transparent;
+    }
+
+    .AppContainer {
+        background: transparent !important;
+    }
+
+    .ActionPage-container .static {
+        margin: 0 auto;
+        width: 100%;
+    }
+</style>
+<!-- SCRIPT загрузки VUE  =================================================== -->
+<script>
+    const vueLinks = [
+        'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+        'https://www.tui.ru/getmedia/b3bd9567-750c-4761-ae53-4055edbdd6d4/VUE-hotels-Toucan-lv-NEW',
+        'https://www.tui.ru/getmedia/95c04f5b-2fd9-4733-b948-57d8ee1b109e/VUE-toucan',
+        'https://www.tui.ru/getmedia/3e56b4b4-5770-433d-a63e-f73ff9fd9ede/toucan-hotels-script',
+        
+        
+    ];
+
+    function add_files(arr, type) {
+
+        count = 0;
+
+        function new_file(link) {
+            var script = document.createElement(type);
+            script.src = link;
+            script.async = false;
+            document.head.appendChild(script);
+            if (count < arr.length - 1) {
+                script.onload = function() {
+                    new_file(arr[count]);
+                }
+                script.onerror = function() {
+                    throw new Error(arr[count - 1] + ' loading error');
+                }
+                count++;
+            }
+        }
+
+        function error(text) {
+            throw new Error('the function takes two required arguments');
+        }
+
+        (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+            (arr === undefined) ? error('no link array') :
+            (type === undefined) ? error('no file type') : '';
+        new_file(arr[count]);
+    }
+
+    add_files(vueLinks, 'script');
+</script>
+
+</head>
+
+<!-- HEAD END ========================================================================= -->
+
+<body>
+
+<!-- MAIN START ========================================================================= -->
+
+
+
+<div class="concepts__main" id="toucan-page">
+   
+   <!-- BANNER ===================================== -->
+    <div class="banner__concepts" v-bind:class="bannerConceptsBckg">
+        <div class="banner__titles">
+            <img v-bind:src=" logo " v-bind:alt=" logoAlt " class="banner__logo">
+            <h2 class="banner__title">{{bannerTitleLV}}</h2>
+        </div>
+        <ul class="banner__text">
+            <li class="banner__text-item" v-for=' bannerItem in bannerItems '>{{ bannerItem.itemLV }}</li>
+        </ul>
+    </div>  
+    <!-- BANNER ===================================== -->
+    
+    <!-- ABOUT ===================================== -->
+    <div class="about__concepts">
+        <h2 class="about__title">{{aboutTitleLV}}</h2>
+        <p class="about__text">{{aboutTextLV}}</p>
+    </div>    
+    <!-- ABOUT ===================================== -->
+    
+    <!-- SERVICES ===================================== -->
+    <div class="services__concepts">
+        <h2 class="services__title">{{servicesTitleLV}}</h2>
+        <div class="services__blocks">
+            <div class="services__block" v-for=" servicesItem in servicesItems" v-bind:style=" servicesItem.cssBckg ">
+                <img v-bind:src=" servicesItem.image " v-bind:alt=" servicesItem.imageAlt " class="services__img">
+                <div class="services__text">
+                    <h3 class="services__name">{{ servicesItem.titleLV }}</h3>
+                    <ul class="services__items">
+                        <li class="services__item" v-for=" item in servicesItem.items ">
+                            {{ item.itemLV }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICES ===================================== -->
+    
+    <!-- WHAT TO DO ===================================== -->
+    <div class="whattodo__concepts">
+        <h2 class="whattodo__title">{{whattodoTitleLV}}</h2>
+        <div class="whattodo__block">
+            <img v-bind:src="whattodoImage" alt="Kids" class="whattodo__image">
+            <ul class="whattodo__spisok" v-for="whattodoItem in whattodoItems">
+                <li class="whattodo__item" v-for="item in whattodoItem.items">{{ item.itemLV }}</li>
+            </ul>
+            
+        </div>
+    </div>
+    <!-- WHAT TO DO ===================================== -->
+    
+    <!-- ENTERTAIMENT ===================================== 
+    <div class="entertaiments__concepts">
+        <h2 class="entertaiments__title">{{ entTitleLV }}</h2>
+        <div class="entertaiments__blocks" >
+            <div class="entertaiments__block" v-for=" entItem in entItems" v-bind:style=" entItem.cssBckg ">
+                <img v-bind:src=" entItem.image " v-bind:alt=" entItem.imageAlt " class="entertaiments__img">
+                <div class="entertaiments__text">
+                    <h3 class="entertaiments__name">{{ entItem.titleLV }}</h3>
+                    <ul class="entertaiments__items">
+                        <li class="entertaiments__item" v-for=" item in entItem.items ">
+                            {{ item.itemLV }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ENTERTAIMENT ===================================== -->
+    
+    <!-- HOTELS ===================================== -->
+    <div class="hotels__concepts" id="hotels-concepts-block">
+        <div class="hotels__countries" id="hotels-concepts-buttons-block">
+           
+            <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showLV" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameLV }}</a>
+ 
+        </div>
+        
+        <select class="hotels__countries-mobile" id="hotels-options-mobile">
+              <option class="hotels__country-mobile" v-for=" countryName in countryNames " v-bind:data-option=' countryName.id ' v-if="countryName.showLV">{{ countryName.nameLV }}</option>
+              
+        </select>
+        
+        <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showLV " class="hotels__blocks" v-bind:class=" countryHotel.class ">
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels " v-if="hotel.showLV">
+                <div class="hotels__banner">
+                    <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
+                    <h3 class="hotels__place">{{ hotel.place }}</h3>
+                    <!--<h6 class="hotels__sale">{{ hotel.sale }}</h6>-->
+                </div>
+                <div class="hotels__text">
+                    <h3 class="hotels__name">{{ hotel.name }}</h3>
+                    <div class="hotels__info">
+                        <div class="hotels__about">
+                            <p class="hotels__description">{{ hotel.nights }}</p>
+                            <p class="hotels__description">{{ hotel.service }}</p>
+                        </div>
+                        <!--<div class="hotels__prices">
+                            <p class="hotels__price-old">{{ hotel.oldPrice }}</p>
+                            <p class="hotels__price-new">{{ hotel.price }}</p>
+                        </div>-->
+                    </div>
+                    <a v-bind:href=" hotel.clientLink " class="hotels__link" target="_blank"> {{ buttonLV }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HOTELS ===================================== -->
+    
+    
+    <!-- PHOTOS =====================================
+    <div class="photos__concepts">
+        <h2 class="photos__title">{{ photosTitleLV }}</h2>
+        <div class="photos__block">
+            <div class="photos__video">
+                <img v-bind:src=" photosVideoImg " alt="" class="photos__video-img">
+            </div>
+            <div class="photos__photos">
+                <img v-for=" photosItem in photosItems " v-bind:src=" photosItem.image " v-bind:alt=" photosItem.imageAlt " class="photos__photo" >
+            </div>
+        </div>
+    </div>
+    <!-- PHOTOS ===================================== -->
+    
+    
+    <!-- PROGRAMS ===================================== -->
+    <div class="programs__concepts">
+        <h2 class="programs__title">{{ prgrmTitleLV }}</h2>
+        <div class="programs__blocks">
+            <div class="programs__block" v-for=" prgrmItem in prgrmItems ">
+<!--
+                <div class="programs__names">
+                    <img v-bind:src=" prgrmItem.image " v-bind:alt="  prgrmItem.imageAlt " class="programs__icon">
+                    <h3 class="programs__name">{{ prgrmItem.titleLV }}</h3>
+                </div>
+-->
+                <div class="programs__items">
+                    <h3 class="programs__text" v-for=" item in prgrmItem.items ">{{ item.itemLV }}
+                        <a v-bind:href=" item.linkRU " class="programs__item" target="_blank">
+                            <img v-bind:src=" prgrmIcon " v-bind:alt=" prgrmIconAlt " class="programs__download">
+                            {{ prgrmDownloadLV }}
+                        </a>
+                    </h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PROGRAMS ===================================== -->
+    
+    
+    <!-- ALL HOTELS ===================================== -->
+    <div class="allhotels__concepts">
+        <div class="allhotels__blocks">
+            <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showLV">
+                <h3 class="allhotels__name">{{ allHotel.countryLV }}</h3>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkClient " class="allhotels__link" v-if="hotel.showLV" target="_blank">{{ hotel.name }}</a>
+            </div>
+        </div>
+    </div>
+    <!-- ALL HOTELS ===================================== -->
+</div>
+
+
+
+<!-- MAIN END ========================================================================= -->
+
+<!-- SCRIPTS START ==================================================================== -->
+
+
+
+
+<!-- SCRIPTS END ====================================================================== -->
+
+<!-- METRIKA START ====================================================================== -->
+
+<!-- METRIKA END ====================================================================== -->
+
+
+</body>
+
+</html>
