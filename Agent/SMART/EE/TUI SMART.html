@@ -289,7 +289,7 @@ VUE автоматом подтягивает нужный перевод, ес�
         </select>
         
         <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showEE " class="hotels__blocks" v-bind:class=" countryHotel.class ">
-            <div class="hotels__block" v-for=" hotel in countryHotel.hotels ">
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels " v-if="hotel.showEE">
                 <div class="hotels__banner">
                     <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
                     <h3 class="hotels__place">{{ hotel.place }}</h3>

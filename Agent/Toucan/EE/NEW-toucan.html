@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ee">
 
 <!-- HEAD START ========================================================================= -->
 
@@ -10,15 +10,20 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>TUI Day and Night</title>
+    <title>TUI Toucan</title>
 
     <!-- CSS STYLE ======================================================================== -->
+
     <link rel="stylesheet" href="https://www.tui.ru/getmedia/17d935e1-f4c1-4c03-99ac-3359781db840/header-footer-all-css-concepts">
-    <link rel="stylesheet" href="https://www.tui.ru/getmedia/d4d7b368-5b53-48db-ba78-bbb734584824/hotels-concepts">
-    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/17fc3d10-a655-4d88-aa36-090663b885ce/desktop">
-    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/d8ed8eb7-c0a3-4c2f-a04a-9511e727da38/laptop">
-    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/42825a13-9dc1-47a0-b469-6b8e3833a1a4/tablet">
-    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/6cbad9f7-8843-479d-bb52-a157c00dc43c/mobile">
+    <link rel="stylesheet" href="https://www.tui.ru/getmedia/5398241b-73d3-4801-b1b8-46194a2b95ad/hotels-concepts">
+    <link rel="stylesheet" media="all and (min-width: 1201px)" href="https://www.tui.ru/getmedia/e706cec2-842d-403e-9622-a63f695b6c37/desktop">
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="https://www.tui.ru/getmedia/6b842bc2-0641-4ad8-bf30-f7356a74cc5e/laptop">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="https://www.tui.ru/getmedia/f22ba45c-a755-482c-87c8-ac719fc62779/tablet">
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/db7acf0b-a47b-4bfd-b549-64b3adfddb95/mobile">
+
+
+
+
 
     <!-- CSS STYLE ======================================================= -->
     <!-- ШРИФТ =============================================== -->
@@ -49,7 +54,7 @@
         }
     </style>
     <!-- ШРИФТ =============================================== -->
-    <style>
+<style>
         /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
     .pageWrapper {
         width: 100% !important;
@@ -70,14 +75,19 @@
         background: white!important;
     }
     /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
+    * {
+
+        color: #3c3c3c;
+    }
     </style>
-    <!-- SCRIPT загрузки VUE  =================================================== -->
+
+<!-- SCRIPT загрузки VUE  =================================================== -->
 <script>
     const vueLinks = [
         'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
-        'https://www.tui.ru/getmedia/d68f9382-4607-450a-b140-75dd818719bd/VUE-hotels-day-night-ru-ua-by-NEW',
-        'https://www.tui.ru/getmedia/85681a56-57a1-4981-ba56-4a4179c46108/VUE-day-night',
-        'https://www.tui.ru/getmedia/cc47bad7-ac05-4580-878b-05ea8808d485/day-night-hotels-script',
+        'https://admin.tui.ru/getmedia/ea7e6e01-7fcc-43db-ba97-f48582de0f6c/VUE-hotels-Toucan-ee-NEW',
+        'https://www.tui.ru/getmedia/95c04f5b-2fd9-4733-b948-57d8ee1b109e/VUE-toucan',
+        'https://www.tui.ru/getmedia/3e56b4b4-5770-433d-a63e-f73ff9fd9ede/toucan-hotels-script',
         'https://www.tui.ru/getmedia/db0b021d-bdd3-4a94-a5f6-e797ed62b2a3/diff-header-footer-for-concepts',
         
     ];
@@ -133,43 +143,43 @@
                 <div class="col-md-10 col-10 mobile_agent">
                     <div id="exit_menu">X</div>
 
-                    <div class="row menu-label"><a class="label-menu" target="_blank" v-bind:href=" menuItemFranchaizingLink ">{{menuItemFranchaizingNameBY}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemPartnershipLink ">{{menuItemPartnershipNameBY}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemAboutLink ">{{menuItemAboutNameBY}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemShopLink ">{{menuItemShopNameBY}}</a>
+                    <div class="row menu-label"><a class="label-menu" target="_blank" v-bind:href=" menuItemFranchaizingLink ">{{menuItemFranchaizingNameEE}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemPartnershipLink ">{{menuItemPartnershipNameEE}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemAboutLink ">{{menuItemAboutNameEE}}</a> <a class="label-menu" target="_blank" v-bind:href=" menuItemShopLink ">{{menuItemShopNameEE}}</a>
 
-                        <div class="label-menu" style="position: relative;cursor: pointer"><a style="color:#092a5e" v-bind:href=" menuItemConceptsLink ">{{menuItemConceptsNameBY}}</a>
+                        <div class="label-menu" style="position: relative;cursor: pointer"><a style="color:#092a5e" v-bind:href=" menuItemConceptsLink ">{{menuItemConceptsNameEE}}</a>
 
                             <div class="label-menu-2">
                                 <div class="concept-link"><a :href=" menuItemSmartLink "><img :src=" menuItemSmartLogo " alt="Smart_logo" /></a>
 
                                     <div><a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br />
-                                            {{menuItemSmartNameBY}}</a></div>
+                                            {{menuItemSmartNameEE}}</a></div>
                                 </div>
 
                                 <div class="concept-link"><a v-bind:href=" menuItemFunSunLink "><img alt="FN_logo" v-bind:src=" menuItemFunSunLogo " /></a>
 
                                     <div><a v-bind:href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br />
-                                            {{menuItemFunSunNameBY}}</a></div>
+                                            {{menuItemFunSunNameEE}}</a></div>
                                 </div>
 
                                 <div class="concept-link"><a v-bind:href=" menuItemDayNightLink "><img alt="FN_logo" v-bind:src=" menuItemDayNightLogo " /></a>
 
                                     <div><a v-bind:href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br />
-                                            {{menuItemDayNightNameBY}}</a></div>
+                                            {{menuItemDayNightNameEE}}</a></div>
                                 </div>
 
                                 <div class="concept-link"><a v-bind:href=" menuItemToucanLink "><img alt="FN_logo" v-bind:src=" menuItemToucanLogo " /></a>
 
                                     <div><a v-bind:href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br />
-                                            {{menuItemToucanNameBY}}</a></div>
+                                            {{menuItemToucanNameEE}}</a></div>
                                 </div>
 
                                 <div class="concept-link"><a v-bind:href=" menuItemConceptsAboutLink "><img :src=" menuItemConceptsAboutLogo " alt="Home_logo" /></a>
 
-                                    <div><a v-bind:href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameBY1}}<br />
-                                                {{menuItemConceptsAboutNameBY2}}</b></a></div>
+                                    <div><a v-bind:href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameEE1}}<br />
+                                                {{menuItemConceptsAboutNameEE2}}</b></a></div>
                                 </div>
                             </div>
                         </div>
-                        <a class="label-menu" target="_blank" v-bind:href=" menuItemPremiumLink ">{{menuItemPremiumName}}</a> <a class="label-menu log enter" data-bind="click: LoginClick" target="_blank" v-bind:href=" menuItemLoginNamelinkBY ">{{menuItemLoginNameBY}}</a>
+                        <a class="label-menu" target="_blank" v-bind:href=" menuItemPremiumLink ">{{menuItemPremiumName}}</a> <a class="label-menu log enter" data-bind="click: LoginClick" target="_blank" v-bind:href=" menuItemLoginNamelinkEE ">{{menuItemLoginNameEE}}</a>
                     </div>
                 </div>
                 <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
@@ -177,11 +187,11 @@
                 <div class="col-md-10">
                     <div class="row menu-telephone">
                         <div class="col-md-8 col-7">
-                            <p class="telephone-title">{{menuPhoneTitleBY}}</p>
+                            <p class="telephone-title">{{menuPhoneTitleEE}}</p>
 
-                            <p class="telephone-number">{{menuPhonePhoneBY}}</p>
+                            <p class="telephone-number">{{menuPhonePhoneEE}}</p>
                         </div>
-                        <a style="color: black" v-bind:href=" menuTouristSiteLinkBY ">{{menuTouristSiteNameBY}}</a>
+                        <a style="color: black" v-bind:href=" menuTouristSiteLinkEE ">{{menuTouristSiteNameEE}}</a>
                     </div>
                 </div>
             </div>
@@ -189,38 +199,39 @@
     </div>
     <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
 
-<div class="concepts__main" id="day-night">
+
+<div class="concepts__main" id="toucan-page">
    
    <!-- BANNER ===================================== -->
     <div class="banner__concepts" v-bind:class="bannerConceptsBckg">
         <div class="banner__titles">
             <img v-bind:src=" logo " v-bind:alt=" logoAlt " class="banner__logo">
-            <h2 class="banner__title"></h2>
+            <h2 class="banner__title">{{bannerTitleEE}}</h2>
         </div>
         <ul class="banner__text">
-            <li class="banner__text-item" v-for=' bannerItem in bannerItems '>{{ bannerItem.itemBY }}</li>
+            <li class="banner__text-item" v-for=' bannerItem in bannerItems '>{{ bannerItem.itemEE }}</li>
         </ul>
     </div>  
     <!-- BANNER ===================================== -->
     
     <!-- ABOUT ===================================== -->
     <div class="about__concepts">
-        <h2 class="about__title">{{aboutTitleBY}}</h2>
-        <p class="about__text">{{aboutTextBY}}</p>
+        <h2 class="about__title">{{aboutTitleEE}}</h2>
+        <p class="about__text">{{aboutTextEE}}</p>
     </div>    
     <!-- ABOUT ===================================== -->
     
     <!-- SERVICES ===================================== -->
     <div class="services__concepts">
-        <h2 class="services__title">{{servicesTitleBY}}</h2>
+        <h2 class="services__title">{{servicesTitleEE}}</h2>
         <div class="services__blocks">
             <div class="services__block" v-for=" servicesItem in servicesItems" v-bind:style=" servicesItem.cssBckg ">
                 <img v-bind:src=" servicesItem.image " v-bind:alt=" servicesItem.imageAlt " class="services__img">
                 <div class="services__text">
-                    <h3 class="services__name">{{ servicesItem.titleBY }}</h3>
+                    <h3 class="services__name">{{ servicesItem.titleEE }}</h3>
                     <ul class="services__items">
                         <li class="services__item" v-for=" item in servicesItem.items ">
-                            {{ item.itemBY }}
+                            {{ item.itemEE }}
                         </li>
                     </ul>
                 </div>
@@ -229,17 +240,30 @@
     </div>
     <!-- SERVICES ===================================== -->
     
+    <!-- WHAT TO DO ===================================== -->
+    <div class="whattodo__concepts">
+        <h2 class="whattodo__title">{{whattodoTitleEE}}</h2>
+        <div class="whattodo__block">
+            <img v-bind:src="whattodoImage" alt="Kids" class="whattodo__image">
+            <ul class="whattodo__spisok" v-for="whattodoItem in whattodoItems">
+                <li class="whattodo__item" v-for="item in whattodoItem.items">{{ item.itemEE }}</li>
+            </ul>
+            
+        </div>
+    </div>
+    <!-- WHAT TO DO ===================================== -->
+    
     <!-- ENTERTAIMENT ===================================== 
     <div class="entertaiments__concepts">
-        <h2 class="entertaiments__title">{{ entTitleBY }}</h2>
+        <h2 class="entertaiments__title">{{ entTitleEE }}</h2>
         <div class="entertaiments__blocks" >
             <div class="entertaiments__block" v-for=" entItem in entItems" v-bind:style=" entItem.cssBckg ">
                 <img v-bind:src=" entItem.image " v-bind:alt=" entItem.imageAlt " class="entertaiments__img">
                 <div class="entertaiments__text">
-                    <h3 class="entertaiments__name">{{ entItem.titleBY }}</h3>
+                    <h3 class="entertaiments__name">{{ entItem.titleEE }}</h3>
                     <ul class="entertaiments__items">
                         <li class="entertaiments__item" v-for=" item in entItem.items ">
-                            {{ item.itemBY }}</li>
+                            {{ item.itemEE }}</li>
                     </ul>
                 </div>
             </div>
@@ -251,17 +275,17 @@
     <div class="hotels__concepts" id="hotels-concepts-block">
         <div class="hotels__countries" id="hotels-concepts-buttons-block">
            
-            <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showBY" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameBY }}</a>
+            <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showEE" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameEE }}</a>
  
         </div>
         
         <select class="hotels__countries-mobile" id="hotels-options-mobile">
-              <option class="hotels__country-mobile" v-for=" countryName in countryNames " v-bind:data-option=' countryName.id ' v-if="countryName.showBY">{{ countryName.nameBY }}</option>
+              <option class="hotels__country-mobile" v-for=" countryName in countryNames " v-bind:data-option=' countryName.id ' v-if="countryName.showEE">{{ countryName.nameEE }}</option>
               
         </select>
         
-        <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showBY " class="hotels__blocks" v-bind:class=" countryHotel.class ">
-            <div class="hotels__block" v-for=" hotel in countryHotel.hotels " v-if="hotel.showBY">
+        <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showEE " class="hotels__blocks" v-bind:class=" countryHotel.class ">
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels " v-if="hotel.showEE">
                 <div class="hotels__banner">
                     <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
                     <h3 class="hotels__place">{{ hotel.place }}</h3>
@@ -279,7 +303,7 @@
                             <p class="hotels__price-new">{{ hotel.price }}</p>
                         </div>-->
                     </div>
-                    <a v-bind:href="'https://agent.tui.ua' + hotel.agentLink " class="hotels__link" target="_blank"> {{ buttonBY }}</a>
+                    <a v-bind:href="'https://www.tui.ee' + hotel.clientLink " class="hotels__link" target="_blank"> {{ buttonEE }}</a>
                 </div>
             </div>
         </div>
@@ -289,7 +313,7 @@
     
     <!-- PHOTOS =====================================
     <div class="photos__concepts">
-        <h2 class="photos__title">{{ photosTitleBY }}</h2>
+        <h2 class="photos__title">{{ photosTitleEE }}</h2>
         <div class="photos__block">
             <div class="photos__video">
                 <img v-bind:src=" photosVideoImg " alt="" class="photos__video-img">
@@ -302,20 +326,22 @@
     <!-- PHOTOS ===================================== -->
     
     
-    <!-- PROGRAMS =====================================
+    <!-- PROGRAMS ===================================== -->
     <div class="programs__concepts">
-        <h2 class="programs__title">{{ prgrmTitleBY }}</h2>
+        <h2 class="programs__title">{{ prgrmTitleEE }}</h2>
         <div class="programs__blocks">
             <div class="programs__block" v-for=" prgrmItem in prgrmItems ">
+<!--
                 <div class="programs__names">
                     <img v-bind:src=" prgrmItem.image " v-bind:alt="  prgrmItem.imageAlt " class="programs__icon">
-                    <h3 class="programs__name">{{ prgrmItem.titleBY }}</h3>
+                    <h3 class="programs__name">{{ prgrmItem.titleEE }}</h3>
                 </div>
+-->
                 <div class="programs__items">
-                    <h3 class="programs__text" v-for=" item in prgrmItem.items ">{{ item.itemRU }}
-                        <a v-bind:href=" item.linkBY " class="programs__item" target="_blank">
+                    <h3 class="programs__text" v-for=" item in prgrmItem.items ">{{ item.itemEE }}
+                        <a v-bind:href=" item.linkRU " class="programs__item" target="_blank">
                             <img v-bind:src=" prgrmIcon " v-bind:alt=" prgrmIconAlt " class="programs__download">
-                            {{ prgrmDownloadBY }}
+<!--                            {{ prgrmDownloadEE }}-->
                         </a>
                     </h3>
 
@@ -329,9 +355,9 @@
     <!-- ALL HOTELS ===================================== -->
     <div class="allhotels__concepts">
         <div class="allhotels__blocks">
-            <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showBY"> 
-                <h3 class="allhotels__name">{{ allHotel.countryBY }}</h3>
-                <a v-for=" hotel in allHotel.hotels " v-bind:href="'https://agent.tui.ua' + hotel.linkAgent " class="allhotels__link" v-if="hotel.showBY" target="_blank">{{ hotel.name }}</a>
+            <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showEE">
+                <h3 class="allhotels__name">{{ allHotel.countryEE }}</h3>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href="'https://www.tui.ee' + hotel.linkClient " class="allhotels__link" v-if="hotel.showEE" target="_blank">{{ hotel.name }}</a>
             </div>
         </div>
     </div>
@@ -345,20 +371,20 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
-                            <h3>{{funSunPageFooterTitle1BY}}</h3>
-                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink1 ">{{funSunPageFooterSite1BY}}</a><br />
-                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink2BY ">{{funSunPageFooterSite2BY}}</a><br />
-                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink3BY ">{{funSunPageFooterSite3BY}}</a>
+                            <h3>{{funSunPageFooterTitle1EE}}</h3>
+                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink1 ">{{funSunPageFooterSite1EE}}</a><br />
+                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink2EE ">{{funSunPageFooterSite2EE}}</a><br />
+                            <a target="_blank" v-bind:href=" funSunPageFooterSiteLink3EE ">{{funSunPageFooterSite3EE}}</a>
                         </div>
 
                         <div class="col-md-3">
-                            <h3>{{funSunPageFooterTitle2BY}}</h3>
-                            <a v-bind:href=" funSunPageFooterPhoneLinkBY ">{{funSunPageFooterPhoneTitleBY}}</a><br />
-                            <a v-bind:href=" funSunPageFooterMailLinkBY ">{{funSunPageFooterMailTitleBY}}</a>
+                            <h3>{{funSunPageFooterTitle2EE}}</h3>
+                            <a v-bind:href=" funSunPageFooterPhoneLinkEE ">{{funSunPageFooterPhoneTitleEE}}</a><br />
+                            <a v-bind:href=" funSunPageFooterMailLinkEE ">{{funSunPageFooterMailTitleEE}}</a>
                         </div>
 
                         <div class="col-md-3">
-                            <h3>{{funSunPageFooterTitle3BY}}</h3>
+                            <h3>{{funSunPageFooterTitle3EE}}</h3>
 
                             <div class="row icons-footer col-10 col-md-12" style="justify-content: flex-start;"><a style="margin: 5px;" target="_blank" v-bind:href=" funSunPageFooterInstagramLink "> <img v-bind:src=" funSunPageFooterInstagramImgLink " /> </a> <a style="margin: 5px;" target="_blank" v-bind:href=" funSunPageFooterFacebookLink "> <img v-bind:src=" funSunPageFooterFacebookImgLink " /> </a></div>
                         </div>

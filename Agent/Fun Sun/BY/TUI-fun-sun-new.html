@@ -281,7 +281,7 @@
                             <p class="hotels__price-new">{{ hotel.price }}</p>
                         </div>-->
                     </div>
-                    <a v-bind:href=" hotel.agentLink " class="hotels__link" target="_blank"> {{ buttonBY }}</a>
+                    <a v-bind:href="'https://agent.tui.ua' + hotel.agentLink " class="hotels__link" target="_blank"> {{ buttonBY }}</a>
                 </div>
             </div>
         </div>
@@ -333,7 +333,7 @@
         <div class="allhotels__blocks">
             <div class="allhotels__block" v-for=" allHotel in allHotels" v-if="allHotel.showBY">
                 <h3 class="allhotels__name">{{ allHotel.countryBY }}</h3>
-                <a v-for=" hotel in allHotel.hotels " v-bind:href=" hotel.linkAgent " class="allhotels__link" v-if="hotel.showBY" target="_blank">{{ hotel.name }}</a>
+                <a v-for=" hotel in allHotel.hotels " v-bind:href="'https://agent.tui.ua' + hotel.linkAgent " class="allhotels__link" v-if="hotel.showBY" target="_blank">{{ hotel.name }}</a>
             </div>
         </div>
     </div>

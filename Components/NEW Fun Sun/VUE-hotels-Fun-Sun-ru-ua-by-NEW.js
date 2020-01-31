@@ -108,7 +108,7 @@ const hotels = new Vue({
                         showRU : true,
                         showBY : true,
                         showUA : true,
-                        img: 'https://www.tui.ru/getmedia/1f00015d-eff8-44ff-becf-c6d2b465ac0e/Miarosa-Ghazal-Resort_1',
+                        img: 'https://www.tui.ru/getmedia/4689ff82-e69c-430b-ae7e-6321857c583b/Miarosa-Ghazal-Resort_2',
                         sale: '20%',
                         place: 'Кемер, Гейнюк',
                         name : 'FUN&SUN Miarosa Ghazal Resort 5*',

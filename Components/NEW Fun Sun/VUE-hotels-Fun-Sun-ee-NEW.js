@@ -19,7 +19,7 @@ const hotels = new Vue({
             
             //КИПР
             {  
-                showEE : true,
+                showEE : false,
                 
                 id: 'country2',
                 class: '',
@@ -29,7 +29,7 @@ const hotels = new Vue({
             
             //ЧЕРНОГОРИЯ
             {  
-                showEE : true,
+                showEE : false,
                 
                 id: 'country3',
                 class: '',
@@ -49,7 +49,7 @@ const hotels = new Vue({
             
             //ГРЕЦИЯ
             {  
-                showEE : true,
+                showEE : false,
                 
                 id: 'country5',
                 class: '',
@@ -91,7 +91,7 @@ const hotels = new Vue({
                     {
                         showEE : true,
                         
-                        img: 'https://www.tui.ru/getmedia/1f00015d-eff8-44ff-becf-c6d2b465ac0e/Miarosa-Ghazal-Resort_1',
+                        img: 'https://www.tui.ru/getmedia/4689ff82-e69c-430b-ae7e-6321857c583b/Miarosa-Ghazal-Resort_2',
                         sale: '20%',
                         place: 'Kemer, Goynuk',
                         name : 'FUN&SUN Miarosa Ghazal Resort 5*',
@@ -274,11 +274,11 @@ const hotels = new Vue({
             {
                 id: 'country2',
                 class: '',
-                showEE : true,
+                showEE : false,
                 
                 hotels : [
                     {
-                        showEE : true,
+                        showEE : false,
                        
                         img: 'https://www.tui.ru/getmedia/1e1900ef-4404-4768-9198-527c2d5325fa/Panthea-Waterpark',
                         sale: '20%',
@@ -294,7 +294,7 @@ const hotels = new Vue({
                     },
                     
                     {
-                        showEE : true,
+                        showEE : false,
                         
                         img: 'https://www.tui.ru/getmedia/badfcfe1-40b0-47d2-921c-29e1b22377a4/Vangelis-Hotel-Suite',
                         sale: '20%',
@@ -310,7 +310,7 @@ const hotels = new Vue({
                     },
                     
                     {
-                        showEE : true,
+                        showEE : false,
                         
                         img: 'https://www.tui.ru/getmedia/fd5d72e2-5948-4580-ae39-be4500bb4b7a/King-Evelthon-Beach-Hotel_1',
                         sale: '20%',
@@ -326,7 +326,7 @@ const hotels = new Vue({
                     },
                     
                     {
-                        showEE : true,
+                        showEE : false,
                         
                         img: 'https://www.tui.ru/getmedia/3e7db49a-ccd4-4c6f-8c0a-262fed1013a8/Anastasia-Beach-Hotel',
                         sale: '20%',
@@ -342,7 +342,7 @@ const hotels = new Vue({
                     },
                     
                     {
-                        showEE : true,
+                        showEE : false,
                         
                         img: 'https://www.tui.ru/getmedia/2b191fc1-ad5a-41b4-bfc8-661c060e82a9/Callisto-Holiday-Beach',
                         sale: '20%',
@@ -358,7 +358,7 @@ const hotels = new Vue({
                     },
                     
                     {
-                        showEE : true,
+                        showEE : false,
                         
                         img: 'https://www.tui.ru/getmedia/1271fb3d-68b3-4773-a18a-f14ef63a7dcd/Akteon-Holiday-Village',
                         sale: '20%',
@@ -379,11 +379,11 @@ const hotels = new Vue({
             {
                 id: 'country3',
                 class: '',
-                showEE : true,
+                showEE : false,
                 
                 hotels : [
                     {
-                        showEE : true,
+                        showEE : false,
                        
                         img: 'https://www.tui.ru/getmedia/990c303e-252d-47a6-908d-5207f5fa407d/Pearl-Beach-Resort',
                         sale: '20%',
@@ -429,11 +429,11 @@ const hotels = new Vue({
             {
                 id: 'country5',
                 class: '',
-                showEE : true,
+                showEE : false,
                 
                 hotels : [
                     {
-                        showEE : true,
+                        showEE : false,
                         
                         img: 'https://www.tui.ru/getmedia/967adb30-26ce-47c1-a499-0cc126047c47/Apollo-Palace',
                         sale: '20%',

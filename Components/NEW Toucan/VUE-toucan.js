@@ -9,8 +9,8 @@ const concepts = new Vue({
         bannerTitleRU : 'Программа для детей от 4 до 12 лет',
         bannerTitleBY : 'Программа для детей от 4 до 12 лет',
         bannerTitleUA : 'Программа для детей от 4 до 12 лет',
-        bannerTitleEE : 'Программа для детей от 4 до 12 лет',
-        bannerTitleLT : 'Программа для детей от 4 до 12 лет',
+        bannerTitleEE : 'Programm lastele vanuses 4–12 aastat',
+        bannerTitleLT : 'Programos vaikams nuo 4 iki 12 metų',
         bannerTitleLV : 'Programma bērniem vecumā no 4 līdz 12 gadiem',
         
         bannerItems: [
@@ -20,8 +20,8 @@ const concepts = new Vue({
                 itemRU: 'Аниматоры, с которыми интересно',
                 itemBY: 'Аниматоры, с которыми интересно',
                 itemUA: 'Аниматоры, с которыми интересно',
-                itemEE: 'Аниматоры, с которыми интересно',
-                itemLT: 'Аниматоры, с которыми интересно',
+                itemEE: 'Huvitav animatsioon',
+                itemLT: 'įdomūs animatoriai',
                 itemLV: 'Animatori, ar kuriem ir interesanti',
                 
             },
@@ -30,8 +30,8 @@ const concepts = new Vue({
                 itemRU: 'Умные игры, которые развивают',
                 itemBY: 'Умные игры, которые развивают',
                 itemUA: 'Умные игры, которые развивают',
-                itemEE: 'Умные игры, которые развивают',
-                itemLT: 'Клуб Тукан для детей от 0 до 12 лет',
+                itemEE: 'Nutikad mängud, mis arendavad',
+                itemLT: 'dovanos kiekvienam',
                 itemLV: 'Attīstošās spēle',
                 
             },
@@ -43,8 +43,8 @@ const concepts = new Vue({
                 itemRU: 'Подарки всем гостям клуба',
                 itemBY: 'Подарки всем гостям клуба',
                 itemUA: 'Подарки всем гостям клуба',
-                itemEE: 'Подарки всем гостям клуба',
-                itemLT: 'Уголок матери и ребенка 24 часа',
+                itemEE: 'Kingitused kõigile klubi külastajatele',
+                itemLT: 'klubo svečiui',
                 itemLV: 'Dāvanas katram kluba viesim',
                 
             },
@@ -56,23 +56,23 @@ const concepts = new Vue({
         aboutTitleRU: 'Что такое Мини Тукан?',
         aboutTitleBY: 'Что такое Мини Тукан?',
         aboutTitleUA: 'Что такое Мини Тукан?',
-        aboutTitleEE: 'Что такое Мини Тукан?',
-        aboutTitleLT: 'Что такое Мини Тукан?',
+        aboutTitleEE: 'Mis on Mini Toucan?',
+        aboutTitleLT: 'Kas yra mini Toucan?',
         aboutTitleLV: 'Kas ir Mini Toucan?',
         
         aboutTextRU: 'Благодаря клубу Мини Тукан, родители могут посвятить время себе и не переживать за безопасность своих детей. А юные гости отеля смогут почувствовать себя самостоятельными путешественниками.',
         aboutTextBY: 'Благодаря клубу Мини Тукан, родители могут посвятить время себе и не переживать за безопасность своих детей. А юные гости отеля смогут почувствовать себя самостоятельными путешественниками.',
         aboutTextUA: 'Благодаря клубу Мини Тукан, родители могут посвятить время себе и не переживать за безопасность своих детей. А юные гости отеля смогут почувствовать себя самостоятельными путешественниками.',
-        aboutTextEE: 'Благодаря клубу Мини Тукан, родители могут посвятить время себе и не переживать за безопасность своих детей. А юные гости отеля смогут почувствовать себя самостоятельными путешественниками.',
-        aboutTextLT: 'Благодаря клубу Мини Тукан, родители могут посвятить время себе и не переживать за безопасность своих детей. А юные гости отеля смогут почувствовать себя самостоятельными путешественниками.',
+        aboutTextEE: 'Tänu Mini Toucani klubile saavad vanemad pühendada aega endale ja mitte muretseda oma laste turvalisuse pärast. Hotelli noored külalised tunnevad end iseseisvate turistina.',
+        aboutTextLT: '„Mini Toucan“ klubo dėka tėvai gali skirti laiko sau ir nesijaudinti dėl savo vaikų saugumo. O jauni viešbučio svečiai gali jaustis kaip nepriklausomi keliautojai.',
         aboutTextLV: 'Pateicoties klubam Mini Toucan vecāki var veltīt laiku sev un neuztraukties par bērnu drošību. Bet jaunākie viesi varēs iejūsties pastāvīga ceļotāja lomā.',
         
         //SERVICES
         servicesTitleRU : 'Услуги в детском клубе Мини Тукан',
         servicesTitleBY : 'Услуги в детском клубе Мини Тукан',
         servicesTitleUA : 'Услуги в детском клубе Мини Тукан',
-        servicesTitleEE : 'Услуги в детском клубе Мини Тукан',
-        servicesTitleLT : 'Услуги в детском клубе Мини Тукан',
+        servicesTitleEE : 'Teenused lasteklubis Mini Toucan',
+        servicesTitleLT : 'Paslaugos „Mini Toucan“ vaikų klube',
         servicesTitleLV : 'Pakalpojumi bēnu klubā Mini Toucan',
         
         servicesItems : [
@@ -85,8 +85,8 @@ const concepts = new Vue({
                 titleRU: 'Инфраструктура',
                 titleBY: 'Инфраструктура',
                 titleUA: 'Инфраструктура',
-                titleEE: 'Инфраструктура',
-                titleLT: 'Как дома',
+                titleEE: 'Infrastruktuur',
+                titleLT: 'Infrastruktūra',
                 titleLV: 'Infrastruktūŗa',
                 
                 items : [
@@ -95,8 +95,8 @@ const concepts = new Vue({
                         itemRU : 'Игровые комнаты',
                         itemBY : 'Игровые комнаты',
                         itemUA : 'Игровые комнаты',
-                        itemEE : '',
-                        itemLT : '',
+                        itemEE : 'Mängutoad',
+                        itemLT : 'Žaidimų kambariai',
                         itemLV : 'Rotaļu istabas',
                     },
                     
@@ -104,8 +104,8 @@ const concepts = new Vue({
                         itemRU : 'Открытый детский бассейн',
                         itemBY : 'Открытый детский бассейн',
                         itemUA : 'Открытый детский бассейн',
-                        itemEE : '',
-                        itemLT : '',
+                        itemEE : 'Laste välibassein',
+                        itemLT : 'Lauko baseinas lauke',
                         itemLV : 'Āra bērnu baseins',
                     },
                     
@@ -113,8 +113,8 @@ const concepts = new Vue({
                         itemRU : 'Детское меню в главном ресторане',
                         itemBY : 'Детское меню в главном ресторане',
                         itemUA : 'Детское меню в главном ресторане',
-                        itemEE : '',
-                        itemLT : '',
+                        itemEE : 'Laste menüü pearestoranis',
+                        itemLT : 'Vaikų meniu pagrindiniame restorane',
                         itemLV : 'Bērnu ēdienkarte galvenajā restorānā',
                     },
                     
@@ -122,8 +122,8 @@ const concepts = new Vue({
                         itemRU : 'Игровая площадка на открытом воздухе',
                         itemBY : 'Игровая площадка на открытом воздухе',
                         itemUA : 'Игровая площадка на открытом воздухе',
-                        itemEE : '',
-                        itemLT : '',
+                        itemEE : 'Mänguala õues',
+                        itemLT : 'Žaidimų aikštelė gryname ore',
                         itemLV : 'Rotaļu laukums svaigā gaisā',
                     },
                     
@@ -139,8 +139,8 @@ const concepts = new Vue({
                 titleRU: 'Развлечения',
                 titleBY: 'Развлечения',
                 titleUA: 'Развлечения',
-                titleEE: 'Развлечения',
-                titleLT: 'Развлечения',
+                titleEE: 'Meelelahutus',
+                titleLT: 'Pramogos',
                 titleLV: 'Izklaides',
                 
                 items : [
@@ -149,8 +149,8 @@ const concepts = new Vue({
                         itemRU : 'Творческие и кулинарные мастер-классы ',
                         itemBY : 'Творческие и кулинарные мастер-классы',
                         itemUA : 'Творческие и кулинарные мастер-классы',
-                        itemEE : '',
-                        itemLT : '',
+                        itemEE : 'Loomingulised ja kulinaarsed meistriklassid',
+                        itemLT : 'Kūrybinės ir kulinarinės dirbtuvės',
                         itemLV : 'Radošas un kulinārijas meistarklases',
                     },
                     
@@ -158,8 +158,8 @@ const concepts = new Vue({
                         itemRU : 'Развивающие игры',
                         itemBY : 'Развивающие игры',
                         itemUA : 'Развивающие игры',
-                        itemEE : '',
-                        itemLT : '',
+                        itemEE : 'Arendavad mängud',
+                        itemLT : 'Mokomieji žaidimai',
                         itemLV : 'Attīstošās rotaļas',
                     },
                     
@@ -167,8 +167,8 @@ const concepts = new Vue({
                         itemRU : 'Спортивные соревнования  ',
                         itemBY : 'Спортивные соревнования  ',
                         itemUA : 'Спортивные соревнования  ',
-                        itemEE : '',
-                        itemLT : '',
+                        itemEE : 'Spordivõistlused',
+                        itemLT : 'Sporto varžybos',
                         itemLV : 'Sporta sacensības ',
                     },
                     
@@ -176,8 +176,8 @@ const concepts = new Vue({
                         itemRU : 'Детская дискотека в завершение дня',
                         itemBY : 'Детская дискотека в завершение дня',
                         itemUA : 'Детская дискотека в завершение дня',
-                        itemEE : '',
-                        itemLT : '',
+                        itemEE : 'Laste disko päeva lõpus',
+                        itemLT : 'Vakarais - vaikų diskoteka',
                         itemLV : 'Bērnu diskotēka aktīvas dienas noslēgumā',
                     },
                     
@@ -193,8 +193,8 @@ const concepts = new Vue({
         whattodoTitleRU : 'Чем будет занят ребенок?',
         whattodoTitleBY : 'Чем будет занят ребенок?',
         whattodoTitleUA : 'Чем будет занят ребенок?',
-        whattodoTitleEE : 'Чем будет занят ребенок?',
-        whattodoTitleLT : 'Чем будет занят ребенок?',
+        whattodoTitleEE : 'Millega saab laps tegeleda?',
+        whattodoTitleLT : 'Ką veiks vaikas?',
         whattodoTitleLV : 'Ar ko būs nodarbināts bērnu? ',
         
         whattodoImage : 'https://www.tui.ru/getmedia/de08d3b4-c7fa-4499-9b18-c8f8c127f3fd/fitness-1@2x',
@@ -208,8 +208,8 @@ const concepts = new Vue({
                         itemRU : 'Аквагрим',
                         itemBY : 'Аквагрим',
                         itemUA : 'Аквагрим',
-                        itemEE : 'Аквагрим',
-                        itemLT : 'Аквагрим',
+                        itemEE : 'Näomaalingud',
+                        itemLT : 'Veido tapyba',
                         itemLV : 'Akvagrims',
                     },
                     
@@ -217,8 +217,8 @@ const concepts = new Vue({
                         itemRU : 'Олимпийские игры',
                         itemBY : 'Олимпийские игры',
                         itemUA : 'Олимпийские игры',
-                        itemEE : 'Олимпийские игры',
-                        itemLT : 'Олимпийские игры',
+                        itemEE : 'Olümpiamängud',
+                        itemLT : 'Olimpinės žaidynės',
                         itemLV : 'Olimpiskās spēles ',
                     },
                     
@@ -226,8 +226,8 @@ const concepts = new Vue({
                         itemRU : 'Йога, степ и танцевальная аэробика',
                         itemBY : 'Йога, степ и танцевальная аэробика',
                         itemUA : 'Йога, степ и танцевальная аэробика',
-                        itemEE : 'Аквагрим',
-                        itemLT : 'Аквагрим',
+                        itemEE : 'Jooga, samm- ja tantsuaeroobika',
+                        itemLT : 'Joga, stepas ir aerobika',
                         itemLV: 'Joga, steps un deju aerobika',
                     },
                     
@@ -235,8 +235,8 @@ const concepts = new Vue({
                         itemRU : 'День рождения Тукана',
                         itemBY : 'День рождения Тукана',
                         itemUA : 'День рождения Тукана',
-                        itemEE : 'День рождения Тукана',
-                        itemLT : 'Аквагрим',
+                        itemEE : 'Toucani sünnipäev',
+                        itemLT : '„Toucan“ gimtadienis',
                         itemLV : 'Tukāna dzimšanas diena',
                     },
                 ]
@@ -250,8 +250,8 @@ const concepts = new Vue({
                         itemRU : 'Игры в детском бассейне',
                         itemBY : 'Игры в детском бассейне',
                         itemUA : 'Игры в детском бассейне',
-                        itemEE : 'Игры в детском бассейне',
-                        itemLT : 'Аквагрим',
+                        itemEE : 'Mängud lastebasseinis',
+                        itemLT : 'Žaidimai vaikų baseine',
                         itemLV : 'Rotaļas bērnu baseinā ',
                     },
                     
@@ -259,8 +259,8 @@ const concepts = new Vue({
                         itemRU : 'Настольные и музыкальные игры',
                         itemBY : 'Настольные и музыкальные игры',
                         itemUA : 'Настольные и музыкальные игры',
-                        itemEE : 'Настольные и музыкальные игры',
-                        itemLT : 'Олимпийские игры',
+                        itemEE : 'Laua- ja muusikamängud',
+                        itemLT : 'Stalo ir muzikos žaidimai',
                         itemLV : 'Galda un muzikālās spēles',
                     },
                     
@@ -268,8 +268,8 @@ const concepts = new Vue({
                         itemRU : 'Тематические квесты ',
                         itemBY : 'Тематические квесты ',
                         itemUA : 'Тематические квесты ',
-                        itemEE : 'Тематические квесты ',
-                        itemLT : 'Аквагрим',
+                        itemEE : 'Teemaülesanded',
+                        itemLT : 'Teminiai žaidimai',
                         itemLV: 'Tematiskie uzdevumi',
                     },
                     
@@ -277,8 +277,8 @@ const concepts = new Vue({
                         itemRU : 'Увлекательные эксперименты',
                         itemBY : 'Увлекательные эксперименты',
                         itemUA : 'Увлекательные эксперименты',
-                        itemEE : 'Увлекательные эксперименты',
-                        itemLT : 'Аквагрим',
+                        itemEE : 'Põnevad katsed',
+                        itemLT : 'Įspūdingi eksperimentai',
                         itemLV : 'Aizraujoši eksperimenti',
                     },
                 ]
@@ -492,8 +492,8 @@ const concepts = new Vue({
         prgrmTitleRU : 'Программы в отелях Мини Тукан',
         prgrmTitleBY : 'Программы в отелях Мини Тукан',
         prgrmTitleUA : 'Программы в отелях Мини Тукан',
-        prgrmTitleEE : 'Программы в отелях Мини Тукан',
-        prgrmTitleLT : 'Программы в отелях Мини Тукан',
+        prgrmTitleEE : 'Programmid hotellides Mini Toucan',
+        prgrmTitleLT : 'Programos viešbučiuose „Mini Toucan“',
         prgrmTitleLV : 'Programmas Mini Toucan viesnīcās',
         
         prgrmIcon : 'https://www.tui.ru/getmedia/4b9080ea-918e-41db-beb3-2765e73f191f/icon-download@3x',
@@ -501,8 +501,8 @@ const concepts = new Vue({
         prgrmDownloadRU: 'Cкачать',
         prgrmDownloadBY: 'Cкачать',
         prgrmDownloadUA: 'Cкачать',
-        prgrmDownloadEE: 'Cкачать',
-        prgrmDownloadLT: 'Cкачать',
+        prgrmDownloadEE: 'Laadige alla',
+        prgrmDownloadLT: 'Atsisiųsti',
         prgrmDownloadLV: 'Lejuplādēt ',
         
         prgrmItems : [
@@ -515,8 +515,8 @@ const concepts = new Vue({
                 titleRU: 'Анимация',
                 titleBY: 'Анимация',
                 titleUA: 'Анимация',
-                titleEE: 'Анимация',
-                titleLT: 'Анимация',
+                titleEE: 'Animatsioon',
+                titleLT: 'Animacija',
                 titleLV: 'Animācija',
                 
                 items : [
@@ -525,8 +525,8 @@ const concepts = new Vue({
                         itemRU : 'Программа в отеле Al Hamra Residence & Village',
                         itemBY : 'Программа в отеле Al Hamra Residence & Village',
                         itemUA : 'Программа в отеле Al Hamra Residence & Village',
-                        itemEE : '',
-                        itemLT : '',
+                        itemEE : 'Programm hotellis Al Hamra Residence & Village',
+                        itemLT : 'Programa „Al Hamra Residence & Village“',
                         itemLV : 'Programma viesnīcā Al Hamra Residence & Village',
                         
                         linkRU : 'https://www.tui.ru/getmedia/f6ac0b63-9b0d-49a0-9f84-857bac7bb8b8/progamma-UAE-Toucan-Mini-2020',
@@ -566,8 +566,8 @@ const concepts = new Vue({
                 titleRU: 'Детский клуб Toucan',
                 titleBY: 'Детский клуб Toucan',
                 titleUA: 'Детский клуб Toucan',
-                titleEE: 'Детский клуб Toucan',
-                titleLT: 'Детский клуб Toucan',
+                titleEE: 'Lasteklubi Toucan',
+                titleLT: 'Vaikų klubas „Toucan“',
                 titleLV: 'Bērnu klubs Toucan',
                 
                 items : [
@@ -576,8 +576,8 @@ const concepts = new Vue({
                         itemRU : 'Программа в отеле Blue Diamond AlSalam Resort 5*',
                         itemBY : 'Программа в отеле Blue Diamond AlSalam Resort 5*',
                         itemUA : 'Программа в отеле Blue Diamond AlSalam Resort 5*',
-                        itemEE : '',
-                        itemLT : '',
+                        itemEE : 'Programm hotellis Blue Diamond AlSalam Resort 5*',
+                        itemLT : 'Programa „Blue Diamond AlSalam Resort 5 *“ viešbutyje',
                         itemLV : 'Programma viesnīvā Blue Diamond AlSalam Resort 5*',
                         
                         linkRU : 'https://www.tui.ru/getmedia/db80ed7a-4d6b-4658-9e42-6b55f4f166a4/RU-programm-UAE-Toucan-Mini-2020-fuja',
@@ -625,8 +625,8 @@ const concepts = new Vue({
                 countryRU : 'Турция',
                 countryBY : 'Турция',
                 countryUA : 'Турция',
-                countryEE : '',
-                countryLT : '',
+                countryEE : 'Türgi',
+                countryLT : 'Turkija',
                 countryLV : 'Turcija',
                 
                 hotels : [
@@ -662,8 +662,8 @@ const concepts = new Vue({
                         showLT : true,
                         showLV : true,
                         name: 'Pegasos Royal 5*',
-                        linkAgent: '/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire',
-                        linkClient : '/hotel/europe-turkey-kemer-tekirova-tui__fun__sun__club__saphire/',
+                        linkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal',
+                        linkClient : '/hotel/europe-turkey-alanya-incekum-pegasos__royal/',
                     },
                     
                     
@@ -682,8 +682,8 @@ const concepts = new Vue({
                 countryRU : 'Кипр',
                 countryBY : 'Кипр',
                 countryUA : 'Кипр',
-                countryEE : '',
-                countryLT : '',
+                countryEE : 'Küpros',
+                countryLT : 'Kipras',
                 countryLV : 'Kipra',
                 
                 hotels : [
@@ -739,8 +739,8 @@ const concepts = new Vue({
                 countryRU : 'Черногория',
                 countryBY : 'Черногория',
                 countryUA : 'Черногория',
-                countryEE : '',
-                countryLT : '',
+                countryEE : 'Montenegro',
+                countryLT : 'Juodkalnija',
                 countryLV : 'Melnkalne',
                 
                 hotels : [
@@ -782,8 +782,8 @@ const concepts = new Vue({
                 countryRU : 'Испания',
                 countryBY : 'Испания',
                 countryUA : 'Испания',
-                countryEE : '',
-                countryLT : '',
+                countryEE : 'Hispaania',
+                countryLT : 'Ispanija',
                 countryLV : 'Spānija',
                 
                 hotels : [
@@ -836,8 +836,8 @@ const concepts = new Vue({
                 countryRU : 'Греция',
                 countryBY : 'Греция',
                 countryUA : 'Греция',
-                countryEE : '',
-                countryLT : '',
+                countryEE : 'Kreeka',
+                countryLT : 'Graikija',
                 countryLV : 'Grieķija',
                 
                 hotels : [
@@ -861,7 +861,7 @@ const concepts = new Vue({
             //ОАЭ
             {
                 showRU : true,
-                showBY : true,
+                showBY : false,
                 showUA : true,
                 showEE : true,
                 showLT : true,
@@ -869,14 +869,14 @@ const concepts = new Vue({
                 countryRU : 'ОАЭ',
                 countryBY : 'ОАЭ',
                 countryUA : 'ОАЭ',
-                countryEE : '',
-                countryLT : '',
+                countryEE : 'AÜE',
+                countryLT : 'JAE',
                 countryLV : 'AAE',
                 
                 hotels : [
                     {
                         showRU : true,
-                        showBY : true,
+                        showBY : false,
                         showUA : true,
                         showEE : false,
                         showLT : false,
@@ -888,7 +888,7 @@ const concepts = new Vue({
                                 
                     {
                         showRU : true,
-                        showBY : true,
+                        showBY : false,
                         showUA : true,
                         showEE : false,
                         showLT : false,
@@ -900,7 +900,7 @@ const concepts = new Vue({
                     
                     {
                         showRU : true,
-                        showBY : true,
+                        showBY : false,
                         showUA : true,
                         showEE : true,
                         showLT : true,
@@ -924,8 +924,8 @@ const concepts = new Vue({
                 countryRU : 'Италия',
                 countryBY : 'Италия',
                 countryUA : 'Италия',
-                countryEE : '',
-                countryLT : '',
+                countryEE : 'Itaalia',
+                countryLT : 'Italija',
                 countryLV : 'Itālija',
                 
                 hotels : [
@@ -957,8 +957,8 @@ const concepts = new Vue({
                 countryRU : 'Россия',
                 countryBY : 'Россия',
                 countryUA : 'Россия',
-                countryEE : '',
-                countryLT : '',
+                countryEE : 'Venemaa',
+                countryLT : 'Rusija',
                 countryLV : 'Krievija',
                 
                 hotels : [

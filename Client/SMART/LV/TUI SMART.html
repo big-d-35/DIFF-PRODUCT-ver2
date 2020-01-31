@@ -30,9 +30,23 @@ VUE автоматом подтягивает нужный перевод, ес�
     <link rel="stylesheet" media="all and (max-width: 600px)" href="https://www.tui.ru/getmedia/006d2476-5ac7-4e98-940c-101329e078ba/smart-mobile">
     
     <style>
-        .ActionPage-container {
-            background: white!important;
-        } 
+        .ActionPage {
+            background: transparent!important; 
+            
+    }
+        .AppContainer {
+       
+        background-color: transparent!important; 
+       
+    }
+        .static {
+            width: 100%!important;
+        }
+        
+    *, :after, :before {
+        background-repeat: no-repeat; 
+        box-sizing: content-box; 
+    }
     </style>
 <!-- CSS STYLE ======================================================= -->
    
@@ -178,7 +192,7 @@ VUE автоматом подтягивает нужный перевод, ес�
         </select>
         
         <div  v-for=" countryHotel in countryHotels" v-bind:data-id=" countryHotel.id " v-if=" countryHotel.showLV " class="hotels__blocks" v-bind:class=" countryHotel.class ">
-            <div class="hotels__block" v-for=" hotel in countryHotel.hotels ">
+            <div class="hotels__block" v-for=" hotel in countryHotel.hotels " v-if="hotel.showLV">
                 <div class="hotels__banner">
                     <img v-bind:src=" hotel.img " alt="" class="hotels__poster">
                     <h3 class="hotels__place">{{ hotel.place }}</h3>

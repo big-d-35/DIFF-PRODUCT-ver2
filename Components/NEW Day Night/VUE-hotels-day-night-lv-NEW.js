@@ -19,7 +19,7 @@ const hotels = new Vue({
             
             //КИПР
             {  
-                showLV : true,
+                showLV : false,
                 
                 id: 'country2',
                 class: '',
@@ -52,7 +52,7 @@ const hotels = new Vue({
                 
                 hotels : [
                     {
-                        showLV : false,
+                        showLV : true,
                         img: 'https://www.tui.ru/getmedia/2dd9f3d5-0b94-4b46-9eb4-08334b5a644d/Connected-Club-Hydros',
                         sale: '20%',
                         place: 'Kemers',
@@ -87,11 +87,11 @@ const hotels = new Vue({
             {
                 id: 'country2',
                 class: '',
-                showLV : true,
+                showLV : false,
                 
                 hotels : [
                      {
-                        showLV : true,
+                        showLV : false,
                         img: 'https://www.tui.ru/getmedia/07a2e26a-3385-4abe-a489-3a2e8acdabde/Connected-Season',
                         sale: '20%',
                         place: 'Aija Napa',
