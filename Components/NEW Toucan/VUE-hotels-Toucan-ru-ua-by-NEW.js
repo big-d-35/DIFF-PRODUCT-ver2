@@ -187,7 +187,7 @@ const hotels = new Vue({
                         agentLink : '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/',
                         clientLink : '/hotel/europe-cyprus-ayia__napa-ayia__napa-christofinia/',
                         nights : 'Начало работы детского клуба:',
-                        service : '1 мая 2020',
+                        service : '15 мая 2020',
                         price: 'от 112 000 ₽',
                         oldPrice: '145 232 ₽',
                     
@@ -204,7 +204,7 @@ const hotels = new Vue({
                         agentLink : '/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/',
                         clientLink : '/hotel/europe-cyprus-limasol__resort-limasol__city-st__raphael__resort/',
                         nights : 'Начало работы детского клуба:',
-                        service : '1 мая 2020',
+                        service : '1 июня 2020',
                         price: 'от 112 000 ₽',
                         oldPrice: '145 232 ₽',
                     

@@ -830,7 +830,7 @@ const concepts = new Vue({
                         showEE : true,
                         showLT : true,
                         showLV : true,
-                        name: 'FUN&SUN Life Side 5',
+                        name: 'FUN&SUN Life Side (ex. Iron Ambassador) 5*',
                         linkAgent: '/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel',
                         linkClient : '/hotel/europe-turkey-side-manavgat-fun__sun__life__side/',
                     },

@@ -244,7 +244,7 @@ const hotels = new Vue({
                         img: 'https://www.tui.ru/getmedia/a07a86c9-3237-49c0-acac-3b9988a809a3/Life-Side',
                         sale: '20%',
                         place: 'Sānu',
-                        name : 'FUN&SUN Life Side 5*',
+                        name : 'FUN&SUN Life Side (ex. Iron Ambassador) 5*',
                         agentLink : '/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel',
                         clientLink : '/hotel/europe-turkey-side-manavgat-fun__sun__life__side/',
                         nights : 'Sezonas jaunums!',

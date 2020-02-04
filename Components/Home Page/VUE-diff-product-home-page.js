@@ -334,7 +334,7 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         
         homeFunSunHotelLink15: '/Tours/Europe/Turkey/side/Manavgat/fun-sun-life-side-resort-hotel',
         homeFunSunHotelLinkClient15: '/hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/',
-        homeFunSunHotelName15: 'FUN&SUN Life Side 5',
+        homeFunSunHotelName15: 'FUN&SUN Life Side (ex. Iron Ambassador) 5*',
         
         homeFunSunHotelLink16: '/Tours/Europe/Turkey/belek/Bogazkent/FUN-SUN-Life-Belek',
         homeFunSunHotelLinkClient16: '/hotel/europe-turkey-belek-bogazkent-fun__sun__life__belek/',
