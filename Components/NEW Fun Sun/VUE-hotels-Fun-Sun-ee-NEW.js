@@ -472,6 +472,38 @@ const hotels = new Vue({
                         oldPrice: '145 232 ₽',
                     
                     },
+                    
+                    {
+                        showEE : true,
+                        
+                        img: 'https://www.tui.ru/getmedia/96f98e3f-e6ce-4da5-bb7d-06febdc34c57/Albatros-Aqua-Vista',
+                        sale: '20%',
+                        place: 'Hurghada',
+                        name : 'FUN&SUN Albatros Aqua Vista 4*',
+                        agentLink : '/Tours/Africa/Egypt/Hurghada/Hurghada/fun-sun-albatros-aqua-vista',
+                        clientLink : '/hotel/africa-egypt-hurghada-hurghada-fun__sun__albatros__aqua__vista/',
+                        nights : 'Hooaja uudis! ',
+                        service : 'Kontseptsioon alustab: 01.03.2020',
+                        price: 'от 112 000 ₽',
+                        oldPrice: '145 232 ₽',
+                    
+                    },
+                    
+                    {
+                        showEE : true,
+                        
+                        img: 'https://www.tui.ru/getmedia/ddcbf7db-0334-44f0-91d7-f067b8d1d4d6/Albatros-Aqua-Blu',
+                        sale: '20%',
+                        place: 'Hurghada',
+                        name : 'FUN&SUN Albatros Aqua Blu 4*',
+                        agentLink : '/Tours/Africa/Egypt/Hurghada/Hurghada/fun-sun-albatros-aqua-blu',
+                        clientLink : '/hotel/africa-egypt-hurghada-hurghada-fun__sun__albatros__aqua__blu/',
+                        nights : 'Hooaja uudis! ',
+                        service : 'Kontseptsioon alustab: 01.04.2020',
+                        price: 'от 112 000 ₽',
+                        oldPrice: '145 232 ₽',
+                    
+                    },
                 ],
             },
             

@@ -1068,7 +1068,29 @@ const concepts = new Vue({
                         linkClient : '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-fun__sun__albatros__palace/',
                     },
                                 
+                    {
+                        showRU : false,
+                        showBY : true,
+                        showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
+                        name: 'FUN&SUN Albatros Aqua Vista 4*',
+                        linkAgent: '/Tours/Africa/Egypt/Hurghada/Hurghada/fun-sun-albatros-aqua-vista',
+                        linkClient : '/hotel/africa-egypt-hurghada-hurghada-fun__sun__albatros__aqua__vista/',
+                    },
                     
+                    {
+                        showRU : false,
+                        showBY : true,
+                        showUA : true,
+                        showEE : true,
+                        showLT : true,
+                        showLV : true,
+                        name: 'FUN&SUN Albatros Aqua Blu 4*',
+                        linkAgent: '/Tours/Africa/Egypt/Hurghada/Hurghada/fun-sun-albatros-aqua-blu',
+                        linkClient : '/hotel/africa-egypt-hurghada-hurghada-fun__sun__albatros__aqua__blu/',
+                    },
                     
                 ],
             },

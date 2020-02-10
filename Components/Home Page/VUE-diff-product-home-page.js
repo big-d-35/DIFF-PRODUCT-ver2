@@ -366,10 +366,18 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunHotelLinkClient22: '/hotel/europe-cyprus-paphos-paphos-fun__sun__akteon__holiday__village/',
         homeFunSunHotelName22: 'FUN&SUN Akteon Holiday Village 4*',
         
-        //EGYPT ПОКА ТОЛЬКО UA
+        //EGYPT 
         homeFunSunHotelLink11: '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace',
         homeFunSunHotelLinkClient11: '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-fun__sun__albatros__palace/',
         homeFunSunHotelName11: 'FUN&SUN Albatros Palace 5*',
+        
+        homeFunSunHotelLink24: '/Tours/Africa/Egypt/Hurghada/Hurghada/fun-sun-albatros-aqua-vista',
+        homeFunSunHotelLinkClient24: '/hotel/africa-egypt-hurghada-hurghada-fun__sun__albatros__aqua__vista/',
+        homeFunSunHotelName24: 'FUN&SUN Albatros Aqua Vista 4*',
+        
+        homeFunSunHotelLink25: '/Tours/Africa/Egypt/Hurghada/Hurghada/fun-sun-albatros-aqua-blu',
+        homeFunSunHotelLinkClient25: '/hotel/africa-egypt-hurghada-hurghada-fun__sun__albatros__aqua__blu/',
+        homeFunSunHotelName25: 'FUN&SUN Albatros Aqua Blu 4*',
         
         //ЧЕРНОГРИЯ
         homeFunSunHotelLink12: '/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort',
