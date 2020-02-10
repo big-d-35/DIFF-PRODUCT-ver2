@@ -27,7 +27,7 @@ const smartPage = new Vue ({
         aboutUA : 'SMART – это современный подход к отдыху, когда звездность отеля и другие составляющие классического турпакета хотя бы ненадолго не имеют никакого значения, потому что вы фокусируетесь только на своих впечатлениях. SMART – это то, что действительно важно на отдыхе.',
         aboutEE : 'SMART on puhkuskontseptsioon, mis on loodud neile, kes soovivad mõistliku hinnaga puhata. Põhiline, mida tegime, oli viietärnihotelli lisamine neljatärnihotellidele. Ja nad jätsid hinna samaks.',
         aboutLT : 'SMART – poilsio koncepcija, sukurta ieškantiems kokybiško poilsio už prieinamą kainą. Puikios atostogos net ir keturių žvaigždučių viešbučiuose – garantuotos.',
-        aboutLV : 'SMART ir atpūtas koncepcija, kas radīta tiem, kas vēlas labi atpūsties par saprātīgu cenu. Galvenais, ko mēs izdarījām, pievienojam pieczvaigžņu apkalpošanas līmeni četrzvaigžņu viesnīcām, bet cenu atstājam tādu pašu”.',
+        aboutLV : 'SMART ir atpūtas koncepcija, kas radīta tiem, kas vēlas labi atpūsties par saprātīgu cenu. Mūsu viesiem piedāvājam atpūtu lieliskās četru zvaigžņu viesnīcās ar pieczvaigžņu apkalpošanas līmeni. Cena? To esam saglabājuši iepriekšējā – četru zvaigžņu līmenī!',
         
         //ФИШКИ
         fishkiPoints : [
@@ -86,7 +86,7 @@ const smartPage = new Vue ({
                 titleUA : 'Подарки гостям',  
                 titleEE : 'Kingitus igale külalisele',  
                 titleLT : 'Dovana kiekvienam svečiui',  
-                titleLV : 'Dāvana katram viesim',
+                titleLV : 'Katram viesim dāvanā eko-mugursoma ',
             },
             
             //5 POINT
@@ -100,7 +100,7 @@ const smartPage = new Vue ({
                 titleUA : 'В номере: тапочки, чайник, набор для душа',  
                 titleEE : 'Mugavused: toasussid, veekeetja, triikraud (nõudmisel)',  
                 titleLT : 'Kambaryje: šlepetės, virdulys, lygintuvas (pagal užklausimą)',  
-                titleLV : 'Numurā: peldmeteļi un čības, tējkanna, gludeklis (pēc pieprasījuma)',
+                titleLV : 'Katrā numurā: peldmēteļi, čības, tējkanna, gludeklis (pēc pieprasījuma)',
                 
             },
         ],
@@ -123,7 +123,7 @@ const smartPage = new Vue ({
                 titleUA : 'В номерах',
                 titleEE : 'Suurepärane teenindus',
                 titleLT : 'Kokybiškas aptarnavimas',
-                titleLV : 'Uzlabotais apkalpošanas līmenis',
+                titleLV : 'Augstas klases apkalpošana',
                 
                 items : [
                     
@@ -142,7 +142,7 @@ const smartPage = new Vue ({
                         itemUA : 'Тапочки',    
                         itemEE : 'Tubades sussid',    
                         itemLT : 'Šlepetės kambaryje',    
-                        itemLV : 'Čības un vannas istabas piederumu komplekts',    
+                        itemLV : 'Čības un peldmēteļi',    
                     },
                     
                     {
@@ -192,7 +192,7 @@ const smartPage = new Vue ({
                 titleUA : 'Новый подход к питанию',
                 titleEE : 'Uus lähenemisviis toitumisele',
                 titleLT : 'Kitoks požiūris į mitybą',
-                titleLV : 'Jauns ēdināšanas veids',
+                titleLV : 'Jauns ēdināšanas veids ',
                 
                 items : [
                     
@@ -229,7 +229,7 @@ const smartPage = new Vue ({
                         itemUA : 'Импортный виски',    
                         itemEE : 'Õllebaar',    
                         itemLT : 'Švieži kepiniai',    
-                        itemLV : 'Mājas ceptuve',    
+                        itemLV : 'Uz vietas cepti beķerejas izstrādājumi ',    
                     },
                     
                     {
@@ -247,7 +247,7 @@ const smartPage = new Vue ({
                         itemUA : 'Фирменный стритфуд – гирос',    
                         itemEE : 'Signature tänavatoit - güroskoobid',    
                         itemLT : 'Parašas gatvės maistas - giroskopai',    
-                        itemLV : 'Signature Street Food - Gyros',    
+                        itemLV : 'Street Food – giross',    
                     },
                     
                     
@@ -263,7 +263,7 @@ const smartPage = new Vue ({
                 titleUA : 'Развлечения',
                 titleEE : 'Ainult vajalik meelelahutus',
                 titleLT : 'Pramogos',
-                titleLV : 'Tikai interesantas izklaides',
+                titleLV : 'Aizraujoša izklaide',
                 
                 items : [
                     
@@ -309,7 +309,7 @@ const smartPage = new Vue ({
                         itemUA : 'Спортивные активности',    
                         itemEE : 'Sporditegevused',    
                         itemLT : 'Sportinė veikla',    
-                        itemLV : 'Sporta aktivitātes',    
+                        itemLV : 'Daudzveidīga sporta aktivitāšu programma',    
                     },
                     
                     
@@ -371,7 +371,7 @@ const smartPage = new Vue ({
                         itemUA : 'BIO огород с пряными травами',    
                         itemEE : 'Kaubamärgiga kingitus',    
                         itemLT : 'Viešbučio dovana',    
-                        itemLV : 'Brendu dāvana',    
+                        itemLV : 'Dāvanā Mini Toucan kluba tērps: īpašs t-krekls un lakatiņš ar logo',    
                     },
                     
                     

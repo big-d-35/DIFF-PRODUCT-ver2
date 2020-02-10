@@ -14,7 +14,7 @@ const concepts = new Vue({
                 itemUA: 'Новые знакомства и впечатления',
                 itemEE: 'Uued tutvused ja muljed',
                 itemLT: 'Naujos pažintys ir įspūdžiai',
-                itemLV: 'Jaunās iepazīšanās un iespaidi ',
+                itemLV: 'Jaunas iepazīšanās un iespaidi ',
             },
             
             {
@@ -33,7 +33,7 @@ const concepts = new Vue({
                 itemUA: 'Активный спортивный день',
                 itemEE: 'Aktiivne sportlik päev',
                 itemLT: 'Aktyvios sporto dienos',
-                itemLV: 'Aktīva sporta diena',
+                itemLV: 'Aktīvas un sportiskas dienas',
                 
             },
             
@@ -43,7 +43,7 @@ const concepts = new Vue({
                 itemUA: 'Громкая музыка и яркие шоу',
                 itemEE: 'Vali muusika ja värvikad etteasted',
                 itemLT: 'Garsi muzika ir ryškūs pasirodymai',
-                itemLV: 'Skaļa mūzika un dinamiskās ',
+                itemLV: 'Skaļa mūzika un aizraujoši šovi',
                 
             },
             
@@ -95,7 +95,7 @@ const concepts = new Vue({
                         itemUA : 'Халат и тапочки, набор для душа',
                         itemEE : 'Hommikumantel ja sussid, vannitoatarbed',
                         itemLT : 'Chalatai ir šlepetės, kosmetinis rinkinys',
-                        itemLV : 'Peldmetēļi un čības, dušas komplekts',
+                        itemLV : 'Peldmēteļi, čības un vannas istabas komplekts',
                     },
                     
                     {
@@ -104,7 +104,7 @@ const concepts = new Vue({
                         itemUA : 'Набор для приготовления чая и кофе',
                         itemEE : 'Tee ja kohvi valmistamise võimalus',
                         itemLT : 'Kavos/arbatos rinkinys',
-                        itemLV : 'Tējas/Kafijas pagatavosanas komplekts',
+                        itemLV : 'Tējas/kafijas pagatavošanas komplekts',
                     },
                     
                     {
@@ -113,7 +113,7 @@ const concepts = new Vue({
                         itemUA : 'Утюг и гладильная доска по запросу',
                         itemEE : 'Soovi korral triikraud ja triikimislaud',
                         itemLT : 'Lyginimo įranga pagal užklausimą',
-                        itemLV : 'Gludeklis un gludināmais dēlis pēc pieprasījuma',
+                        itemLV : 'Gludeklis un gludināmais dēlis (pēc pieprasījuma)',
                     },
                     
                     {
@@ -122,7 +122,7 @@ const concepts = new Vue({
                         itemUA : 'Вода в мини-баре каждый день',
                         itemEE : 'Minibaaris vesi iga päev',
                         itemLT : 'Vanduo mini bare kievieną dieną',
-                        itemLV : 'Ūdens mini bārā katru dienu',
+                        itemLV : 'Ūdens mini-bārā katru dienu',
                     },
                     
                     {
@@ -148,7 +148,7 @@ const concepts = new Vue({
                 titleUA: 'Улучшенное питание',
                 titleEE: 'Parem toitlustus',
                 titleLT: 'Pagerintas maitinimas',
-                titleLV: 'Uzlabota ēdināšana',
+                titleLV: 'Izcila ēdināšana',
                 
                 items : [
                     
@@ -169,7 +169,7 @@ const concepts = new Vue({
                         itemUA : 'Натуральный кофе и чай',
                         itemEE : 'Naturaalne kohv ja tee',
                         itemLT : 'Natūrali kava ir arbata',
-                        itemLV : 'Naturāla kafija un tēja',
+                        itemLV : 'Dabīga kafija un tēja',
                     },
                     
                     {
@@ -187,7 +187,7 @@ const concepts = new Vue({
                         itemUA : 'Ночные напитки и закуски',
                         itemEE : 'Öised joogid ja suupisted',
                         itemLT : 'Naktiniai gėrimai ir užkandžiai',
-                        itemLV : 'Nakts dzērieni un uzkodas',
+                        itemLV : 'Nakts uzkodas un dzērieni',
                     },
                     
                     {
@@ -211,7 +211,7 @@ const concepts = new Vue({
                 titleUA: 'Развлечения',
                 titleEE: 'Meelelahutus',
                 titleLT: 'Pramogos',
-                titleLV: 'Izklaides',
+                titleLV: 'Aizraujoša izklaide',
                 
                 items : [
                     
@@ -221,7 +221,7 @@ const concepts = new Vue({
                         itemUA : 'Выступление известных DJ ',
                         itemEE : 'Tuntud DJ-de esinemised',
                         itemLT : 'Populiarių DJ pasirodymai',
-                        itemLV : 'Populāru DJ uzstašānās',
+                        itemLV : 'Populāru DJ uzstāšanās',
                     },
                     
                     {
@@ -230,7 +230,7 @@ const concepts = new Vue({
                         itemUA : 'Бесплатный вход в ночные клубы курорта',
                         itemEE : 'Tasuta sissepääs kuurordi ööklubidesse',
                         itemLT : 'Nemokamas įėjimas į naktinius kurorto klubus',
-                        itemLV : 'Bezmaksas ieieja kūrorta nakts klubos',
+                        itemLV : 'Bezmaksas ieeja kūrorta nakts klubos',
                     },
                     
                     {
@@ -248,7 +248,7 @@ const concepts = new Vue({
                         itemUA : 'Аэробика и аквааэробика, йога и пилатес',
                         itemEE : 'Aeroobika ja vesiaeroobika, jooga ja pilates',
                         itemLT : 'Aerobika ir vandens aerobika, joga ir pilatesas',
-                        itemLV : 'Aerobika un ūdensaerobika, joga un pilates',
+                        itemLV : 'Aerobika, ūdens aerobika, joga un pilates',
                     },
                     
                     {
@@ -293,7 +293,7 @@ const concepts = new Vue({
                         itemUA : 'Pool bar, snack bar, disco bar',
                         itemEE : 'Basseinibaar, suupistebaar, diskobaar',
                         itemLT : 'Baras prie baseino, užkandžių baras, disko baras',
-                        itemLV : 'Bārs pie baseina, uzkodu bārs, disko bārs',
+                        itemLV : 'Bārs pie baseina, uzkodu bārs, disko-bārs',
                     },
                     
                     {
@@ -311,7 +311,7 @@ const concepts = new Vue({
                         itemUA : 'Площадка для open air',
                         itemEE : 'Vabaõhuväljak',
                         itemLT : 'Aikštelė po atviru dangumi',
-                        itemLV : 'Brīvdabas laukums ',
+                        itemLV : 'Open air laukums',
                     },
                     
                     {
@@ -320,7 +320,7 @@ const concepts = new Vue({
                         itemUA : 'Spa-центр: турецкая баня, сауна ',
                         itemEE : 'Spaakeskus: Türgi saun, saun',
                         itemLT : 'SPA centras: turkiška pirtis, sauna',
-                        itemLV : 'Spa centrs: turku pirts, sauna',
+                        itemLV : 'SPA centrs: turku pirts, sauna',
                     },
                     
                     

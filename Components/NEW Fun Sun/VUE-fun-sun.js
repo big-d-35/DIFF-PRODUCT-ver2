@@ -43,7 +43,7 @@ const concepts = new Vue({
                 itemUA: 'Relax-зона 18+ : Chill out и бассейн',
                 itemEE: 'Lõõgastusala 18+: Chill out ja bassein',
                 itemLT: 'Poilsio zona 18+: chill out ir baseinas',
-                itemLV: 'Relax zona 18+: Chill out un baseins',
+                itemLV: 'Klusās zonas viesiem 18+; Chill Out zona un baseins',
                 
             },
             
@@ -94,7 +94,7 @@ const concepts = new Vue({
                         itemUA : 'Wi-Fi',
                         itemEE : 'Wi-Fi',
                         itemLT : 'Wi-Fi',
-                        itemLV : 'Wi-Fi',
+                        itemLV : 'Ātrgaitas Wi-Fi',
                     },
                     
                     
@@ -104,7 +104,7 @@ const concepts = new Vue({
                         itemUA : 'Вода в мини-баре каждый день',
                         itemEE : 'Minibaaris vesi iga päev',
                         itemLT : 'Vanduo mini bare kiekvieną dieną ',
-                        itemLV : 'Ūdens mini bārā katru dienu',
+                        itemLV : 'Ūdens mini-bārā katru dienu',
                     },
                     
                     {
@@ -122,7 +122,7 @@ const concepts = new Vue({
                         itemUA : 'Набор для душа',
                         itemEE : 'Vannitoatarbed',
                         itemLT : 'Kosmetinis rinkinys',
-                        itemLV : 'Dušas komplekts',
+                        itemLV : 'Vannas istabas piederumi',
                     },
                     
                     {
@@ -167,7 +167,7 @@ const concepts = new Vue({
                         itemUA : 'Свежевыжатый апельсиновый сок',
                         itemEE : 'Värskelt pressitud apelsinimahl',
                         itemLT : 'Šviežiai spaustos apelsinių sultys',
-                        itemLV : 'Svaigi spiesta sula ',
+                        itemLV : 'Svaigi spiesta apelsīnu sula brokastīs',
                     },
                     
                     {
@@ -176,7 +176,7 @@ const concepts = new Vue({
                         itemUA : 'Рестораны a la carte',
                         itemEE : 'A la Carte restoranid',
                         itemLT : 'A la Carte restoranai',
-                        itemLV : 'A la Carte restorāni ',
+                        itemLV : 'A La Carte restorāni  ',
                     },
                     
                     {
@@ -212,7 +212,7 @@ const concepts = new Vue({
                         itemUA : 'Индивидуальное приготовление блюд для людей с ограничениями',
                         itemEE : 'Individuaalselt valmistatud toidud erivajadustega inimestele',
                         itemLT : 'Individualus maisto ruošimas asmenims su ',
-                        itemLV : 'Individuāla ēdienu pagatavošana personām ar īpašām vajadzībām',
+                        itemLV : 'Individuāli pagatavoti ēdieni cilvēkiem ar ēšanas ierobežojumiem',
                     },
                 ],
             },
@@ -286,7 +286,7 @@ const concepts = new Vue({
                         itemUA : 'Baby lounge от 0 до 4 лет',
                         itemEE : 'Baby Lounge 0 kuni 4-aastastele',
                         itemLT : 'Baby lounge nuo 0 iki 4 metų',
-                        itemLV : 'Baby lounge no 0 līdz 4 gadiem',
+                        itemLV : 'Zīdaiņu laundžs no 0 līdz 4 gadiem',
                     },
                     
                     
@@ -351,7 +351,7 @@ const concepts = new Vue({
                         itemUA : 'Уроки плавания',
                         itemEE : 'Ujumisõpetus',
                         itemLT : 'Plaukimo pamokos ',
-                        itemLV : 'Peldētapmācības',
+                        itemLV : 'Peldēšanas apmācības',
                     },
                 ],
             },
@@ -388,7 +388,7 @@ const concepts = new Vue({
                         itemUA : 'Бой водными пистолетами',
                         itemEE : 'Veepüstolisõda',
                         itemLT : 'Vandens pistoletų kovos',
-                        itemLV : 'Ūdens pistoles kaujas',
+                        itemLV : 'Ūdens pistoļu kaujas',
                     },
                     
                     {
@@ -397,7 +397,7 @@ const concepts = new Vue({
                         itemUA : 'Пространство для подростков',
                         itemEE : 'Teismeliste ala',
                         itemLT : 'Paauglių zona',
-                        itemLV : 'Pusaudžu telpa',
+                        itemLV : 'Izklaides zona pusaudžiem',
                     },
                     
                     {
@@ -406,7 +406,7 @@ const concepts = new Vue({
                         itemUA : 'Тематические квесты',
                         itemEE : 'Teemaretked',
                         itemLT : 'Teminiai galvosūkiai ir žaidimai',
-                        itemLV : 'Tematiskie kvesti',
+                        itemLV : 'Tematiskie kvesti ',
                     },
                     
                     {
@@ -415,7 +415,7 @@ const concepts = new Vue({
                         itemUA : 'Шоу фокусника',
                         itemEE : 'Mustkunstietendus',
                         itemLT : 'Magijos šou',
-                        itemLV : 'Burvju šovs',
+                        itemLV : 'Burvju mākslinieka šovi ',
                     },
                     
                     {
@@ -424,7 +424,7 @@ const concepts = new Vue({
                         itemUA : 'Роспись гипсовых фигур',
                         itemEE : 'Kipskujukeste värvimine',
                         itemLT : 'Gipsinių figūrų tapyba',
-                        itemLV : 'Ģipša figūru apgleznošana',
+                        itemLV : 'Ģipša figūru apgleznošana ',
                     },
                     
                     {
@@ -433,7 +433,7 @@ const concepts = new Vue({
                         itemUA : 'Стрит-арт',
                         itemEE : 'Tänavakunst',
                         itemLT : 'Gatvės menas',
-                        itemLV : 'Ielu māksla',
+                        itemLV : 'Ielu māksla ',
                     },
                     
                     {
@@ -442,7 +442,7 @@ const concepts = new Vue({
                         itemUA : 'Академия плавания и футбола',
                         itemEE : 'Ujumis- ja jalgpalliakadeemia',
                         itemLT : 'Plaukimo ir futbolo akademija',
-                        itemLV : 'Peldēšanas un futbola akadēmija',
+                        itemLV : 'Peldēšanas un futbola akadēmija ',
                     },
                 ],
             },
@@ -467,7 +467,7 @@ const concepts = new Vue({
                         itemUA : 'Уроки плавания и тенниса',
                         itemEE : 'Ujumis- ja tenniseõpetus',
                         itemLT : 'Plaukimo ir teniso pamokos',
-                        itemLV : 'Peldēšanas un tenisa nodarbības',
+                        itemLV : 'Peldēšanas un tenisa nodarbības ',
                     },
                     
                     {
@@ -476,7 +476,7 @@ const concepts = new Vue({
                         itemUA : 'Мастер класс по завязыванию парео',
                         itemEE : 'Pareo sidumise meistriklass',
                         itemLT : 'Pareo gamybos dirbtuvės',
-                        itemLV : 'Pareo siešanas meistarklase',
+                        itemLV : 'Pareo siešanas meistarklases',
                     },
                     
                     {
@@ -485,7 +485,7 @@ const concepts = new Vue({
                         itemUA : 'Тату хной',
                         itemEE : 'Hennatätoveeringud',
                         itemLT : 'Chna tatuiruotės',
-                        itemLV : 'Hennas tetovējums',
+                        itemLV : 'Hennas tetovējumu meistarklases',
                     },
                     
                     {
@@ -503,7 +503,7 @@ const concepts = new Vue({
                         itemUA : 'Йога, пилатес, аквааэробика',
                         itemEE : 'Jooga, pilates, vesiaeroobika',
                         itemLT : 'Joga, pilatesas, vandens aerobika',
-                        itemLV : 'Udensaerobika',
+                        itemLV : 'Ūdens aerobika',
                     },
                     
                     {
@@ -512,7 +512,7 @@ const concepts = new Vue({
                         itemUA : 'Кулинарные мастер-классы',
                         itemEE : 'Kulinaaria meistriklassid',
                         itemLT : 'Kulinariniai užsiėmimai',
-                        itemLV : 'Kulināras meistarklases ',
+                        itemLV : 'Kulinārijas meistarklases',
                     },
                     
                     {

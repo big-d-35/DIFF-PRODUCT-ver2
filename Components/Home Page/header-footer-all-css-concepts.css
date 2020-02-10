@@ -3379,7 +3379,7 @@ h3 {
 .label-menu-2 {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -12px;
     width: 130%;
     overflow: hidden;
     display: none

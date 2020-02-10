@@ -429,7 +429,7 @@ const hotels = new Vue({
                         agentLink : '/Tours/Europe/Montenegro/Barska-Rivijera/chan/FUN-SUN-Pearl-Beach-Resort',
                         clientLink : '/hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/',
                         nights : 'Новинка сезона! ',
-                        service : 'Начало работы по концепции: 15 мая 2020',
+                        service : 'Начало работы по концепции: 2 мая 2020',
                         price: 'от 112 000 ₽',
                         oldPrice: '145 232 ₽',
                     

@@ -14,8 +14,8 @@ const homePageFirstBlock = new Vue ({
         firstBlockHeadNameEE2: 'TUI',
         firstBlockHeadNameLT1: 'POILSIO KONCEPCIJOS,',
         firstBlockHeadNameLT2: 'SUKURTOS TUI',
-        firstBlockHeadNameLV1: 'ATPŪTAS KONCEPCIJAS,',
-        firstBlockHeadNameLV2: 'KAS RADĪTAS TUI',
+        firstBlockHeadNameLV1: 'TUI RADĪTAS',
+        firstBlockHeadNameLV2: 'ATPŪTAS KONCEPCIJAS',
         
         //COMMENT
         firstBlockHeadCommentRU1: 'Мы знаем, какой отдых вам нужен,',
@@ -28,12 +28,13 @@ const homePageFirstBlock = new Vue ({
         firstBlockHeadCommentEE2: 'sest olete ise meile sellest rääkinud!',
         firstBlockHeadCommentLT1: 'Mes žinome, kokių reikia atostogų,',
         firstBlockHeadCommentLT2: 'nes Jūs mums apie tai pasakėte!',
-        firstBlockHeadCommentLV1: 'Mēs zinām, kāda atpūta jums ir nepieciešama,',
-        firstBlockHeadCommentLV2: 'jo jūs paši par to mums pastāstījāt!',
+        firstBlockHeadCommentLV1: 'Mēs zinām, kāda veida atpūta Jums ir vajadzīga! ',
+        firstBlockHeadCommentLV2: 'Šos konceptus rūpīgi izstrādājām balstoties uz mūsu klientu ieteikumiem un vēlmēm.',
         
         //ПРЕЗЕНТАЦИЯ
         firstBlockHeadPresentaionLink: 'https://www.tui.ru/getmedia/b448c677-abf8-40ec-8578-1a05f7268b4b/NEW_Concept_Presentation_B2B_31-10',
         firstBlockHeadPresentaionLinkUA: 'https://www.tui.ru/getmedia/b448c677-abf8-40ec-8578-1a05f7268b4b/NEW_Concept_Presentation_B2B_31-10',
+        firstBlockHeadPresentaionLinkRU: 'https://www.tui.ru/getmedia/9d443f85-cd7f-49c7-9463-0a6800db1190/All-concept-for-agency_Final',
         firstBlockHeadPresentaionRU: 'Презентация Дифф продукта',
         firstBlockHeadPresentaionBY: 'Презентация Дифф продукта',
         firstBlockHeadPresentaionUA: 'Презентация Дифф продукта',
@@ -69,9 +70,9 @@ const homePageTextBlock = new Vue ({
         homePageTextBlockLT1: 'TUI poilsio koncepcijos',
         homePageTextBlockLT2: '- tai naujas poilsio formatas, kur atsižvelgiama į visų kartų interesus ir šiuolaikines tendencijas. 100 000 turistų jau pasirinko ir išbandė tokio tipo poilsį mūsų viešbučiuose.',
         homePageTextBlockLT3: 'Laikas rinktis! Išsirinkite šalį ir užsisakykite Jums tinkamiausią atostogų tipą!',
-        homePageTextBlockLV1: 'TUI atpūtas koncepcijas',
-        homePageTextBlockLV2: '- jauna formāta atpūta, kur tiek ņemtas vērā visu paaudžu intereses un mūsdienīgas tendences. Jau 100 000 viesu ir izvēlējušies atpūtu mūsu viesnīcas. ',
-        homePageTextBlockLV3: 'Ir pienācis laiks izdarīt izvēli! Izvēlēties valsti un rezervējiet atpūtas koncepciju, kas ir piemērota tieši jums!',
+        homePageTextBlockLV1: 'TUI atpūtas koncepcijas ',
+        homePageTextBlockLV2: '- ir jauns atpūtas formāts, kura izstrādē ņemtas vērā dažādu paaudžu intereses, kā arī modernākās tūrisma nozares tendences. Jau vairāk kā 100 000 cilvēku ir izdarījuši izvēli par labu brīvdienām mūsu koncepta viesnīcās.',
+        homePageTextBlockLV3: 'Uz to aicinām arī Jūs! Atliek vien izvēlēties valsti, Jums atbilstošāko atpūtas konceptu un atvaļinājums var sākties! ',
     }
 });
 
@@ -111,11 +112,11 @@ const homePageSmartBlockText = new Vue ({
         textLT2: 'Visų pirma, mes siūlome paslaugą žvaigždute aukščiau: animaciją, vaikų klubą, maistą ir gėrimus, nemokamą Wi-Fi, atpažįstamą dizaino stilių ir kokybę už prieinamą kainą. SMART teikia malonumą kiekvienam: natūrali kava ir kepyklėlė, vaikų klubas ir nemokami ledai.',
         textLT3: 'Be to, SMART rūpinasi aplinka, o tai reiškia ekologišką idėją. Jokių plastikinių puodelių ir šiaudelių, protingas būdas nešvaistyti vandens ir energijos, šiukšliadėžės atliekų rūšiavimui.',
         
-        titleLV1: 'Atpūtas koncepcija SMART',
-        titleLV2: 'Gudrā pieeja atpūtai',
-        textLV1: 'Mēs rīkojam revolūciju budžeta atpūtas tirgū! SMART - koncepcija katrām:  gan ģimenem gan jauniešiem, kuriem ir vienots mērķis un viena vēlme - labi atpūsties par saprātīgu cenu.',
-        textLV2: 'Pirmkārt, mēs piedāvājam 5* zvaigznēm atbilstošu servisu: animācija, bērnu klubs, ēdināšana un dzērieni, bezmaksas Wi-Fi, labi pazīstamu stilu dizainā un kvalitāti par pieejamu cenu. SMART tas ir: naturāla kafija un kafejnīca-ceptuve, bērnu klubs un bezmaksas saldējums.',
-        textLV3: 'Bez tam, SMART rūpējas par apkārtējo vidi, kas nozīme videi draudzīgu koncepciju. Nekādu plastmasas glāzīšu un salmiņu, gudrā pieeja ūdens un elektroenerģijas patēriņam, atkritumu šķirošanas tvertnes.',
+        titleLV1: 'BRĪVDIENU KONCEPTS SMART',
+        titleLV2: 'Gudra pieeja atpūtai',
+        textLV1: 'SMART koncepts ir piemērots ikvienam ceļotājam, kurš vēlas izbaudīt kvalitatīvas brīvdienas par saprātīgu cenu.',
+        textLV2: 'Pieczvaigžņu serviss četrzvaigžņu viesnīcā – plaša pasākumu programma, atraktīva animācija, nodarbības bērniem, ēdieni, dzērieni, bezmaksas Wi-Fi, patīkams, mūsdienīgs dizains un pāri visam – izcila kvalitāte par pieņemamu cenu.',
+        textLV3: 'SMART koncepts ir arī ļoti ekoloģisks – samazināta plastmasas trauku un salmiņu izmantošana līdz minimumam, ūdens un elektroenerģijas lietojums SMART viesnīcās ir pārdomāts un videi draudzīgs, viesnīcas teritorijā ir uzstādītas tvertnes atkritumu šķirošanai. ',
 
 
     }
@@ -212,10 +213,10 @@ const homePageFunSunBlockText = new Vue ({
         homePageFunSunBlockTextLT1: 'Atostogų metu FUN&SUN viešbučiai tampa savotišku miniatiūriniu pasauliu, kuriame kambarys - namai, „Toucan“ vaikų klubas - darželis ir mokykla, jūra ir įvairūs baseinai tampa maloniausiu vonios kambariu pasaulyje, restoranai - svajonių virtuve.',
         homePageFunSunBlockTextLT2: 'Mes ilgai ruošiamės Jūsų atvykimui pasirinkome 8 puikius viešbučius, sukūrėme specialius meniu, paruošėme pramogines ir sporto programas.',
         
-        homePageFunSunBlockTitleLV1: 'Ģimenes atpūtas koncepcija FUN&SUN',
-        homePageFunSunBlockTitleLV2: 'Pārdomāta ģimenes atpūta',
-        homePageFunSunBlockTextLV1: 'Atpūtas laikā FUN&SUN viesiem viesnīca kļūst par sava veida pasauli miniatūrā, kur viesnīcas numurs - ir dzīvoklis, bērnu klubs Mini Toucan - bērnudārzs un skola, jūra un baseini kļūst par labāko vannu, galvenais viesnīcas restorāns - sapņu virtuve ar nebeidzamu ēdienu izvēli, bet A La Carte restorāni - brīvdienu atpūtas "vieta" visai ģimenei.',
-        homePageFunSunBlockTextLV2: 'Mēs ilgi gatavojāmies jūsu uzņemšanai vasaras sezonas mēs izvēlējāmies 20 brīnišķīgas viesnīcas, ieviesām kārtību un tīrību, izveidojām īpašu ēdienkarti, izklaides un sporta programmu, un, protams, apmācījām katru darbinieku.',
+        homePageFunSunBlockTitleLV1: 'ĢIMENES BRĪVDIENU KONCEPTS FUN & SUN',
+        homePageFunSunBlockTitleLV2: 'Līdz sīkākajām detaļām pārdomātas ģimenes brīvdienas ',
+        homePageFunSunBlockTextLV1: 'Atpūtas laikā FUN & SUN koncepta viesnīca viesim kļūst par sava veida miniatūru pasauli: viesnīcas numuriņš uz atvaļinājuma laiku pārtop par Jūsu dzīvokli, bet bērnu klubs Toucan – par bērnudārzu vai skolu Jūsu bērniem. Bez tam FUN & SUN koncepta viesnīcas piedāvā arī relaksējošu atpūtu pie jūras vai baseina, nebeidzamas maltītes galvenajā restorānā ar bagātīgu ēdienkarti vai A La Carte restorānos, kuru apmeklējums būs lielisks kulinārs piedzīvojums visai ģimenei.',
+        homePageFunSunBlockTextLV2: '20 burvīgas FUN & SUN koncepta viesnīcas Jūs jau gaida: skaisti numuri,  pārdomāta ēdienkarte, interesanta un plaša izklaides un sporta programma. ',
     }
     
 });
@@ -428,11 +429,11 @@ const homePageDayNightBlockText = new Vue ({
         homePageDayNightBlockTextLT2: '',
         homePageDayNightBlockTextLT3: 'Poilsio koncepcija aktyvaus gyvenimo mylėtojams: nuo sporto užsiėmimų, SPA procedūrų iki teminių vakarėlių, komandinių žaidimų ir naktinių klubų',
         
-        homePageDayNightBlockTitleLV1: 'Jauniešu atpūtas koncepcija DAY&NIGHT Connected',
-        homePageDayNightBlockTitleLV2: 'Enerģijas pilna atpūta!',
-        homePageDayNightBlockTextLV1: 'TUI DAY&NIGHT Connected - vesela izklaides, pozitīvo emociju un piedzīvojumu pasaule, kuru jūs atcerēsieties visu mūžu!',
-        homePageDayNightBlockTextLV2: 'Pasaule, kas sastāv no "Ultra All Inclusive" saules sistēmas, ar svaigi spiesto sulu, nacionālo ēdienu, eiropas virtuves, A La Carte restorānu un bezmaksas importēto alkoholisko dzērienu planētām; Izklaides galaktika ar zvaigznājiem Wellness - Fitness", kur notiek meistarklases ar slaveniem instruktoriem un "Night Life" ar bezmaksas ieeju populārajos nakts klubos, un bezgalīgs Wi-Fi.',
-        homePageDayNightBlockTextLV3: 'Atpūsties no burzmas var stacijā "Numurs" malkojot karstu tēju ērtā peldmētelī un čībās.',
+        homePageDayNightBlockTitleLV1: 'AKTĪVAS ATPŪTAS KONCEPTS DAY & NIGHT CONNECTED',
+        homePageDayNightBlockTitleLV2: 'Atpūta, kas piepilda ar enerģiju! ',
+        homePageDayNightBlockTextLV1: 'DAY & NIGHT Connected koncepts - neaizmirstams jautru un spilgtu emociju piedzīvojums!',
+        homePageDayNightBlockTextLV2: 'Bezrūpīga “Ultra Viss iekļauts” tipa atpūta, kas ietver dažādus cienastus - sākot no svaigi spiestas apelsīnu sulas, nacionālajiem ēdieniem, Eiropas virtuvi, beidzot ar A La Carte restorāniem un bezmaksas alkoholu. Atpūtas laikā izcili pasniedzēji un profesionāli treneri vadīs dažāda veida sporta un relaksācijas nodarbības. Esam arī parūpējušies par naktsdzīves izklaides iespējām – mūsu viesiem ir pieejama bezmaksas ieeja populārākajos pilsētas naktsklubos. Un, protams, kas gan ir mūsdienu dzīve bez interneta! Bezlimita pieeja Wi-Fi ir katram mūsu viesim.',
+        homePageDayNightBlockTextLV3: 'Bet izbaudīt atpūtu no burzmas var omulīgajā numuriņā, pārdomājot aktīvās un notikumiem bagātās dienas piedzīvojumus ērtā peldmētelī un malkojot gardu tēju.',
         
     }
 });
@@ -478,7 +479,7 @@ const homePageDayNightBlockVideoHotels = new Vue ({
         homeFunSunHotelLinkClient2: '/hotel/europe-turkey-kemer-kemer__center-day__night__connected__imperial__turkiz__hotel/',
         homeFunSunHotelName2: 'DAY&NIGHT Connected Imperial Turkiz Hotel',
     
-        //ТОЛЬКО НА УКРАИНЕ
+        
         homeFunSunHotelLink3: '/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/day-night-connected-tropitel-waves',
         homeFunSunHotelLinkClient3: '/hotel/africa-egypt-sharm__el__sheikh-sharm__el__sheikh-day__night__connected__tropitel__waves/',
         homeFunSunHotelName3: 'DAY&NIGHT Connected Tropitel Waves 5*',
@@ -535,13 +536,13 @@ const homePageToucanBlockText = new Vue ({
         homePageToucanBlockSpisokItemLT2: 'Klubas veikia 6 dienas per savaitę, nuo 10 iki 17 val su pietų pertrauka.',
         homePageToucanBlockSpisokItemLT3: 'Vakarais - vaikų diskoteka.',
         
-        homePageToucanBlockTitleLV1: 'Bērnu klubi Mini Toucan',
-        homePageToucanBlockTitleLV2: 'Galvenā atslēga veiksmīgai atpūtai kopā ar bērniem',
-        homePageToucanBlockTextLV1: 'Bērnu klubs Mini Toucan - profesionāļu veidota izglītojošī-izklaidējoša atpūtas teritorija ar spēļu programmu bērniem no 4 līdz 12 gadiem, ņemot vērā vecāku viedokli. Viesnīcas ar bērnu klubiem Mini Toucan piedāvā iespēju pavadīt ilgi gaidīto atvaļinājumu, nepārdzīvojot par bērnu drošību un izklaidi, bet bērniem jautri un izglītojoši atpūsties.',
-        homePageToucanBlockTextLV2: 'Kas ir bērnu klubs Mini Toucan?',
-        homePageToucanBlockSpisokItemLV1: 'Programma bērniem divās vecuma grupās: Toucan Kids 4-7 g. un Toucan Junior 8-12 g.',
-        homePageToucanBlockSpisokItemLV2: 'Klubs ir atvērts 6 dienas nedēļā no 10-00 līdz 16-30 ar pusdienu pārtraukumiem.',
-        homePageToucanBlockSpisokItemLV3: 'Vakaros - mini-diskotēka.',
+        homePageToucanBlockTitleLV1: 'BĒRNU KLUBS MINI TOUCAN',
+        homePageToucanBlockTitleLV2: 'Galvenā atslēga veiksmīgai atpūtai kopā ar bērniem ',
+        homePageToucanBlockTextLV1: 'TUI bērnu klubs Mini Toucan ir atpūtas zona ar izklaidējošu un izglītojošu rotaļu un nodarbību programmu bērniem vecumā no 4 līdz 12 gadiem. Visas programmas ir izstrādājuši profesionāļi. Tās izveidē tika ņemti vērā bērnu vecāku ieteikumi, vēlmes un idejas.  Bērnu klubus Mini Toucan sniedz iespēju vecākiem mierīgi izbaudīt ilgi gaidītās brīvdienas, apzinoties, ka viņu bērns ir drošībā un jautri pavada laiku.',
+        homePageToucanBlockTextLV2: 'Kas ir Mini Toucan klubs?',
+        homePageToucanBlockSpisokItemLV1: 'Programma bērniem divās vecuma grupās: Toucan Kids 4-7 gadi, Toucan Junior 8-12 gadi. ',
+        homePageToucanBlockSpisokItemLV2: 'Klubs darbojas 6 dienas nedēļā, no 10:00 līdz 12:30, no 14:30 līdz 17:00.',
+        homePageToucanBlockSpisokItemLV3: 'Vakaros -  bērnu diskotēkas.',
     }
     
 });
