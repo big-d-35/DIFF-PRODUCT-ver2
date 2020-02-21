@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Diff Product Home Page</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://www.tui.ru/getmedia/9177b70d-c9a9-49a5-803e-dacf78836f2e/All-old-style-diff-min" rel="stylesheet" type="text/css">
+    <style type="text/css">
+            
+.video-fs.picture4 {
+    background-image: url(https://www.tui.ru/getmedia/3904be0b-e7d8-4d57-bc9a-18311a9b8649/Smart_banner-1);
+    height: 100%;
+}
+    .ActionPage-container {
+            background: white!important;
+        } 
+    body {
+        font-family: TUI-reg, TUI;
+    }
+
+    .ActionPage-container .static {
+        margin: 0 auto;
+        width: auto;
+    }
+
+    #content {
+        max-width: unset !important;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    .head {
+        position: relative;
+        background: url('https://www.tui.ru/getmedia/217e8dde-1d10-4d87-934e-025ec62406be/head_new') top center;
+        width: 100%;
+        height: 471px;
+        background-size: cover;
+    }
+
+    .head .center-block {
+        width: 1150px;
+        max-width: 1150px;
+        margin: 0 auto;
+        position: relative;
+        height: 471px;
+    }
+
+    .head .white-box {
+        position: absolute;
+        top: 18%;
+        left: 0;
+        padding: 30px 30px 0 30px;
+        background: #ffffff;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 38%;
+        max-width: 475px;
+    }
+
+    .head .white-box .header {
+        font-size: 30px;
+        font-weight: bold;
+        color: #092a5f;
+    }
+
+    .head .white-box .comment {
+        margin: 20px 0 30px 0;
+        font-size: 19px;
+        color: #092a5f;
+    }
+
+    .head .white-box .button {
+        font-size: 19px;
+        text-transform: uppercase;
+        padding: 13px;
+        width: 93%;
+        cursor: pointer;
+        margin: -5px 0 67px 0;
+        background: #092a5f;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .head .details {
+        position: absolute;
+        left: 0;
+        font-size: 15px;
+        color: #092a5f;
+        margin: 0 30px 0 30px;
+        line-height: 0.95;
+        bottom: 15px;
+    }
+
+    .content-block {
+        position: relative;
+        width: 1150px;
+        max-width: 1150px;
+        margin: 20px auto;
+        /*padding:0 5%;*/
+        /*width:90%; */
+    }
+
+    .content-block .text {
+        margin: 40px 0;
+        font-size: 18px;
+        padding: 0 0;
+    }
+
+    .content-block .block-head {
+        overflow: hidden;
+        width: 762px;
+        margin: 0 0;
+    }
+
+    .content-block .block-head .logo {
+        float: left;
+        margin-left: 12px;
+        width: 121px;
+        min-height: 90px;
+    }
+
+    .content-block .block-head .about {
+        float: right;
+        width: 616px;
+        min-height: 90px;
+    }
+
+    .content-block .block-head .about .name {
+        font-size: 27px;
+        font-weight: bold;
+        color: #092a5f;
+    }
+
+    .content-block .block-head .about .text {
+        margin: 20px 0 0 0;
+    }
+
+    .content-block .block-head .about ul.text {
+        margin: 20px 0 0 30px;
+    }
+
+    .content-block .block {
+        overflow: hidden;
+        width: 100%;
+        margin: 40px 0 60px 0;
+    }
+
+    .content-block .block div.video,
+    .content-block .block div.video2,
+    .content-block .block div.video3 {
+        float: left;
+        width: 762px;
+        height: 360px;
+    }
+
+    .content-block .block div.video3 {
+        height: 476px;
+    }
+
+    .content-block .block a.more {
+        display: block;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        width: 155px;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 3px;
+        background: #fee101;
+        color: #082a5e;
+        box-shadow: 2px 4px 12px #545454;
+        z-index: 1;
+    }
+
+    .content-block .block div.video a.more:hover {
+        text-decoration: underline;
+    }
+
+    .content-block .block .list {
+        float: right;
+        width: 368px;
+        padding: 0 20px 20px 20px;
+        min-height: 360px;
+        margin-left: 20px;
+        color: #082a5e;
+        background: #e2f3fd;
+    }
+
+    .content-block .block .list .header {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 0 30px 0;
+    }
+
+    .content-block .block .list .header.country {
+        margin: 20px 0 0 0;
+        text-transform: uppercase;
+    }
+
+    .content-block .block .list .link {
+        margin: 4px 0;
+    }
+
+    .content-block .block .list .link a {
+        color: #082a5e;
+        text-decoration: underline;
+        font-size: 17px;
+    }
+
+    div.video,
+    div.video2,
+    div.video3 {
+        width: 300px;
+        position: relative;
+        margin-bottom: 3em;
+        min-height: 158px;
+    }
+
+    .video-fs.picture1 {
+        background-image: url(https://www.tui.ru/getmedia/7a78fe91-71b1-4e60-b2d3-6e666ad89fab/1?2);
+    }
+
+    .video-fs.picture2 {
+        background-image: url(https://www.tui.ru/getmedia/b68e6a76-70e2-4f68-b4f1-c9fd8ab63c82/2?2);
+    }
+
+    .video-fs.picture3 {
+        background-image: url(https://www.tui.ru/getmedia/df4a85df-6800-4ea6-9fe5-268f00168cc9/3?2);
+    }
+
+    .play,
+    .play2,
+    .play3 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play img,
+    .play2 img,
+    .play3 img {
+        width: 156px;
+        opacity: 0.65;
+    }
+
+    .playOn,
+    .playOn2,
+    .playOn3 {
+        display: none;
+    }
+
+    .play img:hover,
+    .play2 img:hover,
+    .play3 img:hover {
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    .footer-not-main {
+        background: #70cbf4;
+        width: 100%;
+    }
+
+    .footer-not-main .centered {
+        max-width: 1150px;
+        margin: 0 auto;
+        line-height: 1.5;
+        padding: 18px 0px;
+        overflow: hidden;
+    }
+
+    .footer-not-main .centered .left {
+        width: 50%;
+        float: left;
+    }
+
+    .footer-not-main .centered .right {
+        width: 50%;
+        float: right;
+    }
+
+    .footer-not-main .centered h3 {
+        margin: 0 0 10px 0;
+        color: #092a5e;
+        font-size: 21px;
+    }
+
+    .footer-not-main .centered a {
+        color: #092a5e !important;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .head .details {
+            font-size: 12px;
+            margin: 0 30px;
+        }
+    }
+
+    @media screen and (min-width: 1201px) {
+        .head .white-box .comment span {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 520px) {
+        .head {
+            background: url('https://www.tui.ru/getmedia/36469e66-2c4b-4c0d-a55f-defeaed8bbad/head_mobile') top center;
+        }
+
+        .content-block .block div.video,
+        .content-block .block div.video2,
+        .content-block .block div.video3 {
+            height: 133px !important;
+        }
+
+        .footer-not-main .centered .left {
+            float: none;
+            margin-left: 30px;
+            width: 80%;
+        }
+
+        .footer-not-main .centered .right {
+            float: none;
+            margin-top: 20px;
+            margin-left: 30px;
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 792px) {
+        .head .white-box {
+            min-width: 280px;
+            width: 280px;
+            padding: 30px 20px 0 20px;
+            max-height: 280px;
+            top: 25%;
+            left: 50%;
+            margin-left: -140px;
+        }
+
+        .head .white-box .button {
+            width: 100%;
+            padding: 17px 13px;
+            margin-top: -12px;
+            font-size: 19px;
+            line-height: 1.2;
+        }
+
+        .content-block {
+            padding: 0 4%;
+            width: 92%;
+            margin-top: -20px;
+        }
+
+        .content-block .block a.more {
+            bottom: 10px;
+            padding: 2% 5%;
+            right: 10px;
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        .play img,
+        .play2 img,
+        .play3 img {
+            width: 20%;
+        }
+
+        .content-block .block div.video3 {
+            height: 360px;
+        }
+
+        .head .center-block {
+            width: 92%;
+        }
+
+        .content-block {
+            width: 92%;
+            margin-top: -20px;
+        }
+
+        .head .white-box .header {
+            font-size: 21px;
+            margin-top: -10px;
+        }
+
+        .head .white-box .comment {
+            font-size: 18px;
+        }
+
+        .content-block .block-head .logo {
+            margin: 0 0 -23px 0;
+            float: none;
+            width: auto;
+        }
+
+        .content-block .block-head .logo img {
+            width: 44px;
+        }
+
+        .content-block .block-head .about {
+            float: none;
+            width: auto;
+            margin-top: 0;
+        }
+
+        .content-block .block-head {
+            width: auto;
+        }
+
+        .content-block .block-head .about .name {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .content-block .block {
+            max-width: 762px;
+            margin: 22px auto 40px auto;
+        }
+
+        .content-block .block div.video,
+        .content-block .block div.video2,
+        .content-block .block div.video3 {
+            float: none;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .content-block .block .list {
+            float: none;
+            width: 100%;
+            margin: 0;
+            padding-top: 1px;
+            min-height: auto;
+        }
+    }
+
+    @media screen and (min-width: 521px) and (max-width: 1200px) {
+        .footer-not-main .centered {
+            max-width: 520px;
+            padding-left: 30px;
+        }
+    }
+
+    @media screen and (min-width: 751px) {
+        .ActionPage-container {
+            padding-bottom: 0 !important;
+        }
+    }
+</style>
+
+    <!-- SCRIPT загрузки VUE  =================================================== -->
+<script>
+    const vueLinks = ['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+        'https://www.tui.ru/getmedia/0869385f-d7d5-4367-92ea-bfece9aa163d/NEW-diff-home-page',
+        'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer'
+    ];
+
+    function add_files(arr, type) {
+
+        count = 0;
+
+        function new_file(link) {
+            var script = document.createElement(type);
+            script.src = link;
+            script.async = false;
+            document.head.appendChild(script);
+            if (count < arr.length - 1) {
+                script.onload = function() {
+                    new_file(arr[count]);
+                }
+                script.onerror = function() {
+                    throw new Error(arr[count - 1] + ' loading error');
+                }
+                count++;
+            }
+        }
+
+        function error(text) {
+            throw new Error('the function takes two required arguments');
+        }
+
+        (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+            (arr === undefined) ? error('no link array') :
+            (type === undefined) ? error('no file type') : '';
+        new_file(arr[count]);
+    }
+
+    add_files(vueLinks, 'script');
+</script>
+
+<!-- ждем загрузки страницы -->
+    <style>
+        .main-diff-page {
+            opacity:0;
+        }
+        .content-block {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+<!--
+    <script>
+        window.onload = function() {
+        const mainPageDiff = document.querySelector('.main-diff-page');
+            mainPageDiff.style.opacity = 1;
+    
+  };
+    </script>
+-->
+    
+    <!-- ждем загрузки страницы -->
+
+</head>
+<body>
+   
+<div class="main-diff-page">
+   
+    <div id="home-page-concepts">
+
+        <!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
+        <div class="head" id="home-page-first-block">
+            <div class="center-block">
+                <div class="white-box">
+                    <p class="header" v-html='titleRU'></p>
+                    <p class="comment" v-html='sloganRU'></p>
+<!--
+                    <div class="button-choice">
+                        <a v-bind:href=" presentationLinkRU " target="_blank">{{presentationButtonRU}}</a>
+                    </div>
+
+                    <div class="details" v-html='detailRU'>
+
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <!-- ПЕРВЫЙ БЛОК END =========================================================== -->
+
+        <div class="content-block">
+            <!-- TEXT START =========================================================== -->
+            <div class="text" v-html='conceptsAboutRU'>
+
+
+            </div>
+            <!-- TEXT END =========================================================== -->
+
+            <!-- CONCEPTS BLOCK START =========================================================== -->
+            <div v-for="concept in concepts">
+                <div class="block-head">
+                    <div class="logo"><img v-bind:src=" concept.logo "></div>
+                    <div class="about">
+                        <div class="name" v-bind:style="concept.cssTitle">
+                            {{concept.titleRU}}
+                        </div>
+                        <div class="name">
+                            {{concept.sloganRU}}
+                        </div>
+                        <p class="text" v-html='concept.textRU'></p>
+
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="video">
+                        <a class="more" v-bind:href="'https://www.tui.ru' + concept.pageLink " target="_blank">{{buttonPageRU}}</a>
+                        <div v-bind:id=" concept.videoId"></div>
+                        <div v-bind:class=" concept.videoClass">
+                            <img v-bind:src=" concept.videoPlay " v-bind:style="concept.videoPlayStyle"></div>
+                    </div>
+                    <div class="list">
+                        <div class="header">
+                            {{concept.hotelsTitleRU}}
+                        </div>
+                        <div v-for="countrie in concept.countries">
+                            <div class="header country" v-if="countrie.showRU">
+                                {{countrie.countryNameRU}}
+                            </div>
+                            <div class="link" v-for="hotel in countrie.hotels" v-if="hotel.showRU">
+                                <a v-bind:href="'https://www.tui.ru' + hotel.linkClient " target="_blank">{{hotel.name}}</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CONCEPTS BLOCK  =========================================================== -->
+
+        </div>
+    </div>
+    
+    <!-- FOOTER START =================================================== -->
+
+<div class="footer-not-main" id="home-page-diff-footer">
+    <div class="centered">
+        <div class="left">
+            <h3 style="">{{agentFooterItemTitleRU}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameRU}}</a><br>
+            <a :href=" agentFooterItemAgentLinkRU ">{{agentFooterItemAgentLinkNameRU}}</a><br>
+            <a :href=" agentFooterItemB2bLinkRU ">{{agentFooterItemB2bLinkNameRU}}</a>
+        </div>
+        <div class="right">
+            <h3>{{agentFooterItemTitle2RU}}</h3>
+            <a :href=" agentFooterItemPhoneRU ">{{agentFooterItemPhoneNameRU}}</a><br>
+            <a :href=" agentFooterItemMailRU ">{{agentFooterItemMailNameRU}}</a>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER END =================================================== -->
+    
+</div>    
+    
+
+    <script src="https://www.youtube.com/iframe_api" type="text/javascript" defer>
+    </script>
+    <script type="text/javascript">
+        var pageRow = document.querySelector(".ActionPage-container");
+        (pageRow) ? pageRow.setAttribute("style", "width: 100%!important; max-width: 100%!important"): console.log("ActionPage-container = NULL");
+        //подключение loader_jquery
+        var j = document.createElement('script');
+        j.src = "https://www.tui.ru/getmedia/99a1aa2d-faa8-4397-a97c-4ec52627d0b3/tui_jquery_loader/";
+        document.head.appendChild(j);
+
+        j.onload = function() {
+            var links = ["https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"];
+            loader_jquery(links, function() {
+                /*
+                $(".head .white-box .button-choice").click(function() {
+                  $('html,body').animate({scrollTop: $(".block-head").eq(0).offset().top-30},'slow');
+                });
+                */
+                $(".video-fs").click(function() {
+                    $(this).parent().find('.more').css({
+                        "bottom": "42px"
+                    });
+                });
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+        var videoId1 = 'aNfLM37-szY';
+        var videoId2 = 'x8bvMB_7H4Q';
+        var videoId3 = 'ecAcSMIp3Kc';
+        var videoId4 = 'ecAcSMIp3Kc';
+        var video = document.querySelector("div.video");
+        var video2 = document.querySelector("div.video2");
+        var video3 = document.querySelector("div.video3");
+        var video4 = document.querySelector("div.video4");
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '100%',
+                width: '100%',
+                videoId: videoId1,
+                modestbranding: 1,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            player2 = new YT.Player('player2', {
+                height: '100%',
+                width: '100%',
+                videoId: videoId2,
+                modestbranding: 1,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            player3 = new YT.Player('player3', {
+                height: '100%',
+                width: '100%',
+                videoId: videoId3,
+                modestbranding: 1,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            player4 = new YT.Player('player4', {
+                height: '100%',
+                width: '100%',
+                videoId: videoId4,
+                modestbranding: 1,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        };
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                done = true;
+            }
+        }
+
+
+        setTimeout(function() {
+            video.addEventListener("click", customVideo);
+            video2.addEventListener("click", customVideo2);
+            video3.addEventListener("click", customVideo3);
+            video4.addEventListener("click", customVideo4);
+
+            function customVideo(e) {
+                var imgPlay = document.querySelector(".play"),
+                    vid = video.querySelector("#player");
+                if (e.target === vid || e.target.parentNode === imgPlay) {
+                    imgPlay.classList.add("playOn");
+                    (vid.requestFullscreen) ? vid.requestFullscreen():
+                        (vid.mozRequestFullScreen) ? vid.mozRequestFullScreen() :
+                        (vid.webkitRequestFullscreen) ? vid.webkitRequestFullscreen() :
+                        (vid.msRequestFullscreen) ? vid.msRequestFullscreen() : "";
+                    player.playVideo();
+                }
+            }
+
+            function customVideo2(e) {
+                var imgPlay2 = document.querySelector(".play2"),
+                    vid2 = video2.querySelector("#player2");
+                if (e.target === vid2 || e.target.parentNode === imgPlay2) {
+                    imgPlay2.classList.add("playOn2");
+                    (vid2.requestFullscreen) ? vid2.requestFullscreen():
+                        (vid2.mozRequestFullScreen) ? vid2.mozRequestFullScreen() :
+                        (vid2.webkitRequestFullscreen) ? vid2.webkitRequestFullscreen() :
+                        (vid2.msRequestFullscreen) ? vid2.msRequestFullscreen() : "";
+                    player2.playVideo();
+                }
+            }
+
+            function customVideo3(e) {
+                var imgPlay3 = document.querySelector(".play3"),
+                    vid3 = video3.querySelector("#player3");
+                if (e.target === vid3 || e.target.parentNode === imgPlay3) {
+                    imgPlay3.classList.add("playOn3");
+                    (vid3.requestFullscreen) ? vid3.requestFullscreen():
+                        (vid3.mozRequestFullScreen) ? vid3.mozRequestFullScreen() :
+                        (vid3.webkitRequestFullscreen) ? vid3.webkitRequestFullscreen() :
+                        (vid3.msRequestFullscreen) ? vid3.msRequestFullscreen() : "";
+                    player3.playVideo();
+                }
+            }
+
+            function customVideo4(e) {
+                var imgPlay4 = document.querySelector(".play4"),
+                    vid4 = video4.querySelector("#player4");
+                if (e.target === vid4 || e.target.parentNode === imgPlay4) {
+                    imgPlay4.classList.add("playOn4");
+                    (vid4.requestFullscreen) ? vid4.requestFullscreen():
+                        (vid4.mozRequestFullScreen) ? vid4.mozRequestFullScreen() :
+                        (vid4.webkitRequestFullscreen) ? vid4.webkitRequestFullscreen() :
+                        (vid4.msRequestFullscreen) ? vid4.msRequestFullscreen() : "";
+                    player4.playVideo();
+                }
+            }
+
+        }, 1000)
+    </script>
+    <!-- ждем загрузки страницы -->
+    <style>
+        .main-diff-page {
+            opacity:1;
+        }
+        
+    </style>
+
+    
+    <!-- ждем загрузки страницы -->
+</body>
+</html>

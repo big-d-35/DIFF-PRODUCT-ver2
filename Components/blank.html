@@ -1,47 +1,960 @@
-<script src="https://www.tui.ru/getmedia/d87eaac3-bfe8-4d28-b122-f5631b032cc1/template_base_diff" type="text/javascript"></script><script type="text/javascript">
-var template_script = document.createElement("script");
-  template_script.src="https://www.tui.ru/getmedia/91751be2-e1fb-443e-b4f4-66aab0b2a7f2/template_engine";
-  document.head.appendChild(template_script);
-  template_script.onload = function(){
-      on_page(render("#table-template","#hotelsInfoTemplate", table_fs))
-  }
-</script>
-<style type="text/css">.recommendationBlocks .recommendationBlock .header .inner {
-font-weight: 600;
-color: black !important;
-}
-.TUIFunSun .header {
-background-color: #FFF9BF !important;
-}
-.TUIAzure .header {
-background-color: #ADE5FA !important;
-}
-.recommendationBlocks .recommendationBlock.TUIAzure .header, .recommendationBlocks .recommendationBlock.TUIAzure .searchTour {
-background-color: #ADE5FA!important;
-}
-.TUIFunSun img.mania {
-    width: 80px !important;
-    margin-right: 220px !important;
-}
-.TUIAzure img.mania {
-    width: 30px !important;
-    margin-right: 210px !important;
-}
-.TUIOrange img.mania {
-    width: 30px !important;
-    margin-right: 210px !important;
-}
-.recommendationBlocks .recommendationBlock.TUIAzure.backgroundImage .overFlow {
-background: none !important;
-}
-</style>
-<article>
-<div class="contentInformationHolder">
-<div style="padding-top: 10px;">
-<p class="overFlow" style="padding-bottom: 10px; font-size:11px; float: right; background-color: rgba(255, 255, 255, 0.5); border-bottom-left-radius: 10px; border-top-left-radius: 10px;"><strong>Развлечения для всей семьи</strong><br />
-<a href="/Tours/Africa/Egypt/Sharm-El-Sheikh/Sharm-El-Sheikh/FUN-SUN-Albatros-Palace">FUN&amp;SUN Albatros Palace 5* </a><br />
-<a href="/Tours/Africa/Egypt/Hurghada/Hurghada/fun-sun-albatros-aqua-vista">FUN&SUN Albatros Aqua Vista 4*</a><br />
-<a href="/Tours/Africa/Egypt/Hurghada/Hurghada/fun-sun-albatros-aqua-blu">FUN&SUN Albatros Aqua Blu 4*</a></p>
+<div>
+
+
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Diff Product Home Page</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://www.tui.ru/getmedia/9177b70d-c9a9-49a5-803e-dacf78836f2e/All-old-style-diff-min" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .video-fs.picture4 {
+            background-image: url(https://www.tui.ru/getmedia/3904be0b-e7d8-4d57-bc9a-18311a9b8649/Smart_banner-1);
+            height: 100%;
+        }
+
+        .ActionPage-container {
+            background: white !important;
+        }
+
+        body {
+            font-family: TUI-reg, TUI;
+        }
+
+        .ActionPage-container .static {
+            margin: 0 auto;
+            width: auto;
+        }
+
+        #content {
+            max-width: unset !important;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        .head {
+            position: relative;
+            background: url('https://www.tui.ru/getmedia/217e8dde-1d10-4d87-934e-025ec62406be/head_new') top center;
+            width: 100%;
+            height: 471px;
+            background-size: cover;
+        }
+
+        .head .center-block {
+            width: 1150px;
+            max-width: 1150px;
+            margin: 0 auto;
+            position: relative;
+            height: 471px;
+        }
+
+        .head .white-box {
+            position: absolute;
+            top: 18%;
+            left: 0;
+            padding: 30px 30px 0 30px;
+            background: #ffffff;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 38%;
+            max-width: 475px;
+        }
+
+        .head .white-box .header {
+            font-size: 30px;
+            font-weight: bold;
+            color: #092a5f;
+        }
+
+        .head .white-box .comment {
+            margin: 20px 0 30px 0;
+            font-size: 19px;
+            color: #092a5f;
+        }
+
+        .head .white-box .button {
+            font-size: 19px;
+            text-transform: uppercase;
+            padding: 13px;
+            width: 93%;
+            cursor: pointer;
+            margin: -5px 0 67px 0;
+            background: #092a5f;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .head .details {
+            position: absolute;
+            left: 0;
+            font-size: 15px;
+            color: #092a5f;
+            margin: 0 30px 0 30px;
+            line-height: 0.95;
+            bottom: 15px;
+        }
+
+        .content-block {
+            position: relative;
+            width: 1150px;
+            max-width: 1150px;
+            margin: 20px auto;
+            /*padding:0 5%;*/
+            /*width:90%; */
+        }
+
+        .content-block .text {
+            margin: 40px 0;
+            font-size: 18px;
+            padding: 0 0;
+        }
+
+        .content-block .block-head {
+            overflow: hidden;
+            width: 762px;
+            margin: 0 0;
+        }
+
+        .content-block .block-head .logo {
+            float: left;
+            margin-left: 12px;
+            width: 121px;
+            min-height: 90px;
+        }
+
+        .content-block .block-head .about {
+            float: right;
+            width: 616px;
+            min-height: 90px;
+        }
+
+        .content-block .block-head .about .name {
+            font-size: 27px;
+            font-weight: bold;
+            color: #092a5f;
+        }
+
+        .content-block .block-head .about .text {
+            margin: 20px 0 0 0;
+        }
+
+        .content-block .block-head .about ul.text {
+            margin: 20px 0 0 30px;
+        }
+
+        .content-block .block {
+            overflow: hidden;
+            width: 100%;
+            margin: 40px 0 60px 0;
+        }
+
+        .content-block .block div.video,
+        .content-block .block div.video2,
+        .content-block .block div.video3 {
+            float: left;
+            width: 762px;
+            height: 360px;
+        }
+
+        .content-block .block div.video3 {
+            height: 476px;
+        }
+
+        .content-block .block a.more {
+            display: block;
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            width: 155px;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 3px;
+            background: #fee101;
+            color: #082a5e;
+            box-shadow: 2px 4px 12px #545454;
+            z-index: 1;
+        }
+
+        .content-block .block div.video a.more:hover {
+            text-decoration: underline;
+        }
+
+        .content-block .block .list {
+            float: right;
+            width: 368px;
+            padding: 0 20px 20px 20px;
+            min-height: 360px;
+            margin-left: 20px;
+            color: #082a5e;
+            background: #e2f3fd;
+        }
+
+        .content-block .block .list .header {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0 30px 0;
+        }
+
+        .content-block .block .list .header.country {
+            margin: 20px 0 0 0;
+            text-transform: uppercase;
+        }
+
+        .content-block .block .list .link {
+            margin: 4px 0;
+        }
+
+        .content-block .block .list .link a {
+            color: #082a5e;
+            text-decoration: underline;
+            font-size: 17px;
+        }
+
+        div.video,
+        div.video2,
+        div.video3 {
+            width: 300px;
+            position: relative;
+            margin-bottom: 3em;
+            min-height: 158px;
+        }
+
+        .video-fs.picture1 {
+            background-image: url(https://www.tui.ru/getmedia/7a78fe91-71b1-4e60-b2d3-6e666ad89fab/1?2);
+        }
+
+        .video-fs.picture2 {
+            background-image: url(https://www.tui.ru/getmedia/b68e6a76-70e2-4f68-b4f1-c9fd8ab63c82/2?2);
+        }
+
+        .video-fs.picture3 {
+            background-image: url(https://www.tui.ru/getmedia/df4a85df-6800-4ea6-9fe5-268f00168cc9/3?2);
+        }
+
+        .play,
+        .play2,
+        .play3 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            right: 0;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .play img,
+        .play2 img,
+        .play3 img {
+            width: 156px;
+            opacity: 0.65;
+        }
+
+        .playOn,
+        .playOn2,
+        .playOn3 {
+            display: none;
+        }
+
+        .play img:hover,
+        .play2 img:hover,
+        .play3 img:hover {
+            transition: 0.5s;
+            opacity: 1;
+        }
+
+        .footer-not-main {
+            background: #70cbf4;
+            width: 100%;
+        }
+
+        .footer-not-main .centered {
+            max-width: 1150px;
+            margin: 0 auto;
+            line-height: 1.5;
+            padding: 18px 0px;
+            overflow: hidden;
+        }
+
+        .footer-not-main .centered .left {
+            width: 50%;
+            float: left;
+        }
+
+        .footer-not-main .centered .right {
+            width: 50%;
+            float: right;
+        }
+
+        .footer-not-main .centered h3 {
+            margin: 0 0 10px 0;
+            color: #092a5e;
+            font-size: 21px;
+        }
+
+        .footer-not-main .centered a {
+            color: #092a5e !important;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .head .details {
+                font-size: 12px;
+                margin: 0 30px;
+            }
+        }
+
+        @media screen and (min-width: 1201px) {
+            .head .white-box .comment span {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 520px) {
+            .head {
+                background: url('https://www.tui.ru/getmedia/36469e66-2c4b-4c0d-a55f-defeaed8bbad/head_mobile') top center;
+            }
+
+            .content-block .block div.video,
+            .content-block .block div.video2,
+            .content-block .block div.video3 {
+                height: 133px !important;
+            }
+
+            .footer-not-main .centered .left {
+                float: none;
+                margin-left: 30px;
+                width: 80%;
+            }
+
+            .footer-not-main .centered .right {
+                float: none;
+                margin-top: 20px;
+                margin-left: 30px;
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 792px) {
+            .head .white-box {
+                min-width: 280px;
+                width: 280px;
+                padding: 30px 20px 0 20px;
+                max-height: 280px;
+                top: 25%;
+                left: 50%;
+                margin-left: -140px;
+            }
+
+            .head .white-box .button {
+                width: 100%;
+                padding: 17px 13px;
+                margin-top: -12px;
+                font-size: 19px;
+                line-height: 1.2;
+            }
+
+            .content-block {
+                padding: 0 4%;
+                width: 92%;
+                margin-top: -20px;
+            }
+
+            .content-block .block a.more {
+                bottom: 10px;
+                padding: 2% 5%;
+                right: 10px;
+                width: auto;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            .play img,
+            .play2 img,
+            .play3 img {
+                width: 20%;
+            }
+
+            .content-block .block div.video3 {
+                height: 360px;
+            }
+
+            .head .center-block {
+                width: 92%;
+            }
+
+            .content-block {
+                width: 92%;
+                margin-top: -20px;
+            }
+
+            .head .white-box .header {
+                font-size: 21px;
+                margin-top: -10px;
+            }
+
+            .head .white-box .comment {
+                font-size: 18px;
+            }
+
+            .content-block .block-head .logo {
+                margin: 0 0 -23px 0;
+                float: none;
+                width: auto;
+            }
+
+            .content-block .block-head .logo img {
+                width: 44px;
+            }
+
+            .content-block .block-head .about {
+                float: none;
+                width: auto;
+                margin-top: 0;
+            }
+
+            .content-block .block-head {
+                width: auto;
+            }
+
+            .content-block .block-head .about .name {
+                margin-bottom: 10px;
+                font-size: 22px;
+            }
+
+            .content-block .block {
+                max-width: 762px;
+                margin: 22px auto 40px auto;
+            }
+
+            .content-block .block div.video,
+            .content-block .block div.video2,
+            .content-block .block div.video3 {
+                float: none;
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+            .content-block .block .list {
+                float: none;
+                width: 100%;
+                margin: 0;
+                padding-top: 1px;
+                min-height: auto;
+            }
+        }
+
+        @media screen and (min-width: 521px) and (max-width: 1200px) {
+            .footer-not-main .centered {
+                max-width: 520px;
+                padding-left: 30px;
+            }
+        }
+
+        @media screen and (min-width: 751px) {
+            .ActionPage-container {
+                padding-bottom: 0 !important;
+            }
+        }
+    </style>
+
+    <!-- SCRIPT загрузки VUE  =================================================== -->
+    <script type="text/javascript">
+        const vueLinks = ['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+            'https://www.tui.ru/getmedia/0869385f-d7d5-4367-92ea-bfece9aa163d/NEW-diff-home-page',
+            'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer'
+        ];
+
+        function add_files(arr, type) {
+
+            count = 0;
+
+            function new_file(link) {
+                var script = document.createElement(type);
+                script.src = link;
+                script.async = false;
+                document.head.appendChild(script);
+                if (count < arr.length - 1) {
+                    script.onload = function() {
+                        new_file(arr[count]);
+                    }
+                    script.onerror = function() {
+                        throw new Error(arr[count - 1] + ' loading error');
+                    }
+                    count++;
+                }
+            }
+
+            function error(text) {
+                throw new Error('the function takes two required arguments');
+            }
+
+            (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+                (arr === undefined) ? error('no link array') :
+                (type === undefined) ? error('no file type') : '';
+            new_file(arr[count]);
+        }
+
+        add_files(vueLinks, 'script');
+    </script>
+
+    <!-- ждем загрузки страницы -->
+    <style>
+        .main-diff-page {
+            opacity: 1;
+        }
+
+        .content-block {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <!--
+    <script>
+        window.onload = function() {
+        const mainPageDiff = document.querySelector('.main-diff-page');
+            mainPageDiff.style.opacity = 1;
+    
+  };
+    </script>
+-->
+
+    <!-- ждем загрузки страницы -->
+
+
+
+
+    <div class="main-diff-page">
+
+        <div id="home-page-concepts">
+            <div id="home-page-first-block" class="head">
+                <div class="center-block">
+                    <div class="white-box">
+                        <p class="header">KОНЦЕПЦИИ ОТДЫХА,<br>СОЗДАННЫЕ TUI</p>
+                        <p class="comment">Мы знаем, какой отдых вам нужен,<br>потому что вы нам сами об этом рассказали!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="text"><strong>Концепции отдыха TUI</strong> - это новый формат отдыха, где учтены интересы всех поколений и современные тренды. 100 000 человек уже сделали свой выбор в пользу отдыха в наших отелях.<br><br>Время и вам сделать выбор! Выберите страну и забронируйте формат отдыха, который подходит именно вам!</div>
+                <div>
+                    <div class="block-head">
+                        <div class="logo"><img src="https://www.tui.ru/getmedia/7eea7272-a23a-4d66-9df7-4eb7463c2a55/Smart-Logo-80px"></div>
+                        <div class="about">
+                            <div class="name" style="text-transform: uppercase; margin-bottom: 20px;">
+                                КОНЦЕПЦИЯ ОТДЫХА SMART
+                            </div>
+                            <div class="name">
+                                Умный подход к отдыху
+                            </div>
+                            <p class="text">SMART - это концепция для каждого: для семей и для молодежи, которых объединяет одна цель - насладиться качественным отдыхом за разумные деньги.<br><br>В первую очередь, мы предлагаем сервис на звезду выше: анимация, детский клуб, питание и напитки, Wi-Fi, узнаваемый стиль в дизайне и качество по доступной цене.<br><br>Кроме того, SMART заботится об окружающей среде, что означает экологически дружелюбную концепцию. Мы минимизируем использование пластиковых стаканчиков и отказываемся от трубочек, разумно подходим к трате воды и энергии, устанавливаем мусорные урны для разделения отходов.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="video"><a href="../concepts/smart/" target="_blank" class="more">Подробнее</a>
+                            <div id=""></div>
+                            <div class="video-fs picture4"><img src="" style="z-index: -10;"></div>
+                        </div>
+                        <div class="list">
+                            <div class="header">
+                                Отдых в отелях SMART
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Турция
+                                </div>
+                                <div class="link"><a href="../hotel/europe-turkey-kemer-beldibi-smart__club__marakesh__beach__hotel/" target="_blank">SMART Club Marakesh Beach Hotel 4*</a></div>
+                                <!---->
+                                <!---->
+                                <div class="link"><a href="../hotel/europe-turkey-alanya-konakli-smart__club__hotel__mirabell/" target="_blank">SMART Club Hotel Mirabell 4*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-antalya-lara-smart__lara__family/" target="_blank">SMART Lara Star 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-kemer-beldibi-smart__asdem__beach/" target="_blank">SMART Asdem Beach 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-side-sorgun-smart__serra__park__hotel/" target="_blank">SMART Serra Park Hotel 4*</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="block-head">
+                        <div class="logo"><img src="https://www.tui.ru/getmedia/d154b64a-2315-40e0-94f5-53137a734367/logo-FS"></div>
+                        <div class="about">
+                            <div class="name" style="text-transform: uppercase; margin-bottom: 20px;">
+                                Концепция семейного отдыха FUN&amp;SUN
+                            </div>
+                            <div class="name">
+                                Семейный отдых, продуманный в деталях
+                            </div>
+                            <p class="text">Во время отдыха для гостя FUN&amp;SUN отель становится своеобразным миром в миниатюре, где номер - это квартира, Детский Клуб Тукан - детский сад и школа, море и разнообразные бассейны становятся самой приятной ванной на свете, главный ресторан - кухней мечты с бесконечным питанием, а рестораны a la carte - рестораны для выхода в "свет" всей семьей в выходной.<br><br>Мы долго готовились к вашему приезду. Мы выбрали 20 прекрасных отелей, навели в них порядок и чистоту, разработали специальное меню, подготовили развлекательную и спортивную программы и, конечно же, обучили каждого сотрудника.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="video"><a href="../concepts/tui-fun-sun/" target="_blank" class="more">Подробнее</a> <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/aNfLM37-szY?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.tui.ru&amp;widgetid=1"></iframe>
+                            <div class="play video-fs picture1"><img src="https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play"></div>
+                        </div>
+                        <div class="list">
+                            <div class="header">
+                                Отдых всей семьей в отелях FUN&amp;SUN
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Турция
+                                </div>
+                                <div class="link"><a href="../hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/" target="_blank">FUN&amp;SUN Miarosa Ghazal Resort 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/" target="_blank">FUN&amp;SUN Club Belek 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-kemer-tekirova-tui__fun__sun__club__saphire/" target="_blank">FUN&amp;SUN Club Saphire 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-side-kizilot-tui__fun__sun__club__serra__palace/" target="_blank">FUN&amp;SUN Club Serra Palace 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-belek-belek-tui__fun__sun__river__resort__belek/" target="_blank">FUN&amp;SUN River Resort Belek 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/" target="_blank">FUN&amp;SUN Comfort Beach Resort 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-kemer-finike-tui__fun__sun__club__di__finica/" target="_blank">FUN&amp;SUN Club Di Finica 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/" target="_blank">FUN&amp;SUN Miarosa Incekum Beach 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-side-kizilagac-fun__sun__euphoria__palm__beach/" target="_blank">FUN&amp;SUN Euphoria Palm Beach 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-kemer-beldibi-fun__sun__imperial__sunland__resort__(ex__sunland__resor/" target="_blank">FUN&amp;SUN Imperial Sunland Resort 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-side-manavgat-fun__sun__life__side__resort__hotel/" target="_blank">FUN&amp;SUN Life Side (ex. Iron Ambassador) 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-belek-bogazkent-fun__sun__life__belek/" target="_blank">FUN&amp;SUN Life Belek 5*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Кипр
+                                </div>
+                                <div class="link"><a href="../hotel/europe-cyprus-ayia__napa-ayia__napa-tui__fun__sun__panthea__waterpark/" target="_blank">FUN&amp;SUN Panthea Waterpark 4*</a></div>
+                                <div class="link"><a href="../hotel/europe-cyprus-protaras-protaras__city-vangelis__hotel__suites/" target="_blank">FUN&amp;SUN Vangelis Hotel &amp; Suites 4*</a></div>
+                                <div class="link"><a href="../hotel/europe-cyprus-paphos-paphos-fun__sun__king__evelthon__beach__hotel__resort/" target="_blank">FUN&amp;SUN King Evelthon Beach Hotel &amp; Resort 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-cyprus-protaras-protaras__city-fun__sun__anastasia__beach__hotel/" target="_blank">FUN&amp;SUN Anastasia Beach Hotel 4*</a></div>
+                                <div class="link"><a href="../hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__callisto__holiday__village/" target="_blank">FUN&amp;SUN Callisto Holiday Village 4*</a></div>
+                                <div class="link"><a href="../hotel/europe-cyprus-paphos-paphos-fun__sun__akteon__holiday__village/" target="_blank">FUN&amp;SUN Akteon Holiday Village 4*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Черногория
+                                </div>
+                                <div class="link"><a href="../hotel/europe-montenegro-barska__rivijera-chan-fun__sun__pearl__beach__resort/" target="_blank">FUN&amp;SUN Pearl Beach Resort 4*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Испания
+                                </div>
+                                <div class="link"><a href="../hotel/europe-spain-costa__de__barcelona-malgrat__de__mar-sorra__daurada/" target="_blank">FUN&amp;SUN Sorra Daurada Splash 4*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Греция
+                                </div>
+                                <div class="link"><a href="../hotel/europe-greece-corfu-messonghi-sentido__apollo__palace/" target="_blank">FUN&amp;SUN Apollo Palace 5*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Италия
+                                </div>
+                                <div class="link"><a href="../hotel/europe-italy-calabria-squillace-club__esse__sunbeach/" target="_blank">FUN&amp;SUN Club Esse Sunbeach 4*</a></div>
+                            </div>
+                            <div>
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="block-head">
+                        <div class="logo"><img src="https://www.tui.ru/getmedia/82b48419-a310-45c9-a9d0-4b4fe86c85de/logo-FN"></div>
+                        <div class="about">
+                            <div class="name" style="text-transform: uppercase; margin-bottom: 20px;">
+                                Концепция активного отдыха DAY&amp;NIGHT Connected
+                            </div>
+                            <div class="name">
+                                Отдых, заряжающий энергией!
+                            </div>
+                            <p class="text">DAY&amp;NIGHT Connected - это целая Вселенная приключений, веселья и ярких положительных эмоций, которые запомнятся на всю жизнь!<br><br>Вселенная, которая состоит из Солнечной системы "Ultra All Inclusive" с планетами свежевыжатого апельсинового сока, национальных блюд, европейской кухни, ресторанов a la carte, и бесплатного импортного алкоголя; Галактики развлечений с созвездиями "Wellness &amp; Fitness", где для вас проводят мастер-классы именитые инструкторы, и "Night Life" с бесплатным входом в популярные ночные клубы, и бесконечного Wi-Fi.<br><br>Отдохнуть в передвижениях можно на станции "Номер" в уютной форме из фирменных халатов и тапочек за чашкой горячего чая.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="video"><a href="../concepts/tui-day-night/" target="_blank" class="more">Подробнее</a> <iframe id="player2" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/x8bvMB_7H4Q?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.tui.ru&amp;widgetid=2"></iframe>
+                            <div class="play2 video-fs picture2"><img src="https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play"></div>
+                        </div>
+                        <div class="list">
+                            <div class="header">
+
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Турция
+                                </div>
+                                <div class="link"><a href="../hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/" target="_blank">DAY&amp;NIGHT Connected Club Hydros 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-kemer-kemer__center-day__night__connected__imperial__turkiz__hotel/" target="_blank">DAY&amp;NIGHT Connected Imperial Turkiz Hotel 5*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Кипр
+                                </div>
+                                <div class="link"><a href="../hotel/europe-cyprus-ayia__napa-ayia__napa-day__night__connected__seasons/" target="_blank">DAY&amp;NIGHT Connected Seasons 4*</a></div>
+                            </div>
+                            <div>
+                                <!---->
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="block-head">
+                        <div class="logo"><img src="https://www.tui.ru/getmedia/a388ed46-64bc-4a03-a888-ae08a95cf843/logo-mini-toucan"></div>
+                        <div class="about">
+                            <div class="name" style="text-transform: uppercase; margin-bottom: 20px;">
+                                Детские клубы МИНИ ТУКАН
+                            </div>
+                            <div class="name">
+                                Главный секрет отличного отдыха с детьми
+                            </div>
+                            <p class="text">Детский клуб TUI Мини Тукан - территория отдыха с развивающей и игровой программой для детей от 4 до 12 лет, созданной профессионалами, с учетом пожеланий родителей. Отели с детскими клубами Мини Тукан позволяют провести долгожданный отпуск в спокойствии за безопасность и развлечения ребенка для родителей, весело и познавательно для детей.<br><br>Что такое клуб Мини Тукан?<br><br>
+                                <li>Программа для детей 2 возрастов: Тукан Kids 4-7 лет и Тукан Junior 8-12 лет.</li>
+                                <li>Клуб работает 6 дней в неделю, с 10-00 до 12-30, с 14-30 до 17-00.</li>
+                                <li>Вечером - мини-диско.</li>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="video"><a href="../concepts/tui-toucan/" target="_blank" class="more">Подробнее</a> <iframe id="player3" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/ecAcSMIp3Kc?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.tui.ru&amp;widgetid=3"></iframe>
+                            <div class="play3 video-fs picture3"><img src="https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play"></div>
+                        </div>
+                        <div class="list">
+                            <div class="header">
+
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Турция
+                                </div>
+                                <div class="link"><a href="../hotel/europe-turkey-alanya-incekum-pegasos__club/" target="_blank">Pegasos Club 4*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-alanya-incekum-pegasos__resort/" target="_blank">Pegasos Resort 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-turkey-alanya-incekum-pegasos__royal/" target="_blank">Pegasos Royal 5*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Кипр
+                                </div>
+                                <div class="link"><a href="../hotel/europe-cyprus-ayia__napa-ayia__napa-christofinia/" target="_blank">Christofinia 4*</a></div>
+                                <div class="link"><a href="../hotel/europe-cyprus-limasol__resort-limasol__city-st__raphael__resort/" target="_blank">St Raphael 5*</a></div>
+                                <div class="link"><a href="../hotel/europe-cyprus-ayia__napa-ayia__napa-tasia__maris__gardens/" target="_blank">Tasia Maris Garden 3*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Черногория
+                                </div>
+                                <div class="link"><a href="../hotel/europe-montenegro-budvanska__rivijera-budva-aleksandar/" target="_blank">Aleksandar 4*</a></div>
+                                <div class="link"><a href="../hotel/europe-montenegro-budvanska__rivijera-petrovac-castellastva/" target="_blank">Castellastva 4*</a></div>
+                                <!---->
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Испания
+                                </div>
+                                <div class="link"><a href="../hotel/europe-spain-costa__dorada-la__pineda-estival__park__hotel__resort/" target="_blank">Estival Park Hotel Resort 4*</a></div>
+                                <div class="link"><a href="../hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/" target="_blank">Don Juan Tossa 4*</a></div>
+                                <div class="link"><a href="../hotel/europe-spain-mallorca__palma__de__mallorca-palma__nova-sol__palmanova__mallorca/" target="_blank">Sol Palmanova - Mallorca 4*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Греция
+                                </div>
+                                <div class="link"><a href="../hotel/europe-greece-crete-anissaras-mitsis__serita__beach/" target="_blank">Serita Beach Resort 5*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Италия
+                                </div>
+                                <div class="link"><a href="../hotel/europe-italy-calabria-pizzo-garden__resort__calabria/" target="_blank">Falkensteiner Club Funimation Calabria (ex. Garden Resort Calabria) 4*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    ОАЭ
+                                </div>
+                                <div class="link"><a href="../hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/" target="_blank">Al Hamra Village Golf &amp; Beach Resort 4*</a></div>
+                                <div class="link"><a href="../hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/" target="_blank">Al Hamra Residence 5*</a></div>
+                                <div class="link"><a href="../hotel/asia-uae-fujairah-fujairah__beach__hotels-blue__diamond__alsalam__resort/" target="_blank">Blue Diamond AlSalam Resort 5*</a></div>
+                            </div>
+                            <div>
+                                <div class="header country">
+                                    Россия
+                                </div>
+                                <div class="link"><a href="../hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/" target="_blank">Бархатные сезоны 3*</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER START =================================================== -->
+
+        <div id="home-page-diff-footer" class="footer-not-main">
+            <div class="centered">
+                <div class="left">
+                    <h3>Сайты о концепциях</h3><a href="../concepts/home/">Все концепции </a><a></a><br> <a href="http://agent.tui.ru/">Сайт для агентств</a><a></a><br> <a href="http://b2b.tui.ru/">Сайт B2b</a><a></a>
+                </div>
+                <div class="right">
+                    <h3>Контакты</h3> <a href="tel:84951043450">8 (495) 104-34-50</a><a></a><br> <a href="mailto:diffproduct@tui.ru">diffproduct@tui.ru</a><a></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER END =================================================== -->
+
+    </div>
+
+
+    <script src="https://www.youtube.com/iframe_api" type="text/javascript" defer="">
+    </script>
+    <script type="text/javascript">
+        var pageRow = document.querySelector(".ActionPage-container");
+        (pageRow) ? pageRow.setAttribute("style", "width: 100%!important; max-width: 100%!important"): console.log("ActionPage-container = NULL");
+        //подключение loader_jquery
+        var j = document.createElement('script');
+        j.src = "https://www.tui.ru/getmedia/99a1aa2d-faa8-4397-a97c-4ec52627d0b3/tui_jquery_loader/";
+        document.head.appendChild(j);
+
+        j.onload = function() {
+            var links = ["https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"];
+            loader_jquery(links, function() {
+                /*
+                $(".head .white-box .button-choice").click(function() {
+                  $('html,body').animate({scrollTop: $(".block-head").eq(0).offset().top-30},'slow');
+                });
+                */
+                $(".video-fs").click(function() {
+                    $(this).parent().find('.more').css({
+                        "bottom": "42px"
+                    });
+                });
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+        var videoId1 = 'aNfLM37-szY';
+        var videoId2 = 'x8bvMB_7H4Q';
+        var videoId3 = 'ecAcSMIp3Kc';
+        var videoId4 = 'ecAcSMIp3Kc';
+        var video = document.querySelector("div.video");
+        var video2 = document.querySelector("div.video2");
+        var video3 = document.querySelector("div.video3");
+        var video4 = document.querySelector("div.video4");
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '100%',
+                width: '100%',
+                videoId: videoId1,
+                modestbranding: 1,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            player2 = new YT.Player('player2', {
+                height: '100%',
+                width: '100%',
+                videoId: videoId2,
+                modestbranding: 1,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            player3 = new YT.Player('player3', {
+                height: '100%',
+                width: '100%',
+                videoId: videoId3,
+                modestbranding: 1,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            player4 = new YT.Player('player4', {
+                height: '100%',
+                width: '100%',
+                videoId: videoId4,
+                modestbranding: 1,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        };
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                done = true;
+            }
+        }
+
+
+        setTimeout(function() {
+            video.addEventListener("click", customVideo);
+            video2.addEventListener("click", customVideo2);
+            video3.addEventListener("click", customVideo3);
+            video4.addEventListener("click", customVideo4);
+
+            function customVideo(e) {
+                var imgPlay = document.querySelector(".play"),
+                    vid = video.querySelector("#player");
+                if (e.target === vid || e.target.parentNode === imgPlay) {
+                    imgPlay.classList.add("playOn");
+                    (vid.requestFullscreen) ? vid.requestFullscreen():
+                        (vid.mozRequestFullScreen) ? vid.mozRequestFullScreen() :
+                        (vid.webkitRequestFullscreen) ? vid.webkitRequestFullscreen() :
+                        (vid.msRequestFullscreen) ? vid.msRequestFullscreen() : "";
+                    player.playVideo();
+                }
+            }
+
+            function customVideo2(e) {
+                var imgPlay2 = document.querySelector(".play2"),
+                    vid2 = video2.querySelector("#player2");
+                if (e.target === vid2 || e.target.parentNode === imgPlay2) {
+                    imgPlay2.classList.add("playOn2");
+                    (vid2.requestFullscreen) ? vid2.requestFullscreen():
+                        (vid2.mozRequestFullScreen) ? vid2.mozRequestFullScreen() :
+                        (vid2.webkitRequestFullscreen) ? vid2.webkitRequestFullscreen() :
+                        (vid2.msRequestFullscreen) ? vid2.msRequestFullscreen() : "";
+                    player2.playVideo();
+                }
+            }
+
+            function customVideo3(e) {
+                var imgPlay3 = document.querySelector(".play3"),
+                    vid3 = video3.querySelector("#player3");
+                if (e.target === vid3 || e.target.parentNode === imgPlay3) {
+                    imgPlay3.classList.add("playOn3");
+                    (vid3.requestFullscreen) ? vid3.requestFullscreen():
+                        (vid3.mozRequestFullScreen) ? vid3.mozRequestFullScreen() :
+                        (vid3.webkitRequestFullscreen) ? vid3.webkitRequestFullscreen() :
+                        (vid3.msRequestFullscreen) ? vid3.msRequestFullscreen() : "";
+                    player3.playVideo();
+                }
+            }
+
+            function customVideo4(e) {
+                var imgPlay4 = document.querySelector(".play4"),
+                    vid4 = video4.querySelector("#player4");
+                if (e.target === vid4 || e.target.parentNode === imgPlay4) {
+                    imgPlay4.classList.add("playOn4");
+                    (vid4.requestFullscreen) ? vid4.requestFullscreen():
+                        (vid4.mozRequestFullScreen) ? vid4.mozRequestFullScreen() :
+                        (vid4.webkitRequestFullscreen) ? vid4.webkitRequestFullscreen() :
+                        (vid4.msRequestFullscreen) ? vid4.msRequestFullscreen() : "";
+                    player4.playVideo();
+                }
+            }
+
+        }, 1000)
+    </script>
+
 </div>
-</div>
-</article>

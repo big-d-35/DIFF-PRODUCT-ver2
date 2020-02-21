@@ -15,7 +15,7 @@
 
 .smart {
     
-    max-width: 1920px;
+    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,10 @@
         align-items: center;
         overflow: hidden;
         height: 100%;
+        width: 1232px;
         margin-bottom: 40px;
+        margin-top: 20px;
+        border-radius: 10px;
     }
     
     &__img {
@@ -45,7 +48,7 @@
     //ABOUT START
     &__text {
         min-width: 560px;
-        max-width: 860px;
+        max-width: 1152px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -65,7 +68,7 @@
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
-        color: #000000;
+        color: #3c3c3c;
     }
     &__about {
         width: 90%;
@@ -92,7 +95,7 @@
 //FISHKI START
 .fishka {
     min-width: 860px;
-    max-width: 910px;
+    max-width: 1152px;
     width: 100%;
     /*display: flex;
     flex-direction: row;
@@ -114,7 +117,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 5px;
+        margin: 10px;
         border-radius: 5px;
         overflow: hidden;
         position: relative;
@@ -138,7 +141,7 @@
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        color: #000000;
+        color: #3c3c3c;
     }
     &__img {
         position: absolute;
@@ -156,7 +159,7 @@
 //WHY START
 .why {
    min-width: 860px;
-    max-width: 910px;
+    max-width: 1152px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -185,11 +188,11 @@
         background-color: #ffffff;
     }
     &__img {
-        width: 28%;
+        width: 35%;
         margin-right: 10px;
     }
     &__text {
-        width: 70%;
+        width: 64%;
     }
     &__title {
         font-family: TUI-reg;

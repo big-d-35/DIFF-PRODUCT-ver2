@@ -32,6 +32,8 @@
         overflow: hidden;
         height: 100%;
         margin-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
     }
     
     &__img {
@@ -64,7 +66,7 @@
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
-        color: #000000;
+        color: #3c3c3c;
     }
     &__about {
         width: 90%;
@@ -137,7 +139,7 @@
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        color: #000000;
+        color: #3c3c3c;
     }
     &__img {
         

@@ -96,7 +96,7 @@ const hotels = new Vue({
                     
                     //HOTEL 5
                     {
-                        showLT : true,
+                        showLT : false,
                         img: 'https://www.tui.ru/getmedia/045718b9-97ce-4a80-be7f-d3de87337f9e/Limoncello-Konakli-Beach-Hotel',
                         sale: '20%',
                         place: 'Turkija / Konakli',

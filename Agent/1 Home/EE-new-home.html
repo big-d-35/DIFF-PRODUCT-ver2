@@ -573,12 +573,48 @@
                 padding-bottom: 0 !important;
             }
         }
+        /* отключаем футер и хедер и убираем ширину шаблона на  агентском сайте */
+        .pageWrapper {
+            width: 100% !important;
+        }
+
+        .mainHeader {
+            display: none !important;
+        }
+
+        .contentFooter {
+            display: none !important;
+        }
+
+        .mainFooter {
+            display: none !important;
+        }
+
+        /* отключаем футер и хедер и убираем ширину шаблона на  агентском сайте */
     </style>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
+    <script src="https://www.tui.ru/getmedia/0869385f-d7d5-4367-92ea-bfece9aa163d/NEW-diff-home-page" defer></script>
+    <script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer" defer></script>
+
+    <!-- ждем загрузки страницы -->
+    <style>
+        .main-diff-page {
+            opacity: 0;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+        const mainPageDiff = document.querySelector('.main-diff-page');
+            mainPageDiff.style.opacity = 1;
     
+  };
+    </script>
+    <!-- ждем загрузки страницы -->
 
 </head>
 <body>
+   <div class="main-diff-page">
     <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
 
     <div class="menu-top" id="home-page-diff-menu-top">
@@ -596,50 +632,50 @@
                         X
                     </div>
                     <div class="row menu-label">
-                        <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameRU}}</a>
-                        <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameRU}}</a>
-                        <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameRU}}</a>
-                        <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameRU}}</a>
+                        <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameEE}}</a>
+                        <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameEE}}</a>
+                        <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameEE}}</a>
+                        <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameEE}}</a>
                         <div class="label-menu" style="position: relative;cursor: pointer">
-                            <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameRU}}</a>
+                            <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameEE}}</a>
                             <div class="label-menu-2">
                                 <div class="concept-link">
                                     <a :href=" menuItemSmartLink "><img alt="Smart_logo" :src=" menuItemSmartLogo "></a>
                                     <div>
                                         <a :href=" menuItemSmartLink "><b>{{menuItemSmartName}}</b><br>
-                                            {{menuItemSmartNameRU}}</a>
+                                            {{menuItemSmartNameEE}}</a>
                                     </div>
                                 </div>
                                 <div class="concept-link">
                                     <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
                                     <div>
                                         <a :href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
-                                            {{menuItemFunSunNameRU}}</a>
+                                            {{menuItemFunSunNameEE}}</a>
                                     </div>
                                 </div>
                                 <div class="concept-link">
                                     <a :href=" menuItemDayNightLink "><img alt="FN_logo" :src=" menuItemDayNightLogo "></a>
                                     <div>
                                         <a :href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
-                                            {{menuItemDayNightNameRU}}</a>
+                                            {{menuItemDayNightNameEE}}</a>
                                     </div>
                                 </div>
                                 <div class="concept-link">
                                     <a :href=" menuItemToucanLink "><img alt="FN_logo" :src=" menuItemToucanLogo "></a>
                                     <div>
                                         <a :href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
-                                            {{menuItemToucanNameRU}}</a>
+                                            {{menuItemToucanNameEE}}</a>
                                     </div>
                                 </div>
                                 <div class="concept-link">
                                     <a :href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
 
-                                    <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameRU1}}<br />
-                                                {{menuItemConceptsAboutNameRU2}}</b></a></div>
+                                    <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameEE1}}<br />
+                                                {{menuItemConceptsAboutNameEE2}}</b></a></div>
                                 </div>
                             </div>
                         </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
-                        <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkRU " target="_blank">{{menuItemLoginNameRU}}</a>
+                        <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkEE " target="_blank">{{menuItemLoginNameEE}}</a>
                     </div>
                 </div>
 
@@ -648,10 +684,10 @@
                 <div class="col-md-10">
                     <div class="row menu-telephone">
                         <div class="col-md-8 col-7">
-                            <p class="telephone-title">{{menuPhoneTitleRU}}</p>
-                            <p class="telephone-number">{{menuPhonePhoneRU}}</p>
+                            <p class="telephone-title">{{menuPhoneTitleEE}}</p>
+                            <p class="telephone-number">{{menuPhonePhoneEE}}</p>
                         </div>
-                        <a :href=" menuTouristSiteLinkRU " style="color: black">{{menuTouristSiteNameRU}}</a>
+                        <a :href=" menuTouristSiteLinkEE " style="color: black">{{menuTouristSiteNameEE}}</a>
                     </div>
                 </div>
             </div>
@@ -666,12 +702,12 @@
         <div class="head" id="home-page-first-block">
             <div class="center-block">
                 <div class="white-box">
-                    <p class="header" v-html='titleRU'></p>
-                    <p class="comment" v-html='sloganRU'></p>
+                    <p class="header" v-html='titleEE'></p>
+                    <p class="comment" v-html='sloganEE'></p>
                     <div class="button-choice">
-                        <a v-bind:href=" presentationLinkRU " target="_blank">{{presentationButtonRU}}</a>
+                        <a v-bind:href=" presentationLinkRU " target="_blank">{{presentationButtonEE}}</a>
                     </div>
-                    <div class="details" v-html='detailRU'>
+                    <div class="details" v-html='detailEE'>
 
                     </div>
                 </div>
@@ -681,7 +717,7 @@
 
         <div class="content-block">
             <!-- TEXT START =========================================================== -->
-            <div class="text" v-html='conceptsAboutRU'>
+            <div class="text" v-html='conceptsAboutEE'>
 
 
             </div>
@@ -693,33 +729,33 @@
                     <div class="logo"><img v-bind:src=" concept.logo "></div>
                     <div class="about">
                         <div class="name" v-bind:style="concept.cssTitle">
-                            {{concept.titleRU}}
+                            {{concept.titleEE}}
                         </div>
                         <div class="name">
-                            {{concept.sloganRU}}
+                            {{concept.sloganEE}}
                         </div>
-                        <p class="text" v-html='concept.textRU'></p>
+                        <p class="text" v-html='concept.textEE'></p>
 
                     </div>
                 </div>
 
                 <div class="block">
-                    <div v-bind:class="concept.videoYoutube">
-                        <a class="more" v-bind:href=" concept.pageLink " target="_blank">{{buttonPageRU}}</a>
+                    <div class="video">
+                        <a class="more" v-bind:href=" concept.pageLink " target="_blank">{{buttonPageEE}}</a>
                         <div v-bind:id=" concept.videoId"></div>
                         <div v-bind:class=" concept.videoClass">
                             <img v-bind:src=" concept.videoPlay " v-bind:style="concept.videoPlayStyle"></div>
                     </div>
                     <div class="list">
                         <div class="header">
-                            {{concept.hotelsTitleRU}}
+                            {{concept.hotelsTitleEE}}
                         </div>
                         <div v-for="countrie in concept.countries">
-                            <div class="header country" v-if="countrie.showRU">
-                                {{countrie.countryNameRU}}
+                            <div class="header country" v-if="countrie.showEE">
+                                {{countrie.countryNameEE}}
                             </div>
-                            <div class="link" v-for="hotel in countrie.hotels" v-if="hotel.showRU">
-                                <a v-bind:href=" hotel.linkAgent " target="_blank">{{hotel.name}}</a>
+                            <div class="link" v-for="hotel in countrie.hotels" v-if="hotel.showEE">
+                                <a v-bind:href="'https://www.tui.ee' +  hotel.linkClient " target="_blank">{{hotel.name}}</a>
                             </div>
 
                         </div>
@@ -734,24 +770,20 @@
     <div class="footer-not-main" id="home-page-diff-footer">
         <div class="centered">
             <div class="left">
-                <h3 style="">{{agentFooterItemTitleRU}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameRU}}</a><br>
-                <a :href=" agentFooterItemAgentLinkRU ">{{agentFooterItemAgentLinkNameRU}}</a><br>
-                <a :href=" agentFooterItemB2bLinkRU ">{{agentFooterItemB2bLinkNameRU}}</a>
+                <h3 style="">{{agentFooterItemTitleEE}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameEE}}</a><br>
+                <a :href=" agentFooterItemAgentLinkEE ">{{agentFooterItemAgentLinkNameEE}}</a><br>
+                <a :href=" agentFooterItemB2bLinkEE ">{{agentFooterItemB2bLinkNameEE}}</a>
             </div>
             <div class="right">
-                <h3>{{agentFooterItemTitle2RU}}</h3>
-                <a :href=" agentFooterItemPhoneRU ">{{agentFooterItemPhoneNameRU}}</a><br>
-                <a :href=" agentFooterItemMailRU ">{{agentFooterItemMailNameRU}}</a>
+                <h3>{{agentFooterItemTitle2EE}}</h3>
+                <a :href=" agentFooterItemPhoneEE ">{{agentFooterItemPhoneNameEE}}</a><br>
+                <a :href=" agentFooterItemMailEE ">{{agentFooterItemMailNameEE}}</a>
             </div>
         </div>
     </div>
     <!-- FOOTER END =================================================== -->
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
-    <script src="./NEW-diff-home-page.js" defer></script>
-<!--    <script src="https://www.tui.ru/getmedia/0869385f-d7d5-4367-92ea-bfece9aa163d/NEW-diff-home-page" defer></script>-->
-    <script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer" defer></script>
-
+    </div>
     <script src="https://www.youtube.com/iframe_api" type="text/javascript" defer>
     </script>
     <script type="text/javascript">

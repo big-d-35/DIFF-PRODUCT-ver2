@@ -180,6 +180,7 @@ VUE автоматом подтягивает нужный перевод, ес�
     
     <!-- HOTELS ===================================== -->
     <div class="hotels__concepts" id="hotels-concepts-block">
+       <h2 class="smart__title" > {{ hotelsTitleUA }} </h2>
         <div class="hotels__countries">
            
             <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showUA" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameUA }}</a>

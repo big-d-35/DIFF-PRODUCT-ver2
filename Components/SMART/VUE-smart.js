@@ -3,12 +3,12 @@ const smartPage = new Vue ({
     data : {
         
         //BANNER
-        bannerRU : 'https://www.tui.ru/getmedia/60a7a44b-a8ee-4514-9005-5577425dcecd/banner-smart',
-        bannerBY : 'https://www.tui.ru/getmedia/60a7a44b-a8ee-4514-9005-5577425dcecd/banner-smart',
-        bannerUA : 'https://www.tui.ru/getmedia/60a7a44b-a8ee-4514-9005-5577425dcecd/banner-smart',
-        bannerEE : 'https://www.tui.ru/getmedia/b20c7fed-63ab-477e-93f0-89dd1f2cdb38/EE_banner_SMART@2x',
-        bannerLT : 'https://www.tui.ru/getmedia/4eba6c60-1d26-4e82-85d1-6c53f9944f6c/LT_banner_SMART@2x',
-        bannerLV : 'https://www.tui.ru/getmedia/ba4a4525-1e54-4ab7-930f-57250a5734b9/LV_banner_SMART@2x',
+        bannerRU : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
+        bannerBY : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
+        bannerUA : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
+        bannerEE : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
+        bannerLT : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
+        bannerLV : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
         
         
         
@@ -36,7 +36,7 @@ const smartPage = new Vue ({
             //1 POINT
             {
                 id: '#2block',
-                cssPart: 'background-color: #ffdcc6; grid-area: block1; ',
+                cssPart: 'background-color: #ffe7df; grid-area: block1; ',
                 
                 image: 'https://www.tui.ru/getmedia/11df7d91-5c73-4c90-b4ff-a145216b9a73/img-coffee',    
                 titleRU : 'Забота об окружающей среде',  
@@ -50,7 +50,7 @@ const smartPage = new Vue ({
             //2 POINT
             {
                 id: '#1block',
-                cssPart: 'background-color: #dbfff7; grid-area: block2;  ',
+                cssPart: 'background-color: #acf0ff; grid-area: block2;  ',
                 
                 image: 'https://www.tui.ru/getmedia/d5827639-6f10-4811-b264-08860a3a461c/wifi@3x_1',    
                 titleRU : 'Wi-Fi на территории отеля и в номерах',  
@@ -64,7 +64,7 @@ const smartPage = new Vue ({
             //3 POINT
             {
                 id: '#3block',
-                cssPart: 'background-color: #dbfff7; grid-area: block4; ',
+                cssPart: 'background-color: #acf0ff; grid-area: block4; ',
                 
                 image: 'https://www.tui.ru/getmedia/9673f81a-e29f-4ead-b35c-2d4a6eeac6d9/fon-template',    
                 titleRU : 'Кофе Арабика и выпечка',  
@@ -78,7 +78,7 @@ const smartPage = new Vue ({
             //4 POINT
             {
                 id: '#4block',
-                cssPart: 'background-color: #ffdcc6; grid-area: block3; ',
+                cssPart: 'background-color: #ffe7df; grid-area: block3; ',
                 
                 image: 'https://www.tui.ru/getmedia/09865c88-8465-414e-8afa-7cd13d3bceb4/gift',    
                 titleRU : 'Подарки гостям',  
@@ -92,14 +92,14 @@ const smartPage = new Vue ({
             //5 POINT
             {
                 id: '#5block',
-                cssPart: 'background-color: #ffdcc6; grid-area: block5; ',
+                cssPart: 'background-color: #ffe7df; grid-area: block5; ',
                 
                 image: 'https://www.tui.ru/getmedia/1a56fec2-5abf-43e7-931a-9674341108d3/img-flower',    
                 titleRU : 'В номере: тапочки, чайник, набор для душа',  
                 titleBY : 'В номере: тапочки, чайник, набор для душа',  
                 titleUA : 'В номере: тапочки, чайник, набор для душа',  
                 titleEE : 'Mugavused: toasussid, veekeetja, triikraud (nõudmisel)',  
-                titleLT : 'Kambaryje: šlepetės, virdulys, lygintuvas (pagal užklausimą)',  
+                titleLT : 'Kambaryje: šlepetės, virdulys, vonios reikmenys',  
                 titleLV : 'Katrā numurā: peldmēteļi, čības, tējkanna, gludeklis (pēc pieprasījuma)',
                 
             },
@@ -150,7 +150,7 @@ const smartPage = new Vue ({
                         itemBY : 'Сейф, фен и утюг',    
                         itemUA : 'Сейф, фен и утюг',    
                         itemEE : 'Tasuta seif ja triikraud',    
-                        itemLT : 'Nemokamas seifas ir lygintuvas',    
+                        itemLT : 'Seifas, plaukų džiovintuvas, lygintuvas',    
                         itemLV : 'Bezmaksas seifs un gludeklis',    
                     },
                     
@@ -168,7 +168,7 @@ const smartPage = new Vue ({
                         itemBY : 'Вода в мини-баре каждый день',    
                         itemUA : 'Вода в мини-баре каждый день',    
                         itemEE : 'Keskkonna austamine',    
-                        itemLT : 'Dėmesys aplinkai',    
+                        itemLT : 'Vanduo mini bare kasdien',    
                         itemLV : 'Saudzīga attieksme pret apkārtējo vidi',    
                     },
                     
@@ -201,7 +201,7 @@ const smartPage = new Vue ({
                         itemBY : 'Попкорн перед вечерним шоу',    
                         itemUA : 'Попкорн перед вечерним шоу',    
                         itemEE : 'Kodune kokandus',    
-                        itemLT : 'Vietinės virtuvės patiekalai',    
+                        itemLT : 'Spragėsiai prieš vakaro pasirodymus',    
                         itemLV : 'Mājas virtuves ēdieni',     
                     },
                     
@@ -219,7 +219,7 @@ const smartPage = new Vue ({
                         itemBY : 'Блюда для веганов и аллергиков',    
                         itemUA : 'Блюда для веганов и аллергиков',    
                         itemEE : 'Temaatilised õhtusöögid',    
-                        itemLT : 'Teminės vakarienės',    
+                        itemLT : 'Patiekalai veganams ir alergiškiems svečiams',    
                         itemLV : 'Tematiskās vakariņas',    
                     },
                     
@@ -228,7 +228,7 @@ const smartPage = new Vue ({
                         itemBY : 'Импортный виски',    
                         itemUA : 'Импортный виски',    
                         itemEE : 'Õllebaar',    
-                        itemLT : 'Švieži kepiniai',    
+                        itemLT : 'Importinis viskis',    
                         itemLV : 'Uz vietas cepti beķerejas izstrādājumi ',    
                     },
                     
@@ -246,7 +246,7 @@ const smartPage = new Vue ({
                         itemBY : 'Фирменный стритфуд – гирос',    
                         itemUA : 'Фирменный стритфуд – гирос',    
                         itemEE : 'Signature tänavatoit - güroskoobid',    
-                        itemLT : 'Parašas gatvės maistas - giroskopai',    
+                        itemLT : 'Greitas maistas',    
                         itemLV : 'Street Food – giross',    
                     },
                     
@@ -352,7 +352,7 @@ const smartPage = new Vue ({
                         itemBY : 'Мороженое в определенные часы',    
                         itemUA : 'Мороженое в определенные часы',    
                         itemEE : 'Tasuta jäätis',    
-                        itemLT : 'Nemokami ledai',    
+                        itemLT : 'Nemokami ledai nustatytu laiku',    
                         itemLV : 'Bezmaksas saldējums',    
                     },
                     
@@ -370,7 +370,7 @@ const smartPage = new Vue ({
                         itemBY : 'BIO огород с пряными травами',    
                         itemUA : 'BIO огород с пряными травами',    
                         itemEE : 'Kaubamärgiga kingitus',    
-                        itemLT : 'Viešbučio dovana',    
+                        itemLT : 'BIO daržas su prieskoninėmis žolelėmis',    
                         itemLV : 'Dāvanā Mini Toucan kluba tērps: īpašs t-krekls un lakatiņš ar logo',    
                     },
                     

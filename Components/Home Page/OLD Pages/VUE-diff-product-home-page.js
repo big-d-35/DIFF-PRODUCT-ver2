@@ -159,9 +159,9 @@ const homePageSmartBlockVideoHotels = new Vue ({
         hotelLink2Client: '/hotel/europe-turkey-alanya-mahmutlar-smart__euphoria__bella__mare__hotel/',
         hotelName2: 'SMART Euphoria Bella Mare Hotel 4*', */
         
-        hotelLink3Agent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel-(ex-Club-Konakli)',
+        /*hotelLink3Agent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel-(ex-Club-Konakli)',
         hotelLink3Client: '/hotel/europe-turkey-alanya-konakli-smart__limoncello__konakli__beach__hotel/',
-        hotelName3: 'SMART Limoncello Konakli Beach Hotel 5*',
+        hotelName3: 'SMART Limoncello Konakli Beach Hotel 5*',*/
         
         hotelLink4Agent: '/Tours/Europe/Turkey/Alanya/Konakli/Club-Hotel-Mirabell',
         hotelLink4Client: '/hotel/europe-turkey-alanya-konakli-smart__club__hotel__mirabell/',

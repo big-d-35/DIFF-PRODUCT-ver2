@@ -173,9 +173,9 @@ const concepts = new Vue({
                     },
                     
                     {
-                        itemRU : 'Импортные алкогольные напитки 24 часа',
-                        itemBY : 'Импортные алкогольные напитки 24 часа',
-                        itemUA : 'Импортные алкогольные напитки 24 часа',
+                        itemRU : 'Импортные алкогольные напитки',
+                        itemBY : 'Импортные алкогольные напитки',
+                        itemUA : 'Импортные алкогольные напитки',
                         itemEE : 'Imporditud alkohoolsed joogid 24h',
                         itemLT : 'Importiniai alkoholiniai gėrimai 24 val.',
                         itemLV : 'Importētie alkoholiskie dzērieni 24h',

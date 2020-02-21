@@ -142,7 +142,7 @@ const hotels = new Vue({
                     },
                     
                     //HOTEL 5
-                    {
+                    /*{
                         img: 'https://www.tui.ru/getmedia/045718b9-97ce-4a80-be7f-d3de87337f9e/Limoncello-Konakli-Beach-Hotel',
                         sale: '20%',
                         place: 'Турция / Конаклы',
@@ -153,7 +153,7 @@ const hotels = new Vue({
                         service : 'Начало работы по концепции: 25 апреля 2020',
                         price: 'от 112 000 ₽',
                         oldPrice: '145 232 ₽',
-                    },
+                    },*/
                     
                     //HOTEL 6
                     {

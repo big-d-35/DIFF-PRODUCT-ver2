@@ -179,6 +179,7 @@
         
         <!-- HOTELS ===================================== -->
     <div class="hotels__concepts" id="hotels-concepts-block">
+       <h2 class="smart__title" > {{ hotelsTitleRU }} </h2>
         <div class="hotels__countries">
            
             <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</a>

@@ -575,10 +575,28 @@
         }
     </style>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
+    <script src="https://www.tui.ru/getmedia/0869385f-d7d5-4367-92ea-bfece9aa163d/NEW-diff-home-page" defer></script>
+    <script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer" defer></script>
 
+<!-- ждем загрузки страницы -->
+    <style>
+        .main-diff-page {
+            opacity: 0;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+        const mainPageDiff = document.querySelector('.main-diff-page');
+            mainPageDiff.style.opacity = 1;
+    
+  };
+    </script>
+    <!-- ждем загрузки страницы -->
 </head>
 <body>
+   
+   <div class="main-diff-page">
     <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
 
     <div class="menu-top" id="home-page-diff-menu-top">
@@ -704,7 +722,7 @@
                 </div>
 
                 <div class="block">
-                    <div v-bind:class="concept.videoYoutube">
+                    <div class="video">
                         <a class="more" v-bind:href=" concept.pageLink " target="_blank">{{buttonPageRU}}</a>
                         <div v-bind:id=" concept.videoId"></div>
                         <div v-bind:class=" concept.videoClass">
@@ -746,11 +764,7 @@
         </div>
     </div>
     <!-- FOOTER END =================================================== -->
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
-    <script src="./NEW-diff-home-page.js" defer></script>
-<!--    <script src="https://www.tui.ru/getmedia/0869385f-d7d5-4367-92ea-bfece9aa163d/NEW-diff-home-page" defer></script>-->
-    <script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer" defer></script>
+    </div>
 
     <script src="https://www.youtube.com/iframe_api" type="text/javascript" defer>
     </script>

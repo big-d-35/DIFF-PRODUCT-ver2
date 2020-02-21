@@ -105,9 +105,29 @@ VUE автоматом подтягивает нужный перевод, ес�
             
             overflow: hidden;
         }
-        
+        .page {
+            background: #ffffff!important;
+        }
     </style>
     <!-- отключаем хэдере футер сайдблок на агенте ======================= -->
+    <!-- ждем загрузки страницы -->
+    <style>
+        .main-diff-page {
+            opacity: 0;
+        }
+        .content-block {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+        const mainPageDiff = document.querySelector('.main-diff-page');
+            mainPageDiff.style.opacity = 1;
+    
+  };
+    </script>
+    <!-- ждем загрузки страницы -->
 </head>
 
 <!-- HEAD END ========================================================================= -->
@@ -115,7 +135,7 @@ VUE автоматом подтягивает нужный перевод, ес�
 
 
 <body>
-   
+   <div class="main-diff-page">  
    <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
 
 <div class="menu-top" id="home-page-diff-menu-top"  style="z-index: 10;">
@@ -275,6 +295,7 @@ VUE автоматом подтягивает нужный перевод, ес�
     
     <!-- HOTELS ===================================== -->
     <div class="hotels__concepts" id="hotels-concepts-block">
+        <h2 class="smart__title" > {{ hotelsTitleLT }} </h2>
         <div class="hotels__countries">
            
             <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showLT" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameLT }}</a>
@@ -343,7 +364,7 @@ VUE автоматом подтягивает нужный перевод, ес�
         <!-- FOOTER END ================================= --> 
     
 <!-- MAIN END ========================================================================= -->
-    
+    </div> 
 <!-- SCRIPTS START ==================================================================== --> 
 
 

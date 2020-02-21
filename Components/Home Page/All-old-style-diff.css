@@ -196,8 +196,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.8em solid #2f3e75;
-    border-radius: 0.8em;
+    
 }
 
 .play img {

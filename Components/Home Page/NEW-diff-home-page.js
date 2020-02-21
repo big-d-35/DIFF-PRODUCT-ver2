@@ -43,8 +43,9 @@ const homePageConcepts = new Vue({
         concepts : [
             //SMART
             {
-                
+                videoYoutube: 'video4',
                 logo : 'https://www.tui.ru/getmedia/7eea7272-a23a-4d66-9df7-4eb7463c2a55/Smart-Logo-80px',
+                cssTitle: 'text-transform:uppercase;margin-bottom:20px',
                 titleRU : 'КОНЦЕПЦИЯ ОТДЫХА SMART',
                 titleBY : 'КОНЦЕПЦИЯ ОТДЫХА SMART',
                 titleUA : 'КОНЦЕПЦИЯ ОТДЫХА SMART',
@@ -111,12 +112,12 @@ const homePageConcepts = new Vue({
                             },
                             
                             {
-                                showRU : true,
-                                showBY : true,
-                                showUA : true,
-                                showEE : true,
-                                showLT : true,
-                                showLV : true,
+                                showRU : false,
+                                showBY : false,
+                                showUA : false,
+                                showEE : false,
+                                showLT : false,
+                                showLV : false,
                                 name : 'SMART Limoncello Konakli Beach Hotel 5*',
                                 linkAgent: '/Tours/Europe/Turkey/Alanya/Konakli/Limoncello-Konakli-Beach-Hotel-(ex-Club-Konakli)',
                                 linkClient: '/hotel/europe-turkey-alanya-konakli-smart__limoncello__konakli__beach__hotel/',
@@ -177,7 +178,9 @@ const homePageConcepts = new Vue({
             
             //FUN SUN
             {
+                videoYoutube: 'video',
                 logo : 'https://www.tui.ru/getmedia/d154b64a-2315-40e0-94f5-53137a734367/logo-FS',
+                cssTitle: 'text-transform:uppercase;margin-bottom:20px',
                 titleRU : 'Концепция семейного отдыха FUN&SUN',
                 titleBY : 'Концепция семейного отдыха FUN&SUN',
                 titleUA : 'Концепция семейного отдыха FUN&SUN',
@@ -661,7 +664,9 @@ const homePageConcepts = new Vue({
             
             //DAY NIGHT
             {
+                videoYoutube: 'video2',
                 logo : 'https://www.tui.ru/getmedia/82b48419-a310-45c9-a9d0-4b4fe86c85de/logo-FN',
+                cssTitle: 'text-transform:uppercase;margin-bottom:20px',
                 titleRU : 'Концепция активного отдыха DAY&NIGHT Connected',
                 titleBY : 'Концепция активного отдыха DAY&NIGHT Connected',
                 titleUA : 'Концепция активного отдыха DAY&NIGHT Connected',
@@ -807,7 +812,9 @@ const homePageConcepts = new Vue({
             
             //TOUCAN
             {
+                videoYoutube: 'video3',
                 logo : 'https://www.tui.ru/getmedia/a388ed46-64bc-4a03-a888-ae08a95cf843/logo-mini-toucan',
+                cssTitle: 'text-transform:uppercase;margin-bottom:20px',
                 titleRU : 'Детские клубы МИНИ ТУКАН',
                 titleBY : 'Детские клубы МИНИ ТУКАН',
                 titleUA : 'Детские клубы МИНИ ТУКАН',

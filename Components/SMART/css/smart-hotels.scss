@@ -75,14 +75,14 @@
         }
         &__block {
             width: 360px;
-            min-height: 350px;
+            //min-height: 350px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             margin: 10px;
             border: solid 1px #e7e3db;
-            border-radius: 10px;
+            border-radius: 5px;
             transition: box-shadow 0.2s linear;
             &:hover {
                 box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
@@ -97,8 +97,8 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
             background-color: rgba(0, 0, 0, 0.4);
             
         }
@@ -224,7 +224,7 @@
             padding-bottom: 13px;
             border-radius: 5px;
             border: solid 2px #ff530e;
-            background-color: #ffffff;
+            background-color: #ff530e;
             font-family: TUITypeCyrillic;
               font-size: 20px;
               font-weight: normal;
@@ -233,7 +233,7 @@
               line-height: normal;
               letter-spacing: normal;
               text-align: center;
-              color: #ff530e;
+              color: #ffffff;
             text-decoration: none;
             cursor: pointer;
             margin-bottom: 20px;
@@ -321,14 +321,14 @@
         }
         &__block {
             width: 360px;
-            min-height: 360px;
+            //min-height: 360px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             margin: 10px;
             border: solid 1px #e7e3db;
-            border-radius: 10px;
+            border-radius: 5px;
             transition: box-shadow 0.2s linear;
             &:hover {
                 box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
@@ -343,8 +343,8 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
             background-color: rgba(0, 0, 0, 0.4);
             
         }
@@ -468,7 +468,7 @@
             padding-bottom: 13px;
             border-radius: 5px;
             border: solid 2px #ff530e;
-            background-color: #ffffff;
+            background-color: #ff530e;
             font-family: TUITypeCyrillic;
               font-size: 20px;
               font-weight: normal;
@@ -477,7 +477,7 @@
               line-height: normal;
               letter-spacing: normal;
               text-align: center;
-              color: #ff530e;
+              color: #ffffff;
             text-decoration: none;
             cursor: pointer;
             margin-bottom: 20px;
@@ -563,14 +563,14 @@
         }
         &__block {
             width: 44%;
-            min-height: 355px;
+            //min-height: 355px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             margin: 10px;
             border: solid 1px #e7e3db;
-            border-radius: 10px;
+            border-radius: 5px;
             transition: box-shadow 0.2s linear;
             &:hover {
                 box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
@@ -585,8 +585,8 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
             background-color: rgba(0, 0, 0, 0.4);
             
         }
@@ -710,7 +710,7 @@
             padding-bottom: 13px;
             border-radius: 5px;
             border: solid 2px #ff530e;
-            background-color: #ffffff;
+            background-color: #ff530e;
             font-family: TUITypeCyrillic;
               font-size: 20px;
               font-weight: normal;
@@ -719,7 +719,7 @@
               line-height: normal;
               letter-spacing: normal;
               text-align: center;
-              color: #ff530e;
+              color: white;
             text-decoration: none;
             cursor: pointer;
             margin-bottom: 20px;
@@ -792,7 +792,7 @@
             border-radius: 5px;
             height: 50px;
             margin-bottom: 20px;
-            border: solid 2px #ffaf00;
+            border: solid 2px #ff530e;
             font-family: TUITypeCyrillic;
               font-size: 16px;
               font-weight: normal;
@@ -834,7 +834,7 @@
             align-items: center;
             margin: 10px;
             border: solid 1px #e7e3db;
-            border-radius: 10px;
+            border-radius: 5px;
             transition: box-shadow 0.2s linear;
             &:hover {
                 box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.12);
@@ -849,8 +849,8 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
             background-color: rgba(0, 0, 0, 0.4);
             
         }
@@ -975,7 +975,7 @@
             padding-bottom: 13px;
             border-radius: 5px;
             border: solid 2px #ff530e;
-            background-color: #ffffff;
+            background-color: #ff530e;
             font-family: TUITypeCyrillic;
               font-size: 20px;
               font-weight: normal;
@@ -984,7 +984,7 @@
               line-height: normal;
               letter-spacing: normal;
               text-align: center;
-              color: #ff530e;
+              color: white;
             text-decoration: none;
             cursor: pointer;
             margin-bottom: 20px;

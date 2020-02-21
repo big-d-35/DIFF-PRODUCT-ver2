@@ -1,706 +1,638 @@
-<title>Видео о TUI Россия и СНГ</title>
-<meta content="width=device-width, initial-scale=1" name="viewport" />
-<link href="https://www.tui.ru/getmedia/56bdc290-a09d-46ca-9205-3886db79cc6f/all" rel="stylesheet" type="text/css" />
-<style type="text/css">.ActionPage-description.static{
-	margin: 0 auto;
-	width: 116.2rem;
-}
-.ActionPage-description__text img{
-	float:left;
-	margin: -5px 15px 5px 15px;
-	width:220px;
-}
-h2 {
-    font-size: 3rem;
-}
-.mahraba-link {
-padding: 10px;
-color: white;
-background:#47b9e2;
+<!DOCTYPE html>
+<html>
 
-cursor: pointer;
-text-decoration: none;
-
-}
-.label{
-	display: block!important;
-}
-.line_block {display: inline-block; vertical-align: middle; max-width: 700px;}	
-.squre{
-	list-style: square;
-	margin-left: 35px;
-}	
-.img_toucan{
-max-width: 175px;
-width: 100%;
-}		
-/* скрываем чекбоксы и блоки с содержанием */
-.hide {
-display: none; 
-}
-.hide + label ~ div{
-display: none;
-}
-/* оформляем текст label */
-.hide + label {
-/*border-bottom: 1px dotted #092a5e;*/
-padding: 10px;
-color: #092a5e;
-font-size: 18px;
-font-weight: bold;
-cursor: pointer;
-display: inline-block; 
-background-color:#dcdcdc;
-width:500px;
-}
-/* вид текста label при активном переключателе */
-.hide:checked + label {
-color: #737373;
-border-bottom: 0;
-}
-/* когда чекбокс активен показываем блоки с содержанием  */
-.hide:checked + label + div {
-display: block; 
-/*background: #efefef;
--moz-box-shadow: inset 3px 3px 10px #7d8e8f;
--webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
-box-shadow: inset 3px 3px 10px #7d8e8f;*/
-padding: 10px 10px 0px 10px; 
-line-height:1.4;
-font-weight: normal;
-margin-left: 25px
-
-}
-
-.blu_back{
-background-color: #47b9e2;
-line-height: 2;
-padding-left: 20px;
-color: #fff;
-font-weight: bold;
-padding-top: 0;
-}
-
-.radius{
-	border-radius: 150px;
-}
-.butsl{
-	color: #2e74c1;
-	cursor: pointer;
-	text-decoration: underline;
-}
-.hotelDisplayDisable{
-	 transition: 1s;
-	height: 0;
-	overflow: hidden;
-}
-.hotelDisplayActive{
-	 transition: 1s;
-	overflow: hidden;
-}
-.arrow_right{
-color: #2e74c1;
-font-size: 18px;
-cursor: pointer;
-transition: all 0.5s ease;
-margin-left: 5px;
-display: inline-block;
-}
-.activity{
-transition: all 0.5s ease;
-transform: rotate(180deg);
-}	
-.ActionPage-description strong {
-font-weight: 700!important;
-}
-.btn_circle{
-background: #092a5e;
-color: #fff;
-text-decoration: none;
-cursor: pointer;
-padding: 10px 15px;
-transition: all 0.7s ease;
-}
-.btn_circle:hover{
-background: #fff;
-color: #092a5e;
-border: 1px solid #092a5e;
-transition: all 0.7s ease;
-}
-.hotels-block{
-	display: flex;
-	line-height: 1.4;
-}
-
-
-.hotels-header{
-margin: 1px;
-padding: 15px;
-background: #dcdcdc;
-font-size: 15px;
-width: 100%;
-font-weight: bold;
-text-align: center;
-}
-
-
-.period{
-margin: 1px;
-padding: 15px;
-background: #c2e6fa;
-font-size: 14px;
-width: 100%;
-}
-
-
-.hotels-items{
-margin: 1px;
-padding: 15px;
-background: #e2f3fe;
-font-size: 14px;
-width: 100%;
-
-}
-.action_circle {
-          margin: 0 35px;
-          display: inline-flex;
-          width: 250px;
-          height: 250px;
-          border-radius: 120px;
-          justify-content: center;
-          background-color: #70cbf4;
-          background-size: cover;
-          position: relative;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      }
-  
-      .sale_text {
-          color: #fff;
-          text-align: center;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 28px;
-          width: 250px;
-          font-weight: bold;
-          text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-      }
-  
-      .block__lines img {
-          /* max-width: 270px; */
-          width: 100%;
-          margin: 0;
-      }
-	strong, b {
-		font-weight: bold;
-	}
-	
-.text__field {
-    min-height: 150px!important;
-}
-/* demo контейнер */
-.demo {
-margin-top: 50px;
-}
-.ski__pass{
-	height: 115px;
-	width: 100%;
-	background-image: url(https://www.tui.ru/getmedia/e0da04e8-fc06-4f88-b82d-5abb0000c092/banner_skipass);
-	background-position: center, center;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-@media screen and (min-width: 320px) and (max-width: 811px) {
- .hotelDisplayActive{
-	 height: 100%!important;
-}
-.ActionPage-container .static {
-	width: 100%;
-}
-.action_circle {
-	display: block;
-	margin: 15px auto;
-}
-.ski__pass{
-	background-image: url(https://www.tui.ru/getmedia/d46094d9-5475-4723-a9b2-0acc98c1c199/mob_banner_skipass);
-	height: 260px;
-	border-radius: 5px;
-	}	
-}
-.row__circle{
-	display: flex;
-	justify-content: center;
-}
-.line {
-    padding-bottom: 15px;
-}
-.centers {
-    margin: 0 auto;
-    text-align: center;
-}
-.action_circle {
-    margin: 0 35px;
-    display: inline-flex;
-    width: 250px;
-    height: 250px;
-    border-radius: 120px;
-    justify-content: center;
-    background-color: #70cbf4;
-    background-size: cover;
-    position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-ul li, ol li {
-    font-size: 18px;
-    line-height: 1.3;
-    color: #092a5e;
-}
-.sale_text {
-    color: #fff;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 28px;
-    width: 250px;
-    font-weight: bold;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-}
-.new__text, .new_li{
-	font-size:17px !important;
-}
-.new_li{
-	list-style: disc;
-	margin:0 20px;
-}
-.new__text a{
-	text-decoration:underline;
-}
-.stars{
-	list-style: none;	
-	}
-.stars li::before {
-    content: "★";
-	margin-right: 5px;
-}	
-/* скрываем чекбоксы и блоки с содержанием */
-        .hide {
-            display: none;
-        }
-
-        .hide+label~div {
-            display: none;
-        }
-
-        /* оформляем текст label */
-        .hide+label {
-            /*border-bottom: 1px dotted #092a5e;*/
-            padding: 10px;
-            color: #092a5e;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            display: inline-block;
-            background-color: #dcdcdc;
-            width: 500px;
-        }
-
-        /*.arrow-top{
-        border: 20px solid transparent;	
-        border-bottom: 20px solid green;
-    }
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--metatextblock-->
+    <title>TUI: билеты в парк The Land of Legends</title>
+    <meta name="description" content="Специальное предложение для турагентов: комиссия за каждый билет" />
+    <meta property="og:url" content="http://tui-lands-of-legens.tilda.ws" />
+    <meta property="og:title" content="TUI: билеты в парк The Land of Legends" />
+    <meta property="og:description" content="Специальное предложение для турагентов: комиссия за каждый билет" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://static.tildacdn.com/tild3266-3939-4133-b233-366165373061/LEGENDS_GENEL_KEY_4_.jpg" />
+    <link rel="canonical" href="http://tui-lands-of-legens.tilda.ws">
+    <!--/metatextblock-->
+    <meta property="fb:app_id" content="257953674358265" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="https://tilda.ws">
+    <link rel="dns-prefetch" href="https://static.tildacdn.com">
+    <meta name="robots" content="nofollow" />
+    <link rel="shortcut icon" href="https://static.tildacdn.com/img/tildafavicon.ico" type="image/x-icon" /><!-- Assets -->
+    <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://tilda.ws/project1542970/tilda-blocks-2.12.css?t=1575617248" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-slds-1.4.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-zoom-2.0.min.css" type="text/css" media="all" />
+    <script src="https://static.tildacdn.com/js/jquery-1.10.2.min.js"></script>
+    <script src="https://static.tildacdn.com/js/tilda-scripts-2.8.min.js"></script>
+    <script src="https://tilda.ws/project1542970/tilda-blocks-2.7.js?t=1575617248"></script>
+    <script src="https://static.tildacdn.com/js/lazyload-1.3.min.js" charset="utf-8"></script>
+    <script src="https://static.tildacdn.com/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
+    <script src="https://static.tildacdn.com/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
+    <script src="https://static.tildacdn.com/js/tilda-slds-1.4.min.js" charset="utf-8"></script>
+    <script src="https://static.tildacdn.com/js/hammer.min.js" charset="utf-8"></script>
+    <script src="https://static.tildacdn.com/js/tilda-zoom-2.0.min.js" charset="utf-8"></script>
+    <script src="https://static.tildacdn.com/js/tilda-video-1.0.min.js" charset="utf-8"></script>
     
-    
-    .arrow-bottom{
-        border: 20px solid transparent;	
-        border-top: 20px solid green;
-    }*/
+</head>
 
-        /* вид текста label при активном переключателе */
-        .hide:checked+label {
-            color: #737373;
-            border-bottom: 0;
-        }
-	.squre a {
-		color: blue;
-	}
-        /* когда чекбокс активен показываем блоки с содержанием  */
-        .hide:checked+label+div {
-            display: block;
-            /*background: #efefef;
-    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
-    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
-    box-shadow: inset 3px 3px 10px #7d8e8f;*/
-            padding: 10px 10px 0px 10px;
-            line-height: 1.4;
-        }
+<body class="t-body" style="margin:0;">
+    <!--allrecords-->
+    <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="1542970" data-tilda-page-id="8449304" data-tilda-page-alias="tlol-tickets" data-tilda-formskey="68f2c7870ff575c9cf8355631c922b2a">
+        <div id="rec146538935" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="257">
+            <!-- T228 -->
+            <div id="nav146538935marker"></div>
+            <div class="t228__mobile">
+                <div class="t228__mobile_container">
+                    <div class="t228__mobile_text t-name t-name_md" field="text">&nbsp;</div>
+                    <div class="t228__burger"> <span></span> <span></span> <span></span> <span></span> </div>
+                </div>
+            </div>
+            <div id="nav146538935" class="t228 t228__hidden t228__positionfixed t228__beforeready" style="background-color: rgba(54,176,247,0.95); height:90px; " data-bgcolor-hex="#36b0f7" data-bgcolor-rgba="rgba(54,176,247,0.95)" data-navmarker="nav146538935marker" data-appearoffset="700px" data-bgopacity-two="" data-menushadow="" data-bgopacity="0.95" data-menu-items-align="center" data-menu="yes">
+                <div class="t228__maincontainer " style="height:90px;">
+                    <div class="t228__padding40px"></div>
+                    <div class="t228__leftside">
+                        <div class="t228__leftcontainer"> <a href="http://project271592.tilda.ws/page1063750.html" target="_blank" style="color:#ffffff;">
+                                <div class="t228__logo t-title" field="title" style="color:#ffffff;">TUI</div>
+                            </a> </div>
+                    </div>
+                    <div class="t228__centerside ">
+                        <div class="t228__centercontainer">
+                            <ul class="t228__list t228__list_hidden">
+                                <li class="t228__list_item"><a class="t-menu__link-item" href="#rec146715236" data-menu-submenu-hook="" style="color:#ffffff;font-weight:600;text-transform:uppercase;" data-menu-item-number="1">О парке</a> </li>
+                                <li class="t228__list_item"><a class="t-menu__link-item" href="#rec146728986" data-menu-submenu-hook="" style="color:#ffffff;font-weight:600;text-transform:uppercase;" data-menu-item-number="2">Стоимость билетов</a> </li>
+                                <li class="t228__list_item"><a class="t-menu__link-item" href="#rec146734567" data-menu-submenu-hook="" style="color:#ffffff;font-weight:600;text-transform:uppercase;" data-menu-item-number="3">Видео о парке</a> </li>
+                                <li class="t228__list_item"><a class="t-menu__link-item" href="#rec146538943" data-menu-submenu-hook="" style="color:#ffffff;font-weight:600;text-transform:uppercase;" data-menu-item-number="4">Как забронировать</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="t228__rightside">
+                        <div class="t228__rightcontainer">
+                            <div class="t228__right_buttons">
+                                <div class="t228__right_buttons_wrap">
+                                    <div class="t228__right_buttons_but"><a href="https://www.tui.ru/search/country_turkey/region_belek/?adults=2&amp;dateFrom=1577992671497&amp;directionCountryTo=18803&amp;directionFrom=274286&amp;directionRegionTo=296056&amp;maxCost=2000000&amp;nightsFrom=7&amp;nightsTo=14&amp;sortType=5" target="" class="t-btn " style="color:#000000;background-color:#ffffff;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;">
+                                            <table style="width:100%; height:100%;">
+                                                <tr>
+                                                    <td>Туры в Белек</td>
+                                                </tr>
+                                            </table>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t228__padding40px"></div>
+                </div>
+            </div>
+            <style>
+                @media screen and (max-width: 980px) {
+                    #rec146538935 .t228__leftcontainer {
+                        padding: 20px;
+                    }
+                }
 
-        .arrow_right {
-            position: absolute;
-            right: 15px;
-        }
+                @media screen and (max-width: 980px) {
+                    #rec146538935 .t228__imglogo {
+                        padding: 20px 0;
+                    }
+                }
+            </style>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    t228_highlight();
+                    t228_checkAnchorLinks('146538935');
+                });
+                $(window).resize(function() {
+                    t228_setWidth('146538935');
+                });
+                $(window).load(function() {
+                    t228_setWidth('146538935');
+                });
+                $(document).ready(function() {
+                    t228_setWidth('146538935');
+                });
+                $(window).resize(function() {
+                    t228_setBg('146538935');
+                });
+                $(document).ready(function() {
+                    t228_setBg('146538935');
+                });
+                $(document).ready(function() {
+                    $('.t228').removeClass('t228__beforeready');
+                    t228_appearMenu('146538935');
+                    $(window).bind('scroll', t_throttle(function() {
+                        t228_appearMenu('146538935')
+                    }, 200));
+                });
+            </script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    t228_createMobileMenu('146538935');
+                });
+            </script>
+            <style>
+                #rec146538935 .t-btn:not(.t-animate_no-hover):hover {
+                    color: #2abf31 !important;
+                }
 
-        /* demo контейнер */
-        .demo {
-            margin-top: 15px;
-        }
+                #rec146538935 .t-btn:not(.t-animate_no-hover) {
+                    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+                    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+                }
+            </style>
+            <style>
+                #rec146538935 .t-menu__link-item {
+                    -webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+                    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+                }
 
-        .button__toggler {
-            cursor: pointer;
-			font-size:20px;
-        }
+                #rec146538935 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover {
+                    color: #2abf31 !important;
+                }
 
-        .row-block__toggler {
-            height: 0;
-            overflow: hidden;
-            /* padding: 30px 0; */
-        }
+                @supports (overflow:-webkit-marquee) and (justify-content:inherit) {
 
-        .block__toggler {
-            padding: 30px 0;
-        }
+                    #rec146538935 .t-menu__link-item,
+                    #rec146538935 .t-menu__link-item.t-active {
+                        opacity: 1 !important;
+                    }
+                }
+            </style>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    setTimeout(function() {
+                        t_menusub_init('146538935');
+                    }, 500);
+                });
+            </script>
+            <style>
+                @media screen and (max-width: 980px) {
+                    #rec146538935 .t-menusub__menu .t-menusub__link-item {
+                        color: #ffffff !important;
+                    }
+                }
+            </style>
+            <!--[if IE 8]><style>#rec146538935 .t228 { filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D936b0f7', endColorstr='#D936b0f7');
+}</style><![endif]-->
+        </div>
+        <div id="rec146538936" class="r t-rec" style=" " data-animationappear="off" data-record-type="18">
+            <!-- cover -->
+            <div class="t-cover" id="recorddiv146538936" bgimgfield="img" style="height:100vh; background-image:url('https://static.tildacdn.com/tild3135-6362-4931-b234-316566666630/-/resize/20x/noroot.png');">
+                <div class="t-cover__carrier" id="coverCarry146538936" data-content-cover-id="146538936" data-content-cover-bg="https://static.tildacdn.com/tild3135-6362-4931-b234-316566666630/noroot.png" data-content-cover-height="100vh" data-content-cover-parallax="" style="height:100vh;background-attachment:scroll; "></div>
+                <div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: -o-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fe000000', endColorstr='#fe000000');"></div>
+                <div class="t-container">
+                    <div class="t-col t-col_8 ">
+                        <div class="t-cover__wrapper t-valign_middle" style="height:100vh;">
+                            <div class="t001 t-align_left">
+                                <div class="t001__wrapper" data-hook-content="covercontent">
+                                    <div class="t001__title t-title t-title_xl t-animate" data-animate-style="fadeinup" data-animate-group="yes" style="color:#ffffff;" field="title">
+                                        <div style="font-size:52px;text-align:center;" data-customstyle="yes"><span style="font-weight: 400;">THE LAND OF LEGENDS — путешествие в сказку</span><br /></div>
+                                    </div>
+                                    <div class="t001__descr t-descr t-descr_xl t-animate" data-animate-style="fadeinup" data-animate-group="yes" style="" field="descr">
+                                        <div style="text-align:center;" data-customstyle="yes"><span style="font-weight: 400;">Комиссия за каждый проданный билет <br />в парк развлечений</span></div>
+                                    </div> <span class="space"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- arrow -->
+                <div class="t-cover__arrow">
+                    <div class="t-cover__arrow-wrapper t-cover__arrow-wrapper_animated">
+                        <div class="t-cover__arrow_mobile"><svg class="t-cover__arrow-svg" style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592" style="enable-background:new 0 0 38.417 18.592;">
+                                <g>
+                                    <path d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z" />
+                                </g>
+                            </svg></div>
+                    </div>
+                </div> <!-- arrow -->
+            </div>
+        </div>
+        <div id="rec146696523" class="r t-rec t-rec_pt_60 t-rec_pb_60" style="padding-top:60px;padding-bottom:60px; " data-record-type="61">
+            <!-- T051 -->
+            <div class="t051">
+                <div class="t-container">
+                    <div class="t-col t-col_12 ">
+                        <div class="t051__text t-text t-text_md" style="" field="text">В Турции на Анталийском побережье расположился огромный сказочный парк развлечений The Land of Legends, где можно скатиться с американских горок, посмотреть шоу дельфинов, поймать волну под брызгами водопада. Здесь есть, чем заняться и семьям с детьми, и парам, и большим компаниям!<br /><br />Предложите своим туристам, которые собираются на отдых в Турцию, билеты в парк The Land of Legends — <br />все останутся от него в восторге.<br /><br /><span style="font-weight: 400;">А для вас — комиссия за каждый проданный билет, <br />которая будет рассчитана согласно агентскому договору :)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec146719571" class="r t-rec t-rec_pt_30" style="padding-top:30px; " data-record-type="170">
+            <!-- t156 -->
+            <div class="t156">
+                <div class="t-container">
+                    <div class="t-col t-col_12">
+                        <table style="margin:0 auto; padding:0;">
+                            <tr>
+                                <td itemscope itemtype="http://schema.org/ImageObject"><img class="t-img" imgfield="gi_img__0" src="https://static.tildacdn.com/tild6130-3635-4438-b130-336365363536/-/empty/Chateau_11.jpg" data-original="https://static.tildacdn.com/tild6130-3635-4438-b130-336365363536/Chateau_11.jpg" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild6130-3635-4438-b130-336365363536/Chateau_11.jpg" style="width:100%;">
+                                    <meta itemprop="image" content="https://static.tildacdn.com/tild6130-3635-4438-b130-336365363536/Chateau_11.jpg">
+                                </td>
+                                <td style="width:20px;"></td>
+                                <td itemscope itemtype="http://schema.org/ImageObject"><img class="t-img" imgfield="gi_img__1" src="https://static.tildacdn.com/tild6366-6135-4438-a236-353635643034/-/empty/Magicone_1.jpg" data-original="https://static.tildacdn.com/tild6366-6135-4438-a236-353635643034/Magicone_1.jpg" data-zoom-target="1" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild6366-6135-4438-a236-353635643034/Magicone_1.jpg" style="width:100%;">
+                                    <meta itemprop="image" content="https://static.tildacdn.com/tild6366-6135-4438-a236-353635643034/Magicone_1.jpg">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec146715236" class="r t-rec t-rec_pt_75 t-rec_pb_30" style="padding-top:75px;padding-bottom:30px; " data-record-type="510">
+            <!-- t510 -->
+            <div class="t510">
+                <div class="t-section__container t-container">
+                    <div class="t-col t-col_12">
+                        <div class="t-section__topwrapper t-align_center">
+                            <div class="t-section__title t-title t-title_xs" field="btitle"><strong><span data-redactor-tag="span" style="font-weight: 400;">Парк THE LAND OF LEGENDS:</span></strong> <br /><br /></div>
+                            <div class="t-section__descr t-descr t-descr_xl t-margin_auto" field="bdescr">Территория площадью 63 000 га. Сложно оценить размах? Представьте, например, футбольное поле… и ещё 87 футбольных полей!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2 t-item">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff;; border: 2px solid #1f5bff; ">1</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" style="">
+                            <div class="t-name t-name_md t510__bottommargin" style="" field="li_title__1476966581869">
+                                <div style="font-size:32px;color:#07aaf8;" data-customstyle="yes"><span style="font-weight: 400;">Драйв-парк</span></div>
+                            </div>
+                            <div class="t-descr t-descr_sm" style="" field="li_descr__1476966581869">40 водных горок, половина отведена для развлечения взрослых, другая часть рассчитана на детский отдых и сегментирована по возрастам. Здесь же множество бассейнов, в том числе с искусственными волнами и имитацией пляжа и даже мини-лагуна. В бассейне-аквариуме «Подводное сафари» можно поплавать в скафандре среди тропических рыб. Море брызг и смеха гарантировано!</div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" style=""></div>
+                    <div class="t-col t-col_8 t-prefix_2 t-item">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff;; border: 2px solid #1f5bff; ">2</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" style="">
+                            <div class="t-name t-name_md t510__bottommargin" style="" field="li_title__1476966593578">
+                                <div style="font-size:32px;color:#07aaf8;" data-customstyle="yes"><span style="font-weight: 400;">Adventure-парк</span></div>
+                            </div>
+                            <div class="t-descr t-descr_sm" style="" field="li_descr__1476966593578">24 аттракциона на суше. Среди них скоростной гиперкостер — американские горки высотой 61 метр, с мертвыми петлями, поворотами на 360 градусов и скоростью движения 115 км/час</div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" style=""></div>
+                    <div class="t-col t-col_8 t-prefix_2 t-item">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff;; border: 2px solid #1f5bff; ">3</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" style="">
+                            <div class="t-name t-name_md t510__bottommargin" style="" field="li_title__1476966597622">
+                                <div style="font-size:32px;color:#07aaf8;" data-customstyle="yes"><span style="font-weight: 400;">Зоопарк</span></div>
+                            </div>
+                            <div class="t-descr t-descr_sm" style="" field="li_descr__1476966597622">Захватывающее шоу с участием дельфинов, морских котиков, белых китов и пингвинов понравится и детям, и родителям!</div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" style=""></div>
+                    <div class="t-col t-col_8 t-prefix_2 t-item">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff;; border: 2px solid #1f5bff; ">4</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" style="">
+                            <div class="t-name t-name_md t510__bottommargin" style="" field="li_title__1575394325858">
+                                <div style="font-size:32px;color:#07aaf8;" data-customstyle="yes"><span style="font-weight: 400;">Шопинг-авеню</span></div>
+                            </div>
+                            <div class="t-descr t-descr_sm" style="" field="li_descr__1575394325858">Улица-променад, где сосредоточены а-ля карт рестораны, бары, магазины абсолютно всех популярных брендов и на любой кошелёк ;)</div>
+                        </div>
+                    </div>
+                    <div class="t-clear t510__separator" style=""></div>
+                    <div class="t-col t-col_8 t-prefix_2 t-item">
+                        <div class="t-cell t-valign_top">
+                            <div class="t510__circle t-heading t-valign_top" style=" color:#1f5bff;; border: 2px solid #1f5bff; ">5</div>
+                        </div>
+                        <div class="t510__textwrapper t-cell t-valign_top" style="">
+                            <div class="t-name t-name_md t510__bottommargin" style="" field="li_title__1575394328122">
+                                <div style="font-size:32px;color:#07aaf8;" data-customstyle="yes"><span style="font-weight: 400;">Вечернее шоу</span></div>
+                            </div>
+                            <div class="t-descr t-descr_sm" style="" field="li_descr__1575394328122">Потрясающее шоу каждый вечер: парад лодок, поющие фонтаны, выступление артистов и аниматоров и грандиозный фейерверк над сказочным замком! </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec146715129" class="r t-rec t-rec_pt_105 t-rec_pb_15" style="padding-top:105px;padding-bottom:15px; " data-animationappear="off" data-record-type="670">
+            <div class="t670">
+                <div class="t-slds" style="visibility: hidden;">
+                    <div class="t-container t-slds__main">
+                        <div class="t-slds__container t-width t-width_9 t-margin_auto">
+                            <div class="t-slds__items-wrapper t-slds_animated-none t-slds__witharrows" data-slider-transition="300" data-slider-with-cycle="true" data-slider-correct-height="true" data-auto-correct-mobile-width="false" data-slider-arrows-nearpic="yes">
+                                <div class="t-slds__item t-slds__item_active" data-slide-index="1">
+                                    <div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject">
+                                        <div class="t-slds__wrapper t-align_center">
+                                            <meta itemprop="image" content="https://static.tildacdn.com/tild3433-3261-4437-b130-646530616164/Wave_Shock_Pool_Them.jpg">
+                                            <div class="t670__imgwrapper" bgimgfield="gi_img__0">
+                                                <div class="t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.com/tild3433-3261-4437-b130-646530616164/Wave_Shock_Pool_Them.jpg" style="background-image: url('https://static.tildacdn.com/tild3433-3261-4437-b130-646530616164/-/resizeb/20x/Wave_Shock_Pool_Them.jpg');"></div>
+                                                <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="t-slds__item " data-slide-index="2">
+                                    <div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject">
+                                        <div class="t-slds__wrapper t-align_center">
+                                            <meta itemprop="image" content="https://static.tildacdn.com/tild6130-3031-4636-b339-303466326438/WaterFront_Kingdom_2.jpg">
+                                            <div class="t670__imgwrapper" bgimgfield="gi_img__1">
+                                                <div class="t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.com/tild6130-3031-4636-b339-303466326438/WaterFront_Kingdom_2.jpg" style="background-image: url('https://static.tildacdn.com/tild6130-3031-4636-b339-303466326438/-/resizeb/20x/WaterFront_Kingdom_2.jpg');"></div>
+                                                <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="t-slds__item " data-slide-index="3">
+                                    <div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject">
+                                        <div class="t-slds__wrapper t-align_center">
+                                            <meta itemprop="image" content="https://static.tildacdn.com/tild3233-6636-4432-b361-663161636632/Theme_Park_Genel.jpg">
+                                            <div class="t670__imgwrapper" bgimgfield="gi_img__2">
+                                                <div class="t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.com/tild3233-6636-4432-b361-663161636632/Theme_Park_Genel.jpg" style="background-image: url('https://static.tildacdn.com/tild3233-6636-4432-b361-663161636632/-/resizeb/20x/Theme_Park_Genel.jpg');"></div>
+                                                <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="t-slds__item " data-slide-index="4">
+                                    <div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject">
+                                        <div class="t-slds__wrapper t-align_center">
+                                            <meta itemprop="image" content="https://static.tildacdn.com/tild3935-6564-4235-a239-363139616661/Typhoon_Coaster_2.jpg">
+                                            <div class="t670__imgwrapper" bgimgfield="gi_img__3">
+                                                <div class="t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.com/tild3935-6564-4235-a239-363139616661/Typhoon_Coaster_2.jpg" style="background-image: url('https://static.tildacdn.com/tild3935-6564-4235-a239-363139616661/-/resizeb/20x/Typhoon_Coaster_2.jpg');"></div>
+                                                <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="t-slds__item " data-slide-index="5">
+                                    <div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject">
+                                        <div class="t-slds__wrapper t-align_center">
+                                            <meta itemprop="image" content="https://static.tildacdn.com/tild3632-3732-4264-a535-326436613033/Entertainment_1.jpg">
+                                            <div class="t670__imgwrapper" bgimgfield="gi_img__4">
+                                                <div class="t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.com/tild3632-3732-4264-a535-326436613033/Entertainment_1.jpg" style="background-image: url('https://static.tildacdn.com/tild3632-3732-4264-a535-326436613033/-/resizeb/20x/Entertainment_1.jpg');"></div>
+                                                <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="t-slds__item " data-slide-index="6">
+                                    <div class="t-width t-width_9 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject">
+                                        <div class="t-slds__wrapper t-align_center">
+                                            <meta itemprop="image" content="https://static.tildacdn.com/tild6261-3663-4766-b238-313933363862/Theme_Park_Genel_Nig.jpg">
+                                            <div class="t670__imgwrapper" bgimgfield="gi_img__5">
+                                                <div class="t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.com/tild6261-3663-4766-b238-313933363862/Theme_Park_Genel_Nig.jpg" style="background-image: url('https://static.tildacdn.com/tild6261-3663-4766-b238-313933363862/-/resizeb/20x/Theme_Park_Genel_Nig.jpg');"></div>
+                                                <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t-slds__arrow_container t-slds__arrow_container-outside">
+                            <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left">
+                                <div class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg" style="width: 40px; height: 40px;background-color: rgba(232,232,232,1);">
+                                    <div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 9px;"> <svg style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <desc>Left</desc>
+                                            <polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5" />
+                                        </svg> </div>
+                                </div>
+                            </div>
+                            <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right">
+                                <div class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg" style="width: 40px; height: 40px;background-color: rgba(232,232,232,1);">
+                                    <div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 9px;"> <svg style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <desc>Right</desc>
+                                            <polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5" />
+                                        </svg> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t-slds__bullet_wrapper">
+                            <div class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1">
+                                <div class="t-slds__bullet_body" style="background-color: #c7c7c7;"></div>
+                            </div>
+                            <div class="t-slds__bullet " data-slide-bullet-for="2">
+                                <div class="t-slds__bullet_body" style="background-color: #c7c7c7;"></div>
+                            </div>
+                            <div class="t-slds__bullet " data-slide-bullet-for="3">
+                                <div class="t-slds__bullet_body" style="background-color: #c7c7c7;"></div>
+                            </div>
+                            <div class="t-slds__bullet " data-slide-bullet-for="4">
+                                <div class="t-slds__bullet_body" style="background-color: #c7c7c7;"></div>
+                            </div>
+                            <div class="t-slds__bullet " data-slide-bullet-for="5">
+                                <div class="t-slds__bullet_body" style="background-color: #c7c7c7;"></div>
+                            </div>
+                            <div class="t-slds__bullet " data-slide-bullet-for="6">
+                                <div class="t-slds__bullet_body" style="background-color: #c7c7c7;"></div>
+                            </div>
+                        </div>
+                        <div class="t-slds__caption__container"> </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    t670_init('146715129');
+                    t_sldsInit('146715129');
+                });
+                $('.t670').bind('displayChanged', function() {
+                    t_slds_updateSlider('146715129');
+                    t_slds_positionArrows('146715129');
+                });
+            </script>
+            <style type="text/css">
+                #rec146715129 .t-slds__bullet_active .t-slds__bullet_body {
+                    background-color: #222 !important;
+                }
 
-        .button__arrow {
-            display: inline-block;
-            transition: .5s;
-            margin-left: 5px;
-        }
-
-        .button_arrow__active {
-            transform: rotate(180deg);
-        }
-.hotels-block-action-page {
-    grid-row-gap: 20px !important;
-}
-.mobile{
-		display: none;	
-	}
-.urgent-block {
-    background: #f3f0ec;
-    padding: 20px;
-}
-	.video__block{
-		text-align: center;
-		max-width: 1232px;
-		width: 100%;
-		margin: 0 auto;
-		
-	}
-	.video__player {
-    max-width: 1026px;
-    width: 100%;
-    height: 525px;
-}
- .hotels-block-action-page {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        grid-column-gap: 1%;
-        grid-row-gap: 1%;
-        justify-items: center;
-    }
-
-    .new__text {
-        height: 140px;
-    }
-
-    .hotels__block {
-        max-width: 273px;
-        width: 100%;
-        height: 336px;
-        border-radius: 5px;
-        background-color: #ffffff;
-        border: none;
-    }
-
-    .first__line {
-        width: 273px;
-        height: 150px;
-        position: relative;
-        cursor: pointer;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-    }
-
-    .region {
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
-        color: #092a5e;
-        position: inherit;
-        margin: 25px 0;
-    }
-
-    .acomodation {
-        text-align: center;
-        color: #092a5e;
-        position: inherit;
-        margin: 0;
-    }
-
-    .second__line {
-        padding: unset;
-    }
-
-    .new__price {
-        font-size: 25px;
-        font-weight: bold;
-        color: #1896cf;
-        text-align: center;
-        position: inherit;
-        margin: 0;
-    }
-
-    .choice__column {
-        width: 371px;
-        height: 204px;
-        border-radius: 5px;
-        position: relative;
-        cursor: pointer;
-        transition: ease 0.5s all;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .shadow {
-        width: 371px;
-        height: 204px;
-        opacity: 0.6;
-        border-radius: 5px;
-        background-image: -webkit-linear-gradient(bottom, #000000, rgba(0, 0, 0, 0));
-        background-image: -o-linear-gradient(bottom, #000000, rgba(0, 0, 0, 0));
-        background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
-        z-index: 1;
-    }
-
-    .best__destenetion {
-        position: absolute;
-        left: 20px;
-        bottom: 18px;
-        text-align: left;
-    }
-
-    .destenetion {
-        font-size: 20px;
-        font-weight: bold;
-        color: #ffffff;
-        padding: 0;
-        margin: 0;
-    }
-
-    .rules {
-        color: #c2e6fa;
-        font-size: 15px;
-        padding: 0;
-        margin: 0;
-    }
-
-    .best__price {
-        position: absolute;
-        bottom: 18px;
-        right: 21px;
-    }
-
-    .prices {
-        margin: 0;
-        padding: 0;
-        text-align: left;
-        font-size: 15px;
-        color: #fff;
-    }
-
-    .bigest {
-        font-size: 23px;
-        font-weight: bold;
-        color: #ffffff;
-    }
-
-    .btn__red {
-        background: red;
-        padding: 10px 25px;
-        color: #fff;
-        text-decoration: none;
-        transition: ease 0.5s all;
-    }
-
-    .btn__red:hover {
-        transition: ease 0.5s all;
-        border-top-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .table__blocks {
-        text-align: center;
-    }
-
-    .tabllines {
-        display: inline-block;
-        width: 48%;
-        padding: 0 10px 0 10px;
-        vertical-align: top;
-        text-align: left;
-    }
-
-    .mytables {
-        width: 100%;
-        border-collapse: collapse;
-        background: #c2ebfa;
-    }	
-@media (max-width: 750px){
-	.row__circle{
-		display: block;
-	}
-	.desc{
-		display: none;	
-	}
-	.mobile{
-		display: block;
-	}
-.ActionPage-description__banner {
-    height: inherit!important;
-    max-height: inherit!important;
-}
-.choice__column {
-            width: 290px;
-            margin-left: -5px;
-        }
-
-        .shadow {
-            width: 290px;
-        }
-
-        .table__blocks {
-            overflow: scroll;
-        }
-
-        .hotels-block-action-page {
-            grid-template-columns: 1fr !important;
-            grid-row-gap: 10px;
-        }
-
-        .ActionPage-description__banner {
-            height: inherit;
-        }
-
-        .su-row-banners {
-            height: 148px !important;
-            margin: 90px 0 0 0 !important;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .plashka__text {
-            position: inherit;
-            font-size: 20px;
-            left: inherit;
-            top: inherit;
-        }
-
-        .bitrix__btn {
-            display: inline-block;
-        }
-
-        .plashka__link {
-            display: block;
-            font-size: 17px;
-            padding: 10px 72px 15px;
-            position: inherit;
-            top: inherit;
-            margin-top: 10px;
-            right: inherit;
-        }
-
-        .plshka__small {
-            font-size: 15px;
-        }	
-}
-</style>
-<div style="max-width: 1232px; width: 100%; margin: 0 auto;">
-<div class="ActionPage-description">
-<div class="ActionPage-description__header">Видео о TUI Россия и СНГ</div>
-<img class="ActionPage-description__banner desc" src="/getmedia/8771511b-dd95-46a8-9fd9-efe371724d79/1232x370" /><img class="ActionPage-description__banner mobile" src="/getmedia/0ea80a76-6d89-49ee-9203-8372ae643337/320x370" />
-
-<div class="ActionPage-description__text"><br />
-Мы научились по-новому смотреть на туризм. Нам важно не просто доставить вас из точки А в точку Б, нам важно, какие впечатления вы получите! Ради этого мы стремимся стать лучше: реагируем на ваши пожелания, расширяем количество направлений, открываем новые офисы, оснащенные по последнему слову техники, и год за годом оправдываем звание экспертов во всём, что связано с путешествиями. Спасибо, что вы с нами!
-</div>
-
-<div style="height: 25px;"></div>
-
-<div class="video__block"><iframe class="video__player" src="https://www.youtube.com/embed/lvXm9EBTjB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-<div style="height: 25px;"></div>
-<div class="su-row-all">
-        <div class="su-row-tile" id="su-tile">
-            <div class="ActionPage-description__text chocolat" data-description="leto">
-                <h2 style="text-align: center;"><br />
-                    Лучшие предложения от TUI<br />
-                    &nbsp;</h2>
-                <div class="hotels-block-action-page"></div>
+                #rec146715129 .t-slds__bullet:hover .t-slds__bullet_body {
+                    background-color: #222 !important;
+                }
+            </style>
+        </div>
+        <div id="rec146907964" class="r t-rec t-rec_pt_30 t-rec_pb_15" style="padding-top:30px;padding-bottom:15px; " data-record-type="60">
+            <!-- T050 -->
+            <div class="t050">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <div class="t050__title t-title t-title_xxl" field="title" style="">
+                            <div style="font-size:52px;" data-customstyle="yes"><span style="font-weight: 400;">СТОИМОСТЬ БИЛЕТОВ</span></div>
+                            <div style="font-size:22px;" data-customstyle="yes"><span style="font-weight: 400;">Трансфер в парк/из парка входит в стоимость билетов</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec146728986" class="r t-rec t-rec_pt_45 t-rec_pb_90" style="padding-top:45px;padding-bottom:90px; " data-record-type="412">
+            <!-- T412 -->
+            <div class="t412">
+                <div class="t-container">
+                    <div class="t412__col t-col t-col_4 t412__col">
+                        <div class="t412__content" style="border-color: #000000;border-width: 2px;">
+                            <div class="t412__wrapper"> <img class="t412__img t412__img_circle t-img" src="https://static.tildacdn.com/tild3237-3034-4332-b861-353439386138/-/empty/shutterstock_6903862.jpg" data-original="https://static.tildacdn.com/tild3237-3034-4332-b861-353439386138/shutterstock_6903862.jpg" data-tu-max-width="300" data-tu-max-height="300" alt="" style="" imgfield="img" />
+                                <div class="t412__title t-name t-name_xl" style="" field="title"><strong>Низкий сезон<br /><span style="font-size: 14px;"><span style="font-weight: 100;" data-redactor-style="font-weight: 100;">(01.04.2020-30.04.2020; <br />01.10.2020-31.10.2020)</span></span></strong></div>
+                                <div class="t412__descr t-text" style="" field="descr">
+                                    <div style="font-size:24px;" data-customstyle="yes"> Взрослый* — &#8364;60 <br /><br /> Детский** — &#8364;54 <br /><br /> Инфант*** — &#8364;6 <br /><br /><span style="font-size: 14px;"><em>*Взрослые (12+)<br />**Дети (3-11,99 лет)</em> <br /><em>***Инфанты (0-2,99 лет)</em> </span><br /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t412__col t-col t-col_4 t412__col">
+                        <div class="t412__content" style="border-color: #000000;border-width: 2px;">
+                            <div class="t412__wrapper"> <img class="t412__img t412__img_circle t-img" src="https://static.tildacdn.com/tild3331-3562-4662-a661-393763643233/-/empty/shutterstock_6903861.jpg" data-original="https://static.tildacdn.com/tild3331-3562-4662-a661-393763643233/shutterstock_6903861.jpg" data-tu-max-width="300" data-tu-max-height="300" alt="" style="" imgfield="img2" />
+                                <div class="t412__title t-name t-name_xl" style="" field="title2"><strong>Высокий сезон<br /><span style="font-weight: 100;"><span data-redactor-style="font-size: 14px;" style="font-size: 14px;"><strong data-redactor-tag="strong"><span style="font-weight: 100;"><span style="font-size: 14px;" data-redactor-style="font-size: 14px;">(04.06.2020-31.08.2020)</span></span></strong><br /></span></span></strong></div>
+                                <div class="t412__descr t-text" style="" field="descr2">
+                                    <div style="font-size:24px;" data-customstyle="yes">Взрослый — &#8364;85<br /><br />Детский* — &#8364;74<br /><br />Инфант** — &#8364;6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t412__col t-col t-col_4 t412__col">
+                        <div class="t412__content" style="border-color: #000000;border-width: 2px;">
+                            <div class="t412__wrapper"> <img class="t412__img t412__img_circle t-img" src="https://static.tildacdn.com/tild6332-6130-4637-b334-643436623431/-/empty/shutterstock_6903863.jpg" data-original="https://static.tildacdn.com/tild6332-6130-4637-b334-643436623431/shutterstock_6903863.jpg" data-tu-max-width="300" data-tu-max-height="300" alt="" style="" imgfield="img3" />
+                                <div class="t412__title t-name t-name_xl" style="" field="title3"><strong>Межсезонье<br /><span style="font-weight: 100;"><span style="font-size: 14px;" data-redactor-style="font-size: 14px;"><strong data-redactor-tag="strong"><span style="font-weight: 100;"><span data-redactor-style="font-size: 14px;" style="font-size: 14px;">(01.05.2020-03.06.2020<br />01.09.2020-30.09.2020)</span></span></strong><br /></span></span></strong></div>
+                                <div class="t412__descr t-text" style="" field="descr3">
+                                    <div style="font-size:24px;" data-customstyle="yes">Взрослый — &#8364;70<br /><br />Детский* — &#8364;60<br /><br />Инфант** — &#8364;6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    t412_init('146728986');
+                    t412_unifyHeights('146728986');
+                    setTimeout(function() {
+                        t412_unifyHeights('146728986');
+                    }, 500);
+                });
+                $('.t412').bind('displayChanged', function() {
+                    t412_unifyHeights('146728986');
+                });
+                $(window).resize(function() {
+                    t412_unifyHeights('146728986');
+                });
+                $(window).load(function() {
+                    t412_unifyHeights('146728986');
+                });
+            </script>
+        </div>
+        <div id="rec146736258" class="r t-rec t-rec_pt_30" style="padding-top:30px; " data-record-type="169">
+            <!-- t155 -->
+            <div class="t155">
+                <div class="t-container">
+                    <div class="t-row">
+                        <div class="t-col t-col_6">
+                            <div class="t-bgimg" bgimgfield="gi_img__0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild6536-3837-4337-b233-366636336639/Concert_Area1.jpg" data-original="https://static.tildacdn.com/tild6536-3837-4337-b233-366636336639/Concert_Area1.jpg" style="background: url('https://static.tildacdn.com/tild6536-3837-4337-b233-366636336639/-/resizeb/20x/Concert_Area1.jpg') center center no-repeat; background-size:cover; height:660px; margin-bottom:20px;" itemscope itemtype="http://schema.org/ImageObject">
+                                <meta itemprop="image" content="https://static.tildacdn.com/tild6536-3837-4337-b233-366636336639/Concert_Area1.jpg">
+                            </div>
+                        </div>
+                        <div class="t-col t-col_6">
+                            <div class="t-bgimg" bgimgfield="gi_img__1" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild6466-3635-4938-b064-316233643364/Musical_Parade2.jpg" data-original="https://static.tildacdn.com/tild6466-3635-4938-b064-316233643364/Musical_Parade2.jpg" style="width:100%; background: url('https://static.tildacdn.com/tild6466-3635-4938-b064-316233643364/-/resizeb/20x/Musical_Parade2.jpg') center center no-repeat; background-size:cover; height:320px; margin-bottom:20px;" itemscope itemtype="http://schema.org/ImageObject">
+                                <meta itemprop="image" content="https://static.tildacdn.com/tild6466-3635-4938-b064-316233643364/Musical_Parade2.jpg">
+                            </div>
+                            <div class="t-bgimg" bgimgfield="gi_img__2" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild6261-6331-4461-b864-313230386638/Musical_Parade.jpg" data-original="https://static.tildacdn.com/tild6261-6331-4461-b864-313230386638/Musical_Parade.jpg" style="width:100%; background: url('https://static.tildacdn.com/tild6261-6331-4461-b864-313230386638/-/resizeb/20x/Musical_Parade.jpg') center center no-repeat; background-size:cover; height:320px; margin-bottom:20px;" itemscope itemtype="http://schema.org/ImageObject">
+                                <meta itemprop="image" content="https://static.tildacdn.com/tild6261-6331-4461-b864-313230386638/Musical_Parade.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec146734567" class="r t-rec t-rec_pt_90 t-rec_pb_90" style="padding-top:90px;padding-bottom:90px; " data-record-type="4">
+            <!-- T121 -->
+            <div class="t121">
+                <center>
+                    <div class="t-video-lazyload t-width t-width_10" style="height:540px; " data-videolazy-type="youtube" data-videolazy-id="Pli7OTkU9p4" data-blocklazy-id="146734567" data-videolazy-load="false" data-videolazy-height="540px"> </div>
+                </center>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    t121_setHeight("146734567");
+                });
+                $(window).load(function() {
+                    t121_setHeight("146734567");
+                });
+                $(window).bind('scroll', t_throttle(function() {
+                    t121_setHeight("146734567");
+                }, 200));
+                $(window).resize(function() {
+                    if ($('#allrecordstable').length > 0) {
+                        $('#rec146734567').find('.t-video-lazyload').css('height', '540px');
+                        $('#rec146734567').find('.t-video-lazyload').find('iframe').css('height', '540px');
+                    } else {
+                        t121_setHeight("146734567");
+                    }
+                });
+                $('.t121').bind('displayChanged', function() {
+                    t121_setHeight("146734567");
+                });
+            </script>
+        </div>
+        <div id="rec146538943" class="r t-rec t-rec_pt_60 t-rec_pb_0" style="padding-top:60px;padding-bottom:0px;background-color:#eeeeee; " data-record-type="503" data-bg-color="#eeeeee">
+            <!-- t503 -->
+            <div class="t503">
+                <div class="t-section__container t-container">
+                    <div class="t-col t-col_12">
+                        <div class="t-section__topwrapper t-align_left">
+                            <div class="t-section__title t-title t-title_xs" field="btitle"><strong>КАК ЗАБРОНИРОВАТЬ?</strong> <br /></div>
+                            <div class="t-section__descr t-descr t-descr_xl" field="bdescr">
+                                <div style="color:#5e5e5e;" data-customstyle="yes"><span style="font-weight: 400;">Билеты в парк THE LAND OF LEGENDS необходимо добавить в корзину при формировании заявки на тур</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-container"> </div>
+            </div>
+        </div>
+        <div id="rec146921722" class="r t-rec t-rec_pt_60 t-rec_pb_60" style="padding-top:60px;padding-bottom:60px; " data-record-type="60">
+            <!-- T050 -->
+            <div class="t050">
+                <div class="t-container t-align_center">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <div class="t050__title t-title t-title_xxl" field="title" style="">
+                            <div style="font-size:40px;" data-customstyle="yes"><span style="font-weight: 400;">ПРЕДЛАГАЙТЕ ТУРИСТАМ БИЛЕТЫ В ПАРК THE LAND OF LEGENDS</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec146538945" class="r t-rec" style=" " data-animationappear="off" data-record-type="14">
+            <!-- cover -->
+            <div class="t-cover" id="recorddiv146538945" bgimgfield="img" style="height:100vh; background-image:url('https://static.tildacdn.com/tild6239-3266-4232-a266-373430323433/-/resize/20x/LEGENDS_GENEL_KEY_4_.jpg');">
+                <div class="t-cover__carrier" id="coverCarry146538945" data-content-cover-id="146538945" data-content-cover-bg="https://static.tildacdn.com/tild6239-3266-4232-a266-373430323433/LEGENDS_GENEL_KEY_4_.jpg" data-content-cover-height="100vh" data-content-cover-parallax="fixed" style="height:100vh; "></div>
+                <div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(117,108,55,0.20), rgba(66,43,22,0.20));background-image: -webkit-linear-gradient(top, rgba(117,108,55,0.20), rgba(66,43,22,0.20));background-image: -o-linear-gradient(top, rgba(117,108,55,0.20), rgba(66,43,22,0.20));background-image: -ms-linear-gradient(top, rgba(117,108,55,0.20), rgba(66,43,22,0.20));background-image: linear-gradient(top, rgba(117,108,55,0.20), rgba(66,43,22,0.20));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc756c37', endColorstr='#cc422b16');"></div>
+                <div class="t-container">
+                    <div class="t-col t-col_12">
+                        <div class="t-cover__wrapper t-valign_middle" style="height:100vh;">
+                            <div class="t102" data-hook-content="covercontent">
+                                <div class="t102__title t-title" style="text-transform:uppercase;" field="title">
+                                    <div style="font-size:52px;" data-customstyle="yes"></div>
+                                </div> <span class="space"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rec146538955" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#1eb1fa; " data-record-type="56" data-bg-color="#1eb1fa">
+            <!-- T046 -->
+            <div class="t046">
+                <div class="t-container">
+                    <div class="t-col t-col_6 t-prefix_3">
+                        <div class="t046__text t-text t-text_xs" style="" field="text">
+                            <div style="color:#fffcfc;" data-customstyle="yes">Все фото предоставлены The Land Of Legends<br /></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-<div style="height: 25px;"></div>
-<script type="text/javascript">
-        var buttons = document.querySelectorAll('.button__toggler'),
-            blocks = document.querySelectorAll('.row-block__toggler');
+    <!--/allrecords-->
+    
+</body>
 
-        buttons.forEach(function (el, index) {
-            el.setAttribute('data-button', index);
-            blocks[index].setAttribute("data-result", index)
-        })
-
-
-        function toggler(el) {
-            var index = el.dataset.button,
-                result = blocks[index],
-                height = blocks[index].children[0].offsetHeight,
-                transition = ((height / 100) * 0.2 > 2) ? 2 : (height / 100) * 0.2;
-
-            if (result.dataset.active == undefined || result.dataset.active === "false") {
-
-                if (el.closest('.row-block__toggler')) {
-                    let parentElement = el.closest('.row-block__toggler');
-                    parentHeight = parentElement.style.height.match(/\d+/);
-                    parentElement.style.height = +parentHeight + height + "px";
-                }
-
-                result.setAttribute("data-active", true);
-                result.setAttribute('style', "height:" + height + "px;transition: " + transition + "s");
-                el.querySelector('.button__arrow').classList.add('button_arrow__active');
-
-
-            } else {
-                if (el.closest('.row-block__toggler')) {
-                    let parentElement = el.closest('.row-block__toggler');
-                    parentHeight = parentElement.style.height.match(/\d+/);
-                    parentElement.style.height = +parentHeight - height + "px";
-                }
-                result.setAttribute("data-active", false);
-                result.style.height = "0px";
-                el.querySelector('.button__arrow').classList.remove('button_arrow__active')
-            }
-        }
-    </script>
-
-
-<script src="https://www.tui.ru/getmedia/eaaf2c6b-381d-4098-a9d6-0764a1a4e890/data" type="text/javascript"></script>
-<script type="text/javascript">
-    var newScript = document.createElement('script');
-    newScript.src = 'https://agent.tui.ua/getmedia/0f11ff34-a3f0-4043-b4d9-7db688183981/add_files?v=01082019';
-    document.head.appendChild(newScript)
-
-    newScript.onload = function () {
-        add_files([
-            "https://agent.tui.ru/getmedia/2f02f195-3661-4a25-9405-d65ed4ab66f6/jquery-min",
-            "https://www.tui.ru/getmedia/251052c8-d5c2-4ce7-a928-8690c4dc5e42/all",
-            "https://www.tui.ru/getmedia/cbd987d2-cb51-4173-8540-04819b1f732d/another",
-        ], 'script')
-		
-    }
-	
-</script>
-
-</div>
-</div>
+</html>
