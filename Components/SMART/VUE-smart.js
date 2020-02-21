@@ -6,9 +6,9 @@ const smartPage = new Vue ({
         bannerRU : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
         bannerBY : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
         bannerUA : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
-        bannerEE : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
-        bannerLT : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
-        bannerLV : 'https://www.tui.ru/getmedia/541b8bdb-0627-477f-8e32-7ead95417978/banner_SMART@2x',
+        bannerEE : 'https://www.tui.ru/getmedia/726e7e99-0dd3-4bed-9fe2-8b87a4ec2378/EE_banner_SMART@2x_1',
+        bannerLT : 'https://www.tui.ru/getmedia/b117fafd-c5ff-4b8e-8c6c-29d26ccaaec2/LT_banner_SMART@2x_1',
+        bannerLV : 'https://www.tui.ru/getmedia/7a123b26-8512-48d1-8173-32b496360a58/LV_banner_SMART@2x_1',
         
         
         
