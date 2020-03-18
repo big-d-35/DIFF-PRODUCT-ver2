@@ -707,7 +707,7 @@ const concepts = new Vue({
                         showLT : false,
                         showLV : false,
                         name: 'St. Raphael Resort 5*',
-                        linkAgent: '/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/',
+                        linkAgent: '/Tours/Europe/Cyprus/Limasol-Resort/Limasol-City/St-Raphael-Resort',
                         linkClient : '/hotel/europe-cyprus-limasol__resort-limasol__city-st__raphael__resort/',
                     },
                     
@@ -937,7 +937,7 @@ const concepts = new Vue({
                         showLT : false,
                         showLV : false,
                         name: 'Falkensteiner Club Funimation Calabria (ex. Garden Resort Calabria) 4*',
-                        linkAgent: '/Tours/Europe/Italy/Calabria/Pizzo/Valtur-Garden-Calabria',
+                        linkAgent: '/Tours/Europe/Italy/Calabria/Pizzo/Falkensteiner-Club-Funimation-Calabria-(ex-Garden',
                         linkClient : '/hotel/europe-italy-calabria-pizzo-garden__resort__calabria/',
                     },
                                 

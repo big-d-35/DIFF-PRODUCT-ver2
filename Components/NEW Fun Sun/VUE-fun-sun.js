@@ -724,7 +724,7 @@ const concepts = new Vue({
                         showLV : true,
                         name: 'FUN&SUN Club Belek 5*',
                         linkAgent: '/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek',
-                        linkClient : '/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/',
+                        linkClient : '/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek__(ex__tui__magic__life__belek)/',
                     },
                     
                     {
@@ -886,7 +886,7 @@ const concepts = new Vue({
                         showLT : false,
                         showLV : false,
                         name: 'FUN&SUN Vangelis Hotel & Suites 4*',
-                        linkAgent: '/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites',
+                        linkAgent: '/Tours/Europe/Cyprus/Protaras/Protaras-city/FUN-SUN-vangelis-hotel-suites',
                         linkClient : '/hotel/europe-cyprus-protaras-protaras__city-fun__sun__vangelis__hotel__suites/',
                     },
                     

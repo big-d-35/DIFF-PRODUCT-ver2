@@ -129,7 +129,7 @@ const hotels = new Vue({
                         place: 'Belekas',
                         name : 'FUN&SUN Club Belek 5*',
                         agentLink : '/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek',
-                        clientLink : '/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/',
+                        clientLink : '/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek__(ex__tui__magic__life__belek)/',
                         nights : 'Pradedama dirbti pagal koncepciją: ',
                         service : '25.04.2020',
                         price: 'от 112 000 ₽',

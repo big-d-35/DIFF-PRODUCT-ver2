@@ -91,7 +91,7 @@ const hotels = new Vue({
                         sale: '20%',
                         place: 'Турция / Конаклы',
                         name : 'SMART Club Hotel Mirabell 4*',
-                        agentLink : '/Tours/Europe/Turkey/Alanya/Konakli/Club-Hotel-Mirabell',
+                        agentLink : '/Tours/Europe/Turkey/Alanya/Konakli/SMART-Club-Hotel-Mirabell',
                         clientLink : '/hotel/europe-turkey-alanya-konakli-smart__club__hotel__mirabell/',
                         nights : 'Новинка сезона! ',
                         service : 'Начало работы по концепции: 25 апреля 2020',
