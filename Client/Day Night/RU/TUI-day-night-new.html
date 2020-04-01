@@ -111,6 +111,13 @@
 
     add_files(vueLinks, 'script');
 </script>
+<!-- СТИЛЬ Загрузка VUE после рендеринга  =============================================== -->
+    <style>
+
+            [v-cloak] {
+        display: none;
+        }
+    </style>
 </head>
 
 <!-- HEAD END ========================================================================= -->
@@ -119,7 +126,7 @@
 
 <!-- MAIN START ========================================================================= -->
 
-<div class="concepts__main" id="day-night">
+<div v-cloak class="concepts__main" id="day-night">
    
    <!-- BANNER ===================================== -->
     <div class="banner__concepts" v-bind:class="bannerConceptsBckg">
@@ -178,7 +185,7 @@
     <!-- ENTERTAIMENT ===================================== -->
     
     <!-- HOTELS ===================================== -->
-    <div class="hotels__concepts" id="hotels-concepts-block">
+    <div v-cloak class="hotels__concepts" id="hotels-concepts-block">
         <div class="hotels__countries" id="hotels-concepts-buttons-block">
            
             <a v-for=" countryName in countryNames " v-bind:data-id=' countryName.id ' v-if="countryName.showRU" class="hotels__country"  v-bind:class=" countryName.class ">{{ countryName.nameRU }}</a>

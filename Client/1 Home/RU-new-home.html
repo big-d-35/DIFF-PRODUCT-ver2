@@ -465,7 +465,9 @@
         }
     }
 </style>
-
+    
+    
+    
     <!-- SCRIPT загрузки VUE  =================================================== -->
 <script>
     const vueLinks = ['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
@@ -505,9 +507,15 @@
 
     add_files(vueLinks, 'script');
 </script>
-
-<!-- ждем загрузки страницы -->
+<!-- СТИЛЬ Загрузка VUE после рендеринга  =============================================== -->
     <style>
+
+            [v-cloak] {
+        display: none;
+        }
+    </style>
+<!-- ждем загрузки страницы -->
+<!--    <style>
         .main-diff-page {
             opacity:0;
         }
@@ -516,7 +524,7 @@
             flex-direction: column;
         }
     </style>
-<!--
+
     <script>
         window.onload = function() {
         const mainPageDiff = document.querySelector('.main-diff-page');
@@ -533,7 +541,7 @@
    
 <div class="main-diff-page">
    
-    <div id="home-page-concepts">
+    <div v-cloak id="home-page-concepts">
 
         <!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
         <div class="head" id="home-page-first-block">
@@ -608,7 +616,7 @@
     
     <!-- FOOTER START =================================================== -->
 
-<div class="footer-not-main" id="home-page-diff-footer">
+<div v-cloak class="footer-not-main" id="home-page-diff-footer">
     <div class="centered">
         <div class="left">
             <h3 style="">{{agentFooterItemTitleRU}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameRU}}</a><br>

@@ -574,12 +574,19 @@
             }
         }
     </style>
+    <!-- СТИЛЬ Загрузка VUE после рендеринга  =============================================== -->
+    <style>
 
+            [v-cloak] {
+        display: none;
+    }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js" defer></script>
     <script src="https://www.tui.ru/getmedia/0869385f-d7d5-4367-92ea-bfece9aa163d/NEW-diff-home-page" defer></script>
     <script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer" defer></script>
 
 <!-- ждем загрузки страницы -->
+<!--
     <style>
         .main-diff-page {
             opacity: 0;
@@ -592,6 +599,7 @@
     
   };
     </script>
+-->
     <!-- ждем загрузки страницы -->
 </head>
 <body>
@@ -599,7 +607,7 @@
    <div class="main-diff-page">
     <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
 
-    <div class="menu-top" id="home-page-diff-menu-top">
+    <div v-cloak class="menu-top" id="home-page-diff-menu-top">
         <div class="container">
             <div class="row">
                 <a class="col-md-2 col-6 logo-img" href="/"><img :src=" logoLink "></a>
@@ -678,7 +686,7 @@
 
     <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
 
-    <div class="row-all" id="home-page-concepts">
+    <div v-cloak class="row-all" id="home-page-concepts">
 
         <!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
         <div class="head" id="home-page-first-block">
@@ -749,7 +757,7 @@
         </div>
     </div>
     <!-- FOOTER START =================================================== -->
-    <div class="footer-not-main" id="home-page-diff-footer">
+    <div v-cloak class="footer-not-main" id="home-page-diff-footer">
         <div class="centered">
             <div class="left">
                 <h3 style="">{{agentFooterItemTitleRU}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameRU}}</a><br>

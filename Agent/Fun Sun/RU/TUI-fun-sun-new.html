@@ -50,7 +50,15 @@
         }
     </style>
     <!-- ШРИФТ =============================================== -->
-
+    
+    <!-- СТИЛЬ Загрузка VUE после рендеринга  =============================================== -->
+    <style>
+        
+        [v-cloak] {
+    display: none;
+}
+    </style>
+    
     <!-- SCRIPT загрузки VUE  =================================================== -->
 <script>
     const vueLinks = [
@@ -104,7 +112,9 @@
 <!-- MAIN START ============================================================= -->
 
 <!-- ВЕРХНЕЕ МЕНЮ TOP START==================== -->
-    <div class="menu-top" id="home-page-diff-menu-top" style="padding-bottom: 20px;">
+ 
+   
+    <div v-cloak class="menu-top" id="home-page-diff-menu-top" style="padding-bottom: 20px;">
         <div class="container">
             <div class="row"><a class="col-md-2 col-6 logo-img" href="/"><img v-bind:src=" logoLink " /></a>
                 <div class="col-5 but-menu-mobile">&nbsp;</div>
@@ -170,7 +180,7 @@
     <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
 
 
-<div class="concepts__main" id="fun-sun">
+<div v-cloak class="concepts__main" id="fun-sun">
    
    <!-- BANNER ===================================== -->
     <div class="banner__concepts" v-bind:class="bannerConceptsBckg">
@@ -321,7 +331,7 @@
 
 <!-- FOOTER START ================================= -->
 
-        <div class="container-fluid footer-informations" style="margin-top: 3em" id="home-page-diff-footer">
+        <div v-cloak class="container-fluid footer-informations" style="margin-top: 3em" id="home-page-diff-footer">
             <div class="row" id="funSunFooter">
                 <div class="container">
                     <div class="row">
